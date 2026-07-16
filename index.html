@@ -46,14 +46,14 @@
     .base-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}.base-title h3{margin:0;font-size:17px}.verified{flex:0 0 auto;padding:5px 9px;border-radius:999px;border:1px solid #315c3d;background:#102117;color:#a9e7bb;font-size:11px;font-weight:800}
     .base-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.base-stat{padding:10px;border-radius:13px;background:#0d131b;border:1px solid var(--line)}.base-stat small{display:block;color:var(--muted);font-size:10px;margin-bottom:4px}.base-stat b{font-size:13px;line-height:1.35}
     .implicit-block{margin-top:12px;padding-top:12px;border-top:1px solid #41361f}.implicit-label{font-size:11px;color:var(--gold2);font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}.implicit{display:flex;gap:9px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(42,53,68,.65)}.implicit:last-child{border-bottom:0;padding-bottom:0}.lock{flex:0 0 auto;width:27px;height:27px;border-radius:9px;display:grid;place-items:center;background:#211b11;border:1px solid #574628}.implicit b{font-size:13px;line-height:1.4}.implicit small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
-    .implicit-content{min-width:0;flex:1}.roll-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;margin-top:9px}.roll-input{width:86px!important;padding:9px!important;border-radius:10px!important;text-align:right}.roll-track{height:7px;border-radius:99px;background:#27313e;overflow:hidden;margin-top:9px}.roll-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:99px}.roll-meta{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:10px;margin-top:5px}.roll-grade{color:var(--gold2);font-weight:900}.implicit-note{margin-top:10px;color:var(--muted);font-size:11px;line-height:1.4}.affix-card{margin-bottom:10px;padding:13px 14px;border-radius:16px;border:1px solid var(--line);background:var(--panel2)}.affix-select{width:100%;padding:0;border:0;background:none;color:var(--text);display:flex;justify-content:space-between;gap:12px;align-items:center;text-align:left}.affix-select small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.affix-select b{display:block;white-space:normal;overflow-wrap:anywhere;line-height:1.3}.affix-rollbox{margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}.affix-range{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:12px}.affix-range strong{color:var(--gold2);font-size:14px}
+    .implicit-content{min-width:0;flex:1}.roll-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;margin-top:9px}.roll-input{width:86px!important;padding:9px!important;border-radius:10px!important;text-align:right}.roll-track{height:7px;border-radius:99px;background:#27313e;overflow:hidden;margin-top:9px}.roll-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:99px}.roll-meta{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:10px;margin-top:5px}.roll-grade{color:var(--gold2);font-weight:900}.implicit-note{margin-top:10px;color:var(--muted);font-size:11px;line-height:1.4}.affix-card{margin-bottom:10px;padding:13px 14px;border-radius:16px;border:1px solid var(--line);background:var(--panel2)}.affix-select{width:100%;padding:0;border:0;background:none;color:var(--text);display:flex;justify-content:space-between;gap:12px;align-items:center;text-align:left}.affix-select small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.affix-select b{display:block;white-space:normal;overflow-wrap:anywhere;line-height:1.3}.affix-rollbox{margin-top:10px;padding:12px 14px;border-top:1px solid var(--line)}.affix-range{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px}.affix-range strong{color:var(--gold2);font-size:14px}
     @media(min-width:700px){main{padding:22px}.grid.desktop3{grid-template-columns:repeat(3,1fr)}.bottomnav{left:50%;transform:translateX(-50%);max-width:760px}}
   </style>
 </head>
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.9.1</small></div></div>
+    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.9.2</small></div></div>
     <button class="iconbtn" onclick="openCapture()" aria-label="Item erfassen">📷</button>
   </header>
 
@@ -72,7 +72,7 @@
       <div class="section-title"><h2>Projektstatus</h2><span>lokal gespeichert</span></div>
       <div class="card project"><div><strong id="homeProject">Noch kein Ziel gespeichert</strong><small id="homeProjectMeta">Erstelle zuerst ein Crafting-Projekt.</small></div><button class="secondary" onclick="switchView('projects')">Öffnen</button></div>
       <div class="section-title"><h2>Datenstatus</h2><span>Grundlage</span></div>
-      <div class="status warn">Diese v0.9.1 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
+      <div class="status warn">Diese v0.9.2 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
     </section>
 
     <section id="craft" class="view">
@@ -98,7 +98,7 @@
       <div class="card">
         <div class="affix-group"><div class="affix-head"><strong>Präfixe</strong><span class="pill" id="prefixCount">0 / 3</span></div><div id="prefixSlots"></div></div>
         <div class="affix-group"><div class="affix-head"><strong>Suffixe</strong><span class="pill" id="suffixCount">0 / 3</span></div><div id="suffixSlots"></div></div>
-        <div class="status">Eine normale Basis startet mit 0 Präfixen und 0 Suffixen. Die Felder hier beschreiben ausschließlich dein gewünschtes Ziel. Tippe auf „Präfix hinzufügen“ oder „Suffix hinzufügen“ – diese Auswahl ist bei einer normalen Ausgangsbasis ausdrücklich verfügbar. Im Crafting-Planer wählst du nur den gewünschten Mod und sein Tier. Angezeigt wird der mögliche Wertebereich, zum Beispiel 170–179 %. Ein exakter aktueller Roll wird erst nach einem echten Crafting-Schritt oder beim Item-Scan ausgewertet. Rollbereiche und Tierdaten der Affixe sind noch Testdaten und werden erst mit dem vollständigen Datenimport verbindlich.</div>
+        <div class="status">Eine normale Basis startet mit 0 Präfixen und 0 Suffixen. Die Felder hier beschreiben ausschließlich dein gewünschtes Ziel. Tippe auf „Präfix hinzufügen“ oder „Suffix hinzufügen“ – diese Auswahl ist bei einer normalen Ausgangsbasis ausdrücklich verfügbar. Im Crafting-Planer wählst du nur den gewünschten Mod und sein Tier. Angezeigt wird ausschließlich der mögliche Wertebereich. Exakte aktuelle Rolls werden erst nach einem echten Crafting-Schritt oder beim Item-Scan ausgewertet. Die enthaltenen Affixdaten sind weiterhin Testdaten.</div>
       </div>
 
       <div class="section-title"><h2>Strategie</h2><span>Schritt 2</span></div>
@@ -232,20 +232,6 @@ const demoMods={
  ]
 };
 const priceItems=['Divine Orb','Exalted Orb','Regal Orb','Orb of Annulment','Chaos Orb','Essence (Beispiel)','Omen (Beispiel)'];
-function openSheetElement(id){
-  const el=document.getElementById(id);
-  if(!el)return;
-  el.classList.add('open');
-  document.body.classList.add('sheet-open');
-}
-function closeSheetElement(id){
-  const el=document.getElementById(id);
-  if(!el)return;
-  el.classList.remove('open');
-  if(!document.querySelector('.sheet.open')){
-    document.body.classList.remove('sheet-open');
-  }
-}
 function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'auto'});if(id==='projects')renderProjects()}
 function renderCurrentState(){
   const rarity=document.getElementById('rarity')?.value||'normal';
@@ -269,6 +255,7 @@ function renderSlots(){
     state[type].forEach((mod,i)=>{
       if(i>=max){
         const btn=document.createElement('button');
+        btn.type='button';
         btn.className='affix-slot disabled';
         btn.disabled=true;
         btn.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1}</small><b>Nicht verfügbar</b></div>`;
@@ -278,14 +265,15 @@ function renderSlots(){
 
       if(!mod){
         const btn=document.createElement('button');
+        btn.type='button';
         btn.className='affix-slot';
-        btn.onclick=()=>openModSheet(type,i);
+        btn.addEventListener('click',()=>openModSheet(type,i));
         btn.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1}</small><b>➕ ${type==='prefix'?'Präfix':'Suffix'} hinzufügen</b></div><div class="arrow">›</div>`;
         host.appendChild(btn);
         return;
       }
 
-      const range = mod.min===undefined
+      const range=mod.min===undefined
         ? 'Wertebereich noch nicht importiert'
         : mod.min===mod.max
           ? `${mod.min}${mod.unit||''}`
@@ -293,27 +281,30 @@ function renderSlots(){
 
       const card=document.createElement('div');
       card.className='affix-card';
-      card.innerHTML=`
-        <button class="affix-select" type="button">
-          <div class="meta">
-            <small>${type==='prefix'?'Präfix':'Suffix'} ${i+1} · ${mod.tier||'Tier unbekannt'}</small>
-            <b>${mod.name}</b>
-          </div>
-          <div class="arrow">›</div>
-        </button>
-        <div class="affix-rollbox">
-          <div class="affix-range">
-            <span>Möglicher Roll</span>
-            <strong>${range}</strong>
-          </div>
-        </div>`;
-      card.querySelector('.affix-select').onclick=()=>openModSheet(type,i);
+
+      const select=document.createElement('button');
+      select.type='button';
+      select.className='affix-select';
+      select.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1} · ${mod.tier||'Tier unbekannt'}</small><b>${mod.name}</b></div><div class="arrow">›</div>`;
+      select.addEventListener('click',()=>openModSheet(type,i));
+
+      const rangeBox=document.createElement('div');
+      rangeBox.className='affix-rollbox';
+      rangeBox.innerHTML=`<div class="affix-range"><span>Möglicher Roll</span><strong>${range}</strong></div>`;
+
+      card.appendChild(select);
+      card.appendChild(rangeBox);
       host.appendChild(card);
     });
 
     document.getElementById(type+'Count').textContent=`${state[type].filter(Boolean).length} / ${max}`;
   });
 }
+function openSheetElement(id){lockPageScroll();document.getElementById(id).classList.add('open')}
+function closeSheetElement(id){document.getElementById(id).classList.remove('open');unlockPageScroll()}
+function openBaseSheet(){if(document.getElementById('basePicker').disabled)return;document.getElementById('baseSearch').value='';document.getElementById('baseSheetHeading').textContent=`${document.getElementById('itemClass').value}: Basis auswählen`;renderBaseResults();openSheetElement('baseSheet')}
+function closeBaseSheet(){closeSheetElement('baseSheet')}
+function renderBaseResults(){const cls=document.getElementById('itemClass').value;const q=document.getElementById('baseSearch').value.toLowerCase().trim();const items=(baseItems[cls]||[]).filter(b=>b.name.toLowerCase().includes(q));const host=document.getElementById('baseResults');host.innerHTML=items.length?'':'<div class="empty">Keine passende Basis gefunden.</div>';items.forEach(b=>{const row=document.createElement('div');row.className='result';const implicit=b.implicits.filter(x=>x.kind!=='Gewährte Fertigkeit').map(x=>x.name).join(' · ')||'Keine zusätzliche sichtbare Basis-Eigenschaft';row.innerHTML=`<div><b>${b.name}</b><small>Stufe ${b.requiredLevel} · ${b.physical} · ${b.aps} APS<br>${implicit}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{document.getElementById('base').value=b.id;renderBaseDetails();closeBaseSheet()};host.appendChild(row)})}
 function openModSheet(type,index){state.activeType=type;state.activeIndex=index;document.getElementById('sheetHeading').textContent=`${type==='prefix'?'Präfix':'Suffix'} ${index+1} wählen`;document.getElementById('modSearch').value='';renderResults();openSheetElement('sheet')}
 function closeSheet(){closeSheetElement('sheet')}
 function renderResults(){const q=document.getElementById('modSearch').value.toLowerCase();const lvl=Number(document.getElementById('ilevel').value)||1;const used=new Set([...state.prefix,...state.suffix].filter(Boolean).map(x=>x.group));const mods=demoMods[state.activeType].filter(m=>m.lvl<=lvl && (!used.has(m.group)||state[state.activeType][state.activeIndex]?.group===m.group) && m.name.toLowerCase().includes(q));const host=document.getElementById('results');host.innerHTML='';if(state[state.activeType][state.activeIndex]){const clear=document.createElement('div');clear.className='result';clear.innerHTML='<div><b>Slot leeren</b><small>Ausgewählten Mod entfernen</small></div><button class="add">Entfernen</button>';clear.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=null;closeSheet();renderSlots()};host.appendChild(clear)}if(!mods.length){host.innerHTML+='<div class="empty">Keine passenden Mods gefunden.</div>';return}mods.forEach(m=>{const row=document.createElement('div');row.className='result';row.innerHTML=`<div><b>${m.name}</b><small>Mindest-Item-Level ${m.lvl} · Gruppe ${m.group}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=m;closeSheet();renderSlots()};host.appendChild(row)})}
