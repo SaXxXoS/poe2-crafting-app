@@ -33,13 +33,15 @@ jobs:
 
       - name: Neue Daten speichern
         run: |
-          if git diff --quiet -- generated; then
+          git config user.name "ExileForge Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add -f generated
+
+          if git diff --cached --quiet; then
             echo "Keine Änderungen gefunden."
             exit 0
           fi
 
-          git config user.name "ExileForge Data Bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add generated
           git commit -m "PoE2-Datenbank aktualisieren"
           git push
