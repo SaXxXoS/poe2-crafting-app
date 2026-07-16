@@ -11,9 +11,10 @@
       --gold:#c9a35b;--gold2:#e8c987;--green:#4ecb71;--red:#ef6b6b;--blue:#65a8ff;--shadow:0 10px 30px rgba(0,0,0,.28)
     }
     *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    body{min-height:100vh;padding-bottom:88px;background:
+    body{min-height:100vh;padding-bottom:112px;overflow-x:hidden;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;background:
       radial-gradient(circle at top right,rgba(201,163,91,.10),transparent 32%),var(--bg)}
-    button,input,select{font:inherit} button{cursor:pointer}
+    body.modal-open{overflow:hidden;touch-action:none}
+    button,input,select{font:inherit} button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
     .app{max-width:760px;margin:0 auto}
     .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:14px 16px calc(12px + env(safe-area-inset-top));background:rgba(11,15,20,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
     .brand{display:flex;gap:10px;align-items:center}.brandmark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#2a2113,#d0a85b);display:grid;place-items:center;font-weight:900;color:#111;box-shadow:var(--shadow)}
@@ -35,9 +36,9 @@
     .affix-slot{width:100%;min-height:72px;margin-bottom:10px;padding:13px 14px;text-align:left;border-radius:16px;border:1px solid var(--line);background:var(--panel2);color:var(--text);display:flex;justify-content:space-between;gap:12px;align-items:center}
     .affix-slot .meta{min-width:0}.affix-slot small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.affix-slot b{display:block;white-space:normal;overflow-wrap:anywhere;line-height:1.3}.affix-slot .arrow{color:var(--gold2);font-size:20px;flex:0 0 auto}
     .affix-slot.disabled{opacity:.42}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.secondary{padding:13px;border-radius:14px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font-weight:700}.primary{padding:13px;border-radius:14px;border:0;background:var(--gold);color:#15110a;font-weight:900}
-    .bottomnav{position:fixed;bottom:0;left:0;right:0;z-index:30;background:rgba(11,15,20,.96);backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr)}
+    .bottomnav{position:fixed;bottom:0;left:0;right:0;z-index:30;background:rgba(11,15,20,.98);backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:8px 8px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr);transform:translateZ(0)}
     .navbtn{background:none;border:0;color:var(--muted);padding:7px 3px;font-size:10px}.navbtn span{display:block;font-size:20px;margin-bottom:3px}.navbtn.active{color:var(--gold2)}
-    .sheet{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.58);display:none;align-items:flex-end}.sheet.open{display:flex}.sheetbox{width:100%;max-height:86vh;background:#10161f;border-radius:24px 24px 0 0;border:1px solid var(--line);padding:16px;overflow:auto}.grab{width:48px;height:5px;border-radius:99px;background:#405064;margin:0 auto 15px}.sheettitle{display:flex;justify-content:space-between;align-items:center}.sheettitle h3{margin:0}.close{border:0;background:none;color:var(--muted);font-size:25px}
+    .sheet{position:fixed;inset:0;z-index:60;background:#10161f;display:none;overscroll-behavior:none}.sheet.open{display:block}.sheetbox{height:100dvh;max-height:none;width:100%;background:#10161f;border:0;border-radius:0;padding:calc(10px + env(safe-area-inset-top)) 16px calc(12px + env(safe-area-inset-bottom));overflow:hidden;display:flex;flex-direction:column}.grab{display:none}.sheettitle{display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;padding-bottom:8px;border-bottom:1px solid var(--line)}.sheettitle h3{margin:0;font-size:18px}.close{border:1px solid var(--line);background:var(--panel2);color:var(--text);font-size:24px;width:44px;height:44px;border-radius:14px}.sheetbox>.field{flex:0 0 auto}.sheetbox #results,.sheetbox #baseResults{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:2px 2px calc(24px + env(safe-area-inset-bottom));scrollbar-width:thin}.sheetbox #results .result,.sheetbox #baseResults .result{padding:16px 3px}.sheetbox #captureContent{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
     .result{display:flex;justify-content:space-between;gap:10px;padding:14px 3px;border-bottom:1px solid var(--line)}.result:last-child{border-bottom:0}.result b{font-size:13px;line-height:1.35}.result small{display:block;color:var(--muted);margin-top:4px}.add{border:1px solid #6b5630;background:#211b11;color:var(--gold2);border-radius:11px;padding:9px 12px;height:max-content}
     .empty{text-align:center;color:var(--muted);padding:28px 10px}.project{display:flex;justify-content:space-between;gap:12px;align-items:center}.project + .project{margin-top:10px}.project strong{display:block}.project small{color:var(--muted)}
     .price-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.price-row:last-child{border-bottom:0}.price-row input{width:100px;padding:9px;border-radius:11px;border:1px solid var(--line);background:#0e141c;color:var(--text);text-align:right}
@@ -52,7 +53,7 @@
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.7</small></div></div>
+    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.8</small></div></div>
     <button class="iconbtn" onclick="openCapture()" aria-label="Item erfassen">📷</button>
   </header>
 
@@ -71,7 +72,7 @@
       <div class="section-title"><h2>Projektstatus</h2><span>lokal gespeichert</span></div>
       <div class="card project"><div><strong id="homeProject">Noch kein Ziel gespeichert</strong><small id="homeProjectMeta">Erstelle zuerst ein Crafting-Projekt.</small></div><button class="secondary" onclick="switchView('projects')">Öffnen</button></div>
       <div class="section-title"><h2>Datenstatus</h2><span>Grundlage</span></div>
-      <div class="status warn">Diese v0.7 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
+      <div class="status warn">Diese v0.8 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
     </section>
 
     <section id="craft" class="view">
@@ -97,7 +98,7 @@
       <div class="card">
         <div class="affix-group"><div class="affix-head"><strong>Präfixe</strong><span class="pill" id="prefixCount">0 / 3</span></div><div id="prefixSlots"></div></div>
         <div class="affix-group"><div class="affix-head"><strong>Suffixe</strong><span class="pill" id="suffixCount">0 / 3</span></div><div id="suffixSlots"></div></div>
-        <div class="status">Eine normale Basis startet mit 0 Präfixen und 0 Suffixen. Die Felder hier beschreiben ausschließlich dein gewünschtes Ziel. Tippe auf „Präfix hinzufügen“ oder „Suffix hinzufügen“ – diese Auswahl ist bei einer normalen Ausgangsbasis ausdrücklich verfügbar. Jeder variable Implizit- und Affixwert kann manuell eingetragen werden. Später übernimmt die Fotoerkennung diese aktuellen Werte. Rollbereiche und Tierdaten der Affixe sind in v0.7 noch Testdaten und werden erst mit dem vollständigen Datenimport verbindlich.</div>
+        <div class="status">Eine normale Basis startet mit 0 Präfixen und 0 Suffixen. Die Felder hier beschreiben ausschließlich dein gewünschtes Ziel. Tippe auf „Präfix hinzufügen“ oder „Suffix hinzufügen“ – diese Auswahl ist bei einer normalen Ausgangsbasis ausdrücklich verfügbar. Jeder variable Implizit- und Affixwert kann manuell eingetragen werden. Später übernimmt die Fotoerkennung diese aktuellen Werte. Rollbereiche und Tierdaten der Affixe sind in v0.8 noch Testdaten und werden erst mit dem vollständigen Datenimport verbindlich.</div>
       </div>
 
       <div class="section-title"><h2>Strategie</h2><span>Schritt 2</span></div>
@@ -146,7 +147,7 @@
 
 <div id="captureSheet" class="sheet" onclick="if(event.target===this)closeCapture()">
   <div class="sheetbox"><div class="grab"></div><div class="sheettitle"><h3>Item erfassen</h3><button class="close" onclick="closeCapture()">×</button></div>
-    <div class="grid" style="margin-top:14px">
+    <div id="captureContent" class="grid" style="margin-top:14px">
       <label class="card quick"><span class="emoji">📷</span><h3>Foto aufnehmen</h3><p>Optional für Konsole. In v0.1 wird nur die Bildauswahl vorbereitet.</p><input type="file" accept="image/*" capture="environment" hidden onchange="handleImage(this)" /></label>
       <label class="card quick"><span class="emoji">🖼️</span><h3>Screenshot hochladen</h3><p>Bild auswählen und später automatisch erkennen lassen.</p><input type="file" accept="image/*" hidden onchange="handleImage(this)" /></label>
       <button class="card quick" onclick="closeCapture();switchView('craft')"><span class="emoji">⌨️</span><h3>Manuell eingeben</h3><p>Alle Funktionen bleiben ohne Kamera nutzbar.</p></button>
@@ -231,7 +232,7 @@ const demoMods={
  ]
 };
 const priceItems=['Divine Orb','Exalted Orb','Regal Orb','Orb of Annulment','Chaos Orb','Essence (Beispiel)','Omen (Beispiel)'];
-function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'});if(id==='projects')renderProjects()}
+function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'auto'});if(id==='projects')renderProjects()}
 function renderCurrentState(){
   const rarity=document.getElementById('rarity')?.value||'normal';
   const box=document.getElementById('currentState');
@@ -247,11 +248,30 @@ function setAffixRoll(type,index,value){const mod=state[type][index];if(!mod||mo
 function gradeClass(pct){if(pct>=100)return 'grade-perfect';if(pct>=75)return 'grade-good';if(pct>=40)return 'grade-mid';return 'grade-bad'}
 function starsFor(pct){const filled=Math.max(1,Math.min(5,Math.ceil(pct/20)));return '★'.repeat(filled)+'☆'.repeat(5-filled)}
 function renderSlots(){['prefix','suffix'].forEach(type=>{const host=document.getElementById(type+'Slots');host.innerHTML='';const max=limits();state[type].forEach((mod,i)=>{if(i>=max){const btn=document.createElement('button');btn.className='affix-slot disabled';btn.disabled=true;btn.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1}</small><b>Nicht verfügbar</b></div>`;host.appendChild(btn);return}if(!mod){const btn=document.createElement('button');btn.className='affix-slot';btn.onclick=()=>openModSheet(type,i);btn.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1}</small><b>➕ ${type==='prefix'?'Präfix':'Suffix'} hinzufügen</b></div><div class="arrow">›</div>`;host.appendChild(btn);return}const value=storedAffixValue(type,i,mod);const fixed=mod.min===mod.max;const pct=fixed?100:rollPercent(value,mod.min,mod.max);const card=document.createElement('div');card.className='affix-card';card.innerHTML=`<button class="affix-select" type="button"><div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1} · ${mod.tier||'Tier unbekannt'}</small><b>${mod.name}</b></div><div class="arrow">›</div></button><div class="affix-rollbox"><div class="roll-row"><div><strong>${value}${mod.unit||''}</strong> <span class="affix-range">(${mod.min}–${mod.max}${mod.unit||''})</span></div>${fixed?'<span class="pill">Fester Wert</span>':`<input class="affix-input" type="number" min="${mod.min}" max="${mod.max}" step="1" value="${value}">`}</div><div class="roll-track"><div class="roll-fill" style="width:${pct}%"></div></div><div class="roll-meta"><span>Roll-Qualität ${pct} %</span><span class="${gradeClass(pct)}">${rollLabel(pct)}</span></div><div class="stars ${gradeClass(pct)}">${starsFor(pct)}</div></div>`;card.querySelector('.affix-select').onclick=()=>openModSheet(type,i);const input=card.querySelector('.affix-input');if(input)input.onchange=e=>setAffixRoll(type,i,e.target.value);host.appendChild(card)});document.getElementById(type+'Count').textContent=`${state[type].filter(Boolean).length} / ${max}`})}
-function openBaseSheet(){if(document.getElementById('basePicker').disabled)return;document.getElementById('baseSearch').value='';document.getElementById('baseSheetHeading').textContent=`${document.getElementById('itemClass').value}: Basis auswählen`;renderBaseResults();document.getElementById('baseSheet').classList.add('open')}
-function closeBaseSheet(){document.getElementById('baseSheet').classList.remove('open')}
+let lockedScrollY=0;
+function lockPageScroll(){
+  if(document.body.classList.contains('modal-open'))return;
+  lockedScrollY=window.scrollY||document.documentElement.scrollTop||0;
+  document.body.classList.add('modal-open');
+  document.body.style.position='fixed';
+  document.body.style.top=`-${lockedScrollY}px`;
+  document.body.style.left='0';
+  document.body.style.right='0';
+  document.body.style.width='100%';
+}
+function unlockPageScroll(){
+  if(!document.body.classList.contains('modal-open'))return;
+  document.body.classList.remove('modal-open');
+  document.body.style.position='';document.body.style.top='';document.body.style.left='';document.body.style.right='';document.body.style.width='';
+  window.scrollTo(0,lockedScrollY);
+}
+function openSheetElement(id){lockPageScroll();document.getElementById(id).classList.add('open')}
+function closeSheetElement(id){document.getElementById(id).classList.remove('open');unlockPageScroll()}
+function openBaseSheet(){if(document.getElementById('basePicker').disabled)return;document.getElementById('baseSearch').value='';document.getElementById('baseSheetHeading').textContent=`${document.getElementById('itemClass').value}: Basis auswählen`;renderBaseResults();openSheetElement('baseSheet')}
+function closeBaseSheet(){closeSheetElement('baseSheet')}
 function renderBaseResults(){const cls=document.getElementById('itemClass').value;const q=document.getElementById('baseSearch').value.toLowerCase().trim();const items=(baseItems[cls]||[]).filter(b=>b.name.toLowerCase().includes(q));const host=document.getElementById('baseResults');host.innerHTML=items.length?'':'<div class="empty">Keine passende Basis gefunden.</div>';items.forEach(b=>{const row=document.createElement('div');row.className='result';const implicit=b.implicits.filter(x=>x.kind!=='Gewährte Fertigkeit').map(x=>x.name).join(' · ')||'Keine zusätzliche sichtbare Basis-Eigenschaft';row.innerHTML=`<div><b>${b.name}</b><small>Stufe ${b.requiredLevel} · ${b.physical} · ${b.aps} APS<br>${implicit}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{document.getElementById('base').value=b.id;renderBaseDetails();closeBaseSheet()};host.appendChild(row)})}
-function openModSheet(type,index){state.activeType=type;state.activeIndex=index;document.getElementById('sheetHeading').textContent=`${type==='prefix'?'Präfix':'Suffix'} ${index+1} wählen`;document.getElementById('modSearch').value='';renderResults();document.getElementById('sheet').classList.add('open')}
-function closeSheet(){document.getElementById('sheet').classList.remove('open')}
+function openModSheet(type,index){state.activeType=type;state.activeIndex=index;document.getElementById('sheetHeading').textContent=`${type==='prefix'?'Präfix':'Suffix'} ${index+1} wählen`;document.getElementById('modSearch').value='';renderResults();openSheetElement('sheet')}
+function closeSheet(){closeSheetElement('sheet')}
 function renderResults(){const q=document.getElementById('modSearch').value.toLowerCase();const lvl=Number(document.getElementById('ilevel').value)||1;const used=new Set([...state.prefix,...state.suffix].filter(Boolean).map(x=>x.group));const mods=demoMods[state.activeType].filter(m=>m.lvl<=lvl && (!used.has(m.group)||state[state.activeType][state.activeIndex]?.group===m.group) && m.name.toLowerCase().includes(q));const host=document.getElementById('results');host.innerHTML='';if(state[state.activeType][state.activeIndex]){const clear=document.createElement('div');clear.className='result';clear.innerHTML='<div><b>Slot leeren</b><small>Ausgewählten Mod entfernen</small></div><button class="add">Entfernen</button>';clear.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=null;closeSheet();renderSlots()};host.appendChild(clear)}if(!mods.length){host.innerHTML+='<div class="empty">Keine passenden Mods gefunden.</div>';return}mods.forEach(m=>{const row=document.createElement('div');row.className='result';row.innerHTML=`<div><b>${m.name}</b><small>Mindest-Item-Level ${m.lvl} · Gruppe ${m.group}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=m;closeSheet();renderSlots()};host.appendChild(row)})}
 function resetCraft(){state.prefix=[null,null,null];state.suffix=[null,null,null];renderSlots()}
 function saveProject(){const project={id:Date.now(),itemClass:document.getElementById('itemClass').value,baseId:document.getElementById('base').value,baseName:currentBase()?.name||document.getElementById('base').value,ilevel:document.getElementById('ilevel').value,rarity:document.getElementById('rarity').value,targetRarity:document.getElementById('targetRarity').value,budget:document.getElementById('budget').value,strategy:document.getElementById('strategy').value,prefix:state.prefix,suffix:state.suffix};localStorage.setItem('exileforge_project',JSON.stringify(project));updateHomeProject();alert('Crafting-Ziel wurde auf diesem Gerät gespeichert.')}
@@ -260,8 +280,10 @@ function renderProjects(){const host=document.getElementById('projectList');cons
 function loadProject(){const p=JSON.parse(localStorage.getItem('exileforge_project')||'null');if(!p)return;document.getElementById('itemClass').value=p.itemClass;renderBaseOptions(p.baseId||p.base);document.getElementById('ilevel').value=p.ilevel;document.getElementById('rarity').value=p.rarity;document.getElementById('targetRarity').value=p.targetRarity||'rare';document.getElementById('budget').value=p.budget;document.getElementById('strategy').value=p.strategy;state.prefix=p.prefix||[null,null,null];state.suffix=p.suffix||[null,null,null];renderSlots();switchView('craft')}
 function renderPrices(){const stored=JSON.parse(localStorage.getItem('exileforge_prices')||'{}');const host=document.getElementById('priceList');host.innerHTML=priceItems.map((n,i)=>`<div class="price-row"><div><strong>${n}</strong><div style="color:var(--muted);font-size:11px">Wert in Exalted</div></div><input id="price${i}" type="number" step="0.01" value="${stored[n]??''}" placeholder="–"></div>`).join('')}
 function savePrices(){const obj={};priceItems.forEach((n,i)=>{const v=document.getElementById('price'+i).value;if(v!=='')obj[n]=Number(v)});localStorage.setItem('exileforge_prices',JSON.stringify(obj));alert('Preise wurden lokal gespeichert.')}
-function openCapture(){document.getElementById('captureSheet').classList.add('open')}function closeCapture(){document.getElementById('captureSheet').classList.remove('open')}
+function openCapture(){openSheetElement('captureSheet')}function closeCapture(){closeSheetElement('captureSheet')}
 function handleImage(input){const f=input.files?.[0];document.getElementById('imageStatus').textContent=f?`Bild ausgewählt: ${f.name}. Automatische Erkennung folgt in einer späteren Version.`:'Noch kein Bild ausgewählt.'}
+
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(document.getElementById('sheet').classList.contains('open'))closeSheet();else if(document.getElementById('baseSheet').classList.contains('open'))closeBaseSheet();else if(document.getElementById('captureSheet').classList.contains('open'))closeCapture();}});
 renderClassOptions();renderCurrentState();renderSlots();renderPrices();updateHomeProject();
 </script>
 </body>
