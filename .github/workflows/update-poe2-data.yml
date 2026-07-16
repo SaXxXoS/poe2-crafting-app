@@ -1,0 +1,45 @@
+name: Update PoE2 Database
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ExileForge herunterladen
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Aktuelle PoE2-Daten herunterladen
+        run: |
+          rm -rf .cache/poe2-data
+          mkdir -p .cache
+          git clone --depth 1 https://github.com/adainrivers/poe2-data.git .cache/poe2-data
+
+      - name: Daten importieren
+        run: node tools/import-poe2-data.mjs .cache/poe2-data
+
+      - name: Daten prüfen
+        run: node tools/validate-poe2-data.mjs
+
+      - name: Neue Daten speichern
+        run: |
+          if git diff --quiet -- generated; then
+            echo "Keine Änderungen gefunden."
+            exit 0
+          fi
+
+          git config user.name "ExileForge Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add generated
+          git commit -m "PoE2-Datenbank aktualisieren"
+          git push
