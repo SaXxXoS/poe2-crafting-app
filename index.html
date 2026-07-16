@@ -52,7 +52,7 @@
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.6</small></div></div>
+    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.7</small></div></div>
     <button class="iconbtn" onclick="openCapture()" aria-label="Item erfassen">📷</button>
   </header>
 
@@ -71,7 +71,7 @@
       <div class="section-title"><h2>Projektstatus</h2><span>lokal gespeichert</span></div>
       <div class="card project"><div><strong id="homeProject">Noch kein Ziel gespeichert</strong><small id="homeProjectMeta">Erstelle zuerst ein Crafting-Projekt.</small></div><button class="secondary" onclick="switchView('projects')">Öffnen</button></div>
       <div class="section-title"><h2>Datenstatus</h2><span>Grundlage</span></div>
-      <div class="status warn">Diese v0.6 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
+      <div class="status warn">Diese v0.7 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
     </section>
 
     <section id="craft" class="view">
@@ -85,18 +85,19 @@
         </div>
         <div id="baseDetails" class="base-panel"></div>
         <div class="grid two">
-          <div class="field"><label>Ausgangs-Seltenheit</label><select id="rarity" onchange="renderSlots()"><option value="normal" selected>Normal</option><option value="magic">Magisch</option><option value="rare">Selten</option></select></div>
-          <div class="field"><label>Ziel-Seltenheit</label><select id="targetRarity" onchange="renderSlots()"><option value="rare" selected>Selten (3 + 3)</option><option value="magic">Magisch (1 + 1)</option></select></div>
+          <div class="field"><label>Aktueller Zustand der Basis</label><select id="rarity" onchange="renderCurrentState()"><option value="normal" selected>Normal – keine Affixe</option><option value="magic">Magisch – vorhandene Affixe</option><option value="rare">Selten – vorhandene Affixe</option></select></div>
+          <div class="field"><label>Gewünschtes Ziel</label><select id="targetRarity" onchange="renderSlots()"><option value="rare" selected>Selten – bis 3 Präfixe + 3 Suffixe</option><option value="magic">Magisch – bis 1 Präfix + 1 Suffix</option></select></div>
         </div>
+        <div id="currentState" class="status"></div>
         <div class="field"><label>Budget (Divine)</label><input id="budget" type="number" min="0" step="0.1" value="10" /></div>
         <div class="status good">Die Ausgangs-Seltenheit beschreibt die Basis, mit der du startest. Auch bei einer normalen Basis kannst du darunter dein gewünschtes seltenes Ziel mit bis zu 3 Präfixen und 3 Suffixen planen.</div>
       </div>
 
-      <div class="section-title"><h2>Affixe</h2><span>nur gültige Auswahl vorgesehen</span></div>
+      <div class="section-title"><h2>Gewünschte Ziel-Affixe</h2><span>unabhängig vom Startzustand</span></div>
       <div class="card">
         <div class="affix-group"><div class="affix-head"><strong>Präfixe</strong><span class="pill" id="prefixCount">0 / 3</span></div><div id="prefixSlots"></div></div>
         <div class="affix-group"><div class="affix-head"><strong>Suffixe</strong><span class="pill" id="suffixCount">0 / 3</span></div><div id="suffixSlots"></div></div>
-        <div class="status">Tippe auf „Präfix hinzufügen“ oder „Suffix hinzufügen“. Die Ziel-Slots bleiben auch bei einer normalen Ausgangsbasis verfügbar. Jeder variable Implizit- und Affixwert kann manuell eingetragen werden. Später übernimmt die Fotoerkennung diese aktuellen Werte. Rollbereiche und Tierdaten der Affixe sind in v0.6 noch Testdaten und werden erst mit dem vollständigen Datenimport verbindlich.</div>
+        <div class="status">Eine normale Basis startet mit 0 Präfixen und 0 Suffixen. Die Felder hier beschreiben ausschließlich dein gewünschtes Ziel. Tippe auf „Präfix hinzufügen“ oder „Suffix hinzufügen“ – diese Auswahl ist bei einer normalen Ausgangsbasis ausdrücklich verfügbar. Jeder variable Implizit- und Affixwert kann manuell eingetragen werden. Später übernimmt die Fotoerkennung diese aktuellen Werte. Rollbereiche und Tierdaten der Affixe sind in v0.7 noch Testdaten und werden erst mit dem vollständigen Datenimport verbindlich.</div>
       </div>
 
       <div class="section-title"><h2>Strategie</h2><span>Schritt 2</span></div>
@@ -231,6 +232,14 @@ const demoMods={
 };
 const priceItems=['Divine Orb','Exalted Orb','Regal Orb','Orb of Annulment','Chaos Orb','Essence (Beispiel)','Omen (Beispiel)'];
 function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'});if(id==='projects')renderProjects()}
+function renderCurrentState(){
+  const rarity=document.getElementById('rarity')?.value||'normal';
+  const box=document.getElementById('currentState');
+  if(!box)return;
+  if(rarity==='normal') box.innerHTML='<strong>Aktueller Gegenstand:</strong> Normale Basis · 0 Präfixe · 0 Suffixe.<br><span style="color:var(--gold2)">Darunter wählst du trotzdem die Affixe aus, die du durch Crafting erreichen möchtest.</span>';
+  else if(rarity==='magic') box.innerHTML='<strong>Aktueller Gegenstand:</strong> Magisch · höchstens 1 Präfix und 1 Suffix vorhanden. Vorhandene Mods werden später separat als Ist-Zustand erfasst.';
+  else box.innerHTML='<strong>Aktueller Gegenstand:</strong> Selten · vorhandene Präfixe und Suffixe werden später separat als Ist-Zustand erfasst.';
+}
 function limits(){const r=document.getElementById('targetRarity')?.value||'rare';return r==='magic'?1:3}
 function affixKey(type,index,mod){return `exileforge_affix_${type}_${index}_${mod.group}_${mod.tier||''}`}
 function storedAffixValue(type,index,mod){if(mod.min===undefined)return null;const saved=localStorage.getItem(affixKey(type,index,mod));const fallback=mod.defaultValue??mod.min;const value=saved===null?fallback:Number(saved);return Math.min(mod.max,Math.max(mod.min,value))}
@@ -253,7 +262,7 @@ function renderPrices(){const stored=JSON.parse(localStorage.getItem('exileforge
 function savePrices(){const obj={};priceItems.forEach((n,i)=>{const v=document.getElementById('price'+i).value;if(v!=='')obj[n]=Number(v)});localStorage.setItem('exileforge_prices',JSON.stringify(obj));alert('Preise wurden lokal gespeichert.')}
 function openCapture(){document.getElementById('captureSheet').classList.add('open')}function closeCapture(){document.getElementById('captureSheet').classList.remove('open')}
 function handleImage(input){const f=input.files?.[0];document.getElementById('imageStatus').textContent=f?`Bild ausgewählt: ${f.name}. Automatische Erkennung folgt in einer späteren Version.`:'Noch kein Bild ausgewählt.'}
-renderClassOptions();renderSlots();renderPrices();updateHomeProject();
+renderClassOptions();renderCurrentState();renderSlots();renderPrices();updateHomeProject();
 </script>
 </body>
 </html>
