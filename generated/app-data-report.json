@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T21:24:15.029Z",
+  "generatedAt": "2026-07-16T21:39:17.227Z",
   "importedBases": 862,
-  "importedModAssignments": 303,
+  "importedModAssignments": 6657,
   "classes": {
     "Schwert": 30,
     "Angelrute": 1,
@@ -31,108 +31,108 @@
   },
   "affixesByClass": {
     "Armbrust": {
-      "prefix": 0,
-      "suffix": 0
+      "prefix": 105,
+      "suffix": 80
     },
     "Kampfstab": {
-      "prefix": 0,
-      "suffix": 0
+      "prefix": 105,
+      "suffix": 80
     },
     "Kriegsstab": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 106,
+      "suffix": 84
     },
     "Fallenwerkzeug": {
-      "prefix": 0,
-      "suffix": 0
+      "prefix": 105,
+      "suffix": 80
     },
     "Angelrute": {
-      "prefix": 0,
-      "suffix": 0
+      "prefix": 105,
+      "suffix": 80
     },
     "Zauberstab": {
-      "prefix": 81,
-      "suffix": 22
+      "prefix": 186,
+      "suffix": 102
     },
     "Zepter": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 106,
+      "suffix": 84
     },
     "Stab": {
-      "prefix": 82,
-      "suffix": 23
+      "prefix": 187,
+      "suffix": 103
     },
     "Speer": {
-      "prefix": 0,
-      "suffix": 0
+      "prefix": 105,
+      "suffix": 80
     },
     "Bogen": {
-      "prefix": 2,
-      "suffix": 5
+      "prefix": 107,
+      "suffix": 85
     },
     "Streitkolben": {
-      "prefix": 2,
-      "suffix": 4
+      "prefix": 107,
+      "suffix": 84
     },
     "Schwert": {
-      "prefix": 2,
-      "suffix": 5
+      "prefix": 107,
+      "suffix": 85
     },
     "Axt": {
-      "prefix": 2,
-      "suffix": 5
+      "prefix": 107,
+      "suffix": 85
     },
     "Dolch": {
-      "prefix": 2,
-      "suffix": 6
+      "prefix": 107,
+      "suffix": 86
     },
     "Flegel": {
-      "prefix": 0,
-      "suffix": 0
+      "prefix": 105,
+      "suffix": 80
     },
     "Klaue": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 106,
+      "suffix": 84
     },
     "Helm": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 329,
+      "suffix": 103
     },
     "Körperrüstung": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 329,
+      "suffix": 103
     },
     "Handschuhe": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 329,
+      "suffix": 103
     },
     "Stiefel": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 329,
+      "suffix": 103
     },
     "Schild": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 329,
+      "suffix": 103
     },
     "Fokus": {
-      "prefix": 0,
-      "suffix": 0
+      "prefix": 328,
+      "suffix": 99
     },
     "Köcher": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 329,
+      "suffix": 103
     },
     "Ring": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 59,
+      "suffix": 81
     },
     "Amulett": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 59,
+      "suffix": 81
     },
     "Gürtel": {
-      "prefix": 1,
-      "suffix": 4
+      "prefix": 59,
+      "suffix": 81
     }
   },
   "skippedBaseClasses": {
@@ -735,9 +735,10 @@
     "armourtypes.json": 526,
     "belttypes.json": 11
   },
-  "globalFallbackMods": 0,
+  "globalFallbackMods": 6354,
   "filteredBadMods": 2038,
   "strictClassMatching": true,
-  "globalFallbackEnabled": false,
-  "builderVersion": 5
+  "globalFallbackEnabled": true,
+  "fallbackMode": "semantic-category",
+  "builderVersion": 6
 }
