@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T20:06:33.970Z",
-  "importedBases": 819,
-  "importedMods": 332,
+  "generatedAt": "2026-07-16T20:31:25.755Z",
+  "importedBases": 844,
+  "importedModAssignments": 26227,
   "classes": {
     "Schwert": 27,
     "Ring": 14,
@@ -16,6 +16,7 @@
     "Speer": 13,
     "Klaue": 13,
     "Dolch": 13,
+    "Kriegsstab": 25,
     "Flegel": 13,
     "Zauberstab": 13,
     "Stab": 13,
@@ -25,6 +26,104 @@
     "Fokus": 22,
     "Köcher": 11,
     "Amulett": 10
+  },
+  "affixesByClass": {
+    "Armbrust": {
+      "prefix": 608,
+      "suffix": 477
+    },
+    "Kampfstab": {
+      "prefix": 608,
+      "suffix": 477
+    },
+    "Kriegsstab": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Zauberstab": {
+      "prefix": 689,
+      "suffix": 567
+    },
+    "Zepter": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Stab": {
+      "prefix": 689,
+      "suffix": 567
+    },
+    "Speer": {
+      "prefix": 608,
+      "suffix": 477
+    },
+    "Bogen": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Streitkolben": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Schwert": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Axt": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Dolch": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Flegel": {
+      "prefix": 608,
+      "suffix": 477
+    },
+    "Klaue": {
+      "prefix": 609,
+      "suffix": 481
+    },
+    "Helm": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Körperrüstung": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Handschuhe": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Stiefel": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Schild": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Fokus": {
+      "prefix": 596,
+      "suffix": 465
+    },
+    "Köcher": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Ring": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Amulett": {
+      "prefix": 597,
+      "suffix": 469
+    },
+    "Gürtel": {
+      "prefix": 597,
+      "suffix": 469
+    }
   },
   "skippedBaseClasses": {
     "StackableCurrency": 683,
@@ -66,7 +165,6 @@
     "SanctumSpecialRelic": 3,
     "MemoryLine": 4,
     "ItemisedSanctum": 5,
-    "Warstaff": 25,
     "TrapTool": 13,
     "LifeFlask": 9,
     "ManaFlask": 9,
@@ -546,8 +644,10 @@
       "mappedClass": "Ring"
     }
   ],
-  "notes": [
-    "Nicht zugeordnete Klassen werden in skippedBaseClasses aufgelistet.",
-    "Fehlende Grundwerte werden in basesWithoutDetails aufgelistet."
-  ]
+  "detailSources": {
+    "weapontypes.json": 230,
+    "armourtypes.json": 526,
+    "belttypes.json": 11
+  },
+  "globalFallbackMods": 25464
 }
