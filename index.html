@@ -14,7 +14,7 @@
         <div class="brandmark">EF</div>
         <div>
           <h1>ExileForge</h1>
-          <small>PoE2 Crafting Navigator · v2.0</small>
+          <small>PoE2 Crafting Navigator · v2.2</small>
         </div>
       </div>
       <button id="captureBtn" class="iconbtn" type="button" aria-label="Item erfassen">📷</button>
@@ -241,32 +241,31 @@
       </div>
 
       <div class="capture-options">
-        <label class="card quick">
-          <span class="emoji">📷</span>
-          <h3>Foto aufnehmen</h3>
-          <p>Optional für Konsole.</p>
-          <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden>
-        </label>
-
-        <label class="card quick">
-          <span class="emoji">🖼️</span>
-          <h3>Screenshot hochladen</h3>
-          <p>Bild aus der Galerie auswählen.</p>
-          <input id="galleryInput" type="file" accept="image/*" hidden>
-        </label>
-
-        <button id="manualEntryBtn" class="card quick" type="button">
-          <span class="emoji">⌨️</span>
-          <h3>Manuell eingeben</h3>
-          <p>Alle Funktionen bleiben ohne Kamera nutzbar.</p>
-        </button>
-
-        <div id="imageStatus" class="status">Noch kein Bild ausgewählt.</div>
+        <div id="captureChoices" class="grid">
+          <label class="card quick"><span class="emoji">📷</span><h3>Foto aufnehmen</h3><p>Item möglichst gerade und vollständig fotografieren.</p><input id="cameraInput" type="file" accept="image/*" capture="environment" hidden></label>
+          <label class="card quick"><span class="emoji">🖼️</span><h3>Screenshot hochladen</h3><p>Bild aus der Galerie auswählen.</p><input id="galleryInput" type="file" accept="image/*" hidden></label>
+          <button id="manualEntryBtn" class="card quick" type="button"><span class="emoji">⌨️</span><h3>Manuell eingeben</h3><p>Alle Funktionen bleiben ohne Kamera nutzbar.</p></button>
+        </div>
+        <div id="scanPanel" class="scan-panel" hidden>
+          <img id="imagePreview" class="image-preview" alt="Vorschau des ausgewählten Items">
+          <div id="imageStatus" class="status">Bild wird vorbereitet …</div>
+          <div class="progress" aria-label="OCR-Fortschritt"><div id="ocrProgressBar" class="progress-bar"></div></div>
+          <div id="scanResult" class="scan-result" hidden>
+            <h3>Erkanntes Item prüfen</h3>
+            <div class="field"><label for="recognizedClass">Gegenstandsklasse</label><select id="recognizedClass"></select></div>
+            <div class="field"><label for="recognizedBase">Basis</label><select id="recognizedBase"></select></div>
+            <div class="field"><label for="recognizedItemLevel">Gegenstandsstufe</label><input id="recognizedItemLevel" type="number" min="1" max="100"></div>
+            <div id="recognizedMods" class="recognized-mods"></div>
+            <details class="ocr-details"><summary>Erkannten Rohtext anzeigen</summary><pre id="ocrRawText"></pre></details>
+            <div class="actions"><button id="scanAgainBtn" class="secondary" type="button">Anderes Bild</button><button id="applyScanBtn" class="primary" type="button">In Craft übernehmen</button></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

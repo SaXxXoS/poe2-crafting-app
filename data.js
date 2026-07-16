@@ -89,4 +89,38 @@ window.EXILEFORGE_DATA = {
     'Divine Orb','Exalted Orb','Regal Orb','Orb of Annulment',
     'Chaos Orb','Essence (Beispiel)','Omen (Beispiel)'
   ]
+
+  ,
+
+  recognition: {
+    classAliases: {
+      'Speer':['speer','spear'],
+      'Bogen':['bogen','bow'],
+      'Kampfstab':['kampfstab','quarterstaff'],
+      'Armbrust':['armbrust','crossbow'],
+      'Streitkolben':['streitkolben','mace'],
+      'Schwert':['schwert','sword'],
+      'Axt':['axt','axe'],
+      'Dolch':['dolch','dagger'],
+      'Flegel':['flegel','flail'],
+      'Helm':['helm','helmet'],
+      'Körperrüstung':['körperrüstung','korperrustung','body armour','body armor'],
+      'Handschuhe':['handschuhe','gloves'],
+      'Stiefel':['stiefel','boots'],
+      'Schild':['schild','shield'],
+      'Fokus':['fokus','focus'],
+      'Ring':['ring'],
+      'Amulett':['amulett','amulet'],
+      'Gürtel':['gürtel','gurtel','belt']
+    },
+
+    categoryByClass: {
+      'Speer':'weapon','Bogen':'weapon','Kampfstab':'weapon','Armbrust':'weapon',
+      'Streitkolben':'weapon','Schwert':'weapon','Axt':'weapon','Dolch':'weapon','Flegel':'weapon',
+      'Helm':'armour','Körperrüstung':'armour','Handschuhe':'armour','Stiefel':'armour',
+      'Schild':'armour','Fokus':'armour',
+      'Ring':'jewellery','Amulett':'jewellery','Gürtel':'jewellery'
+    }
+  }
+
 };
