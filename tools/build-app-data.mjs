@@ -96,6 +96,8 @@ const CLASS_DEFINITIONS = [
   { name: "Armbrust", category: "weapon", aliases: ["armbrust", "crossbow"], tokens: ["crossbow"] },
   { name: "Kampfstab", category: "weapon", aliases: ["kampfstab", "quarterstaff"], tokens: ["quarterstaff"] },
   { name: "Kriegsstab", category: "weapon", aliases: ["kriegsstab", "warstaff"], tokens: ["warstaff"] },
+  { name: "Fallenwerkzeug", category: "weapon", aliases: ["fallenwerkzeug", "trap tool"], tokens: ["trap tool", "traptool"] },
+  { name: "Angelrute", category: "weapon", aliases: ["angelrute", "fishing rod"], tokens: ["fishing rod", "fishingrod"] },
   { name: "Zauberstab", category: "weapon", aliases: ["zauberstab", "wand"], tokens: ["wand"] },
   { name: "Zepter", category: "weapon", aliases: ["zepter", "sceptre", "scepter"], tokens: ["sceptre", "scepter"] },
   { name: "Stab", category: "weapon", aliases: ["stab", "staff"], tokens: ["staff"] },
@@ -227,6 +229,169 @@ function chooseDetails(base) {
   return null;
 }
 
+
+function flattenFields(value, prefix = "", output = []) {
+  if (value === null || value === undefined) return output;
+
+  if (Array.isArray(value)) {
+    value.forEach((entry, index) => flattenFields(entry, `${prefix}[${index}]`, output));
+    return output;
+  }
+
+  if (typeof value === "object") {
+    for (const [key, nested] of Object.entries(value)) {
+      const pathName = prefix ? `${prefix}.${key}` : key;
+      flattenFields(nested, pathName, output);
+    }
+    return output;
+  }
+
+  output.push({ key: prefix, value });
+  return output;
+}
+
+function recursiveNumericByPatterns(object, includePatterns, excludePatterns = []) {
+  for (const entry of flattenFields(object)) {
+    const normalizedKey = normalize(entry.key);
+
+    if (!includePatterns.some(pattern => normalizedKey.includes(pattern))) continue;
+    if (excludePatterns.some(pattern => normalizedKey.includes(pattern))) continue;
+
+    const number = Number(entry.value);
+    if (Number.isFinite(number)) return number;
+  }
+
+  return null;
+}
+
+const STAT_PHRASES = [
+  [/^local weapon implicit hidden % base damage is lightning$/i, "Der Grundschaden dieser Waffe ist Blitzschaden"],
+  [/^local weapon uses both hands$/i, "Wird mit beiden Händen geführt"],
+  [/^local weapon range \+%$/i, "Erhöhte Waffenreichweite"],
+  [/^local increased attack speed %$/i, "Erhöhte Angriffsgeschwindigkeit"],
+  [/^local critical strike chance \+%$/i, "Erhöhte kritische Trefferchance"],
+  [/^local physical damage \+%$/i, "Erhöhter physischer Schaden"],
+  [/^local minimum added physical damage$/i, "Minimum an zusätzlichem physischem Schaden"],
+  [/^local maximum added physical damage$/i, "Maximum an zusätzlichem physischem Schaden"],
+  [/^attack minimum added fire damage$/i, "Minimum an zusätzlichem Feuerschaden bei Angriffen"],
+  [/^attack maximum added fire damage$/i, "Maximum an zusätzlichem Feuerschaden bei Angriffen"],
+  [/^attack minimum added cold damage$/i, "Minimum an zusätzlichem Kälteschaden bei Angriffen"],
+  [/^attack maximum added cold damage$/i, "Maximum an zusätzlichem Kälteschaden bei Angriffen"],
+  [/^attack minimum added lightning damage$/i, "Minimum an zusätzlichem Blitzschaden bei Angriffen"],
+  [/^attack maximum added lightning damage$/i, "Maximum an zusätzlichem Blitzschaden bei Angriffen"],
+  [/^base maximum life$/i, "Maximales Leben"],
+  [/^base maximum mana$/i, "Maximales Mana"],
+  [/^base fire damage resistance %$/i, "Feuerwiderstand"],
+  [/^base cold damage resistance %$/i, "Kältewiderstand"],
+  [/^base lightning damage resistance %$/i, "Blitzwiderstand"],
+  [/^base chaos damage resistance %$/i, "Chaoswiderstand"]
+];
+
+const BAD_MOD_TOKENS = [
+  "allies in presence",
+  "ally in presence",
+  "minion",
+  "monster",
+  "flask",
+  "strongbox",
+  "map ",
+  "sanctum",
+  "ultimatum",
+  "heist",
+  "aura effect on allies",
+  "enemy",
+  "enemies",
+  "skill gem",
+  "support gem",
+  "jewel radius",
+  "abyss",
+  "charm ",
+  "presence attack"
+];
+
+const ITEM_STAT_TOKENS = [
+  "local ",
+  "attack minimum added",
+  "attack maximum added",
+  "damage +%",
+  "attack speed",
+  "critical",
+  "accuracy",
+  "resistance",
+  "maximum life",
+  "maximum mana",
+  "strength",
+  "dexterity",
+  "intelligence",
+  "armour",
+  "evasion",
+  "energy shield",
+  "stun",
+  "block"
+];
+
+function humanizeStatId(statId) {
+  const normalized = normalize(statId);
+
+  for (const [pattern, replacement] of STAT_PHRASES) {
+    if (pattern.test(normalized)) return replacement;
+  }
+
+  const replacements = [
+    ["local", ""],
+    ["weapon", "Waffe"],
+    ["attack", "Angriff"],
+    ["minimum", "Minimum"],
+    ["maximum", "Maximum"],
+    ["added", "zusätzlicher"],
+    ["physical", "physischer"],
+    ["fire", "Feuer"],
+    ["cold", "Kälte"],
+    ["lightning", "Blitz"],
+    ["chaos", "Chaos"],
+    ["damage", "Schaden"],
+    ["critical strike chance", "kritische Trefferchance"],
+    ["attack speed", "Angriffsgeschwindigkeit"],
+    ["accuracy rating", "Trefferwert"],
+    ["resistance", "Widerstand"],
+    ["maximum life", "maximales Leben"],
+    ["maximum mana", "maximales Mana"]
+  ];
+
+  let text = normalized;
+  for (const [from, to] of replacements) {
+    text = text.replaceAll(from, to);
+  }
+
+  text = text
+    .replace(/\s+/g, " ")
+    .replace(/\+\s*%/g, "")
+    .trim();
+
+  if (!text) return "Unbekannte Eigenschaft";
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+function isBadMod(mod) {
+  const searchable = normalize([
+    mod.Id,
+    mod.Name,
+    ...statParts(mod).map(part => part.id)
+  ].join(" "));
+
+  return BAD_MOD_TOKENS.some(token => searchable.includes(token));
+}
+
+function looksLikeItemMod(mod) {
+  const searchable = normalize([
+    mod.Id,
+    mod.Name,
+    ...statParts(mod).map(part => part.id)
+  ].join(" "));
+
+  return ITEM_STAT_TOKENS.some(token => searchable.includes(token));
+}
+
 function formatRange(min, max) {
   if (min === null && max === null) return "–";
   if (min === null) return String(max);
@@ -270,9 +435,9 @@ function findNumericByPatterns(object, includePatterns, excludePatterns = []) {
 function requirementsText(base, details) {
   const combined = { ...base, ...(details ?? {}) };
 
-  const strength = findNumericByPatterns(combined, ["strength requirement", "required strength", "req str"]);
-  const dexterity = findNumericByPatterns(combined, ["dexterity requirement", "required dexterity", "req dex"]);
-  const intelligence = findNumericByPatterns(combined, ["intelligence requirement", "required intelligence", "req int"]);
+  const strength = recursiveNumericByPatterns(combined, ["strength requirement", "required strength", "req str"]);
+  const dexterity = recursiveNumericByPatterns(combined, ["dexterity requirement", "required dexterity", "req dex"]);
+  const intelligence = recursiveNumericByPatterns(combined, ["intelligence requirement", "required intelligence", "req int"]);
 
   const parts = [];
   if (strength > 0) parts.push(`${strength} Str`);
@@ -285,27 +450,27 @@ function requirementsText(base, details) {
 function baseStats(base, details) {
   const combined = { ...base, ...(details ?? {}) };
 
-  const physicalMin = findNumericByPatterns(
+  const physicalMin = recursiveNumericByPatterns(
     combined,
-    ["physical damage min", "damage min", "min damage"],
+    ["physical damage min", "damage min", "min damage", "damage minimum"],
     ["elemental", "fire", "cold", "lightning", "chaos"]
   );
 
-  const physicalMax = findNumericByPatterns(
+  const physicalMax = recursiveNumericByPatterns(
     combined,
-    ["physical damage max", "damage max", "max damage"],
+    ["physical damage max", "damage max", "max damage", "damage maximum"],
     ["elemental", "fire", "cold", "lightning", "chaos"]
   );
 
-  const directAps = findNumericByPatterns(combined, ["attacks per second", "attack rate", "aps"]);
-  const attackTime = findNumericByPatterns(combined, ["attack time"], ["cast"]);
+  const directAps = recursiveNumericByPatterns(combined, ["attacks per second", "attack rate", "aps"]);
+  const attackTime = recursiveNumericByPatterns(combined, ["attack time", "base attack time", "weapon speed"], ["cast", "animation"]);
 
   let aps = directAps;
   if (aps === null && attackTime) {
     aps = attackTime > 20 ? 1000 / attackTime : 1 / attackTime;
   }
 
-  const criticalChance = findNumericByPatterns(combined, ["critical chance", "crit chance"]);
+  const criticalChance = recursiveNumericByPatterns(combined, ["critical chance", "crit chance", "critical"], ["multiplier", "bonus"]);
 
   return {
     requirements: requirementsText(base, details),
@@ -318,11 +483,9 @@ function baseStats(base, details) {
 function statLabel(statId) {
   const row = germanStatById.get(statId) ?? englishStatById.get(statId);
 
-  return firstValue(
-    row,
-    ["Text", "Name", "Id"],
-    statId.replaceAll("_", " ")
-  );
+  const raw = firstValue(row, ["Text", "Name"], "");
+  if (raw && !raw.includes("_")) return raw;
+  return humanizeStatId(statId);
 }
 
 function statParts(mod) {
@@ -355,9 +518,11 @@ function readableMod(mod) {
   if (parts.length === 1) {
     name = parts[0].label;
   } else if (parts.length > 1) {
-    name = parts.map(part => part.label).join(" / ");
+    const labels = unique(parts.map(part => part.label));
+    name = labels.join(" / ");
   } else {
-    name = localized.Name ?? mod.Name ?? mod.Id;
+    const rawName = localized.Name ?? mod.Name ?? mod.Id;
+    name = rawName.includes("_") ? humanizeStatId(rawName) : rawName;
   }
 
   return {
@@ -391,7 +556,9 @@ const report = {
   skippedBaseClasses: {},
   basesWithoutDetails: [],
   detailSources: {},
-  globalFallbackMods: 0
+  globalFallbackMods: 0,
+  filteredBadMods: 0,
+  builderVersion: 4
 };
 
 const classOptions = {
@@ -414,7 +581,13 @@ for (const row of baseEnglish) {
     continue;
   }
 
-  if (!row.Name || row.SiteVisibility === 0) continue;
+  if (!row.Name) continue;
+  const baseSearchable = normalize(`${row.Id} ${row.Name}`);
+  if (
+    baseSearchable.includes("test") ||
+    baseSearchable.includes("dummy") ||
+    baseSearchable.includes("unused")
+  ) continue;
 
   classIdsByDefinition.get(definition.name).add(classId);
 
@@ -548,7 +721,12 @@ function appliesToClass(mod, definition) {
    * Ausrüstungsaffix behandelt, statt vollständig zu verschwinden.
    */
   const domain = Number(mod.Domain ?? mod.ModDomain ?? -1);
-  if (domain === 1 && modTags.size === 0 && restrictionRefs(mod).length === 0) {
+  if (
+    domain === 1 &&
+    modTags.size === 0 &&
+    restrictionRefs(mod).length === 0 &&
+    looksLikeItemMod(mod)
+  ) {
     report.globalFallbackMods += 1;
     return true;
   }
@@ -565,6 +743,10 @@ for (const mod of modsEnglish) {
   if (!type) continue;
   if (Number(mod.Level ?? 0) < 1) continue;
   if (mod.IsEssenceOnlyModifier === true) continue;
+  if (isBadMod(mod)) {
+    report.filteredBadMods += 1;
+    continue;
+  }
 
   const readable = readableMod(mod);
   const familyIds = asArray(mod.Families).map(refId).filter(Boolean);
@@ -652,6 +834,95 @@ fs.writeFileSync(
 
 fs.mkdirSync(path.dirname(reportFile), { recursive: true });
 fs.writeFileSync(reportFile, JSON.stringify(report, null, 2) + "\n", "utf8");
+
+
+const STYLE_PATCH_MARKER = "/* EXILEFORGE_GENERATED_DATA_UI_FIX_V4 */";
+const styleFile = path.join(root, "style.css");
+const stylePatch = `
+${STYLE_PATCH_MARKER}
+.sheet-results,
+.result,
+.result > div,
+.implicit,
+.implicit > div {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.sheet-results {
+  overflow-x: hidden;
+}
+
+.result {
+  align-items: flex-start;
+}
+
+.result > div {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.result b,
+.result small,
+.implicit b,
+.implicit small,
+.affix-select b,
+.affix-select small {
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.result b,
+.implicit b {
+  line-height: 1.35;
+}
+
+.result .add,
+.add {
+  flex: 0 0 auto;
+  max-width: 96px;
+}
+
+.implicit .lock {
+  flex: 0 0 27px;
+}
+
+.base-stat b {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  .result {
+    gap: 12px;
+    padding-right: 0;
+  }
+
+  .result b {
+    font-size: 12px;
+  }
+
+  .result small {
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .add {
+    padding: 9px 10px;
+  }
+}
+`;
+
+if (fs.existsSync(styleFile)) {
+  const currentStyle = fs.readFileSync(styleFile, "utf8");
+  if (!currentStyle.includes(STYLE_PATCH_MARKER)) {
+    fs.writeFileSync(styleFile, `${currentStyle.trim()}\n\n${stylePatch}\n`, "utf8");
+    console.log("Mobiler Darstellungs-Fix an style.css angehängt.");
+  }
+}
 
 console.log(`data.js erzeugt: ${report.importedBases} Basen.`);
 console.log(`Affix-Zuordnungen: ${report.importedModAssignments}.`);
