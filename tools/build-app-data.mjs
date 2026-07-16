@@ -510,16 +510,126 @@ function statParts(mod) {
   return parts;
 }
 
+
+function semanticAffixText(parts) {
+  const byId = new Map(parts.map(part => [normalize(part.id), part]));
+
+  function get(...ids) {
+    for (const id of ids) {
+      const part = byId.get(normalize(id));
+      if (part) return part;
+    }
+    return null;
+  }
+
+  function damagePair(element, germanElement) {
+    const min = get(
+      `attack minimum added ${element} damage`,
+      `local minimum added ${element} damage`
+    );
+    const max = get(
+      `attack maximum added ${element} damage`,
+      `local maximum added ${element} damage`
+    );
+
+    if (min && max) {
+      return {
+        name: `Fügt ${germanElement}schaden bei Angriffen hinzu`,
+        range: `${min.value} bis ${max.value}`
+      };
+    }
+
+    return null;
+  }
+
+  for (const [element, germanElement] of [
+    ["physical", "physischen "],
+    ["fire", "Feuer"],
+    ["cold", "Kälte"],
+    ["lightning", "Blitz"],
+    ["chaos", "Chaos"]
+  ]) {
+    const result = damagePair(element, germanElement);
+    if (result) return result;
+  }
+
+  const increasedPhysical = get("local physical damage +%");
+  if (increasedPhysical) {
+    return {
+      name: "Erhöhter physischer Schaden",
+      range: `${increasedPhysical.value} %`
+    };
+  }
+
+  const attackSpeed = get("local increased attack speed %");
+  if (attackSpeed) {
+    return {
+      name: "Erhöhte Angriffsgeschwindigkeit",
+      range: `${attackSpeed.value} %`
+    };
+  }
+
+  const critChance = get(
+    "local critical strike chance +%",
+    "local critical chance +%"
+  );
+  if (critChance) {
+    return {
+      name: "Erhöhte kritische Trefferchance",
+      range: `${critChance.value} %`
+    };
+  }
+
+  const accuracy = get("local accuracy rating", "accuracy rating");
+  if (accuracy) {
+    return {
+      name: "Trefferwert",
+      range: accuracy.value
+    };
+  }
+
+  for (const [id, name] of [
+    ["base fire damage resistance %", "Feuerwiderstand"],
+    ["base cold damage resistance %", "Kältewiderstand"],
+    ["base lightning damage resistance %", "Blitzwiderstand"],
+    ["base chaos damage resistance %", "Chaoswiderstand"],
+    ["base maximum life", "Maximales Leben"],
+    ["base maximum mana", "Maximales Mana"],
+    ["additional strength", "Stärke"],
+    ["additional dexterity", "Geschicklichkeit"],
+    ["additional intelligence", "Intelligenz"]
+  ]) {
+    const part = get(id);
+    if (part) {
+      return {
+        name,
+        range: part.value
+      };
+    }
+  }
+
+  return null;
+}
+
 function readableMod(mod) {
   const localized = germanModById.get(mod.Id) ?? mod;
   const parts = statParts(mod);
+  const semantic = semanticAffixText(parts);
+
+  if (semantic) {
+    return {
+      name: semantic.name,
+      range: semantic.range,
+      parts
+    };
+  }
 
   let name;
   if (parts.length === 1) {
     name = parts[0].label;
   } else if (parts.length > 1) {
     const labels = unique(parts.map(part => part.label));
-    name = labels.join(" / ");
+    name = labels.join(" und ");
   } else {
     const rawName = localized.Name ?? mod.Name ?? mod.Id;
     name = rawName.includes("_") ? humanizeStatId(rawName) : rawName;
@@ -558,7 +668,9 @@ const report = {
   detailSources: {},
   globalFallbackMods: 0,
   filteredBadMods: 0,
-  builderVersion: 4
+  strictClassMatching: true,
+  globalFallbackEnabled: false,
+  builderVersion: 5
 };
 
 const classOptions = {
@@ -696,13 +808,19 @@ function restrictionMatches(mod, definition) {
 function genericTagMatches(tag, definition) {
   const normalizedTag = normalize(tag);
 
-  if (definition.category === "weapon" && normalizedTag.includes("weapon")) return true;
-  if (definition.category === "armour" && (normalizedTag.includes("armour") || normalizedTag.includes("armor"))) return true;
-  if (definition.category === "jewellery" && (normalizedTag.includes("jewel") || normalizedTag.includes("ring") || normalizedTag.includes("amulet") || normalizedTag.includes("belt"))) return true;
-
-  return definition.tokens.some(token =>
-    normalizedTag.includes(normalize(token))
-  );
+  /*
+   * Nur konkrete Klassenbegriffe zählen.
+   * Allgemeine Tags wie "weapon" oder "armour" reichen nicht aus,
+   * da sie sonst Mods auf unpassende Klassen verteilen.
+   */
+  return definition.tokens.some(token => {
+    const normalizedToken = normalize(token);
+    return (
+      normalizedTag === normalizedToken ||
+      normalizedTag.includes(`${normalizedToken} `) ||
+      normalizedTag.includes(` ${normalizedToken}`)
+    );
+  });
 }
 
 function appliesToClass(mod, definition) {
@@ -716,21 +834,11 @@ function appliesToClass(mod, definition) {
   }
 
   /*
-   * Viele PoE2-Itemmods haben keine exportierten Spawnweights.
-   * Item-Domain (1) ohne Tags/Restriktionen wird deshalb als globales
-   * Ausrüstungsaffix behandelt, statt vollständig zu verschwinden.
+   * Kein globaler Fallback:
+   * Ein Mod wird nur übernommen, wenn Tags oder Klassenrestriktionen
+   * tatsächlich zur Ausrüstungsklasse passen. Das verhindert z. B.
+   * Ausweichwert-Mods auf Speeren.
    */
-  const domain = Number(mod.Domain ?? mod.ModDomain ?? -1);
-  if (
-    domain === 1 &&
-    modTags.size === 0 &&
-    restrictionRefs(mod).length === 0 &&
-    looksLikeItemMod(mod)
-  ) {
-    report.globalFallbackMods += 1;
-    return true;
-  }
-
   return false;
 }
 
@@ -754,6 +862,24 @@ for (const mod of modsEnglish) {
 
   for (const definition of CLASS_DEFINITIONS) {
     if (!appliesToClass(mod, definition)) continue;
+
+    const modSearchable = normalize([
+      mod.Id,
+      mod.Name,
+      ...statParts(mod).map(part => part.id)
+    ].join(" "));
+
+    if (
+      definition.category === "weapon" &&
+      (
+        modSearchable.includes("evasion rating") ||
+        modSearchable.includes("armour +") ||
+        modSearchable.includes("energy shield") ||
+        modSearchable.includes("base evasion")
+      )
+    ) {
+      continue;
+    }
 
     mods[definition.name][type].push({
       id: slug(mod.Id),
