@@ -14,7 +14,7 @@
         <div class="brandmark">EF</div>
         <div>
           <h1>ExileForge</h1>
-          <small>PoE2 Crafting Navigator · v2.2</small>
+          <small>PoE2 Crafting Navigator · v2.3</small>
         </div>
       </div>
       <button id="captureBtn" class="iconbtn" type="button" aria-label="Item erfassen">📷</button>
@@ -256,6 +256,9 @@
             <div class="field"><label for="recognizedBase">Basis</label><select id="recognizedBase"></select></div>
             <div class="field"><label for="recognizedItemLevel">Gegenstandsstufe</label><input id="recognizedItemLevel" type="number" min="1" max="100"></div>
             <div id="recognizedMods" class="recognized-mods"></div>
+            <div class="status">
+              Markierte Affixe werden übernommen. Nicht erkannte oder falsch erkannte Affixe kannst du später manuell korrigieren.
+            </div>
             <details class="ocr-details"><summary>Erkannten Rohtext anzeigen</summary><pre id="ocrRawText"></pre></details>
             <div class="actions"><button id="scanAgainBtn" class="secondary" type="button">Anderes Bild</button><button id="applyScanBtn" class="primary" type="button">In Craft übernehmen</button></div>
           </div>
@@ -265,7 +268,7 @@
   </div>
 
   <script src="data.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="app.js"></script>
 </body>
 </html>
