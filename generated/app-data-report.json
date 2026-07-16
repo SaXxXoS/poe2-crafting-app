@@ -1,0 +1,553 @@
+{
+  "generatedAt": "2026-07-16T19:26:40.774Z",
+  "importedBases": 819,
+  "importedMods": 332,
+  "classes": {
+    "Schwert": 27,
+    "Ring": 14,
+    "Gürtel": 12,
+    "Schild": 85,
+    "Helm": 108,
+    "Körperrüstung": 145,
+    "Stiefel": 83,
+    "Handschuhe": 83,
+    "Axt": 26,
+    "Streitkolben": 50,
+    "Speer": 13,
+    "Klaue": 13,
+    "Dolch": 13,
+    "Flegel": 13,
+    "Zauberstab": 13,
+    "Stab": 13,
+    "Bogen": 25,
+    "Armbrust": 25,
+    "Zepter": 15,
+    "Fokus": 22,
+    "Köcher": 11,
+    "Amulett": 10
+  },
+  "skippedBaseClasses": {
+    "StackableCurrency": 683,
+    "DelveSocketableCurrency": 8,
+    "DelveStackableSocketableCurrency": 8,
+    "Microtransaction": 13,
+    "HiddenItem": 72,
+    "GiftBox": 11,
+    "FishingRod": 1,
+    "QuestItem": 275,
+    "IncursionItem": 2,
+    "Active Skill Gem": 335,
+    "Meta Skill Gem": 25,
+    "Support Skill Gem": 219,
+    "Jewel": 9,
+    "SoulCore": 25,
+    "Map": 16,
+    "MapFragment": 143,
+    "Breachstone": 26,
+    "VaultKey": 12,
+    "Currency": 1,
+    "Incubator": 30,
+    "IncubatorStackable": 30,
+    "PantheonSoul": 20,
+    "UniqueFragment": 22,
+    "AtlasUpgradeItem": 61,
+    "HeistContract": 15,
+    "HeistBlueprint": 9,
+    "HeistEquipmentWeapon": 13,
+    "HeistEquipmentTool": 37,
+    "HeistEquipmentUtility": 5,
+    "HeistEquipmentReward": 5,
+    "HeistObjective": 47,
+    "MiscMapItem": 21,
+    "ExpeditionLogbook": 1,
+    "ArchnemesisMod": 1,
+    "SentinelDrone": 26,
+    "Relic": 7,
+    "SanctumSpecialRelic": 3,
+    "MemoryLine": 4,
+    "ItemisedSanctum": 5,
+    "Warstaff": 25,
+    "TrapTool": 13,
+    "LifeFlask": 9,
+    "ManaFlask": 9,
+    "UtilityFlask": 12,
+    "InstanceLocalItem": 8,
+    "UncutSkillGem": 2,
+    "UncutSupportGem": 1,
+    "ConventionTreasure": 31,
+    "SkillGemToken": 1,
+    "PinnacleKey": 3,
+    "UltimatumKey": 2,
+    "UncutReservationGem": 1,
+    "TowerAugmentation": 6,
+    "Omen": 17
+  },
+  "basesWithoutDetails": [
+    {
+      "id": "Metadata/Items/Rings/RingDemigods1",
+      "name": "Goldenes Band",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Belts/BeltDemigods1",
+      "name": "Goldener Gürtel",
+      "classId": "Belt",
+      "mappedClass": "Gürtel"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand1",
+      "name": "Verkümmerter Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand2",
+      "name": "Knochenzauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand3",
+      "name": "Angepasster Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand4",
+      "name": "Auslaugender Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand5",
+      "name": "Explosiver Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand6",
+      "name": "Galvanischer Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand7",
+      "name": "Ätzender Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand8",
+      "name": "Opferzauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand9",
+      "name": "Frostzauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand10",
+      "name": "Folterzauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand11",
+      "name": "Kritischer Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand12",
+      "name": "Uralter Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand13",
+      "name": "Duell-Zauberstab",
+      "classId": "Wand",
+      "mappedClass": "Zauberstab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff1",
+      "name": "Aschestab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff2",
+      "name": "Eisiger Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff3",
+      "name": "Voltaischer Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff4",
+      "name": "Sprigganstab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff5",
+      "name": "Pyrophyt-Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff6",
+      "name": "Klangstab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff7",
+      "name": "Entzweireißender Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff8",
+      "name": "Sensenstab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff9",
+      "name": "Vereister Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff10",
+      "name": "Brüllender Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff11",
+      "name": "Paralysierender Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff12",
+      "name": "Kleriker-Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff13",
+      "name": "Dunkler Stab",
+      "classId": "Staff",
+      "mappedClass": "Stab"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre1",
+      "name": "Rasselndes Zepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre2",
+      "name": "Stoisches Zepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre3",
+      "name": "Wolfszepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre4",
+      "name": "Omenzepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre5",
+      "name": "Ockerzepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6a",
+      "name": "Schreinzepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6b",
+      "name": "Schreinzepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6c",
+      "name": "Schreinzepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre7",
+      "name": "Verschlingendes Zepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre8",
+      "name": "Umklammerndes Zepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre9",
+      "name": "Andachtszepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre10",
+      "name": "Zornzepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre11",
+      "name": "Aromatisches Zepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre12",
+      "name": "Frommes Zepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre13",
+      "name": "Geheiligtes Zepter",
+      "classId": "Sceptre",
+      "mappedClass": "Zepter"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver1",
+      "name": "Breitkopfköcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver2",
+      "name": "Feuerköcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver3",
+      "name": "Sakraler Köcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver4",
+      "name": "Zweipunkt-Köcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver5",
+      "name": "Stumpfer Köcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver6",
+      "name": "Giftköcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver7",
+      "name": "Zackenköcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver8",
+      "name": "Präparierter Köcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver9",
+      "name": "Durchdringender Köcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver10",
+      "name": "Flugköcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Quivers/FourQuiver11",
+      "name": "Fleischköcher",
+      "classId": "Quiver",
+      "mappedClass": "Köcher"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet1",
+      "name": "Blutrotes Amulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet2",
+      "name": "Azurblaues Amulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet3",
+      "name": "Bernsteinamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet4",
+      "name": "Jadeamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet5",
+      "name": "Lapisamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet6",
+      "name": "Mondamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet7",
+      "name": "Blutsteinamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet8",
+      "name": "Sternamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet9",
+      "name": "Sonnenamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet10",
+      "name": "Goldamulett",
+      "classId": "Amulet",
+      "mappedClass": "Amulett"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing1",
+      "name": "Eisenring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing2",
+      "name": "Lazuliring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing3",
+      "name": "Rubinring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing4",
+      "name": "Saphirring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing5",
+      "name": "Topasring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing6",
+      "name": "Amethystring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing7",
+      "name": "Smaragdring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing8",
+      "name": "Perlenring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing9",
+      "name": "Spektralring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing10",
+      "name": "Goldring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing11",
+      "name": "Sockelring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingBase",
+      "name": "Ring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingBreach",
+      "name": "Riss-Ring",
+      "classId": "Ring",
+      "mappedClass": "Ring"
+    }
+  ],
+  "notes": [
+    "Nicht zugeordnete Klassen werden in skippedBaseClasses aufgelistet.",
+    "Fehlende Grundwerte werden in basesWithoutDetails aufgelistet."
+  ]
+}
