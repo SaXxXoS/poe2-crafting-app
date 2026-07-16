@@ -53,7 +53,7 @@
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.9</small></div></div>
+    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.9.1</small></div></div>
     <button class="iconbtn" onclick="openCapture()" aria-label="Item erfassen">📷</button>
   </header>
 
@@ -72,7 +72,7 @@
       <div class="section-title"><h2>Projektstatus</h2><span>lokal gespeichert</span></div>
       <div class="card project"><div><strong id="homeProject">Noch kein Ziel gespeichert</strong><small id="homeProjectMeta">Erstelle zuerst ein Crafting-Projekt.</small></div><button class="secondary" onclick="switchView('projects')">Öffnen</button></div>
       <div class="section-title"><h2>Datenstatus</h2><span>Grundlage</span></div>
-      <div class="status warn">Diese v0.9 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
+      <div class="status warn">Diese v0.9.1 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
     </section>
 
     <section id="craft" class="view">
@@ -232,6 +232,20 @@ const demoMods={
  ]
 };
 const priceItems=['Divine Orb','Exalted Orb','Regal Orb','Orb of Annulment','Chaos Orb','Essence (Beispiel)','Omen (Beispiel)'];
+function openSheetElement(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.add('open');
+  document.body.classList.add('sheet-open');
+}
+function closeSheetElement(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.remove('open');
+  if(!document.querySelector('.sheet.open')){
+    document.body.classList.remove('sheet-open');
+  }
+}
 function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'auto'});if(id==='projects')renderProjects()}
 function renderCurrentState(){
   const rarity=document.getElementById('rarity')?.value||'normal';
