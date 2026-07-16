@@ -9,7 +9,7 @@
     suffix:[null,null,null],
     activeType:null,
     activeIndex:null,
-    scan:{file:null,objectUrl:null,rawText:'',recognizedMods:[]}
+    scan:{file:null,objectUrl:null,rawText:'',recognizedMods:[],selectedModIds:new Set()}
   };
 
   function switchView(id){
@@ -471,22 +471,378 @@
 
   function handleImage(input){
     const file = input.files?.[0];
-    $('imageStatus').textContent = file
-      ? `Bild ausgewählt: ${file.name}. Automatische Erkennung folgt später.`
-      : 'Noch kein Bild ausgewählt.';
+    if(file) startImageScan(file);
   }
 
   function normalizeText(value){return String(value||'').toLocaleLowerCase('de-DE').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9äöüß+%–-]+/g,' ').replace(/\s+/g,' ').trim();}
-  function resetScanView(){if(state.scan.objectUrl)URL.revokeObjectURL(state.scan.objectUrl);state.scan={file:null,objectUrl:null,rawText:'',recognizedMods:[]};$('scanPanel').hidden=true;$('scanResult').hidden=true;$('captureChoices').hidden=false;$('ocrProgressBar').style.width='0%';$('ocrRawText').textContent='';$('recognizedMods').innerHTML='';populateRecognizedClasses($('itemClass').value||'Speer');populateRecognizedBases($('itemClass').value||'Speer');$('cameraInput').value='';$('galleryInput').value='';}
+  function resetScanView(){if(state.scan.objectUrl)URL.revokeObjectURL(state.scan.objectUrl);state.scan={file:null,objectUrl:null,rawText:'',recognizedMods:[],selectedModIds:new Set()};$('scanPanel').hidden=true;$('scanResult').hidden=true;$('captureChoices').hidden=false;$('ocrProgressBar').style.width='0%';$('ocrRawText').textContent='';$('recognizedMods').innerHTML='';populateRecognizedClasses($('itemClass').value||'Speer');populateRecognizedBases($('itemClass').value||'Speer');$('cameraInput').value='';$('galleryInput').value='';}
   function populateRecognizedClasses(selectedClass=''){const classes=Object.values(DATA.classOptions).flat();$('recognizedClass').innerHTML=classes.map(itemClass=>`<option value="${itemClass}">${itemClass}</option>`).join('');if(selectedClass&&classes.includes(selectedClass))$('recognizedClass').value=selectedClass;}
   function detectItemClass(rawText){const normalized=normalizeText(rawText),aliases=DATA.recognition?.classAliases||{};const scored=Object.entries(aliases).map(([itemClass,classAliases])=>{let score=0;for(const alias of classAliases){const needle=normalizeText(alias);if(needle&&normalized.includes(needle))score+=needle.length+10;}for(const base of (DATA.baseItems[itemClass]||[])){const baseName=normalizeText(base.name);if(baseName&&normalized.includes(baseName))score+=baseName.length+50;}return{itemClass,score};}).sort((a,b)=>b.score-a.score);return scored[0]?.score>0?scored[0].itemClass:null;}
   function populateRecognizedBases(itemClass,selectedId=''){const bases=DATA.baseItems[itemClass]||[];$('recognizedBase').innerHTML=bases.length?bases.map(base=>`<option value="${base.id}">${base.name}</option>`).join(''):'<option value="">Keine Basisdaten importiert</option>';if(selectedId&&bases.some(base=>base.id===selectedId))$('recognizedBase').value=selectedId;}
   function findRecognizedBase(rawText,itemClass){const normalized=normalizeText(rawText);return (DATA.baseItems[itemClass]||[]).slice().sort((a,b)=>b.name.length-a.name.length).find(base=>normalized.includes(normalizeText(base.name)))||null;}
   function findRecognizedItemLevel(rawText){for(const pattern of [/gegenstandsstufe\s*[:\-]?\s*(\d{1,3})/i,/item\s*level\s*[:\-]?\s*(\d{1,3})/i,/\bilvl\s*[:\-]?\s*(\d{1,3})/i]){const match=rawText.match(pattern);if(match)return Math.min(100,Math.max(1,Number(match[1])));}return Number($('ilevel').value)||1;}
-  function findRecognizedMods(rawText,itemClass){const normalized=normalizeText(rawText),mods=DATA.mods[itemClass]||{prefix:[],suffix:[]},found=[];['prefix','suffix'].forEach(type=>(mods[type]||[]).forEach(mod=>{const candidates=[mod.name];if(mod.group==='phys_percent')candidates.push('erhöhter physischer schaden','erhohter physischer schaden');if(mod.group==='attack_speed')candidates.push('erhöhte angriffsgeschwindigkeit');if(mod.group==='crit_chance')candidates.push('erhöhte kritische trefferchance');if(mod.group==='stun_buildup')candidates.push('erhöhter betäubungsaufbau');if(mod.group==='projectile_skills')candidates.push('projektilfertigkeiten');if(mod.group==='melee_skills')candidates.push('nahkampffertigkeiten');if(candidates.some(c=>{const n=normalizeText(c);return n.length>=5&&normalized.includes(n);})&&!found.some(x=>x.mod.group===mod.group))found.push({type,mod});}));return found.slice(0,6);}
-  function renderRecognizedMods(){const host=$('recognizedMods');host.innerHTML='';if(!state.scan.recognizedMods.length){host.innerHTML='<div class="status warn">Keine normalen Affixe sicher erkannt. Du kannst das Item trotzdem übernehmen und die Affixe danach manuell auswählen.</div>';return;}state.scan.recognizedMods.forEach(({type,mod})=>{const row=document.createElement('div');row.className='recognized-mod';row.innerHTML=`<b>${mod.name}</b><small>${type==='prefix'?'Präfix':'Suffix'} · ${mod.tier} · möglicher Roll ${mod.range}</small>`;host.appendChild(row);});}
-  async function startImageScan(file){if(!file)return;if(!window.Tesseract){$('imageStatus').className='status warn';$('imageStatus').textContent='OCR-Bibliothek konnte nicht geladen werden. Prüfe die Internetverbindung.';return;}if(state.scan.objectUrl)URL.revokeObjectURL(state.scan.objectUrl);state.scan.file=file;state.scan.objectUrl=URL.createObjectURL(file);$('imagePreview').src=state.scan.objectUrl;$('captureChoices').hidden=true;$('scanPanel').hidden=false;$('scanResult').hidden=true;$('ocrProgressBar').style.width='2%';$('imageStatus').className='status';$('imageStatus').textContent='Texterkennung wird geladen …';try{const result=await Tesseract.recognize(file,'deu+eng',{logger(message){if(message.status==='recognizing text'){const percent=Math.round((message.progress||0)*100);$('ocrProgressBar').style.width=`${percent}%`;$('imageStatus').textContent=`Text wird erkannt … ${percent} %`;}else if(message.status){$('imageStatus').textContent=`OCR: ${message.status}`;}}});const rawText=result?.data?.text||'';state.scan.rawText=rawText;const detectedClass=detectItemClass(rawText)||$('itemClass').value||'Speer';const recognizedBase=findRecognizedBase(rawText,detectedClass);state.scan.recognizedMods=findRecognizedMods(rawText,detectedClass);populateRecognizedClasses(detectedClass);populateRecognizedBases(detectedClass,recognizedBase?.id||'');$('recognizedItemLevel').value=findRecognizedItemLevel(rawText);$('ocrRawText').textContent=rawText||'Kein Text erkannt.';renderRecognizedMods();$('ocrProgressBar').style.width='100%';$('imageStatus').className=rawText.trim()?'status':'status warn';$('imageStatus').textContent=rawText.trim()?'Erkennung abgeschlossen. Bitte Basis und Item-Level prüfen.':'Kein verwertbarer Text erkannt. Nimm das Bild möglichst gerade, nah und ohne Spiegelungen auf.';$('scanResult').hidden=false;}catch(error){console.error('OCR failed',error);$('imageStatus').className='status warn';$('imageStatus').textContent='Texterkennung fehlgeschlagen. Du kannst ein anderes Foto versuchen oder manuell eingeben.';$('ocrProgressBar').style.width='0%';$('scanResult').hidden=false;populateRecognizedClasses($('itemClass').value||'Speer');populateRecognizedBases($('itemClass').value||'Speer');$('recognizedItemLevel').value=Number($('ilevel').value)||1;$('ocrRawText').textContent=String(error?.message||error);state.scan.recognizedMods=[];renderRecognizedMods();}}
-  function applyScan(){const itemClass=$('recognizedClass').value,category=DATA.recognition?.categoryByClass?.[itemClass]||'weapon',baseId=$('recognizedBase').value,base=(DATA.baseItems[itemClass]||[]).find(item=>item.id===baseId);$('category').value=category;renderClassOptions();$('itemClass').value=itemClass;renderBaseOptions();if(base){$('basePicker').dataset.baseId=base.id;$('basePickerName').textContent=base.name;}$('ilevel').value=Math.min(100,Math.max(1,Number($('recognizedItemLevel').value)||1));state.prefix=[null,null,null];state.suffix=[null,null,null];state.scan.recognizedMods.forEach(({type,mod})=>{const index=state[type].findIndex(value=>!value);if(index>=0&&index<slotLimit())state[type][index]=mod;});renderBaseDetails();removeInvalidSelections();renderSlots();closeSheet('captureSheet');switchView('craft');}
+  function tokenise(value){
+    return normalizeText(value)
+      .split(' ')
+      .filter(token => token.length >= 3 && !/^\d+$/.test(token));
+  }
+
+  function similarityScore(source,target){
+    const sourceTokens = new Set(tokenise(source));
+    const targetTokens = new Set(tokenise(target));
+
+    if(!sourceTokens.size || !targetTokens.size) return 0;
+
+    let matches = 0;
+    targetTokens.forEach(token => {
+      if(sourceTokens.has(token)) matches += 1;
+      else {
+        const fuzzy = [...sourceTokens].some(sourceToken =>
+          sourceToken.startsWith(token.slice(0,Math.max(4,token.length - 2))) ||
+          token.startsWith(sourceToken.slice(0,Math.max(4,sourceToken.length - 2)))
+        );
+        if(fuzzy) matches += 0.65;
+      }
+    });
+
+    return matches / targetTokens.size;
+  }
+
+  function modAliases(mod){
+    const aliases = [mod.name];
+
+    const groupAliases = {
+      phys_percent:['erhöhter physischer schaden','erhohter physischer schaden'],
+      flat_phys:['fügt physischen schaden hinzu','fugt physischen schaden hinzu'],
+      phys_hybrid:['physischer schaden und genauigkeit'],
+      flat_cold:['fügt kälteschaden hinzu','fugt kalteschaden hinzu'],
+      flat_lightning:['fügt blitzschaden hinzu','fugt blitzschaden hinzu'],
+      attack_speed:['erhöhte angriffsgeschwindigkeit','erhohte angriffsgeschwindigkeit'],
+      crit_chance:['erhöhte kritische trefferchance','erhohte kritische trefferchance'],
+      stun_buildup:['erhöhter betäubungsaufbau','erhohter betaubungsaufbau'],
+      projectile_skills:['projektilfertigkeiten','stufen aller projektilfertigkeiten'],
+      melee_skills:['nahkampffertigkeiten','stufen aller nahkampffertigkeiten']
+    };
+
+    return aliases.concat(groupAliases[mod.group] || []);
+  }
+
+  function findRecognizedMods(rawText,itemClass){
+    const lines = String(rawText || '')
+      .split(/\r?\n/)
+      .map(line => line.trim())
+      .filter(line => line.length >= 4);
+
+    const mods = DATA.mods[itemClass] || {prefix:[],suffix:[]};
+    const found = [];
+
+    ['prefix','suffix'].forEach(type => {
+      (mods[type] || []).forEach(mod => {
+        let bestScore = 0;
+        let bestLine = '';
+
+        for(const line of lines){
+          for(const alias of modAliases(mod)){
+            const normalizedLine = normalizeText(line);
+            const normalizedAlias = normalizeText(alias);
+
+            let score = 0;
+
+            if(normalizedLine.includes(normalizedAlias) || normalizedAlias.includes(normalizedLine)){
+              score = 1;
+            } else {
+              score = similarityScore(line,alias);
+            }
+
+            if(score > bestScore){
+              bestScore = score;
+              bestLine = line;
+            }
+          }
+        }
+
+        if(bestScore >= 0.56){
+          const existing = found.find(item => item.mod.group === mod.group);
+
+          if(!existing || bestScore > existing.confidence){
+            if(existing){
+              const index = found.indexOf(existing);
+              found.splice(index,1);
+            }
+
+            found.push({
+              type,
+              mod,
+              confidence:bestScore,
+              sourceLine:bestLine
+            });
+          }
+        }
+      });
+    });
+
+    return found
+      .sort((a,b) => b.confidence - a.confidence)
+      .slice(0,6);
+  }
+
+  function renderRecognizedMods(){
+    const host = $('recognizedMods');
+    host.innerHTML = '';
+
+    if(!state.scan.recognizedMods.length){
+      host.innerHTML = `
+        <div class="status warn">
+          Keine Affixe sicher erkannt. Das kann an Bildqualität oder fehlenden Daten liegen.
+          Du kannst Basis und Item-Level trotzdem übernehmen und die Affixe danach manuell wählen.
+        </div>
+      `;
+      return;
+    }
+
+    state.scan.selectedModIds = new Set(
+      state.scan.recognizedMods
+        .filter(item => item.confidence >= 0.64)
+        .map(item => item.mod.id)
+    );
+
+    state.scan.recognizedMods.forEach(item => {
+      const {type,mod,confidence,sourceLine} = item;
+      const checked = state.scan.selectedModIds.has(mod.id);
+
+      const row = document.createElement('label');
+      row.className = 'recognized-mod';
+      row.innerHTML = `
+        <input type="checkbox" data-mod-id="${mod.id}" ${checked ? 'checked' : ''}>
+        <span>
+          <b>${mod.name}</b>
+          <small>
+            ${type === 'prefix' ? 'Präfix' : 'Suffix'} · ${mod.tier} · möglicher Roll ${mod.range}<br>
+            <span class="confidence">Erkennung ${Math.round(confidence * 100)} %</span>
+            ${sourceLine ? ` · OCR-Zeile: ${sourceLine}` : ''}
+          </small>
+        </span>
+      `;
+
+      row.querySelector('input').addEventListener('change', event => {
+        if(event.target.checked) state.scan.selectedModIds.add(mod.id);
+        else state.scan.selectedModIds.delete(mod.id);
+      });
+
+      host.appendChild(row);
+    });
+  }
+
+  function loadImageElement(file){
+    return new Promise((resolve,reject) => {
+      const url = URL.createObjectURL(file);
+      const image = new Image();
+
+      image.onload = () => {
+        URL.revokeObjectURL(url);
+        resolve(image);
+      };
+
+      image.onerror = () => {
+        URL.revokeObjectURL(url);
+        reject(new Error('Bildformat konnte nicht gelesen werden.'));
+      };
+
+      image.src = url;
+    });
+  }
+
+  async function prepareImageForOcr(file){
+    const image = await loadImageElement(file);
+    const maxWidth = 1800;
+    const scale = Math.min(1,maxWidth / image.naturalWidth);
+    const width = Math.max(1,Math.round(image.naturalWidth * scale));
+    const height = Math.max(1,Math.round(image.naturalHeight * scale));
+
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+
+    const context = canvas.getContext('2d',{willReadFrequently:true});
+    context.drawImage(image,0,0,width,height);
+
+    const imageData = context.getImageData(0,0,width,height);
+    const pixels = imageData.data;
+
+    for(let index = 0; index < pixels.length; index += 4){
+      const luminance =
+        (pixels[index] * 0.299) +
+        (pixels[index + 1] * 0.587) +
+        (pixels[index + 2] * 0.114);
+
+      const boosted = luminance > 150 ? 255 : luminance < 70 ? 0 : Math.min(255,luminance * 1.35);
+
+      pixels[index] = boosted;
+      pixels[index + 1] = boosted;
+      pixels[index + 2] = boosted;
+    }
+
+    context.putImageData(imageData,0,0);
+
+    return new Promise((resolve,reject) => {
+      canvas.toBlob(blob => {
+        if(blob) resolve(blob);
+        else reject(new Error('Bild konnte nicht für OCR vorbereitet werden.'));
+      },'image/png',0.95);
+    });
+  }
+
+  async function runOcr(imageSource,language){
+    return Tesseract.recognize(imageSource,language,{
+      logger(message){
+        if(message.status === 'recognizing text'){
+          const percent = Math.round((message.progress || 0) * 100);
+          $('ocrProgressBar').style.width = `${percent}%`;
+          $('imageStatus').textContent = `Text wird erkannt … ${percent} %`;
+        } else if(message.status){
+          $('imageStatus').textContent = `OCR: ${message.status}`;
+        }
+      }
+    });
+  }
+
+  async function startImageScan(file){
+    if(!file) return;
+
+    if(!window.Tesseract){
+      $('captureChoices').hidden = true;
+      $('scanPanel').hidden = false;
+      $('imageStatus').className = 'status warn';
+      $('imageStatus').textContent = 'OCR-Bibliothek konnte nicht geladen werden. Prüfe die Internetverbindung und lade die Seite neu.';
+      return;
+    }
+
+    if(state.scan.objectUrl) URL.revokeObjectURL(state.scan.objectUrl);
+
+    state.scan.file = file;
+    state.scan.objectUrl = URL.createObjectURL(file);
+    $('imagePreview').src = state.scan.objectUrl;
+    $('captureChoices').hidden = true;
+    $('scanPanel').hidden = false;
+    $('scanResult').hidden = true;
+    $('ocrProgressBar').style.width = '2%';
+    $('imageStatus').className = 'status';
+    $('imageStatus').textContent = 'Bild wird für die Texterkennung vorbereitet …';
+
+    try{
+      let preparedImage;
+
+      try{
+        preparedImage = await prepareImageForOcr(file);
+      } catch(imageError){
+        console.warn('Image preprocessing failed, using original file',imageError);
+        preparedImage = file;
+      }
+
+      let result;
+
+      try{
+        result = await runOcr(preparedImage,'deu+eng');
+      } catch(primaryError){
+        console.warn('German OCR failed, retrying English',primaryError);
+        $('imageStatus').textContent = 'Deutsche OCR fehlgeschlagen. Zweiter Versuch …';
+        result = await runOcr(preparedImage,'eng');
+      }
+
+      const rawText = result?.data?.text || '';
+      state.scan.rawText = rawText;
+
+      const detectedClass = detectItemClass(rawText) || $('itemClass').value || 'Speer';
+      const recognizedBase = findRecognizedBase(rawText,detectedClass);
+
+      state.scan.recognizedMods = findRecognizedMods(rawText,detectedClass);
+
+      populateRecognizedClasses(detectedClass);
+      populateRecognizedBases(detectedClass,recognizedBase?.id || '');
+
+      $('recognizedItemLevel').value = findRecognizedItemLevel(rawText);
+      $('ocrRawText').textContent = rawText || 'Kein Text erkannt.';
+
+      renderRecognizedMods();
+
+      $('ocrProgressBar').style.width = '100%';
+      $('imageStatus').className = rawText.trim() ? 'status' : 'status warn';
+      $('imageStatus').textContent = rawText.trim()
+        ? `Erkennung abgeschlossen. ${state.scan.recognizedMods.length} mögliche Affixe gefunden. Bitte Ergebnis prüfen.`
+        : 'Kein verwertbarer Text erkannt. Fotografiere das Item näher, gerade und ohne Spiegelungen.';
+
+      $('scanResult').hidden = false;
+    } catch(error){
+      console.error('OCR failed',error);
+
+      $('imageStatus').className = 'status warn';
+      $('imageStatus').textContent = `Texterkennung fehlgeschlagen: ${error?.message || 'unbekannter Fehler'}`;
+      $('ocrProgressBar').style.width = '0%';
+      $('scanResult').hidden = false;
+
+      populateRecognizedClasses($('itemClass').value || 'Speer');
+      populateRecognizedBases($('itemClass').value || 'Speer');
+
+      $('recognizedItemLevel').value = Number($('ilevel').value) || 1;
+      $('ocrRawText').textContent = String(error?.stack || error?.message || error);
+
+      state.scan.recognizedMods = [];
+      state.scan.selectedModIds = new Set();
+      renderRecognizedMods();
+    }
+  }
+
+  function applyScan(){
+    const itemClass = $('recognizedClass').value;
+    const category = DATA.recognition?.categoryByClass?.[itemClass] || 'weapon';
+    const baseId = $('recognizedBase').value;
+    const base = (DATA.baseItems[itemClass] || []).find(item => item.id === baseId);
+
+    $('category').value = category;
+    renderClassOptions();
+    $('itemClass').value = itemClass;
+    renderBaseOptions();
+
+    if(base){
+      $('basePicker').dataset.baseId = base.id;
+      $('basePickerName').textContent = base.name;
+    }
+
+    $('ilevel').value = Math.min(100,Math.max(1,Number($('recognizedItemLevel').value) || 1));
+
+    state.prefix = [null,null,null];
+    state.suffix = [null,null,null];
+
+    state.scan.recognizedMods
+      .filter(item => state.scan.selectedModIds.has(item.mod.id))
+      .forEach(({type,mod}) => {
+        const index = state[type].findIndex(value => !value);
+        if(index >= 0 && index < 3){
+          state[type][index] = mod;
+        }
+      });
+
+    const prefixCount = state.prefix.filter(Boolean).length;
+    const suffixCount = state.suffix.filter(Boolean).length;
+
+    if(prefixCount + suffixCount === 0){
+      $('rarity').value = 'normal';
+    } else if(prefixCount <= 1 && suffixCount <= 1){
+      $('rarity').value = 'magic';
+      $('targetRarity').value = 'magic';
+    } else {
+      $('rarity').value = 'rare';
+      $('targetRarity').value = 'rare';
+    }
+
+    renderBaseDetails();
+    renderCurrentState();
+    removeInvalidSelections();
+    renderSlots();
+
+    closeSheet('captureSheet');
+    switchView('craft');
+  }
   function bindEvents(){
     $('newProjectBtn').addEventListener('click', () => switchView('craft'));
     $('quickCraftBtn').addEventListener('click', () => switchView('craft'));
