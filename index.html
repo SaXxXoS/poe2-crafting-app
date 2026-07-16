@@ -1,325 +1,272 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0b0f14" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0f14">
   <title>ExileForge – PoE2 Crafting</title>
-  <style>
-    :root{
-      --bg:#0b0f14;--panel:#121821;--panel2:#18212d;--line:#2a3544;--text:#eef2f7;--muted:#98a5b5;
-      --gold:#c9a35b;--gold2:#e8c987;--green:#4ecb71;--red:#ef6b6b;--blue:#65a8ff;--shadow:0 10px 30px rgba(0,0,0,.28)
-    }
-    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    body{min-height:100vh;padding-bottom:112px;overflow-x:hidden;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;background:
-      radial-gradient(circle at top right,rgba(201,163,91,.10),transparent 32%),var(--bg)}
-    body.modal-open{overflow:hidden;touch-action:none}
-    button,input,select{font:inherit} button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
-    .app{max-width:760px;margin:0 auto}
-    .topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:14px 16px calc(12px + env(safe-area-inset-top));background:rgba(11,15,20,.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-    .brand{display:flex;gap:10px;align-items:center}.brandmark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#2a2113,#d0a85b);display:grid;place-items:center;font-weight:900;color:#111;box-shadow:var(--shadow)}
-    .brand h1{font-size:17px;margin:0}.brand small{display:block;color:var(--muted);font-size:11px;margin-top:2px}
-    .iconbtn{border:1px solid var(--line);background:var(--panel);color:var(--text);width:42px;height:42px;border-radius:13px}
-    main{padding:16px}.view{display:none}.view.active{display:block}
-    .hero{padding:20px;border:1px solid #3b3221;background:linear-gradient(160deg,#19150f,#121821 58%);border-radius:22px;box-shadow:var(--shadow);margin-bottom:16px}
-    .eyebrow{color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero h2{font-size:27px;line-height:1.12;margin:8px 0}.hero p{color:var(--muted);line-height:1.5;margin:0}
-    .cta{width:100%;margin-top:16px;padding:15px 18px;border:0;border-radius:15px;font-weight:800;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#15110a}
-    .grid{display:grid;gap:12px}.grid.two{grid-template-columns:1fr 1fr}
-    .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}
-    .card h3{font-size:15px;margin:0 0 8px}.card p{color:var(--muted);font-size:13px;line-height:1.45;margin:0}
-    .quick{min-height:120px;text-align:left}.quick .emoji{font-size:25px;display:block;margin-bottom:10px}
-    .section-title{display:flex;justify-content:space-between;align-items:center;margin:22px 2px 10px}.section-title h2{font-size:18px;margin:0}.section-title span{font-size:12px;color:var(--muted)}
-    .field{display:grid;gap:7px;margin-bottom:13px}.field label{font-size:12px;color:var(--muted);font-weight:700}.field input,.field select{width:100%;padding:14px;border-radius:14px;border:1px solid var(--line);background:#0e141c;color:var(--text);outline:none}.field input:focus,.field select:focus{border-color:var(--gold)}
-    .status{padding:12px;border-radius:14px;font-size:12px;line-height:1.45;border:1px solid var(--line);background:#101720;color:var(--muted)}
-    .status.warn{border-color:#665428;background:#1b180f;color:#dac58f}.status.good{border-color:#245b36;background:#0f1b14;color:#a9e7bb}
-    .affix-group{margin-top:15px}.affix-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}.affix-head strong{font-size:14px}.pill{padding:5px 9px;border-radius:99px;background:#0e141c;border:1px solid var(--line);font-size:11px;color:var(--muted)}
-    .affix-slot{width:100%;min-height:72px;margin-bottom:10px;padding:13px 14px;text-align:left;border-radius:16px;border:1px solid var(--line);background:var(--panel2);color:var(--text);display:flex;justify-content:space-between;gap:12px;align-items:center}
-    .affix-slot .meta{min-width:0}.affix-slot small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.affix-slot b{display:block;white-space:normal;overflow-wrap:anywhere;line-height:1.3}.affix-slot .arrow{color:var(--gold2);font-size:20px;flex:0 0 auto}
-    .affix-slot.disabled{opacity:.42}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.secondary{padding:13px;border-radius:14px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font-weight:700}.primary{padding:13px;border-radius:14px;border:0;background:var(--gold);color:#15110a;font-weight:900}
-    .bottomnav{position:fixed;bottom:0;left:0;right:0;z-index:30;background:rgba(11,15,20,.98);backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:8px 8px calc(10px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(5,1fr);transform:translateZ(0)}
-    .navbtn{background:none;border:0;color:var(--muted);padding:7px 3px;font-size:10px}.navbtn span{display:block;font-size:20px;margin-bottom:3px}.navbtn.active{color:var(--gold2)}
-    .sheet{position:fixed;inset:0;z-index:60;background:#10161f;display:none;overscroll-behavior:none}.sheet.open{display:block}.sheetbox{height:100dvh;max-height:none;width:100%;background:#10161f;border:0;border-radius:0;padding:calc(10px + env(safe-area-inset-top)) 16px calc(12px + env(safe-area-inset-bottom));overflow:hidden;display:flex;flex-direction:column}.grab{display:none}.sheettitle{display:flex;justify-content:space-between;align-items:center;flex:0 0 auto;padding-bottom:8px;border-bottom:1px solid var(--line)}.sheettitle h3{margin:0;font-size:18px}.close{border:1px solid var(--line);background:var(--panel2);color:var(--text);font-size:24px;width:44px;height:44px;border-radius:14px}.sheetbox>.field{flex:0 0 auto}.sheetbox #results,.sheetbox #baseResults{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:2px 2px calc(24px + env(safe-area-inset-bottom));scrollbar-width:thin}.sheetbox #results .result,.sheetbox #baseResults .result{padding:16px 3px}.sheetbox #captureContent{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
-    .result{display:flex;justify-content:space-between;gap:10px;padding:14px 3px;border-bottom:1px solid var(--line)}.result:last-child{border-bottom:0}.result b{font-size:13px;line-height:1.35}.result small{display:block;color:var(--muted);margin-top:4px}.add{border:1px solid #6b5630;background:#211b11;color:var(--gold2);border-radius:11px;padding:9px 12px;height:max-content}
-    .empty{text-align:center;color:var(--muted);padding:28px 10px}.project{display:flex;justify-content:space-between;gap:12px;align-items:center}.project + .project{margin-top:10px}.project strong{display:block}.project small{color:var(--muted)}
-    .price-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.price-row:last-child{border-bottom:0}.price-row input{width:100px;padding:9px;border-radius:11px;border:1px solid var(--line);background:#0e141c;color:var(--text);text-align:right}
-    .base-panel{margin-top:14px;background:linear-gradient(155deg,#15120d,#101720);border:1px solid #4b3d24;border-radius:18px;padding:15px}
-    .base-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}.base-title h3{margin:0;font-size:17px}.verified{flex:0 0 auto;padding:5px 9px;border-radius:999px;border:1px solid #315c3d;background:#102117;color:#a9e7bb;font-size:11px;font-weight:800}
-    .base-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.base-stat{padding:10px;border-radius:13px;background:#0d131b;border:1px solid var(--line)}.base-stat small{display:block;color:var(--muted);font-size:10px;margin-bottom:4px}.base-stat b{font-size:13px;line-height:1.35}
-    .implicit-block{margin-top:12px;padding-top:12px;border-top:1px solid #41361f}.implicit-label{font-size:11px;color:var(--gold2);font-weight:900;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}.implicit{display:flex;gap:9px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(42,53,68,.65)}.implicit:last-child{border-bottom:0;padding-bottom:0}.lock{flex:0 0 auto;width:27px;height:27px;border-radius:9px;display:grid;place-items:center;background:#211b11;border:1px solid #574628}.implicit b{font-size:13px;line-height:1.4}.implicit small{display:block;color:var(--muted);font-size:11px;margin-top:3px}
-    .implicit-content{min-width:0;flex:1}.roll-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;margin-top:9px}.roll-input{width:86px!important;padding:9px!important;border-radius:10px!important;text-align:right}.roll-track{height:7px;border-radius:99px;background:#27313e;overflow:hidden;margin-top:9px}.roll-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:99px}.roll-meta{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:10px;margin-top:5px}.roll-grade{color:var(--gold2);font-weight:900}.implicit-note{margin-top:10px;color:var(--muted);font-size:11px;line-height:1.4}.affix-card{margin-bottom:10px;padding:13px 14px;border-radius:16px;border:1px solid var(--line);background:var(--panel2)}.affix-select{width:100%;padding:0;border:0;background:none;color:var(--text);display:flex;justify-content:space-between;gap:12px;align-items:center;text-align:left}.affix-select small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}.affix-select b{display:block;white-space:normal;overflow-wrap:anywhere;line-height:1.3}.affix-rollbox{margin-top:10px;padding:12px 14px;border-top:1px solid var(--line)}.affix-range{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px}.affix-range strong{color:var(--gold2);font-size:14px}
-    @media(min-width:700px){main{padding:22px}.grid.desktop3{grid-template-columns:repeat(3,1fr)}.bottomnav{left:50%;transform:translateX(-50%);max-width:760px}}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="app">
-  <header class="topbar">
-    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.9.2</small></div></div>
-    <button class="iconbtn" onclick="openCapture()" aria-label="Item erfassen">📷</button>
-  </header>
-
-  <main>
-    <section id="home" class="view active">
-      <div class="hero">
-        <div class="eyebrow">Mobile-first</div>
-        <h2>Plane dein Wunsch-Item ohne Tabellenchaos.</h2>
-        <p>Wähle nur gültige Affixe, speichere dein Ziel und bereite später echte Crafting-Wege, Marktpreise und Fotoerkennung vor.</p>
-        <button class="cta" onclick="switchView('craft')">Neues Crafting-Projekt</button>
-      </div>
-      <div class="grid two">
-        <button class="card quick" onclick="switchView('craft')"><span class="emoji">⚒️</span><h3>Craft planen</h3><p>Zielgegenstand und Affixe festlegen.</p></button>
-        <button class="card quick" onclick="openCapture()"><span class="emoji">📷</span><h3>Item erfassen</h3><p>Foto, Screenshot oder manuell.</p></button>
-      </div>
-      <div class="section-title"><h2>Projektstatus</h2><span>lokal gespeichert</span></div>
-      <div class="card project"><div><strong id="homeProject">Noch kein Ziel gespeichert</strong><small id="homeProjectMeta">Erstelle zuerst ein Crafting-Projekt.</small></div><button class="secondary" onclick="switchView('projects')">Öffnen</button></div>
-      <div class="section-title"><h2>Datenstatus</h2><span>Grundlage</span></div>
-      <div class="status warn">Diese v0.9.2 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
-    </section>
-
-    <section id="craft" class="view">
-      <div class="section-title"><h2>Zielgegenstand</h2><span>Schritt 1</span></div>
-      <div class="card">
-        <div class="field"><label>Gegenstandsbereich</label><select id="category" onchange="renderClassOptions()"><option value="weapon">Waffe</option><option value="armour">Rüstung</option><option value="jewellery">Schmuck</option></select></div>
-        <div class="field"><label>Gegenstandsklasse</label><select id="itemClass" onchange="renderBaseOptions()"></select></div>
-        <div class="grid two">
-          <div class="field"><label>Basis</label><button id="basePicker" class="affix-slot" type="button" onclick="openBaseSheet()"><div class="meta"><small>Basistyp auswählen</small><b id="basePickerName">–</b></div><div class="arrow">›</div></button><select id="base" hidden onchange="renderBaseDetails()"></select></div>
-          <div class="field"><label>Item-Level</label><input id="ilevel" type="number" min="1" max="100" value="81" oninput="renderBaseDetails();renderSlots()" /></div>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brandmark">EF</div>
+        <div>
+          <h1>ExileForge</h1>
+          <small>PoE2 Crafting Navigator · v2.0</small>
         </div>
-        <div id="baseDetails" class="base-panel"></div>
-        <div class="grid two">
-          <div class="field"><label>Aktueller Zustand der Basis</label><select id="rarity" onchange="renderCurrentState()"><option value="normal" selected>Normal – keine Affixe</option><option value="magic">Magisch – vorhandene Affixe</option><option value="rare">Selten – vorhandene Affixe</option></select></div>
-          <div class="field"><label>Gewünschtes Ziel</label><select id="targetRarity" onchange="renderSlots()"><option value="rare" selected>Selten – bis 3 Präfixe + 3 Suffixe</option><option value="magic">Magisch – bis 1 Präfix + 1 Suffix</option></select></div>
+      </div>
+      <button id="captureBtn" class="iconbtn" type="button" aria-label="Item erfassen">📷</button>
+    </header>
+
+    <main>
+      <section id="home" class="view active">
+        <div class="hero">
+          <div class="eyebrow">Mobile-first</div>
+          <h2>Plane dein Wunsch-Item ohne Tabellenchaos.</h2>
+          <p>Wähle Basis, Item-Level und gewünschte Ziel-Affixe. Unmögliche Optionen werden automatisch ausgeblendet.</p>
+          <button id="newProjectBtn" class="cta" type="button">Neues Crafting-Projekt</button>
         </div>
-        <div id="currentState" class="status"></div>
-        <div class="field"><label>Budget (Divine)</label><input id="budget" type="number" min="0" step="0.1" value="10" /></div>
-        <div class="status good">Die Ausgangs-Seltenheit beschreibt die Basis, mit der du startest. Auch bei einer normalen Basis kannst du darunter dein gewünschtes seltenes Ziel mit bis zu 3 Präfixen und 3 Suffixen planen.</div>
-      </div>
 
-      <div class="section-title"><h2>Gewünschte Ziel-Affixe</h2><span>unabhängig vom Startzustand</span></div>
-      <div class="card">
-        <div class="affix-group"><div class="affix-head"><strong>Präfixe</strong><span class="pill" id="prefixCount">0 / 3</span></div><div id="prefixSlots"></div></div>
-        <div class="affix-group"><div class="affix-head"><strong>Suffixe</strong><span class="pill" id="suffixCount">0 / 3</span></div><div id="suffixSlots"></div></div>
-        <div class="status">Eine normale Basis startet mit 0 Präfixen und 0 Suffixen. Die Felder hier beschreiben ausschließlich dein gewünschtes Ziel. Tippe auf „Präfix hinzufügen“ oder „Suffix hinzufügen“ – diese Auswahl ist bei einer normalen Ausgangsbasis ausdrücklich verfügbar. Im Crafting-Planer wählst du nur den gewünschten Mod und sein Tier. Angezeigt wird ausschließlich der mögliche Wertebereich. Exakte aktuelle Rolls werden erst nach einem echten Crafting-Schritt oder beim Item-Scan ausgewertet. Die enthaltenen Affixdaten sind weiterhin Testdaten.</div>
-      </div>
+        <div class="grid two">
+          <button id="quickCraftBtn" class="card quick" type="button">
+            <span class="emoji">⚒️</span>
+            <h3>Craft planen</h3>
+            <p>Zielgegenstand und Affixe festlegen.</p>
+          </button>
 
-      <div class="section-title"><h2>Strategie</h2><span>Schritt 2</span></div>
-      <div class="card">
-        <div class="field"><label>Priorität</label><select id="strategy"><option>Ausgewogen</option><option>Günstig</option><option>Sicher</option><option>Schnell</option><option>SSF</option></select></div>
-        <div class="actions"><button class="secondary" onclick="resetCraft()">Zurücksetzen</button><button class="primary" onclick="saveProject()">Ziel speichern</button></div>
-      </div>
-    </section>
+          <button id="quickCaptureBtn" class="card quick" type="button">
+            <span class="emoji">📷</span>
+            <h3>Item erfassen</h3>
+            <p>Foto, Screenshot oder manuell.</p>
+          </button>
+        </div>
 
-    <section id="database" class="view">
-      <div class="section-title"><h2>Datenbank</h2><span>v0.3 Struktur</span></div>
-      <div class="card"><h3>Geplante Datenbereiche</h3><p>Bases, Itemklassen, natürliche Affixe, Tierstufen, Mindest-Item-Level, Mod-Gruppen, Spawn-Gewichte, Tags, Essenzen, Omens, Currency und Patch-Versionen.</p></div>
-      <div class="section-title"><h2>Validierung</h2><span>vor Veröffentlichung</span></div>
-      <div class="grid">
-        <div class="status good">✓ Keine manuell behauptete Vollständigkeit mehr. Affixe werden später automatisch importiert und gegen Kontrollmods geprüft.</div>
-        <div class="status">Kontrollbeispiel: Speere müssen unter anderem die vollständigen Reihen für Projektil- und Nahkampffertigkeitsstufen enthalten.</div>
-      </div>
-    </section>
+        <div class="section-title">
+          <h2>Projektstatus</h2>
+          <span>lokal gespeichert</span>
+        </div>
 
-    <section id="prices" class="view">
-      <div class="section-title"><h2>Marktpreise</h2><span>manueller Snapshot</span></div>
-      <div class="status warn">Live-Preise benötigen später einen Backend-Dienst. Hier kannst du bereits eigene Testpreise speichern.</div>
-      <div class="card" style="margin-top:12px" id="priceList"></div>
-      <button class="cta" onclick="savePrices()">Preise lokal speichern</button>
-    </section>
+        <div class="card project">
+          <div>
+            <strong id="homeProject">Noch kein Ziel gespeichert</strong>
+            <small id="homeProjectMeta">Erstelle zuerst ein Crafting-Projekt.</small>
+          </div>
+          <button id="openProjectsBtn" class="secondary" type="button">Öffnen</button>
+        </div>
+      </section>
 
-    <section id="projects" class="view">
-      <div class="section-title"><h2>Gespeicherte Crafts</h2><span>dieses Gerät</span></div>
-      <div id="projectList"></div>
-    </section>
-  </main>
-</div>
+      <section id="craft" class="view">
+        <div class="section-title">
+          <h2>Zielgegenstand</h2>
+          <span>Schritt 1</span>
+        </div>
 
-<nav class="bottomnav">
-  <button class="navbtn active" data-view="home" onclick="switchView('home')"><span>⌂</span>Home</button>
-  <button class="navbtn" data-view="craft" onclick="switchView('craft')"><span>⚒</span>Crafting</button>
-  <button class="navbtn" data-view="database" onclick="switchView('database')"><span>◫</span>Daten</button>
-  <button class="navbtn" data-view="prices" onclick="switchView('prices')"><span>◇</span>Preise</button>
-  <button class="navbtn" data-view="projects" onclick="switchView('projects')"><span>☆</span>Projekte</button>
-</nav>
+        <div class="card">
+          <div class="field">
+            <label for="category">Gegenstandsbereich</label>
+            <select id="category">
+              <option value="weapon">Waffe</option>
+              <option value="armour">Rüstung</option>
+              <option value="jewellery">Schmuck</option>
+            </select>
+          </div>
 
-<div id="baseSheet" class="sheet" onclick="if(event.target===this)closeBaseSheet()"><div class="sheetbox"><div class="grab"></div><div class="sheettitle"><h3 id="baseSheetHeading">Basis auswählen</h3><button class="close" onclick="closeBaseSheet()">×</button></div><div class="field" style="margin-top:14px"><input id="baseSearch" placeholder="Basis suchen …" oninput="renderBaseResults()"></div><div id="baseResults"></div></div></div>
-<div id="sheet" class="sheet" onclick="if(event.target===this)closeSheet()">
-  <div class="sheetbox"><div class="grab"></div><div class="sheettitle"><h3 id="sheetHeading">Affix wählen</h3><button class="close" onclick="closeSheet()">×</button></div><div class="field" style="margin-top:14px"><input id="modSearch" placeholder="Mod-Namen suchen …" oninput="renderResults()" /></div><div id="results"></div></div>
-</div>
+          <div class="field">
+            <label for="itemClass">Gegenstandsklasse</label>
+            <select id="itemClass"></select>
+          </div>
 
-<div id="captureSheet" class="sheet" onclick="if(event.target===this)closeCapture()">
-  <div class="sheetbox"><div class="grab"></div><div class="sheettitle"><h3>Item erfassen</h3><button class="close" onclick="closeCapture()">×</button></div>
-    <div id="captureContent" class="grid" style="margin-top:14px">
-      <label class="card quick"><span class="emoji">📷</span><h3>Foto aufnehmen</h3><p>Optional für Konsole. In v0.1 wird nur die Bildauswahl vorbereitet.</p><input type="file" accept="image/*" capture="environment" hidden onchange="handleImage(this)" /></label>
-      <label class="card quick"><span class="emoji">🖼️</span><h3>Screenshot hochladen</h3><p>Bild auswählen und später automatisch erkennen lassen.</p><input type="file" accept="image/*" hidden onchange="handleImage(this)" /></label>
-      <button class="card quick" onclick="closeCapture();switchView('craft')"><span class="emoji">⌨️</span><h3>Manuell eingeben</h3><p>Alle Funktionen bleiben ohne Kamera nutzbar.</p></button>
-    </div><div id="imageStatus" class="status" style="margin-top:12px">Noch kein Bild ausgewählt.</div>
+          <div class="grid two">
+            <div class="field">
+              <label>Basis</label>
+              <button id="basePicker" class="affix-slot" type="button">
+                <div class="meta">
+                  <small>Basistyp auswählen</small>
+                  <b id="basePickerName">–</b>
+                </div>
+                <div class="arrow">›</div>
+              </button>
+            </div>
+
+            <div class="field">
+              <label for="ilevel">Item-Level</label>
+              <input id="ilevel" type="number" min="1" max="100" value="81">
+            </div>
+          </div>
+
+          <div id="baseDetails" class="base-panel"></div>
+
+          <div class="grid two">
+            <div class="field">
+              <label for="rarity">Aktueller Zustand</label>
+              <select id="rarity">
+                <option value="normal" selected>Normal – keine Affixe</option>
+                <option value="magic">Magisch – vorhandene Affixe</option>
+                <option value="rare">Selten – vorhandene Affixe</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="targetRarity">Gewünschtes Ziel</label>
+              <select id="targetRarity">
+                <option value="rare" selected>Selten – bis 3 Präfixe + 3 Suffixe</option>
+                <option value="magic">Magisch – bis 1 Präfix + 1 Suffix</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="currentState" class="status"></div>
+
+          <div class="field">
+            <label for="budget">Budget (Divine)</label>
+            <input id="budget" type="number" min="0" step="0.1" value="10">
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Gewünschte Ziel-Affixe</h2>
+          <span>unabhängig vom Startzustand</span>
+        </div>
+
+        <div class="card">
+          <div class="affix-group">
+            <div class="affix-head">
+              <strong>Präfixe</strong>
+              <span class="pill" id="prefixCount">0 / 3</span>
+            </div>
+            <div id="prefixSlots"></div>
+          </div>
+
+          <div class="affix-group">
+            <div class="affix-head">
+              <strong>Suffixe</strong>
+              <span class="pill" id="suffixCount">0 / 3</span>
+            </div>
+            <div id="suffixSlots"></div>
+          </div>
+
+          <div class="status">
+            Eine normale Basis startet mit 0 Präfixen und 0 Suffixen.
+            Die Felder hier beschreiben ausschließlich dein gewünschtes Ziel.
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Strategie</h2>
+          <span>Schritt 2</span>
+        </div>
+
+        <div class="card">
+          <div class="field">
+            <label for="strategy">Priorität</label>
+            <select id="strategy">
+              <option>Ausgewogen</option>
+              <option>Günstig</option>
+              <option>Sicher</option>
+              <option>Schnell</option>
+              <option>SSF</option>
+            </select>
+          </div>
+
+          <div class="actions">
+            <button id="resetCraftBtn" class="secondary" type="button">Zurücksetzen</button>
+            <button id="saveProjectBtn" class="primary" type="button">Ziel speichern</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="database" class="view">
+        <div class="section-title"><h2>Datenbank</h2><span>Struktur</span></div>
+        <div class="card">
+          <h3>Geplante Datenbereiche</h3>
+          <p>Bases, Itemklassen, natürliche Affixe, Tiers, Mindest-Item-Level, Mod-Gruppen, Spawn-Gewichte, Tags, Essenzen, Omens und Patch-Versionen.</p>
+        </div>
+      </section>
+
+      <section id="prices" class="view">
+        <div class="section-title"><h2>Marktpreise</h2><span>manueller Snapshot</span></div>
+        <div class="status warn">Live-Preise benötigen später einen Backend-Dienst.</div>
+        <div class="card" id="priceList"></div>
+        <button id="savePricesBtn" class="cta" type="button">Preise lokal speichern</button>
+      </section>
+
+      <section id="projects" class="view">
+        <div class="section-title"><h2>Gespeicherte Crafts</h2><span>dieses Gerät</span></div>
+        <div id="projectList"></div>
+      </section>
+    </main>
   </div>
-</div>
 
-<script>
-const state={prefix:[null,null,null],suffix:[null,null,null],activeType:null,activeIndex:null};
-const classOptions={
- weapon:['Speer','Bogen','Kampfstab','Armbrust','Streitkolben','Schwert','Axt','Dolch','Flegel'],
- armour:['Helm','Körperrüstung','Handschuhe','Stiefel','Schild','Fokus'],
- jewellery:['Ring','Amulett','Gürtel']
-};
-const spearSkill={name:'Gewährt Fertigkeit: Speerwurf',kind:'Gewährte Fertigkeit'};
-const baseItems={
- Speer:[
-  {id:'hardwood-spear',name:'Hartholz-Speer',requiredLevel:1,requirements:'Keine Attributanforderung',physical:'5–9',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'ironhead-spear',name:'Eisenkopf-Speer',requiredLevel:5,requirements:'10 Ges',physical:'9–12',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'hunting-spear',name:'Jagdspeer',requiredLevel:10,requirements:'9 Str · 17 Ges',physical:'10–17',crit:'5,00 %',aps:'1,55',implicits:[spearSkill,{name:'15–25 % Chance, bei Treffer zu verstümmeln',kind:'Variabler Basis-Implizit'}]},
-  {id:'winged-spear',name:'Flügelspeer',requiredLevel:16,requirements:'12 Str · 25 Ges',physical:'12–22',crit:'5,00 %',aps:'1,70',implicits:[spearSkill]},
-  {id:'war-spear',name:'Kriegsspeer',requiredLevel:21,requirements:'14 Str · 31 Ges',physical:'16–27',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'25–35 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Variabler Basis-Implizit'}]},
-  {id:'forked-spear',name:'Gegabelter Speer',requiredLevel:26,requirements:'17 Str · 38 Ges',physical:'13–38',crit:'5,00 %',aps:'1,55',implicits:[spearSkill]},
-  {id:'barbed-spear',name:'Widerhaken-Speer',requiredLevel:33,requirements:'20 Str · 47 Ges',physical:'20–38',crit:'6,00 %',aps:'1,50',implicits:[spearSkill,{name:'Von Euch verursachtes Bluten verursacht den Schaden 10–20 % schneller',kind:'Variabler Basis-Implizit'}]},
-  {id:'broad-spear',name:'Breitspeer',requiredLevel:40,requirements:'26 Str · 55 Ges',physical:'32–48',crit:'5,00 %',aps:'1,40',implicits:[spearSkill,{name:'25 % erhöhte Nahkampfschlagreichweite mit dieser Waffe',kind:'Fester Basis-Implizit'}]},
-  {id:'crossblade-spear',name:'Kreuzblattspeer',requiredLevel:45,requirements:'26 Str · 63 Ges',physical:'25–52',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'Verhindert +3–7 % des Schadens von abgewendeten Treffern',kind:'Variabler Basis-Implizit'}]},
-  {id:'sea-glass-spear',name:'Seeglas-Speer',requiredLevel:51,requirements:'29 Str · 71 Ges · 50 Int',physical:'29–53',crit:'7,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'sword-spear',name:'Schwertspeer',requiredLevel:52,requirements:'29 Str · 72 Ges',physical:'30–56',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'sharp-edged-spear',name:'Scharfkantiger Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'11,5–45,5 physisch + 11,5–45,5 Blitz',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'50 % des Grundschadens werden als Blitzschaden verursacht',kind:'Verborgene Basisregel'}]},
-  {id:'helix-spear',name:'Helix-Speer',requiredLevel:65,requirements:'36 Str · 89 Ges',physical:'37–68',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'steelhead-spear',name:'Stahlkopf-Speer',requiredLevel:45,requirements:'26 Str · 63 Ges',physical:'33–44',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'chase-spear',name:'Hetzjagd-Speer',requiredLevel:48,requirements:'27 Str · 67 Ges',physical:'31–52',crit:'5,00 %',aps:'1,55',implicits:[spearSkill,{name:'15–25 % Chance, bei Treffer zu verstümmeln',kind:'Variabler Basis-Implizit'}]},
-  {id:'swift-spear',name:'Flinker Speer',requiredLevel:51,requirements:'29 Str · 71 Ges',physical:'32–53',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'25–35 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Variabler Basis-Implizit'}]},
-  {id:'split-spear',name:'Gespaltener Speer',requiredLevel:54,requirements:'30 Str · 75 Ges',physical:'23–69',crit:'5,00 %',aps:'1,55',implicits:[spearSkill]},
-  {id:'jagged-spear',name:'Gezackter Speer',requiredLevel:59,requirements:'33 Str · 81 Ges',physical:'33–61',crit:'6,00 %',aps:'1,50',implicits:[spearSkill,{name:'Von Euch verursachtes Bluten verursacht den Schaden 10–20 % schneller',kind:'Variabler Basis-Implizit'}]},
-  {id:'massive-spear',name:'Massiver Speer',requiredLevel:62,requirements:'40 Str · 80 Ges',physical:'46–69',crit:'5,00 %',aps:'1,40',implicits:[spearSkill,{name:'25 % erhöhte Nahkampfschlagreichweite mit dieser Waffe',kind:'Fester Basis-Implizit'}]},
-  {id:'flying-spear',name:'Fliegender Speer',requiredLevel:78,requirements:'50 Str · 127 Ges',physical:'46–77',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'Erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Variabler Basis-Implizit',min:25,max:35,unit:'%',defaultValue:32}]},
-  {id:'runeforged-hardwood',name:'Runengeschmiedeter Hartholz-Speer',requiredLevel:40,requirements:'23 Str · 56 Ges',physical:'24–45',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'runeforged-ironhead',name:'Runengeschmiedeter Eisenkopf-Speer',requiredLevel:38,requirements:'23 Str · 54 Ges',physical:'40–54',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'runerefined-ironhead',name:'Runenveredelter Eisenkopf-Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'94–127',crit:'5,00 %',aps:'1,25',implicits:[spearSkill]},
-  {id:'runeforged-hunting',name:'Runengeschmiedeter Jagdspeer',requiredLevel:38,requirements:'23 Str · 54 Ges',physical:'65–108',crit:'5,00 %',aps:'1,55',implicits:[spearSkill,{name:'15–25 % Chance, bei Treffer zu verstümmeln',kind:'Variabler Basis-Implizit'}]},
-  {id:'runeforged-winged',name:'Runengeschmiedeter Flügelspeer',requiredLevel:40,requirements:'23 Str · 56 Ges',physical:'0–125 Blitz',crit:'5,00 %',aps:'1,70',implicits:[spearSkill,{name:'100 % des Grundschadens werden als Blitzschaden verursacht',kind:'Verborgene Basisregel'}]},
-  {id:'runeforged-war',name:'Runengeschmiedeter Kriegsspeer',requiredLevel:40,requirements:'23 Str · 56 Ges',physical:'59–98',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'25–35 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Variabler Basis-Implizit'}]},
-  {id:'runeforged-forked',name:'Runengeschmiedeter Gegabelter Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'8–57',crit:'7,00 %',aps:'1,60',implicits:[spearSkill]},
-  {id:'runeforged-barbed',name:'Runengeschmiedeter Widerhaken-Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'26,5–49,3 physisch + 51,5–95,7 Feuer',crit:'6,00 %',aps:'1,50',implicits:[spearSkill,{name:'Von Euch verursachtes Bluten verursacht den Schaden 10–20 % schneller',kind:'Variabler Basis-Implizit'},{name:'66 % des Grundschadens werden als Feuerschaden verursacht',kind:'Verborgene Basisregel'}]}
- ],
- Bogen:[],Kampfstab:[],Armbrust:[],Streitkolben:[],Schwert:[],Axt:[],Dolch:[],Flegel:[],
- Helm:[],Körperrüstung:[],Handschuhe:[],Stiefel:[],Schild:[],Fokus:[],Ring:[],Amulett:[],Gürtel:[]
-};
-function renderClassOptions(){const category=document.getElementById('category').value;const select=document.getElementById('itemClass');const classes=classOptions[category]||[];select.innerHTML=classes.map(c=>`<option value="${c}">${c}</option>`).join('');renderBaseOptions()}
-function currentBase(){const cls=document.getElementById('itemClass').value;const id=document.getElementById('base').value;return (baseItems[cls]||[]).find(x=>x.id===id)}
-function renderBaseOptions(selectedId){const cls=document.getElementById('itemClass').value;const select=document.getElementById('base');const items=baseItems[cls]||[];select.innerHTML=items.map(b=>`<option value="${b.id}">${b.name}</option>`).join('');if(selectedId && [...select.options].some(o=>o.value===selectedId))select.value=selectedId;else if(items.length)select.value=items[0].id;document.getElementById('basePicker').disabled=!items.length;document.getElementById('basePicker').classList.toggle('disabled',!items.length);document.getElementById('basePickerName').textContent=items.length?(currentBase()?.name||'Basis auswählen'):`${cls}: Datenimport ausstehend`;renderBaseDetails()}
-function implicitKey(baseId,index){return `exileforge_implicit_${baseId}_${index}`}
-function storedImplicitValue(base,index,implicit){const saved=localStorage.getItem(implicitKey(base.id,index));const fallback=implicit.defaultValue??implicit.min;const value=saved===null?fallback:Number(saved);return Math.min(implicit.max,Math.max(implicit.min,value))}
-function rollPercent(value,min,max){if(max===min)return 100;return Math.round(((value-min)/(max-min))*100)}
-function rollLabel(p){if(p>=100)return 'Perfekt';if(p>=85)return 'Sehr gut';if(p>=65)return 'Gut';if(p>=35)return 'Mittel';return 'Niedrig'}
-function setImplicitRoll(baseId,index,value){const b=(Object.values(baseItems).flat()).find(x=>x.id===baseId);const imp=b?.implicits[index];if(!imp||imp.min===undefined)return;const n=Math.min(imp.max,Math.max(imp.min,Number(value)||imp.min));localStorage.setItem(implicitKey(baseId,index),String(n));renderBaseDetails()}
-function renderBaseDetails(){const b=currentBase();const host=document.getElementById('baseDetails');document.getElementById('basePickerName').textContent=b?b.name:'Keine Basis verfügbar';if(!b){host.innerHTML='<div class="status warn">Für diese Klasse ist der vollständige Basisimport noch nicht angeschlossen.</div>';return}const ilvl=Number(document.getElementById('ilevel').value)||1;const req=b.requiredLevel?`Stufe ${b.requiredLevel}`:'Noch nicht importiert';const implicitHtml=b.implicits.length?b.implicits.map((i,index)=>{if(i.min!==undefined&&i.max!==undefined){const value=storedImplicitValue(b,index,i);const pct=rollPercent(value,i.min,i.max);return `<div class="implicit"><span class="lock">🔒</span><div class="implicit-content"><b>${i.name}</b><small>${i.kind} · belegt keinen Affix-Slot</small><div class="roll-row"><div><strong>${value}${i.unit||''}</strong> <span style="color:var(--muted);font-size:11px">(${i.min}–${i.max}${i.unit||''})</span></div><input class="roll-input" type="number" min="${i.min}" max="${i.max}" step="1" value="${value}" onchange="setImplicitRoll('${b.id}',${index},this.value)"></div><div class="roll-track"><div class="roll-fill" style="width:${pct}%"></div></div><div class="roll-meta"><span>Roll-Qualität ${pct} %</span><span class="roll-grade">${rollLabel(pct)}</span></div></div></div>`}return `<div class="implicit"><span class="lock">🔒</span><div class="implicit-content"><b>${i.name}</b><small>${i.kind} · belegt keinen Affix-Slot</small></div></div>`}).join(''):'<div class="status warn">Für diese Basis sind die festen Implizits noch nicht importiert.</div>';host.innerHTML=`<div class="base-title"><div><h3>${b.name}</h3><div style="color:var(--muted);font-size:11px;margin-top:4px">Basisdaten · Item-Level ${ilvl}</div></div><span class="verified">Basis</span></div><div class="base-grid"><div class="base-stat"><small>Physischer Schaden</small><b>${b.physical}</b></div><div class="base-stat"><small>Angriffe pro Sekunde</small><b>${b.aps}</b></div><div class="base-stat"><small>Kritische Chance</small><b>${b.crit}</b></div><div class="base-stat"><small>Anforderungen</small><b>${req}<br>${b.requirements}</b></div></div><div class="implicit-block"><div class="implicit-label">Eigenschaften der Basis</div>${implicitHtml}<div class="implicit-note">Der Wertebereich gehört zur konkreten Basis. Das Item-Level steuert vor allem, welche normalen Präfix- und Suffix-Tiers möglich sind; es verändert einen Basis-Implizitbereich nur, wenn die Spieldaten dafür ausdrücklich verschiedene Stufen definieren.</div></div>`}
-const demoMods={
- prefix:[
-  {name:'Erhöhter physischer Schaden',group:'phys_percent',lvl:81,tier:'T1',min:170,max:179,unit:'%',defaultValue:178},
-  {name:'Zusätzlicher physischer Schaden',group:'phys_flat',lvl:78,tier:'T1',min:26,max:35,unit:'–',defaultValue:31},
-  {name:'Erhöhter elementarer Schaden mit Angriffen',group:'elemental_attack',lvl:75,tier:'T1',min:90,max:99,unit:'%',defaultValue:94},
-  {name:'Erhöhter Blitzschaden',group:'lightning_percent',lvl:72,tier:'T1',min:120,max:134,unit:'%',defaultValue:128},
-  {name:'Erhöhter Feuerschaden',group:'fire_percent',lvl:72,tier:'T1',min:120,max:134,unit:'%',defaultValue:128},
-  {name:'Erhöhter Kälteschaden',group:'cold_percent',lvl:72,tier:'T1',min:120,max:134,unit:'%',defaultValue:128}
- ],
- suffix:[
-  {name:'+1 zu allen Projektilfertigkeiten',group:'projectile_skills',lvl:18,tier:'T4',min:1,max:1,unit:'',defaultValue:1},
-  {name:'+2 zu allen Projektilfertigkeiten',group:'projectile_skills',lvl:36,tier:'T3',min:2,max:2,unit:'',defaultValue:2},
-  {name:'+3 zu allen Projektilfertigkeiten',group:'projectile_skills',lvl:55,tier:'T2',min:3,max:3,unit:'',defaultValue:3},
-  {name:'+4 zu allen Projektilfertigkeiten',group:'projectile_skills',lvl:81,tier:'T1',min:4,max:4,unit:'',defaultValue:4},
-  {name:'+1 zu allen Nahkampffertigkeiten',group:'melee_skills',lvl:18,tier:'T4',min:1,max:1,unit:'',defaultValue:1},
-  {name:'+2 zu allen Nahkampffertigkeiten',group:'melee_skills',lvl:36,tier:'T3',min:2,max:2,unit:'',defaultValue:2},
-  {name:'+3 zu allen Nahkampffertigkeiten',group:'melee_skills',lvl:55,tier:'T2',min:3,max:3,unit:'',defaultValue:3},
-  {name:'+4 zu allen Nahkampffertigkeiten',group:'melee_skills',lvl:81,tier:'T1',min:4,max:4,unit:'',defaultValue:4},
-  {name:'Erhöhte Angriffsgeschwindigkeit',group:'attack_speed',lvl:78,tier:'T1',min:16,max:19,unit:'%',defaultValue:18},
-  {name:'Erhöhte kritische Trefferchance',group:'crit_chance',lvl:78,tier:'T1',min:35,max:39,unit:'%',defaultValue:37},
-  {name:'Erhöhter Betäubungsaufbau',group:'stun_buildup',lvl:80,tier:'T1',min:71,max:80,unit:'%',defaultValue:71},
-  {name:'Erhöhte Genauigkeit',group:'accuracy',lvl:75,tier:'T1',min:301,max:350,unit:'',defaultValue:325},
-  {name:'+ Stärke',group:'strength',lvl:75,tier:'T1',min:31,max:35,unit:'',defaultValue:33}
- ]
-};
-const priceItems=['Divine Orb','Exalted Orb','Regal Orb','Orb of Annulment','Chaos Orb','Essence (Beispiel)','Omen (Beispiel)'];
-function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'auto'});if(id==='projects')renderProjects()}
-function renderCurrentState(){
-  const rarity=document.getElementById('rarity')?.value||'normal';
-  const box=document.getElementById('currentState');
-  if(!box)return;
-  if(rarity==='normal') box.innerHTML='<strong>Aktueller Gegenstand:</strong> Normale Basis · 0 Präfixe · 0 Suffixe.<br><span style="color:var(--gold2)">Darunter wählst du trotzdem die Affixe aus, die du durch Crafting erreichen möchtest.</span>';
-  else if(rarity==='magic') box.innerHTML='<strong>Aktueller Gegenstand:</strong> Magisch · höchstens 1 Präfix und 1 Suffix vorhanden. Vorhandene Mods werden später separat als Ist-Zustand erfasst.';
-  else box.innerHTML='<strong>Aktueller Gegenstand:</strong> Selten · vorhandene Präfixe und Suffixe werden später separat als Ist-Zustand erfasst.';
-}
-function limits(){const r=document.getElementById('targetRarity')?.value||'rare';return r==='magic'?1:3}
-function affixKey(type,index,mod){return `exileforge_affix_${type}_${index}_${mod.group}_${mod.tier||''}`}
-function storedAffixValue(type,index,mod){if(mod.min===undefined)return null;const saved=localStorage.getItem(affixKey(type,index,mod));const fallback=mod.defaultValue??mod.min;const value=saved===null?fallback:Number(saved);return Math.min(mod.max,Math.max(mod.min,value))}
-function gradeClass(pct){if(pct>=100)return 'grade-perfect';if(pct>=75)return 'grade-good';if(pct>=40)return 'grade-mid';return 'grade-bad'}
-function starsFor(pct){const filled=Math.max(1,Math.min(5,Math.ceil(pct/20)));return '★'.repeat(filled)+'☆'.repeat(5-filled)}
-function renderSlots(){
-  ['prefix','suffix'].forEach(type=>{
-    const host=document.getElementById(type+'Slots');
-    host.innerHTML='';
-    const max=limits();
+  <nav class="bottomnav">
+    <button class="navbtn active" data-view="home" type="button"><span>⌂</span>Home</button>
+    <button class="navbtn" data-view="craft" type="button"><span>⚒</span>Crafting</button>
+    <button class="navbtn" data-view="database" type="button"><span>◫</span>Daten</button>
+    <button class="navbtn" data-view="prices" type="button"><span>◇</span>Preise</button>
+    <button class="navbtn" data-view="projects" type="button"><span>☆</span>Projekte</button>
+  </nav>
 
-    state[type].forEach((mod,i)=>{
-      if(i>=max){
-        const btn=document.createElement('button');
-        btn.type='button';
-        btn.className='affix-slot disabled';
-        btn.disabled=true;
-        btn.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1}</small><b>Nicht verfügbar</b></div>`;
-        host.appendChild(btn);
-        return;
-      }
+  <div id="baseSheet" class="sheet" aria-hidden="true">
+    <div class="sheetbox">
+      <div class="sheettitle">
+        <h3 id="baseSheetHeading">Basis auswählen</h3>
+        <button id="closeBaseSheetBtn" class="close" type="button">×</button>
+      </div>
+      <div class="field sheet-search">
+        <input id="baseSearch" type="search" placeholder="Basis suchen …">
+      </div>
+      <div id="baseResults" class="sheet-results"></div>
+    </div>
+  </div>
 
-      if(!mod){
-        const btn=document.createElement('button');
-        btn.type='button';
-        btn.className='affix-slot';
-        btn.addEventListener('click',()=>openModSheet(type,i));
-        btn.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1}</small><b>➕ ${type==='prefix'?'Präfix':'Suffix'} hinzufügen</b></div><div class="arrow">›</div>`;
-        host.appendChild(btn);
-        return;
-      }
+  <div id="modSheet" class="sheet" aria-hidden="true">
+    <div class="sheetbox">
+      <div class="sheettitle">
+        <h3 id="modSheetHeading">Affix auswählen</h3>
+        <button id="closeModSheetBtn" class="close" type="button">×</button>
+      </div>
+      <div class="field sheet-search">
+        <input id="modSearch" type="search" placeholder="Mod suchen …">
+      </div>
+      <div id="modResults" class="sheet-results"></div>
+    </div>
+  </div>
 
-      const range=mod.min===undefined
-        ? 'Wertebereich noch nicht importiert'
-        : mod.min===mod.max
-          ? `${mod.min}${mod.unit||''}`
-          : `${mod.min}–${mod.max}${mod.unit||''}`;
+  <div id="captureSheet" class="sheet" aria-hidden="true">
+    <div class="sheetbox">
+      <div class="sheettitle">
+        <h3>Item erfassen</h3>
+        <button id="closeCaptureSheetBtn" class="close" type="button">×</button>
+      </div>
 
-      const card=document.createElement('div');
-      card.className='affix-card';
+      <div class="capture-options">
+        <label class="card quick">
+          <span class="emoji">📷</span>
+          <h3>Foto aufnehmen</h3>
+          <p>Optional für Konsole.</p>
+          <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden>
+        </label>
 
-      const select=document.createElement('button');
-      select.type='button';
-      select.className='affix-select';
-      select.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1} · ${mod.tier||'Tier unbekannt'}</small><b>${mod.name}</b></div><div class="arrow">›</div>`;
-      select.addEventListener('click',()=>openModSheet(type,i));
+        <label class="card quick">
+          <span class="emoji">🖼️</span>
+          <h3>Screenshot hochladen</h3>
+          <p>Bild aus der Galerie auswählen.</p>
+          <input id="galleryInput" type="file" accept="image/*" hidden>
+        </label>
 
-      const rangeBox=document.createElement('div');
-      rangeBox.className='affix-rollbox';
-      rangeBox.innerHTML=`<div class="affix-range"><span>Möglicher Roll</span><strong>${range}</strong></div>`;
+        <button id="manualEntryBtn" class="card quick" type="button">
+          <span class="emoji">⌨️</span>
+          <h3>Manuell eingeben</h3>
+          <p>Alle Funktionen bleiben ohne Kamera nutzbar.</p>
+        </button>
 
-      card.appendChild(select);
-      card.appendChild(rangeBox);
-      host.appendChild(card);
-    });
+        <div id="imageStatus" class="status">Noch kein Bild ausgewählt.</div>
+      </div>
+    </div>
+  </div>
 
-    document.getElementById(type+'Count').textContent=`${state[type].filter(Boolean).length} / ${max}`;
-  });
-}
-function openSheetElement(id){lockPageScroll();document.getElementById(id).classList.add('open')}
-function closeSheetElement(id){document.getElementById(id).classList.remove('open');unlockPageScroll()}
-function openBaseSheet(){if(document.getElementById('basePicker').disabled)return;document.getElementById('baseSearch').value='';document.getElementById('baseSheetHeading').textContent=`${document.getElementById('itemClass').value}: Basis auswählen`;renderBaseResults();openSheetElement('baseSheet')}
-function closeBaseSheet(){closeSheetElement('baseSheet')}
-function renderBaseResults(){const cls=document.getElementById('itemClass').value;const q=document.getElementById('baseSearch').value.toLowerCase().trim();const items=(baseItems[cls]||[]).filter(b=>b.name.toLowerCase().includes(q));const host=document.getElementById('baseResults');host.innerHTML=items.length?'':'<div class="empty">Keine passende Basis gefunden.</div>';items.forEach(b=>{const row=document.createElement('div');row.className='result';const implicit=b.implicits.filter(x=>x.kind!=='Gewährte Fertigkeit').map(x=>x.name).join(' · ')||'Keine zusätzliche sichtbare Basis-Eigenschaft';row.innerHTML=`<div><b>${b.name}</b><small>Stufe ${b.requiredLevel} · ${b.physical} · ${b.aps} APS<br>${implicit}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{document.getElementById('base').value=b.id;renderBaseDetails();closeBaseSheet()};host.appendChild(row)})}
-function openModSheet(type,index){state.activeType=type;state.activeIndex=index;document.getElementById('sheetHeading').textContent=`${type==='prefix'?'Präfix':'Suffix'} ${index+1} wählen`;document.getElementById('modSearch').value='';renderResults();openSheetElement('sheet')}
-function closeSheet(){closeSheetElement('sheet')}
-function renderResults(){const q=document.getElementById('modSearch').value.toLowerCase();const lvl=Number(document.getElementById('ilevel').value)||1;const used=new Set([...state.prefix,...state.suffix].filter(Boolean).map(x=>x.group));const mods=demoMods[state.activeType].filter(m=>m.lvl<=lvl && (!used.has(m.group)||state[state.activeType][state.activeIndex]?.group===m.group) && m.name.toLowerCase().includes(q));const host=document.getElementById('results');host.innerHTML='';if(state[state.activeType][state.activeIndex]){const clear=document.createElement('div');clear.className='result';clear.innerHTML='<div><b>Slot leeren</b><small>Ausgewählten Mod entfernen</small></div><button class="add">Entfernen</button>';clear.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=null;closeSheet();renderSlots()};host.appendChild(clear)}if(!mods.length){host.innerHTML+='<div class="empty">Keine passenden Mods gefunden.</div>';return}mods.forEach(m=>{const row=document.createElement('div');row.className='result';row.innerHTML=`<div><b>${m.name}</b><small>Mindest-Item-Level ${m.lvl} · Gruppe ${m.group}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=m;closeSheet();renderSlots()};host.appendChild(row)})}
-function resetCraft(){state.prefix=[null,null,null];state.suffix=[null,null,null];renderSlots()}
-function saveProject(){const project={id:Date.now(),itemClass:document.getElementById('itemClass').value,baseId:document.getElementById('base').value,baseName:currentBase()?.name||document.getElementById('base').value,ilevel:document.getElementById('ilevel').value,rarity:document.getElementById('rarity').value,targetRarity:document.getElementById('targetRarity').value,budget:document.getElementById('budget').value,strategy:document.getElementById('strategy').value,prefix:state.prefix,suffix:state.suffix};localStorage.setItem('exileforge_project',JSON.stringify(project));updateHomeProject();alert('Crafting-Ziel wurde auf diesem Gerät gespeichert.')}
-function updateHomeProject(){const p=JSON.parse(localStorage.getItem('exileforge_project')||'null');document.getElementById('homeProject').textContent=p?`${p.baseName||p.base} · Item-Level ${p.ilevel}`:'Noch kein Ziel gespeichert';document.getElementById('homeProjectMeta').textContent=p?`${p.itemClass} · ${p.strategy} · Budget ${p.budget} Divine`:'Erstelle zuerst ein Crafting-Projekt.'}
-function renderProjects(){const host=document.getElementById('projectList');const p=JSON.parse(localStorage.getItem('exileforge_project')||'null');if(!p){host.innerHTML='<div class="card empty">Noch kein Projekt gespeichert.</div>';return}host.innerHTML=`<div class="card project"><div><strong>${p.baseName||p.base}</strong><small>${p.itemClass} · Item-Level ${p.ilevel} · ${p.strategy}</small></div><button class="secondary" onclick="loadProject()">Bearbeiten</button></div>`}
-function loadProject(){const p=JSON.parse(localStorage.getItem('exileforge_project')||'null');if(!p)return;document.getElementById('itemClass').value=p.itemClass;renderBaseOptions(p.baseId||p.base);document.getElementById('ilevel').value=p.ilevel;document.getElementById('rarity').value=p.rarity;document.getElementById('targetRarity').value=p.targetRarity||'rare';document.getElementById('budget').value=p.budget;document.getElementById('strategy').value=p.strategy;state.prefix=p.prefix||[null,null,null];state.suffix=p.suffix||[null,null,null];renderSlots();switchView('craft')}
-function renderPrices(){const stored=JSON.parse(localStorage.getItem('exileforge_prices')||'{}');const host=document.getElementById('priceList');host.innerHTML=priceItems.map((n,i)=>`<div class="price-row"><div><strong>${n}</strong><div style="color:var(--muted);font-size:11px">Wert in Exalted</div></div><input id="price${i}" type="number" step="0.01" value="${stored[n]??''}" placeholder="–"></div>`).join('')}
-function savePrices(){const obj={};priceItems.forEach((n,i)=>{const v=document.getElementById('price'+i).value;if(v!=='')obj[n]=Number(v)});localStorage.setItem('exileforge_prices',JSON.stringify(obj));alert('Preise wurden lokal gespeichert.')}
-function openCapture(){openSheetElement('captureSheet')}function closeCapture(){closeSheetElement('captureSheet')}
-function handleImage(input){const f=input.files?.[0];document.getElementById('imageStatus').textContent=f?`Bild ausgewählt: ${f.name}. Automatische Erkennung folgt in einer späteren Version.`:'Noch kein Bild ausgewählt.'}
-
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(document.getElementById('sheet').classList.contains('open'))closeSheet();else if(document.getElementById('baseSheet').classList.contains('open'))closeBaseSheet();else if(document.getElementById('captureSheet').classList.contains('open'))closeCapture();}});
-renderClassOptions();renderCurrentState();renderSlots();renderPrices();updateHomeProject();
-</script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
