@@ -1,5 +1,5 @@
 window.EXILEFORGE_DATA = {
-  "generatedAt": "2026-07-16T19:26:40.889Z",
+  "generatedAt": "2026-07-16T20:06:34.245Z",
   "classOptions": {
     "weapon": [
       "Armbrust",
