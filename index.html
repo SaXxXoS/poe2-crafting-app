@@ -51,7 +51,7 @@
 <body>
 <div class="app">
   <header class="topbar">
-    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.2</small></div></div>
+    <div class="brand"><div class="brandmark">EF</div><div><h1>ExileForge</h1><small>PoE2 Crafting Navigator · v0.3</small></div></div>
     <button class="iconbtn" onclick="openCapture()" aria-label="Item erfassen">📷</button>
   </header>
 
@@ -70,16 +70,16 @@
       <div class="section-title"><h2>Projektstatus</h2><span>lokal gespeichert</span></div>
       <div class="card project"><div><strong id="homeProject">Noch kein Ziel gespeichert</strong><small id="homeProjectMeta">Erstelle zuerst ein Crafting-Projekt.</small></div><button class="secondary" onclick="switchView('projects')">Öffnen</button></div>
       <div class="section-title"><h2>Datenstatus</h2><span>Grundlage</span></div>
-      <div class="status warn">Diese v0.2 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
+      <div class="status warn">Diese v0.3 enthält bewusst noch keine behauptete Live-Crafting-Engine. Sie trennt Oberfläche, Datensatz und Preise sauber, damit später keine unvollständigen Affixlisten als korrekt erscheinen.</div>
     </section>
 
     <section id="craft" class="view">
       <div class="section-title"><h2>Zielgegenstand</h2><span>Schritt 1</span></div>
       <div class="card">
-        <div class="field"><label>Gegenstandsbereich</label><select id="category"><option>Waffe</option><option>Rüstung</option><option>Schmuck</option></select></div>
-        <div class="field"><label>Gegenstandsklasse</label><select id="itemClass" onchange="renderBaseOptions()"><option value="Speer">Speer</option><option value="Bogen">Bogen</option><option value="Kampfstab">Kampfstab</option><option value="Helm">Helm</option><option value="Körperrüstung">Körperrüstung</option><option value="Ring">Ring</option></select></div>
+        <div class="field"><label>Gegenstandsbereich</label><select id="category" onchange="renderClassOptions()"><option value="weapon">Waffe</option><option value="armour">Rüstung</option><option value="jewellery">Schmuck</option></select></div>
+        <div class="field"><label>Gegenstandsklasse</label><select id="itemClass" onchange="renderBaseOptions()"></select></div>
         <div class="grid two">
-          <div class="field"><label>Basis</label><select id="base" onchange="renderBaseDetails()"></select></div>
+          <div class="field"><label>Basis</label><button id="basePicker" class="affix-slot" type="button" onclick="openBaseSheet()"><div class="meta"><small>Basistyp auswählen</small><b id="basePickerName">–</b></div><div class="arrow">›</div></button><select id="base" hidden onchange="renderBaseDetails()"></select></div>
           <div class="field"><label>Item-Level</label><input id="ilevel" type="number" min="1" max="100" value="81" oninput="renderBaseDetails();renderSlots()" /></div>
         </div>
         <div id="baseDetails" class="base-panel"></div>
@@ -104,7 +104,7 @@
     </section>
 
     <section id="database" class="view">
-      <div class="section-title"><h2>Datenbank</h2><span>v0.2 Struktur</span></div>
+      <div class="section-title"><h2>Datenbank</h2><span>v0.3 Struktur</span></div>
       <div class="card"><h3>Geplante Datenbereiche</h3><p>Bases, Itemklassen, natürliche Affixe, Tierstufen, Mindest-Item-Level, Mod-Gruppen, Spawn-Gewichte, Tags, Essenzen, Omens, Currency und Patch-Versionen.</p></div>
       <div class="section-title"><h2>Validierung</h2><span>vor Veröffentlichung</span></div>
       <div class="grid">
@@ -135,6 +135,7 @@
   <button class="navbtn" data-view="projects" onclick="switchView('projects')"><span>☆</span>Projekte</button>
 </nav>
 
+<div id="baseSheet" class="sheet" onclick="if(event.target===this)closeBaseSheet()"><div class="sheetbox"><div class="grab"></div><div class="sheettitle"><h3 id="baseSheetHeading">Basis auswählen</h3><button class="close" onclick="closeBaseSheet()">×</button></div><div class="field" style="margin-top:14px"><input id="baseSearch" placeholder="Basis suchen …" oninput="renderBaseResults()"></div><div id="baseResults"></div></div></div>
 <div id="sheet" class="sheet" onclick="if(event.target===this)closeSheet()">
   <div class="sheetbox"><div class="grab"></div><div class="sheettitle"><h3 id="sheetHeading">Affix wählen</h3><button class="close" onclick="closeSheet()">×</button></div><div class="field" style="margin-top:14px"><input id="modSearch" placeholder="Mod-Namen suchen …" oninput="renderResults()" /></div><div id="results"></div></div>
 </div>
@@ -151,23 +152,50 @@
 
 <script>
 const state={prefix:[null,null,null],suffix:[null,null,null],activeType:null,activeIndex:null};
-const baseItems={
-  Speer:[
-    {id:'flying-spear',name:'Fliegender Speer',requiredLevel:78,requirements:'50 Stärke, 127 Geschick',physical:'46–77',crit:'5,00 %',aps:'1,60',implicits:[
-      {name:'Gewährt Fertigkeit: Speerwurf',kind:'Gewährte Fertigkeit'},
-      {name:'26 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Fester Basis-Implizit'}
-    ]},
-    {id:'war-spear',name:'Kriegsspeer',requiredLevel:null,requirements:'Datenimport ausstehend',physical:'–',crit:'–',aps:'–',implicits:[]}
-  ],
-  Bogen:[{id:'bow-placeholder',name:'Bogen-Basis auswählen',requiredLevel:null,requirements:'Datenimport ausstehend',physical:'–',crit:'–',aps:'–',implicits:[]}],
-  Kampfstab:[{id:'quarterstaff-placeholder',name:'Kampfstab-Basis auswählen',requiredLevel:null,requirements:'Datenimport ausstehend',physical:'–',crit:'–',aps:'–',implicits:[]}],
-  Helm:[{id:'helmet-placeholder',name:'Helm-Basis auswählen',requiredLevel:null,requirements:'Datenimport ausstehend',physical:'–',crit:'–',aps:'–',implicits:[]}],
-  Körperrüstung:[{id:'body-placeholder',name:'Körperrüstungs-Basis auswählen',requiredLevel:null,requirements:'Datenimport ausstehend',physical:'–',crit:'–',aps:'–',implicits:[]}],
-  Ring:[{id:'ring-placeholder',name:'Ring-Basis auswählen',requiredLevel:null,requirements:'Datenimport ausstehend',physical:'–',crit:'–',aps:'–',implicits:[]}]
+const classOptions={
+ weapon:['Speer','Bogen','Kampfstab','Armbrust','Streitkolben','Schwert','Axt','Dolch','Flegel'],
+ armour:['Helm','Körperrüstung','Handschuhe','Stiefel','Schild','Fokus'],
+ jewellery:['Ring','Amulett','Gürtel']
 };
+const spearSkill={name:'Gewährt Fertigkeit: Speerwurf',kind:'Gewährte Fertigkeit'};
+const baseItems={
+ Speer:[
+  {id:'hardwood-spear',name:'Hartholz-Speer',requiredLevel:1,requirements:'Keine Attributanforderung',physical:'5–9',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'ironhead-spear',name:'Eisenkopf-Speer',requiredLevel:5,requirements:'10 Ges',physical:'9–12',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'hunting-spear',name:'Jagdspeer',requiredLevel:10,requirements:'9 Str · 17 Ges',physical:'10–17',crit:'5,00 %',aps:'1,55',implicits:[spearSkill,{name:'15–25 % Chance, bei Treffer zu verstümmeln',kind:'Variabler Basis-Implizit'}]},
+  {id:'winged-spear',name:'Flügelspeer',requiredLevel:16,requirements:'12 Str · 25 Ges',physical:'12–22',crit:'5,00 %',aps:'1,70',implicits:[spearSkill]},
+  {id:'war-spear',name:'Kriegsspeer',requiredLevel:21,requirements:'14 Str · 31 Ges',physical:'16–27',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'25–35 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Variabler Basis-Implizit'}]},
+  {id:'forked-spear',name:'Gegabelter Speer',requiredLevel:26,requirements:'17 Str · 38 Ges',physical:'13–38',crit:'5,00 %',aps:'1,55',implicits:[spearSkill]},
+  {id:'barbed-spear',name:'Widerhaken-Speer',requiredLevel:33,requirements:'20 Str · 47 Ges',physical:'20–38',crit:'6,00 %',aps:'1,50',implicits:[spearSkill,{name:'Von Euch verursachtes Bluten verursacht den Schaden 10–20 % schneller',kind:'Variabler Basis-Implizit'}]},
+  {id:'broad-spear',name:'Breitspeer',requiredLevel:40,requirements:'26 Str · 55 Ges',physical:'32–48',crit:'5,00 %',aps:'1,40',implicits:[spearSkill,{name:'25 % erhöhte Nahkampfschlagreichweite mit dieser Waffe',kind:'Fester Basis-Implizit'}]},
+  {id:'crossblade-spear',name:'Kreuzblattspeer',requiredLevel:45,requirements:'26 Str · 63 Ges',physical:'25–52',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'Verhindert +3–7 % des Schadens von abgewendeten Treffern',kind:'Variabler Basis-Implizit'}]},
+  {id:'sea-glass-spear',name:'Seeglas-Speer',requiredLevel:51,requirements:'29 Str · 71 Ges · 50 Int',physical:'29–53',crit:'7,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'sword-spear',name:'Schwertspeer',requiredLevel:52,requirements:'29 Str · 72 Ges',physical:'30–56',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'sharp-edged-spear',name:'Scharfkantiger Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'11,5–45,5 physisch + 11,5–45,5 Blitz',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'50 % des Grundschadens werden als Blitzschaden verursacht',kind:'Verborgene Basisregel'}]},
+  {id:'helix-spear',name:'Helix-Speer',requiredLevel:65,requirements:'36 Str · 89 Ges',physical:'37–68',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'steelhead-spear',name:'Stahlkopf-Speer',requiredLevel:45,requirements:'26 Str · 63 Ges',physical:'33–44',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'chase-spear',name:'Hetzjagd-Speer',requiredLevel:48,requirements:'27 Str · 67 Ges',physical:'31–52',crit:'5,00 %',aps:'1,55',implicits:[spearSkill,{name:'15–25 % Chance, bei Treffer zu verstümmeln',kind:'Variabler Basis-Implizit'}]},
+  {id:'swift-spear',name:'Flinker Speer',requiredLevel:51,requirements:'29 Str · 71 Ges',physical:'32–53',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'25–35 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Variabler Basis-Implizit'}]},
+  {id:'split-spear',name:'Gespaltener Speer',requiredLevel:54,requirements:'30 Str · 75 Ges',physical:'23–69',crit:'5,00 %',aps:'1,55',implicits:[spearSkill]},
+  {id:'jagged-spear',name:'Gezackter Speer',requiredLevel:59,requirements:'33 Str · 81 Ges',physical:'33–61',crit:'6,00 %',aps:'1,50',implicits:[spearSkill,{name:'Von Euch verursachtes Bluten verursacht den Schaden 10–20 % schneller',kind:'Variabler Basis-Implizit'}]},
+  {id:'massive-spear',name:'Massiver Speer',requiredLevel:62,requirements:'40 Str · 80 Ges',physical:'46–69',crit:'5,00 %',aps:'1,40',implicits:[spearSkill,{name:'25 % erhöhte Nahkampfschlagreichweite mit dieser Waffe',kind:'Fester Basis-Implizit'}]},
+  {id:'flying-spear',name:'Fliegender Speer',requiredLevel:78,requirements:'50 Str · 127 Ges',physical:'46–77',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'26 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Fester Basis-Implizit'}]},
+  {id:'runeforged-hardwood',name:'Runengeschmiedeter Hartholz-Speer',requiredLevel:40,requirements:'23 Str · 56 Ges',physical:'24–45',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'runeforged-ironhead',name:'Runengeschmiedeter Eisenkopf-Speer',requiredLevel:38,requirements:'23 Str · 54 Ges',physical:'40–54',crit:'5,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'runerefined-ironhead',name:'Runenveredelter Eisenkopf-Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'94–127',crit:'5,00 %',aps:'1,25',implicits:[spearSkill]},
+  {id:'runeforged-hunting',name:'Runengeschmiedeter Jagdspeer',requiredLevel:38,requirements:'23 Str · 54 Ges',physical:'65–108',crit:'5,00 %',aps:'1,55',implicits:[spearSkill,{name:'15–25 % Chance, bei Treffer zu verstümmeln',kind:'Variabler Basis-Implizit'}]},
+  {id:'runeforged-winged',name:'Runengeschmiedeter Flügelspeer',requiredLevel:40,requirements:'23 Str · 56 Ges',physical:'0–125 Blitz',crit:'5,00 %',aps:'1,70',implicits:[spearSkill,{name:'100 % des Grundschadens werden als Blitzschaden verursacht',kind:'Verborgene Basisregel'}]},
+  {id:'runeforged-war',name:'Runengeschmiedeter Kriegsspeer',requiredLevel:40,requirements:'23 Str · 56 Ges',physical:'59–98',crit:'5,00 %',aps:'1,60',implicits:[spearSkill,{name:'25–35 % erhöhte Projektilgeschwindigkeit mit dieser Waffe',kind:'Variabler Basis-Implizit'}]},
+  {id:'runeforged-forked',name:'Runengeschmiedeter Gegabelter Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'8–57',crit:'7,00 %',aps:'1,60',implicits:[spearSkill]},
+  {id:'runeforged-barbed',name:'Runengeschmiedeter Widerhaken-Speer',requiredLevel:55,requirements:'31 Str · 76 Ges',physical:'26,5–49,3 physisch + 51,5–95,7 Feuer',crit:'6,00 %',aps:'1,50',implicits:[spearSkill,{name:'Von Euch verursachtes Bluten verursacht den Schaden 10–20 % schneller',kind:'Variabler Basis-Implizit'},{name:'66 % des Grundschadens werden als Feuerschaden verursacht',kind:'Verborgene Basisregel'}]}
+ ],
+ Bogen:[],Kampfstab:[],Armbrust:[],Streitkolben:[],Schwert:[],Axt:[],Dolch:[],Flegel:[],
+ Helm:[],Körperrüstung:[],Handschuhe:[],Stiefel:[],Schild:[],Fokus:[],Ring:[],Amulett:[],Gürtel:[]
+};
+function renderClassOptions(){const category=document.getElementById('category').value;const select=document.getElementById('itemClass');const classes=classOptions[category]||[];select.innerHTML=classes.map(c=>`<option value="${c}">${c}</option>`).join('');renderBaseOptions()}
 function currentBase(){const cls=document.getElementById('itemClass').value;const id=document.getElementById('base').value;return (baseItems[cls]||[]).find(x=>x.id===id)}
-function renderBaseOptions(selectedId){const cls=document.getElementById('itemClass').value;const select=document.getElementById('base');select.innerHTML=(baseItems[cls]||[]).map(b=>`<option value="${b.id}">${b.name}</option>`).join('');if(selectedId && [...select.options].some(o=>o.value===selectedId))select.value=selectedId;renderBaseDetails()}
-function renderBaseDetails(){const b=currentBase();const host=document.getElementById('baseDetails');if(!b){host.innerHTML='';return}const ilvl=Number(document.getElementById('ilevel').value)||1;const req=b.requiredLevel?`Stufe ${b.requiredLevel}`:'Noch nicht importiert';const implicitHtml=b.implicits.length?b.implicits.map(i=>`<div class="implicit"><span class="lock">🔒</span><div><b>${i.name}</b><small>${i.kind} · nicht als Affix löschbar</small></div></div>`).join(''):'<div class="status warn">Für diese Basis sind die festen Implizits noch nicht importiert.</div>';host.innerHTML=`<div class="base-title"><div><h3>${b.name}</h3><div style="color:var(--muted);font-size:11px;margin-top:4px">Basisdaten · Item-Level ${ilvl}</div></div><span class="verified">Basis</span></div><div class="base-grid"><div class="base-stat"><small>Physischer Schaden</small><b>${b.physical}</b></div><div class="base-stat"><small>Angriffe pro Sekunde</small><b>${b.aps}</b></div><div class="base-stat"><small>Kritische Chance</small><b>${b.crit}</b></div><div class="base-stat"><small>Anforderungen</small><b>${req}<br>${b.requirements}</b></div></div><div class="implicit-block"><div class="implicit-label">Feste Eigenschaften der Basis</div>${implicitHtml}</div>`}
+function renderBaseOptions(selectedId){const cls=document.getElementById('itemClass').value;const select=document.getElementById('base');const items=baseItems[cls]||[];select.innerHTML=items.map(b=>`<option value="${b.id}">${b.name}</option>`).join('');if(selectedId && [...select.options].some(o=>o.value===selectedId))select.value=selectedId;else if(items.length)select.value=items[0].id;document.getElementById('basePicker').disabled=!items.length;document.getElementById('basePicker').classList.toggle('disabled',!items.length);document.getElementById('basePickerName').textContent=items.length?(currentBase()?.name||'Basis auswählen'):`${cls}: Datenimport ausstehend`;renderBaseDetails()}
+function renderBaseDetails(){const b=currentBase();const host=document.getElementById('baseDetails');document.getElementById('basePickerName').textContent=b?b.name:'Keine Basis verfügbar';if(!b){host.innerHTML='<div class="status warn">Für diese Klasse ist der vollständige Basisimport noch nicht angeschlossen.</div>';return}const ilvl=Number(document.getElementById('ilevel').value)||1;const req=b.requiredLevel?`Stufe ${b.requiredLevel}`:'Noch nicht importiert';const implicitHtml=b.implicits.length?b.implicits.map(i=>`<div class="implicit"><span class="lock">🔒</span><div><b>${i.name}</b><small>${i.kind} · nicht als Affix löschbar</small></div></div>`).join(''):'<div class="status warn">Für diese Basis sind die festen Implizits noch nicht importiert.</div>';host.innerHTML=`<div class="base-title"><div><h3>${b.name}</h3><div style="color:var(--muted);font-size:11px;margin-top:4px">Basisdaten · Item-Level ${ilvl}</div></div><span class="verified">Basis</span></div><div class="base-grid"><div class="base-stat"><small>Physischer Schaden</small><b>${b.physical}</b></div><div class="base-stat"><small>Angriffe pro Sekunde</small><b>${b.aps}</b></div><div class="base-stat"><small>Kritische Chance</small><b>${b.crit}</b></div><div class="base-stat"><small>Anforderungen</small><b>${req}<br>${b.requirements}</b></div></div><div class="implicit-block"><div class="implicit-label">Feste Eigenschaften der Basis</div>${implicitHtml}</div>`}
 const demoMods={
  prefix:[
   {name:'Erhöhter physischer Schaden',group:'phys_percent',lvl:1},
@@ -190,6 +218,9 @@ const priceItems=['Divine Orb','Exalted Orb','Regal Orb','Orb of Annulment','Cha
 function switchView(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));window.scrollTo({top:0,behavior:'smooth'});if(id==='projects')renderProjects()}
 function limits(){const r=document.getElementById('rarity').value;return r==='rare'?3:r==='magic'?1:0}
 function renderSlots(){['prefix','suffix'].forEach(type=>{const host=document.getElementById(type+'Slots');host.innerHTML='';const max=limits();state[type].forEach((mod,i)=>{const btn=document.createElement('button');btn.className='affix-slot'+(i>=max?' disabled':'');btn.disabled=i>=max;btn.onclick=()=>openModSheet(type,i);btn.innerHTML=`<div class="meta"><small>${type==='prefix'?'Präfix':'Suffix'} ${i+1}</small><b>${mod?mod.name:'Mod auswählen'}</b></div><div class="arrow">›</div>`;host.appendChild(btn)});document.getElementById(type+'Count').textContent=`${state[type].filter(Boolean).length} / ${max}`})}
+function openBaseSheet(){if(document.getElementById('basePicker').disabled)return;document.getElementById('baseSearch').value='';document.getElementById('baseSheetHeading').textContent=`${document.getElementById('itemClass').value}: Basis auswählen`;renderBaseResults();document.getElementById('baseSheet').classList.add('open')}
+function closeBaseSheet(){document.getElementById('baseSheet').classList.remove('open')}
+function renderBaseResults(){const cls=document.getElementById('itemClass').value;const q=document.getElementById('baseSearch').value.toLowerCase().trim();const items=(baseItems[cls]||[]).filter(b=>b.name.toLowerCase().includes(q));const host=document.getElementById('baseResults');host.innerHTML=items.length?'':'<div class="empty">Keine passende Basis gefunden.</div>';items.forEach(b=>{const row=document.createElement('div');row.className='result';const implicit=b.implicits.filter(x=>x.kind!=='Gewährte Fertigkeit').map(x=>x.name).join(' · ')||'Keine zusätzliche sichtbare Basis-Eigenschaft';row.innerHTML=`<div><b>${b.name}</b><small>Stufe ${b.requiredLevel} · ${b.physical} · ${b.aps} APS<br>${implicit}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{document.getElementById('base').value=b.id;renderBaseDetails();closeBaseSheet()};host.appendChild(row)})}
 function openModSheet(type,index){state.activeType=type;state.activeIndex=index;document.getElementById('sheetHeading').textContent=`${type==='prefix'?'Präfix':'Suffix'} ${index+1} wählen`;document.getElementById('modSearch').value='';renderResults();document.getElementById('sheet').classList.add('open')}
 function closeSheet(){document.getElementById('sheet').classList.remove('open')}
 function renderResults(){const q=document.getElementById('modSearch').value.toLowerCase();const lvl=Number(document.getElementById('ilevel').value)||1;const used=new Set([...state.prefix,...state.suffix].filter(Boolean).map(x=>x.group));const mods=demoMods[state.activeType].filter(m=>m.lvl<=lvl && (!used.has(m.group)||state[state.activeType][state.activeIndex]?.group===m.group) && m.name.toLowerCase().includes(q));const host=document.getElementById('results');host.innerHTML='';if(state[state.activeType][state.activeIndex]){const clear=document.createElement('div');clear.className='result';clear.innerHTML='<div><b>Slot leeren</b><small>Ausgewählten Mod entfernen</small></div><button class="add">Entfernen</button>';clear.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=null;closeSheet();renderSlots()};host.appendChild(clear)}if(!mods.length){host.innerHTML+='<div class="empty">Keine passenden Mods gefunden.</div>';return}mods.forEach(m=>{const row=document.createElement('div');row.className='result';row.innerHTML=`<div><b>${m.name}</b><small>Mindest-Item-Level ${m.lvl} · Gruppe ${m.group}</small></div><button class="add">Wählen</button>`;row.querySelector('button').onclick=()=>{state[state.activeType][state.activeIndex]=m;closeSheet();renderSlots()};host.appendChild(row)})}
@@ -202,7 +233,7 @@ function renderPrices(){const stored=JSON.parse(localStorage.getItem('exileforge
 function savePrices(){const obj={};priceItems.forEach((n,i)=>{const v=document.getElementById('price'+i).value;if(v!=='')obj[n]=Number(v)});localStorage.setItem('exileforge_prices',JSON.stringify(obj));alert('Preise wurden lokal gespeichert.')}
 function openCapture(){document.getElementById('captureSheet').classList.add('open')}function closeCapture(){document.getElementById('captureSheet').classList.remove('open')}
 function handleImage(input){const f=input.files?.[0];document.getElementById('imageStatus').textContent=f?`Bild ausgewählt: ${f.name}. Automatische Erkennung folgt in einer späteren Version.`:'Noch kein Bild ausgewählt.'}
-renderBaseOptions();renderSlots();renderPrices();updateHomeProject();
+renderClassOptions();renderSlots();renderPrices();updateHomeProject();
 </script>
 </body>
 </html>
