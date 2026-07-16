@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-16T18:08:55.437Z",
+  "source": {
+    "repository": "https://github.com/adainrivers/poe2-data",
+    "commit": "6a49dbd72e745d338958525c4c570b4891719c72",
+    "commitDate": "2025-01-21T16:56:51+01:00"
+  },
+  "tables": {
+    "english": {
+      "baseitemtypes.json": {
+        "file": "raw/english/baseitemtypes.json",
+        "bytes": 3919031,
+        "sha256": "31336e5591fdfbe7be380f6b3f581720d7a829d68c760a8c78d0bbed04dca0c4"
+      },
+      "itemclasses.json": {
+        "file": "raw/english/itemclasses.json",
+        "bytes": 106818,
+        "sha256": "073aed8e0f50ada36bacd42b365999c68821072a59e3c4ac2e3d0dfbb8ccdb34"
+      },
+      "itemclasscategories.json": {
+        "file": "raw/english/itemclasscategories.json",
+        "bytes": 5890,
+        "sha256": "2fb78cb0b727227225abd953b9bf7e19901f9d878489dae2286df9e7bd6ccf1e"
+      },
+      "mods.json": {
+        "file": "raw/english/mods.json",
+        "bytes": 29082566,
+        "sha256": "08da142b8ebdc51b3154a68bf770193725588f6e174a3ae3eb55d5c9f72a75c3"
+      },
+      "stats.json": {
+        "file": "raw/english/stats.json",
+        "bytes": 11324552,
+        "sha256": "ec872fea2813ac9e785d881e2b70642714585e8fef6547aa5b9fda724b41c492"
+      },
+      "tags.json": {
+        "file": "raw/english/tags.json",
+        "bytes": 94053,
+        "sha256": "32ad4a4f526307f2ee84ef243101461bf934c8c724dfad6fa6b929873aa9b3bb"
+      },
+      "defaultmonsterstats.json": {
+        "file": "raw/english/defaultmonsterstats.json",
+        "bytes": 36678,
+        "sha256": "50984be5c0e56a8c5a71810346a115e350fd5c2621c10913ab16b5fc14d01b37"
+      },
+      "currencyitems.json": {
+        "file": "raw/english/currencyitems.json",
+        "bytes": 892814,
+        "sha256": "df0479c0c6d8cd560226865e4f9628fd37581f728fba0c8639824c3a9e2cb6f0"
+      },
+      "craftingbenchoptions.json": {
+        "file": "raw/english/craftingbenchoptions.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "craftingitemclasscategories.json": {
+        "file": "raw/english/craftingitemclasscategories.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "essences.json": {
+        "file": "raw/english/essences.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "armourtypes.json": {
+        "file": "raw/english/armourtypes.json",
+        "bytes": 134543,
+        "sha256": "d5ed360babbb74da11d7361f6b19d92efb8edee5127fc82e3897068afe3e11e9"
+      },
+      "belttypes.json": {
+        "file": "raw/english/belttypes.json",
+        "bytes": 1577,
+        "sha256": "cd42a7e53c4190cd73853c21c137918c9697c7ac17764f45702d34210d9aa919"
+      },
+      "shieldtypes.json": {
+        "file": "raw/english/shieldtypes.json",
+        "bytes": 14024,
+        "sha256": "0ab5f6d133f1e7d56161b367a6afc077cb9bef41630759d2608e8e1c1a9fbbf7"
+      },
+      "weaponclasses.json": {
+        "file": "raw/english/weaponclasses.json",
+        "bytes": 1644,
+        "sha256": "0962bb7cb2ddc5c6f8e9a605353149475d7e2d972018f52ecd7470f54477c228"
+      },
+      "weapontypes.json": {
+        "file": "raw/english/weapontypes.json",
+        "bytes": 84493,
+        "sha256": "c81cb6cf88ac0f4bca829e6c00b8376c791c7f84305c71454f10eeafa0ba3b24"
+      },
+      "flavourtext.json": {
+        "file": "raw/english/flavourtext.json",
+        "bytes": 536737,
+        "sha256": "7a55939eecfb588ec598282f47b7dbbc3b7a332ba23aa87d21973fbc35af7009"
+      }
+    },
+    "german": {
+      "baseitemtypes.json": {
+        "file": "raw/german/baseitemtypes.json",
+        "bytes": 3748612,
+        "sha256": "cb160c6994f0e31e70a39fcc425aaaadd36d6ee4128362d0839930f5315219b3"
+      },
+      "itemclasses.json": {
+        "file": "raw/german/itemclasses.json",
+        "bytes": 102931,
+        "sha256": "912d41a94cd086b25f34410c080bebba44e2342aec94aca91896d19857162660"
+      },
+      "itemclasscategories.json": {
+        "file": "raw/german/itemclasscategories.json",
+        "bytes": 5824,
+        "sha256": "f9d6d93c28b83fba868b24a26a7d718cdfe71b0919447f3e48eb15f5ce0937a5"
+      },
+      "mods.json": {
+        "file": "raw/german/mods.json",
+        "bytes": 27906757,
+        "sha256": "f2ca5a51e94f7ff37b8caf62f4e5a820eb1aaa8d647fb84398b6f7412039f837"
+      },
+      "stats.json": {
+        "file": "raw/german/stats.json",
+        "bytes": 10860499,
+        "sha256": "e381157ba2704b5dfe947d2c0c9685fa5944e5e4d39b62b31b3f1d82898f3296"
+      },
+      "tags.json": {
+        "file": "raw/german/tags.json",
+        "bytes": 88457,
+        "sha256": "78f0b258c6dfea685ee56d9896d502daf298941217a31596db6ff712946db089"
+      },
+      "currencyitems.json": {
+        "file": "raw/german/currencyitems.json",
+        "bytes": 913641,
+        "sha256": "b9a2051958945c38eb723c39a52485053aa9e7197ebad306288a6881ed248840"
+      },
+      "craftingbenchoptions.json": {
+        "file": "raw/german/craftingbenchoptions.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "craftingitemclasscategories.json": {
+        "file": "raw/german/craftingitemclasscategories.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "flavourtext.json": {
+        "file": "raw/german/flavourtext.json",
+        "bytes": 578268,
+        "sha256": "ea29906f8b47f76a5b7ad4973918c3108a202efa852a61ec539f209d98dee810"
+      }
+    }
+  },
+  "missing": [
+    {
+      "language": "english",
+      "table": "modfamilies.json"
+    },
+    {
+      "language": "english",
+      "table": "modgenerationtypes.json"
+    },
+    {
+      "language": "english",
+      "table": "modsellprices.json"
+    },
+    {
+      "language": "english",
+      "table": "runegrafts.json"
+    },
+    {
+      "language": "english",
+      "table": "runes.json"
+    },
+    {
+      "language": "english",
+      "table": "omenitems.json"
+    },
+    {
+      "language": "english",
+      "table": "desecratedmods.json"
+    },
+    {
+      "language": "english",
+      "table": "desecratedmodtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "modfamilies.json"
+    },
+    {
+      "language": "german",
+      "table": "modgenerationtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "modsellprices.json"
+    },
+    {
+      "language": "german",
+      "table": "defaultmonsterstats.json"
+    },
+    {
+      "language": "german",
+      "table": "essences.json"
+    },
+    {
+      "language": "german",
+      "table": "runegrafts.json"
+    },
+    {
+      "language": "german",
+      "table": "runes.json"
+    },
+    {
+      "language": "german",
+      "table": "omenitems.json"
+    },
+    {
+      "language": "german",
+      "table": "desecratedmods.json"
+    },
+    {
+      "language": "german",
+      "table": "desecratedmodtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "armourtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "belttypes.json"
+    },
+    {
+      "language": "german",
+      "table": "shieldtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "weaponclasses.json"
+    },
+    {
+      "language": "german",
+      "table": "weapontypes.json"
+    }
+  ]
+}

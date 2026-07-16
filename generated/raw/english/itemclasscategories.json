@@ -1,0 +1,357 @@
+[
+  {
+    "Id": "Flask",
+    "Text": "[Flask]",
+    "Unk002": null
+  },
+  {
+    "Id": "One Hand Mace",
+    "Text": "[Mace|One Hand Mace]",
+    "Unk002": null
+  },
+  {
+    "Id": "One Hand Sword",
+    "Text": "[Sword|One Hand Sword]",
+    "Unk002": null
+  },
+  {
+    "Id": "Dagger",
+    "Text": "[Dagger]",
+    "Unk002": null
+  },
+  {
+    "Id": "Staff",
+    "Text": "[Staff]",
+    "Unk002": null
+  },
+  {
+    "Id": "Warstaff",
+    "Text": "[Quarterstaff]",
+    "Unk002": null
+  },
+  {
+    "Id": "Currency",
+    "Text": "Currency",
+    "Unk002": null
+  },
+  {
+    "Id": "Amulet",
+    "Text": "Amulet",
+    "Unk002": null
+  },
+  {
+    "Id": "Ring",
+    "Text": "Ring",
+    "Unk002": null
+  },
+  {
+    "Id": "Claw",
+    "Text": "[Claw]",
+    "Unk002": null
+  },
+  {
+    "Id": "Wand",
+    "Text": "[Wand]",
+    "Unk002": null
+  },
+  {
+    "Id": "One Hand Axe",
+    "Text": "[Axe|One Hand Axe]",
+    "Unk002": null
+  },
+  {
+    "Id": "Bow",
+    "Text": "[Bow]",
+    "Unk002": null
+  },
+  {
+    "Id": "Two Hand Sword",
+    "Text": "[Sword|Two Hand Sword]",
+    "Unk002": null
+  },
+  {
+    "Id": "Two Hand Axe",
+    "Text": "[Axe|Two Hand Axe]",
+    "Unk002": null
+  },
+  {
+    "Id": "Two Hand Mace",
+    "Text": "[Mace|Two Hand Mace]",
+    "Unk002": null
+  },
+  {
+    "Id": "Active Skill Gem",
+    "Text": "Skill Gem",
+    "Unk002": null
+  },
+  {
+    "Id": "Support Skill Gem",
+    "Text": "Support Gem",
+    "Unk002": null
+  },
+  {
+    "Id": "Quiver",
+    "Text": "[Quiver]",
+    "Unk002": null
+  },
+  {
+    "Id": "Belt",
+    "Text": "Belt",
+    "Unk002": null
+  },
+  {
+    "Id": "Gloves",
+    "Text": "Gloves",
+    "Unk002": null
+  },
+  {
+    "Id": "Boots",
+    "Text": "Boots",
+    "Unk002": null
+  },
+  {
+    "Id": "Body Armour",
+    "Text": "Body Armour",
+    "Unk002": null
+  },
+  {
+    "Id": "Helmet",
+    "Text": "Helmet",
+    "Unk002": null
+  },
+  {
+    "Id": "Shield",
+    "Text": "[Shield]",
+    "Unk002": null
+  },
+  {
+    "Id": "QuestItem",
+    "Text": "[QuestItem|Quest Item]",
+    "Unk002": null
+  },
+  {
+    "Id": "Map",
+    "Text": "",
+    "Unk002": null
+  },
+  {
+    "Id": "FishingRod",
+    "Text": "Fishing Rod",
+    "Unk002": null
+  },
+  {
+    "Id": "MapFragment",
+    "Text": "Map Fragment",
+    "Unk002": null
+  },
+  {
+    "Id": "Jewel",
+    "Text": "[Jewel]",
+    "Unk002": null
+  },
+  {
+    "Id": "DivinationCard",
+    "Text": "Divination Card",
+    "Unk002": null
+  },
+  {
+    "Id": "LabyrinthItem",
+    "Text": "Labyrinth Key",
+    "Unk002": null
+  },
+  {
+    "Id": "LabyrinthTrinket",
+    "Text": "Labyrinth Trinket",
+    "Unk002": null
+  },
+  {
+    "Id": "MiscMapItem",
+    "Text": "",
+    "Unk002": null
+  },
+  {
+    "Id": "Leaguestone",
+    "Text": "Leaguestone",
+    "Unk002": null
+  },
+  {
+    "Id": "PantheonSoul",
+    "Text": "Captured Soul",
+    "Unk002": null
+  },
+  {
+    "Id": "UniqueFragment",
+    "Text": "Unique Piece",
+    "Unk002": null
+  },
+  {
+    "Id": "AbyssJewel",
+    "Text": "Abyss Jewel",
+    "Unk002": null
+  },
+  {
+    "Id": "IncursionItem",
+    "Text": "Incursion Item",
+    "Unk002": null
+  },
+  {
+    "Id": "DelveSocketableCurrency",
+    "Text": "Resonator",
+    "Unk002": null
+  },
+  {
+    "Id": "Incubator",
+    "Text": "Incubator",
+    "Unk002": null
+  },
+  {
+    "Id": "AtlasUpgradeItem",
+    "Text": "Watchstone",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistContract",
+    "Text": "Contract",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentWeapon",
+    "Text": "Heist Gear",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentTool",
+    "Text": "Heist Tool",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentUtility",
+    "Text": "Heist Cloak",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentReward",
+    "Text": "Heist Brooch",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistBlueprint",
+    "Text": "Blueprint",
+    "Unk002": null
+  },
+  {
+    "Id": "Trinket",
+    "Text": "Trinket",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistObjective",
+    "Text": "Heist Target",
+    "Unk002": null
+  },
+  {
+    "Id": "ExpeditionLogbook",
+    "Text": "Expedition Logbook",
+    "Unk002": null
+  },
+  {
+    "Id": "InstanceLocalItem",
+    "Text": "Instance Local Item",
+    "Unk002": null
+  },
+  {
+    "Id": "SentinelDrone",
+    "Text": "Sentinel Drone",
+    "Unk002": null
+  },
+  {
+    "Id": "Relic",
+    "Text": "Relic",
+    "Unk002": null
+  },
+  {
+    "Id": "MemoryLine",
+    "Text": "Memory",
+    "Unk002": null
+  },
+  {
+    "Id": "Breachstone",
+    "Text": "Breachstone",
+    "Unk002": null
+  },
+  {
+    "Id": "VaultKey",
+    "Text": "Vault Key",
+    "Unk002": null
+  },
+  {
+    "Id": "Spear",
+    "Text": "[Spear]",
+    "Unk002": null
+  },
+  {
+    "Id": "Crossbow",
+    "Text": "[Crossbow]",
+    "Unk002": null
+  },
+  {
+    "Id": "Focus",
+    "Text": "[Focus]",
+    "Unk002": null
+  },
+  {
+    "Id": "Flail",
+    "Text": "[Flail]",
+    "Unk002": null
+  },
+  {
+    "Id": "Sceptre",
+    "Text": "[Sceptre]",
+    "Unk002": null
+  },
+  {
+    "Id": "Buckler",
+    "Text": "Buckler",
+    "Unk002": null
+  },
+  {
+    "Id": "TrapTool",
+    "Text": "[Trap]",
+    "Unk002": null
+  },
+  {
+    "Id": "MetaSkillGem",
+    "Text": "",
+    "Unk002": null
+  },
+  {
+    "Id": "UncutSkillGem",
+    "Text": "",
+    "Unk002": null
+  },
+  {
+    "Id": "Unarmed",
+    "Text": "[Unarmed]",
+    "Unk002": null
+  },
+  {
+    "Id": "SoulCore",
+    "Text": "Soul Core",
+    "Unk002": null
+  },
+  {
+    "Id": "TowerAugment",
+    "Text": "Tablet",
+    "Unk002": null
+  },
+  {
+    "Id": "Charm",
+    "Text": "Charm",
+    "Unk002": null
+  },
+  {
+    "Id": "Omen",
+    "Text": "Omen",
+    "Unk002": null
+  }
+]

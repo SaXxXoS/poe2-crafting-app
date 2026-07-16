@@ -1,0 +1,357 @@
+[
+  {
+    "Id": "Flask",
+    "Text": "[Flask|Fläschchen]",
+    "Unk002": null
+  },
+  {
+    "Id": "One Hand Mace",
+    "Text": "[Mace|Einhandstreitkolben]",
+    "Unk002": null
+  },
+  {
+    "Id": "One Hand Sword",
+    "Text": "[Sword|Einhandschwert]",
+    "Unk002": null
+  },
+  {
+    "Id": "Dagger",
+    "Text": "[Dagger|Dolch]",
+    "Unk002": null
+  },
+  {
+    "Id": "Staff",
+    "Text": "[Staff|Stab]",
+    "Unk002": null
+  },
+  {
+    "Id": "Warstaff",
+    "Text": "[Quarterstaff|Kampfstab]",
+    "Unk002": null
+  },
+  {
+    "Id": "Currency",
+    "Text": "Währung",
+    "Unk002": null
+  },
+  {
+    "Id": "Amulet",
+    "Text": "Amulett",
+    "Unk002": null
+  },
+  {
+    "Id": "Ring",
+    "Text": "Ring",
+    "Unk002": null
+  },
+  {
+    "Id": "Claw",
+    "Text": "[Claw|Klaue]",
+    "Unk002": null
+  },
+  {
+    "Id": "Wand",
+    "Text": "[Wand|Zauberstab]",
+    "Unk002": null
+  },
+  {
+    "Id": "One Hand Axe",
+    "Text": "[Axe|Einhandaxt]",
+    "Unk002": null
+  },
+  {
+    "Id": "Bow",
+    "Text": "[Bow|Bogen]",
+    "Unk002": null
+  },
+  {
+    "Id": "Two Hand Sword",
+    "Text": "[Sword|Zweihandschwert]",
+    "Unk002": null
+  },
+  {
+    "Id": "Two Hand Axe",
+    "Text": "[Axe|Zweihandaxt]",
+    "Unk002": null
+  },
+  {
+    "Id": "Two Hand Mace",
+    "Text": "[Mace|Zweihandstreitkolben]",
+    "Unk002": null
+  },
+  {
+    "Id": "Active Skill Gem",
+    "Text": "Fertigkeitengemme",
+    "Unk002": null
+  },
+  {
+    "Id": "Support Skill Gem",
+    "Text": "Unterstützungsgemme",
+    "Unk002": null
+  },
+  {
+    "Id": "Quiver",
+    "Text": "[Quiver|Köcher]",
+    "Unk002": null
+  },
+  {
+    "Id": "Belt",
+    "Text": "Gürtel",
+    "Unk002": null
+  },
+  {
+    "Id": "Gloves",
+    "Text": "Handschuhe",
+    "Unk002": null
+  },
+  {
+    "Id": "Boots",
+    "Text": "Stiefel",
+    "Unk002": null
+  },
+  {
+    "Id": "Body Armour",
+    "Text": "Körperrüstung",
+    "Unk002": null
+  },
+  {
+    "Id": "Helmet",
+    "Text": "Helm",
+    "Unk002": null
+  },
+  {
+    "Id": "Shield",
+    "Text": "[Shield|Schild]",
+    "Unk002": null
+  },
+  {
+    "Id": "QuestItem",
+    "Text": "[QuestItem|Quest-Gegenstand]",
+    "Unk002": null
+  },
+  {
+    "Id": "Map",
+    "Text": "Karte",
+    "Unk002": null
+  },
+  {
+    "Id": "FishingRod",
+    "Text": "Angelrute",
+    "Unk002": null
+  },
+  {
+    "Id": "MapFragment",
+    "Text": "Kartenfragment",
+    "Unk002": null
+  },
+  {
+    "Id": "Jewel",
+    "Text": "[Jewel|Juwel]",
+    "Unk002": null
+  },
+  {
+    "Id": "DivinationCard",
+    "Text": "Weissagungskarte",
+    "Unk002": null
+  },
+  {
+    "Id": "LabyrinthItem",
+    "Text": "Labyrinth-Schlüssel",
+    "Unk002": null
+  },
+  {
+    "Id": "LabyrinthTrinket",
+    "Text": "Labyrinth-Relikt",
+    "Unk002": null
+  },
+  {
+    "Id": "MiscMapItem",
+    "Text": "Sonstiger Kartengegenstand",
+    "Unk002": null
+  },
+  {
+    "Id": "Leaguestone",
+    "Text": "Liga-Stein",
+    "Unk002": null
+  },
+  {
+    "Id": "PantheonSoul",
+    "Text": "Eingefangene Seele",
+    "Unk002": null
+  },
+  {
+    "Id": "UniqueFragment",
+    "Text": "Bruchstück",
+    "Unk002": null
+  },
+  {
+    "Id": "AbyssJewel",
+    "Text": "Abgrund-Juwel",
+    "Unk002": null
+  },
+  {
+    "Id": "IncursionItem",
+    "Text": "Incursion-Gegenstand",
+    "Unk002": null
+  },
+  {
+    "Id": "DelveSocketableCurrency",
+    "Text": "Resonator",
+    "Unk002": null
+  },
+  {
+    "Id": "Incubator",
+    "Text": "Inkubator",
+    "Unk002": null
+  },
+  {
+    "Id": "AtlasUpgradeItem",
+    "Text": "Wächterstein",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistContract",
+    "Text": "Auftrag",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentWeapon",
+    "Text": "Heist-Ausrüstung",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentTool",
+    "Text": "Heist-Werkzeug",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentUtility",
+    "Text": "Heist-Umhang",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistEquipmentReward",
+    "Text": "Heist-Brosche",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistBlueprint",
+    "Text": "Grundriss",
+    "Unk002": null
+  },
+  {
+    "Id": "Trinket",
+    "Text": "Schmuckstück",
+    "Unk002": null
+  },
+  {
+    "Id": "HeistObjective",
+    "Text": "Auftragsziel",
+    "Unk002": null
+  },
+  {
+    "Id": "ExpeditionLogbook",
+    "Text": "Expeditions-Logbuch",
+    "Unk002": null
+  },
+  {
+    "Id": "InstanceLocalItem",
+    "Text": "Instanzgebundener lokaler Gegenstand",
+    "Unk002": null
+  },
+  {
+    "Id": "SentinelDrone",
+    "Text": "Wächterdrohne",
+    "Unk002": null
+  },
+  {
+    "Id": "Relic",
+    "Text": "Relikt",
+    "Unk002": null
+  },
+  {
+    "Id": "MemoryLine",
+    "Text": "Erinnerung",
+    "Unk002": null
+  },
+  {
+    "Id": "Breachstone",
+    "Text": "Riss-Stein",
+    "Unk002": null
+  },
+  {
+    "Id": "VaultKey",
+    "Text": "Reliquienkammer-Schlüssel",
+    "Unk002": null
+  },
+  {
+    "Id": "Spear",
+    "Text": "[Spear|Speer]",
+    "Unk002": null
+  },
+  {
+    "Id": "Crossbow",
+    "Text": "[Crossbow|Armbrust]",
+    "Unk002": null
+  },
+  {
+    "Id": "Focus",
+    "Text": "[Focus|Fokus]",
+    "Unk002": null
+  },
+  {
+    "Id": "Flail",
+    "Text": "[Flail|Flegel]",
+    "Unk002": null
+  },
+  {
+    "Id": "Sceptre",
+    "Text": "[Sceptre|Zepter]",
+    "Unk002": null
+  },
+  {
+    "Id": "Buckler",
+    "Text": "Faustschild",
+    "Unk002": null
+  },
+  {
+    "Id": "TrapTool",
+    "Text": "[Trap|Falle]",
+    "Unk002": null
+  },
+  {
+    "Id": "MetaSkillGem",
+    "Text": "",
+    "Unk002": null
+  },
+  {
+    "Id": "UncutSkillGem",
+    "Text": "",
+    "Unk002": null
+  },
+  {
+    "Id": "Unarmed",
+    "Text": "[Unarmed|Unbewaffnet]",
+    "Unk002": null
+  },
+  {
+    "Id": "SoulCore",
+    "Text": "Seelenkern",
+    "Unk002": null
+  },
+  {
+    "Id": "TowerAugment",
+    "Text": "Tafel",
+    "Unk002": null
+  },
+  {
+    "Id": "Charm",
+    "Text": "Phiole",
+    "Unk002": null
+  },
+  {
+    "Id": "Omen",
+    "Text": "Omen",
+    "Unk002": null
+  }
+]

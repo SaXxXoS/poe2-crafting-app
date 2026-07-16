@@ -1,0 +1,79 @@
+[
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt1"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt2"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt3"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt4"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt5"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt6"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt7"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt8"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt9"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt10"
+    },
+    "CharmSlots": 1
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Belts/FourBelt11"
+    },
+    "CharmSlots": 1
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Bow"
+    },
+    "Unk001": 120
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Dagger"
+    },
+    "Unk001": 10
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "One Hand Axe"
+    },
+    "Unk001": 11
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "One Hand Mace"
+    },
+    "Unk001": 11
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "One Hand Sword"
+    },
+    "Unk001": 11
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Two Hand Axe"
+    },
+    "Unk001": 13
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Two Hand Mace"
+    },
+    "Unk001": 13
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Two Hand Sword"
+    },
+    "Unk001": 13
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Claw"
+    },
+    "Unk001": 11
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "FishingRod"
+    },
+    "Unk001": 13
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Warstaff"
+    },
+    "Unk001": 13
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Spear"
+    },
+    "Unk001": 15
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Crossbow"
+    },
+    "Unk001": 120
+  },
+  {
+    "ItemClass": {
+      "TableName": "ItemClasses",
+      "Id": "Flail"
+    },
+    "Unk001": 11
+  }
+]

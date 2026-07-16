@@ -1,0 +1,597 @@
+[
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/ShieldDemigods"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr1"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr2"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr3"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr4"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr5"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr6"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr7"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr8"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr9"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr10"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr11"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr12"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr13"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex1"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex2"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex3"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex4"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex5"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex6"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex7"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex8"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex9"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex10"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex11"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt1"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt2"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt3"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt4"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt5"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt6"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt7"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt8"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt9"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt10"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt11"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex1"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex2"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex3"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex4"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex5"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex6"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex7"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex8"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex9"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex10"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex11"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex12"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex13"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr2Cruel"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr3Cruel"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr5Cruel"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr6Cruel"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr7Cruel"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr8Cruel"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex1Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex3Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex5Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt1Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt3Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt5Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Cruel"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex2Cruel"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex3Cruel"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex5Cruel"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex6Cruel"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex7Cruel"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex8Cruel"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr3Endgame"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr6Endgame"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr8Endgame"
+    },
+    "Block": 26
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Endgame"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Endgame"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Endgame"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Endgame"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Endgame"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Endgame"
+    },
+    "Block": 25
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex3Endgame"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex6Endgame"
+    },
+    "Block": 24
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex8Endgame"
+    },
+    "Block": 24
+  }
+]

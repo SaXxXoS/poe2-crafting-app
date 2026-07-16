@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-07-16T18:08:55.651Z",
+  "sourceCommit": "6a49dbd72e745d338958525c4c570b4891719c72",
+  "checkedFiles": 27,
+  "errors": [],
+  "warnings": [
+    "Tabelle enthält keine Einträge: raw/english/craftingbenchoptions.json",
+    "Tabelle enthält keine Einträge: raw/english/craftingitemclasscategories.json",
+    "Tabelle enthält keine Einträge: raw/english/essences.json",
+    "Tabelle enthält keine Einträge: raw/german/craftingbenchoptions.json",
+    "Tabelle enthält keine Einträge: raw/german/craftingitemclasscategories.json"
+  ],
+  "missingTables": [
+    {
+      "language": "english",
+      "table": "modfamilies.json"
+    },
+    {
+      "language": "english",
+      "table": "modgenerationtypes.json"
+    },
+    {
+      "language": "english",
+      "table": "modsellprices.json"
+    },
+    {
+      "language": "english",
+      "table": "runegrafts.json"
+    },
+    {
+      "language": "english",
+      "table": "runes.json"
+    },
+    {
+      "language": "english",
+      "table": "omenitems.json"
+    },
+    {
+      "language": "english",
+      "table": "desecratedmods.json"
+    },
+    {
+      "language": "english",
+      "table": "desecratedmodtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "modfamilies.json"
+    },
+    {
+      "language": "german",
+      "table": "modgenerationtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "modsellprices.json"
+    },
+    {
+      "language": "german",
+      "table": "defaultmonsterstats.json"
+    },
+    {
+      "language": "german",
+      "table": "essences.json"
+    },
+    {
+      "language": "german",
+      "table": "runegrafts.json"
+    },
+    {
+      "language": "german",
+      "table": "runes.json"
+    },
+    {
+      "language": "german",
+      "table": "omenitems.json"
+    },
+    {
+      "language": "german",
+      "table": "desecratedmods.json"
+    },
+    {
+      "language": "german",
+      "table": "desecratedmodtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "armourtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "belttypes.json"
+    },
+    {
+      "language": "german",
+      "table": "shieldtypes.json"
+    },
+    {
+      "language": "german",
+      "table": "weaponclasses.json"
+    },
+    {
+      "language": "german",
+      "table": "weapontypes.json"
+    }
+  ]
+}

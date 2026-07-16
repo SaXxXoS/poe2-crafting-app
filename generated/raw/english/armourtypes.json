@@ -1,0 +1,6314 @@
+[
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/ShieldDemigods"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/HelmetWreath1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/HelmetDemigods1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/BodyDemigods1"
+    },
+    "Armour": 51,
+    "EvasionRating": 44,
+    "EnergyShield": 21,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/BootsDemigods1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/GlovesDemigods1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr1"
+    },
+    "Armour": 45,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr2"
+    },
+    "Armour": 60,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr3"
+    },
+    "Armour": 96,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr4"
+    },
+    "Armour": 121,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr5"
+    },
+    "Armour": 141,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr6"
+    },
+    "Armour": 177,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr7"
+    },
+    "Armour": 208,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr8"
+    },
+    "Armour": 228,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr9"
+    },
+    "Armour": 269,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr10"
+    },
+    "Armour": 294,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr11"
+    },
+    "Armour": 304,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr12"
+    },
+    "Armour": 335,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr13"
+    },
+    "Armour": 534,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr14"
+    },
+    "Armour": 445,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr15"
+    },
+    "Armour": 445,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex1"
+    },
+    "Armour": 0,
+    "EvasionRating": 30,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex2"
+    },
+    "Armour": 0,
+    "EvasionRating": 44,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex3"
+    },
+    "Armour": 0,
+    "EvasionRating": 78,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex4"
+    },
+    "Armour": 0,
+    "EvasionRating": 102,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex5"
+    },
+    "Armour": 0,
+    "EvasionRating": 131,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex6"
+    },
+    "Armour": 0,
+    "EvasionRating": 150,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex7"
+    },
+    "Armour": 0,
+    "EvasionRating": 184,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex8"
+    },
+    "Armour": 0,
+    "EvasionRating": 198,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex9"
+    },
+    "Armour": 0,
+    "EvasionRating": 242,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex10"
+    },
+    "Armour": 0,
+    "EvasionRating": 256,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex11"
+    },
+    "Armour": 0,
+    "EvasionRating": 275,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex12"
+    },
+    "Armour": 0,
+    "EvasionRating": 295,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex13"
+    },
+    "Armour": 0,
+    "EvasionRating": 487,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex14"
+    },
+    "Armour": 0,
+    "EvasionRating": 406,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex15"
+    },
+    "Armour": 0,
+    "EvasionRating": 406,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 28,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 44,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 52,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 61,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 70,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt7"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 78,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt8"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 89,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt9"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 97,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt10"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 100,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt11"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 108,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt12"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 117,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt13"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 184,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt14"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 153,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt15"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 153,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex1"
+    },
+    "Armour": 25,
+    "EvasionRating": 16,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex2"
+    },
+    "Armour": 53,
+    "EvasionRating": 43,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex3"
+    },
+    "Armour": 67,
+    "EvasionRating": 56,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex4"
+    },
+    "Armour": 95,
+    "EvasionRating": 83,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex5"
+    },
+    "Armour": 114,
+    "EvasionRating": 101,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex6"
+    },
+    "Armour": 125,
+    "EvasionRating": 112,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex7"
+    },
+    "Armour": 148,
+    "EvasionRating": 133,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex8"
+    },
+    "Armour": 162,
+    "EvasionRating": 146,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex9"
+    },
+    "Armour": 167,
+    "EvasionRating": 151,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex10"
+    },
+    "Armour": 184,
+    "EvasionRating": 167,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex11"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex12a"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex12b"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex12c"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex13"
+    },
+    "Armour": 294,
+    "EvasionRating": 268,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt1"
+    },
+    "Armour": 25,
+    "EvasionRating": 0,
+    "EnergyShield": 16,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt2"
+    },
+    "Armour": 50,
+    "EvasionRating": 0,
+    "EnergyShield": 23,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt3"
+    },
+    "Armour": 67,
+    "EvasionRating": 0,
+    "EnergyShield": 28,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt4"
+    },
+    "Armour": 100,
+    "EvasionRating": 0,
+    "EnergyShield": 39,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt5"
+    },
+    "Armour": 114,
+    "EvasionRating": 0,
+    "EnergyShield": 43,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt6"
+    },
+    "Armour": 123,
+    "EvasionRating": 0,
+    "EnergyShield": 46,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt7"
+    },
+    "Armour": 148,
+    "EvasionRating": 0,
+    "EnergyShield": 53,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt8"
+    },
+    "Armour": 165,
+    "EvasionRating": 0,
+    "EnergyShield": 58,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt9"
+    },
+    "Armour": 167,
+    "EvasionRating": 0,
+    "EnergyShield": 59,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt10"
+    },
+    "Armour": 173,
+    "EvasionRating": 0,
+    "EnergyShield": 61,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt11"
+    },
+    "Armour": 245,
+    "EvasionRating": 0,
+    "EnergyShield": 84,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt12"
+    },
+    "Armour": 245,
+    "EvasionRating": 0,
+    "EnergyShield": 84,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt13"
+    },
+    "Armour": 294,
+    "EvasionRating": 0,
+    "EnergyShield": 101,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 16,
+    "EnergyShield": 16,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 43,
+    "EnergyShield": 24,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 56,
+    "EnergyShield": 28,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 88,
+    "EnergyShield": 39,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 101,
+    "EnergyShield": 43,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 117,
+    "EnergyShield": 48,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt7"
+    },
+    "Armour": 0,
+    "EvasionRating": 133,
+    "EnergyShield": 53,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt8"
+    },
+    "Armour": 0,
+    "EvasionRating": 149,
+    "EnergyShield": 58,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt9"
+    },
+    "Armour": 0,
+    "EvasionRating": 151,
+    "EnergyShield": 59,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt10"
+    },
+    "Armour": 0,
+    "EvasionRating": 162,
+    "EnergyShield": 63,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt11"
+    },
+    "Armour": 0,
+    "EvasionRating": 268,
+    "EnergyShield": 101,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt12"
+    },
+    "Armour": 0,
+    "EvasionRating": 223,
+    "EnergyShield": 84,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt13"
+    },
+    "Armour": 0,
+    "EvasionRating": 223,
+    "EnergyShield": 84,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr1"
+    },
+    "Armour": 29,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr2"
+    },
+    "Armour": 66,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr3"
+    },
+    "Armour": 79,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr4"
+    },
+    "Armour": 116,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr5"
+    },
+    "Armour": 136,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr6"
+    },
+    "Armour": 146,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr7"
+    },
+    "Armour": 176,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr8"
+    },
+    "Armour": 196,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr9"
+    },
+    "Armour": 200,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr10"
+    },
+    "Armour": 216,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr11"
+    },
+    "Armour": 243,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex1"
+    },
+    "Armour": 0,
+    "EvasionRating": 19,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex2"
+    },
+    "Armour": 0,
+    "EvasionRating": 48,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex3"
+    },
+    "Armour": 0,
+    "EvasionRating": 67,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex4"
+    },
+    "Armour": 0,
+    "EvasionRating": 98,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex5"
+    },
+    "Armour": 0,
+    "EvasionRating": 121,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex6"
+    },
+    "Armour": 0,
+    "EvasionRating": 136,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex7"
+    },
+    "Armour": 0,
+    "EvasionRating": 158,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex8"
+    },
+    "Armour": 0,
+    "EvasionRating": 177,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex9"
+    },
+    "Armour": 0,
+    "EvasionRating": 181,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex10"
+    },
+    "Armour": 0,
+    "EvasionRating": 193,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex11"
+    },
+    "Armour": 0,
+    "EvasionRating": 222,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 19,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 28,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 34,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 44,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 51,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 58,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt7"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 63,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt8"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 69,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt9"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 71,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt10"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 77,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt11"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 84,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex1"
+    },
+    "Armour": 23,
+    "EvasionRating": 18,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex2"
+    },
+    "Armour": 34,
+    "EvasionRating": 28,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex3"
+    },
+    "Armour": 44,
+    "EvasionRating": 37,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex4"
+    },
+    "Armour": 62,
+    "EvasionRating": 54,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex5"
+    },
+    "Armour": 75,
+    "EvasionRating": 66,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex6"
+    },
+    "Armour": 97,
+    "EvasionRating": 87,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex7"
+    },
+    "Armour": 110,
+    "EvasionRating": 99,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex8"
+    },
+    "Armour": 134,
+    "EvasionRating": 122,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt1"
+    },
+    "Armour": 23,
+    "EvasionRating": 0,
+    "EnergyShield": 12,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt2"
+    },
+    "Armour": 33,
+    "EvasionRating": 0,
+    "EnergyShield": 15,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt3"
+    },
+    "Armour": 44,
+    "EvasionRating": 0,
+    "EnergyShield": 19,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt4"
+    },
+    "Armour": 66,
+    "EvasionRating": 0,
+    "EnergyShield": 25,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt5"
+    },
+    "Armour": 75,
+    "EvasionRating": 0,
+    "EnergyShield": 28,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt6"
+    },
+    "Armour": 97,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt7"
+    },
+    "Armour": 110,
+    "EvasionRating": 0,
+    "EnergyShield": 39,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt8"
+    },
+    "Armour": 134,
+    "EvasionRating": 0,
+    "EnergyShield": 46,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 18,
+    "EnergyShield": 12,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 26,
+    "EnergyShield": 15,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 37,
+    "EnergyShield": 19,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 58,
+    "EnergyShield": 25,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 66,
+    "EnergyShield": 28,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 87,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt7"
+    },
+    "Armour": 0,
+    "EvasionRating": 99,
+    "EnergyShield": 39,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt8"
+    },
+    "Armour": 0,
+    "EvasionRating": 122,
+    "EnergyShield": 46,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr1"
+    },
+    "Armour": 15,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr2"
+    },
+    "Armour": 31,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr3"
+    },
+    "Armour": 40,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr4"
+    },
+    "Armour": 58,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr5"
+    },
+    "Armour": 68,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr6"
+    },
+    "Armour": 88,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr7"
+    },
+    "Armour": 100,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr8"
+    },
+    "Armour": 122,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex1"
+    },
+    "Armour": 0,
+    "EvasionRating": 10,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex2"
+    },
+    "Armour": 0,
+    "EvasionRating": 26,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex3"
+    },
+    "Armour": 0,
+    "EvasionRating": 33,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex4"
+    },
+    "Armour": 0,
+    "EvasionRating": 52,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex5"
+    },
+    "Armour": 0,
+    "EvasionRating": 60,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex6"
+    },
+    "Armour": 0,
+    "EvasionRating": 79,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex7"
+    },
+    "Armour": 0,
+    "EvasionRating": 90,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex8"
+    },
+    "Armour": 0,
+    "EvasionRating": 111,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 9,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 15,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 17,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 22,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 26,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 32,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt7"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt8"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 42,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex1"
+    },
+    "Armour": 13,
+    "EvasionRating": 10,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex2"
+    },
+    "Armour": 22,
+    "EvasionRating": 18,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex3"
+    },
+    "Armour": 37,
+    "EvasionRating": 33,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex4"
+    },
+    "Armour": 48,
+    "EvasionRating": 44,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex5"
+    },
+    "Armour": 55,
+    "EvasionRating": 50,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex6"
+    },
+    "Armour": 67,
+    "EvasionRating": 61,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt1"
+    },
+    "Armour": 12,
+    "EvasionRating": 0,
+    "EnergyShield": 6,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt2"
+    },
+    "Armour": 22,
+    "EvasionRating": 0,
+    "EnergyShield": 9,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt3"
+    },
+    "Armour": 37,
+    "EvasionRating": 0,
+    "EnergyShield": 14,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt4"
+    },
+    "Armour": 48,
+    "EvasionRating": 0,
+    "EnergyShield": 17,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt5"
+    },
+    "Armour": 55,
+    "EvasionRating": 0,
+    "EnergyShield": 19,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt6"
+    },
+    "Armour": 67,
+    "EvasionRating": 0,
+    "EnergyShield": 23,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 8,
+    "EnergyShield": 6,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 18,
+    "EnergyShield": 9,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 33,
+    "EnergyShield": 14,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 44,
+    "EnergyShield": 17,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 50,
+    "EnergyShield": 19,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 61,
+    "EnergyShield": 23,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr1"
+    },
+    "Armour": 22,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr2"
+    },
+    "Armour": 47,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr3"
+    },
+    "Armour": 60,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr4"
+    },
+    "Armour": 87,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr5"
+    },
+    "Armour": 102,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr6"
+    },
+    "Armour": 132,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr7"
+    },
+    "Armour": 150,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr8"
+    },
+    "Armour": 182,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex1"
+    },
+    "Armour": 0,
+    "EvasionRating": 15,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex2"
+    },
+    "Armour": 0,
+    "EvasionRating": 38,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex3"
+    },
+    "Armour": 0,
+    "EvasionRating": 50,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex4"
+    },
+    "Armour": 0,
+    "EvasionRating": 79,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex5"
+    },
+    "Armour": 0,
+    "EvasionRating": 90,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex6"
+    },
+    "Armour": 0,
+    "EvasionRating": 119,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex7"
+    },
+    "Armour": 0,
+    "EvasionRating": 135,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex8"
+    },
+    "Armour": 0,
+    "EvasionRating": 166,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 14,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 22,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 25,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 34,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 38,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 48,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt7"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 53,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt8"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 63,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex1"
+    },
+    "Armour": 19,
+    "EvasionRating": 15,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex2"
+    },
+    "Armour": 33,
+    "EvasionRating": 28,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex3"
+    },
+    "Armour": 56,
+    "EvasionRating": 50,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex4"
+    },
+    "Armour": 73,
+    "EvasionRating": 65,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex5"
+    },
+    "Armour": 82,
+    "EvasionRating": 74,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex6"
+    },
+    "Armour": 100,
+    "EvasionRating": 91,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt1"
+    },
+    "Armour": 18,
+    "EvasionRating": 0,
+    "EnergyShield": 9,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt2"
+    },
+    "Armour": 33,
+    "EvasionRating": 0,
+    "EnergyShield": 14,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt3"
+    },
+    "Armour": 56,
+    "EvasionRating": 0,
+    "EnergyShield": 21,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt4"
+    },
+    "Armour": 73,
+    "EvasionRating": 0,
+    "EnergyShield": 26,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt5"
+    },
+    "Armour": 82,
+    "EvasionRating": 0,
+    "EnergyShield": 29,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt6"
+    },
+    "Armour": 100,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt1"
+    },
+    "Armour": 0,
+    "EvasionRating": 13,
+    "EnergyShield": 9,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt2"
+    },
+    "Armour": 0,
+    "EvasionRating": 28,
+    "EnergyShield": 14,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt3"
+    },
+    "Armour": 0,
+    "EvasionRating": 50,
+    "EnergyShield": 21,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt4"
+    },
+    "Armour": 0,
+    "EvasionRating": 65,
+    "EnergyShield": 26,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt5"
+    },
+    "Armour": 0,
+    "EvasionRating": 74,
+    "EnergyShield": 29,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt6"
+    },
+    "Armour": 0,
+    "EvasionRating": 91,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr1"
+    },
+    "Armour": 18,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr2"
+    },
+    "Armour": 29,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr3"
+    },
+    "Armour": 41,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr4"
+    },
+    "Armour": 50,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr5"
+    },
+    "Armour": 60,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr6"
+    },
+    "Armour": 75,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr7"
+    },
+    "Armour": 85,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr8"
+    },
+    "Armour": 91,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr9"
+    },
+    "Armour": 110,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr10"
+    },
+    "Armour": 121,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr11"
+    },
+    "Armour": 125,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr12"
+    },
+    "Armour": 137,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr13"
+    },
+    "Armour": 152,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex1"
+    },
+    "Armour": 10,
+    "EvasionRating": 7,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex2"
+    },
+    "Armour": 18,
+    "EvasionRating": 14,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex3"
+    },
+    "Armour": 27,
+    "EvasionRating": 23,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex4"
+    },
+    "Armour": 39,
+    "EvasionRating": 34,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex5"
+    },
+    "Armour": 47,
+    "EvasionRating": 41,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex6"
+    },
+    "Armour": 51,
+    "EvasionRating": 46,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex7"
+    },
+    "Armour": 61,
+    "EvasionRating": 54,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex8"
+    },
+    "Armour": 63,
+    "EvasionRating": 57,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex9"
+    },
+    "Armour": 69,
+    "EvasionRating": 62,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex10"
+    },
+    "Armour": 74,
+    "EvasionRating": 68,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex11"
+    },
+    "Armour": 84,
+    "EvasionRating": 76,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt1"
+    },
+    "Armour": 10,
+    "EvasionRating": 0,
+    "EnergyShield": 6,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt2"
+    },
+    "Armour": 17,
+    "EvasionRating": 0,
+    "EnergyShield": 8,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt3"
+    },
+    "Armour": 27,
+    "EvasionRating": 0,
+    "EnergyShield": 12,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt4"
+    },
+    "Armour": 41,
+    "EvasionRating": 0,
+    "EnergyShield": 16,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt5"
+    },
+    "Armour": 47,
+    "EvasionRating": 0,
+    "EnergyShield": 18,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt6"
+    },
+    "Armour": 50,
+    "EvasionRating": 0,
+    "EnergyShield": 19,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt7"
+    },
+    "Armour": 61,
+    "EvasionRating": 0,
+    "EnergyShield": 22,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt8"
+    },
+    "Armour": 65,
+    "EvasionRating": 0,
+    "EnergyShield": 23,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt9"
+    },
+    "Armour": 69,
+    "EvasionRating": 0,
+    "EnergyShield": 24,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt10"
+    },
+    "Armour": 74,
+    "EvasionRating": 0,
+    "EnergyShield": 26,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt11"
+    },
+    "Armour": 84,
+    "EvasionRating": 0,
+    "EnergyShield": 29,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex1"
+    },
+    "Armour": 0,
+    "EvasionRating": 12,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex2"
+    },
+    "Armour": 0,
+    "EvasionRating": 20,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex3"
+    },
+    "Armour": 0,
+    "EvasionRating": 32,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex4"
+    },
+    "Armour": 0,
+    "EvasionRating": 42,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex5"
+    },
+    "Armour": 0,
+    "EvasionRating": 54,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex6"
+    },
+    "Armour": 0,
+    "EvasionRating": 62,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex7"
+    },
+    "Armour": 0,
+    "EvasionRating": 75,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex8"
+    },
+    "Armour": 0,
+    "EvasionRating": 87,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex9"
+    },
+    "Armour": 0,
+    "EvasionRating": 99,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex10"
+    },
+    "Armour": 0,
+    "EvasionRating": 105,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex11"
+    },
+    "Armour": 0,
+    "EvasionRating": 113,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex12"
+    },
+    "Armour": 0,
+    "EvasionRating": 119,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex13"
+    },
+    "Armour": 0,
+    "EvasionRating": 139,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus1"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 12,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus2"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 15,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus3"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 17,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus4"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 21,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus5"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 25,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus6"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 28,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus7"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 32,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus8"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 34,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus9"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 40,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus10"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 43,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus11"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 44,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus12"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 47,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus13"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 52,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexIntBase"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDexInt1"
+    },
+    "Armour": 135,
+    "EvasionRating": 123,
+    "EnergyShield": 46,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDexInt1"
+    },
+    "Armour": 88,
+    "EvasionRating": 80,
+    "EnergyShield": 30,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDexInt1"
+    },
+    "Armour": 44,
+    "EvasionRating": 40,
+    "EnergyShield": 15,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDexInt1"
+    },
+    "Armour": 66,
+    "EvasionRating": 60,
+    "EnergyShield": 23,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr2Cruel"
+    },
+    "Armour": 269,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr3Cruel"
+    },
+    "Armour": 284,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr5Cruel"
+    },
+    "Armour": 299,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr6Cruel"
+    },
+    "Armour": 320,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr7Cruel"
+    },
+    "Armour": 340,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr8Cruel"
+    },
+    "Armour": 355,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 242,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 256,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 271,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex6Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 290,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex7Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 309,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex8Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 324,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 97,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 101,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 106,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt6Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 112,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt7Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 119,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt8Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 123,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex1Cruel"
+    },
+    "Armour": 148,
+    "EvasionRating": 133,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex2Cruel"
+    },
+    "Armour": 156,
+    "EvasionRating": 141,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex3Cruel"
+    },
+    "Armour": 165,
+    "EvasionRating": 149,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex4Cruel"
+    },
+    "Armour": 176,
+    "EvasionRating": 159,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex5Cruel"
+    },
+    "Armour": 187,
+    "EvasionRating": 170,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex6Cruel"
+    },
+    "Armour": 195,
+    "EvasionRating": 178,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt1Cruel"
+    },
+    "Armour": 148,
+    "EvasionRating": 0,
+    "EnergyShield": 53,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt2Cruel"
+    },
+    "Armour": 156,
+    "EvasionRating": 0,
+    "EnergyShield": 56,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt3Cruel"
+    },
+    "Armour": 165,
+    "EvasionRating": 0,
+    "EnergyShield": 58,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt4Cruel"
+    },
+    "Armour": 176,
+    "EvasionRating": 0,
+    "EnergyShield": 62,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt5Cruel"
+    },
+    "Armour": 187,
+    "EvasionRating": 0,
+    "EnergyShield": 65,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt6Cruel"
+    },
+    "Armour": 195,
+    "EvasionRating": 0,
+    "EnergyShield": 68,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt1Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 133,
+    "EnergyShield": 53,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 141,
+    "EnergyShield": 56,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 149,
+    "EnergyShield": 58,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 159,
+    "EnergyShield": 62,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 170,
+    "EnergyShield": 65,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt6Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 178,
+    "EnergyShield": 68,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr1Cruel"
+    },
+    "Armour": 176,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr2Cruel"
+    },
+    "Armour": 186,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr3Cruel"
+    },
+    "Armour": 196,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr4Cruel"
+    },
+    "Armour": 210,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr5Cruel"
+    },
+    "Armour": 223,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex1Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 158,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 168,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 177,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 190,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 203,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt1Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 63,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 67,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 70,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 74,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 78,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex1Cruel"
+    },
+    "Armour": 97,
+    "EvasionRating": 87,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex2Cruel"
+    },
+    "Armour": 102,
+    "EvasionRating": 92,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex3Cruel"
+    },
+    "Armour": 108,
+    "EvasionRating": 98,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex4Cruel"
+    },
+    "Armour": 115,
+    "EvasionRating": 105,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex5Cruel"
+    },
+    "Armour": 123,
+    "EvasionRating": 111,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt1Cruel"
+    },
+    "Armour": 97,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt2Cruel"
+    },
+    "Armour": 102,
+    "EvasionRating": 0,
+    "EnergyShield": 37,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt3Cruel"
+    },
+    "Armour": 108,
+    "EvasionRating": 0,
+    "EnergyShield": 38,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt4Cruel"
+    },
+    "Armour": 115,
+    "EvasionRating": 0,
+    "EnergyShield": 41,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt5Cruel"
+    },
+    "Armour": 123,
+    "EvasionRating": 0,
+    "EnergyShield": 43,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt1Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 87,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 92,
+    "EnergyShield": 37,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 98,
+    "EnergyShield": 38,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 105,
+    "EnergyShield": 41,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 111,
+    "EnergyShield": 43,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr2Cruel"
+    },
+    "Armour": 88,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr3Cruel"
+    },
+    "Armour": 98,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr4Cruel"
+    },
+    "Armour": 105,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr5Cruel"
+    },
+    "Armour": 111,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 79,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 89,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 95,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 101,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 32,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 37,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 39,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex1Cruel"
+    },
+    "Armour": 48,
+    "EvasionRating": 44,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex2Cruel"
+    },
+    "Armour": 54,
+    "EvasionRating": 49,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex3Cruel"
+    },
+    "Armour": 61,
+    "EvasionRating": 56,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt1Cruel"
+    },
+    "Armour": 48,
+    "EvasionRating": 0,
+    "EnergyShield": 17,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt2Cruel"
+    },
+    "Armour": 54,
+    "EvasionRating": 0,
+    "EnergyShield": 19,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt3Cruel"
+    },
+    "Armour": 61,
+    "EvasionRating": 0,
+    "EnergyShield": 21,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt1Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 44,
+    "EnergyShield": 17,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 49,
+    "EnergyShield": 19,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 56,
+    "EnergyShield": 21,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr2Cruel"
+    },
+    "Armour": 132,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr3Cruel"
+    },
+    "Armour": 147,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr4Cruel"
+    },
+    "Armour": 157,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr5Cruel"
+    },
+    "Armour": 167,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 119,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 133,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 143,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 152,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 48,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 52,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt4Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 55,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 58,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex1Cruel"
+    },
+    "Armour": 73,
+    "EvasionRating": 65,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex2Cruel"
+    },
+    "Armour": 81,
+    "EvasionRating": 73,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex3Cruel"
+    },
+    "Armour": 92,
+    "EvasionRating": 84,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt1Cruel"
+    },
+    "Armour": 73,
+    "EvasionRating": 0,
+    "EnergyShield": 26,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt2Cruel"
+    },
+    "Armour": 81,
+    "EvasionRating": 0,
+    "EnergyShield": 29,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt3Cruel"
+    },
+    "Armour": 92,
+    "EvasionRating": 0,
+    "EnergyShield": 32,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt1Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 65,
+    "EnergyShield": 26,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 73,
+    "EnergyShield": 29,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 84,
+    "EnergyShield": 32,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr2Cruel"
+    },
+    "Armour": 110,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr3Cruel"
+    },
+    "Armour": 116,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr5Cruel"
+    },
+    "Armour": 123,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr6Cruel"
+    },
+    "Armour": 131,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr7Cruel"
+    },
+    "Armour": 139,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr8Cruel"
+    },
+    "Armour": 144,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex1Cruel"
+    },
+    "Armour": 61,
+    "EvasionRating": 54,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Cruel"
+    },
+    "Armour": 64,
+    "EvasionRating": 58,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex3Cruel"
+    },
+    "Armour": 67,
+    "EvasionRating": 61,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Cruel"
+    },
+    "Armour": 72,
+    "EvasionRating": 65,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex5Cruel"
+    },
+    "Armour": 77,
+    "EvasionRating": 70,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Cruel"
+    },
+    "Armour": 80,
+    "EvasionRating": 73,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt1Cruel"
+    },
+    "Armour": 61,
+    "EvasionRating": 0,
+    "EnergyShield": 22,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Cruel"
+    },
+    "Armour": 64,
+    "EvasionRating": 0,
+    "EnergyShield": 23,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt3Cruel"
+    },
+    "Armour": 67,
+    "EvasionRating": 0,
+    "EnergyShield": 24,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Cruel"
+    },
+    "Armour": 72,
+    "EvasionRating": 0,
+    "EnergyShield": 25,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt5Cruel"
+    },
+    "Armour": 77,
+    "EvasionRating": 0,
+    "EnergyShield": 27,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Cruel"
+    },
+    "Armour": 80,
+    "EvasionRating": 0,
+    "EnergyShield": 28,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 99,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 105,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 111,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex6Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 119,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex7Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 127,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex8Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 131,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus2Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 40,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus3Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 42,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus5Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 43,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus6Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 46,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus7Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 49,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus8Cruel"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 50,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr3Endgame"
+    },
+    "Armour": 534,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr6Endgame"
+    },
+    "Armour": 445,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStr8Endgame"
+    },
+    "Armour": 445,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -500,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex3Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 406,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex6Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 487,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDex8Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 406,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt3Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 184,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt6Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 153,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyInt8Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 153,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex2Endgame"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex4aEndgame"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex4bEndgame"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex4cEndgame"
+    },
+    "Armour": 245,
+    "EvasionRating": 223,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrDex6Endgame"
+    },
+    "Armour": 294,
+    "EvasionRating": 268,
+    "EnergyShield": 0,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt2Endgame"
+    },
+    "Armour": 294,
+    "EvasionRating": 0,
+    "EnergyShield": 101,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt4Endgame"
+    },
+    "Armour": 245,
+    "EvasionRating": 0,
+    "EnergyShield": 84,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyStrInt6Endgame"
+    },
+    "Armour": 245,
+    "EvasionRating": 0,
+    "EnergyShield": 84,
+    "Unk02": -400,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 268,
+    "EnergyShield": 101,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 223,
+    "EnergyShield": 84,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/BodyArmours/FourBodyDexInt6Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 223,
+    "EnergyShield": 84,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr2Endgame"
+    },
+    "Armour": 243,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr4Endgame"
+    },
+    "Armour": 267,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStr5Endgame"
+    },
+    "Armour": 292,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 222,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 244,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDex5Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 266,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 84,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 92,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetInt5Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 101,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex2Endgame"
+    },
+    "Armour": 134,
+    "EvasionRating": 122,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex4Endgame"
+    },
+    "Armour": 147,
+    "EvasionRating": 134,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrDex5Endgame"
+    },
+    "Armour": 160,
+    "EvasionRating": 146,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt2Endgame"
+    },
+    "Armour": 134,
+    "EvasionRating": 0,
+    "EnergyShield": 46,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt4Endgame"
+    },
+    "Armour": 147,
+    "EvasionRating": 0,
+    "EnergyShield": 51,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetStrInt5Endgame"
+    },
+    "Armour": 160,
+    "EvasionRating": 0,
+    "EnergyShield": 55,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 122,
+    "EnergyShield": 46,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 134,
+    "EnergyShield": 51,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Helmets/FourHelmetDexInt5Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 146,
+    "EnergyShield": 55,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr2Endgame"
+    },
+    "Armour": 122,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr4Endgame"
+    },
+    "Armour": 134,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStr5Endgame"
+    },
+    "Armour": 146,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 111,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 122,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDex5Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 133,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 42,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 46,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesInt5Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 50,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex1Endgame"
+    },
+    "Armour": 67,
+    "EvasionRating": 61,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex2Endgame"
+    },
+    "Armour": 74,
+    "EvasionRating": 67,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrDex3Endgame"
+    },
+    "Armour": 80,
+    "EvasionRating": 73,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt1Endgame"
+    },
+    "Armour": 67,
+    "EvasionRating": 0,
+    "EnergyShield": 23,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt2Endgame"
+    },
+    "Armour": 74,
+    "EvasionRating": 0,
+    "EnergyShield": 25,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesStrInt3Endgame"
+    },
+    "Armour": 80,
+    "EvasionRating": 0,
+    "EnergyShield": 28,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt1Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 61,
+    "EnergyShield": 23,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 67,
+    "EnergyShield": 25,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Gloves/FourGlovesDexInt3Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 73,
+    "EnergyShield": 28,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr2Endgame"
+    },
+    "Armour": 182,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr4Endgame"
+    },
+    "Armour": 200,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStr5Endgame"
+    },
+    "Armour": 219,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 166,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 183,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDex5Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 200,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 63,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt4Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 69,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsInt5Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 75,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex1Endgame"
+    },
+    "Armour": 100,
+    "EvasionRating": 91,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex2Endgame"
+    },
+    "Armour": 110,
+    "EvasionRating": 101,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrDex3Endgame"
+    },
+    "Armour": 120,
+    "EvasionRating": 110,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt1Endgame"
+    },
+    "Armour": 100,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt2Endgame"
+    },
+    "Armour": 110,
+    "EvasionRating": 0,
+    "EnergyShield": 38,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsStrInt3Endgame"
+    },
+    "Armour": 120,
+    "EvasionRating": 0,
+    "EnergyShield": 42,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt1Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 91,
+    "EnergyShield": 35,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt2Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 101,
+    "EnergyShield": 38,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Boots/FourBootsDexInt3Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 110,
+    "EnergyShield": 42,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr3Endgame"
+    },
+    "Armour": 152,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr6Endgame"
+    },
+    "Armour": 167,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStr8Endgame"
+    },
+    "Armour": 182,
+    "EvasionRating": 0,
+    "EnergyShield": 0,
+    "Unk02": -300,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Endgame"
+    },
+    "Armour": 84,
+    "EvasionRating": 76,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Endgame"
+    },
+    "Armour": 92,
+    "EvasionRating": 84,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Endgame"
+    },
+    "Armour": 100,
+    "EvasionRating": 91,
+    "EnergyShield": 0,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Endgame"
+    },
+    "Armour": 84,
+    "EvasionRating": 0,
+    "EnergyShield": 29,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Endgame"
+    },
+    "Armour": 92,
+    "EvasionRating": 0,
+    "EnergyShield": 32,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Endgame"
+    },
+    "Armour": 100,
+    "EvasionRating": 0,
+    "EnergyShield": 35,
+    "Unk02": -150,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex3Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 139,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex6Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 152,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Shields/FourShieldDex8Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 166,
+    "EnergyShield": 0,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus3Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 52,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus6Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 58,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  },
+  {
+    "BaseItemTypesKey": {
+      "TableName": "BaseItemTypes",
+      "Id": "Metadata/Items/Armours/Focii/FourFocus8Endgame"
+    },
+    "Armour": 0,
+    "EvasionRating": 0,
+    "EnergyShield": 63,
+    "Unk02": 0,
+    "Unk03": 0,
+    "Unk04": 0
+  }
+]
