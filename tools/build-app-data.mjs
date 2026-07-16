@@ -401,8 +401,19 @@ function formatRange(min, max) {
 
 function formatPercent(value) {
   if (value === null) return "–";
-  let result = value;
-  if (result > 0 && result <= 1) result *= 100;
+
+  let result = Number(value);
+  if (!Number.isFinite(result)) return "–";
+
+  /*
+   * Die Datendumps verwenden je nach Feld unterschiedliche Skalen:
+   * 0.05 = 5 %, 5 = 5 %, 500 = 5 %.
+   */
+  if (result > 0 && result <= 1) {
+    result *= 100;
+  } else if (result > 100) {
+    result /= 100;
+  }
 
   return `${result.toLocaleString("de-DE", {
     minimumFractionDigits: 0,
@@ -462,12 +473,45 @@ function baseStats(base, details) {
     ["elemental", "fire", "cold", "lightning", "chaos"]
   );
 
-  const directAps = recursiveNumericByPatterns(combined, ["attacks per second", "attack rate", "aps"]);
-  const attackTime = recursiveNumericByPatterns(combined, ["attack time", "base attack time", "weapon speed"], ["cast", "animation"]);
+  const directAps = recursiveNumericByPatterns(
+    combined,
+    [
+      "attacks per second",
+      "attack rate",
+      "attack speed per second",
+      "aps"
+    ]
+  );
+
+  const attackTime = recursiveNumericByPatterns(
+    combined,
+    [
+      "attack time",
+      "base attack time",
+      "attack milliseconds",
+      "attack duration",
+      "weapon speed",
+      "milliseconds per attack"
+    ],
+    ["cast", "animation", "recovery"]
+  );
 
   let aps = directAps;
+
   if (aps === null && attackTime) {
-    aps = attackTime > 20 ? 1000 / attackTime : 1 / attackTime;
+    /*
+     * Übliche Dump-Formate:
+     * 625 ms  -> 1.60 APS
+     * 0.625 s -> 1.60 APS
+     * 62.5 cs -> 1.60 APS
+     */
+    if (attackTime >= 100) {
+      aps = 1000 / attackTime;
+    } else if (attackTime >= 10) {
+      aps = 100 / attackTime;
+    } else {
+      aps = 1 / attackTime;
+    }
   }
 
   const criticalChance = recursiveNumericByPatterns(combined, ["critical chance", "crit chance", "critical"], ["multiplier", "bonus"]);
@@ -669,8 +713,9 @@ const report = {
   globalFallbackMods: 0,
   filteredBadMods: 0,
   strictClassMatching: true,
-  globalFallbackEnabled: false,
-  builderVersion: 5
+  globalFallbackEnabled: true,
+  fallbackMode: "semantic-category",
+  builderVersion: 6
 };
 
 const classOptions = {
@@ -823,6 +868,74 @@ function genericTagMatches(tag, definition) {
   });
 }
 
+
+function modSemanticCategory(mod) {
+  const searchable = normalize([
+    mod.Id,
+    mod.Name,
+    ...statParts(mod).map(part => part.id)
+  ].join(" "));
+
+  const defenceTokens = [
+    "evasion rating",
+    "base evasion",
+    "armour",
+    "armor",
+    "energy shield",
+    "block chance",
+    "ward",
+    "stun threshold"
+  ];
+
+  const weaponTokens = [
+    "local physical damage",
+    "local minimum added",
+    "local maximum added",
+    "attack minimum added",
+    "attack maximum added",
+    "local increased attack speed",
+    "local critical strike chance",
+    "local accuracy",
+    "weapon range",
+    "weapon damage"
+  ];
+
+  const genericTokens = [
+    "resistance",
+    "maximum life",
+    "maximum mana",
+    "additional strength",
+    "additional dexterity",
+    "additional intelligence",
+    "rarity of items found",
+    "quantity of items found",
+    "movement speed"
+  ];
+
+  if (defenceTokens.some(token => searchable.includes(token))) return "armour";
+  if (weaponTokens.some(token => searchable.includes(token))) return "weapon";
+  if (genericTokens.some(token => searchable.includes(token))) return "generic";
+
+  return null;
+}
+
+function controlledFallbackMatches(mod, definition) {
+  const domain = Number(mod.Domain ?? mod.ModDomain ?? -1);
+  if (domain !== 1) return false;
+
+  if (weightedTags(mod).size > 0 || restrictionRefs(mod).length > 0) {
+    return false;
+  }
+
+  const category = modSemanticCategory(mod);
+
+  if (category === "weapon") return definition.category === "weapon";
+  if (category === "armour") return definition.category === "armour";
+  if (category === "generic") return true;
+
+  return false;
+}
+
 function appliesToClass(mod, definition) {
   if (restrictionMatches(mod, definition)) return true;
 
@@ -834,11 +947,16 @@ function appliesToClass(mod, definition) {
   }
 
   /*
-   * Kein globaler Fallback:
-   * Ein Mod wird nur übernommen, wenn Tags oder Klassenrestriktionen
-   * tatsächlich zur Ausrüstungsklasse passen. Das verhindert z. B.
-   * Ausweichwert-Mods auf Speeren.
+   * Kontrollierter Fallback:
+   * Nur Mods mit eindeutig erkennbarem Stat-Typ werden zugeordnet.
+   * Verteidigungsmods gehen ausschließlich auf Rüstung,
+   * Waffenmods ausschließlich auf Waffen.
    */
+  if (controlledFallbackMatches(mod, definition)) {
+    report.globalFallbackMods += 1;
+    return true;
+  }
+
   return false;
 }
 
