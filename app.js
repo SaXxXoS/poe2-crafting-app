@@ -8,7 +8,8 @@
     prefix:[null,null,null],
     suffix:[null,null,null],
     activeType:null,
-    activeIndex:null
+    activeIndex:null,
+    scan:{file:null,objectUrl:null,rawText:'',recognizedMods:[]}
   };
 
   function switchView(id){
@@ -475,11 +476,22 @@
       : 'Noch kein Bild ausgewählt.';
   }
 
+  function normalizeText(value){return String(value||'').toLocaleLowerCase('de-DE').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9äöüß+%–-]+/g,' ').replace(/\s+/g,' ').trim();}
+  function resetScanView(){if(state.scan.objectUrl)URL.revokeObjectURL(state.scan.objectUrl);state.scan={file:null,objectUrl:null,rawText:'',recognizedMods:[]};$('scanPanel').hidden=true;$('scanResult').hidden=true;$('captureChoices').hidden=false;$('ocrProgressBar').style.width='0%';$('ocrRawText').textContent='';$('recognizedMods').innerHTML='';populateRecognizedClasses($('itemClass').value||'Speer');populateRecognizedBases($('itemClass').value||'Speer');$('cameraInput').value='';$('galleryInput').value='';}
+  function populateRecognizedClasses(selectedClass=''){const classes=Object.values(DATA.classOptions).flat();$('recognizedClass').innerHTML=classes.map(itemClass=>`<option value="${itemClass}">${itemClass}</option>`).join('');if(selectedClass&&classes.includes(selectedClass))$('recognizedClass').value=selectedClass;}
+  function detectItemClass(rawText){const normalized=normalizeText(rawText),aliases=DATA.recognition?.classAliases||{};const scored=Object.entries(aliases).map(([itemClass,classAliases])=>{let score=0;for(const alias of classAliases){const needle=normalizeText(alias);if(needle&&normalized.includes(needle))score+=needle.length+10;}for(const base of (DATA.baseItems[itemClass]||[])){const baseName=normalizeText(base.name);if(baseName&&normalized.includes(baseName))score+=baseName.length+50;}return{itemClass,score};}).sort((a,b)=>b.score-a.score);return scored[0]?.score>0?scored[0].itemClass:null;}
+  function populateRecognizedBases(itemClass,selectedId=''){const bases=DATA.baseItems[itemClass]||[];$('recognizedBase').innerHTML=bases.length?bases.map(base=>`<option value="${base.id}">${base.name}</option>`).join(''):'<option value="">Keine Basisdaten importiert</option>';if(selectedId&&bases.some(base=>base.id===selectedId))$('recognizedBase').value=selectedId;}
+  function findRecognizedBase(rawText,itemClass){const normalized=normalizeText(rawText);return (DATA.baseItems[itemClass]||[]).slice().sort((a,b)=>b.name.length-a.name.length).find(base=>normalized.includes(normalizeText(base.name)))||null;}
+  function findRecognizedItemLevel(rawText){for(const pattern of [/gegenstandsstufe\s*[:\-]?\s*(\d{1,3})/i,/item\s*level\s*[:\-]?\s*(\d{1,3})/i,/\bilvl\s*[:\-]?\s*(\d{1,3})/i]){const match=rawText.match(pattern);if(match)return Math.min(100,Math.max(1,Number(match[1])));}return Number($('ilevel').value)||1;}
+  function findRecognizedMods(rawText,itemClass){const normalized=normalizeText(rawText),mods=DATA.mods[itemClass]||{prefix:[],suffix:[]},found=[];['prefix','suffix'].forEach(type=>(mods[type]||[]).forEach(mod=>{const candidates=[mod.name];if(mod.group==='phys_percent')candidates.push('erhöhter physischer schaden','erhohter physischer schaden');if(mod.group==='attack_speed')candidates.push('erhöhte angriffsgeschwindigkeit');if(mod.group==='crit_chance')candidates.push('erhöhte kritische trefferchance');if(mod.group==='stun_buildup')candidates.push('erhöhter betäubungsaufbau');if(mod.group==='projectile_skills')candidates.push('projektilfertigkeiten');if(mod.group==='melee_skills')candidates.push('nahkampffertigkeiten');if(candidates.some(c=>{const n=normalizeText(c);return n.length>=5&&normalized.includes(n);})&&!found.some(x=>x.mod.group===mod.group))found.push({type,mod});}));return found.slice(0,6);}
+  function renderRecognizedMods(){const host=$('recognizedMods');host.innerHTML='';if(!state.scan.recognizedMods.length){host.innerHTML='<div class="status warn">Keine normalen Affixe sicher erkannt. Du kannst das Item trotzdem übernehmen und die Affixe danach manuell auswählen.</div>';return;}state.scan.recognizedMods.forEach(({type,mod})=>{const row=document.createElement('div');row.className='recognized-mod';row.innerHTML=`<b>${mod.name}</b><small>${type==='prefix'?'Präfix':'Suffix'} · ${mod.tier} · möglicher Roll ${mod.range}</small>`;host.appendChild(row);});}
+  async function startImageScan(file){if(!file)return;if(!window.Tesseract){$('imageStatus').className='status warn';$('imageStatus').textContent='OCR-Bibliothek konnte nicht geladen werden. Prüfe die Internetverbindung.';return;}if(state.scan.objectUrl)URL.revokeObjectURL(state.scan.objectUrl);state.scan.file=file;state.scan.objectUrl=URL.createObjectURL(file);$('imagePreview').src=state.scan.objectUrl;$('captureChoices').hidden=true;$('scanPanel').hidden=false;$('scanResult').hidden=true;$('ocrProgressBar').style.width='2%';$('imageStatus').className='status';$('imageStatus').textContent='Texterkennung wird geladen …';try{const result=await Tesseract.recognize(file,'deu+eng',{logger(message){if(message.status==='recognizing text'){const percent=Math.round((message.progress||0)*100);$('ocrProgressBar').style.width=`${percent}%`;$('imageStatus').textContent=`Text wird erkannt … ${percent} %`;}else if(message.status){$('imageStatus').textContent=`OCR: ${message.status}`;}}});const rawText=result?.data?.text||'';state.scan.rawText=rawText;const detectedClass=detectItemClass(rawText)||$('itemClass').value||'Speer';const recognizedBase=findRecognizedBase(rawText,detectedClass);state.scan.recognizedMods=findRecognizedMods(rawText,detectedClass);populateRecognizedClasses(detectedClass);populateRecognizedBases(detectedClass,recognizedBase?.id||'');$('recognizedItemLevel').value=findRecognizedItemLevel(rawText);$('ocrRawText').textContent=rawText||'Kein Text erkannt.';renderRecognizedMods();$('ocrProgressBar').style.width='100%';$('imageStatus').className=rawText.trim()?'status':'status warn';$('imageStatus').textContent=rawText.trim()?'Erkennung abgeschlossen. Bitte Basis und Item-Level prüfen.':'Kein verwertbarer Text erkannt. Nimm das Bild möglichst gerade, nah und ohne Spiegelungen auf.';$('scanResult').hidden=false;}catch(error){console.error('OCR failed',error);$('imageStatus').className='status warn';$('imageStatus').textContent='Texterkennung fehlgeschlagen. Du kannst ein anderes Foto versuchen oder manuell eingeben.';$('ocrProgressBar').style.width='0%';$('scanResult').hidden=false;populateRecognizedClasses($('itemClass').value||'Speer');populateRecognizedBases($('itemClass').value||'Speer');$('recognizedItemLevel').value=Number($('ilevel').value)||1;$('ocrRawText').textContent=String(error?.message||error);state.scan.recognizedMods=[];renderRecognizedMods();}}
+  function applyScan(){const itemClass=$('recognizedClass').value,category=DATA.recognition?.categoryByClass?.[itemClass]||'weapon',baseId=$('recognizedBase').value,base=(DATA.baseItems[itemClass]||[]).find(item=>item.id===baseId);$('category').value=category;renderClassOptions();$('itemClass').value=itemClass;renderBaseOptions();if(base){$('basePicker').dataset.baseId=base.id;$('basePickerName').textContent=base.name;}$('ilevel').value=Math.min(100,Math.max(1,Number($('recognizedItemLevel').value)||1));state.prefix=[null,null,null];state.suffix=[null,null,null];state.scan.recognizedMods.forEach(({type,mod})=>{const index=state[type].findIndex(value=>!value);if(index>=0&&index<slotLimit())state[type][index]=mod;});renderBaseDetails();removeInvalidSelections();renderSlots();closeSheet('captureSheet');switchView('craft');}
   function bindEvents(){
     $('newProjectBtn').addEventListener('click', () => switchView('craft'));
     $('quickCraftBtn').addEventListener('click', () => switchView('craft'));
-    $('quickCaptureBtn').addEventListener('click', () => openSheet('captureSheet'));
-    $('captureBtn').addEventListener('click', () => openSheet('captureSheet'));
+    $('quickCaptureBtn').addEventListener('click', () => {resetScanView();openSheet('captureSheet');});
+    $('captureBtn').addEventListener('click', () => {resetScanView();openSheet('captureSheet');});
     $('openProjectsBtn').addEventListener('click', () => switchView('projects'));
 
     document.querySelectorAll('.navbtn').forEach(button => {
@@ -519,6 +531,9 @@
 
     $('cameraInput').addEventListener('change', event => handleImage(event.target));
     $('galleryInput').addEventListener('change', event => handleImage(event.target));
+    $('recognizedClass').addEventListener('change',()=>populateRecognizedBases($('recognizedClass').value));
+    $('scanAgainBtn').addEventListener('click', resetScanView);
+    $('applyScanBtn').addEventListener('click', applyScan);
 
     document.addEventListener('keydown', event => {
       if(event.key !== 'Escape') return;
