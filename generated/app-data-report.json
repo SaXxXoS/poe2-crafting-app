@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-07-16T20:31:25.755Z",
-  "importedBases": 844,
-  "importedModAssignments": 26227,
+  "generatedAt": "2026-07-16T21:02:54.655Z",
+  "importedBases": 862,
+  "importedModAssignments": 17227,
   "classes": {
-    "Schwert": 27,
+    "Schwert": 30,
+    "Angelrute": 1,
     "Ring": 14,
     "Gürtel": 12,
     "Schild": 85,
@@ -11,11 +12,11 @@
     "Körperrüstung": 145,
     "Stiefel": 83,
     "Handschuhe": 83,
+    "Dolch": 14,
     "Axt": 26,
     "Streitkolben": 50,
     "Speer": 13,
     "Klaue": 13,
-    "Dolch": 13,
     "Kriegsstab": 25,
     "Flegel": 13,
     "Zauberstab": 13,
@@ -23,106 +24,115 @@
     "Bogen": 25,
     "Armbrust": 25,
     "Zepter": 15,
+    "Fallenwerkzeug": 13,
     "Fokus": 22,
     "Köcher": 11,
     "Amulett": 10
   },
   "affixesByClass": {
     "Armbrust": {
-      "prefix": 608,
-      "suffix": 477
+      "prefix": 445,
+      "suffix": 211
     },
     "Kampfstab": {
-      "prefix": 608,
-      "suffix": 477
+      "prefix": 445,
+      "suffix": 211
     },
     "Kriegsstab": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
+    },
+    "Fallenwerkzeug": {
+      "prefix": 445,
+      "suffix": 211
+    },
+    "Angelrute": {
+      "prefix": 445,
+      "suffix": 211
     },
     "Zauberstab": {
-      "prefix": 689,
-      "suffix": 567
+      "prefix": 526,
+      "suffix": 233
     },
     "Zepter": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
     },
     "Stab": {
-      "prefix": 689,
-      "suffix": 567
+      "prefix": 526,
+      "suffix": 233
     },
     "Speer": {
-      "prefix": 608,
-      "suffix": 477
+      "prefix": 445,
+      "suffix": 211
     },
     "Bogen": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
     },
     "Streitkolben": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
     },
     "Schwert": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
     },
     "Axt": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
     },
     "Dolch": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
     },
     "Flegel": {
-      "prefix": 608,
-      "suffix": 477
+      "prefix": 445,
+      "suffix": 211
     },
     "Klaue": {
-      "prefix": 609,
-      "suffix": 481
+      "prefix": 446,
+      "suffix": 215
     },
     "Helm": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Körperrüstung": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Handschuhe": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Stiefel": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Schild": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Fokus": {
-      "prefix": 596,
-      "suffix": 465
+      "prefix": 439,
+      "suffix": 205
     },
     "Köcher": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Ring": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Amulett": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     },
     "Gürtel": {
-      "prefix": 597,
-      "suffix": 469
+      "prefix": 440,
+      "suffix": 209
     }
   },
   "skippedBaseClasses": {
@@ -132,7 +142,6 @@
     "Microtransaction": 13,
     "HiddenItem": 72,
     "GiftBox": 11,
-    "FishingRod": 1,
     "QuestItem": 275,
     "IncursionItem": 2,
     "Active Skill Gem": 335,
@@ -165,7 +174,6 @@
     "SanctumSpecialRelic": 3,
     "MemoryLine": 4,
     "ItemisedSanctum": 5,
-    "TrapTool": 13,
     "LifeFlask": 9,
     "ManaFlask": 9,
     "UtilityFlask": 12,
@@ -440,6 +448,84 @@
       "mappedClass": "Zepter"
     },
     {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap1",
+      "name": "Lehmfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap2",
+      "name": "Klemmfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap3",
+      "name": "Schrapnellfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap4",
+      "name": "Urnenfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap5",
+      "name": "Weihrauch-Falle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap6",
+      "name": "Klingenfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap7",
+      "name": "Pfeilfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap8",
+      "name": "Stachelfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap9",
+      "name": "Spiralfalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap10",
+      "name": "Bleifalle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap11",
+      "name": "Medaillon-Falle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap12",
+      "name": "Komplizierte Falle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Traps/FourTrap13",
+      "name": "Raffinierte Falle",
+      "classId": "TrapTool",
+      "mappedClass": "Fallenwerkzeug"
+    },
+    {
       "id": "Metadata/Items/Quivers/FourQuiver1",
       "name": "Breitkopfköcher",
       "classId": "Quiver",
@@ -645,9 +731,11 @@
     }
   ],
   "detailSources": {
-    "weapontypes.json": 230,
+    "weapontypes.json": 235,
     "armourtypes.json": 526,
     "belttypes.json": 11
   },
-  "globalFallbackMods": 25464
+  "globalFallbackMods": 16744,
+  "filteredBadMods": 2038,
+  "builderVersion": 4
 }
