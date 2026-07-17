@@ -1,0 +1,40 @@
+name: Import PoE2DB Spears
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Speerdaten von PoE2DB importieren
+        run: node tools/import-poe2db.mjs
+
+      - name: Import prüfen
+        run: |
+          node -e "const d=require('./generated/poe2db/spears.json'); if (!d.bases.length) throw new Error('Keine Speere'); if (!d.prefixes.length || !d.suffixes.length) throw new Error('Keine Affixe'); if (!d.bases.some(x=>x.nameDe) || ![...d.prefixes,...d.suffixes].some(x=>x.textDe)) throw new Error('Keine deutschen Texte'); if(d.pools.length!==d.bases.length) throw new Error('Basis-Pools fehlen'); for(const p of d.pools){if(p.evaluatedPrefixRules!==d.prefixes.length||p.evaluatedSuffixRules!==d.suffixes.length)throw new Error('Gewichtsregeln ungeprüft');if([...p.prefixes,...p.suffixes].some(x=>x.spawnWeight<=0||x.generationWeight<=0))throw new Error('Nullgewicht im Pool')}"
+          test -f generated/poe2db/spears-quality-report.json
+
+      - name: Importierte Daten speichern
+        run: |
+          git config user.name "ExileForge Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -f generated/poe2db
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen gefunden."
+            exit 0
+          fi
+          git commit -m "PoE2DB-Speerdaten aktualisieren"
+          git push

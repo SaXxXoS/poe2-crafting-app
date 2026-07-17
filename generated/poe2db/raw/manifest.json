@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T22:55:13.715Z",
+  "discovery": {
+    "separateJsonOrXhrFound": false,
+    "embeddedStructuredDataFound": true,
+    "note": "Affix data is embedded as JSON; HTML is used only for base item cards."
+  },
+  "files": {
+    "english-spears.html": {
+      "url": "https://poe2db.tw/us/Spears",
+      "bytes": 684804,
+      "sha256": "b33e1076b74b730154675b74c132f6684ae96e214e11cd68c479a6761dd0c634"
+    },
+    "german-spears.html": {
+      "url": "https://poe2db.tw/de/Spears",
+      "bytes": 658544,
+      "sha256": "9952c9f13e593294ff69e970e7bf1eb343744e9f4a0953db6d9f3e7b09ec3122"
+    }
+  }
+}
