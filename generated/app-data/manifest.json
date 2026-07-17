@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-17T17:41:22.317Z",
+  "status": "app-data-ready",
+  "filters": {
+    "equipmentOnly": true,
+    "excludedDomains": [
+      "area",
+      "expedition",
+      "flask",
+      "gem",
+      "heist",
+      "map",
+      "monster",
+      "npc",
+      "sanctum",
+      "vendor"
+    ],
+    "keepsSpawnWeights": true,
+    "keepsPrefixSuffix": true,
+    "keepsRequiredLevel": true,
+    "keepsModGroups": true,
+    "poolsSplitByItemClass": true
+  },
+  "localization": {
+    "englishBaseNames": true,
+    "germanBaseNames": false,
+    "renderedModifierText": false,
+    "note": "Deutsche Namen und lesbare Mod-Texte benötigen eine separate Übersetzungsquelle."
+  },
+  "counts": {
+    "inputBases": 5246,
+    "equipmentBases": 1850,
+    "candidateEquipmentMods": 3161,
+    "referencedEquipmentMods": 1792,
+    "itemClasses": 31,
+    "poolFiles": 31,
+    "directPools": 0,
+    "fallbackPools": 1850,
+    "prefixReferences": 165023,
+    "suffixReferences": 183476
+  },
+  "files": {
+    "bases.json": {
+      "bytes": 1308888,
+      "sha256": "571bc1716fe90f06a60630bd27a63ab9410c7f8c3457e45af4b35c6dd40caeca"
+    },
+    "mods.json": {
+      "bytes": 1312339,
+      "sha256": "fe523a5429219c0400f93b863456d68d06a5939288742ba59e2d226688ecfd37"
+    },
+    "index.json": {
+      "bytes": 796968,
+      "sha256": "64f3705c16b8c599bc4931d17eee0f2773f9e3a754566e59c03fe5e93b3fc648"
+    },
+    "pools/amulet.json": {
+      "bytes": 541318,
+      "sha256": "a042bf492c23696280d73a0c19f646888bc196bc9b71802139821da13fb1c59e"
+    },
+    "pools/belt.json": {
+      "bytes": 268716,
+      "sha256": "006dd345b3b295bae4fb5bd021725bb702628effdda77b88603417eb30d3b65e"
+    },
+    "pools/body-armour.json": {
+      "bytes": 6084804,
+      "sha256": "abf00983319a71531a47d8591149ab83ab657c6aef1cd68a28baf5f8fa7e8ece"
+    },
+    "pools/boots.json": {
+      "bytes": 2888599,
+      "sha256": "8584a5abb5268f8f25f4d56a723c820d9f4d8bbb7c75304f6a80c590581919e1"
+    },
+    "pools/bow.json": {
+      "bytes": 572155,
+      "sha256": "11622e85482e7f059857910a44bbe92f6c63ca1ede05fdb0743748ec78aaba4f"
+    },
+    "pools/buckler.json": {
+      "bytes": 722235,
+      "sha256": "32b6820c6f5100c10022e6d399a9f98481d147a67d8ecc8d5931920d34d27e12"
+    },
+    "pools/claw.json": {
+      "bytes": 207508,
+      "sha256": "f58837b7eb2884ae07f057e0a838a1eb1c6975aed295b6cbb634bfbd577c29d9"
+    },
+    "pools/crossbow.json": {
+      "bytes": 577835,
+      "sha256": "9b26a2d5715f300b45b5fa778bf791f342845a58c99106edb0138c3e0b3051c2"
+    },
+    "pools/dagger.json": {
+      "bytes": 364173,
+      "sha256": "eba6bc2b36f48e5f3cded631fed78086f1384253b4bd6cb15d5ea00a6f1f033b"
+    },
+    "pools/fishingrod.json": {
+      "bytes": 12355,
+      "sha256": "8e5cd88c96c69a1882a345127e244677db9a9b01ecf47c43268342b8e7179ac3"
+    },
+    "pools/flail.json": {
+      "bytes": 347418,
+      "sha256": "4dc4add743a49f4ec14c40b49085c156fc00e9be0bb8cdc33f449a1006e07fc2"
+    },
+    "pools/focus.json": {
+      "bytes": 817312,
+      "sha256": "a033847b369dfdc8f91506dfcb73565c1db7bdebd7baa1ceaefd7d4b7cbbe26a"
+    },
+    "pools/gloves.json": {
+      "bytes": 3770828,
+      "sha256": "c92bb83d08a73bdb0d4805c2a14132eaf2b1ec41052f87e82d55337b545f6f73"
+    },
+    "pools/helmet.json": {
+      "bytes": 3955269,
+      "sha256": "4a341a19cbfca42dd9f647056b912d454f7e6d833ed6460874e7ef96ed0e492e"
+    },
+    "pools/jewel.json": {
+      "bytes": 110212,
+      "sha256": "9fd1ce5107820b299264c05e0784652125d059d9a8dd339a4b989fe619c31791"
+    },
+    "pools/one-hand-axe.json": {
+      "bytes": 335224,
+      "sha256": "3b090e0a1034c25dee64e45496ef9c024b2ac1c30bc764df2e643224044db978"
+    },
+    "pools/one-hand-mace.json": {
+      "bytes": 758362,
+      "sha256": "e96c9ea8a51b3307464d05526c25083012c2285592386cc8b40d74af69d11946"
+    },
+    "pools/one-hand-sword.json": {
+      "bytes": 396790,
+      "sha256": "e73edf5b24cce7e80690a167695ea342fc6fed49e09daf0dc9dd413ccb2559bc"
+    },
+    "pools/warstaff.json": {
+      "bytes": 670864,
+      "sha256": "4743e90e4452c572ca7478bb67db842404f3c69fda1cbdaee3172e91058bd3d0"
+    },
+    "pools/quiver.json": {
+      "bytes": 128624,
+      "sha256": "21469e48bea7f0f259f1d71ebf8a59dbd6c11fefceb7d40291a48de997cb16c7"
+    },
+    "pools/ring.json": {
+      "bytes": 611227,
+      "sha256": "caa469cc4b468523926ab45a0ceab0b48131236e0ca9bb756e72cbec64f8a697"
+    },
+    "pools/sceptre.json": {
+      "bytes": 244670,
+      "sha256": "b97080c0562dfa82f6b3b19d08a6b65c403484df3b18742bf0b0dadef1147f6f"
+    },
+    "pools/shield.json": {
+      "bytes": 2325762,
+      "sha256": "91385b7845141869c4cb5459c73f5dbbcca828ceff5c0215b03040379800c5f8"
+    },
+    "pools/spear.json": {
+      "bytes": 637535,
+      "sha256": "2115b0c69ee1389c168bff3b09b749cbb0b4b29921d1d2f4e5bf103ce592e834"
+    },
+    "pools/stackablecurrency.json": {
+      "bytes": 44811,
+      "sha256": "93b8bdd9a853a1b98a7dcc136cc1d45e09936bc53b1c7d9280a47a22c1cae731"
+    },
+    "pools/staff.json": {
+      "bytes": 317147,
+      "sha256": "265a8bbc8d5bb97f272c2f59766d7a389bc4bc974c1b1523f888598dcbdd3868"
+    },
+    "pools/talisman.json": {
+      "bytes": 567366,
+      "sha256": "cd11015908f2dde15db2d4b5e4278f08b3fa8693908360ddadb46230b8b774c1"
+    },
+    "pools/two-hand-axe.json": {
+      "bytes": 342889,
+      "sha256": "2c174cf47118622264c0a51e3af2760045f1f30ef811938a999aa3a82d6004ea"
+    },
+    "pools/two-hand-mace.json": {
+      "bytes": 756818,
+      "sha256": "c9f408587277734e3e385ee277c00ece3e3762eb7f262ea4ce1a146dffa08c81"
+    },
+    "pools/two-hand-sword.json": {
+      "bytes": 388652,
+      "sha256": "d74044262a1dd1fd63a9a615b91e3a45d4412c15d6cecd69772ab7f4f7b0902d"
+    },
+    "pools/wand.json": {
+      "bytes": 289421,
+      "sha256": "35303042e58d086a55fc3bdec4accd8a7bfc406816ccf8ff83d2a9ad777591fb"
+    }
+  }
+}
