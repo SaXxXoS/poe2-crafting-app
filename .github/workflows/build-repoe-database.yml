@@ -1,4 +1,4 @@
-name: Build RePoE Database v3
+name: Build RePoE Database
 
 on:
   workflow_dispatch:
@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: "22"
 
-      - name: RePoE-Datenbank v3 erzeugen
-        run: node tools/import-repoe-database-v3.mjs
+      - name: RePoE-Datenbank erzeugen
+        run: node tools/import-repoe-database.mjs
 
       - name: Daten speichern
         run: |
@@ -34,5 +34,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "RePoE-Datenbank v3 aktualisieren"
+          git commit -m "RePoE-Datenbank aktualisieren"
           git push
