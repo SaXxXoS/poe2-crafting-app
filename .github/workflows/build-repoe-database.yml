@@ -1,0 +1,38 @@
+name: Build RePoE Database v3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ExileForge herunterladen
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: RePoE-Datenbank v3 erzeugen
+        run: node tools/import-repoe-database-v3.mjs
+
+      - name: Daten speichern
+        run: |
+          git config user.name "ExileForge Data Bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add -f generated/repoe generated/app-v2
+
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen gefunden."
+            exit 0
+          fi
+
+          git commit -m "RePoE-Datenbank v3 aktualisieren"
+          git push
