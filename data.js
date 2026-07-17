@@ -1,5 +1,5 @@
 window.EXILEFORGE_DATA = {
-  "generatedAt": "2026-07-17T09:28:26.503Z",
+  "generatedAt": "2026-07-17T09:56:40.661Z",
   "classOptions": {
     "weapon": [
       "Angelrute",
@@ -52,7 +52,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Mana Regeneration Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Mana Regeneration Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -76,7 +77,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(2-4) Life Regeneration per second",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(2-4) Life Regeneration per second",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -100,7 +102,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-1 Suffix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Suffix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -124,11 +127,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 Prefix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 Prefix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "-1 Suffix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Suffix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -152,11 +157,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-1 Prefix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Prefix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "+1 Suffix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 Suffix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -180,11 +187,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+2 Prefix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+2 Prefix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "-2 Suffix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-2 Suffix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -208,11 +217,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-2 Prefix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-2 Prefix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "+2 Suffix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+2 Suffix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -236,7 +247,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-1 Prefix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Prefix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -260,7 +272,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(10-15) to Strength",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(10-15) to Strength",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -284,7 +297,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(10-15) to Dexterity",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(10-15) to Dexterity",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -308,7 +322,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(10-15) to Intelligence",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(10-15) to Intelligence",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -332,7 +347,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30) to maximum Energy Shield",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30) to maximum Energy Shield",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -356,7 +372,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(30-40) to maximum Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(30-40) to maximum Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -380,7 +397,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(5-7) to all Attributes",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(5-7) to all Attributes",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -404,7 +422,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-10)% to all Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-10)% to all Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -428,7 +447,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(10-15) to Spirit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(10-15) to Spirit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -452,7 +472,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(12-20)% increased Rarity of Items found",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(12-20)% increased Rarity of Items found",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -476,7 +497,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "This item gains bonuses from Socketed Items as though it was a Helmet",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "This item gains bonuses from Socketed Items as though it was a Helmet",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -500,155 +522,193 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-1 Prefix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Prefix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:1}Grants Skill: Level (1-20) Arctic Armour",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:1}Grants Skill: Level (1-20) Arctic Armour",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:2}Grants Skill: Level (1-20) Herald of Ash",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:2}Grants Skill: Level (1-20) Herald of Ash",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:3}Grants Skill: Level (1-20) Herald of Ice",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:3}Grants Skill: Level (1-20) Herald of Ice",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:4}Grants Skill: Level (1-20) Herald of Thunder",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:4}Grants Skill: Level (1-20) Herald of Thunder",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:5}Grants Skill: Level (1-20) Plague Bearer",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:5}Grants Skill: Level (1-20) Plague Bearer",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:6}Grants Skill: Level (1-20) Barrier Invocation",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:6}Grants Skill: Level (1-20) Barrier Invocation",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:7}Grants Skill: Level (1-20) Lingering Illusion",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:7}Grants Skill: Level (1-20) Lingering Illusion",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:8}Grants Skill: Level (1-20) Ghost Dance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:8}Grants Skill: Level (1-20) Ghost Dance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:9}Grants Skill: Level (1-20) Mana Remnants",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:9}Grants Skill: Level (1-20) Mana Remnants",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:10}Grants Skill: Level (1-20) Magma Barrier",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:10}Grants Skill: Level (1-20) Magma Barrier",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:11}Grants Skill: Level (1-20) Raging Spirits",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:11}Grants Skill: Level (1-20) Raging Spirits",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:12}Grants Skill: Level (1-20) Wind Dancer",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:12}Grants Skill: Level (1-20) Wind Dancer",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:13}Grants Skill: Level (1-20) Cast on Minion Death",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:13}Grants Skill: Level (1-20) Cast on Minion Death",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:14}Grants Skill: Level (1-20) Scavenged Plating",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:14}Grants Skill: Level (1-20) Scavenged Plating",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:15}Grants Skill: Level (1-20) War Banner",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:15}Grants Skill: Level (1-20) War Banner",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:16}Grants Skill: Level (1-20) Defiance Banner",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:16}Grants Skill: Level (1-20) Defiance Banner",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:17}Grants Skill: Level (1-20) Dread Banner",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:17}Grants Skill: Level (1-20) Dread Banner",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:18}Grants Skill: Level (1-20) Time of Need",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:18}Grants Skill: Level (1-20) Time of Need",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:19}Grants Skill: Level (1-20) Attrition",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:19}Grants Skill: Level (1-20) Attrition",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:20}Grants Skill: Level (1-20) Charge Regulation",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:20}Grants Skill: Level (1-20) Charge Regulation",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:21}Grants Skill: Level (1-20) Shard Scavenger",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:21}Grants Skill: Level (1-20) Shard Scavenger",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:22}Grants Skill: Level (1-20) Overwhelming Presence",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:22}Grants Skill: Level (1-20) Overwhelming Presence",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:23}Grants Skill: Level (1-20) Alchemist's Boon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:23}Grants Skill: Level (1-20) Alchemist's Boon",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:24}Grants Skill: Level (1-20) Reaper's Invocation",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:24}Grants Skill: Level (1-20) Reaper's Invocation",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:25}Grants Skill: Level (1-20) Berserk",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:25}Grants Skill: Level (1-20) Berserk",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:26}Grants Skill: Level (1-20) Herald of Plague",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:26}Grants Skill: Level (1-20) Herald of Plague",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:27}Grants Skill: Level (1-20) Herald of Blood",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:27}Grants Skill: Level (1-20) Herald of Blood",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:28}Grants Skill: Level (1-20) Withering Presence",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:28}Grants Skill: Level (1-20) Withering Presence",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:29}Grants Skill: Level (1-20) Ravenous Swarm",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:29}Grants Skill: Level (1-20) Ravenous Swarm",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:30}Grants Skill: Level (1-20) Combat Frenzy",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:30}Grants Skill: Level (1-20) Combat Frenzy",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:31}Grants Skill: Level (1-20) Trail of Caltrops",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:31}Grants Skill: Level (1-20) Trail of Caltrops",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:32}Grants Skill: Level (1-20) Convalescence",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:32}Grants Skill: Level (1-20) Convalescence",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:33}Grants Skill: Level (1-20) Iron Ward",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:33}Grants Skill: Level (1-20) Iron Ward",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:34}Grants Skill: Level (1-20) Siphon Elements",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:34}Grants Skill: Level (1-20) Siphon Elements",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:35}Grants Skill: Level (1-20) Briarpatch",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:35}Grants Skill: Level (1-20) Briarpatch",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:36}Grants Skill: Level (1-20) Savage Fury",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:36}Grants Skill: Level (1-20) Savage Fury",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:37}Grants Skill: Level (1-20) Barkskin",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:37}Grants Skill: Level (1-20) Barkskin",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -672,35 +732,43 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-1 Suffix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Suffix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:1}Grants Skill: Level (1-20) Wolf Pack",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:1}Grants Skill: Level (1-20) Wolf Pack",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:2}Grants Skill: Level (1-20) Blink",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:2}Grants Skill: Level (1-20) Blink",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:3}Grants Skill: Level (1-20) Elemental Invocation",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:3}Grants Skill: Level (1-20) Elemental Invocation",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:4}Grants Skill: Level (1-20) Elemental Conflux",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:4}Grants Skill: Level (1-20) Elemental Conflux",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:5}Grants Skill: Level (1-20) Sacrifice",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:5}Grants Skill: Level (1-20) Sacrifice",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:6}Grants Skill: Level (1-20) Mirage Archer",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:6}Grants Skill: Level (1-20) Mirage Archer",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:7}Grants Skill: Level (1-20) Feral Invocation",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:7}Grants Skill: Level (1-20) Feral Invocation",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -724,39 +792,48 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-1 Prefix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Prefix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "-1 Suffix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Suffix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:1}Grants Skill: Level (1-20) Cast on Elemental Ailment",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:1}Grants Skill: Level (1-20) Cast on Elemental Ailment",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:2}Grants Skill: Level (1-20) Cast on Critical",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:2}Grants Skill: Level (1-20) Cast on Critical",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:3}Grants Skill: Level (1-20) Cast on Dodge",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:3}Grants Skill: Level (1-20) Cast on Dodge",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:4}Grants Skill: Level (1-20) Rhoa Mount",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:4}Grants Skill: Level (1-20) Rhoa Mount",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:5}Grants Skill: Level (1-20) Archmage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:5}Grants Skill: Level (1-20) Archmage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:6}Grants Skill: Level (1-20) Trinity",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:6}Grants Skill: Level (1-20) Trinity",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "{variant:7}Grants Skill: Level (1-20) Eternal Rage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "{variant:7}Grants Skill: Level (1-20) Eternal Rage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -782,7 +859,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Grants 1 Rage on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Grants 1 Rage on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -902,7 +980,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Culling Strike",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Culling Strike",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -953,7 +1032,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has no Accuracy Penalty from Range",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has no Accuracy Penalty from Range",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1050,7 +1130,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Gain (34-43) Life per enemy killed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Gain (34-43) Life per enemy killed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1124,7 +1205,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Gain (28-35) Mana per enemy killed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Gain (28-35) Mana per enemy killed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1152,7 +1234,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(15-25)% chance to cause Bleeding on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% chance to cause Bleeding on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1224,7 +1307,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "10% increased Damage taken",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "10% increased Damage taken",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1295,7 +1379,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Cannot use Projectile Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Cannot use Projectile Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1412,11 +1497,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Rarity of Items found",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Rarity of Items found",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1444,11 +1531,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Mana Recovery from Flasks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Mana Recovery from Flasks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1474,11 +1563,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Life Recovery from Flasks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Life Recovery from Flasks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1504,11 +1595,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "(20-30)% increased Flask Charges gained",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Flask Charges gained",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1534,11 +1627,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(15-20)% increased Charm Effect Duration",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-20)% increased Charm Effect Duration",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1564,11 +1659,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(140-180) to Armour",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(140-180) to Armour",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1594,11 +1691,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "(10-15)% reduced Charm Charges used",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(10-15)% reduced Charm Charges used",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1624,11 +1723,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Adds 1 to (20-30) Lightning damage to Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Adds 1 to (20-30) Lightning damage to Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has 1 Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 1 Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1654,11 +1755,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(8-12)% increased Cast Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(8-12)% increased Cast Speed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has 1 Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 1 Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1684,11 +1787,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(15-20) to Strength",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(15-20) to Strength",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has 1 Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 1 Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1714,11 +1819,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(10-15)% reduced Flask Charges used",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(10-15)% reduced Flask Charges used",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1744,11 +1851,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has 1 Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 1 Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "This item gains bonuses from Socketed Items as though it was Boots",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "This item gains bonuses from Socketed Items as though it was Boots",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1774,11 +1883,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "(20-30)% increased Charm Charges gained",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Charm Charges gained",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1804,11 +1915,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Stun Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Stun Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1834,11 +1947,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "20% of Flask Recovery applied Instantly",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "20% of Flask Recovery applied Instantly",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -1864,11 +1979,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has (1-3) Charm Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has (1-3) Charm Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Flasks gain 0.17 charges per Second",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Flasks gain 0.17 charges per Second",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -2884,7 +3001,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(15-25)% to all Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(15-25)% to all Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -5462,7 +5580,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(750-1000) to maximum Runic Ward",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(750-1000) to maximum Runic Ward",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6070,7 +6189,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(60-80) to maximum Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(60-80) to maximum Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6096,7 +6216,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1% to all Maximum Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1% to all Maximum Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6164,11 +6285,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Can roll Ring Modifiers",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Can roll Ring Modifiers",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Catalysts can be applied to this item",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Catalysts can be applied to this item",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6215,7 +6338,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(60-80) to maximum Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(60-80) to maximum Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6262,11 +6386,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Can roll Ring Modifiers",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Can roll Ring Modifiers",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Catalysts can be applied to this item",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Catalysts can be applied to this item",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6293,7 +6419,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(60-80) to maximum Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(60-80) to maximum Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6386,11 +6513,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Can roll Ring Modifiers",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Can roll Ring Modifiers",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Catalysts can be applied to this item",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Catalysts can be applied to this item",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6417,11 +6546,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Can roll Ring Modifiers",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Can roll Ring Modifiers",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Catalysts can be applied to this item",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Catalysts can be applied to this item",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6448,11 +6579,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Can roll Ring Modifiers",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Can roll Ring Modifiers",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Catalysts can be applied to this item",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Catalysts can be applied to this item",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6479,11 +6612,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Can roll Ring Modifiers",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Can roll Ring Modifiers",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "Catalysts can be applied to this item",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Catalysts can be applied to this item",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6532,7 +6667,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(60-80) to maximum Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(60-80) to maximum Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6559,7 +6695,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1% to all Maximum Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1% to all Maximum Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6586,7 +6723,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 to Level of all Corrupted Skill Gems",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 to Level of all Corrupted Skill Gems",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6613,11 +6751,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 to Level of all Corrupted Skill Gems",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 to Level of all Corrupted Skill Gems",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "1% increased Maximum Life for each Corrupted Item Equipped",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "1% increased Maximum Life for each Corrupted Item Equipped",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6644,11 +6784,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 to Level of all Corrupted Skill Gems",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 to Level of all Corrupted Skill Gems",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "+1% to all Resistances for each Corrupted Item Equipped",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1% to all Resistances for each Corrupted Item Equipped",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6675,11 +6817,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 to Level of all Corrupted Skill Gems",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 to Level of all Corrupted Skill Gems",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "(2-4)% increased Chaos Damage for each Corrupted Item Equipped",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(2-4)% increased Chaos Damage for each Corrupted Item Equipped",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6750,7 +6894,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% reduced Slowing Potency of Debuffs on You",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% reduced Slowing Potency of Debuffs on You",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6843,7 +6988,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 to Level of all Corrupted Skill Gems",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 to Level of all Corrupted Skill Gems",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -6911,7 +7057,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% reduced Slowing Potency of Debuffs on You",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% reduced Slowing Potency of Debuffs on You",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7000,7 +7147,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(40-50)% increased Mana Regeneration Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(40-50)% increased Mana Regeneration Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7026,7 +7174,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Stun Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Stun Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7052,7 +7201,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-13)% to Chaos Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-13)% to Chaos Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7078,7 +7228,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% reduced Slowing Potency of Debuffs on You",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% reduced Slowing Potency of Debuffs on You",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7104,7 +7255,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30) to Spirit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30) to Spirit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7130,7 +7282,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Stun Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Stun Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7157,7 +7310,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30) to Spirit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30) to Spirit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7184,7 +7338,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-13)% to Chaos Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-13)% to Chaos Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7211,7 +7366,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(40-50)% increased Mana Regeneration Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(40-50)% increased Mana Regeneration Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7238,7 +7394,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% reduced Slowing Potency of Debuffs on You",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% reduced Slowing Potency of Debuffs on You",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7265,7 +7422,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Fire Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Fire Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7292,7 +7450,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Cold Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Cold Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7319,7 +7478,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Lightning Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Lightning Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7346,7 +7506,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Fire Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Fire Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7372,7 +7533,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Cold Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Cold Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7398,7 +7560,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Lightning Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Lightning Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7424,7 +7587,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30) to Spirit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30) to Spirit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7450,7 +7614,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(40-50)% increased Mana Regeneration Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(40-50)% increased Mana Regeneration Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7476,7 +7641,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Regenerate (1.5-2.5)% of maximum Life per second",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Regenerate (1.5-2.5)% of maximum Life per second",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7502,7 +7668,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-13)% to Chaos Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-13)% to Chaos Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7528,7 +7695,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30) to Spirit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30) to Spirit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7555,7 +7723,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Runic Ward Regeneration Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Runic Ward Regeneration Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7582,7 +7751,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Regenerate (1.5-2.5)% of maximum Life per second",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Regenerate (1.5-2.5)% of maximum Life per second",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7609,7 +7779,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-13)% to Chaos Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-13)% to Chaos Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7636,7 +7807,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Fire Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Fire Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7663,7 +7835,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Cold Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Cold Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7690,7 +7863,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Lightning Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Lightning Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7739,7 +7913,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Fire Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Fire Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7765,7 +7940,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Cold Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Cold Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7791,7 +7967,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-25)% to Lightning Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-25)% to Lightning Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7838,7 +8015,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Regenerate (1.5-2.5)% of maximum Life per second",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Regenerate (1.5-2.5)% of maximum Life per second",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7864,7 +8042,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-25)% increased Energy Shield Recharge Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-25)% increased Energy Shield Recharge Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7889,8 +8068,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 248 · Energieschild 76",
         "implicits": [
           {
-            "name": "5% increased Movement Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "5% erhöhte Bewegungsgeschwindigkeit",
+            "englishName": "5% increased Movement Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -7916,7 +8096,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Elemental Ailment Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Elemental Ailment Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7942,7 +8123,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Regenerate (1.5-2.5)% of maximum Life per second",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Regenerate (1.5-2.5)% of maximum Life per second",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7969,7 +8151,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-25)% increased Energy Shield Recharge Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-25)% increased Energy Shield Recharge Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -7996,7 +8179,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Elemental Ailment Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Elemental Ailment Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8022,8 +8206,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "5% increased Movement Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "5% erhöhte Bewegungsgeschwindigkeit",
+            "englishName": "5% increased Movement Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -8157,7 +8342,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1% to all Maximum Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1% to all Maximum Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8182,8 +8368,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 248 · Energieschild 76",
         "implicits": [
           {
-            "name": "5% increased Movement Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "5% erhöhte Bewegungsgeschwindigkeit",
+            "englishName": "5% increased Movement Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -8231,7 +8418,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1% to all Maximum Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1% to all Maximum Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8257,8 +8445,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 186 · Energieschild 57",
         "implicits": [
           {
-            "name": "5% increased Movement Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "5% erhöhte Bewegungsgeschwindigkeit",
+            "englishName": "5% increased Movement Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -8285,7 +8474,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-25)% increased Energy Shield Recharge Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-25)% increased Energy Shield Recharge Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8312,7 +8502,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Stun Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Stun Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8339,7 +8530,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Elemental Ailment Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Elemental Ailment Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8366,7 +8558,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-25)% increased Energy Shield Recharge Rate",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-25)% increased Energy Shield Recharge Rate",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8392,7 +8585,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Stun Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Stun Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8418,7 +8612,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased Elemental Ailment Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased Elemental Ailment Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8444,7 +8639,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(10-15)% reduced Elemental Ailment Duration on you",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(10-15)% reduced Elemental Ailment Duration on you",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8470,8 +8666,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 451",
         "implicits": [
           {
-            "name": "5% increased Movement Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "5% erhöhte Bewegungsgeschwindigkeit",
+            "englishName": "5% increased Movement Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -8498,7 +8695,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(5-10)% of Damage is taken from Mana before Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(5-10)% of Damage is taken from Mana before Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8525,7 +8723,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(10-15)% reduced Elemental Ailment Duration on you",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(10-15)% reduced Elemental Ailment Duration on you",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8552,8 +8751,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 406",
         "implicits": [
           {
-            "name": "5% increased Movement Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "5% erhöhte Bewegungsgeschwindigkeit",
+            "englishName": "5% increased Movement Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -8581,7 +8781,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(5-10)% of Damage is taken from Mana before Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(5-10)% of Damage is taken from Mana before Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8609,7 +8810,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(8-14)% of Damage taken Recouped as Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(8-14)% of Damage taken Recouped as Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8637,7 +8839,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Hits against you have (15-25)% reduced Critical Damage Bonus",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Hits against you have (15-25)% reduced Critical Damage Bonus",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8665,7 +8868,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(15-25)% of Armour also applies to Elemental Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(15-25)% of Armour also applies to Elemental Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8693,7 +8897,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(8-14)% of Damage taken Recouped as Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(8-14)% of Damage taken Recouped as Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8720,7 +8925,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Hits against you have (15-25)% reduced Critical Damage Bonus",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Hits against you have (15-25)% reduced Critical Damage Bonus",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -8747,7 +8953,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(15-25)% of Armour also applies to Elemental Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(15-25)% of Armour also applies to Elemental Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -9181,7 +9388,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(8-16)% to all Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(8-16)% to all Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -12445,7 +12653,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(25-35)% chance to Chain an additional time",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(25-35)% chance to Chain an additional time",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -12522,7 +12731,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+50% Surpassing chance to fire an additional Arrow",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+50% Surpassing chance to fire an additional Arrow",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -12649,7 +12859,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "50% reduced Projectile Range",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "50% reduced Projectile Range",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -12701,7 +12912,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(25-35)% chance to Chain an additional time",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(25-35)% chance to Chain an additional time",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -12799,7 +13011,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+50% Surpassing chance to fire an additional Arrow",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+50% Surpassing chance to fire an additional Arrow",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -12877,7 +13090,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+50% Surpassing chance to fire an additional Arrow",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+50% Surpassing chance to fire an additional Arrow",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -12907,7 +13121,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Projectiles have 50% chance for an additional Projectile when Forking",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Projectiles have 50% chance for an additional Projectile when Forking",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13100,7 +13315,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(25-35)% chance to Chain an additional time",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(25-35)% chance to Chain an additional time",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13151,7 +13367,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+50% Surpassing chance to fire an additional Arrow",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+50% Surpassing chance to fire an additional Arrow",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13179,7 +13396,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "50% reduced Projectile Range",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "50% reduced Projectile Range",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13279,7 +13497,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Grants 8 Life per Enemy Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Grants 8 Life per Enemy Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13353,7 +13572,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(15-25)% chance to Blind Enemies on hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% chance to Blind Enemies on hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13563,7 +13783,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Bolt Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Bolt Speed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13640,7 +13861,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Loads an additional bolt",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Loads an additional bolt",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13693,7 +13915,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Grenade Skills Fire an additional Projectile",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Grenade Skills Fire an additional Projectile",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13870,7 +14093,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Bolt Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Bolt Speed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13921,7 +14145,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% chance to Pierce an Enemy",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% chance to Pierce an Enemy",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -13973,7 +14198,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 to maximum number of Summoned Ballista Totems",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 to maximum number of Summoned Ballista Totems",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14001,7 +14227,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Loads an additional bolt",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Loads an additional bolt",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14077,7 +14304,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Grenade Skills Fire an additional Projectile",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Grenade Skills Fire an additional Projectile",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14151,7 +14379,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Cannot load or fire Ammunition",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Cannot load or fire Ammunition",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14249,7 +14478,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Bolt Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Bolt Speed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14277,7 +14507,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% chance to Pierce an Enemy",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% chance to Pierce an Enemy",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14306,7 +14537,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Loads an additional bolt",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Loads an additional bolt",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14334,7 +14566,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Grenade Skills Fire an additional Projectile",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Grenade Skills Fire an additional Projectile",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14410,7 +14643,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Leeches 4% of Physical Damage as Mana",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Leeches 4% of Physical Damage as Mana",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14553,7 +14787,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "25% of Spell Mana Cost Converted to Life Cost",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "25% of Spell Mana Cost Converted to Life Cost",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14581,7 +14816,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Breaks (400-500) Armour on Critical Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Breaks (400-500) Armour on Critical Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14813,7 +15049,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Bifurcates Critical Hits",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Bifurcates Critical Hits",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -14864,7 +15101,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Unblockable",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Unblockable",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15073,7 +15311,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you take Fire damage from a Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you take Fire damage from a Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15098,7 +15337,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you take Cold damage from a Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you take Cold damage from a Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15123,7 +15363,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you take Lightning damage from a Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you take Lightning damage from a Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15148,7 +15389,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you become Stunned",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you become Stunned",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15173,7 +15415,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(50-80)% increased Flammability Magnitude",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(50-80)% increased Flammability Magnitude",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15201,7 +15444,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you are affected by a Slow",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you are affected by a Slow",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15226,7 +15470,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you become Frozen",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you become Frozen",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15251,7 +15496,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Minions deal (30-50)% increased Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Minions deal (30-50)% increased Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15279,7 +15525,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you start Bleeding",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you start Bleeding",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15327,7 +15574,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you become Poisoned",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you become Poisoned",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15352,7 +15600,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(14-18)% to Block chance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(14-18)% to Block chance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15380,7 +15629,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you become Shocked",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you become Shocked",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15405,7 +15655,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you become Ignited",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you become Ignited",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15430,7 +15681,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-10) to Maximum Rage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15482,7 +15734,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Minions deal (30-50)% increased Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Minions deal (30-50)% increased Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15535,7 +15788,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you take Chaos damage from a Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you take Chaos damage from a Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15560,7 +15814,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you become Cursed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you become Cursed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15608,7 +15863,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Magnitude of Shock you inflict",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Magnitude of Shock you inflict",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15636,7 +15892,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Used when you kill a Rare or Unique enemy",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Used when you kill a Rare or Unique enemy",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15684,7 +15941,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(14-18)% to Block chance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(14-18)% to Block chance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15712,7 +15970,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-10) to Maximum Rage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15739,7 +15998,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-10) to Maximum Rage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15790,7 +16050,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(10-20)% increased Effect of your Mark Skills",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(10-20)% increased Effect of your Mark Skills",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15909,7 +16170,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(50-80)% increased Flammability Magnitude",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(50-80)% increased Flammability Magnitude",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15937,7 +16199,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(14-18)% to Block chance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(14-18)% to Block chance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15965,7 +16228,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Minions deal (30-50)% increased Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Minions deal (30-50)% increased Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -15993,7 +16257,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Magnitude of Shock you inflict",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Magnitude of Shock you inflict",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -16067,7 +16332,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-10) to Maximum Rage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -21495,7 +21761,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(16-24) to all Attributes",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(16-24) to all Attributes",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -21522,7 +21789,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(8-16)% to all Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(8-16)% to all Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25572,7 +25840,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Mana Regeneration Rate while moving",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Mana Regeneration Rate while moving",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25595,7 +25864,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(6-10)% increased Cast Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(6-10)% increased Cast Speed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25617,8 +25887,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "(6-10)% increased Attack Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "(6-10)% erhöhte Angriffsgeschwindigkeit",
+            "englishName": "(6-10)% increased Attack Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -25641,7 +25912,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(15-25)% increased Presence Area of Effect",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% increased Presence Area of Effect",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25664,7 +25936,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(12-16)% increased Curse Magnitudes",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(12-16)% increased Curse Magnitudes",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25687,7 +25960,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(6-10)% increased Deflection Rating",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(6-10)% increased Deflection Rating",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25710,7 +25984,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Evasion Rating",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Evasion Rating",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25733,7 +26008,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(8-12)% increased Block chance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(8-12)% increased Block chance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25756,7 +26032,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(6-10)% of Damage taken Recouped as Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(6-10)% of Damage taken Recouped as Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25779,7 +26056,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(6-10)% increased Movement Speed while Sprinting",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(6-10)% increased Movement Speed while Sprinting",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25802,7 +26080,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(15-25)% increased Stun Threshold",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% increased Stun Threshold",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -25825,7 +26104,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(5-10)% reduced Movement Speed Penalty from using Skills while moving",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(5-10)% reduced Movement Speed Penalty from using Skills while moving",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26025,7 +26305,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes (20-40)% increased Stun Buildup",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes (20-40)% increased Stun Buildup",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26145,7 +26426,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Crushes Enemies on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26219,7 +26501,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Strikes deal Splash Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26247,7 +26530,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(5-10)% to Critical Damage Bonus",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(5-10)% to Critical Damage Bonus",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26367,7 +26651,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "40% chance to Daze on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "40% chance to Daze on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26419,7 +26704,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes (20-40)% increased Stun Buildup",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes (20-40)% increased Stun Buildup",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26496,7 +26782,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(30-40)% increased effect of Fully Broken Armour",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(30-40)% increased effect of Fully Broken Armour",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26525,7 +26812,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Area of Effect for Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Area of Effect for Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26554,7 +26842,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26582,11 +26871,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Strikes deal Splash Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "(20-30)% increased Bleeding Duration",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Bleeding Duration",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26615,7 +26906,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Crushes Enemies on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26713,7 +27005,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes (20-40)% increased Stun Buildup",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes (20-40)% increased Stun Buildup",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26763,7 +27056,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has 3 Sockets",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 3 Sockets",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26790,7 +27084,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Crushes Enemies on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26839,7 +27134,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Always Hits",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Always Hits",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26867,7 +27163,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Warcries Empower an additional Attack",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Warcries Empower an additional Attack",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26895,7 +27192,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(5-10)% to Critical Damage Bonus",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(5-10)% to Critical Damage Bonus",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -26922,7 +27220,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Strikes deal Splash Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27081,7 +27380,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27202,7 +27502,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27229,7 +27530,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "40% chance to Daze on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "40% chance to Daze on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27300,7 +27602,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has 3 Sockets",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 3 Sockets",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27328,7 +27631,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has 3 Sockets",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 3 Sockets",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27356,7 +27660,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has 3 Sockets",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 3 Sockets",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27384,11 +27689,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Has 3 Sockets",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Has 3 Sockets",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "+(100-150) to maximum Runic Ward",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(100-150) to maximum Runic Ward",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27439,7 +27746,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Strikes deal Splash Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27468,7 +27776,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Crushes Enemies on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27561,7 +27870,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes (30-50)% increased Stun Buildup",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes (30-50)% increased Stun Buildup",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27654,7 +27964,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Always Hits",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Always Hits",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27682,7 +27993,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Strikes deal Splash Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27709,7 +28021,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(5-10)% to Critical Damage Bonus",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(5-10)% to Critical Damage Bonus",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27736,7 +28049,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Warcries Empower an additional Attack",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Warcries Empower an additional Attack",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27764,7 +28078,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "40% chance to Daze on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "40% chance to Daze on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27791,7 +28106,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27820,7 +28136,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Adds 1 to 3 Physical Damage to Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Adds 1 to 3 Physical Damage to Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27844,7 +28161,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Adds 3 to 5 Fire damage to Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Adds 3 to 5 Fire damage to Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27868,7 +28186,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Gain (2-3) Life per Enemy Hit with Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Gain (2-3) Life per Enemy Hit with Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27892,7 +28211,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Accuracy Rating",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Accuracy Rating",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27916,7 +28236,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(25-40)% increased Stun Buildup",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(25-40)% increased Stun Buildup",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27940,7 +28261,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% chance to Poison on Hit with Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% chance to Poison on Hit with Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27964,7 +28286,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Attacks have (20-30)% chance to cause Bleeding",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Attacks have (20-30)% chance to cause Bleeding",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -27987,8 +28310,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "(7-10)% increased Attack Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "(7-10)% erhöhte Angriffsgeschwindigkeit",
+            "englishName": "(7-10)% increased Attack Speed",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -28012,7 +28336,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "100% chance to Pierce an Enemy",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "100% chance to Pierce an Enemy",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28036,7 +28361,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Arrow Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Arrow Speed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28060,7 +28386,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Critical Hit Chance for Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Critical Hit Chance for Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28086,7 +28413,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Inflict Abyssal Wasting on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Inflict Abyssal Wasting on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28112,11 +28440,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1 Prefix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 Prefix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "-1 Suffix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Suffix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28142,7 +28472,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Adds 1 to 4 Physical Damage to Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Adds 1 to 4 Physical Damage to Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28168,11 +28499,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-1 Prefix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-1 Prefix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "+1 Suffix Modifier allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1 Suffix Modifier allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28198,7 +28531,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30) to maximum Mana",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30) to maximum Mana",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28224,11 +28558,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+2 Prefix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+2 Prefix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "-2 Suffix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-2 Suffix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28275,11 +28611,13 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "-2 Prefix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "-2 Prefix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           },
           {
             "name": "+2 Suffix Modifiers allowed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+2 Suffix Modifiers allowed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28305,7 +28643,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(12-16)% to Fire and Cold Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(12-16)% to Fire and Cold Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28331,7 +28670,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(12-16)% to Fire and Lightning Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(12-16)% to Fire and Lightning Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28357,7 +28697,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(12-16)% to Cold and Lightning Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(12-16)% to Cold and Lightning Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28383,7 +28724,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30)% to Fire Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30)% to Fire Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28409,7 +28751,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(8-12) to all Attributes",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(8-12) to all Attributes",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28437,7 +28780,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30)% to Cold Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30)% to Cold Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28463,7 +28807,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(20-30)% to Lightning Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(20-30)% to Lightning Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28489,7 +28834,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-13)% to Chaos Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-13)% to Chaos Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28515,7 +28861,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(120-160) to Accuracy Rating",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(120-160) to Accuracy Rating",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28541,7 +28888,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(7-10)% increased Cast Speed",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(7-10)% increased Cast Speed",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28567,7 +28915,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(7-10)% to all Elemental Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(7-10)% to all Elemental Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28593,7 +28942,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(6-15)% increased Rarity of Items found",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(6-15)% increased Rarity of Items found",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28619,7 +28969,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "This item gains bonuses from Socketed Items as though it was Gloves",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "This item gains bonuses from Socketed Items as though it was Gloves",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28645,7 +28996,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Adds (6-9) to (11-15) Physical Damage to Attacks",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Adds (6-9) to (11-15) Physical Damage to Attacks",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28671,7 +29023,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(4-6)% increased maximum Mana",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(4-6)% increased maximum Mana",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28697,7 +29050,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+25% to Maximum Quality",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+25% to Maximum Quality",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28723,7 +29077,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+20% to Maximum Quality",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+20% to Maximum Quality",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28749,7 +29104,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(4-6)% increased maximum Life",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(4-6)% increased maximum Life",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28775,7 +29131,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "Grants 1 additional Skill Slot",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Grants 1 additional Skill Slot",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28801,7 +29158,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(11-23)% increased Chaos Damage",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(11-23)% increased Chaos Damage",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28827,7 +29185,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+1% to all maximum Resistances",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+1% to all maximum Resistances",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -28854,8 +29213,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -28879,8 +29239,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Discipline",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Discipline",
+            "englishName": "Grants Skill: Level (1-20) Discipline",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -28904,8 +29265,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -28929,8 +29291,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Malice",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Malice",
+            "englishName": "Grants Skill: Level (1-20) Malice",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -28954,8 +29317,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -28979,8 +29343,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Purity of Fire",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Purity of Fire",
+            "englishName": "Grants Skill: Level (1-20) Purity of Fire",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29004,8 +29369,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Purity of Ice",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Purity of Ice",
+            "englishName": "Grants Skill: Level (1-20) Purity of Ice",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29029,8 +29395,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Purity of Lightning",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Purity of Lightning",
+            "englishName": "Grants Skill: Level (1-20) Purity of Lightning",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29054,8 +29421,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Purity of Ice",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Purity of Ice",
+            "englishName": "Grants Skill: Level (1-20) Purity of Ice",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29079,8 +29447,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Purity of Fire",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Purity of Fire",
+            "englishName": "Grants Skill: Level (1-20) Purity of Fire",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29104,8 +29473,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Purity of Lightning",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Purity of Lightning",
+            "englishName": "Grants Skill: Level (1-20) Purity of Lightning",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29129,8 +29499,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29154,8 +29525,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Heart of Ice",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Heart of Ice",
+            "englishName": "Grants Skill: Level (1-20) Heart of Ice",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29179,8 +29551,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29204,8 +29577,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Fulmination",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Fulmination",
+            "englishName": "Grants Skill: Level (1-20) Fulmination",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29229,8 +29603,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29254,8 +29629,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29279,8 +29655,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Skeletal Warrior Minion",
+            "englishName": "Grants Skill: Level (1-20) Skeletal Warrior Minion",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29306,8 +29683,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 10 · Energieschild 6",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29334,8 +29712,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 18",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29362,8 +29741,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 10 · Ausweichen 7",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29390,8 +29770,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 10",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29419,8 +29800,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 10 · Energieschild 6",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29448,8 +29830,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 10 · Ausweichen 7",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29477,8 +29860,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 10",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29507,8 +29891,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 18",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29536,8 +29921,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 18",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29565,8 +29951,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 18",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29595,8 +29982,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 33",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29623,8 +30011,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 33",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29652,8 +30041,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 20 · Energieschild 9",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29681,8 +30071,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 20 · Energieschild 9",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29709,8 +30100,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 21 · Ausweichen 17",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29737,8 +30129,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 21 · Ausweichen 17",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29766,8 +30159,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 31",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29795,8 +30189,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 31",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29825,8 +30220,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 50",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29854,8 +30250,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 50",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29883,7 +30280,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(11-19)% to Chaos Resistance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(11-19)% to Chaos Resistance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -29909,8 +30307,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 62",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29937,8 +30336,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 34 · Ausweichen 29",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29965,8 +30365,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 42",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -29994,8 +30395,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 34 · Energieschild 12",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30022,8 +30424,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 62",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30051,8 +30454,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 34 · Energieschild 12",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30080,8 +30484,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 42",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30110,8 +30515,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 34 · Ausweichen 29",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30139,8 +30545,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 76",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30167,8 +30574,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 76",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30196,8 +30604,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 55",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30225,8 +30634,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 55",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30255,8 +30665,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 50 · Ausweichen 44",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30283,8 +30694,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 50 · Ausweichen 44",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30312,8 +30724,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 64",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30342,8 +30755,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 64",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30371,8 +30785,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 96",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30399,8 +30814,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 53 · Energieschild 17",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30428,8 +30844,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 96",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30457,8 +30874,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 53 · Energieschild 17",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30485,8 +30903,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 111",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30513,8 +30932,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 61 · Ausweichen 54",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30541,8 +30961,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 61 · Energieschild 19",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30569,8 +30990,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 79",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30598,8 +31020,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 61 · Ausweichen 54",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30627,8 +31050,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 111",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30656,8 +31080,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 79",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30686,8 +31111,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 61 · Energieschild 19",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30715,8 +31141,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 66 · Energieschild 20",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30743,8 +31170,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 66 · Energieschild 20",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30772,8 +31200,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 119",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30801,8 +31230,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 119",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30829,8 +31259,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 67 · Ausweichen 60",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30857,8 +31288,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 67 · Ausweichen 60",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30886,8 +31318,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 92",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30915,8 +31348,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 92",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30945,8 +31379,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 145",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -30972,8 +31407,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 80 · Energieschild 23",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31000,8 +31436,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 80 · Ausweichen 72",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31027,8 +31464,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 105",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31056,8 +31494,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 105",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31084,8 +31523,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 80 · Energieschild 23",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31111,8 +31551,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 145",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31140,8 +31581,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 105",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31170,8 +31612,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 80 · Energieschild 23",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31199,8 +31642,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 145",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31227,8 +31671,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 82 · Ausweichen 74",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31254,8 +31699,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 82 · Ausweichen 74",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31282,8 +31728,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 85 · Energieschild 24",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31309,8 +31756,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 85 · Ausweichen 76",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31336,8 +31784,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 154",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31363,8 +31812,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 111",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31391,8 +31841,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 160",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31419,8 +31870,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 116",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31448,8 +31900,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31477,8 +31930,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 116",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31507,8 +31961,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 88 · Energieschild 25",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31536,8 +31991,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 88 · Energieschild 25",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31564,8 +32020,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 118",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31592,8 +32049,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 163",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31619,8 +32077,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 89 · Energieschild 26",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31646,8 +32105,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 89 · Ausweichen 81",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31673,8 +32133,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 89 · Ausweichen 81",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31700,8 +32161,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 89 · Ausweichen 81",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31728,8 +32190,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 91 · Ausweichen 82",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31756,8 +32219,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 166",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31783,8 +32247,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31812,8 +32277,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31841,8 +32307,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31869,8 +32336,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31897,8 +32365,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 91 · Energieschild 26",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31924,8 +32393,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 120",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31952,8 +32422,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 171",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -31979,8 +32450,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 94 · Energieschild 27",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32006,8 +32478,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 94 · Ausweichen 85",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32033,8 +32506,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 144",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32061,8 +32535,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 79 · Energieschild 22",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32089,8 +32564,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 79 · Ausweichen 72",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32117,8 +32593,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 104",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32146,8 +32623,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 124",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32174,8 +32652,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 126",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32202,8 +32681,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32231,8 +32711,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 99 · Ausweichen 90",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32259,8 +32740,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 99 · Energieschild 28",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32286,8 +32768,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32315,8 +32798,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32343,8 +32827,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 183",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32370,8 +32855,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32398,8 +32884,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 135",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32426,8 +32913,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 186",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32453,8 +32941,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 102 · Energieschild 29",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32480,8 +32969,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 124",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32509,8 +32999,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 171",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32537,8 +33028,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 94 · Energieschild 26",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32565,8 +33057,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 94 · Ausweichen 85",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32593,8 +33086,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 102 · Ausweichen 93",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32620,8 +33114,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 139",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32648,8 +33143,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 192",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32675,8 +33171,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 111",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32704,8 +33201,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 153",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32732,8 +33230,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 107 · Ausweichen 97",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32759,8 +33258,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 107 · Energieschild 30",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32786,8 +33286,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 86 · Ausweichen 78",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32814,8 +33315,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 86 · Energieschild 24",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32842,8 +33344,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 148",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32870,8 +33373,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 112 · Ausweichen 102",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32897,8 +33401,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 112 · Energieschild 31",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32924,8 +33429,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 112 · Ausweichen 102",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32951,8 +33457,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 203",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -32978,8 +33485,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33007,8 +33515,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33035,8 +33544,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33063,8 +33573,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33091,8 +33602,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 106 · Energieschild 29",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33119,8 +33631,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 106 · Ausweichen 97",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33147,8 +33660,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 141",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33176,8 +33690,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 193",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33204,8 +33719,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 203",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33231,8 +33747,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 112 · Energieschild 31",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33258,8 +33775,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 148",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33286,8 +33804,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 123 · Ausweichen 112",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33313,8 +33832,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 223",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33340,8 +33860,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 163",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33368,8 +33889,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 86 · Ausweichen 78",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33396,8 +33918,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 156",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33424,8 +33947,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 114",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33453,8 +33977,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 86 · Energieschild 24",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33481,8 +34006,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 123 · Energieschild 34",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33508,8 +34034,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 178",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33536,8 +34063,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 155",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33565,8 +34093,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 113 · Ausweichen 103",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33593,8 +34122,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 126 · Energieschild 35",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33621,8 +34151,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 221",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33649,8 +34180,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 134 · Ausweichen 122",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33676,8 +34208,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 134 · Energieschild 37",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33703,8 +34236,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 244",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33730,8 +34264,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 145 · Energieschild 40",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33758,8 +34293,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 192",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33787,8 +34323,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 145 · Ausweichen 132",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33815,8 +34352,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 52 · Energieschild 15",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33844,8 +34382,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Ausweichen 87",
         "implicits": [
           {
-            "name": "Grants Skill: Parry",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Parry",
+            "englishName": "Grants Skill: Parry",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33874,8 +34413,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 57 · Ausweichen 52",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33903,8 +34443,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 112",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33932,8 +34473,9 @@ window.EXILEFORGE_DATA = {
         "defences": "Rüstung 264",
         "implicits": [
           {
-            "name": "Grants Skill: Raise Shield",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Schild heben",
+            "englishName": "Grants Skill: Raise Shield",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33962,8 +34504,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -33990,8 +34533,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34018,12 +34562,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "(15-25)% chance to Maim on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% chance to Maim on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34050,8 +34596,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34078,12 +34625,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
-            "name": "(25-35)% increased Projectile Speed with this Weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "(25-35)% erhöhte Projektilgeschwindigkeit mit dieser Waffe",
+            "englishName": "(25-35)% increased Projectile Speed with this Weapon",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -34110,8 +34659,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34138,12 +34688,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "Bleeding you inflict deals Damage (10-20)% faster",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Bleeding you inflict deals Damage (10-20)% faster",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34170,12 +34722,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "(15-25)% chance to Maim on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% chance to Maim on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34203,8 +34757,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34232,12 +34787,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "25% increased Melee Strike Range with this weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "25% increased Melee Strike Range with this weapon",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34264,8 +34821,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34293,12 +34851,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
-            "name": "(25-35)% increased Projectile Speed with this Weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "(25-35)% erhöhte Projektilgeschwindigkeit mit dieser Waffe",
+            "englishName": "(25-35)% increased Projectile Speed with this Weapon",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -34326,8 +34886,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34355,12 +34916,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "Prevent +(3-7)% of Damage from Deflected Hits",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Prevent +(3-7)% of Damage from Deflected Hits",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34387,8 +34950,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34414,12 +34978,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "(15-25)% chance to Maim on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% chance to Maim on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34445,8 +35011,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34473,12 +35040,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
-            "name": "(25-35)% increased Projectile Speed with this Weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "(25-35)% erhöhte Projektilgeschwindigkeit mit dieser Waffe",
+            "englishName": "(25-35)% increased Projectile Speed with this Weapon",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -34504,8 +35073,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34531,8 +35101,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34558,12 +35129,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "Bleeding you inflict deals Damage (10-20)% faster",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Bleeding you inflict deals Damage (10-20)% faster",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34591,8 +35164,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34620,8 +35194,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34647,12 +35222,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "Bleeding you inflict deals Damage (10-20)% faster",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Bleeding you inflict deals Damage (10-20)% faster",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34678,12 +35255,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "25% increased Melee Strike Range with this weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "25% increased Melee Strike Range with this weapon",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34709,8 +35288,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34736,8 +35316,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34763,8 +35344,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34791,8 +35373,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34818,12 +35401,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "Prevent +(3-7)% of Damage from Deflected Hits",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Prevent +(3-7)% of Damage from Deflected Hits",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34850,12 +35435,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "Bleeding you inflict deals Damage (10-20)% faster",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "Bleeding you inflict deals Damage (10-20)% faster",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34881,12 +35468,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "(15-25)% chance to Maim on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(15-25)% chance to Maim on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -34912,8 +35501,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -34940,12 +35530,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
-            "name": "(25-35)% increased Projectile Speed with this Weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "name": "(25-35)% erhöhte Projektilgeschwindigkeit mit dieser Waffe",
+            "englishName": "(25-35)% increased Projectile Speed with this Weapon",
+            "kind": "Basis-Implizit"
           }
         ],
         "tags": [
@@ -34971,12 +35563,14 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Spear Throw",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Speerwurf",
+            "englishName": "Grants Skill: Spear Throw",
+            "kind": "Gewährte Fertigkeit"
           },
           {
             "name": "25% increased Melee Strike Range with this weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "25% increased Melee Strike Range with this weapon",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -35004,8 +35598,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Firebolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Firebolt",
+            "englishName": "Grants Skill: Level (1-20) Firebolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35033,8 +35628,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Freezing Shards",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Freezing Shards",
+            "englishName": "Grants Skill: Level (1-20) Freezing Shards",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35086,7 +35682,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "16% increased Melee Strike Range with this weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "16% increased Melee Strike Range with this weapon",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -35113,8 +35710,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Lightning Bolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Lightning Bolt",
+            "englishName": "Grants Skill: Level (1-20) Lightning Bolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35165,8 +35763,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Firebolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Firebolt",
+            "englishName": "Grants Skill: Level (1-20) Firebolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35213,8 +35812,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Solar Orb",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Solar Orb",
+            "englishName": "Grants Skill: Level (1-20) Solar Orb",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35265,8 +35865,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Sigil of Power",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Sigil of Power",
+            "englishName": "Grants Skill: Level (1-20) Sigil of Power",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35336,8 +35937,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Soulrend",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Soulrend",
+            "englishName": "Grants Skill: Level (1-20) Soulrend",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35366,7 +35968,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(12-18)% to Block chance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(12-18)% to Block chance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -35393,8 +35996,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Reap",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Reap",
+            "englishName": "Grants Skill: Level (1-20) Reap",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35423,7 +36027,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-50)% chance to Daze on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-50)% chance to Daze on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -35451,7 +36056,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "16% increased Melee Strike Range with this weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "16% increased Melee Strike Range with this weapon",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -35477,8 +36083,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Firebolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Firebolt",
+            "englishName": "Grants Skill: Level (1-20) Firebolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35528,8 +36135,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Unleash",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Unleash",
+            "englishName": "Grants Skill: Level (1-20) Unleash",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35620,8 +36228,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Enervating Nova",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Enervating Nova",
+            "englishName": "Grants Skill: Level (1-20) Enervating Nova",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35693,8 +36302,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Consecrate",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Consecrate",
+            "englishName": "Grants Skill: Level (1-20) Consecrate",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35741,7 +36351,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(12-18)% to Block chance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(12-18)% to Block chance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -35767,8 +36378,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Dark Pact",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Dark Pact",
+            "englishName": "Grants Skill: Level (1-20) Dark Pact",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35792,8 +36404,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Feast of Flesh",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Feast of Flesh",
+            "englishName": "Grants Skill: Level (1-20) Feast of Flesh",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -35884,7 +36497,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-50)% chance to Daze on Hit",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-50)% chance to Daze on Hit",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -35934,7 +36548,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "16% increased Melee Strike Range with this weapon",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "16% increased Melee Strike Range with this weapon",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -36006,7 +36621,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(12-18)% to Block chance",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(12-18)% to Block chance",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -36081,7 +36697,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "+(16-24) to all Attributes",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "+(16-24) to all Attributes",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -36986,7 +37603,8 @@ window.EXILEFORGE_DATA = {
         "implicits": [
           {
             "name": "(20-30)% increased Cooldown Recovery Rate for throwing Traps",
-            "kind": "Basis-Implizit (PoB-Originaltext)"
+            "englishName": "(20-30)% increased Cooldown Recovery Rate for throwing Traps",
+            "kind": "Basis-Implizit (englischer Originaltext)"
           }
         ],
         "tags": [
@@ -37012,8 +37630,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Mana Drain",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Mana Drain",
+            "englishName": "Grants Skill: Level (1-20) Mana Drain",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37037,8 +37656,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Bone Blast",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Bone Blast",
+            "englishName": "Grants Skill: Level (1-20) Bone Blast",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37066,8 +37686,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Chaos Bolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Chaos Bolt",
+            "englishName": "Grants Skill: Level (1-20) Chaos Bolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37095,8 +37716,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Power Siphon",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Power Siphon",
+            "englishName": "Grants Skill: Level (1-20) Power Siphon",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37120,8 +37742,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Volatile Dead",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Volatile Dead",
+            "englishName": "Grants Skill: Level (1-20) Volatile Dead",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37149,8 +37772,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Galvanic Field",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Galvanic Field",
+            "englishName": "Grants Skill: Level (1-20) Galvanic Field",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37178,8 +37802,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Decompose",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Decompose",
+            "englishName": "Grants Skill: Level (1-20) Decompose",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37203,8 +37828,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Exsanguinate",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Exsanguinate",
+            "englishName": "Grants Skill: Level (1-20) Exsanguinate",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37232,8 +37858,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Chaos Bolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Chaos Bolt",
+            "englishName": "Grants Skill: Level (1-20) Chaos Bolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37261,8 +37888,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Chaos Bolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Chaos Bolt",
+            "englishName": "Grants Skill: Level (1-20) Chaos Bolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37286,8 +37914,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Chaos Bolt",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Chaos Bolt",
+            "englishName": "Grants Skill: Level (1-20) Chaos Bolt",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37311,8 +37940,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Wither",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Wither",
+            "englishName": "Grants Skill: Level (1-20) Wither",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
@@ -37340,8 +37970,9 @@ window.EXILEFORGE_DATA = {
         "defences": "",
         "implicits": [
           {
-            "name": "Grants Skill: Level (1-20) Spellslinger",
-            "kind": "Gewährte Fertigkeit (PoB-Originaltext)"
+            "name": "Gewährt Fertigkeit: Level (1-20) Spellslinger",
+            "englishName": "Grants Skill: Level (1-20) Spellslinger",
+            "kind": "Gewährte Fertigkeit"
           }
         ],
         "tags": [
