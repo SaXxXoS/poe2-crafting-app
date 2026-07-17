@@ -80,6 +80,29 @@ const EXCLUDED_DOMAIN_HINTS = [
   "npc", "sanctum", "vendor"
 ];
 
+const EXCLUDED_MOD_HINTS = [
+  "chest_",
+  "ultimatum_",
+  "wager_",
+  "expedition_",
+  "map_",
+  "monster_",
+  "sanctum_",
+  "heist_",
+  "warning_sound",
+  "display_generic",
+  "dropped_item_level",
+  "additional_unique_items",
+  "item_quantity_final_from_mod",
+  "item_rarity_final_from_mod"
+];
+
+function modStatIds(mod) {
+  return asArray(mod.stats)
+    .map(stat => String(stat?.id ?? stat?.stat ?? stat?.stat_id ?? stat ?? "").toLowerCase())
+    .filter(Boolean);
+}
+
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
 }
@@ -299,14 +322,25 @@ function isEquipmentMod(mod) {
     return false;
   }
 
+  const statIds = modStatIds(mod);
   const searchable = [
     mod.domain,
     mod.type,
     mod.id,
-    ...mod.tags
+    ...mod.tags,
+    ...statIds
   ].filter(Boolean).join(" ").toLowerCase();
 
-  return !EXCLUDED_DOMAIN_HINTS.some(hint => searchable.includes(hint));
+  if (EXCLUDED_DOMAIN_HINTS.some(hint => searchable.includes(hint))) {
+    return false;
+  }
+
+  if (EXCLUDED_MOD_HINTS.some(hint => searchable.includes(hint))) {
+    return false;
+  }
+
+  // Mods ohne verwertbaren Stat sind für die Auswahl nicht brauchbar.
+  return statIds.length > 0;
 }
 
 function normalizeSourcePool(pool) {
@@ -592,6 +626,7 @@ function main() {
       equipmentOnly: true,
       allowedItemClasses: [...ALLOWED_ITEM_CLASSES],
       excludedDomains: EXCLUDED_DOMAIN_HINTS,
+      excludedModHints: EXCLUDED_MOD_HINTS,
       keepsSpawnWeights: true,
       keepsPrefixSuffix: true,
       keepsRequiredLevel: true,
