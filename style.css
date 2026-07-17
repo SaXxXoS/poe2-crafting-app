@@ -101,3 +101,81 @@ main{padding:16px}
 .recognized-mod input{width:22px;height:22px;margin-top:2px;accent-color:var(--gold)}
 .recognized-mod .confidence{color:var(--gold2);font-weight:800}
 .scan-debug{font-size:11px;color:var(--muted);line-height:1.45}
+
+
+/* EXILEFORGE_GENERATED_DATA_UI_FIX_V4 */
+.sheet-results,
+.result,
+.result > div,
+.implicit,
+.implicit > div {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.sheet-results {
+  overflow-x: hidden;
+}
+
+.result {
+  align-items: flex-start;
+}
+
+.result > div {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.result b,
+.result small,
+.implicit b,
+.implicit small,
+.affix-select b,
+.affix-select small {
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.result b,
+.implicit b {
+  line-height: 1.35;
+}
+
+.result .add,
+.add {
+  flex: 0 0 auto;
+  max-width: 96px;
+}
+
+.implicit .lock {
+  flex: 0 0 27px;
+}
+
+.base-stat b {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 520px) {
+  .result {
+    gap: 12px;
+    padding-right: 0;
+  }
+
+  .result b {
+    font-size: 12px;
+  }
+
+  .result small {
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .add {
+    padding: 9px 10px;
+  }
+}
+
