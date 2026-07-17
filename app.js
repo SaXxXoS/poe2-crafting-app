@@ -66,6 +66,78 @@
     movement_speed: 'Bewegungsgeschwindigkeit'
   };
 
+  const BASE_NAME_DE = {
+    'Guardian Spear': 'Wächterspeer',
+    'Spiked Spear': 'Stachelspeer',
+    'Stalking Spear': 'Pirschspeer',
+    'Akoyan Spear': 'Akoyanischer Speer',
+    'Flying Spear': 'Fliegender Speer',
+    'Grand Spear': 'Großer Speer',
+    'War Spear': 'Kriegsspeer',
+    'Jagged Spear': 'Gezackter Speer'
+  };
+
+  const IMPLICIT_TEXT_DE = {
+    'SpearImplicitDisplaySpearThrow1': 'Kann als Speer geworfen werden',
+    'SpearImplicitLocalProjectileSpeed1': 'Erhöhte Projektilgeschwindigkeit',
+    'SpearImplicitDeflectDamagePrevented1': 'Zusätzliche Schadensverhinderung durch Ablenken',
+    'SpearImplicitFasterBleed1': 'Blutungen verursachen ihren Schaden schneller',
+    'SpearImplicitLocalChanceToMaim1': 'Chance, Gegner zu verstümmeln',
+    'SpearImplicitWeaponRange1': 'Erhöhte Waffenreichweite'
+  };
+
+  const STAT_LABELS_DE = {
+    'local_attack_speed_+%': 'Erhöhte Angriffsgeschwindigkeit',
+    'local_critical_strike_chance_+%': 'Erhöhte kritische Trefferchance',
+    'local_physical_damage_+%': 'Erhöhter physischer Schaden',
+    'local_minimum_added_physical_damage': 'Zusätzlicher minimaler physischer Schaden',
+    'local_maximum_added_physical_damage': 'Zusätzlicher maximaler physischer Schaden',
+    'local_minimum_added_fire_damage': 'Zusätzlicher minimaler Feuerschaden',
+    'local_maximum_added_fire_damage': 'Zusätzlicher maximaler Feuerschaden',
+    'local_minimum_added_cold_damage': 'Zusätzlicher minimaler Kälteschaden',
+    'local_maximum_added_cold_damage': 'Zusätzlicher maximaler Kälteschaden',
+    'local_minimum_added_lightning_damage': 'Zusätzlicher minimaler Blitzschaden',
+    'local_maximum_added_lightning_damage': 'Zusätzlicher maximaler Blitzschaden',
+    'additional_strength': 'Stärke',
+    'additional_dexterity': 'Geschick',
+    'additional_intelligence': 'Intelligenz',
+    'base_maximum_life': 'Maximales Leben',
+    'base_maximum_mana': 'Maximales Mana',
+    'base_life_regeneration_rate_per_minute': 'Lebensregeneration',
+    'base_mana_regeneration_rate_per_minute': 'Manaregeneration',
+    'base_fire_damage_resistance_%': 'Feuerwiderstand',
+    'base_cold_damage_resistance_%': 'Kältewiderstand',
+    'base_lightning_damage_resistance_%': 'Blitzwiderstand',
+    'base_chaos_damage_resistance_%': 'Chaoswiderstand',
+    'base_item_found_rarity_+%': 'Seltenheit gefundener Gegenstände',
+    'base_movement_velocity_+%': 'Bewegungsgeschwindigkeit',
+    'base_accuracy_rating': 'Genauigkeit',
+    'base_life_gained_on_enemy_death': 'Leben bei Tötung',
+    'base_mana_gained_on_enemy_death': 'Mana bei Tötung',
+    'local_weapon_range_+': 'Waffenreichweite',
+    'local_projectile_speed_+%': 'Projektilgeschwindigkeit',
+    'local_chance_to_maim_on_hit_%': 'Chance auf Verstümmeln',
+    'bleeding_damage_+%_final': 'Blutungsschaden',
+    'attack_damage_+%': 'Angriffsschaden',
+    'spell_damage_+%': 'Zauberschaden',
+    'cast_speed_+%': 'Zaubergeschwindigkeit',
+    'critical_strike_chance_+%': 'Kritische Trefferchance',
+    'critical_strike_multiplier_+': 'Multiplikator für kritische Treffer'
+  };
+
+  const HIDDEN_STAT_HINTS = [
+    'ultimatum',
+    'wager',
+    'chest_',
+    'display_generic',
+    'warning_sound',
+    'dropped_item_level',
+    'additional_unique_items',
+    'item_quantity_final_from_mod',
+    'item_rarity_final_from_mod',
+    '_hash'
+  ];
+
   const REQUIREMENT_LABELS_DE = {
     level: 'Stufe',
     strength: 'Stärke',
@@ -137,6 +209,65 @@
       .replace(/_/g, ' ')
       .replace(/\b\w/g, character => character.toUpperCase())
       .trim();
+  }
+
+  function cleanStatId(value) {
+    return String(value || '')
+      .replace(/^stat_/, '')
+      .trim();
+  }
+
+  function isHiddenStat(statId) {
+    const value = cleanStatId(statId).toLowerCase();
+    return HIDDEN_STAT_HINTS.some(hint => value.includes(hint));
+  }
+
+  function statLabelDe(statId) {
+    const id = cleanStatId(statId);
+
+    if (STAT_LABELS_DE[id]) return STAT_LABELS_DE[id];
+
+    const lower = id.toLowerCase();
+
+    if (lower.includes('fire') && lower.includes('resistance')) return 'Feuerwiderstand';
+    if (lower.includes('cold') && lower.includes('resistance')) return 'Kältewiderstand';
+    if (lower.includes('lightning') && lower.includes('resistance')) return 'Blitzwiderstand';
+    if (lower.includes('chaos') && lower.includes('resistance')) return 'Chaoswiderstand';
+    if (lower.includes('attack_speed')) return 'Angriffsgeschwindigkeit';
+    if (lower.includes('cast_speed')) return 'Zaubergeschwindigkeit';
+    if (lower.includes('critical_strike_chance')) return 'Kritische Trefferchance';
+    if (lower.includes('critical_strike_multiplier')) return 'Multiplikator für kritische Treffer';
+    if (lower.includes('maximum_life')) return 'Maximales Leben';
+    if (lower.includes('maximum_mana')) return 'Maximales Mana';
+    if (lower.includes('physical_damage')) return 'Physischer Schaden';
+    if (lower.includes('fire_damage')) return 'Feuerschaden';
+    if (lower.includes('cold_damage')) return 'Kälteschaden';
+    if (lower.includes('lightning_damage')) return 'Blitzschaden';
+    if (lower.includes('strength')) return 'Stärke';
+    if (lower.includes('dexterity')) return 'Geschick';
+    if (lower.includes('intelligence')) return 'Intelligenz';
+    if (lower.includes('accuracy')) return 'Genauigkeit';
+    if (lower.includes('projectile_speed')) return 'Projektilgeschwindigkeit';
+    if (lower.includes('weapon_range')) return 'Waffenreichweite';
+
+    return formatInternalName(id);
+  }
+
+  function formatStatValue(stat, label) {
+    const min = Number(stat.min ?? 0);
+    const max = Number(stat.max ?? min);
+    const raw = min === max ? String(min) : `${min}–${max}`;
+    const id = cleanStatId(stat.id).toLowerCase();
+
+    const isPercent =
+      id.includes('%') ||
+      id.includes('_+%') ||
+      id.includes('resistance') ||
+      id.includes('speed') ||
+      id.includes('chance');
+
+    if (isPercent && !label.includes('Multiplikator')) return `${raw} %`;
+    return raw;
   }
 
   function categoryForClass(itemClass) {
@@ -214,7 +345,7 @@
       if (typeof implicit === 'string') {
         return {
           id: implicit,
-          name: formatInternalName(implicit),
+          name: IMPLICIT_TEXT_DE[implicit] || formatInternalName(implicit),
           kind: 'Basis-Implizit'
         };
       }
@@ -223,7 +354,7 @@
         const id = implicit.id ?? implicit.mod_id ?? implicit.modId ?? `implicit-${index}`;
         return {
           id,
-          name: implicit.name ?? implicit.text ?? formatInternalName(id),
+          name: implicit.name ?? implicit.text ?? IMPLICIT_TEXT_DE[id] ?? formatInternalName(id),
           kind: implicit.type ?? 'Basis-Implizit'
         };
       }
@@ -237,27 +368,27 @@
   }
 
   function modDisplayName(mod) {
-    if (mod.name) return mod.name;
-
     const statNames = (mod.stats || [])
-      .map(stat => formatInternalName(stat.id))
+      .filter(stat => !isHiddenStat(stat.id))
+      .map(stat => statLabelDe(stat.id))
       .filter(Boolean);
 
-    if (statNames.length) return statNames.join(' + ');
+    if (statNames.length) return [...new Set(statNames)].join(' + ');
 
+    if (mod.name) return mod.name;
     return formatInternalName(mod.id);
   }
 
   function modRange(mod) {
-    const stats = Array.isArray(mod.stats) ? mod.stats : [];
+    const stats = Array.isArray(mod.stats)
+      ? mod.stats.filter(stat => !isHiddenStat(stat.id))
+      : [];
 
-    if (!stats.length) return 'Wertebereich nicht angegeben';
+    if (!stats.length) return 'Kein darstellbarer Wertebereich';
 
     return stats.map(stat => {
-      const label = formatInternalName(stat.id);
-      const min = Number(stat.min ?? 0);
-      const max = Number(stat.max ?? min);
-      const value = min === max ? String(min) : `${min}–${max}`;
+      const label = statLabelDe(stat.id);
+      const value = formatStatValue(stat, label);
       return `${label}: ${value}`;
     }).join(' · ');
   }
@@ -269,6 +400,8 @@
   }
 
   function adaptMod(mod) {
+    const visibleStats = (mod.stats || []).filter(stat => !isHiddenStat(stat.id));
+
     return {
       id: mod.id,
       name: modDisplayName(mod),
@@ -278,6 +411,7 @@
       group: mod.group || mod.id,
       generationType: mod.generationType,
       spawnWeights: mod.spawnWeights || [],
+      visible: visibleStats.length > 0,
       raw: mod
     };
   }
@@ -287,7 +421,7 @@
 
     return {
       ...base,
-      name: base.nameDe || base.name || base.id,
+      name: base.nameDe || BASE_NAME_DE[base.name] || base.name || base.id,
       requiredLevel: Number(
         base.requirements?.level ??
         base.requirements?.Level ??
@@ -359,7 +493,7 @@
     ]);
 
     const bases = (baseDocument.bases || []).map(adaptBase);
-    const mods = (modDocument.mods || []).map(adaptMod);
+    const mods = (modDocument.mods || []).map(adaptMod).filter(mod => mod.visible);
     const classes = indexDocument.classes || [];
 
     state.data.bases = bases;
@@ -736,7 +870,7 @@
       .map(row => {
         const [modId, requiredLevel, spawnWeight] = row;
         const mod = state.data.modsById.get(modId);
-        if (!mod) return null;
+        if (!mod || !mod.visible) return null;
 
         return {
           ...mod,
