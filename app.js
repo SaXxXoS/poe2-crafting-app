@@ -22,6 +22,60 @@
     jewellery: 'Schmuck'
   };
 
+  const CLASS_LABELS_DE = {
+    'Amulet': 'Amulette',
+    'Belt': 'Gürtel',
+    'Body Armour': 'Körperrüstungen',
+    'Boots': 'Stiefel',
+    'Bow': 'Bögen',
+    'Buckler': 'Faustschilde',
+    'Claw': 'Klauen',
+    'Crossbow': 'Armbrüste',
+    'Dagger': 'Dolche',
+    'Flail': 'Flegel',
+    'Focus': 'Foki',
+    'Gloves': 'Handschuhe',
+    'Helmet': 'Helme',
+    'Jewel': 'Juwelen',
+    'One Hand Axe': 'Einhandäxte',
+    'One Hand Mace': 'Einhandstreitkolben',
+    'One Hand Sword': 'Einhandschwerter',
+    'Quiver': 'Köcher',
+    'Ring': 'Ringe',
+    'Sceptre': 'Zepter',
+    'Shield': 'Schilde',
+    'Spear': 'Speere',
+    'Staff': 'Stäbe',
+    'Two Hand Axe': 'Zweihandäxte',
+    'Two Hand Mace': 'Zweihandstreitkolben',
+    'Two Hand Sword': 'Zweihandschwerter',
+    'Wand': 'Zauberstäbe',
+    'Warstaff': 'Kampfstäbe'
+  };
+
+  const PROPERTY_LABELS_DE = {
+    attack_time: 'Angriffe pro Sekunde',
+    critical_strike_chance: 'Kritische Trefferchance',
+    physical_damage_min: 'Minimaler physischer Schaden',
+    physical_damage_max: 'Maximaler physischer Schaden',
+    range: 'Reichweite',
+    armour: 'Rüstung',
+    evasion: 'Ausweichwert',
+    energy_shield: 'Energieschild',
+    block: 'Blockchance',
+    movement_speed: 'Bewegungsgeschwindigkeit'
+  };
+
+  const REQUIREMENT_LABELS_DE = {
+    level: 'Stufe',
+    strength: 'Stärke',
+    dexterity: 'Geschick',
+    intelligence: 'Intelligenz',
+    str: 'Stärke',
+    dex: 'Geschick',
+    int: 'Intelligenz'
+  };
+
   const state = {
     data: {
       ready: false,
@@ -101,16 +155,52 @@
       .map(([key, value]) => {
         if (value === null || value === undefined || value === '') return null;
 
+        const normalizedKey = String(key).toLowerCase();
+        const numericValue = Number(value);
+        const label = PROPERTY_LABELS_DE[normalizedKey] || formatInternalName(key);
+
+        if (normalizedKey === 'attack_time' && Number.isFinite(numericValue) && numericValue > 0) {
+          return {
+            label,
+            value: (1000 / numericValue).toLocaleString('de-DE', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            })
+          };
+        }
+
+        if (normalizedKey === 'critical_strike_chance' && Number.isFinite(numericValue)) {
+          return {
+            label,
+            value: `${(numericValue / 100).toLocaleString('de-DE', {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2
+            })} %`
+          };
+        }
+
+        if (normalizedKey === 'block' && Number.isFinite(numericValue)) {
+          const percent = numericValue > 100 ? numericValue / 100 : numericValue;
+          return {
+            label,
+            value: `${percent.toLocaleString('de-DE', {
+              maximumFractionDigits: 2
+            })} %`
+          };
+        }
+
         if (typeof value === 'object') {
           return {
-            label: formatInternalName(key),
+            label,
             value: JSON.stringify(value)
           };
         }
 
         return {
-          label: formatInternalName(key),
-          value: String(value)
+          label,
+          value: Number.isFinite(numericValue)
+            ? numericValue.toLocaleString('de-DE')
+            : String(value)
         };
       })
       .filter(Boolean)
@@ -214,8 +304,17 @@
     if (!requirements || typeof requirements !== 'object') return 'Keine';
 
     const rows = Object.entries(requirements)
-      .filter(([, value]) => value !== null && value !== undefined && value !== '' && Number(value) !== 0)
-      .map(([key, value]) => `${formatInternalName(key)} ${value}`);
+      .filter(([, value]) =>
+        value !== null &&
+        value !== undefined &&
+        value !== '' &&
+        Number(value) !== 0
+      )
+      .map(([key, value]) => {
+        const normalizedKey = String(key).toLowerCase();
+        const label = REQUIREMENT_LABELS_DE[normalizedKey] || formatInternalName(key);
+        return `${label} ${Number(value).toLocaleString('de-DE')}`;
+      });
 
     return rows.join(' · ') || 'Keine';
   }
@@ -324,7 +423,7 @@
     const previous = $('itemClass').value;
 
     $('itemClass').innerHTML = classes
-      .map(itemClass => `<option value="${itemClass.id}">${itemClass.name || itemClass.id}</option>`)
+      .map(itemClass => `<option value="${itemClass.id}">${CLASS_LABELS_DE[itemClass.id] || itemClass.name || itemClass.id}</option>`)
       .join('');
 
     if (classes.some(itemClass => itemClass.id === previous)) {
@@ -409,7 +508,7 @@
         <div>
           <h3>${base.name}</h3>
           <div class="base-subtitle">
-            ${base.itemClassName || base.itemClass} · Item-Level ${Number($('ilevel').value) || 1}
+            ${CLASS_LABELS_DE[base.itemClass] || base.itemClassName || base.itemClass} · Item-Level ${Number($('ilevel').value) || 1}
           </div>
         </div>
         <span class="verified">Live-Daten</span>
@@ -546,7 +645,7 @@
     if ($('basePicker').disabled) return;
 
     const itemClass = state.data.classById.get($('itemClass').value);
-    $('baseSheetHeading').textContent = `${itemClass?.name || $('itemClass').value}: Basis auswählen`;
+    $('baseSheetHeading').textContent = `${CLASS_LABELS_DE[$('itemClass').value] || itemClass?.name || $('itemClass').value}: Basis auswählen`;
     $('baseSearch').value = '';
     renderBaseResults();
     openSheet('baseSheet');
@@ -577,7 +676,7 @@
         <div>
           <b>${base.name}</b>
           <small>
-            Drop-Level ${base.dropLevel} · ${base.itemClassName || base.itemClass}<br>
+            Drop-Level ${base.dropLevel} · ${CLASS_LABELS_DE[base.itemClass] || base.itemClassName || base.itemClass}<br>
             ${implicitText}
           </small>
         </div>
@@ -880,7 +979,7 @@
 
   function populateRecognizedClasses(selectedClass = '') {
     $('recognizedClass').innerHTML = state.data.classes
-      .map(itemClass => `<option value="${itemClass.id}">${itemClass.name || itemClass.id}</option>`)
+      .map(itemClass => `<option value="${itemClass.id}">${CLASS_LABELS_DE[itemClass.id] || itemClass.name || itemClass.id}</option>`)
       .join('');
 
     if (selectedClass && state.data.classById.has(selectedClass)) {
