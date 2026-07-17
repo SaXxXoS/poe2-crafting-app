@@ -25,9 +25,22 @@ const CLASS_CONFIGS = [
     itemClass: "Bow",
     tag: "bow",
     page: "Bows",
-    headings: ["Bows Item", "Bögen Gegenstand"],
     baseCssClass: "Bow"
-  }
+  },
+  { key: "crossbows", itemClass: "Crossbow", tag: "crossbow", page: "Crossbows" },
+  { key: "wands", itemClass: "Wand", tag: "wand", page: "Wands" },
+  { key: "staves", itemClass: "Staff", tag: "staff", page: "Staves" },
+  { key: "warstaves", itemClass: "Warstaff", tag: "warstaff", page: "Quarterstaves" },
+  { key: "one-hand-swords", itemClass: "One Hand Sword", tag: "sword", page: "One_Hand_Swords" },
+  { key: "two-hand-swords", itemClass: "Two Hand Sword", tag: "sword", page: "Two_Hand_Swords" },
+  { key: "one-hand-axes", itemClass: "One Hand Axe", tag: "axe", page: "One_Hand_Axes" },
+  { key: "two-hand-axes", itemClass: "Two Hand Axe", tag: "axe", page: "Two_Hand_Axes" },
+  { key: "one-hand-maces", itemClass: "One Hand Mace", tag: "mace", page: "One_Hand_Maces" },
+  { key: "two-hand-maces", itemClass: "Two Hand Mace", tag: "mace", page: "Two_Hand_Maces" },
+  { key: "daggers", itemClass: "Dagger", tag: "dagger", page: "Daggers" },
+  { key: "claws", itemClass: "Claw", tag: "claw", page: "Claws" },
+  { key: "flails", itemClass: "Flail", tag: "flail", page: "Flails" },
+  { key: "sceptres", itemClass: "Sceptre", tag: "sceptre", page: "Sceptres" }
 ];
 
 function ensureDir(directory) {
@@ -133,10 +146,7 @@ function parseModsView(html) {
 }
 
 function baseSection(html, config) {
-  const alternatives = config.headings
-    .map(value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
-    .join("|");
-  const heading = html.match(new RegExp(`(?:${alternatives})\\s*\\/\\s*\\d+`, "i"));
+  const heading = html.match(/<h5 class="card-header">[^<]*(?:Item|Gegenstand)\s*\/\s*\d+/i);
   const start = heading?.index ?? -1;
   const end = html.indexOf("new ModsView(", start);
   if (start < 0 || end < 0) throw new Error("Speer-Basisabschnitt fehlt.");
@@ -163,10 +173,12 @@ function parseBasePage(html, config) {
   const bases = [];
 
   for (const chunk of chunks) {
-    if (!chunk.includes("BaseItemTypes") || !chunk.includes(`class="whiteitem ${config.baseCssClass}"`)) continue;
+    const cssMatch = chunk.match(/class="whiteitem ([^"]+)" data-hover="\?s=Data%5CBaseItemTypes/i);
+    if (!cssMatch) continue;
 
     const metadataMatch = chunk.match(/data-hover="\?s=Data%5CBaseItemTypes%2F([^"]+)"/i);
-    const linkPattern = new RegExp(`<a class="whiteitem ${config.baseCssClass}"[^>]*>([\\s\\S]*?)<\\/a>`, "gi");
+    const cssClass = cssMatch[1].replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const linkPattern = new RegExp(`<a class="whiteitem ${cssClass}"[^>]*>([\\s\\S]*?)<\\/a>`, "gi");
     const links = [...chunk.matchAll(linkPattern)]
       .map(match => decodeHtml(match[1]))
       .filter(Boolean);
@@ -198,6 +210,11 @@ function parseBasePage(html, config) {
 }
 
 function localizedBases(english, german) {
+  for (const [language, rows] of [["english", english], ["german", german]]) {
+    const ids = rows.map(base => base.id);
+    const duplicate = ids.find((id, index) => ids.indexOf(id) !== index);
+    if (duplicate) throw new Error(`Mehrdeutige ${language} Basis-ID: ${duplicate}`);
+  }
   const germanById = new Map(german.map(base => [base.id, base]));
   return english.map(base => {
     const translated = germanById.get(base.id);
@@ -254,15 +271,22 @@ function classifyBase(base, raw) {
 }
 
 function modJoinKey(row, occurrences) {
-  const base = [
-    row.ModGenerationTypeID,
-    row.Level,
-    row.DropChance,
-    ...(row.ModFamilyList ?? [])
-  ].join("|");
+  const base = modStructuralKey(row);
   const occurrence = occurrences.get(base) ?? 0;
   occurrences.set(base, occurrence + 1);
   return `${base}|${occurrence}`;
+}
+
+function modStructuralKey(row) {
+  return [
+    row.ModGenerationTypeID,
+    row.Level,
+    row.DropChance,
+    ...(row.ModFamilyList ?? []),
+    `spawn:${(row.spawn_no ?? []).join(",")}`,
+    `fossil:${(row.fossil_no ?? []).join(",")}`,
+    `adds:${(row.adds_no ?? []).join(",")}`
+  ].join("|");
 }
 
 function classMods(document, classTag) {
@@ -277,6 +301,11 @@ function classMods(document, classTag) {
 function localizeMods(englishDocument, germanDocument, classTag) {
   const english = classMods(englishDocument, classTag);
   const german = classMods(germanDocument, classTag);
+  for (const [language, rows] of [["english", english], ["german", german]]) {
+    const keys = rows.map(modStructuralKey);
+    const duplicate = keys.find((key, index) => keys.indexOf(key) !== index);
+    if (duplicate) throw new Error(`Mehrdeutige ${language} Mod-Zuordnung: ${duplicate}`);
+  }
   const germanOccurrences = new Map();
   const germanByKey = new Map(german.map(row => [modJoinKey(row, germanOccurrences), row]));
   const englishOccurrences = new Map();
@@ -316,7 +345,7 @@ function localizeMods(englishDocument, germanDocument, classTag) {
   }));
 }
 
-function attachWeightRules(mods, repoeMods, classTag) {
+function attachWeightRules(mods, repoeMods, classTag, bases) {
   return mods.map(mod => {
     const candidates = Object.entries(repoeMods).filter(([, row]) =>
       row.domain === "item"
@@ -326,6 +355,7 @@ function attachWeightRules(mods, repoeMods, classTag) {
       && row.generation_type === mod.generationType
       && mod.family.every(family => (row.groups ?? []).includes(family))
       && row.spawn_weights?.some(weight => weight.tag === classTag && Number(weight.weight) > 0)
+      && bases.some(base => firstMatchingWeight(row.spawn_weights, base.tags).weight > 0)
     );
 
     if (candidates.length !== 1) {
@@ -484,16 +514,21 @@ async function main() {
   ensureDir(outputRoot);
   const indexClasses = [];
   const rawFiles = {};
+  const snapshots = new Map(await Promise.all(
+    CLASS_CONFIGS.flatMap(config => ["english", "german"].map(async language => {
+      const locale = language === "english" ? "us" : "de";
+      const url = `https://poe2db.tw/${locale}/${config.page}`;
+      return [`${config.key}:${language}`, await download(config, language, url)];
+    }))
+  ));
 
   for (const config of CLASS_CONFIGS) {
     const pages = {
       english: `https://poe2db.tw/us/${config.page}`,
       german: `https://poe2db.tw/de/${config.page}`
     };
-    const [englishHtml, germanHtml] = await Promise.all([
-      download(config, "english", pages.english),
-      download(config, "german", pages.german)
-    ]);
+    const englishHtml = snapshots.get(`${config.key}:english`);
+    const germanHtml = snapshots.get(`${config.key}:german`);
     const englishMods = parseModsView(englishHtml);
     const germanMods = parseModsView(germanHtml);
     const bases = localizedBases(
@@ -507,7 +542,8 @@ async function main() {
     const mods = attachWeightRules(
       localizeMods(englishMods, germanMods, config.tag),
       repoeMods,
-      config.tag
+      config.tag,
+      bases
     );
     const prefixes = mods.filter(mod => mod.generationType === "prefix");
     const suffixes = mods.filter(mod => mod.generationType === "suffix");
@@ -567,8 +603,8 @@ async function main() {
   const manifest = {
     schemaVersion: 2,
     generatedAt,
-    status: "prototype-spear-and-bow",
-    supportedClassTarget: "All ExileForge equipment classes; currently validated for Spear and Bow.",
+    status: "validated-normal-weapon-classes",
+    supportedClassTarget: "All requested normal ExileForge weapon classes.",
     sources: {
       primary: "PoE2DB English and German pages",
       technicalSupplement: "RePoE only for IDs and complete ordered weight rules"

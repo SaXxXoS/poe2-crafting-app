@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:15.447Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Sceptre.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Sceptre DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 16,
+    "regularUsableBases": 16,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Sceptre modifier matches the shared 'sceptre' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre1",
+      "nameEn": "Rattling Sceptre",
+      "nameDe": "Rasselndes Zepter",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre1",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre2",
+      "nameEn": "Stoic Sceptre",
+      "nameDe": "Stoisches Zepter",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 12
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre2",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre3",
+      "nameEn": "Lupine Sceptre",
+      "nameDe": "Wolfszepter",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 24
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre3",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre4",
+      "nameEn": "Omen Sceptre",
+      "nameDe": "Omenzepter",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 12,
+        "dexterity": 0,
+        "intelligence": 25
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre4",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre5",
+      "nameEn": "Ochre Sceptre",
+      "nameDe": "Ockerzepter",
+      "dropLevel": 21,
+      "requirements": {
+        "level": 21,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 40
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre5",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6a",
+      "nameEn": "Shrine Sceptre",
+      "nameDe": "Schreinzepter",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 17,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6a",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6b",
+      "nameEn": "Shrine Sceptre",
+      "nameDe": "Schreinzepter",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 17,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6b",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6c",
+      "nameEn": "Shrine Sceptre",
+      "nameDe": "Schreinzepter",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 17,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre6c",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre7",
+      "nameEn": "Devouring Sceptre",
+      "nameDe": "Verschlingendes Zepter",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 60
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre7",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre8",
+      "nameEn": "Clasped Sceptre",
+      "nameDe": "Umklammerndes Zepter",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 65
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre8",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre9",
+      "nameEn": "Devotional Sceptre",
+      "nameDe": "Andachtszepter",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 26,
+        "dexterity": 0,
+        "intelligence": 63
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre9",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre10",
+      "nameEn": "Wrath Sceptre",
+      "nameDe": "Zornzepter",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 87
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre10",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre11",
+      "nameEn": "Aromatic Sceptre",
+      "nameDe": "Aromatisches Zepter",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 92
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre11",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre12",
+      "nameEn": "Pious Sceptre",
+      "nameDe": "Frommes Zepter",
+      "dropLevel": 58,
+      "requirements": {
+        "level": 58,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 102
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre12",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre13",
+      "nameEn": "Hallowed Sceptre",
+      "nameDe": "Geheiligtes Zepter",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptre13",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptreUnique1",
+      "nameEn": "Shrine Sceptre",
+      "nameDe": "Schreinzepter",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 17,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "sceptre",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Sceptres/FourSceptreUnique1",
+        "inheritsFrom": "Metadata/Items/Sceptres/AbstractSceptre",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

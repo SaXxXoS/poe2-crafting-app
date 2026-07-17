@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:12.278Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for One Hand Axe.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected One Hand Axe DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 13,
+    "regularUsableBases": 13,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal One Hand Axe modifier matches the shared 'axe' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe1",
+      "nameEn": "Dull Hatchet",
+      "nameDe": "Stumpfes Kriegsbeil",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe2",
+      "nameEn": "Hook Axe",
+      "nameDe": "Hakenaxt",
+      "dropLevel": 4,
+      "requirements": {
+        "level": 4,
+        "strength": 9,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe3",
+      "nameEn": "Bearded Axe",
+      "nameDe": "Bartaxt",
+      "dropLevel": 10,
+      "requirements": {
+        "level": 10,
+        "strength": 17,
+        "dexterity": 9,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe4",
+      "nameEn": "Extended Cleaver",
+      "nameDe": "Verlängerter Spalter",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 25,
+        "dexterity": 12,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe5",
+      "nameEn": "Bandit Hatchet",
+      "nameDe": "Banditenkriegsbeil",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 30,
+        "dexterity": 14,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe6",
+      "nameEn": "Crescent Axe",
+      "nameDe": "Sichelkopfaxt",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 38,
+        "dexterity": 17,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe6",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe7",
+      "nameEn": "Carving Hatchet",
+      "nameDe": "Schnitzer-Kriegsbeil",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 47,
+        "dexterity": 20,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe7",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe8",
+      "nameEn": "Sacrificial Axe",
+      "nameDe": "Opferaxt",
+      "dropLevel": 37,
+      "requirements": {
+        "level": 37,
+        "strength": 52,
+        "dexterity": 22,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe8",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe9",
+      "nameEn": "Boarding Hatchet",
+      "nameDe": "Enterbeil",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 63,
+        "dexterity": 26,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe9",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe10",
+      "nameEn": "Fury Cleaver",
+      "nameDe": "Wutspalter",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 67,
+        "dexterity": 27,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe10",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe11",
+      "nameEn": "Battle Axe",
+      "nameDe": "Kampfaxt",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 72,
+        "dexterity": 29,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe11",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe12",
+      "nameEn": "Profane Cleaver",
+      "nameDe": "Profaner Spalter",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 75,
+        "dexterity": 30,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe12",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe13",
+      "nameEn": "Dread Hatchet",
+      "nameDe": "Schreckenskriegsbeil",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 89,
+        "dexterity": 36,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/FourOneHandAxe13",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/AbstractOneHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

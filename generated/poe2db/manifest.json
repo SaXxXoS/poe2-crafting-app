@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:12:32.923Z",
-  "status": "prototype-spear-and-bow",
-  "supportedClassTarget": "All ExileForge equipment classes; currently validated for Spear and Bow.",
+  "generatedAt": "2026-07-17T23:22:05.264Z",
+  "status": "validated-normal-weapon-classes",
+  "supportedClassTarget": "All requested normal ExileForge weapon classes.",
   "sources": {
     "primary": "PoE2DB English and German pages",
     "technicalSupplement": "RePoE only for IDs and complete ordered weight rules"
@@ -37,28 +37,378 @@
         "prefixes": 1,
         "suffixes": 1
       }
+    },
+    {
+      "key": "crossbows",
+      "itemClass": "Crossbow",
+      "dataFile": "crossbows.json",
+      "qualityReportFile": "crossbows-quality-report.json",
+      "counts": {
+        "bases": 34,
+        "prefixes": 30,
+        "suffixes": 22
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 2
+      }
+    },
+    {
+      "key": "wands",
+      "itemClass": "Wand",
+      "dataFile": "wands.json",
+      "qualityReportFile": "wands-quality-report.json",
+      "counts": {
+        "bases": 18,
+        "prefixes": 84,
+        "suffixes": 101
+      },
+      "poolCounts": {
+        "prefixes": 6,
+        "suffixes": 6
+      }
+    },
+    {
+      "key": "staves",
+      "itemClass": "Staff",
+      "dataFile": "staves.json",
+      "qualityReportFile": "staves-quality-report.json",
+      "counts": {
+        "bases": 17,
+        "prefixes": 84,
+        "suffixes": 101
+      },
+      "poolCounts": {
+        "prefixes": 6,
+        "suffixes": 6
+      }
+    },
+    {
+      "key": "warstaves",
+      "itemClass": "Warstaff",
+      "dataFile": "warstaves.json",
+      "qualityReportFile": "warstaves-quality-report.json",
+      "counts": {
+        "bases": 38,
+        "prefixes": 30,
+        "suffixes": 16
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "one-hand-swords",
+      "itemClass": "One Hand Sword",
+      "dataFile": "one-hand-swords.json",
+      "qualityReportFile": "one-hand-swords-quality-report.json",
+      "counts": {
+        "bases": 16,
+        "prefixes": 30,
+        "suffixes": 16
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "two-hand-swords",
+      "itemClass": "Two Hand Sword",
+      "dataFile": "two-hand-swords.json",
+      "qualityReportFile": "two-hand-swords-quality-report.json",
+      "counts": {
+        "bases": 14,
+        "prefixes": 30,
+        "suffixes": 16
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "one-hand-axes",
+      "itemClass": "One Hand Axe",
+      "dataFile": "one-hand-axes.json",
+      "qualityReportFile": "one-hand-axes-quality-report.json",
+      "counts": {
+        "bases": 13,
+        "prefixes": 30,
+        "suffixes": 8
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "two-hand-axes",
+      "itemClass": "Two Hand Axe",
+      "dataFile": "two-hand-axes.json",
+      "qualityReportFile": "two-hand-axes-quality-report.json",
+      "counts": {
+        "bases": 13,
+        "prefixes": 30,
+        "suffixes": 8
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "one-hand-maces",
+      "itemClass": "One Hand Mace",
+      "dataFile": "one-hand-maces.json",
+      "qualityReportFile": "one-hand-maces-quality-report.json",
+      "counts": {
+        "bases": 44,
+        "prefixes": 30,
+        "suffixes": 8
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "two-hand-maces",
+      "itemClass": "Two Hand Mace",
+      "dataFile": "two-hand-maces.json",
+      "qualityReportFile": "two-hand-maces-quality-report.json",
+      "counts": {
+        "bases": 43,
+        "prefixes": 30,
+        "suffixes": 8
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "daggers",
+      "itemClass": "Dagger",
+      "dataFile": "daggers.json",
+      "qualityReportFile": "daggers-quality-report.json",
+      "counts": {
+        "bases": 14,
+        "prefixes": 30,
+        "suffixes": 16
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "claws",
+      "itemClass": "Claw",
+      "dataFile": "claws.json",
+      "qualityReportFile": "claws-quality-report.json",
+      "counts": {
+        "bases": 13,
+        "prefixes": 30,
+        "suffixes": 8
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "flails",
+      "itemClass": "Flail",
+      "dataFile": "flails.json",
+      "qualityReportFile": "flails-quality-report.json",
+      "counts": {
+        "bases": 13,
+        "prefixes": 30,
+        "suffixes": 16
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "sceptres",
+      "itemClass": "Sceptre",
+      "dataFile": "sceptres.json",
+      "qualityReportFile": "sceptres-quality-report.json",
+      "counts": {
+        "bases": 16,
+        "prefixes": 70,
+        "suffixes": 80
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
     }
   ],
   "files": {
     "english-spears.html": {
       "url": "https://poe2db.tw/us/Spears",
       "bytes": 684804,
-      "sha256": "ce4f0436bbb2a789a239ffe6b71d0d1e6c5837006005cdd5725936bd47dec785"
+      "sha256": "af72f2a2733840e1fceb00e3607efad17a8ed67ea96cad9143c0c6a1ab67c765"
     },
     "german-spears.html": {
       "url": "https://poe2db.tw/de/Spears",
       "bytes": 658544,
-      "sha256": "1d9563c0f746dbce93db3cb14bfe9f5ab5c2aee29f988a425360507a4a7dbdb8"
+      "sha256": "899473cfaca6d31a7574e35e413ee475e01ead76337a6fd9c432091572fbc6d9"
     },
     "english-bows.html": {
       "url": "https://poe2db.tw/us/Bows",
       "bytes": 695982,
-      "sha256": "3ba8a32e7139831533bc40f70ecf57a3b6c9c38675684a75a00776eee5490d88"
+      "sha256": "3fbf4ae64768c82633dfc458dada3cf7dcf5850f2015755bc43ddd2802bec35b"
     },
     "german-bows.html": {
       "url": "https://poe2db.tw/de/Bows",
       "bytes": 647574,
-      "sha256": "c71f5d9a9dbd7bc47363b6fa12e85b98ed253752e497c191b980591c3d1bed21"
+      "sha256": "999159a25fbc063b84dd315fb22f3d959cfd603262e91a1eb737041bd5087394"
+    },
+    "english-crossbows.html": {
+      "url": "https://poe2db.tw/us/Crossbows",
+      "bytes": 686639,
+      "sha256": "12c8b3d79f026c45e3882b4cf0f4f12f44b6fb6e48ae09883bad5b0e46cd01fe"
+    },
+    "german-crossbows.html": {
+      "url": "https://poe2db.tw/de/Crossbows",
+      "bytes": 652994,
+      "sha256": "31136587a79fc10c3a56d8ac36d4edf41dec79105aa8bb979ca484cefd3e25db"
+    },
+    "english-wands.html": {
+      "url": "https://poe2db.tw/us/Wands",
+      "bytes": 553879,
+      "sha256": "d36a9d4d7462c30808843f56f5a22d9482b120b012d2098c084b1a1ca750e703"
+    },
+    "german-wands.html": {
+      "url": "https://poe2db.tw/de/Wands",
+      "bytes": 501400,
+      "sha256": "bc964d0a96b917390360e12310123626a7fd37ab94474e0741939ccc35b7b7c9"
+    },
+    "english-staves.html": {
+      "url": "https://poe2db.tw/us/Staves",
+      "bytes": 544547,
+      "sha256": "86fc0c2c31a0fc342ce2f9136053869f86c43337335af882530d05eb5a5c26be"
+    },
+    "german-staves.html": {
+      "url": "https://poe2db.tw/de/Staves",
+      "bytes": 498723,
+      "sha256": "8756eb458975edf04b3418ebff9af74d04ec0fd1bf714367248f62ecdfd5f397"
+    },
+    "english-warstaves.html": {
+      "url": "https://poe2db.tw/us/Quarterstaves",
+      "bytes": 642239,
+      "sha256": "5a1e7f0d2d9e237908b570edfccb13954d77d0749dc99d41b1700e424eb419ca"
+    },
+    "german-warstaves.html": {
+      "url": "https://poe2db.tw/de/Quarterstaves",
+      "bytes": 609554,
+      "sha256": "6b02aa398c17f237a3a456dacba51e5ede8cbe0e5dbb6172edf63644ead92f1c"
+    },
+    "english-one-hand-swords.html": {
+      "url": "https://poe2db.tw/us/One_Hand_Swords",
+      "bytes": 525457,
+      "sha256": "09266d62b494241ae53c4828259ed451b6934c8f55f7c07bada69e13fc2f0170"
+    },
+    "german-one-hand-swords.html": {
+      "url": "https://poe2db.tw/de/One_Hand_Swords",
+      "bytes": 476026,
+      "sha256": "8bdc9b50ebaed7ebf34d6267566fe4f331fd4c954e4ef382a30ccf21017a772c"
+    },
+    "english-two-hand-swords.html": {
+      "url": "https://poe2db.tw/us/Two_Hand_Swords",
+      "bytes": 474781,
+      "sha256": "e1c4b365dd40c036529b049c6744b8601cc00ddd299ce850ef59e265926bf53d"
+    },
+    "german-two-hand-swords.html": {
+      "url": "https://poe2db.tw/de/Two_Hand_Swords",
+      "bytes": 428329,
+      "sha256": "2a705a9737f976ba9f3cb8b2be7be20a96f8033829c1ff880d0dd26f31a9e5af"
+    },
+    "english-one-hand-axes.html": {
+      "url": "https://poe2db.tw/us/One_Hand_Axes",
+      "bytes": 509513,
+      "sha256": "27f9b765ca9d8033417a7b874a2632cf7ac5ec1005920bf46e76920963f501ee"
+    },
+    "german-one-hand-axes.html": {
+      "url": "https://poe2db.tw/de/One_Hand_Axes",
+      "bytes": 462802,
+      "sha256": "44c7857a962440f8dbfc9f13e91567227db60961fc5d7d10072abd2c33352478"
+    },
+    "english-two-hand-axes.html": {
+      "url": "https://poe2db.tw/us/Two_Hand_Axes",
+      "bytes": 507287,
+      "sha256": "c078b8caec15d4f9b240706ba50cdb2f76ea7232c7c1e24bc9470036174e3780"
+    },
+    "german-two-hand-axes.html": {
+      "url": "https://poe2db.tw/de/Two_Hand_Axes",
+      "bytes": 462800,
+      "sha256": "00993a28693f58b999e958f717bb8ea2615d3e69208d5344c847d398d830390d"
+    },
+    "english-one-hand-maces.html": {
+      "url": "https://poe2db.tw/us/One_Hand_Maces",
+      "bytes": 628657,
+      "sha256": "d1d93815e7f6c88ef1ae27636663f1978c356b62c86244a6fde755ea01c55487"
+    },
+    "german-one-hand-maces.html": {
+      "url": "https://poe2db.tw/de/One_Hand_Maces",
+      "bytes": 586199,
+      "sha256": "7bfcb7f0fe21d069adffdf7b081ce7f3f15447c1f0c7ebd48e500461d65e7e9c"
+    },
+    "english-two-hand-maces.html": {
+      "url": "https://poe2db.tw/us/Two_Hand_Maces",
+      "bytes": 619062,
+      "sha256": "2eb3039e7d4f387a0bcac0e8ae388cdf5d747be90821b669b07d16f258091d0a"
+    },
+    "german-two-hand-maces.html": {
+      "url": "https://poe2db.tw/de/Two_Hand_Maces",
+      "bytes": 588297,
+      "sha256": "de78768094c65c92138ae3fedfba48e36fa6da0d3d8a6d1a459c3096efd71acd"
+    },
+    "english-daggers.html": {
+      "url": "https://poe2db.tw/us/Daggers",
+      "bytes": 478443,
+      "sha256": "cc786c83d187733ec970f92ad903421a551a2391544e5591c749eaf7dbac245e"
+    },
+    "german-daggers.html": {
+      "url": "https://poe2db.tw/de/Daggers",
+      "bytes": 435380,
+      "sha256": "a5a98d1a6a5817aaa5e42604354172c886949990563d6dd761d3d04e3346f316"
+    },
+    "english-claws.html": {
+      "url": "https://poe2db.tw/us/Claws",
+      "bytes": 432465,
+      "sha256": "919c2be9cf1bcdf2ea35c5bbc2effb5c3b6075e2369c8fe598d261304bc5eaf3"
+    },
+    "german-claws.html": {
+      "url": "https://poe2db.tw/de/Claws",
+      "bytes": 401301,
+      "sha256": "1296a69dafaccde07dfbd1851329790484ac301dc7171d68b257a98e01fd3952"
+    },
+    "english-flails.html": {
+      "url": "https://poe2db.tw/us/Flails",
+      "bytes": 517731,
+      "sha256": "c510606a1376bf9a3d3efaca7c9920b20c3d826448abe935ebac47d97443eb66"
+    },
+    "german-flails.html": {
+      "url": "https://poe2db.tw/de/Flails",
+      "bytes": 473206,
+      "sha256": "33dc3fd3b35ad9ed524565a77addf83f7c83cb92dd7be4b875a104170d92cffb"
+    },
+    "english-sceptres.html": {
+      "url": "https://poe2db.tw/us/Sceptres",
+      "bytes": 448495,
+      "sha256": "c00048035e8b77d767b479a2c325385e3268ca13e93b2c3c5e6c06e653102c6a"
+    },
+    "german-sceptres.html": {
+      "url": "https://poe2db.tw/de/Sceptres",
+      "bytes": 414546,
+      "sha256": "7f33de226a709a8d39402d696b920082a1632d143c541bfb6cec7f2011cc34e3"
     }
   }
 }

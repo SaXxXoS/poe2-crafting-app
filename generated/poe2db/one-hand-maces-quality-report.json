@@ -1,0 +1,1615 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:12.913Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for One Hand Mace.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected One Hand Mace DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 44,
+    "regularUsableBases": 27,
+    "excludedBases": 17,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6CruelVerisiumUnique1",
+        "nameEn": "Runeforged Marching Mace"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1a",
+        "nameEn": "Runeforged Wooden Club"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1b",
+        "nameEn": "Runemastered Wooden Club"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium3",
+        "nameEn": "Runeforged Slim Mace"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium4",
+        "nameEn": "Runeforged Spiked Club"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium1",
+        "nameEn": "Runeforged Kalguuran Forgehammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium2",
+        "nameEn": "Runeforged Kalguuran Forgehammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium3",
+        "nameEn": "Runeforged Kalguuran Forgehammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium4",
+        "nameEn": "Runeforged Kalguuran Forgehammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium9",
+        "nameEn": "Runeforged Morning Star"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1a",
+        "baseNameEn": "Runeforged Wooden Club",
+        "textEn": "(20—30)% increased Area of Effect for Attacks"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1b",
+        "baseNameEn": "Runemastered Wooden Club",
+        "textEn": "(20—30)% increased Area of Effect for Attacks"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium3",
+        "baseNameEn": "Runeforged Slim Mace",
+        "textEn": "local weapon implicit hidden % base damage is cold [50]"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium1",
+        "baseNameEn": "Runeforged Kalguuran Forgehammer",
+        "textEn": "Has 3 Sockets"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium2",
+        "baseNameEn": "Runeforged Kalguuran Forgehammer",
+        "textEn": "Has 3 Sockets"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium3",
+        "baseNameEn": "Runeforged Kalguuran Forgehammer",
+        "textEn": "Has 3 Sockets"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium4",
+        "baseNameEn": "Runeforged Kalguuran Forgehammer",
+        "textEn": "Has 3 Sockets"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium4",
+        "baseNameEn": "Runeforged Kalguuran Forgehammer",
+        "textEn": "+(100—150) to maximum Runic Ward"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium9",
+        "baseNameEn": "Runeforged Morning Star",
+        "textEn": "local weapon implicit hidden % base damage is fire [100]"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique1",
+      "nameEn": "Runemastered Torment Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique2",
+      "nameEn": "Runemastered Torment Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique3",
+      "nameEn": "Runemastered Torment Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique4",
+      "nameEn": "Runemastered Torment Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique5",
+      "nameEn": "Runemastered Torment Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique6",
+      "nameEn": "Runemastered Torment Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6CruelVerisiumUnique1",
+      "nameEn": "Runeforged Marching Mace",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1a",
+      "nameEn": "Runeforged Wooden Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1b",
+      "nameEn": "Runemastered Wooden Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium3",
+      "nameEn": "Runeforged Slim Mace",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium4",
+      "nameEn": "Runeforged Spiked Club",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium5",
+      "nameEn": "Runeforged Warpick",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium1",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium2",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium3",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium4",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium9",
+      "nameEn": "Runeforged Morning Star",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal One Hand Mace modifier matches the shared 'mace' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace1",
+      "nameEn": "Wooden Club",
+      "nameDe": "Holzkeule",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2",
+      "nameEn": "Smithing Hammer",
+      "nameDe": "Schmiedehammer",
+      "dropLevel": 4,
+      "requirements": {
+        "level": 4,
+        "strength": 11,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace3",
+      "nameEn": "Slim Mace",
+      "nameDe": "Schlanke Keule",
+      "dropLevel": 10,
+      "requirements": {
+        "level": 10,
+        "strength": 21,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace4",
+      "nameEn": "Spiked Club",
+      "nameDe": "Stachelkeule",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 31,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace5",
+      "nameEn": "Warpick",
+      "nameDe": "Reiterhammer",
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 41,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6",
+      "nameEn": "Plated Mace",
+      "nameDe": "Plattierte Keule",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 48,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace7",
+      "nameEn": "Brigand Mace",
+      "nameDe": "Brigadenkeule",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 60,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace7",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace8",
+      "nameEn": "Construct Hammer",
+      "nameDe": "Konstruktionshammer",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 65,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace8",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace9",
+      "nameEn": "Morning Star",
+      "nameDe": "Morgenstern",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 80,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace9",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace10",
+      "nameEn": "Jade Club",
+      "nameDe": "Jadekeule",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 87,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace10",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace11",
+      "nameEn": "Lumen Mace",
+      "nameDe": "Leuchtende Keule",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 92,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace11",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace12",
+      "nameEn": "Execratus Hammer",
+      "nameDe": "Execratus-Hammer",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 97,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace12",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13",
+      "nameEn": "Torment Club",
+      "nameDe": "Folterkeule",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique1",
+      "nameEn": "Runemastered Torment Club",
+      "nameDe": "Runenveredelte Folterkeule",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique2",
+      "nameEn": "Runemastered Torment Club",
+      "nameDe": "Runenveredelte Folterkeule",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique3",
+      "nameEn": "Runemastered Torment Club",
+      "nameDe": "Runenveredelte Folterkeule",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique4",
+      "nameEn": "Runemastered Torment Club",
+      "nameDe": "Runemastered Torment Club",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique5",
+      "nameEn": "Runemastered Torment Club",
+      "nameDe": "Runemastered Torment Club",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique6",
+      "nameEn": "Runemastered Torment Club",
+      "nameDe": "Runemastered Torment Club",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 124,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique6",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14",
+      "nameEn": "Kalguuran Forgehammer",
+      "nameDe": "Kalguurischer Schmiedehammer",
+      "dropLevel": 47,
+      "requirements": {
+        "level": 47,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Cruel",
+      "nameEn": "Calescent Hammer",
+      "nameDe": "Schmelzhammer",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 80,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace3Cruel",
+      "nameEn": "Flared Mace",
+      "nameDe": "Aufbrechender Hammer",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 86,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace3Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace5Cruel",
+      "nameEn": "Battle Pick",
+      "nameDe": "Kampfpickel",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace5Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6Cruel",
+      "nameEn": "Marching Mace",
+      "nameDe": "Marschkeule",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 96,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6CruelVerisiumUnique1",
+      "nameEn": "Runeforged Marching Mace",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6CruelVerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace7Cruel",
+      "nameEn": "Bandit Mace",
+      "nameDe": "Banditenkeule",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 104,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace7Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace8Cruel",
+      "nameEn": "Structured Hammer",
+      "nameDe": "Strukturierter Hammer",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 109,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace8Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1a",
+      "nameEn": "Runeforged Wooden Club",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 68,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1a",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1b",
+      "nameEn": "Runemastered Wooden Club",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 97,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1b",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium3",
+      "nameEn": "Runeforged Slim Mace",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 68,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium4",
+      "nameEn": "Runeforged Spiked Club",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 72,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium5",
+      "nameEn": "Runeforged Warpick",
+      "nameDe": "Runengeschmiedeter Reiterhammer",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 68,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium1",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium2",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium3",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium4",
+      "nameEn": "Runeforged Kalguuran Forgehammer",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium9",
+      "nameEn": "Runeforged Morning Star",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium9",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace3Endgame",
+      "nameEn": "Flanged Mace",
+      "nameDe": "Klingenstreitkolben",
+      "dropLevel": 67,
+      "requirements": {
+        "level": 67,
+        "strength": 134,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace3Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6Endgame",
+      "nameEn": "Crown Mace",
+      "nameDe": "Kronenkeule",
+      "dropLevel": 72,
+      "requirements": {
+        "level": 72,
+        "strength": 149,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace6Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Endgame",
+      "nameEn": "Molten Hammer",
+      "nameDe": "Geschmolzener Hammer",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace5Endgame",
+      "nameEn": "Strife Pick",
+      "nameDe": "Kampfpicke",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace5Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace8Endgame",
+      "nameEn": "Fortified Hammer",
+      "nameDe": "Verstärkter Hammer",
+      "dropLevel": 79,
+      "requirements": {
+        "level": 79,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace8Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace7Endgame",
+      "nameEn": "Marauding Mace",
+      "nameDe": "Plündererkeule",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace7Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace10Endgame",
+      "nameEn": "Akoyan Club",
+      "nameDe": "Akoya-Keule",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "mace",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace10Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/AbstractOneHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

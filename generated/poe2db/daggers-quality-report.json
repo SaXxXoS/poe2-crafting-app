@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:13.621Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Dagger.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Dagger DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 14,
+    "regularUsableBases": 14,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Dagger modifier matches the shared 'dagger' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/EtherealBlade1",
+      "nameEn": "Ethereal Blade",
+      "nameDe": "Ätherische Klinge",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "not_for_sale",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/EtherealBlade1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "undefined",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger1",
+      "nameEn": "Glass Shank",
+      "nameDe": "Umwickelte Scherbe",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger2",
+      "nameEn": "Crone Knife",
+      "nameDe": "Küchenmesser",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 0,
+        "dexterity": 9,
+        "intelligence": 9
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger3",
+      "nameEn": "Simple Dagger",
+      "nameDe": "Einfacher Dolch",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 0,
+        "dexterity": 15,
+        "intelligence": 15
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger4",
+      "nameEn": "Skinning Knife",
+      "nameDe": "Kürschnermesser",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 19,
+        "intelligence": 19
+      },
+      "tags": [
+        "maraketh_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger5",
+      "nameEn": "Moon Dagger",
+      "nameDe": "Monddolch",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 0,
+        "dexterity": 22,
+        "intelligence": 22
+      },
+      "tags": [
+        "maraketh_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger6",
+      "nameEn": "Engraved Knife",
+      "nameDe": "Graviertes Messer",
+      "dropLevel": 27,
+      "requirements": {
+        "level": 27,
+        "strength": 0,
+        "dexterity": 29,
+        "intelligence": 29
+      },
+      "tags": [
+        "maraketh_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger6",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger7",
+      "nameEn": "Obsidian Dagger",
+      "nameDe": "Obsidiandolch",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 34,
+        "intelligence": 34
+      },
+      "tags": [
+        "vaal_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger7",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger8",
+      "nameEn": "Bloodletting Dagger",
+      "nameDe": "Aderlass-Dolch",
+      "dropLevel": 39,
+      "requirements": {
+        "level": 39,
+        "strength": 0,
+        "dexterity": 39,
+        "intelligence": 39
+      },
+      "tags": [
+        "vaal_basetype",
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger8",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger9",
+      "nameEn": "Mail Breaker",
+      "nameDe": "Kettenbrecher",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 45,
+        "intelligence": 45
+      },
+      "tags": [
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger9",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger10",
+      "nameEn": "Kris Knife",
+      "nameDe": "Kris-Messer",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 0,
+        "dexterity": 49,
+        "intelligence": 49
+      },
+      "tags": [
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger10",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger11",
+      "nameEn": "Parrying Dagger",
+      "nameDe": "Parierdolch",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 51,
+        "intelligence": 51
+      },
+      "tags": [
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger11",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger12",
+      "nameEn": "Arcane Dirk",
+      "nameDe": "Arkaner Langdolch",
+      "dropLevel": 56,
+      "requirements": {
+        "level": 56,
+        "strength": 0,
+        "dexterity": 55,
+        "intelligence": 55
+      },
+      "tags": [
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger12",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger13",
+      "nameEn": "Cinquedea",
+      "nameDe": "Cinquedea",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 63,
+        "intelligence": 63
+      },
+      "tags": [
+        "dagger",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger13",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Daggers/AbstractDagger",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:11.960Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Two Hand Sword.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Two Hand Sword DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 14,
+    "regularUsableBases": 14,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Two Hand Sword modifier matches the shared 'sword' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/StormBladeTwoHand",
+      "nameEn": "Energy Blade",
+      "nameDe": "Energieklinge",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "not_for_sale",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/StormBladeTwoHand",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword1",
+      "nameEn": "Corroded Longsword",
+      "nameDe": "Korrodiertes Langschwert",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword2",
+      "nameEn": "Iron Greatsword",
+      "nameDe": "Eisernes Großschwert",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 9,
+        "dexterity": 9,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword3",
+      "nameEn": "Blessed Claymore",
+      "nameDe": "Gesegnetes Claymore",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 14,
+        "dexterity": 14,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword4",
+      "nameEn": "Broad Greatsword",
+      "nameDe": "Breites Großschwert",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 19,
+        "dexterity": 19,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword5",
+      "nameEn": "Rippled Greatsword",
+      "nameDe": "Geriffeltes Großschwert",
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 24,
+        "dexterity": 24,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword6",
+      "nameEn": "Arced Longsword",
+      "nameDe": "Gebogenes Langschwert",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 29,
+        "dexterity": 29,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword7",
+      "nameEn": "Stone Greatsword",
+      "nameDe": "Steinernes Großschwert",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 34,
+        "dexterity": 34,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword8",
+      "nameEn": "Obsidian Greatsword",
+      "nameDe": "Obsidian-Großschwert",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 37,
+        "dexterity": 37,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword9",
+      "nameEn": "Keen Greatsword",
+      "nameDe": "Scharfkantiges Großschwert",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 45,
+        "dexterity": 45,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword9",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword10",
+      "nameEn": "Ancient Greatblade",
+      "nameDe": "Antike Großklinge",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 49,
+        "dexterity": 49,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword10",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword11",
+      "nameEn": "Flanged Greatblade",
+      "nameDe": "Geflanschte Großklinge",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 51,
+        "dexterity": 51,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword11",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword12",
+      "nameEn": "Regalia Longsword",
+      "nameDe": "Regalia-Langschwert",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 53,
+        "dexterity": 53,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword12",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword13",
+      "nameEn": "Ultra Greatsword",
+      "nameDe": "Ultra-Großschwert",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 63,
+        "dexterity": 63,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/FourTwoHandSword13",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/AbstractTwoHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

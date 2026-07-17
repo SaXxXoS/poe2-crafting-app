@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:12.575Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Two Hand Axe.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Two Hand Axe DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 13,
+    "regularUsableBases": 13,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Two Hand Axe modifier matches the shared 'axe' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe1",
+      "nameEn": "Splitting Greataxe",
+      "nameDe": "Spaltende Großaxt",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe2",
+      "nameEn": "Light Halberd",
+      "nameDe": "Leichte Hellebarde",
+      "dropLevel": 4,
+      "requirements": {
+        "level": 4,
+        "strength": 9,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe3",
+      "nameEn": "Executioner Greataxe",
+      "nameDe": "Henker-Großaxt",
+      "dropLevel": 10,
+      "requirements": {
+        "level": 10,
+        "strength": 17,
+        "dexterity": 9,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe4",
+      "nameEn": "Arched Greataxe",
+      "nameDe": "Gewölbte Großaxt",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 25,
+        "dexterity": 12,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe5",
+      "nameEn": "Elegant Glaive",
+      "nameDe": "Elegante Gleve",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 30,
+        "dexterity": 14,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe6",
+      "nameEn": "Savage Greataxe",
+      "nameDe": "Wilde Großaxt",
+      "dropLevel": 27,
+      "requirements": {
+        "level": 27,
+        "strength": 39,
+        "dexterity": 17,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe7",
+      "nameEn": "Rending Halberd",
+      "nameDe": "Zerfleischende Hellebarde",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 47,
+        "dexterity": 20,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe8",
+      "nameEn": "Jagged Greataxe",
+      "nameDe": "Gezackte Großaxt",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 56,
+        "dexterity": 23,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe9",
+      "nameEn": "Reaver Glaive",
+      "nameDe": "Plünderergleve",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 63,
+        "dexterity": 26,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe9",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe10",
+      "nameEn": "Ember Greataxe",
+      "nameDe": "Bernstein-Großaxt",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 70,
+        "dexterity": 28,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe10",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe11",
+      "nameEn": "Ceremonial Halberd",
+      "nameDe": "Zeremonielle Hellebarde",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 72,
+        "dexterity": 29,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe11",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe12",
+      "nameEn": "Monument Greataxe",
+      "nameDe": "Monumentale Großaxt",
+      "dropLevel": 57,
+      "requirements": {
+        "level": 57,
+        "strength": 79,
+        "dexterity": 32,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe12",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe13",
+      "nameEn": "Vile Greataxe",
+      "nameDe": "Niederträchtige Großaxt",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 89,
+        "dexterity": 36,
+        "intelligence": 0
+      },
+      "tags": [
+        "axe",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe13",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/AbstractTwoHandAxe",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

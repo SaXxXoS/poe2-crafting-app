@@ -1,0 +1,536 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:11.589Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for One Hand Sword.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected One Hand Sword DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 16,
+    "regularUsableBases": 16,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal One Hand Sword modifier matches the shared 'sword' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordDemigods1",
+      "nameEn": "Golden Blade",
+      "nameDe": "Goldene Klinge",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "not_for_sale",
+        "demigods",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordDemigods1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/StormBladeOneHand",
+      "nameEn": "Energy Blade",
+      "nameDe": "Energieklinge",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "not_for_sale",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/StormBladeOneHand",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword1",
+      "nameEn": "Shortsword",
+      "nameDe": "Kurzschwert",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword2",
+      "nameEn": "Broadsword",
+      "nameDe": "Breitschwert",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 9,
+        "dexterity": 9,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword3",
+      "nameEn": "Vampiric Blade",
+      "nameDe": "Vampirische Klinge",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 14,
+        "dexterity": 14,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword4",
+      "nameEn": "Scimitar",
+      "nameDe": "Krummsäbel",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 19,
+        "dexterity": 19,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword5",
+      "nameEn": "Charred Shortsword",
+      "nameDe": "Verkohltes Kurzschwert",
+      "dropLevel": 21,
+      "requirements": {
+        "level": 21,
+        "strength": 23,
+        "dexterity": 23,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword6",
+      "nameEn": "Sickle Sword",
+      "nameDe": "Sichelschwert",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 29,
+        "dexterity": 29,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword6",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword7",
+      "nameEn": "Falchion",
+      "nameDe": "Falchion",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 34,
+        "dexterity": 34,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword7",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword8",
+      "nameEn": "Treasured Blade",
+      "nameDe": "Geschätzte Klinge",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 40,
+        "dexterity": 40,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword8",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword9",
+      "nameEn": "Cutlass",
+      "nameDe": "Entermesser",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 45,
+        "dexterity": 45,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword9",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword10",
+      "nameEn": "Runic Shortsword",
+      "nameDe": "Runenbesetztes Kurzschwert",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 49,
+        "dexterity": 49,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword10",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword11",
+      "nameEn": "Messer",
+      "nameDe": "Messer",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 51,
+        "dexterity": 51,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword11",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword12",
+      "nameEn": "Commander Sword",
+      "nameDe": "Kommandantenschwert",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 53,
+        "dexterity": 53,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword12",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword13",
+      "nameEn": "Dark Blade",
+      "nameDe": "Dunkle Klinge",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 63,
+        "dexterity": 63,
+        "intelligence": 0
+      },
+      "tags": [
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSword13",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSwordDemigod",
+      "nameEn": "Golden Blade",
+      "nameDe": "Goldene Klinge",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "sword",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/FourOneHandSwordDemigod",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/AbstractOneHandSword",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

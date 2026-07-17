@@ -1,0 +1,1618 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:13.229Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Two Hand Mace.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Two Hand Mace DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 43,
+    "regularUsableBases": 27,
+    "excludedBases": 16,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1a",
+        "nameEn": "Runeforged Felled Greatclub"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1b",
+        "nameEn": "Runemastered Felled Greatclub"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2a",
+        "nameEn": "Runeforged Oak Greathammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2b",
+        "nameEn": "Runemastered Oak Greathammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium3",
+        "nameEn": "Runeforged Forge Maul"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4a",
+        "nameEn": "Runeforged Studded Greatclub"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4b",
+        "nameEn": "Runemastered Studded Greatclub"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium5",
+        "nameEn": "Runeforged Cultist Greathammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium6",
+        "nameEn": "Runeforged Temple Maul"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium7",
+        "nameEn": "Runeforged Leaden Greathammer"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium9",
+        "nameEn": "Runeforged Pointed Maul"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1",
+        "nameEn": "Aberrant Sledge"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique1",
+        "nameEn": "Runemastered Aberrant Sledge"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique2",
+        "nameEn": "Runemastered Aberrant Sledge"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique3",
+        "nameEn": "Runemastered Aberrant Sledge"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique4",
+        "nameEn": "Runemastered Aberrant Sledge"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2a",
+        "baseNameEn": "Runeforged Oak Greathammer",
+        "textEn": "Causes (20—40)% increased Stun Buildup"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2b",
+        "baseNameEn": "Runemastered Oak Greathammer",
+        "textEn": "Causes (20—40)% increased Stun Buildup"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium3",
+        "baseNameEn": "Runeforged Forge Maul",
+        "textEn": "Crushes Enemies on Hit"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4a",
+        "baseNameEn": "Runeforged Studded Greatclub",
+        "textEn": "local weapon implicit hidden % base damage is lightning [75]"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4b",
+        "baseNameEn": "Runemastered Studded Greatclub",
+        "textEn": "local weapon implicit hidden % base damage is lightning [75]"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium5",
+        "baseNameEn": "Runeforged Cultist Greathammer",
+        "textEn": "Strikes deal Splash Damage"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium5",
+        "baseNameEn": "Runeforged Cultist Greathammer",
+        "textEn": "(20—30)% increased Bleeding Duration"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium9",
+        "baseNameEn": "Runeforged Pointed Maul",
+        "textEn": "Strikes deal Splash Damage"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique2",
+        "baseNameEn": "Runemastered Aberrant Sledge",
+        "textEn": "Skills which create Fissures have a 50% chance to create an additional Fissure"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique3",
+        "baseNameEn": "Runemastered Aberrant Sledge",
+        "textEn": "(200—300)% increased Freeze Buildup"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique4",
+        "baseNameEn": "Runemastered Aberrant Sledge",
+        "textEn": "local weapon implicit hidden % base damage is cold [80]"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1a",
+      "nameEn": "Runeforged Felled Greatclub",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1b",
+      "nameEn": "Runemastered Felled Greatclub",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2a",
+      "nameEn": "Runeforged Oak Greathammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2b",
+      "nameEn": "Runemastered Oak Greathammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium3",
+      "nameEn": "Runeforged Forge Maul",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4a",
+      "nameEn": "Runeforged Studded Greatclub",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4b",
+      "nameEn": "Runemastered Studded Greatclub",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium5",
+      "nameEn": "Runeforged Cultist Greathammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium6",
+      "nameEn": "Runeforged Temple Maul",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium7",
+      "nameEn": "Runeforged Leaden Greathammer",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium8",
+      "nameEn": "Runeforged Crumbling Maul",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium9",
+      "nameEn": "Runeforged Pointed Maul",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique4",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Two Hand Mace modifier matches the shared 'mace' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace1",
+      "nameEn": "Felled Greatclub",
+      "nameDe": "Gefällte Großkeule",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace2",
+      "nameEn": "Oak Greathammer",
+      "nameDe": "Eichen-Großhammer",
+      "dropLevel": 4,
+      "requirements": {
+        "level": 4,
+        "strength": 11,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace3",
+      "nameEn": "Forge Maul",
+      "nameDe": "Ambosshammer",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 23,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace4",
+      "nameEn": "Studded Greatclub",
+      "nameDe": "Beschlagene Großkeule",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 31,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace5",
+      "nameEn": "Cultist Greathammer",
+      "nameDe": "Kultisten-Großhammer",
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 41,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace6",
+      "nameEn": "Temple Maul",
+      "nameDe": "Tempelhammer",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 52,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace7",
+      "nameEn": "Leaden Greathammer",
+      "nameDe": "Bleierner Großhammer",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 60,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace8",
+      "nameEn": "Crumbling Maul",
+      "nameDe": "Zerbröckelnder Hammer",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 68,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace9",
+      "nameEn": "Pointed Maul",
+      "nameDe": "Spitzhammer",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 80,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace9",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace10",
+      "nameEn": "Totemic Greatclub",
+      "nameDe": "Totemgroßkeule",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 89,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace10",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace11",
+      "nameEn": "Greatmace",
+      "nameDe": "Große Keule",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 92,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace11",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace12",
+      "nameEn": "Precise Greathammer",
+      "nameDe": "Präziser Großhammer",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 96,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace12",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace13",
+      "nameEn": "Giant Maul",
+      "nameDe": "Riesenhammer",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace13",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace2Cruel",
+      "nameEn": "Snakewood Greathammer",
+      "nameDe": "Schlangenholz-Großhammer",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 80,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace2Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace3Cruel",
+      "nameEn": "Blacksmith Maul",
+      "nameDe": "Schmiedehammer",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 86,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace3Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace5Cruel",
+      "nameEn": "Zealot Greathammer",
+      "nameDe": "Eiferer-Großhammer",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace5Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace6Cruel",
+      "nameEn": "Solemn Maul",
+      "nameDe": "Zeremonieller Hammer",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 96,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace6Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace7Cruel",
+      "nameEn": "Heavy Greathammer",
+      "nameDe": "Schwerer Großhammer",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 104,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace7Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace8Cruel",
+      "nameEn": "Disintegrating Maul",
+      "nameDe": "Auflösender Hammer",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 109,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace8Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1a",
+      "nameEn": "Runeforged Felled Greatclub",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 68,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1b",
+      "nameEn": "Runemastered Felled Greatclub",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 97,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium1b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2a",
+      "nameEn": "Runeforged Oak Greathammer",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 68,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2b",
+      "nameEn": "Runemastered Oak Greathammer",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 97,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium2b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium3",
+      "nameEn": "Runeforged Forge Maul",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 72,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4a",
+      "nameEn": "Runeforged Studded Greatclub",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 68,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4b",
+      "nameEn": "Runemastered Studded Greatclub",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 97,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium5",
+      "nameEn": "Runeforged Cultist Greathammer",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 72,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium6",
+      "nameEn": "Runeforged Temple Maul",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 76,
+        "dexterity": 40,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium7",
+      "nameEn": "Runeforged Leaden Greathammer",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 60,
+        "dexterity": 0,
+        "intelligence": 50
+      },
+      "tags": [
+        "vaal_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium8",
+      "nameEn": "Runeforged Crumbling Maul",
+      "nameDe": "Runengeschmiedeter Zerbröckelnder Hammer",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 97,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium9",
+      "nameEn": "Runeforged Pointed Maul",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium9",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace3Endgame",
+      "nameEn": "Anvil Maul",
+      "nameDe": "Ambosshammer",
+      "dropLevel": 67,
+      "requirements": {
+        "level": 67,
+        "strength": 134,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace3Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace6Endgame",
+      "nameEn": "Sacred Maul",
+      "nameDe": "Geweihter Hammer",
+      "dropLevel": 72,
+      "requirements": {
+        "level": 72,
+        "strength": 149,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace6Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace2Endgame",
+      "nameEn": "Ironwood Greathammer",
+      "nameDe": "Eisenholz-Großhammer",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace2Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace5Endgame",
+      "nameEn": "Fanatic Greathammer",
+      "nameDe": "Fanatiker-Großhammer",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace5Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace8Endgame",
+      "nameEn": "Ruination Maul",
+      "nameDe": "Zerstörender Hammer",
+      "dropLevel": 79,
+      "requirements": {
+        "level": 79,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace8Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace7Endgame",
+      "nameEn": "Massive Greathammer",
+      "nameDe": "Massiver Großhammer",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace7Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace10Endgame",
+      "nameEn": "Tawhoan Greatclub",
+      "nameDe": "Tawhoa-Großhammer",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMace10Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1",
+      "nameEn": "Aberrant Sledge",
+      "nameDe": null,
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "nameDe": null,
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "nameDe": null,
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "nameDe": null,
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique4",
+      "nameEn": "Runemastered Aberrant Sledge",
+      "nameDe": null,
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 163,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "mace",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/AbstractTwoHandMace",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    }
+  ]
+}

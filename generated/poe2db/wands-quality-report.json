@@ -1,0 +1,673 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:22:08.904Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Wand.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Wand DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 18,
+    "regularUsableBases": 15,
+    "excludedBases": 3,
+    "distinctPrefixPools": 6,
+    "distinctSuffixPools": 6
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique1",
+        "nameEn": "Twisted Wand"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2",
+        "nameEn": "Runic Fork"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique1",
+        "nameEn": "Runemastered Runic Fork"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique2",
+        "nameEn": "Runemastered Runic Fork"
+      },
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique3",
+        "nameEn": "Runemastered Runic Fork"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique1",
+        "baseNameEn": "Twisted Wand",
+        "textEn": "Grants Skill: Coiling Bolts"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique1",
+        "baseNameEn": "Runemastered Runic Fork",
+        "textEn": "(30—50)% chance for Spell Skills to fire 2 additional Projectiles"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique2",
+        "baseNameEn": "Runemastered Runic Fork",
+        "textEn": "(30—50)% increased Mana Regeneration Rate"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique3",
+        "baseNameEn": "Runemastered Runic Fork",
+        "textEn": "+300 to maximum Runic Ward"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique1",
+      "nameEn": "Runemastered Runic Fork",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique2",
+      "nameEn": "Runemastered Runic Fork",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique3",
+      "nameEn": "Runemastered Runic Fork",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [
+    {
+      "modId": "poe2db:4bbfe544812abbc9a342",
+      "nameEn": "Searing",
+      "textDe": "(25—34)% erhöhter Feuerschaden",
+      "allowedBaseCount": 12
+    },
+    {
+      "modId": "poe2db:6fe3c7f5eeb3bcce4956",
+      "nameEn": "Sizzling",
+      "textDe": "(35—44)% erhöhter Feuerschaden",
+      "allowedBaseCount": 12
+    },
+    {
+      "modId": "poe2db:f1096b294bb67dd313cc",
+      "nameEn": "Blistering",
+      "textDe": "(45—54)% erhöhter Feuerschaden",
+      "allowedBaseCount": 12
+    },
+    {
+      "modId": "poe2db:685c776c0c77bf9f5072",
+      "nameEn": "Cauterising",
+      "textDe": "(55—64)% erhöhter Feuerschaden",
+      "allowedBaseCount": 12
+    },
+    {
+      "modId": "poe2db:979558ec65e8a3f4de8f",
+      "nameEn": "Smoldering",
+      "textDe": "(65—74)% erhöhter Feuerschaden",
+      "allowedBaseCount": 12
+    }
+  ],
+  "restrictedModFinding": "At least one imported modifier is not available to every imported Wand base.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand1",
+      "nameEn": "Withered Wand",
+      "nameDe": "Verkümmerter Zauberstab",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_physical_spell_mods",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand1",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand2",
+      "nameEn": "Bone Wand",
+      "nameDe": "Knochenzauberstab",
+      "dropLevel": 2,
+      "requirements": {
+        "level": 2,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand2",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand3",
+      "nameEn": "Attuned Wand",
+      "nameDe": "Angepasster Zauberstab",
+      "dropLevel": 2,
+      "requirements": {
+        "level": 2,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand3",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand4",
+      "nameEn": "Siphoning Wand",
+      "nameDe": "Auslaugender Zauberstab",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 23
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand4",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand5",
+      "nameEn": "Volatile Wand",
+      "nameDe": "Explosiver Zauberstab",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 31
+      },
+      "tags": [
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand5",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand6",
+      "nameEn": "Galvanic Wand",
+      "nameDe": "Galvanischer Zauberstab",
+      "dropLevel": 25,
+      "requirements": {
+        "level": 25,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 46
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand6",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand7",
+      "nameEn": "Acrid Wand",
+      "nameDe": "Ätzender Zauberstab",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 60
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand7",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand8",
+      "nameEn": "Offering Wand",
+      "nameDe": "Opferzauberstab",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 68
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand8",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand9",
+      "nameEn": "Frigid Wand",
+      "nameDe": "Frostzauberstab",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 80
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand9",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand10",
+      "nameEn": "Torture Wand",
+      "nameDe": "Folterzauberstab",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 87
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand10",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand11",
+      "nameEn": "Critical Wand",
+      "nameDe": "Kritischer Zauberstab",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 92
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand11",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand12",
+      "nameEn": "Primordial Wand",
+      "nameDe": "Uralter Zauberstab",
+      "dropLevel": 56,
+      "requirements": {
+        "level": 56,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 99
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_physical_spell_mods",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand12",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand13",
+      "nameEn": "Dueling Wand",
+      "nameDe": "Duell-Zauberstab",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWand13",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique1",
+      "nameEn": "Twisted Wand",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique1",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2",
+      "nameEn": "Runic Fork",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique1",
+      "nameEn": "Runemastered Runic Fork",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "runeforged",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique2",
+      "nameEn": "Runemastered Runic Fork",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "runeforged",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique3",
+      "nameEn": "Runemastered Runic Fork",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "runeforged",
+        "wand",
+        "onehand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Wands/AbstractWand",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    }
+  ]
+}
