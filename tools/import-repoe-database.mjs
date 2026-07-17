@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// EXILEFORGE_REPOE_IMPORTER_VERSION: 3_TRUE_404_FIX
+// ExileForge RePoE database importer
 
 import fs from "node:fs";
 import path from "node:path";
@@ -16,7 +16,8 @@ const FILES = {
   mods: "mods.min.json",
   modsByBase: "mods_by_base.min.json",
   itemClasses: "item_classes.min.json",
-  tags: "tags.min.json"};
+  tags: "tags.min.json"
+};
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
@@ -288,7 +289,8 @@ async function main() {
   writeJson(path.join(appRoot, "tags.json"),
     downloaded.tags.json
   );
-const manifest = {
+
+  const manifest = {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
     source: {
