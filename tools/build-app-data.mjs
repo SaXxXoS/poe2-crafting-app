@@ -37,6 +37,37 @@ const INPUTS = {
   tags: path.join(inputRoot, "tags.json")
 };
 
+const ALLOWED_ITEM_CLASSES = new Set([
+  "Amulet",
+  "Belt",
+  "Body Armour",
+  "Boots",
+  "Bow",
+  "Buckler",
+  "Claw",
+  "Crossbow",
+  "Dagger",
+  "Flail",
+  "Focus",
+  "Gloves",
+  "Helmet",
+  "Jewel",
+  "One Hand Axe",
+  "One Hand Mace",
+  "One Hand Sword",
+  "Quiver",
+  "Ring",
+  "Sceptre",
+  "Shield",
+  "Spear",
+  "Staff",
+  "Two Hand Axe",
+  "Two Hand Mace",
+  "Two Hand Sword",
+  "Wand",
+  "Warstaff"
+]);
+
 const EQUIPMENT_CLASS_HINTS = [
   "amulet", "armour", "belt", "body", "boots", "bow", "buckler",
   "claw", "crossbow", "dagger", "focus", "gloves", "helmet", "jewel",
@@ -193,19 +224,21 @@ function normalizeStatRows(stats) {
 }
 
 function looksLikeEquipment(base) {
-  const itemClass = String(base.itemClass ?? "").toLowerCase();
-  const tags = asArray(base.tags).join(" ").toLowerCase();
+  const itemClass = String(base.itemClass ?? "");
+  const itemClassLower = itemClass.toLowerCase();
   const id = String(base.id ?? "").toLowerCase();
 
+  if (!ALLOWED_ITEM_CLASSES.has(itemClass)) {
+    return false;
+  }
+
   if (EXCLUDED_DOMAIN_HINTS.some(hint =>
-    itemClass.includes(hint) || id.includes(`/${hint}/`)
+    itemClassLower.includes(hint) || id.includes(`/${hint}/`)
   )) {
     return false;
   }
 
-  return EQUIPMENT_CLASS_HINTS.some(hint =>
-    itemClass.includes(hint) || tags.includes(hint)
-  );
+  return true;
 }
 
 function displayClassName(itemClassId, itemClasses) {
@@ -557,6 +590,7 @@ function main() {
     status: "app-data-ready",
     filters: {
       equipmentOnly: true,
+      allowedItemClasses: [...ALLOWED_ITEM_CLASSES],
       excludedDomains: EXCLUDED_DOMAIN_HINTS,
       keepsSpawnWeights: true,
       keepsPrefixSuffix: true,
