@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T17:41:22.317Z",
+  "generatedAt": "2026-07-17T18:57:51.391Z",
   "classes": [
     {
       "id": "Amulet",
@@ -825,14 +825,6 @@
         "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger8",
         "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger8Endgame",
         "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger9"
-      ]
-    },
-    {
-      "id": "FishingRod",
-      "name": "Fishing Rods",
-      "poolFile": "pools/fishingrod.json",
-      "baseIds": [
-        "Metadata/Items/Weapons/TwoHandWeapon/FishingRods/FishingRod1"
       ]
     },
     {
@@ -1850,29 +1842,6 @@
       ]
     },
     {
-      "id": "StackableCurrency",
-      "name": "Stackable Currency",
-      "poolFile": "pools/stackablecurrency.json",
-      "baseIds": [
-        "Metadata/Items/Currency/CurrencyAddSkillGemSocket3",
-        "Metadata/Items/Currency/CurrencyAddSkillGemSocket4",
-        "Metadata/Items/Currency/CurrencyAddSkillGemSocket5",
-        "Metadata/Items/Currency/CurrencyJewelQualityAttack",
-        "Metadata/Items/Currency/CurrencyJewelQualityAttribute",
-        "Metadata/Items/Currency/CurrencyJewelQualityCaster",
-        "Metadata/Items/Currency/CurrencyJewelQualityChaos",
-        "Metadata/Items/Currency/CurrencyJewelQualityCold",
-        "Metadata/Items/Currency/CurrencyJewelQualityDefences",
-        "Metadata/Items/Currency/CurrencyJewelQualityFire",
-        "Metadata/Items/Currency/CurrencyJewelQualityLife",
-        "Metadata/Items/Currency/CurrencyJewelQualityLightning",
-        "Metadata/Items/Currency/CurrencyJewelQualityMana",
-        "Metadata/Items/Currency/CurrencyJewelQualityMinion",
-        "Metadata/Items/Currency/CurrencyJewelQualityPhysical",
-        "Metadata/Items/Currency/CurrencyJewelQualitySpeed"
-      ]
-    },
-    {
       "id": "Staff",
       "name": "Staves",
       "poolFile": "pools/staff.json",
@@ -1896,44 +1865,6 @@
         "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique3",
         "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique4",
         "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique5"
-      ]
-    },
-    {
-      "id": "Talisman",
-      "name": "Talismans",
-      "poolFile": "pools/talisman.json",
-      "baseIds": [
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman1",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman10",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman10Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman11",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman12",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman13",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman2",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman2Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman3",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman3Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman4",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman4Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman5",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman5Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman6",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman6Cruel",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman6Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman7",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman7Cruel",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman7Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman8",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman8Cruel",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman8Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman9",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman9Endgame",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium1",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium2a",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium2b",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium4a",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium4b",
-        "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium8"
       ]
     },
     {
@@ -2080,7 +2011,6 @@
     "Claw": "pools/claw.json",
     "Crossbow": "pools/crossbow.json",
     "Dagger": "pools/dagger.json",
-    "FishingRod": "pools/fishingrod.json",
     "Flail": "pools/flail.json",
     "Focus": "pools/focus.json",
     "Gloves": "pools/gloves.json",
@@ -2095,9 +2025,7 @@
     "Sceptre": "pools/sceptre.json",
     "Shield": "pools/shield.json",
     "Spear": "pools/spear.json",
-    "StackableCurrency": "pools/stackablecurrency.json",
     "Staff": "pools/staff.json",
-    "Talisman": "pools/talisman.json",
     "Two Hand Axe": "pools/two-hand-axe.json",
     "Two Hand Mace": "pools/two-hand-mace.json",
     "Two Hand Sword": "pools/two-hand-sword.json",
@@ -5152,10 +5080,6 @@
       {
         "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger5Endgame",
         "text": "[dnt] crescent dagger dagger daggers dagger one_hand_weapon onehand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapon/FishingRods/FishingRod1",
-        "text": "fishing rod fishingrod fishing rods not_for_sale fishing_rod twohand weapon default"
       },
       {
         "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail1",
@@ -8822,70 +8746,6 @@
         "text": "grand spear spear spears spear one_hand_weapon onehand weapon default"
       },
       {
-        "id": "Metadata/Items/Currency/CurrencyAddSkillGemSocket3",
-        "text": "lesser jeweller's orb stackablecurrency stackable currency socket_currency jewellers_orb currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyAddSkillGemSocket4",
-        "text": "greater jeweller's orb stackablecurrency stackable currency socket_currency jewellers_orb currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityAttribute",
-        "text": "refined adaptive catalyst stackablecurrency stackable currency jewel_catalyst attribute_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityDefences",
-        "text": "refined carapace catalyst stackablecurrency stackable currency jewel_catalyst defences_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityChaos",
-        "text": "refined chayula's catalyst stackablecurrency stackable currency jewel_catalyst chaos_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityLightning",
-        "text": "refined esh's catalyst stackablecurrency stackable currency jewel_catalyst lightning_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityLife",
-        "text": "refined flesh catalyst stackablecurrency stackable currency jewel_catalyst life_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityMinion",
-        "text": "refined necrotic catalyst stackablecurrency stackable currency jewel_catalyst minion_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityMana",
-        "text": "refined neural catalyst stackablecurrency stackable currency jewel_catalyst mana_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityAttack",
-        "text": "refined reaver catalyst stackablecurrency stackable currency jewel_catalyst attack_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityCaster",
-        "text": "refined sibilant catalyst stackablecurrency stackable currency jewel_catalyst caster_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualitySpeed",
-        "text": "refined skittering catalyst stackablecurrency stackable currency jewel_catalyst speed_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityCold",
-        "text": "refined tul's catalyst stackablecurrency stackable currency jewel_catalyst cold_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityPhysical",
-        "text": "refined uul-netol's catalyst stackablecurrency stackable currency jewel_catalyst physical_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyJewelQualityFire",
-        "text": "refined xoph's catalyst stackablecurrency stackable currency jewel_catalyst fire_catalyst currency default"
-      },
-      {
-        "id": "Metadata/Items/Currency/CurrencyAddSkillGemSocket5",
-        "text": "perfect jeweller's orb stackablecurrency stackable currency socket_currency rare_socket_currency jewellers_orb currency default"
-      },
-      {
         "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff1",
         "text": "ashen staff staff staves no_cold_spell_mods no_lightning_spell_mods no_chaos_spell_mods no_physical_spell_mods staff twohand default"
       },
@@ -8960,130 +8820,6 @@
       {
         "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique1",
         "text": "permafrost staff staff staves staff twohand default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman1",
-        "text": "changeling talisman talisman talismans ezomyte_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman2",
-        "text": "nettle talisman talisman talismans ezomyte_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman3",
-        "text": "cinderbark talisman talisman talismans ezomyte_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman4",
-        "text": "familial talisman talisman talismans maraketh_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman5",
-        "text": "frenzied talisman talisman talismans maraketh_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman6",
-        "text": "primal talisman talisman talismans maraketh_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman7",
-        "text": "rabid talisman talisman talismans vaal_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium1",
-        "text": "runeforged changeling talisman talisman talismans ezomyte_basetype runeforged talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium4a",
-        "text": "runeforged familial talisman talisman talismans maraketh_basetype runeforged talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium2a",
-        "text": "runeforged nettle talisman talisman talismans ezomyte_basetype runeforged talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman8",
-        "text": "vicious talisman talisman talismans vaal_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman9",
-        "text": "voltfang talisman talisman talismans karui_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman10",
-        "text": "lumbering talisman talisman talismans karui_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman6Cruel",
-        "text": "howling talisman talisman talismans maraketh_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium4b",
-        "text": "runemastered familial talisman talisman talismans maraketh_basetype runeforged talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium2b",
-        "text": "runemastered nettle talisman talisman talismans ezomyte_basetype runeforged talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman11",
-        "text": "roaring talisman talisman talismans talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman7Cruel",
-        "text": "fury talisman talisman talismans vaal_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman8Cruel",
-        "text": "cruel talisman talisman talismans vaal_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman13",
-        "text": "condemned talisman talisman talismans talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/TalismanVerisium8",
-        "text": "runeforged vicious talisman talisman talismans vaal_basetype runeforged talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman12",
-        "text": "wingbeat talisman talisman talismans talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman2Endgame",
-        "text": "spiny talisman talisman talismans ezomyte_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman8Endgame",
-        "text": "wildwood talisman talisman talismans vaal_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman3Endgame",
-        "text": "ashbark talisman talisman talismans ezomyte_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman6Endgame",
-        "text": "alpha talisman talisman talismans maraketh_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman4Endgame",
-        "text": "fang talisman talisman talismans maraketh_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman9Endgame",
-        "text": "thunder talisman talisman talismans karui_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman5Endgame",
-        "text": "fungal talisman talisman talismans maraketh_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman10Endgame",
-        "text": "jade talisman talisman talismans karui_basetype talisman two_hand_weapon twohand weapon default"
-      },
-      {
-        "id": "Metadata/Items/Weapons/TwoHandWeapons/Talismans/Talisman7Endgame",
-        "text": "maji talisman talisman talismans vaal_basetype talisman two_hand_weapon twohand weapon default"
       },
       {
         "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe1",
@@ -9682,18 +9418,6 @@
       {
         "id": "EzomyteStrongboxIceSpikes",
         "text": "ezomytestrongboxicespikes frosted prefix chest_display_ezomyte chest_play_warning_sound"
-      },
-      {
-        "id": "FishingLineStrength",
-        "text": "fishinglinestrength filigree prefix fishing_line_strength_+%"
-      },
-      {
-        "id": "FishingLureType",
-        "text": "fishingluretype alluring prefix fishing_lure_type"
-      },
-      {
-        "id": "FishingPoolConsumption",
-        "text": "fishingpoolconsumption calming prefix fishing_pool_consumption_+%"
       },
       {
         "id": "IncreasedAccuracy1",
@@ -12936,14 +12660,6 @@
         "text": "abyssmodstaffulamanprefixspelldamageper100maximumlife ulaman's prefix spell_damage_+%_per_100_max_life"
       },
       {
-        "id": "AbyssModTalismanAmanamuPrefixMinionsDealIncreasedDamageIfYouHitRecently",
-        "text": "abyssmodtalismanamanamuprefixminionsdealincreaseddamageifyouhitrecently amanamu's prefix minion_damage_+%_if_enemy_hit_recently"
-      },
-      {
-        "id": "AbyssModTalismanKurgalPrefixWarcriesEmpowerXAdditionalAttacks",
-        "text": "abyssmodtalismankurgalprefixwarcriesempowerxadditionalattacks kurgal's prefix warcry_empowers_next_x_melee_attacks"
-      },
-      {
         "id": "AbyssModWandAmanamuPrefixHybridSpellAndMinionDamage",
         "text": "abyssmodwandamanamuprefixhybridspellandminiondamage amanamu's prefix minion_damage_+% spell_damage_+%"
       },
@@ -13758,22 +13474,6 @@
       {
         "id": "FireResist1",
         "text": "fireresist1 of the whelpling suffix base_fire_damage_resistance_%"
-      },
-      {
-        "id": "FishingCastDistance",
-        "text": "fishingcastdistance of flight suffix fishing_range_+%"
-      },
-      {
-        "id": "FishingHookType",
-        "text": "fishinghooktype of snaring suffix fishing_hook_type"
-      },
-      {
-        "id": "FishingQuantity",
-        "text": "fishingquantity of fascination suffix fish_quantity_+%"
-      },
-      {
-        "id": "FishingRarity",
-        "text": "fishingrarity of bounty suffix fish_rarity_+%"
       },
       {
         "id": "IncreasedAttackSpeed1",
@@ -16182,14 +15882,6 @@
       {
         "id": "AbyssModStaffUlamanSuffixChanceForSpellsToFireTwoAdditionalProjectiles",
         "text": "abyssmodstaffulamansuffixchanceforspellstofiretwoadditionalprojectiles of ulaman suffix spell_skills_fire_2_additional_projectiles_final_chance_%"
-      },
-      {
-        "id": "AbyssModTalismanKurgalSuffixCriticalHitChanceAgainstMarkedTargets",
-        "text": "abyssmodtalismankurgalsuffixcriticalhitchanceagainstmarkedtargets of kurgal suffix critical_strike_chance_+%_vs_marked_enemies"
-      },
-      {
-        "id": "AbyssModTalismanUlamanSuffixGainXRageOnMeleeHit",
-        "text": "abyssmodtalismanulamansuffixgainxrageonmeleehit of ulaman suffix gain_x_rage_on_melee_hit"
       },
       {
         "id": "AbyssModWandAmanamuSuffixHinderedEnemiesTakeIncreasedElemental",
