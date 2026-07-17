@@ -370,145 +370,69 @@ function firstText(row, keys) {
   return "";
 }
 
-const RAW_CLASS_TO_APP_CLASS = {
-  Spear: "Speer",
-  Crossbow: "Armbrust",
-  Bow: "Bogen",
-  Quarterstaff: "Kampfstab",
-  Warstaff: "Kriegsstab",
-  Wand: "Zauberstab",
-  Sceptre: "Zepter",
-  Staff: "Stab",
-  Mace: "Streitkolben",
-  OneHandMace: "Streitkolben",
-  TwoHandMace: "Streitkolben",
-  Sword: "Schwert",
-  OneHandSword: "Schwert",
-  TwoHandSword: "Schwert",
-  Axe: "Axt",
-  OneHandAxe: "Axt",
-  TwoHandAxe: "Axt",
-  Dagger: "Dolch",
-  Flail: "Flegel",
-  Claw: "Klaue",
-  Helmet: "Helm",
-  BodyArmour: "Körperrüstung",
-  Gloves: "Handschuhe",
-  Boots: "Stiefel",
-  Shield: "Schild",
-  Focus: "Fokus",
-  Quiver: "Köcher",
-  FishingRod: "Angelrute",
-  TrapTool: "Fallenwerkzeug",
-  Ring: "Ring",
-  Amulet: "Amulett",
-  Belt: "Gürtel",
-  Charm: "Talisman",
-  Talisman: "Talisman",
-  Jewel: "Juwel",
-  Flask: "Fläschchen",
-  TranscendentLimb: "Transzendentes Glied"
-};
-
-function rawClassId(row) {
-  return String(
-    row?.ItemClassesKey?.Id ??
-    row?.ItemClassKey?.Id ??
-    row?.ItemClass ??
-    ""
-  ).trim();
-}
-
 function buildTranslationMaps() {
   const englishRows = readJson(englishBaseFile);
   const germanRows = readJson(germanBaseFile);
 
-  const germanById = new Map(
-    germanRows
-      .filter(row => typeof row?.Id === "string" && typeof row?.Name === "string")
-      .map(row => [row.Id, row])
-  );
+  const idKeys = ["Id", "ID", "id", "MetadataId", "MetadataID"];
+  const nameKeys = [
+    "Name",
+    "name",
+    "DisplayName",
+    "displayName",
+    "TranslatedName",
+    "NameGerman",
+    "GermanName",
+    "Name_de",
+    "name_de"
+  ];
 
-  const byEnglishName = new Map();
-  const byClassAndLevel = new Map();
+  const germanById = new Map();
 
-  for (const englishRow of englishRows) {
-    const germanRow = germanById.get(englishRow?.Id);
-    if (!germanRow?.Name || !englishRow?.Name) continue;
+  for (const row of germanRows) {
+    const id = firstText(row, idKeys);
+    const name = firstText(row, nameKeys);
+    if (id && name) germanById.set(id, name);
+  }
 
-    const rawClass = rawClassId(englishRow);
-    const appClass = RAW_CLASS_TO_APP_CLASS[rawClass] ?? "";
-    const level = Number(englishRow.DropLevel ?? 0);
+  const nameMap = new Map();
 
-    const candidate = {
-      id: englishRow.Id,
-      englishName: englishRow.Name,
-      germanName: germanRow.Name,
-      appClass,
-      level
-    };
+  for (const row of englishRows) {
+    const id = firstText(row, idKeys);
+    const englishName = firstText(row, nameKeys);
+    const germanName = germanById.get(id);
 
-    byEnglishName.set(englishRow.Name, candidate);
-    byEnglishName.set(normalize(englishRow.Name), candidate);
-
-    if (appClass) {
-      const key = `${appClass}|${level}`;
-      const list = byClassAndLevel.get(key) ?? [];
-      list.push(candidate);
-      byClassAndLevel.set(key, list);
+    if (englishName && germanName) {
+      nameMap.set(englishName, germanName);
+      nameMap.set(normalize(englishName), germanName);
     }
   }
 
-  return { byEnglishName, byClassAndLevel };
+  return nameMap;
 }
 
 const BASE_NAME_FALLBACKS = new Map([
-  ["Flying Spear", "Fliegender Speer"]
+  ["Flying Spear", "Fliegender Speer"],
+  ["War Spear", "Kriegsspeer"],
+  ["Hunting Spear", "Jagdspeer"],
+  ["Ironhead Spear", "Eisenkopf-Speer"],
+  ["Helix Spear", "Helix-Speer"],
+  ["Ancestral Tiara", "Ahnen-Tiara"]
 ]);
 
-function translateBaseName(englishName, itemClass, level, translations, usedRawIds) {
-  const exact =
-    translations.byEnglishName.get(englishName) ??
-    translations.byEnglishName.get(normalize(englishName));
+function translateBaseName(englishName, translations) {
+  const exact = translations.get(englishName);
+  if (exact) return { name: exact, source: "raw" };
 
-  if (exact && exact.appClass === itemClass) {
-    usedRawIds.add(exact.id);
-    return {
-      name: exact.germanName,
-      source: "raw-name",
-      rawId: exact.id
-    };
-  }
-
-  const levelCandidates = (
-    translations.byClassAndLevel.get(`${itemClass}|${Number(level ?? 0)}`) ?? []
-  ).filter(candidate => !usedRawIds.has(candidate.id));
-
-  if (levelCandidates.length === 1) {
-    const candidate = levelCandidates[0];
-    usedRawIds.add(candidate.id);
-    return {
-      name: candidate.germanName,
-      source: "raw-class-level",
-      rawId: candidate.id
-    };
-  }
+  const normalized = translations.get(normalize(englishName));
+  if (normalized) return { name: normalized, source: "raw" };
 
   const fallback = BASE_NAME_FALLBACKS.get(englishName);
-  if (fallback) {
-    return {
-      name: fallback,
-      source: "fallback",
-      rawId: null
-    };
-  }
+  if (fallback) return { name: fallback, source: "fallback" };
 
-  return {
-    name: "",
-    source: levelCandidates.length > 1 ? "ambiguous" : "unmatched",
-    rawId: null
-  };
+  return { name: englishName, source: "untranslated" };
 }
+
 
 function translateImplicitLine(line) {
   const original = String(line ?? "").trim();
@@ -634,7 +558,6 @@ if (!fs.existsSync(basesDir)) {
 }
 
 const translations = buildTranslationMaps();
-const usedRawIds = new Set();
 const currentData = loadExistingData();
 const baseItems = {};
 const classOptions = {
@@ -654,11 +577,9 @@ const report = {
   unmappedTypes: {},
   classes: {},
   englishImplicitLines: 0,
-  translatedBaseNamesFromRawName: 0,
-  translatedBaseNamesFromClassAndLevel: 0,
+  translatedBaseNamesFromRaw: 0,
   translatedBaseNamesFromFallback: 0,
-  skippedUnmatchedBaseNames: [],
-  skippedAmbiguousBaseNames: []
+  untranslatedBaseNames: []
 };
 
 const files = fs.readdirSync(basesDir)
@@ -694,30 +615,16 @@ for (const file of files) {
 
     const weapon = value.weapon ?? {};
     const implicits = implicitLines(value);
-    const requiredLevel = Number(value.req?.level ?? 0);
-    const translatedBase = translateBaseName(
-      entry.name,
-      itemClass,
-      requiredLevel,
-      translations,
-      usedRawIds
-    );
+    const translatedBase = translateBaseName(entry.name, translations);
 
     report.englishImplicitLines += implicits.length;
 
-    if (translatedBase.source === "raw-name") {
-      report.translatedBaseNamesFromRawName += 1;
-    } else if (translatedBase.source === "raw-class-level") {
-      report.translatedBaseNamesFromClassAndLevel += 1;
+    if (translatedBase.source === "raw") {
+      report.translatedBaseNamesFromRaw += 1;
     } else if (translatedBase.source === "fallback") {
       report.translatedBaseNamesFromFallback += 1;
-    } else {
-      const target = translatedBase.source === "ambiguous"
-        ? report.skippedAmbiguousBaseNames
-        : report.skippedUnmatchedBaseNames;
-
-      if (!target.includes(entry.name)) target.push(entry.name);
-      continue;
+    } else if (!report.untranslatedBaseNames.includes(entry.name)) {
+      report.untranslatedBaseNames.push(entry.name);
     }
 
     baseItems[itemClass].push({
@@ -725,7 +632,7 @@ for (const file of files) {
       sourceId: `pob:${entry.sourceFile}:${entry.name}`,
       name: translatedBase.name,
       englishName: entry.name,
-      requiredLevel,
+      requiredLevel: Number(value.req?.level ?? 0),
       requirements: requirements(value),
       physical: physicalRange(weapon),
       crit: weapon.CritChanceBase !== undefined
@@ -752,8 +659,7 @@ for (const file of files) {
   }
 }
 
-report.skippedUnmatchedBaseNames.sort((a, b) => a.localeCompare(b, "en"));
-report.skippedAmbiguousBaseNames.sort((a, b) => a.localeCompare(b, "en"));
+report.untranslatedBaseNames.sort((a, b) => a.localeCompare(b, "en"));
 
 for (const category of Object.keys(classOptions)) {
   classOptions[category].sort((a, b) => a.localeCompare(b, "de"));
