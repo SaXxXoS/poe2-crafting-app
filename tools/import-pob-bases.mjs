@@ -378,17 +378,89 @@ function buildTranslationMaps() {
   return nameMap;
 }
 
+
+function translateImplicitLine(line) {
+  const original = String(line ?? "").trim();
+  if (!original) return "";
+
+  const exact = new Map([
+    ["Grants Skill: Spear Throw", "Gewährt Fertigkeit: Speerwurf"],
+    ["Grants Skill: Raise Shield", "Gewährt Fertigkeit: Schild heben"],
+    ["Grants Skill: Crossbow Shot", "Gewährt Fertigkeit: Armbrustschuss"]
+  ]);
+
+  if (exact.has(original)) return exact.get(original);
+
+  const replacements = [
+    [/^Grants Skill:\s*(.+)$/i, "Gewährt Fertigkeit: $1"],
+    [/^\(([^)]+)\)% increased Projectile Speed with this Weapon$/i,
+      "($1)% erhöhte Projektilgeschwindigkeit mit dieser Waffe"],
+    [/^\(([^)]+)\)% increased Attack Speed$/i,
+      "($1)% erhöhte Angriffsgeschwindigkeit"],
+    [/^\(([^)]+)\)% increased Critical Hit Chance$/i,
+      "($1)% erhöhte kritische Trefferchance"],
+    [/^\+?(\d+) to maximum Life$/i,
+      "+$1 zu maximalem Leben"],
+    [/^\+?(\d+) to maximum Mana$/i,
+      "+$1 zu maximalem Mana"],
+    [/^\+?(\d+)% to Fire Resistance$/i,
+      "+$1% zu Feuerwiderstand"],
+    [/^\+?(\d+)% to Cold Resistance$/i,
+      "+$1% zu Kältewiderstand"],
+    [/^\+?(\d+)% to Lightning Resistance$/i,
+      "+$1% zu Blitzwiderstand"],
+    [/^\+?(\d+)% to Chaos Resistance$/i,
+      "+$1% zu Chaoswiderstand"],
+    [/^Adds (\d+)-(\d+) Fire Damage$/i,
+      "Fügt $1 bis $2 Feuerschaden hinzu"],
+    [/^Adds (\d+)-(\d+) Cold Damage$/i,
+      "Fügt $1 bis $2 Kälteschaden hinzu"],
+    [/^Adds (\d+)-(\d+) Lightning Damage$/i,
+      "Fügt $1 bis $2 Blitzschaden hinzu"],
+    [/^Adds (\d+)-(\d+) Physical Damage$/i,
+      "Fügt $1 bis $2 physischen Schaden hinzu"],
+    [/^(\d+)% increased Armour$/i,
+      "$1% erhöhte Rüstung"],
+    [/^(\d+)% increased Evasion Rating$/i,
+      "$1% erhöhter Ausweichwert"],
+    [/^(\d+)% increased Energy Shield$/i,
+      "$1% erhöhtes Energieschild"],
+    [/^(\d+)% increased Movement Speed$/i,
+      "$1% erhöhte Bewegungsgeschwindigkeit"],
+    [/^(\d+)% increased Accuracy Rating$/i,
+      "$1% erhöhte Treffergenauigkeit"],
+    [/^(\d+)% increased Block Chance$/i,
+      "$1% erhöhte Blockchance"],
+    [/^(\d+)% increased Melee Strike Range$/i,
+      "$1% erhöhte Nahkampfschlagreichweite"]
+  ];
+
+  for (const [pattern, replacement] of replacements) {
+    if (pattern.test(original)) {
+      return original.replace(pattern, replacement);
+    }
+  }
+
+  return original;
+}
+
 function implicitLines(value) {
   return String(value.implicit ?? "")
     .split("\n")
     .map(line => line.trim())
     .filter(Boolean)
-    .map((line, index) => ({
-      name: line,
-      kind: index === 0 && /^grants skill:/i.test(line)
-        ? "Gewährte Fertigkeit (PoB-Originaltext)"
-        : "Basis-Implizit (PoB-Originaltext)"
-    }));
+    .map((line, index) => {
+      const translated = translateImplicitLine(line);
+      const isTranslated = translated !== line;
+
+      return {
+        name: translated,
+        englishName: line,
+        kind: index === 0 && /^grants skill:/i.test(line)
+          ? (isTranslated ? "Gewährte Fertigkeit" : "Gewährte Fertigkeit (englischer Originaltext)")
+          : (isTranslated ? "Basis-Implizit" : "Basis-Implizit (englischer Originaltext)")
+      };
+    });
 }
 
 function requirements(value) {
