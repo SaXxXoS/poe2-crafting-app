@@ -1,14 +1,19 @@
 window.EXILEFORGE_DATA = {
-  "generatedAt": "2026-07-17T09:00:33.403Z",
+  "generatedAt": "2026-07-17T09:28:26.503Z",
   "classOptions": {
     "weapon": [
+      "Angelrute",
       "Armbrust",
+      "Axt",
       "Bogen",
       "Dolch",
+      "Fallenwerkzeug",
       "Flegel",
       "Klaue",
+      "Schwert",
       "Speer",
       "Stab",
+      "Streitkolben",
       "Zauberstab",
       "Zepter"
     ],
@@ -19,12 +24,16 @@ window.EXILEFORGE_DATA = {
       "Köcher",
       "Körperrüstung",
       "Schild",
-      "Stiefel"
+      "Stiefel",
+      "Transzendentes Glied"
     ],
     "jewellery": [
       "Amulett",
+      "Fläschchen",
       "Gürtel",
-      "Ring"
+      "Juwel",
+      "Ring",
+      "Talisman"
     ]
   },
   "baseItems": {
@@ -756,6 +765,636 @@ window.EXILEFORGE_DATA = {
         ],
         "pobType": "Amulet",
         "sourceFile": "amulet.lua"
+      }
+    ],
+    "Axt": [
+      {
+        "id": "one-hand-axe-hook-axe",
+        "sourceId": "pob:axe.lua:Hook Axe",
+        "name": "Hakenaxt",
+        "englishName": "Hook Axe",
+        "requiredLevel": 0,
+        "requirements": "9 Str",
+        "physical": "5–14",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Grants 1 Rage on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "ezomyte_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-light-halberd",
+        "sourceId": "pob:axe.lua:Light Halberd",
+        "name": "Leichte Hellebarde",
+        "englishName": "Light Halberd",
+        "requiredLevel": 0,
+        "requirements": "9 Str",
+        "physical": "10–25",
+        "crit": "5 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "ezomyte_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-splitting-greataxe",
+        "sourceId": "pob:axe.lua:Splitting Greataxe",
+        "name": "Spaltende Großaxt",
+        "englishName": "Splitting Greataxe",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "8–20",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "ezomyte_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-dull-hatchet",
+        "sourceId": "pob:axe.lua:Dull Hatchet",
+        "name": "Stumpfes Kriegsbeil",
+        "englishName": "Dull Hatchet",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "4–10",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "ezomyte_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-bearded-axe",
+        "sourceId": "pob:axe.lua:Bearded Axe",
+        "name": "Bartaxt",
+        "englishName": "Bearded Axe",
+        "requiredLevel": 10,
+        "requirements": "17 Str · 9 Ges",
+        "physical": "8–21",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "ezomyte_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-executioner-greataxe",
+        "sourceId": "pob:axe.lua:Executioner Greataxe",
+        "name": "Henker-Großaxt",
+        "englishName": "Executioner Greataxe",
+        "requiredLevel": 10,
+        "requirements": "17 Str · 9 Ges",
+        "physical": "10–41",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Culling Strike",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "ezomyte_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-arched-greataxe",
+        "sourceId": "pob:axe.lua:Arched Greataxe",
+        "name": "Gewölbte Großaxt",
+        "englishName": "Arched Greataxe",
+        "requiredLevel": 16,
+        "requirements": "25 Str · 12 Ges",
+        "physical": "17–59",
+        "crit": "5 %",
+        "aps": "1,15",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "maraketh_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-extended-cleaver",
+        "sourceId": "pob:axe.lua:Extended Cleaver",
+        "name": "Verlängerter Spalter",
+        "englishName": "Extended Cleaver",
+        "requiredLevel": 16,
+        "requirements": "25 Str · 12 Ges",
+        "physical": "8–25",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Has no Accuracy Penalty from Range",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-bandit-hatchet",
+        "sourceId": "pob:axe.lua:Bandit Hatchet",
+        "name": "Banditenkriegsbeil",
+        "englishName": "Bandit Hatchet",
+        "requiredLevel": 20,
+        "requirements": "30 Str · 14 Ges",
+        "physical": "13–31",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-elegant-glaive",
+        "sourceId": "pob:axe.lua:Elegant Glaive",
+        "name": "Elegante Gleve",
+        "englishName": "Elegant Glaive",
+        "requiredLevel": 20,
+        "requirements": "30 Str · 14 Ges",
+        "physical": "19–64",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "maraketh_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-crescent-axe",
+        "sourceId": "pob:axe.lua:Crescent Axe",
+        "name": "Sichelkopfaxt",
+        "englishName": "Crescent Axe",
+        "requiredLevel": 26,
+        "requirements": "38 Str · 17 Ges",
+        "physical": "18–37",
+        "crit": "6,5 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-savage-greataxe",
+        "sourceId": "pob:axe.lua:Savage Greataxe",
+        "name": "Wilde Großaxt",
+        "englishName": "Savage Greataxe",
+        "requiredLevel": 27,
+        "requirements": "39 Str · 17 Ges",
+        "physical": "23–70",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Gain (34-43) Life per enemy killed",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "maraketh_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-carving-hatchet",
+        "sourceId": "pob:axe.lua:Carving Hatchet",
+        "name": "Schnitzer-Kriegsbeil",
+        "englishName": "Carving Hatchet",
+        "requiredLevel": 33,
+        "requirements": "47 Str · 20 Ges",
+        "physical": "19–44",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-rending-halberd",
+        "sourceId": "pob:axe.lua:Rending Halberd",
+        "name": "Zerfleischende Hellebarde",
+        "englishName": "Rending Halberd",
+        "requiredLevel": 33,
+        "requirements": "47 Str · 20 Ges",
+        "physical": "27–91",
+        "crit": "6,5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-sacrificial-axe",
+        "sourceId": "pob:axe.lua:Sacrificial Axe",
+        "name": "Opferaxt",
+        "englishName": "Sacrificial Axe",
+        "requiredLevel": 37,
+        "requirements": "52 Str · 22 Ges",
+        "physical": "20–42",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Gain (28-35) Mana per enemy killed",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-jagged-greataxe",
+        "sourceId": "pob:axe.lua:Jagged Greataxe",
+        "name": "Gezackte Großaxt",
+        "englishName": "Jagged Greataxe",
+        "requiredLevel": 40,
+        "requirements": "56 Str · 23 Ges",
+        "physical": "43–99",
+        "crit": "5 %",
+        "aps": "1,15",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(15-25)% chance to cause Bleeding on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-boarding-hatchet",
+        "sourceId": "pob:axe.lua:Boarding Hatchet",
+        "name": "Enterbeil",
+        "englishName": "Boarding Hatchet",
+        "requiredLevel": 45,
+        "requirements": "63 Str · 26 Ges",
+        "physical": "24–55",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-reaver-glaive",
+        "sourceId": "pob:axe.lua:Reaver Glaive",
+        "name": "Plünderergleve",
+        "englishName": "Reaver Glaive",
+        "requiredLevel": 45,
+        "requirements": "63 Str · 26 Ges",
+        "physical": "43–113",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-fury-cleaver",
+        "sourceId": "pob:axe.lua:Fury Cleaver",
+        "name": "Wutspalter",
+        "englishName": "Fury Cleaver",
+        "requiredLevel": 48,
+        "requirements": "67 Str · 27 Ges",
+        "physical": "30–62",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "10% increased Damage taken",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-ember-greataxe",
+        "sourceId": "pob:axe.lua:Ember Greataxe",
+        "name": "Bernstein-Großaxt",
+        "englishName": "Ember Greataxe",
+        "requiredLevel": 50,
+        "requirements": "70 Str · 28 Ges",
+        "physical": "–",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-battle-axe",
+        "sourceId": "pob:axe.lua:Battle Axe",
+        "name": "Kampfaxt",
+        "englishName": "Battle Axe",
+        "requiredLevel": 52,
+        "requirements": "72 Str · 29 Ges",
+        "physical": "28–65",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-ceremonial-halberd",
+        "sourceId": "pob:axe.lua:Ceremonial Halberd",
+        "name": "Zeremonielle Hellebarde",
+        "englishName": "Ceremonial Halberd",
+        "requiredLevel": 52,
+        "requirements": "72 Str · 29 Ges",
+        "physical": "53–123",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Cannot use Projectile Attacks",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "axe",
+          "default",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-profane-cleaver",
+        "sourceId": "pob:axe.lua:Profane Cleaver",
+        "name": "Profaner Spalter",
+        "englishName": "Profane Cleaver",
+        "requiredLevel": 54,
+        "requirements": "75 Str · 30 Ges",
+        "physical": "26–69",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-monument-greataxe",
+        "sourceId": "pob:axe.lua:Monument Greataxe",
+        "name": "Monumentale Großaxt",
+        "englishName": "Monument Greataxe",
+        "requiredLevel": 57,
+        "requirements": "79 Str · 32 Ges",
+        "physical": "48–143",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "two-hand-axe-vile-greataxe",
+        "sourceId": "pob:axe.lua:Vile Greataxe",
+        "name": "Niederträchtige Großaxt",
+        "englishName": "Vile Greataxe",
+        "requiredLevel": 65,
+        "requirements": "89 Str · 36 Ges",
+        "physical": "59–155",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Axe",
+        "sourceFile": "axe.lua"
+      },
+      {
+        "id": "one-hand-axe-dread-hatchet",
+        "sourceId": "pob:axe.lua:Dread Hatchet",
+        "name": "Schreckenskriegsbeil",
+        "englishName": "Dread Hatchet",
+        "requiredLevel": 65,
+        "requirements": "89 Str · 36 Ges",
+        "physical": "34–79",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "axe",
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Axe",
+        "sourceFile": "axe.lua"
       }
     ],
     "Gürtel": [
@@ -14044,6 +14683,29 @@ window.EXILEFORGE_DATA = {
         "sourceFile": "dagger.lua"
       }
     ],
+    "Angelrute": [
+      {
+        "id": "fishing-rod-fishing-rod",
+        "sourceId": "pob:fishing.lua:Fishing Rod",
+        "name": "Angelrute",
+        "englishName": "Fishing Rod",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "10–18",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "fishing_rod",
+          "not_for_sale",
+          "twohand"
+        ],
+        "pobType": "Fishing Rod",
+        "sourceFile": "fishing.lua"
+      }
+    ],
     "Flegel": [
       {
         "id": "flail-splintered-flail",
@@ -14348,6 +15010,1438 @@ window.EXILEFORGE_DATA = {
         ],
         "pobType": "Flail",
         "sourceFile": "flail.lua"
+      }
+    ],
+    "Talisman": [
+      {
+        "id": "talisman-changeling-talisman",
+        "sourceId": "pob:talisman.lua:Changeling Talisman",
+        "name": "Changeling Talisman",
+        "englishName": "Changeling Talisman",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "9–15",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-nettle-talisman",
+        "sourceId": "pob:talisman.lua:Nettle Talisman",
+        "name": "Nettle Talisman",
+        "englishName": "Nettle Talisman",
+        "requiredLevel": 5,
+        "requirements": "9 Str · 8 Int",
+        "physical": "12–20",
+        "crit": "11 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "charm-ruby-charm",
+        "sourceId": "pob:flask.lua:Ruby Charm",
+        "name": "Rubin-Phiole",
+        "englishName": "Ruby Charm",
+        "requiredLevel": 5,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you take Fire damage from a Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "charm-sapphire-charm",
+        "sourceId": "pob:flask.lua:Sapphire Charm",
+        "name": "Saphir-Phiole",
+        "englishName": "Sapphire Charm",
+        "requiredLevel": 5,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you take Cold damage from a Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "charm-topaz-charm",
+        "sourceId": "pob:flask.lua:Topaz Charm",
+        "name": "Topas-Phiole",
+        "englishName": "Topaz Charm",
+        "requiredLevel": 5,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you take Lightning damage from a Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "charm-stone-charm",
+        "sourceId": "pob:flask.lua:Stone Charm",
+        "name": "Stein-Phiole",
+        "englishName": "Stone Charm",
+        "requiredLevel": 8,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you become Stunned",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "talisman-cinderbark-talisman",
+        "sourceId": "pob:talisman.lua:Cinderbark Talisman",
+        "name": "Cinderbark Talisman",
+        "englishName": "Cinderbark Talisman",
+        "requiredLevel": 10,
+        "requirements": "15 Str · 11 Int",
+        "physical": "12–25",
+        "crit": "8 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(50-80)% increased Flammability Magnitude",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "charm-silver-charm",
+        "sourceId": "pob:flask.lua:Silver Charm",
+        "name": "Silber-Phiole",
+        "englishName": "Silver Charm",
+        "requiredLevel": 10,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you are affected by a Slow",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "charm-thawing-charm",
+        "sourceId": "pob:flask.lua:Thawing Charm",
+        "name": "Auftauende Phiole",
+        "englishName": "Thawing Charm",
+        "requiredLevel": 12,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you become Frozen",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "talisman-familial-talisman",
+        "sourceId": "pob:talisman.lua:Familial Talisman",
+        "name": "Familial Talisman",
+        "englishName": "Familial Talisman",
+        "requiredLevel": 16,
+        "requirements": "21 Str · 16 Int",
+        "physical": "20–34",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Minions deal (30-50)% increased Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "charm-staunching-charm",
+        "sourceId": "pob:flask.lua:Staunching Charm",
+        "name": "Stillende Phiole",
+        "englishName": "Staunching Charm",
+        "requiredLevel": 18,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you start Bleeding",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "talisman-frenzied-talisman",
+        "sourceId": "pob:talisman.lua:Frenzied Talisman",
+        "name": "Frenzied Talisman",
+        "englishName": "Frenzied Talisman",
+        "requiredLevel": 22,
+        "requirements": "28 Str · 20 Int",
+        "physical": "23–38",
+        "crit": "8 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "charm-antidote-charm",
+        "sourceId": "pob:flask.lua:Antidote Charm",
+        "name": "Gegengift-Phiole",
+        "englishName": "Antidote Charm",
+        "requiredLevel": 24,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you become Poisoned",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "talisman-primal-talisman",
+        "sourceId": "pob:talisman.lua:Primal Talisman",
+        "name": "Primal Talisman",
+        "englishName": "Primal Talisman",
+        "requiredLevel": 28,
+        "requirements": "34 Str · 25 Int",
+        "physical": "31–46",
+        "crit": "9 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(14-18)% to Block chance",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "charm-grounding-charm",
+        "sourceId": "pob:flask.lua:Grounding Charm",
+        "name": "Erdende Phiole",
+        "englishName": "Grounding Charm",
+        "requiredLevel": 32,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you become Shocked",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "charm-dousing-charm",
+        "sourceId": "pob:flask.lua:Dousing Charm",
+        "name": "Löschende Phiole",
+        "englishName": "Dousing Charm",
+        "requiredLevel": 32,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you become Ignited",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "talisman-rabid-talisman",
+        "sourceId": "pob:talisman.lua:Rabid Talisman",
+        "name": "Rabid Talisman",
+        "englishName": "Rabid Talisman",
+        "requiredLevel": 34,
+        "requirements": "40 Str · 29 Int",
+        "physical": "31–58",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-runeforged-changeling-talisman",
+        "sourceId": "pob:talisman.lua:Runeforged Changeling Talisman",
+        "name": "Runeforged Changeling Talisman",
+        "englishName": "Runeforged Changeling Talisman",
+        "requiredLevel": 38,
+        "requirements": "45 Str · 32 Int",
+        "physical": "91–151",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "runeforged",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-runeforged-familial-talisman",
+        "sourceId": "pob:talisman.lua:Runeforged Familial Talisman",
+        "name": "Runeforged Familial Talisman",
+        "englishName": "Runeforged Familial Talisman",
+        "requiredLevel": 38,
+        "requirements": "45 Str · 32 Int",
+        "physical": "54–91",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Minions deal (30-50)% increased Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "runeforged",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-runeforged-nettle-talisman",
+        "sourceId": "pob:talisman.lua:Runeforged Nettle Talisman",
+        "name": "Runeforged Nettle Talisman",
+        "englishName": "Runeforged Nettle Talisman",
+        "requiredLevel": 38,
+        "requirements": "45 Str · 32 Int",
+        "physical": "51–86",
+        "crit": "11 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "runeforged",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "charm-amethyst-charm",
+        "sourceId": "pob:flask.lua:Amethyst Charm",
+        "name": "Amethyst-Phiole",
+        "englishName": "Amethyst Charm",
+        "requiredLevel": 40,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you take Chaos damage from a Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "charm-cleansing-charm",
+        "sourceId": "pob:flask.lua:Cleansing Charm",
+        "name": "Cleansing Charm",
+        "englishName": "Cleansing Charm",
+        "requiredLevel": 40,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you become Cursed",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "talisman-vicious-talisman",
+        "sourceId": "pob:talisman.lua:Vicious Talisman",
+        "name": "Vicious Talisman",
+        "englishName": "Vicious Talisman",
+        "requiredLevel": 40,
+        "requirements": "47 Str · 34 Int",
+        "physical": "43–71",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-voltfang-talisman",
+        "sourceId": "pob:talisman.lua:Voltfang Talisman",
+        "name": "Voltfang Talisman",
+        "englishName": "Voltfang Talisman",
+        "requiredLevel": 46,
+        "requirements": "53 Str · 38 Int",
+        "physical": "16–91",
+        "crit": "8 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(20-30)% increased Magnitude of Shock you inflict",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "charm-golden-charm",
+        "sourceId": "pob:flask.lua:Golden Charm",
+        "name": "Goldene Phiole",
+        "englishName": "Golden Charm",
+        "requiredLevel": 50,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Used when you kill a Rare or Unique enemy",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "flask",
+          "utility_flask"
+        ],
+        "pobType": "Charm",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "talisman-lumbering-talisman",
+        "sourceId": "pob:talisman.lua:Lumbering Talisman",
+        "name": "Lumbering Talisman",
+        "englishName": "Lumbering Talisman",
+        "requiredLevel": 52,
+        "requirements": "60 Str · 43 Int",
+        "physical": "71–107",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-howling-talisman",
+        "sourceId": "pob:talisman.lua:Howling Talisman",
+        "name": "Howling Talisman",
+        "englishName": "Howling Talisman",
+        "requiredLevel": 55,
+        "requirements": "63 Str · 45 Int",
+        "physical": "52–78",
+        "crit": "9 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(14-18)% to Block chance",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-roaring-talisman",
+        "sourceId": "pob:talisman.lua:Roaring Talisman",
+        "name": "Roaring Talisman",
+        "englishName": "Roaring Talisman",
+        "requiredLevel": 58,
+        "requirements": "66 Str · 47 Int",
+        "physical": "57–96",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-fury-talisman",
+        "sourceId": "pob:talisman.lua:Fury Talisman",
+        "name": "Fury Talisman",
+        "englishName": "Fury Talisman",
+        "requiredLevel": 59,
+        "requirements": "67 Str · 48 Int",
+        "physical": "49–91",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-cruel-talisman",
+        "sourceId": "pob:talisman.lua:Cruel Talisman",
+        "name": "Cruel Talisman",
+        "englishName": "Cruel Talisman",
+        "requiredLevel": 63,
+        "requirements": "72 Str · 51 Int",
+        "physical": "62–103",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-condemned-talisman",
+        "sourceId": "pob:talisman.lua:Condemned Talisman",
+        "name": "Condemned Talisman",
+        "englishName": "Condemned Talisman",
+        "requiredLevel": 65,
+        "requirements": "74 Str · 52 Int",
+        "physical": "68–113",
+        "crit": "9 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(10-20)% increased Effect of your Mark Skills",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-runeforged-vicious-talisman",
+        "sourceId": "pob:talisman.lua:Runeforged Vicious Talisman",
+        "name": "Runeforged Vicious Talisman",
+        "englishName": "Runeforged Vicious Talisman",
+        "requiredLevel": 65,
+        "requirements": "74 Str · 52 Int",
+        "physical": "123–205",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "runeforged",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-wingbeat-talisman",
+        "sourceId": "pob:talisman.lua:Wingbeat Talisman",
+        "name": "Wingbeat Talisman",
+        "englishName": "Wingbeat Talisman",
+        "requiredLevel": 65,
+        "requirements": "74 Str · 52 Int",
+        "physical": "45–83",
+        "crit": "7 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-spiny-talisman",
+        "sourceId": "pob:talisman.lua:Spiny Talisman",
+        "name": "Spiny Talisman",
+        "englishName": "Spiny Talisman",
+        "requiredLevel": 67,
+        "requirements": "86 Str · 65 Int",
+        "physical": "60–99",
+        "crit": "11 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-wildwood-talisman",
+        "sourceId": "pob:talisman.lua:Wildwood Talisman",
+        "name": "Wildwood Talisman",
+        "englishName": "Wildwood Talisman",
+        "requiredLevel": 70,
+        "requirements": "98 Str · 72 Int",
+        "physical": "67–112",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-ashbark-talisman",
+        "sourceId": "pob:talisman.lua:Ashbark Talisman",
+        "name": "Ashbark Talisman",
+        "englishName": "Ashbark Talisman",
+        "requiredLevel": 72,
+        "requirements": "94 Str · 67 Int",
+        "physical": "50–105",
+        "crit": "8 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(50-80)% increased Flammability Magnitude",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-alpha-talisman",
+        "sourceId": "pob:talisman.lua:Alpha Talisman",
+        "name": "Alpha Talisman",
+        "englishName": "Alpha Talisman",
+        "requiredLevel": 75,
+        "requirements": "98 Str · 72 Int",
+        "physical": "63–94",
+        "crit": "9 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(14-18)% to Block chance",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-fang-talisman",
+        "sourceId": "pob:talisman.lua:Fang Talisman",
+        "name": "Fang Talisman",
+        "englishName": "Fang Talisman",
+        "requiredLevel": 77,
+        "requirements": "89 Str · 68 Int",
+        "physical": "70–116",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Minions deal (30-50)% increased Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-thunder-talisman",
+        "sourceId": "pob:talisman.lua:Thunder Talisman",
+        "name": "Thunder Talisman",
+        "englishName": "Thunder Talisman",
+        "requiredLevel": 77,
+        "requirements": "102 Str · 72 Int",
+        "physical": "23–130",
+        "crit": "8 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(20-30)% increased Magnitude of Shock you inflict",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-fungal-talisman",
+        "sourceId": "pob:talisman.lua:Fungal Talisman",
+        "name": "Fungal Talisman",
+        "englishName": "Fungal Talisman",
+        "requiredLevel": 78,
+        "requirements": "96 Str · 70 Int",
+        "physical": "59–98",
+        "crit": "8 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-jade-talisman",
+        "sourceId": "pob:talisman.lua:Jade Talisman",
+        "name": "Jade Talisman",
+        "englishName": "Jade Talisman",
+        "requiredLevel": 78,
+        "requirements": "109 Str · 65 Int",
+        "physical": "101–151",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      },
+      {
+        "id": "talisman-maji-talisman",
+        "sourceId": "pob:talisman.lua:Maji Talisman",
+        "name": "Maji Talisman",
+        "englishName": "Maji Talisman",
+        "requiredLevel": 79,
+        "requirements": "100 Str · 67 Int",
+        "physical": "61–114",
+        "crit": "8 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(7-10) to Maximum Rage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "talisman",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Talisman",
+        "sourceFile": "talisman.lua"
+      }
+    ],
+    "Fläschchen": [
+      {
+        "id": "flask-lesser-life-flask",
+        "sourceId": "pob:flask.lua:Lesser Life Flask",
+        "name": "Geringeres Lebensfläschchen",
+        "englishName": "Lesser Life Flask",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-lesser-mana-flask",
+        "sourceId": "pob:flask.lua:Lesser Mana Flask",
+        "name": "Geringeres Manafläschchen",
+        "englishName": "Lesser Mana Flask",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-medium-life-flask",
+        "sourceId": "pob:flask.lua:Medium Life Flask",
+        "name": "Mittleres Lebensfläschchen",
+        "englishName": "Medium Life Flask",
+        "requiredLevel": 4,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-medium-mana-flask",
+        "sourceId": "pob:flask.lua:Medium Mana Flask",
+        "name": "Mittleres Manafläschchen",
+        "englishName": "Medium Mana Flask",
+        "requiredLevel": 4,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-greater-life-flask",
+        "sourceId": "pob:flask.lua:Greater Life Flask",
+        "name": "Größeres Lebensfläschchen",
+        "englishName": "Greater Life Flask",
+        "requiredLevel": 10,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-greater-mana-flask",
+        "sourceId": "pob:flask.lua:Greater Mana Flask",
+        "name": "Größeres Manafläschchen",
+        "englishName": "Greater Mana Flask",
+        "requiredLevel": 10,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-grand-life-flask",
+        "sourceId": "pob:flask.lua:Grand Life Flask",
+        "name": "Enormes Lebensfläschchen",
+        "englishName": "Grand Life Flask",
+        "requiredLevel": 16,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-grand-mana-flask",
+        "sourceId": "pob:flask.lua:Grand Mana Flask",
+        "name": "Enormes Manafläschchen",
+        "englishName": "Grand Mana Flask",
+        "requiredLevel": 16,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-giant-life-flask",
+        "sourceId": "pob:flask.lua:Giant Life Flask",
+        "name": "Riesiges Lebensfläschchen",
+        "englishName": "Giant Life Flask",
+        "requiredLevel": 23,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-giant-mana-flask",
+        "sourceId": "pob:flask.lua:Giant Mana Flask",
+        "name": "Riesiges Manafläschchen",
+        "englishName": "Giant Mana Flask",
+        "requiredLevel": 23,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-colossal-life-flask",
+        "sourceId": "pob:flask.lua:Colossal Life Flask",
+        "name": "Kolossales Lebensfläschchen",
+        "englishName": "Colossal Life Flask",
+        "requiredLevel": 30,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-colossal-mana-flask",
+        "sourceId": "pob:flask.lua:Colossal Mana Flask",
+        "name": "Kolossales Manafläschchen",
+        "englishName": "Colossal Mana Flask",
+        "requiredLevel": 30,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-gargantuan-life-flask",
+        "sourceId": "pob:flask.lua:Gargantuan Life Flask",
+        "name": "Gigantisches Lebensfläschchen",
+        "englishName": "Gargantuan Life Flask",
+        "requiredLevel": 40,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-gargantuan-mana-flask",
+        "sourceId": "pob:flask.lua:Gargantuan Mana Flask",
+        "name": "Gigantisches Manafläschchen",
+        "englishName": "Gargantuan Mana Flask",
+        "requiredLevel": 40,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-transcendent-life-flask",
+        "sourceId": "pob:flask.lua:Transcendent Life Flask",
+        "name": "Transzendentes Lebensfläschchen",
+        "englishName": "Transcendent Life Flask",
+        "requiredLevel": 50,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-transcendent-mana-flask",
+        "sourceId": "pob:flask.lua:Transcendent Mana Flask",
+        "name": "Transzendentes Manafläschchen",
+        "englishName": "Transcendent Mana Flask",
+        "requiredLevel": 50,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-ultimate-life-flask",
+        "sourceId": "pob:flask.lua:Ultimate Life Flask",
+        "name": "Ultimatives Lebensfläschchen",
+        "englishName": "Ultimate Life Flask",
+        "requiredLevel": 60,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "life_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
+      },
+      {
+        "id": "flask-ultimate-mana-flask",
+        "sourceId": "pob:flask.lua:Ultimate Mana Flask",
+        "name": "Ultimatives Manafläschchen",
+        "englishName": "Ultimate Mana Flask",
+        "requiredLevel": 60,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "flask",
+          "mana_flask"
+        ],
+        "pobType": "Flask",
+        "sourceFile": "flask.lua"
       }
     ],
     "Fokus": [
@@ -23463,6 +25557,2254 @@ window.EXILEFORGE_DATA = {
         "sourceFile": "helmet.lua"
       }
     ],
+    "Transzendentes Glied": [
+      {
+        "id": "transcendent-limb-calm-leg",
+        "sourceId": "pob:incursionlimb.lua:Calm Leg",
+        "name": "Calm Leg",
+        "englishName": "Calm Leg",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(20-30)% increased Mana Regeneration Rate while moving",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-caster-arm",
+        "sourceId": "pob:incursionlimb.lua:Caster Arm",
+        "name": "Caster Arm",
+        "englishName": "Caster Arm",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(6-10)% increased Cast Speed",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-combat-arm",
+        "sourceId": "pob:incursionlimb.lua:Combat Arm",
+        "name": "Combat Arm",
+        "englishName": "Combat Arm",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(6-10)% increased Attack Speed",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-commanding-arm",
+        "sourceId": "pob:incursionlimb.lua:Commanding Arm",
+        "name": "Commanding Arm",
+        "englishName": "Commanding Arm",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(15-25)% increased Presence Area of Effect",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-decrepifying-arm",
+        "sourceId": "pob:incursionlimb.lua:Decrepifying Arm",
+        "name": "Decrepifying Arm",
+        "englishName": "Decrepifying Arm",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(12-16)% increased Curse Magnitudes",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-deflective-arm",
+        "sourceId": "pob:incursionlimb.lua:Deflective Arm",
+        "name": "Deflective Arm",
+        "englishName": "Deflective Arm",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(6-10)% increased Deflection Rating",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-evasive-leg",
+        "sourceId": "pob:incursionlimb.lua:Evasive Leg",
+        "name": "Evasive Leg",
+        "englishName": "Evasive Leg",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(20-30)% increased Evasion Rating",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-guarding-arm",
+        "sourceId": "pob:incursionlimb.lua:Guarding Arm",
+        "name": "Guarding Arm",
+        "englishName": "Guarding Arm",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(8-12)% increased Block chance",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-restorative-leg",
+        "sourceId": "pob:incursionlimb.lua:Restorative Leg",
+        "name": "Restorative Leg",
+        "englishName": "Restorative Leg",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(6-10)% of Damage taken Recouped as Life",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-sprinters-leg",
+        "sourceId": "pob:incursionlimb.lua:Sprinters Leg",
+        "name": "Sprinters Leg",
+        "englishName": "Sprinters Leg",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(6-10)% increased Movement Speed while Sprinting",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-sturdy-leg",
+        "sourceId": "pob:incursionlimb.lua:Sturdy Leg",
+        "name": "Sturdy Leg",
+        "englishName": "Sturdy Leg",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(15-25)% increased Stun Threshold",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      },
+      {
+        "id": "transcendent-limb-surefooted-leg",
+        "sourceId": "pob:incursionlimb.lua:Surefooted Leg",
+        "name": "Surefooted Leg",
+        "englishName": "Surefooted Leg",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(5-10)% reduced Movement Speed Penalty from using Skills while moving",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default"
+        ],
+        "pobType": "Transcendent Limb",
+        "sourceFile": "incursionlimb.lua"
+      }
+    ],
+    "Juwel": [
+      {
+        "id": "jewel-diamond",
+        "sourceId": "pob:jewel.lua:Diamond",
+        "name": "Diamant",
+        "englishName": "Diamond",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "dexjewel",
+          "intjewel",
+          "jewel",
+          "not_for_sale",
+          "strjewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      },
+      {
+        "id": "jewel-ruby",
+        "sourceId": "pob:jewel.lua:Ruby",
+        "name": "Rubin",
+        "englishName": "Ruby",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "jewel",
+          "strjewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      },
+      {
+        "id": "jewel-sapphire",
+        "sourceId": "pob:jewel.lua:Sapphire",
+        "name": "Saphir",
+        "englishName": "Sapphire",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "intjewel",
+          "jewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      },
+      {
+        "id": "jewel-emerald",
+        "sourceId": "pob:jewel.lua:Emerald",
+        "name": "Smaragd",
+        "englishName": "Emerald",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "dexjewel",
+          "jewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      },
+      {
+        "id": "jewel-time-lost-diamond",
+        "sourceId": "pob:jewel.lua:Time-Lost Diamond",
+        "name": "Zeitverlorener Diamant",
+        "englishName": "Time-Lost Diamond",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "dex_radius_jewel",
+          "int_radius_jewel",
+          "jewel",
+          "not_for_sale",
+          "radius_jewel",
+          "str_radius_jewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      },
+      {
+        "id": "jewel-time-lost-ruby",
+        "sourceId": "pob:jewel.lua:Time-Lost Ruby",
+        "name": "Zeitverlorener Rubin",
+        "englishName": "Time-Lost Ruby",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "jewel",
+          "not_for_sale",
+          "radius_jewel",
+          "str_radius_jewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      },
+      {
+        "id": "jewel-time-lost-sapphire",
+        "sourceId": "pob:jewel.lua:Time-Lost Sapphire",
+        "name": "Zeitverlorener Saphir",
+        "englishName": "Time-Lost Sapphire",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "int_radius_jewel",
+          "jewel",
+          "not_for_sale",
+          "radius_jewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      },
+      {
+        "id": "jewel-time-lost-emerald",
+        "sourceId": "pob:jewel.lua:Time-Lost Emerald",
+        "name": "Zeitverlorener Smaragd",
+        "englishName": "Time-Lost Emerald",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "dex_radius_jewel",
+          "jewel",
+          "not_for_sale",
+          "radius_jewel"
+        ],
+        "pobType": "Jewel",
+        "sourceFile": "jewel.lua"
+      }
+    ],
+    "Streitkolben": [
+      {
+        "id": "two-hand-mace-oak-greathammer",
+        "sourceId": "pob:mace.lua:Oak Greathammer",
+        "name": "Eichen-Großhammer",
+        "englishName": "Oak Greathammer",
+        "requiredLevel": 0,
+        "requirements": "11 Str",
+        "physical": "16–30",
+        "crit": "5 %",
+        "aps": "1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes (20-40)% increased Stun Buildup",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-felled-greatclub",
+        "sourceId": "pob:mace.lua:Felled Greatclub",
+        "name": "Gefällte Großkeule",
+        "englishName": "Felled Greatclub",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "13–18",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-wooden-club",
+        "sourceId": "pob:mace.lua:Wooden Club",
+        "name": "Holzkeule",
+        "englishName": "Wooden Club",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "6–10",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-smithing-hammer",
+        "sourceId": "pob:mace.lua:Smithing Hammer",
+        "name": "Schmiedehammer",
+        "englishName": "Smithing Hammer",
+        "requiredLevel": 0,
+        "requirements": "11 Str",
+        "physical": "5–9",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-slim-mace",
+        "sourceId": "pob:mace.lua:Slim Mace",
+        "name": "Schlanke Keule",
+        "englishName": "Slim Mace",
+        "requiredLevel": 10,
+        "requirements": "21 Str",
+        "physical": "11–17",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-forge-maul",
+        "sourceId": "pob:mace.lua:Forge Maul",
+        "name": "Ambosshammer",
+        "englishName": "Forge Maul",
+        "requiredLevel": 11,
+        "requirements": "23 Str",
+        "physical": "26–35",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-studded-greatclub",
+        "sourceId": "pob:mace.lua:Studded Greatclub",
+        "name": "Beschlagene Großkeule",
+        "englishName": "Studded Greatclub",
+        "requiredLevel": 16,
+        "requirements": "31 Str",
+        "physical": "32–48",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-spiked-club",
+        "sourceId": "pob:mace.lua:Spiked Club",
+        "name": "Stachelkeule",
+        "englishName": "Spiked Club",
+        "requiredLevel": 16,
+        "requirements": "31 Str",
+        "physical": "15–24",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-cultist-greathammer",
+        "sourceId": "pob:mace.lua:Cultist Greathammer",
+        "name": "Kultisten-Großhammer",
+        "englishName": "Cultist Greathammer",
+        "requiredLevel": 22,
+        "requirements": "41 Str",
+        "physical": "36–49",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-warpick",
+        "sourceId": "pob:mace.lua:Warpick",
+        "name": "Reiterhammer",
+        "englishName": "Warpick",
+        "requiredLevel": 22,
+        "requirements": "41 Str",
+        "physical": "18–24",
+        "crit": "7 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(5-10)% to Critical Damage Bonus",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-plated-mace",
+        "sourceId": "pob:mace.lua:Plated Mace",
+        "name": "Plattierte Keule",
+        "englishName": "Plated Mace",
+        "requiredLevel": 26,
+        "requirements": "48 Str",
+        "physical": "18–38",
+        "crit": "5 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-temple-maul",
+        "sourceId": "pob:mace.lua:Temple Maul",
+        "name": "Tempelhammer",
+        "englishName": "Temple Maul",
+        "requiredLevel": 28,
+        "requirements": "52 Str",
+        "physical": "35–72",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-leaden-greathammer",
+        "sourceId": "pob:mace.lua:Leaden Greathammer",
+        "name": "Bleierner Großhammer",
+        "englishName": "Leaden Greathammer",
+        "requiredLevel": 33,
+        "requirements": "60 Str",
+        "physical": "58–78",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-brigand-mace",
+        "sourceId": "pob:mace.lua:Brigand Mace",
+        "name": "Brigadenkeule",
+        "englishName": "Brigand Mace",
+        "requiredLevel": 33,
+        "requirements": "60 Str",
+        "physical": "28–38",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-construct-hammer",
+        "sourceId": "pob:mace.lua:Construct Hammer",
+        "name": "Konstruktionshammer",
+        "englishName": "Construct Hammer",
+        "requiredLevel": 36,
+        "requirements": "65 Str",
+        "physical": "31–38",
+        "crit": "5 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "40% chance to Daze on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-felled-greatclub",
+        "sourceId": "pob:mace.lua:Runeforged Felled Greatclub",
+        "name": "Runeforged Felled Greatclub",
+        "englishName": "Runeforged Felled Greatclub",
+        "requiredLevel": 38,
+        "requirements": "68 Str",
+        "physical": "146–197",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-oak-greathammer",
+        "sourceId": "pob:mace.lua:Runeforged Oak Greathammer",
+        "name": "Runeforged Oak Greathammer",
+        "englishName": "Runeforged Oak Greathammer",
+        "requiredLevel": 38,
+        "requirements": "68 Str",
+        "physical": "73–135",
+        "crit": "5 %",
+        "aps": "1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes (20-40)% increased Stun Buildup",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-slim-mace",
+        "sourceId": "pob:mace.lua:Runeforged Slim Mace",
+        "name": "Runeforged Slim Mace",
+        "englishName": "Runeforged Slim Mace",
+        "requiredLevel": 38,
+        "requirements": "68 Str",
+        "physical": "48–72",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-studded-greatclub",
+        "sourceId": "pob:mace.lua:Runeforged Studded Greatclub",
+        "name": "Runeforged Studded Greatclub",
+        "englishName": "Runeforged Studded Greatclub",
+        "requiredLevel": 38,
+        "requirements": "68 Str",
+        "physical": "23–62",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-warpick",
+        "sourceId": "pob:mace.lua:Runeforged Warpick",
+        "name": "Runeforged Warpick",
+        "englishName": "Runeforged Warpick",
+        "requiredLevel": 38,
+        "requirements": "68 Str",
+        "physical": "75–102",
+        "crit": "7 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(30-40)% increased effect of Fully Broken Armour",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-wooden-club",
+        "sourceId": "pob:mace.lua:Runeforged Wooden Club",
+        "name": "Runeforged Wooden Club",
+        "englishName": "Runeforged Wooden Club",
+        "requiredLevel": 38,
+        "requirements": "68 Str",
+        "physical": "83–138",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(20-30)% increased Area of Effect for Attacks",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-crumbling-maul",
+        "sourceId": "pob:mace.lua:Crumbling Maul",
+        "name": "Zerbröckelnder Hammer",
+        "englishName": "Crumbling Maul",
+        "requiredLevel": 38,
+        "requirements": "68 Str",
+        "physical": "62–75",
+        "crit": "8 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-cultist-greathammer",
+        "sourceId": "pob:mace.lua:Runeforged Cultist Greathammer",
+        "name": "Runeforged Cultist Greathammer",
+        "englishName": "Runeforged Cultist Greathammer",
+        "requiredLevel": 40,
+        "requirements": "72 Str",
+        "physical": "144–194",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          },
+          {
+            "name": "(20-30)% increased Bleeding Duration",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-forge-maul",
+        "sourceId": "pob:mace.lua:Runeforged Forge Maul",
+        "name": "Runeforged Forge Maul",
+        "englishName": "Runeforged Forge Maul",
+        "requiredLevel": 40,
+        "requirements": "72 Str",
+        "physical": "147–199",
+        "crit": "10 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "mace",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-spiked-club",
+        "sourceId": "pob:mace.lua:Runeforged Spiked Club",
+        "name": "Runeforged Spiked Club",
+        "englishName": "Runeforged Spiked Club",
+        "requiredLevel": 40,
+        "requirements": "72 Str",
+        "physical": "56–93",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-calescent-hammer",
+        "sourceId": "pob:mace.lua:Calescent Hammer",
+        "name": "Calescent Hammer",
+        "englishName": "Calescent Hammer",
+        "requiredLevel": 45,
+        "requirements": "80 Str",
+        "physical": "22–37",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-morning-star",
+        "sourceId": "pob:mace.lua:Morning Star",
+        "name": "Morgenstern",
+        "englishName": "Morning Star",
+        "requiredLevel": 45,
+        "requirements": "80 Str",
+        "physical": "33–49",
+        "crit": "6,5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-snakewood-greathammer",
+        "sourceId": "pob:mace.lua:Snakewood Greathammer",
+        "name": "Snakewood Greathammer",
+        "englishName": "Snakewood Greathammer",
+        "requiredLevel": 45,
+        "requirements": "80 Str",
+        "physical": "62–115",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes (20-40)% increased Stun Buildup",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-pointed-maul",
+        "sourceId": "pob:mace.lua:Pointed Maul",
+        "name": "Spitzhammer",
+        "englishName": "Pointed Maul",
+        "requiredLevel": 45,
+        "requirements": "80 Str",
+        "physical": "68–102",
+        "crit": "6,5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-kalguuran-forgehammer",
+        "sourceId": "pob:mace.lua:Kalguuran Forgehammer",
+        "name": "Kalguuran Forgehammer",
+        "englishName": "Kalguuran Forgehammer",
+        "requiredLevel": 47,
+        "requirements": "",
+        "physical": "33–55",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Has 3 Sockets",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-blacksmith-maul",
+        "sourceId": "pob:mace.lua:Blacksmith Maul",
+        "name": "Blacksmith Maul",
+        "englishName": "Blacksmith Maul",
+        "requiredLevel": 48,
+        "requirements": "86 Str",
+        "physical": "75–102",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-flared-mace",
+        "sourceId": "pob:mace.lua:Flared Mace",
+        "name": "Flared Mace",
+        "englishName": "Flared Mace",
+        "requiredLevel": 48,
+        "requirements": "86 Str",
+        "physical": "33–50",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-jade-club",
+        "sourceId": "pob:mace.lua:Jade Club",
+        "name": "Jadekeule",
+        "englishName": "Jade Club",
+        "requiredLevel": 49,
+        "requirements": "87 Str",
+        "physical": "31–51",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Always Hits",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-totemic-greatclub",
+        "sourceId": "pob:mace.lua:Totemic Greatclub",
+        "name": "Totemgroßkeule",
+        "englishName": "Totemic Greatclub",
+        "requiredLevel": 50,
+        "requirements": "89 Str",
+        "physical": "77–105",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Warcries Empower an additional Attack",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-battle-pick",
+        "sourceId": "pob:mace.lua:Battle Pick",
+        "name": "Battle Pick",
+        "englishName": "Battle Pick",
+        "requiredLevel": 51,
+        "requirements": "91 Str",
+        "physical": "35–47",
+        "crit": "7 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(5-10)% to Critical Damage Bonus",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-zealot-greathammer",
+        "sourceId": "pob:mace.lua:Zealot Greathammer",
+        "name": "Zealot Greathammer",
+        "englishName": "Zealot Greathammer",
+        "requiredLevel": 51,
+        "requirements": "91 Str",
+        "physical": "70–95",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-greatmace",
+        "sourceId": "pob:mace.lua:Greatmace",
+        "name": "Große Keule",
+        "englishName": "Greatmace",
+        "requiredLevel": 52,
+        "requirements": "92 Str",
+        "physical": "74–124",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-lumen-mace",
+        "sourceId": "pob:mace.lua:Lumen Mace",
+        "name": "Leuchtende Keule",
+        "englishName": "Lumen Mace",
+        "requiredLevel": 52,
+        "requirements": "92 Str",
+        "physical": "36–60",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-marching-mace",
+        "sourceId": "pob:mace.lua:Marching Mace",
+        "name": "Marching Mace",
+        "englishName": "Marching Mace",
+        "requiredLevel": 54,
+        "requirements": "96 Str",
+        "physical": "33–69",
+        "crit": "5 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-precise-greathammer",
+        "sourceId": "pob:mace.lua:Precise Greathammer",
+        "name": "Präziser Großhammer",
+        "englishName": "Precise Greathammer",
+        "requiredLevel": 54,
+        "requirements": "96 Str",
+        "physical": "87–118",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-solemn-maul",
+        "sourceId": "pob:mace.lua:Solemn Maul",
+        "name": "Solemn Maul",
+        "englishName": "Solemn Maul",
+        "requiredLevel": 54,
+        "requirements": "96 Str",
+        "physical": "59–123",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-execratus-hammer",
+        "sourceId": "pob:mace.lua:Execratus Hammer",
+        "name": "Execratus-Hammer",
+        "englishName": "Execratus Hammer",
+        "requiredLevel": 55,
+        "requirements": "97 Str",
+        "physical": "40–60",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-crumbling-maul",
+        "sourceId": "pob:mace.lua:Runeforged Crumbling Maul",
+        "name": "Runeforged Crumbling Maul",
+        "englishName": "Runeforged Crumbling Maul",
+        "requiredLevel": 55,
+        "requirements": "97 Str",
+        "physical": "105–128",
+        "crit": "8 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-leaden-greathammer",
+        "sourceId": "pob:mace.lua:Runeforged Leaden Greathammer",
+        "name": "Runeforged Leaden Greathammer",
+        "englishName": "Runeforged Leaden Greathammer",
+        "requiredLevel": 55,
+        "requirements": "60 Str · 50 Int",
+        "physical": "132–179",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-temple-maul",
+        "sourceId": "pob:mace.lua:Runeforged Temple Maul",
+        "name": "Runeforged Temple Maul",
+        "englishName": "Runeforged Temple Maul",
+        "requiredLevel": 55,
+        "requirements": "76 Str · 40 Ges",
+        "physical": "64–134",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "maraketh_basetype",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-bandit-mace",
+        "sourceId": "pob:mace.lua:Bandit Mace",
+        "name": "Bandit Mace",
+        "englishName": "Bandit Mace",
+        "requiredLevel": 59,
+        "requirements": "104 Str",
+        "physical": "45–61",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-heavy-greathammer",
+        "sourceId": "pob:mace.lua:Heavy Greathammer",
+        "name": "Heavy Greathammer",
+        "englishName": "Heavy Greathammer",
+        "requiredLevel": 59,
+        "requirements": "104 Str",
+        "physical": "94–127",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-disintegrating-maul",
+        "sourceId": "pob:mace.lua:Disintegrating Maul",
+        "name": "Disintegrating Maul",
+        "englishName": "Disintegrating Maul",
+        "requiredLevel": 62,
+        "requirements": "109 Str",
+        "physical": "92–112",
+        "crit": "8 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-structured-hammer",
+        "sourceId": "pob:mace.lua:Structured Hammer",
+        "name": "Structured Hammer",
+        "englishName": "Structured Hammer",
+        "requiredLevel": 62,
+        "requirements": "109 Str",
+        "physical": "49–60",
+        "crit": "5 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "40% chance to Daze on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-torment-club",
+        "sourceId": "pob:mace.lua:Torment Club",
+        "name": "Folterkeule",
+        "englishName": "Torment Club",
+        "requiredLevel": 65,
+        "requirements": "114 Str",
+        "physical": "44–73",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-giant-maul",
+        "sourceId": "pob:mace.lua:Giant Maul",
+        "name": "Riesenhammer",
+        "englishName": "Giant Maul",
+        "requiredLevel": 65,
+        "requirements": "114 Str",
+        "physical": "96–144",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-kalguuran-forgehammer",
+        "sourceId": "pob:mace.lua:Runeforged Kalguuran Forgehammer",
+        "name": "Runeforged Kalguuran Forgehammer",
+        "englishName": "Runeforged Kalguuran Forgehammer",
+        "requiredLevel": 65,
+        "requirements": "",
+        "physical": "59–99",
+        "crit": "5 %",
+        "aps": "1,75",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Has 3 Sockets",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-kalguuran-forgehammer",
+        "sourceId": "pob:mace.lua:Runeforged Kalguuran Forgehammer",
+        "name": "Runeforged Kalguuran Forgehammer",
+        "englishName": "Runeforged Kalguuran Forgehammer",
+        "requiredLevel": 65,
+        "requirements": "",
+        "physical": "98–163",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Has 3 Sockets",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-kalguuran-forgehammer",
+        "sourceId": "pob:mace.lua:Runeforged Kalguuran Forgehammer",
+        "name": "Runeforged Kalguuran Forgehammer",
+        "englishName": "Runeforged Kalguuran Forgehammer",
+        "requiredLevel": 65,
+        "requirements": "",
+        "physical": "59–99",
+        "crit": "10 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Has 3 Sockets",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-kalguuran-forgehammer",
+        "sourceId": "pob:mace.lua:Runeforged Kalguuran Forgehammer",
+        "name": "Runeforged Kalguuran Forgehammer",
+        "englishName": "Runeforged Kalguuran Forgehammer",
+        "requiredLevel": 65,
+        "requirements": "",
+        "physical": "59–99",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Has 3 Sockets",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          },
+          {
+            "name": "+(100-150) to maximum Runic Ward",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "runeforged",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-runeforged-morning-star",
+        "sourceId": "pob:mace.lua:Runeforged Morning Star",
+        "name": "Runeforged Morning Star",
+        "englishName": "Runeforged Morning Star",
+        "requiredLevel": 65,
+        "requirements": "114 Str",
+        "physical": "–",
+        "crit": "6,5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-runeforged-pointed-maul",
+        "sourceId": "pob:mace.lua:Runeforged Pointed Maul",
+        "name": "Runeforged Pointed Maul",
+        "englishName": "Runeforged Pointed Maul",
+        "requiredLevel": 65,
+        "requirements": "114 Str",
+        "physical": "125–188",
+        "crit": "6,5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "runeforged",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-anvil-maul",
+        "sourceId": "pob:mace.lua:Anvil Maul",
+        "name": "Anvil Maul",
+        "englishName": "Anvil Maul",
+        "requiredLevel": 67,
+        "requirements": "134 Str",
+        "physical": "101–136",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Crushes Enemies on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-flanged-mace",
+        "sourceId": "pob:mace.lua:Flanged Mace",
+        "name": "Flanged Mace",
+        "englishName": "Flanged Mace",
+        "requiredLevel": 67,
+        "requirements": "134 Str",
+        "physical": "45–67",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-crown-mace",
+        "sourceId": "pob:mace.lua:Crown Mace",
+        "name": "Crown Mace",
+        "englishName": "Crown Mace",
+        "requiredLevel": 72,
+        "requirements": "149 Str",
+        "physical": "43–89",
+        "crit": "5 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-sacred-maul",
+        "sourceId": "pob:mace.lua:Sacred Maul",
+        "name": "Sacred Maul",
+        "englishName": "Sacred Maul",
+        "requiredLevel": 72,
+        "requirements": "149 Str",
+        "physical": "76–158",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-ironwood-greathammer",
+        "sourceId": "pob:mace.lua:Ironwood Greathammer",
+        "name": "Ironwood Greathammer",
+        "englishName": "Ironwood Greathammer",
+        "requiredLevel": 77,
+        "requirements": "163 Str",
+        "physical": "105–196",
+        "crit": "5 %",
+        "aps": "1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes (30-50)% increased Stun Buildup",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-marauding-mace",
+        "sourceId": "pob:mace.lua:Marauding Mace",
+        "name": "Marauding Mace",
+        "englishName": "Marauding Mace",
+        "requiredLevel": 77,
+        "requirements": "163 Str",
+        "physical": "51–84",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-massive-greathammer",
+        "sourceId": "pob:mace.lua:Massive Greathammer",
+        "name": "Massive Greathammer",
+        "englishName": "Massive Greathammer",
+        "requiredLevel": 77,
+        "requirements": "163 Str",
+        "physical": "119–161",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-molten-hammer",
+        "sourceId": "pob:mace.lua:Molten Hammer",
+        "name": "Molten Hammer",
+        "englishName": "Molten Hammer",
+        "requiredLevel": 77,
+        "requirements": "163 Str",
+        "physical": "35–59",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-akoyan-club",
+        "sourceId": "pob:mace.lua:Akoyan Club",
+        "name": "Akoyan Club",
+        "englishName": "Akoyan Club",
+        "requiredLevel": 78,
+        "requirements": "163 Str",
+        "physical": "46–76",
+        "crit": "5 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Always Hits",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-fanatic-greathammer",
+        "sourceId": "pob:mace.lua:Fanatic Greathammer",
+        "name": "Fanatic Greathammer",
+        "englishName": "Fanatic Greathammer",
+        "requiredLevel": 78,
+        "requirements": "163 Str",
+        "physical": "101–137",
+        "crit": "5 %",
+        "aps": "1,05",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Strikes deal Splash Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-strife-pick",
+        "sourceId": "pob:mace.lua:Strife Pick",
+        "name": "Strife Pick",
+        "englishName": "Strife Pick",
+        "requiredLevel": 78,
+        "requirements": "163 Str",
+        "physical": "49–66",
+        "crit": "7 %",
+        "aps": "1,45",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(5-10)% to Critical Damage Bonus",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-tawhoan-greatclub",
+        "sourceId": "pob:mace.lua:Tawhoan Greatclub",
+        "name": "Tawhoan Greatclub",
+        "englishName": "Tawhoan Greatclub",
+        "requiredLevel": 78,
+        "requirements": "163 Str",
+        "physical": "113–153",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Warcries Empower an additional Attack",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "karui_basetype",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "one-hand-mace-fortified-hammer",
+        "sourceId": "pob:mace.lua:Fortified Hammer",
+        "name": "Fortified Hammer",
+        "englishName": "Fortified Hammer",
+        "requiredLevel": 79,
+        "requirements": "163 Str",
+        "physical": "60–73",
+        "crit": "5 %",
+        "aps": "1,4",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "40% chance to Daze on Hit",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "one_hand_weapon",
+          "onehand",
+          "weapon"
+        ],
+        "pobType": "One Hand Mace",
+        "sourceFile": "mace.lua"
+      },
+      {
+        "id": "two-hand-mace-ruination-maul",
+        "sourceId": "pob:mace.lua:Ruination Maul",
+        "name": "Ruination Maul",
+        "englishName": "Ruination Maul",
+        "requiredLevel": 79,
+        "requirements": "163 Str",
+        "physical": "104–127",
+        "crit": "8 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "Causes Enemies to Explode on Critical kill, for 10% of their Life as Physical Damage",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "mace",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Mace",
+        "sourceFile": "mace.lua"
+      }
+    ],
     "Köcher": [
       {
         "id": "quiver-broadhead-quiver",
@@ -31676,6 +36018,984 @@ window.EXILEFORGE_DATA = {
         ],
         "pobType": "Staff",
         "sourceFile": "staff.lua"
+      }
+    ],
+    "Schwert": [
+      {
+        "id": "one-hand-sword-energy-blade-one-handed",
+        "sourceId": "pob:sword.lua:Energy Blade One Handed",
+        "name": "Energy Blade One Handed",
+        "englishName": "Energy Blade One Handed",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "0",
+        "crit": "7 %",
+        "aps": "1,7",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "not_for_sale",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-energy-blade-two-handed",
+        "sourceId": "pob:sword.lua:Energy Blade Two Handed",
+        "name": "Energy Blade Two Handed",
+        "englishName": "Energy Blade Two Handed",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "0",
+        "crit": "7 %",
+        "aps": "1,6",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "not_for_sale",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-golden-blade",
+        "sourceId": "pob:sword.lua:Golden Blade",
+        "name": "Goldene Klinge",
+        "englishName": "Golden Blade",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "3–28",
+        "crit": "5 %",
+        "aps": "1,1",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "+(16-24) to all Attributes",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "demigods",
+          "not_for_sale",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-golden-blade",
+        "sourceId": "pob:sword.lua:Golden Blade",
+        "name": "Goldene Klinge",
+        "englishName": "Golden Blade",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "6–9",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-corroded-longsword",
+        "sourceId": "pob:sword.lua:Corroded Longsword",
+        "name": "Korrodiertes Langschwert",
+        "englishName": "Corroded Longsword",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "9–16",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-shortsword",
+        "sourceId": "pob:sword.lua:Shortsword",
+        "name": "Kurzschwert",
+        "englishName": "Shortsword",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "6–9",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-keyblade",
+        "sourceId": "pob:sword.lua:Keyblade",
+        "name": "Schlüsselklinge",
+        "englishName": "Keyblade",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "1",
+        "crit": "5 %",
+        "aps": "1,2",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "not_for_sale",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-broadsword",
+        "sourceId": "pob:sword.lua:Broadsword",
+        "name": "Breitschwert",
+        "englishName": "Broadsword",
+        "requiredLevel": 6,
+        "requirements": "9 Str · 9 Ges",
+        "physical": "8–13",
+        "crit": "5 %",
+        "aps": "1,6",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-iron-greatsword",
+        "sourceId": "pob:sword.lua:Iron Greatsword",
+        "name": "Eisernes Großschwert",
+        "englishName": "Iron Greatsword",
+        "requiredLevel": 6,
+        "requirements": "9 Str · 9 Ges",
+        "physical": "13–23",
+        "crit": "5 %",
+        "aps": "1,35",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-blessed-claymore",
+        "sourceId": "pob:sword.lua:Blessed Claymore",
+        "name": "Gesegnetes Claymore",
+        "englishName": "Blessed Claymore",
+        "requiredLevel": 11,
+        "requirements": "14 Str · 14 Ges",
+        "physical": "19–32",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-vampiric-blade",
+        "sourceId": "pob:sword.lua:Vampiric Blade",
+        "name": "Vampirische Klinge",
+        "englishName": "Vampiric Blade",
+        "requiredLevel": 11,
+        "requirements": "14 Str · 14 Ges",
+        "physical": "11–20",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "ezomyte_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-broad-greatsword",
+        "sourceId": "pob:sword.lua:Broad Greatsword",
+        "name": "Breites Großschwert",
+        "englishName": "Broad Greatsword",
+        "requiredLevel": 16,
+        "requirements": "19 Str · 19 Ges",
+        "physical": "25–42",
+        "crit": "5 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-scimitar",
+        "sourceId": "pob:sword.lua:Scimitar",
+        "name": "Krummsäbel",
+        "englishName": "Scimitar",
+        "requiredLevel": 16,
+        "requirements": "19 Str · 19 Ges",
+        "physical": "14–23",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-charred-shortsword",
+        "sourceId": "pob:sword.lua:Charred Shortsword",
+        "name": "Verkohltes Kurzschwert",
+        "englishName": "Charred Shortsword",
+        "requiredLevel": 21,
+        "requirements": "23 Str · 23 Ges",
+        "physical": "19–34",
+        "crit": "5 %",
+        "aps": "1,6",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-rippled-greatsword",
+        "sourceId": "pob:sword.lua:Rippled Greatsword",
+        "name": "Geriffeltes Großschwert",
+        "englishName": "Rippled Greatsword",
+        "requiredLevel": 22,
+        "requirements": "24 Str · 24 Ges",
+        "physical": "28–52",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-arced-longsword",
+        "sourceId": "pob:sword.lua:Arced Longsword",
+        "name": "Gebogenes Langschwert",
+        "englishName": "Arced Longsword",
+        "requiredLevel": 28,
+        "requirements": "29 Str · 29 Ges",
+        "physical": "31–58",
+        "crit": "5 %",
+        "aps": "1,35",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-sickle-sword",
+        "sourceId": "pob:sword.lua:Sickle Sword",
+        "name": "Sichelschwert",
+        "englishName": "Sickle Sword",
+        "requiredLevel": 28,
+        "requirements": "29 Str · 29 Ges",
+        "physical": "18–38",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "maraketh_basetype",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-falchion",
+        "sourceId": "pob:sword.lua:Falchion",
+        "name": "Falchion",
+        "englishName": "Falchion",
+        "requiredLevel": 33,
+        "requirements": "34 Str · 34 Ges",
+        "physical": "27–37",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-stone-greatsword",
+        "sourceId": "pob:sword.lua:Stone Greatsword",
+        "name": "Steinernes Großschwert",
+        "englishName": "Stone Greatsword",
+        "requiredLevel": 33,
+        "requirements": "34 Str · 34 Ges",
+        "physical": "40–67",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-obsidian-greatsword",
+        "sourceId": "pob:sword.lua:Obsidian Greatsword",
+        "name": "Obsidian-Großschwert",
+        "englishName": "Obsidian Greatsword",
+        "requiredLevel": 36,
+        "requirements": "37 Str · 37 Ges",
+        "physical": "49–73",
+        "crit": "5 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-treasured-blade",
+        "sourceId": "pob:sword.lua:Treasured Blade",
+        "name": "Geschätzte Klinge",
+        "englishName": "Treasured Blade",
+        "requiredLevel": 40,
+        "requirements": "40 Str · 40 Ges",
+        "physical": "27–45",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "vaal_basetype",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-cutlass",
+        "sourceId": "pob:sword.lua:Cutlass",
+        "name": "Entermesser",
+        "englishName": "Cutlass",
+        "requiredLevel": 45,
+        "requirements": "45 Str · 45 Ges",
+        "physical": "33–49",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-keen-greatsword",
+        "sourceId": "pob:sword.lua:Keen Greatsword",
+        "name": "Scharfkantiges Großschwert",
+        "englishName": "Keen Greatsword",
+        "requiredLevel": 45,
+        "requirements": "45 Str · 45 Ges",
+        "physical": "45–94",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-ancient-greatblade",
+        "sourceId": "pob:sword.lua:Ancient Greatblade",
+        "name": "Antike Großklinge",
+        "englishName": "Ancient Greatblade",
+        "requiredLevel": 49,
+        "requirements": "49 Str · 49 Ges",
+        "physical": "55–103",
+        "crit": "5 %",
+        "aps": "1,25",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-runic-shortsword",
+        "sourceId": "pob:sword.lua:Runic Shortsword",
+        "name": "Runenbesetztes Kurzschwert",
+        "englishName": "Runic Shortsword",
+        "requiredLevel": 50,
+        "requirements": "49 Str · 49 Ges",
+        "physical": "26–55",
+        "crit": "5 %",
+        "aps": "1,65",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-flanged-greatblade",
+        "sourceId": "pob:sword.lua:Flanged Greatblade",
+        "name": "Geflanschte Großklinge",
+        "englishName": "Flanged Greatblade",
+        "requiredLevel": 52,
+        "requirements": "51 Str · 51 Ges",
+        "physical": "51–106",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-messer",
+        "sourceId": "pob:sword.lua:Messer",
+        "name": "Messer",
+        "englishName": "Messer",
+        "requiredLevel": 52,
+        "requirements": "51 Str · 51 Ges",
+        "physical": "30–56",
+        "crit": "5 %",
+        "aps": "1,6",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-commander-sword",
+        "sourceId": "pob:sword.lua:Commander Sword",
+        "name": "Kommandantenschwert",
+        "englishName": "Commander Sword",
+        "requiredLevel": 54,
+        "requirements": "53 Str · 53 Ges",
+        "physical": "36–60",
+        "crit": "5 %",
+        "aps": "1,5",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-regalia-longsword",
+        "sourceId": "pob:sword.lua:Regalia Longsword",
+        "name": "Regalia-Langschwert",
+        "englishName": "Regalia Longsword",
+        "requiredLevel": 54,
+        "requirements": "53 Str · 53 Ges",
+        "physical": "61–92",
+        "crit": "5 %",
+        "aps": "1,35",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "one-hand-sword-dark-blade",
+        "sourceId": "pob:sword.lua:Dark Blade",
+        "name": "Dunkle Klinge",
+        "englishName": "Dark Blade",
+        "requiredLevel": 65,
+        "requirements": "63 Str · 63 Ges",
+        "physical": "43–65",
+        "crit": "5 %",
+        "aps": "1,55",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "one_hand_weapon",
+          "onehand",
+          "sword",
+          "weapon"
+        ],
+        "pobType": "One Hand Sword",
+        "sourceFile": "sword.lua"
+      },
+      {
+        "id": "two-hand-sword-ultra-greatsword",
+        "sourceId": "pob:sword.lua:Ultra Greatsword",
+        "name": "Ultra-Großschwert",
+        "englishName": "Ultra Greatsword",
+        "requiredLevel": 65,
+        "requirements": "63 Str · 63 Ges",
+        "physical": "72–119",
+        "crit": "5 %",
+        "aps": "1,3",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "sword",
+          "two_hand_weapon",
+          "twohand",
+          "weapon"
+        ],
+        "pobType": "Two Hand Sword",
+        "sourceFile": "sword.lua"
+      }
+    ],
+    "Fallenwerkzeug": [
+      {
+        "id": "traptool-lead-trap",
+        "sourceId": "pob:traptool.lua:Lead Trap",
+        "name": "Bleifalle",
+        "englishName": "Lead Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-clamping-trap",
+        "sourceId": "pob:traptool.lua:Clamping Trap",
+        "name": "Klemmfalle",
+        "englishName": "Clamping Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-bladed-trap",
+        "sourceId": "pob:traptool.lua:Bladed Trap",
+        "name": "Klingenfalle",
+        "englishName": "Bladed Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-intricate-trap",
+        "sourceId": "pob:traptool.lua:Intricate Trap",
+        "name": "Komplizierte Falle",
+        "englishName": "Intricate Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-clay-trap",
+        "sourceId": "pob:traptool.lua:Clay Trap",
+        "name": "Lehmfalle",
+        "englishName": "Clay Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-medallion-trap",
+        "sourceId": "pob:traptool.lua:Medallion Trap",
+        "name": "Medaillon-Falle",
+        "englishName": "Medallion Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-dart-trap",
+        "sourceId": "pob:traptool.lua:Dart Trap",
+        "name": "Pfeilfalle",
+        "englishName": "Dart Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-refined-trap",
+        "sourceId": "pob:traptool.lua:Refined Trap",
+        "name": "Raffinierte Falle",
+        "englishName": "Refined Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-shrapnel-trap",
+        "sourceId": "pob:traptool.lua:Shrapnel Trap",
+        "name": "Schrapnellfalle",
+        "englishName": "Shrapnel Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-coiled-trap",
+        "sourceId": "pob:traptool.lua:Coiled Trap",
+        "name": "Spiralfalle",
+        "englishName": "Coiled Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-spike-trap",
+        "sourceId": "pob:traptool.lua:Spike Trap",
+        "name": "Stachelfalle",
+        "englishName": "Spike Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-urn-trap",
+        "sourceId": "pob:traptool.lua:Urn Trap",
+        "name": "Urnenfalle",
+        "englishName": "Urn Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
+      },
+      {
+        "id": "traptool-incense-trap",
+        "sourceId": "pob:traptool.lua:Incense Trap",
+        "name": "Weihrauch-Falle",
+        "englishName": "Incense Trap",
+        "requiredLevel": 0,
+        "requirements": "",
+        "physical": "–",
+        "crit": "–",
+        "aps": "–",
+        "defences": "",
+        "implicits": [
+          {
+            "name": "(20-30)% increased Cooldown Recovery Rate for throwing Traps",
+            "kind": "Basis-Implizit (PoB-Originaltext)"
+          }
+        ],
+        "tags": [
+          "default",
+          "trap",
+          "twohand"
+        ],
+        "pobType": "TrapTool",
+        "sourceFile": "traptool.lua"
       }
     ],
     "Zauberstab": [
@@ -92127,12 +97447,12 @@ window.EXILEFORGE_DATA = {
         "warstaff"
       ],
       "Fallenwerkzeug": [
-        "fallenwerkzeug",
-        "trap tool"
+        "Fallenwerkzeug",
+        "fallenwerkzeug"
       ],
       "Angelrute": [
-        "angelrute",
-        "fishing rod"
+        "Angelrute",
+        "angelrute"
       ],
       "Zauberstab": [
         "Zauberstab",
@@ -92155,16 +97475,16 @@ window.EXILEFORGE_DATA = {
         "bogen"
       ],
       "Streitkolben": [
-        "streitkolben",
-        "mace"
+        "Streitkolben",
+        "streitkolben"
       ],
       "Schwert": [
-        "schwert",
-        "sword"
+        "Schwert",
+        "schwert"
       ],
       "Axt": [
-        "axt",
-        "axe"
+        "Axt",
+        "axt"
       ],
       "Dolch": [
         "Dolch",
@@ -92217,16 +97537,37 @@ window.EXILEFORGE_DATA = {
       "Gürtel": [
         "Gürtel",
         "gurtel"
+      ],
+      "Transzendentes Glied": [
+        "Transzendentes Glied",
+        "transzendentes glied"
+      ],
+      "Fläschchen": [
+        "Fläschchen",
+        "flaschchen"
+      ],
+      "Juwel": [
+        "Juwel",
+        "juwel"
+      ],
+      "Talisman": [
+        "Talisman",
+        "talisman"
       ]
     },
     "categoryByClass": {
+      "Angelrute": "weapon",
       "Armbrust": "weapon",
+      "Axt": "weapon",
       "Bogen": "weapon",
       "Dolch": "weapon",
+      "Fallenwerkzeug": "weapon",
       "Flegel": "weapon",
       "Klaue": "weapon",
+      "Schwert": "weapon",
       "Speer": "weapon",
       "Stab": "weapon",
+      "Streitkolben": "weapon",
       "Zauberstab": "weapon",
       "Zepter": "weapon",
       "Fokus": "armour",
@@ -92236,9 +97577,13 @@ window.EXILEFORGE_DATA = {
       "Körperrüstung": "armour",
       "Schild": "armour",
       "Stiefel": "armour",
+      "Transzendentes Glied": "armour",
       "Amulett": "jewellery",
+      "Fläschchen": "jewellery",
       "Gürtel": "jewellery",
-      "Ring": "jewellery"
+      "Juwel": "jewellery",
+      "Ring": "jewellery",
+      "Talisman": "jewellery"
     }
   },
   "baseSource": {
