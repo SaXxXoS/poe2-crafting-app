@@ -3,6 +3,8 @@
 /**
  * ExileForge app data builder
  *
+ * Erstellt eine kompakte App-Datenbank nur für craftbare Ausrüstung.
+ *
  * Input:
  *   generated/app-v2/bases.json
  *   generated/app-v2/mods.json
@@ -15,7 +17,7 @@
  *   generated/app-data/index.json
  *   generated/app-data/bases.json
  *   generated/app-data/mods.json
- *   generated/app-data/pools.json
+ *   generated/app-data/pools/<item-class>.json
  */
 
 import fs from "node:fs";
@@ -25,6 +27,7 @@ import crypto from "node:crypto";
 const root = process.cwd();
 const inputRoot = path.join(root, "generated", "app-v2");
 const outputRoot = path.join(root, "generated", "app-data");
+const poolsRoot = path.join(outputRoot, "pools");
 
 const INPUTS = {
   bases: path.join(inputRoot, "bases.json"),
@@ -35,10 +38,15 @@ const INPUTS = {
 };
 
 const EQUIPMENT_CLASS_HINTS = [
-  "armour", "body", "boots", "bow", "buckler", "claw", "crossbow",
-  "dagger", "focus", "gloves", "helmet", "jewel", "mace", "martial",
-  "quiver", "ring", "amulet", "belt", "sceptre", "shield", "spear",
+  "amulet", "armour", "belt", "body", "boots", "bow", "buckler",
+  "claw", "crossbow", "dagger", "focus", "gloves", "helmet", "jewel",
+  "mace", "martial", "quiver", "ring", "sceptre", "shield", "spear",
   "staff", "sword", "wand", "weapon"
+];
+
+const EXCLUDED_DOMAIN_HINTS = [
+  "area", "expedition", "flask", "gem", "heist", "map", "monster",
+  "npc", "sanctum", "vendor"
 ];
 
 function ensureDir(dir) {
@@ -104,14 +112,19 @@ function extractIds(value) {
   return [];
 }
 
+function slugify(value) {
+  return String(value || "unknown")
+    .normalize("NFKD")
+    .replace(/[^\w.-]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .toLowerCase() || "unknown";
+}
+
 function normalizeGenerationType(value) {
   const type = String(value ?? "").toLowerCase();
 
   if (type.includes("prefix")) return "prefix";
   if (type.includes("suffix")) return "suffix";
-  if (type.includes("implicit")) return "implicit";
-  if (type.includes("corrupt")) return "corrupted";
-  if (type.includes("enchant")) return "enchantment";
 
   return type || "unknown";
 }
@@ -184,8 +197,11 @@ function looksLikeEquipment(base) {
   const tags = asArray(base.tags).join(" ").toLowerCase();
   const id = String(base.id ?? "").toLowerCase();
 
-  if (id.includes("/currency/") || id.includes("/gems/")) return false;
-  if (itemClass.includes("currency") || itemClass.includes("gem")) return false;
+  if (EXCLUDED_DOMAIN_HINTS.some(hint =>
+    itemClass.includes(hint) || id.includes(`/${hint}/`)
+  )) {
+    return false;
+  }
 
   return EQUIPMENT_CLASS_HINTS.some(hint =>
     itemClass.includes(hint) || tags.includes(hint)
@@ -210,9 +226,6 @@ function displayClassName(itemClassId, itemClasses) {
 
 function normalizeBase(base, itemClasses) {
   const raw = base.raw && typeof base.raw === "object" ? base.raw : {};
-  const properties = base.properties && typeof base.properties === "object"
-    ? base.properties
-    : {};
 
   return {
     id: String(base.id),
@@ -223,13 +236,10 @@ function normalizeBase(base, itemClasses) {
     dropLevel: Number(base.dropLevel ?? 0) || 0,
     tags: uniqueStrings(asArray(base.tags)),
     requirements: base.requirements ?? {},
-    properties,
+    properties: base.properties ?? {},
     implicits: asArray(base.implicits),
     width: Number(base.width ?? raw.inventory_width ?? 0) || 0,
-    height: Number(base.height ?? raw.inventory_height ?? 0) || 0,
-    releaseState: raw.release_state ?? null,
-    inheritsFrom: raw.inherits_from ?? null,
-    visualIdentity: raw.visual_identity ?? null
+    height: Number(base.height ?? raw.inventory_height ?? 0) || 0
   };
 }
 
@@ -251,6 +261,21 @@ function normalizeMod(mod) {
   };
 }
 
+function isEquipmentMod(mod) {
+  if (mod.generationType !== "prefix" && mod.generationType !== "suffix") {
+    return false;
+  }
+
+  const searchable = [
+    mod.domain,
+    mod.type,
+    mod.id,
+    ...mod.tags
+  ].filter(Boolean).join(" ").toLowerCase();
+
+  return !EXCLUDED_DOMAIN_HINTS.some(hint => searchable.includes(hint));
+}
+
 function normalizeSourcePool(pool) {
   const raw = pool.raw && typeof pool.raw === "object" ? pool.raw : {};
   const prefixIds = extractIds(pool.prefixes ?? raw.prefixes ?? raw.prefix_mods);
@@ -267,7 +292,6 @@ function normalizeSourcePool(pool) {
 
 function spawnWeightForBase(mod, base) {
   const rows = asArray(mod.spawnWeights);
-
   if (rows.length === 0) return 0;
 
   const tags = new Set([
@@ -303,41 +327,50 @@ function findDirectPool(base, sourcePoolsByKey) {
   };
 }
 
+function compactPoolRows(ids, base, modsById) {
+  return uniqueStrings(ids)
+    .map(id => {
+      const mod = modsById.get(id);
+      if (!mod) return null;
+
+      const weight = spawnWeightForBase(mod, base);
+
+      // Kompaktes Format:
+      // [Mod-ID, benötigtes Itemlevel, Spawn-Gewicht]
+      return [mod.id, mod.requiredLevel, weight];
+    })
+    .filter(Boolean);
+}
+
 function buildPoolForBase(base, mods, sourcePoolsByKey) {
   const direct = findDirectPool(base, sourcePoolsByKey);
 
-  const candidates = direct?.allIds?.length
-    ? direct.allIds
-        .map(id => mods.byId.get(id))
-        .filter(Boolean)
-    : mods.list.filter(mod => spawnWeightForBase(mod, base) > 0);
+  let candidates;
 
-  const available = candidates
-    .filter(mod => mod.requiredLevel <= 100)
-    .map(mod => ({
-      id: mod.id,
-      level: mod.requiredLevel,
-      group: mod.group,
-      weight: spawnWeightForBase(mod, base)
-    }));
+  if (direct?.allIds?.length) {
+    candidates = direct.allIds
+      .map(id => mods.byId.get(id))
+      .filter(Boolean);
+  } else {
+    candidates = mods.list.filter(mod => spawnWeightForBase(mod, base) > 0);
+  }
 
-  const prefixes = available.filter(row =>
-    mods.byId.get(row.id)?.generationType === "prefix"
-  );
+  const prefixes = candidates
+    .filter(mod => mod.generationType === "prefix")
+    .map(mod => mod.id);
 
-  const suffixes = available.filter(row =>
-    mods.byId.get(row.id)?.generationType === "suffix"
-  );
+  const suffixes = candidates
+    .filter(mod => mod.generationType === "suffix")
+    .map(mod => mod.id);
 
   return {
-    baseId: base.id,
-    prefixes,
-    suffixes,
+    p: compactPoolRows(prefixes, base, mods.byId),
+    s: compactPoolRows(suffixes, base, mods.byId),
     source: direct?.allIds?.length ? "mods-by-base" : "spawn-weights"
   };
 }
 
-function buildClassIndex(bases) {
+function buildClassIndex(bases, poolFiles) {
   const groups = new Map();
 
   for (const base of bases) {
@@ -347,6 +380,7 @@ function buildClassIndex(bases) {
       groups.set(key, {
         id: key,
         name: base.itemClassName || key,
+        poolFile: poolFiles[key],
         baseIds: []
       });
     }
@@ -389,7 +423,8 @@ function buildSearchIndex(bases, mods) {
 }
 
 function main() {
-  ensureDir(outputRoot);
+  fs.rmSync(outputRoot, { recursive: true, force: true });
+  ensureDir(poolsRoot);
 
   const baseDocument = readJson(INPUTS.bases);
   const modDocument = readJson(INPUTS.mods);
@@ -408,22 +443,16 @@ function main() {
       || a.name.localeCompare(b.name, "en")
     );
 
-  const mods = asArray(modDocument.mods)
+  const candidateMods = asArray(modDocument.mods)
     .map(normalizeMod)
-    .filter(mod => mod.generationType === "prefix" || mod.generationType === "suffix")
-    .sort((a, b) =>
-      a.generationType.localeCompare(b.generationType)
-      || a.group.localeCompare(b.group)
-      || a.requiredLevel - b.requiredLevel
-      || a.id.localeCompare(b.id)
-    );
+    .filter(isEquipmentMod);
 
-  const modsById = new Map(mods.map(mod => [mod.id, mod]));
-
+  const candidateModsById = new Map(candidateMods.map(mod => [mod.id, mod]));
   const sourcePools = asArray(poolDocument.pools).map(normalizeSourcePool);
   const sourcePoolsByKey = new Map(sourcePools.map(pool => [pool.key, pool]));
 
-  const pools = {};
+  const poolsByClass = new Map();
+  const referencedModIds = new Set();
   let directPoolCount = 0;
   let fallbackPoolCount = 0;
   let prefixReferenceCount = 0;
@@ -432,55 +461,109 @@ function main() {
   for (const base of bases) {
     const pool = buildPoolForBase(
       base,
-      { list: mods, byId: modsById },
+      { list: candidateMods, byId: candidateModsById },
       sourcePoolsByKey
     );
 
-    pools[base.id] = pool;
+    if (!poolsByClass.has(base.itemClass)) {
+      poolsByClass.set(base.itemClass, {});
+    }
+
+    poolsByClass.get(base.itemClass)[base.id] = {
+      p: pool.p,
+      s: pool.s
+    };
+
+    for (const [id] of pool.p) referencedModIds.add(id);
+    for (const [id] of pool.s) referencedModIds.add(id);
 
     if (pool.source === "mods-by-base") directPoolCount += 1;
     else fallbackPoolCount += 1;
 
-    prefixReferenceCount += pool.prefixes.length;
-    suffixReferenceCount += pool.suffixes.length;
+    prefixReferenceCount += pool.p.length;
+    suffixReferenceCount += pool.s.length;
   }
 
-  const classes = buildClassIndex(bases);
-  const search = buildSearchIndex(bases, mods);
+  const mods = candidateMods
+    .filter(mod => referencedModIds.has(mod.id))
+    .sort((a, b) =>
+      a.generationType.localeCompare(b.generationType)
+      || a.group.localeCompare(b.group)
+      || a.requiredLevel - b.requiredLevel
+      || a.id.localeCompare(b.id)
+    );
+
   const generatedAt = new Date().toISOString();
+  const poolFiles = {};
+  const poolFileMetadata = {};
+
+  for (const [itemClass, pools] of poolsByClass.entries()) {
+    const filename = `${slugify(itemClass)}.json`;
+    const relativeFile = `pools/${filename}`;
+    const filePath = path.join(outputRoot, relativeFile);
+
+    writeJson(filePath, {
+      schemaVersion: 2,
+      generatedAt,
+      itemClass,
+      compactRowFormat: ["modId", "requiredLevel", "spawnWeight"],
+      count: Object.keys(pools).length,
+      pools
+    });
+
+    const bytes = fs.statSync(filePath).size;
+
+    if (bytes >= 100 * 1024 * 1024) {
+      throw new Error(
+        `${relativeFile} ist mit ${(bytes / 1024 / 1024).toFixed(2)} MB noch zu groß.`
+      );
+    }
+
+    poolFiles[itemClass] = relativeFile;
+    poolFileMetadata[relativeFile] = {
+      bytes,
+      sha256: sha256File(filePath)
+    };
+  }
+
+  const classes = buildClassIndex(bases, poolFiles);
+  const search = buildSearchIndex(bases, mods);
 
   writeJson(path.join(outputRoot, "bases.json"), {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedAt,
     count: bases.length,
     bases
   });
 
   writeJson(path.join(outputRoot, "mods.json"), {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedAt,
     count: mods.length,
     mods
   });
 
-  writeJson(path.join(outputRoot, "pools.json"), {
-    schemaVersion: 1,
-    generatedAt,
-    count: Object.keys(pools).length,
-    pools
-  });
-
   writeJson(path.join(outputRoot, "index.json"), {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedAt,
     classes,
+    poolFiles,
     search
   });
 
   const manifest = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     generatedAt,
     status: "app-data-ready",
+    filters: {
+      equipmentOnly: true,
+      excludedDomains: EXCLUDED_DOMAIN_HINTS,
+      keepsSpawnWeights: true,
+      keepsPrefixSuffix: true,
+      keepsRequiredLevel: true,
+      keepsModGroups: true,
+      poolsSplitByItemClass: true
+    },
     localization: {
       englishBaseNames: true,
       germanBaseNames: false,
@@ -490,24 +573,31 @@ function main() {
     counts: {
       inputBases: allBases.length,
       equipmentBases: bases.length,
-      affixMods: mods.length,
+      candidateEquipmentMods: candidateMods.length,
+      referencedEquipmentMods: mods.length,
       itemClasses: classes.length,
-      pools: Object.keys(pools).length,
+      poolFiles: Object.keys(poolFiles).length,
       directPools: directPoolCount,
       fallbackPools: fallbackPoolCount,
       prefixReferences: prefixReferenceCount,
       suffixReferences: suffixReferenceCount
     },
-    files: {}
+    files: {
+      "bases.json": {
+        bytes: fs.statSync(path.join(outputRoot, "bases.json")).size,
+        sha256: sha256File(path.join(outputRoot, "bases.json"))
+      },
+      "mods.json": {
+        bytes: fs.statSync(path.join(outputRoot, "mods.json")).size,
+        sha256: sha256File(path.join(outputRoot, "mods.json"))
+      },
+      "index.json": {
+        bytes: fs.statSync(path.join(outputRoot, "index.json")).size,
+        sha256: sha256File(path.join(outputRoot, "index.json"))
+      },
+      ...poolFileMetadata
+    }
   };
-
-  for (const filename of ["bases.json", "mods.json", "pools.json", "index.json"]) {
-    const filePath = path.join(outputRoot, filename);
-    manifest.files[filename] = {
-      bytes: fs.statSync(filePath).size,
-      sha256: sha256File(filePath)
-    };
-  }
 
   writeJson(path.join(outputRoot, "manifest.json"), manifest);
 
@@ -516,14 +606,15 @@ function main() {
   }
 
   if (mods.length === 0) {
-    throw new Error("Keine Prefix- oder Suffix-Modifikatoren erkannt.");
+    throw new Error("Keine verwendeten Ausrüstungs-Modifikatoren erkannt.");
   }
 
   console.log("");
   console.log("ExileForge-App-Datenbank erfolgreich erstellt.");
   console.log(`Ausrüstungsbasen: ${bases.length}`);
-  console.log(`Affix-Mods: ${mods.length}`);
+  console.log(`Verwendete Affix-Mods: ${mods.length}`);
   console.log(`Gegenstandsklassen: ${classes.length}`);
+  console.log(`Pool-Dateien: ${Object.keys(poolFiles).length}`);
   console.log(`Direkte Mod-Pools: ${directPoolCount}`);
   console.log(`Fallback-Mod-Pools: ${fallbackPoolCount}`);
 }
