@@ -1,5 +1,5 @@
 window.EXILEFORGE_DATA = {
-  "generatedAt": "2026-07-17T09:56:40.661Z",
+  "generatedAt": "2026-07-17T10:20:33.021Z",
   "classOptions": {
     "weapon": [
       "Angelrute",
@@ -34523,7 +34523,7 @@ window.EXILEFORGE_DATA = {
       {
         "id": "spear-ironhead-spear",
         "sourceId": "pob:spear.lua:Ironhead Spear",
-        "name": "Eisenkopf-Speer\t",
+        "name": "Eisenkopf-Speer",
         "englishName": "Ironhead Spear",
         "requiredLevel": 5,
         "requirements": "10 Ges",
@@ -35001,7 +35001,7 @@ window.EXILEFORGE_DATA = {
       {
         "id": "spear-seaglass-spear",
         "sourceId": "pob:spear.lua:Seaglass Spear",
-        "name": "Seeglasspeer\t",
+        "name": "Seeglasspeer",
         "englishName": "Seaglass Spear",
         "requiredLevel": 51,
         "requirements": "29 Str · 71 Ges · 50 Int",
@@ -35520,7 +35520,7 @@ window.EXILEFORGE_DATA = {
       {
         "id": "spear-flying-spear",
         "sourceId": "pob:spear.lua:Flying Spear",
-        "name": "Flying Spear",
+        "name": "Fliegender Speer",
         "englishName": "Flying Spear",
         "requiredLevel": 78,
         "requirements": "50 Str · 127 Ges",
