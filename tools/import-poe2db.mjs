@@ -11,10 +11,24 @@ const offline = process.argv.includes("--offline");
 const repoeBasePath = path.join(root, "generated", "repoe", "raw", "base_items.min.json");
 const repoeModPath = path.join(root, "generated", "repoe", "raw", "mods.min.json");
 
-const SOURCES = {
-  english: "https://poe2db.tw/us/Spears",
-  german: "https://poe2db.tw/de/Spears"
-};
+const CLASS_CONFIGS = [
+  {
+    key: "spears",
+    itemClass: "Spear",
+    tag: "spear",
+    page: "Spears",
+    headings: ["Spears Item", "Speere Gegenstand"],
+    baseCssClass: "Spear"
+  },
+  {
+    key: "bows",
+    itemClass: "Bow",
+    tag: "bow",
+    page: "Bows",
+    headings: ["Bows Item", "Bögen Gegenstand"],
+    baseCssClass: "Bow"
+  }
+];
 
 function ensureDir(directory) {
   fs.mkdirSync(directory, { recursive: true });
@@ -52,8 +66,8 @@ function decodeHtml(value) {
     .trim();
 }
 
-async function download(language, url) {
-  const filePath = path.join(rawRoot, `${language}-spears.html`);
+async function download(config, language, url) {
+  const filePath = path.join(rawRoot, `${language}-${config.key}.html`);
 
   if (offline) {
     if (!fs.existsSync(filePath)) {
@@ -118,8 +132,11 @@ function parseModsView(html) {
   return JSON.parse(json);
 }
 
-function baseSection(html) {
-  const heading = html.match(/(?:Spears Item|Speere Gegenstand)\s*\/\s*36/i);
+function baseSection(html, config) {
+  const alternatives = config.headings
+    .map(value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+    .join("|");
+  const heading = html.match(new RegExp(`(?:${alternatives})\\s*\\/\\s*\\d+`, "i"));
   const start = heading?.index ?? -1;
   const end = html.indexOf("new ModsView(", start);
   if (start < 0 || end < 0) throw new Error("Speer-Basisabschnitt fehlt.");
@@ -141,15 +158,16 @@ function parseRequirement(text) {
   return result;
 }
 
-function parseBasePage(html) {
-  const chunks = baseSection(html).split('<div class="col">').slice(1);
+function parseBasePage(html, config) {
+  const chunks = baseSection(html, config).split('<div class="col">').slice(1);
   const bases = [];
 
   for (const chunk of chunks) {
-    if (!chunk.includes("BaseItemTypes") || !chunk.includes('class="whiteitem Spear"')) continue;
+    if (!chunk.includes("BaseItemTypes") || !chunk.includes(`class="whiteitem ${config.baseCssClass}"`)) continue;
 
     const metadataMatch = chunk.match(/data-hover="\?s=Data%5CBaseItemTypes%2F([^"]+)"/i);
-    const links = [...chunk.matchAll(/<a class="whiteitem Spear"[^>]*>([\s\S]*?)<\/a>/gi)]
+    const linkPattern = new RegExp(`<a class="whiteitem ${config.baseCssClass}"[^>]*>([\\s\\S]*?)<\\/a>`, "gi");
+    const links = [...chunk.matchAll(linkPattern)]
       .map(match => decodeHtml(match[1]))
       .filter(Boolean);
     if (!metadataMatch || links.length === 0) continue;
@@ -247,18 +265,18 @@ function modJoinKey(row, occurrences) {
   return `${base}|${occurrence}`;
 }
 
-function spearMods(document) {
+function classMods(document, classTag) {
   return (document.normal ?? []).filter(row =>
     ["1", "2"].includes(String(row.ModGenerationTypeID))
     && Array.isArray(row.spawn_no)
-    && row.spawn_no.includes("spear")
+    && row.spawn_no.includes(classTag)
     && Number(row.DropChance) > 0
   );
 }
 
-function localizeMods(englishDocument, germanDocument) {
-  const english = spearMods(englishDocument);
-  const german = spearMods(germanDocument);
+function localizeMods(englishDocument, germanDocument, classTag) {
+  const english = classMods(englishDocument, classTag);
+  const german = classMods(germanDocument, classTag);
   const germanOccurrences = new Map();
   const germanByKey = new Map(german.map(row => [modJoinKey(row, germanOccurrences), row]));
   const englishOccurrences = new Map();
@@ -298,14 +316,16 @@ function localizeMods(englishDocument, germanDocument) {
   }));
 }
 
-function attachWeightRules(mods, repoeMods) {
+function attachWeightRules(mods, repoeMods, classTag) {
   return mods.map(mod => {
     const candidates = Object.entries(repoeMods).filter(([, row]) =>
-      row.name === mod.nameEn
+      row.domain === "item"
+      && row.is_essence_only !== true
+      && row.name === mod.nameEn
       && Number(row.required_level) === mod.itemLevel
       && row.generation_type === mod.generationType
       && mod.family.every(family => (row.groups ?? []).includes(family))
-      && row.spawn_weights?.some(weight => weight.tag === "spear" && Number(weight.weight) > 0)
+      && row.spawn_weights?.some(weight => weight.tag === classTag && Number(weight.weight) > 0)
     );
 
     if (candidates.length !== 1) {
@@ -369,7 +389,7 @@ function poolSignature(pool, type) {
   return pool[type].map(row => row.modId).sort().join("|");
 }
 
-function buildQualityReport(bases, prefixes, suffixes, pools) {
+function buildQualityReport(config, bases, prefixes, suffixes, pools) {
   const regular = bases.filter(base => base.availability.regularUsable);
   const excluded = bases.filter(base => !base.availability.regularUsable);
   const prefixPools = new Set(pools.map(pool => poolSignature(pool, "prefixes")));
@@ -392,9 +412,9 @@ function buildQualityReport(bases, prefixes, suffixes, pools) {
     generatedAt: new Date().toISOString(),
     methodology: {
       baseMetadata: "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
-      modifierSelection: "PoE2DB embedded ModsView JSON.",
+      modifierSelection: `PoE2DB embedded ModsView JSON for ${config.itemClass}.`,
       weightEvaluation: "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
-      importantFinding: "PoE2DB embeds only the already selected Spear DropChance and tag names, not complete per-tag numeric weights."
+      importantFinding: `PoE2DB embeds only the already selected ${config.itemClass} DropChance and tag names, not complete per-tag numeric weights.`
     },
     counts: {
       importedBases: bases.length,
@@ -402,6 +422,18 @@ function buildQualityReport(bases, prefixes, suffixes, pools) {
       excludedBases: excluded.length,
       distinctPrefixPools: prefixPools.size,
       distinctSuffixPools: suffixPools.size
+    },
+    localization: {
+      missingGermanBaseNames: bases
+        .filter(base => !base.nameDe)
+        .map(base => ({ id: base.id, nameEn: base.nameEn })),
+      missingGermanImplicits: bases.flatMap(base => base.implicits
+        .filter(implicit => !implicit.textDe)
+        .map(implicit => ({ baseId: base.id, baseNameEn: base.nameEn, textEn: implicit.textEn }))),
+      missingGermanModifierTexts: allMods
+        .filter(mod => !mod.textDe)
+        .map(mod => ({ id: mod.id, nameEn: mod.nameEn, textEn: mod.textEn })),
+      ambiguousTranslations: []
     },
     excludedBases: excluded.map(base => ({
       id: base.id,
@@ -411,8 +443,8 @@ function buildQualityReport(bases, prefixes, suffixes, pools) {
     })),
     restrictedModExamples: restricted,
     restrictedModFinding: restricted.length
-      ? "At least one imported modifier is not available to every imported spear base."
-      : "No such examples exist: every imported normal Spear modifier matches the shared 'spear' tag before any zero-weight fallback. Extra ethnicity and runeforged tags do not occur in these modifiers' weight rules.",
+      ? `At least one imported modifier is not available to every imported ${config.itemClass} base.`
+      : `No such examples exist: every imported normal ${config.itemClass} modifier matches the shared '${config.tag}' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.`,
     bases: bases.map(base => ({
       id: base.id,
       nameEn: base.nameEn,
@@ -428,9 +460,9 @@ function buildQualityReport(bases, prefixes, suffixes, pools) {
 
 function validate(result) {
   const errors = [];
-  if (result.bases.length === 0) errors.push("Keine Speerbasen gefunden.");
-  if (result.prefixes.length === 0) errors.push("Keine Speerpräfixe gefunden.");
-  if (result.suffixes.length === 0) errors.push("Keine Speersuffixe gefunden.");
+  if (result.bases.length === 0) errors.push(`Keine Basen gefunden: ${result.scope}`);
+  if (result.prefixes.length === 0) errors.push(`Keine Präfixe gefunden: ${result.scope}`);
+  if (result.suffixes.length === 0) errors.push(`Keine Suffixe gefunden: ${result.scope}`);
   if (!result.bases.some(base => base.nameDe)) errors.push("Keine deutschen Basisnamen gefunden.");
   if (![...result.prefixes, ...result.suffixes].some(mod => mod.textDe)) errors.push("Keine deutschen Modtexte gefunden.");
   if (result.pools.length !== result.bases.length) errors.push("Nicht jede Basis besitzt einen berechneten Pool.");
@@ -446,51 +478,105 @@ function validate(result) {
 }
 
 async function main() {
-  const [englishHtml, germanHtml] = await Promise.all([
-    download("english", SOURCES.english),
-    download("german", SOURCES.german)
-  ]);
-
-  const englishMods = parseModsView(englishHtml);
-  const germanMods = parseModsView(germanHtml);
   const repoeBases = readJson(repoeBasePath);
   const repoeMods = readJson(repoeModPath);
-  const bases = localizedBases(parseBasePage(englishHtml), parseBasePage(germanHtml))
-    .map(base => {
+  const generatedAt = new Date().toISOString();
+  ensureDir(outputRoot);
+  const indexClasses = [];
+  const rawFiles = {};
+
+  for (const config of CLASS_CONFIGS) {
+    const pages = {
+      english: `https://poe2db.tw/us/${config.page}`,
+      german: `https://poe2db.tw/de/${config.page}`
+    };
+    const [englishHtml, germanHtml] = await Promise.all([
+      download(config, "english", pages.english),
+      download(config, "german", pages.german)
+    ]);
+    const englishMods = parseModsView(englishHtml);
+    const germanMods = parseModsView(germanHtml);
+    const bases = localizedBases(
+      parseBasePage(englishHtml, config),
+      parseBasePage(germanHtml, config)
+    ).map(base => {
       const raw = repoeBases[base.id];
       if (!raw) throw new Error(`Interne Basisdaten fehlen: ${base.id}`);
       return classifyBase(base, raw);
     });
-  const mods = attachWeightRules(localizeMods(englishMods, germanMods), repoeMods);
-  const prefixes = mods.filter(mod => mod.generationType === "prefix");
-  const suffixes = mods.filter(mod => mod.generationType === "suffix");
-  const pools = buildPools(bases, prefixes, suffixes);
-  const generatedAt = new Date().toISOString();
-
-  const result = {
-    schemaVersion: 1,
-    generatedAt,
-    scope: "Spears",
-    source: {
-      site: "PoE2DB",
-      pages: SOURCES,
-      strategy: {
-        bases: "HTML cards in #SpearsItem",
-        modifiers: "embedded JSON passed to new ModsView(...)"
+    const mods = attachWeightRules(
+      localizeMods(englishMods, germanMods, config.tag),
+      repoeMods,
+      config.tag
+    );
+    const prefixes = mods.filter(mod => mod.generationType === "prefix");
+    const suffixes = mods.filter(mod => mod.generationType === "suffix");
+    const pools = buildPools(bases, prefixes, suffixes);
+    const result = {
+      schemaVersion: 2,
+      generatedAt,
+      scope: config.itemClass,
+      source: {
+        site: "PoE2DB",
+        pages,
+        strategy: {
+          bases: `HTML cards on ${config.page}`,
+          modifiers: "embedded JSON passed to new ModsView(...)",
+          technicalWeightsAndIds: "RePoE raw data"
+        }
+      },
+      counts: { bases: bases.length, prefixes: prefixes.length, suffixes: suffixes.length },
+      bases,
+      prefixes,
+      suffixes,
+      pools
+    };
+    validate(result);
+    const qualityReport = buildQualityReport(config, bases, prefixes, suffixes, pools);
+    writeJson(path.join(outputRoot, `${config.key}.json`), result);
+    writeJson(path.join(outputRoot, `${config.key}-quality-report.json`), qualityReport);
+    indexClasses.push({
+      key: config.key,
+      itemClass: config.itemClass,
+      dataFile: `${config.key}.json`,
+      qualityReportFile: `${config.key}-quality-report.json`,
+      counts: result.counts,
+      poolCounts: {
+        prefixes: qualityReport.counts.distinctPrefixPools,
+        suffixes: qualityReport.counts.distinctSuffixPools
       }
-    },
-    counts: { bases: bases.length, prefixes: prefixes.length, suffixes: suffixes.length },
-    bases,
-    prefixes,
-    suffixes,
-    pools
-  };
+    });
+    rawFiles[`english-${config.key}.html`] = {
+      url: pages.english,
+      bytes: Buffer.byteLength(englishHtml),
+      sha256: sha256(englishHtml)
+    };
+    rawFiles[`german-${config.key}.html`] = {
+      url: pages.german,
+      bytes: Buffer.byteLength(germanHtml),
+      sha256: sha256(germanHtml)
+    };
+    console.log(`${config.itemClass}: Basen ${bases.length}, Präfixe ${prefixes.length}, Suffixe ${suffixes.length}`);
+  }
 
-  validate(result);
-  const qualityReport = buildQualityReport(bases, prefixes, suffixes, pools);
-  ensureDir(outputRoot);
-  writeJson(path.join(outputRoot, "spears.json"), result);
-  writeJson(path.join(outputRoot, "spears-quality-report.json"), qualityReport);
+  writeJson(path.join(outputRoot, "index.json"), {
+    schemaVersion: 2,
+    generatedAt,
+    classes: indexClasses
+  });
+  const manifest = {
+    schemaVersion: 2,
+    generatedAt,
+    status: "prototype-spear-and-bow",
+    supportedClassTarget: "All ExileForge equipment classes; currently validated for Spear and Bow.",
+    sources: {
+      primary: "PoE2DB English and German pages",
+      technicalSupplement: "RePoE only for IDs and complete ordered weight rules"
+    },
+    classes: indexClasses,
+    files: rawFiles
+  };
+  writeJson(path.join(outputRoot, "manifest.json"), manifest);
   writeJson(path.join(rawRoot, "manifest.json"), {
     schemaVersion: 1,
     generatedAt,
@@ -499,16 +585,9 @@ async function main() {
       embeddedStructuredDataFound: true,
       note: "Affix data is embedded as JSON; HTML is used only for base item cards."
     },
-    files: {
-      "english-spears.html": { url: SOURCES.english, bytes: Buffer.byteLength(englishHtml), sha256: sha256(englishHtml) },
-      "german-spears.html": { url: SOURCES.german, bytes: Buffer.byteLength(germanHtml), sha256: sha256(germanHtml) }
-    }
+    files: rawFiles
   });
-
-  console.log(`Speerbasen: ${bases.length}`);
-  console.log(`Präfixe: ${prefixes.length}`);
-  console.log(`Suffixe: ${suffixes.length}`);
-  console.log(`Ausgabe: ${path.relative(root, path.join(outputRoot, "spears.json"))}`);
+  console.log(`Index: ${path.relative(root, path.join(outputRoot, "index.json"))}`);
 }
 
 main().catch(error => {

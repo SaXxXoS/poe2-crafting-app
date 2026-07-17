@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-17T23:12:32.923Z",
+  "status": "prototype-spear-and-bow",
+  "supportedClassTarget": "All ExileForge equipment classes; currently validated for Spear and Bow.",
+  "sources": {
+    "primary": "PoE2DB English and German pages",
+    "technicalSupplement": "RePoE only for IDs and complete ordered weight rules"
+  },
+  "classes": [
+    {
+      "key": "spears",
+      "itemClass": "Spear",
+      "dataFile": "spears.json",
+      "qualityReportFile": "spears-quality-report.json",
+      "counts": {
+        "bases": 36,
+        "prefixes": 30,
+        "suffixes": 24
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "bows",
+      "itemClass": "Bow",
+      "dataFile": "bows.json",
+      "qualityReportFile": "bows-quality-report.json",
+      "counts": {
+        "bases": 35,
+        "prefixes": 45,
+        "suffixes": 16
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    }
+  ],
+  "files": {
+    "english-spears.html": {
+      "url": "https://poe2db.tw/us/Spears",
+      "bytes": 684804,
+      "sha256": "ce4f0436bbb2a789a239ffe6b71d0d1e6c5837006005cdd5725936bd47dec785"
+    },
+    "german-spears.html": {
+      "url": "https://poe2db.tw/de/Spears",
+      "bytes": 658544,
+      "sha256": "1d9563c0f746dbce93db3cb14bfe9f5ab5c2aee29f988a425360507a4a7dbdb8"
+    },
+    "english-bows.html": {
+      "url": "https://poe2db.tw/us/Bows",
+      "bytes": 695982,
+      "sha256": "3ba8a32e7139831533bc40f70ecf57a3b6c9c38675684a75a00776eee5490d88"
+    },
+    "german-bows.html": {
+      "url": "https://poe2db.tw/de/Bows",
+      "bytes": 647574,
+      "sha256": "c71f5d9a9dbd7bc47363b6fa12e85b98ed253752e497c191b980591c3d1bed21"
+    }
+  }
+}

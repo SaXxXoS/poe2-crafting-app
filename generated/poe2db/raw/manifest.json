@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T22:55:13.715Z",
+  "generatedAt": "2026-07-17T23:12:32.923Z",
   "discovery": {
     "separateJsonOrXhrFound": false,
     "embeddedStructuredDataFound": true,
@@ -10,12 +10,22 @@
     "english-spears.html": {
       "url": "https://poe2db.tw/us/Spears",
       "bytes": 684804,
-      "sha256": "b33e1076b74b730154675b74c132f6684ae96e214e11cd68c479a6761dd0c634"
+      "sha256": "ce4f0436bbb2a789a239ffe6b71d0d1e6c5837006005cdd5725936bd47dec785"
     },
     "german-spears.html": {
       "url": "https://poe2db.tw/de/Spears",
       "bytes": 658544,
-      "sha256": "9952c9f13e593294ff69e970e7bf1eb343744e9f4a0953db6d9f3e7b09ec3122"
+      "sha256": "1d9563c0f746dbce93db3cb14bfe9f5ab5c2aee29f988a425360507a4a7dbdb8"
+    },
+    "english-bows.html": {
+      "url": "https://poe2db.tw/us/Bows",
+      "bytes": 695982,
+      "sha256": "3ba8a32e7139831533bc40f70ecf57a3b6c9c38675684a75a00776eee5490d88"
+    },
+    "german-bows.html": {
+      "url": "https://poe2db.tw/de/Bows",
+      "bytes": 647574,
+      "sha256": "c71f5d9a9dbd7bc47363b6fa12e85b98ed253752e497c191b980591c3d1bed21"
     }
   }
 }

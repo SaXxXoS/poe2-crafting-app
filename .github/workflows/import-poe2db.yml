@@ -24,8 +24,10 @@ jobs:
 
       - name: Import prüfen
         run: |
-          node -e "const d=require('./generated/poe2db/spears.json'); if (!d.bases.length) throw new Error('Keine Speere'); if (!d.prefixes.length || !d.suffixes.length) throw new Error('Keine Affixe'); if (!d.bases.some(x=>x.nameDe) || ![...d.prefixes,...d.suffixes].some(x=>x.textDe)) throw new Error('Keine deutschen Texte'); if(d.pools.length!==d.bases.length) throw new Error('Basis-Pools fehlen'); for(const p of d.pools){if(p.evaluatedPrefixRules!==d.prefixes.length||p.evaluatedSuffixRules!==d.suffixes.length)throw new Error('Gewichtsregeln ungeprüft');if([...p.prefixes,...p.suffixes].some(x=>x.spawnWeight<=0||x.generationWeight<=0))throw new Error('Nullgewicht im Pool')}"
+          node -e "const i=require('./generated/poe2db/index.json'); if(i.classes.length<2)throw new Error('Testklassen fehlen'); for(const c of i.classes){const d=require('./generated/poe2db/'+c.dataFile);if(!d.bases.length||!d.prefixes.length||!d.suffixes.length)throw new Error('Leere Klasse: '+c.itemClass);if(!d.bases.some(x=>x.nameDe)||![...d.prefixes,...d.suffixes].some(x=>x.textDe))throw new Error('Keine deutschen Texte: '+c.itemClass);if(d.pools.length!==d.bases.length)throw new Error('Basis-Pools fehlen: '+c.itemClass);for(const p of d.pools){if(p.evaluatedPrefixRules!==d.prefixes.length||p.evaluatedSuffixRules!==d.suffixes.length)throw new Error('Gewichtsregeln ungeprüft');if([...p.prefixes,...p.suffixes].some(x=>x.spawnWeight<=0||x.generationWeight<=0))throw new Error('Nullgewicht im Pool')}}"
+          test -f generated/poe2db/manifest.json
           test -f generated/poe2db/spears-quality-report.json
+          test -f generated/poe2db/bows-quality-report.json
 
       - name: Importierte Daten speichern
         run: |

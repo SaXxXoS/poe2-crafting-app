@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T22:55:13.720Z",
+  "generatedAt": "2026-07-17T23:12:33.362Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
-    "modifierSelection": "PoE2DB embedded ModsView JSON.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Spear.",
     "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
     "importantFinding": "PoE2DB embeds only the already selected Spear DropChance and tag names, not complete per-tag numeric weights."
   },
@@ -13,6 +13,28 @@
     "excludedBases": 8,
     "distinctPrefixPools": 1,
     "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpearVerisium3",
+        "nameEn": "Runeforged Hunting Spear"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpearVerisium3",
+        "baseNameEn": "Runeforged Hunting Spear",
+        "textEn": "Grants Skill: Spear Throw"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpearVerisium3",
+        "baseNameEn": "Runeforged Hunting Spear",
+        "textEn": "(15—25)% chance to Maim on Hit"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
   },
   "excludedBases": [
     {
@@ -65,7 +87,7 @@
     }
   ],
   "restrictedModExamples": [],
-  "restrictedModFinding": "No such examples exist: every imported normal Spear modifier matches the shared 'spear' tag before any zero-weight fallback. Extra ethnicity and runeforged tags do not occur in these modifiers' weight rules.",
+  "restrictedModFinding": "No such examples exist: every imported normal Spear modifier matches the shared 'spear' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
   "bases": [
     {
       "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpear1",

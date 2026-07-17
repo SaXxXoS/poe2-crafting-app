@@ -1,0 +1,1238 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:12:33.915Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Bow.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Bow DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 35,
+    "regularUsableBases": 27,
+    "excludedBases": 8,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium3",
+        "nameEn": "Runeforged Warden Bow"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium4",
+        "nameEn": "Runeforged Recurve Bow"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium3",
+        "baseNameEn": "Runeforged Warden Bow",
+        "textEn": "(25—35)% chance to Chain an additional time"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium1",
+      "nameEn": "Runeforged Crude Bow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium2a",
+      "nameEn": "Runeforged Shortbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium2b",
+      "nameEn": "Runeforged Shortbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium3",
+      "nameEn": "Runeforged Warden Bow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium4",
+      "nameEn": "Runeforged Recurve Bow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium5",
+      "nameEn": "Runeforged Composite Bow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium6",
+      "nameEn": "Runeforged Dualstring Bow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium8",
+      "nameEn": "Runeforged Zealot Bow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Bow modifier matches the shared 'bow' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow1",
+      "nameEn": "Crude Bow",
+      "nameDe": "Einfacher Bogen",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow2",
+      "nameEn": "Shortbow",
+      "nameDe": "Kurzbogen",
+      "dropLevel": 5,
+      "requirements": {
+        "level": 5,
+        "strength": 0,
+        "dexterity": 12,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow3",
+      "nameEn": "Warden Bow",
+      "nameDe": "Wächterinbogen",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 0,
+        "dexterity": 23,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow4",
+      "nameEn": "Recurve Bow",
+      "nameDe": "Krummbogen",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 31,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow5",
+      "nameEn": "Composite Bow",
+      "nameDe": "Kompositbogen",
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 0,
+        "dexterity": 41,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow6",
+      "nameEn": "Dualstring Bow",
+      "nameDe": "Doppelsehnenbogen",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 0,
+        "dexterity": 52,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7",
+      "nameEn": "Cultist Bow",
+      "nameDe": "Kultistenbogen",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 60,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow8",
+      "nameEn": "Zealot Bow",
+      "nameDe": "Eifererbogen",
+      "dropLevel": 39,
+      "requirements": {
+        "level": 39,
+        "strength": 0,
+        "dexterity": 70,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow9",
+      "nameEn": "Artillery Bow",
+      "nameDe": "Artilleriebogen",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 80,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow9",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow10",
+      "nameEn": "Tribal Bow",
+      "nameDe": "Stammesbogen",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 0,
+        "dexterity": 89,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow10",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow11",
+      "nameEn": "Greatbow",
+      "nameDe": "Großbogen",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 92,
+        "dexterity": 92,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow11",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow12",
+      "nameEn": "Double Limb Bow",
+      "nameDe": "Doppelwurfarm-Bogen",
+      "dropLevel": 56,
+      "requirements": {
+        "level": 56,
+        "strength": 0,
+        "dexterity": 99,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow12",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow13",
+      "nameEn": "Heavy Bow",
+      "nameDe": "Schwerer Bogen",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 114,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow13",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow2Cruel",
+      "nameEn": "Snakewood Shortbow",
+      "nameDe": "Schlangenholz-Kurzbogen",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 80,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow2Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow3Cruel",
+      "nameEn": "Protector Bow",
+      "nameDe": "Beschützerbogen",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 0,
+        "dexterity": 86,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow3Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow5Cruel",
+      "nameEn": "Rider Bow",
+      "nameDe": "Reiterbogen",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 0,
+        "dexterity": 91,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow5Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow6Cruel",
+      "nameEn": "Twin Bow",
+      "nameDe": "Zwillingsbogen",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 0,
+        "dexterity": 96,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow6Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Cruel",
+      "nameEn": "Adherent Bow",
+      "nameDe": "Anhaftender Bogen",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 0,
+        "dexterity": 104,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow8Cruel",
+      "nameEn": "Militant Bow",
+      "nameDe": "Kriegerischer Bogen",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 0,
+        "dexterity": 109,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow8Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium1",
+      "nameEn": "Runeforged Crude Bow",
+      "nameDe": "Runengeschmiedeter Einfacher Bogen",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 97,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium2a",
+      "nameEn": "Runeforged Shortbow",
+      "nameDe": "Runengeschmiedeter Kurzbogen",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 68,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium2a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium2b",
+      "nameEn": "Runeforged Shortbow",
+      "nameDe": "Runengeschmiedeter Kurzbogen",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 97,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium2b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium3",
+      "nameEn": "Runeforged Warden Bow",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 72,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium4",
+      "nameEn": "Runeforged Recurve Bow",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 72,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium5",
+      "nameEn": "Runeforged Composite Bow",
+      "nameDe": "Runengeschmiedeter Kompositbogen",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 97,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium6",
+      "nameEn": "Runeforged Dualstring Bow",
+      "nameDe": "Runengeschmiedeter Doppelsehnenbogen",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 97,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium8",
+      "nameEn": "Runeforged Zealot Bow",
+      "nameDe": "Runengeschmiedeter Eifererbogen",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 97,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "runeforged",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow2Endgame",
+      "nameEn": "Ironwood Shortbow",
+      "nameDe": "Eisenholz-Kurzbogen",
+      "dropLevel": 67,
+      "requirements": {
+        "level": 67,
+        "strength": 0,
+        "dexterity": 134,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow2Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow5Endgame",
+      "nameEn": "Cavalry Bow",
+      "nameDe": "Kavallerie-Bogen",
+      "dropLevel": 72,
+      "requirements": {
+        "level": 72,
+        "strength": 0,
+        "dexterity": 149,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow5Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow3Endgame",
+      "nameEn": "Guardian Bow",
+      "nameDe": "Hüterinbogen",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 0,
+        "dexterity": 163,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow3Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow6Endgame",
+      "nameEn": "Gemini Bow",
+      "nameDe": "Gemini-Bogen",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 0,
+        "dexterity": 163,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow6Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Endgame",
+      "nameEn": "Fanatic Bow",
+      "nameDe": "Fanatikerbogen",
+      "dropLevel": 79,
+      "requirements": {
+        "level": 79,
+        "strength": 0,
+        "dexterity": 163,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow8Endgame",
+      "nameEn": "Warmonger Bow",
+      "nameDe": "Kriegstreiberbogen",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 0,
+        "dexterity": 163,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow8Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow9Endgame",
+      "nameEn": "Obliterator Bow",
+      "nameDe": "Vernichterbogen",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 0,
+        "dexterity": 163,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow9Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowUnique1",
+      "nameEn": "Heartwood Shortbow",
+      "nameDe": "Kernholzbogen",
+      "dropLevel": 67,
+      "requirements": {
+        "level": 67,
+        "strength": 0,
+        "dexterity": 134,
+        "intelligence": 0
+      },
+      "tags": [
+        "bow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowUnique1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Bows/AbstractBow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

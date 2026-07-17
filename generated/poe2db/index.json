@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-17T23:12:32.923Z",
+  "classes": [
+    {
+      "key": "spears",
+      "itemClass": "Spear",
+      "dataFile": "spears.json",
+      "qualityReportFile": "spears-quality-report.json",
+      "counts": {
+        "bases": 36,
+        "prefixes": 30,
+        "suffixes": 24
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "bows",
+      "itemClass": "Bow",
+      "dataFile": "bows.json",
+      "qualityReportFile": "bows-quality-report.json",
+      "counts": {
+        "bases": 35,
+        "prefixes": 45,
+        "suffixes": 16
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    }
+  ]
+}
