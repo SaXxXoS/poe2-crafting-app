@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T15:35:32.393Z",
+  "source": {
+    "root": "https://repoe-fork.github.io/poe2",
+    "files": {
+      "baseItems": {
+        "url": "https://repoe-fork.github.io/poe2/base_items.min.json",
+        "bytes": 2971423,
+        "sha256": "046299aeb60b69b004c69bb452b3f69b4abc6089960162eec9736effaa4a0584"
+      },
+      "mods": {
+        "url": "https://repoe-fork.github.io/poe2/mods.min.json",
+        "bytes": 8647306,
+        "sha256": "7b4ba177808a43afcb711fab9dded41ba1b6f0f0b65f14d637964a1170e0b864"
+      },
+      "modsByBase": {
+        "url": "https://repoe-fork.github.io/poe2/mods_by_base.min.json",
+        "bytes": 3315766,
+        "sha256": "6b7eaf9783ed07e5225fb9a5310f6455f4208f61908ad1ff3440ee13d031ff17"
+      },
+      "itemClasses": {
+        "url": "https://repoe-fork.github.io/poe2/item_classes.min.json",
+        "bytes": 8668,
+        "sha256": "184de04b0414c3648fa9bdc09d53598e5c9d2193804ffa47a368a13d1450be6e"
+      },
+      "tags": {
+        "url": "https://repoe-fork.github.io/poe2/tags.min.json",
+        "bytes": 24667,
+        "sha256": "3718514164e26d06ac32d339c60ab8848308baba6509d48ecca068b373aaab7a"
+      }
+    }
+  },
+  "counts": {
+    "bases": 5246,
+    "mods": 16678,
+    "modPools": 74,
+    "poolBaseMatches": 0,
+    "poolModReferences": 0,
+    "missingPoolModReferences": 0
+  },
+  "detectedSchemaKeys": {
+    "baseItems": [
+      "domain",
+      "drop_level",
+      "implicits",
+      "inherits_from",
+      "inventory_height",
+      "inventory_width",
+      "item_class",
+      "name",
+      "properties",
+      "release_state",
+      "tags",
+      "visual_identity"
+    ],
+    "mods": [
+      "adds_tags",
+      "domain",
+      "generation_type",
+      "generation_weights",
+      "grants_effects",
+      "groups",
+      "implicit_tags",
+      "is_essence_only",
+      "name",
+      "required_level",
+      "spawn_weights",
+      "stats",
+      "text",
+      "type"
+    ],
+    "modsByBase": [
+      "affliction_orb,currency,default",
+      "all_eldritch_currency,currency,default",
+      "bestiary_net,currency,default",
+      "breach_blessing,currency,default",
+      "breachstone_splinter,currency,default",
+      "catalyst,attack_catalyst,currency,default",
+      "catalyst,attribute_catalyst,currency,default",
+      "catalyst,caster_catalyst,currency,default",
+      "catalyst,chaos_catalyst,currency,default",
+      "catalyst,cold_catalyst,currency,default",
+      "catalyst,defences_catalyst,currency,default",
+      "catalyst,fire_catalyst,currency,default",
+      "catalyst,life_catalyst,currency,default",
+      "catalyst,lightning_catalyst,currency,default",
+      "catalyst,mana_catalyst,currency,default",
+      "catalyst,minion_catalyst,currency,default",
+      "catalyst,physical_catalyst,currency,default",
+      "catalyst,speed_catalyst,currency,default",
+      "cleansing_fire_currency,eldritch_ember,currency,default",
+      "currency,default",
+      "currency_duplicate,currency,default",
+      "currency_lock,currency,default",
+      "currency_shard,currency,default",
+      "currency_shard,harbinger_orb_shard,currency,default",
+      "drops_in_maps_only,currency,default",
+      "drops_in_maps_only,eldritch_ember,currency,default",
+      "drops_in_maps_only,eldritch_ichor,currency,default",
+      "essence,currency,default",
+      "expedition_currency_faction1,currency,default",
+      "expedition_currency_faction2,currency,default",
+      "expedition_currency_faction3,currency,default",
+      "expedition_currency_faction4,currency,default",
+      "great_tangle_currency,eldritch_ichor,currency,default",
+      "heist_coin,currency,default",
+      "high_level_map,sextant,currency,default",
+      "incursion_currency,currency,default",
+      "jewel_catalyst,attack_catalyst,currency,default",
+      "jewel_catalyst,attribute_catalyst,currency,default",
+      "jewel_catalyst,caster_catalyst,currency,default",
+      "jewel_catalyst,chaos_catalyst,currency,default",
+      "jewel_catalyst,cold_catalyst,currency,default",
+      "jewel_catalyst,defences_catalyst,currency,default",
+      "jewel_catalyst,fire_catalyst,currency,default",
+      "jewel_catalyst,life_catalyst,currency,default",
+      "jewel_catalyst,lightning_catalyst,currency,default",
+      "jewel_catalyst,mana_catalyst,currency,default",
+      "jewel_catalyst,minion_catalyst,currency,default",
+      "jewel_catalyst,physical_catalyst,currency,default",
+      "jewel_catalyst,speed_catalyst,currency,default",
+      "legion_splinter,currency,default",
+      "mushrune,currency,default",
+      "not_for_sale,currency,default",
+      "quality_currency,currency,default",
+      "quality_currency,incursion_currency,currency,default",
+      "socket_currency,currency,default",
+      "socket_currency,jewellers_orb,currency,default",
+      "socket_currency,rare_socket_currency,jewellers_orb,currency,default",
+      "verisium_common,currency,default",
+      "verisium_mythic,currency,default",
+      "verisium_rare,currency,default",
+      "verisium_uncommon,currency,default"
+    ]
+  }
+}
