@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T18:57:51.391Z",
+  "generatedAt": "2026-07-17T19:31:59.228Z",
   "classes": [
     {
       "id": "Amulet",
@@ -9396,28 +9396,8 @@
         "text": "attackertakesdamage1 thorny prefix thorns_minimum_base_physical_damage thorns_maximum_base_physical_damage"
       },
       {
-        "id": "ChestChaosProjectiles",
-        "text": "chestchaosprojectiles chaotic prefix chest_display_generic chest_play_warning_sound chest_item_rarity_+%_final_from_mod"
-      },
-      {
-        "id": "ChestFlameVolatile",
-        "text": "chestflamevolatile scorched prefix chest_display_generic chest_play_warning_sound chest_item_rarity_+%_final_from_mod"
-      },
-      {
-        "id": "ChestLightningStorm",
-        "text": "chestlightningstorm vibrating prefix chest_display_generic chest_play_warning_sound chest_item_rarity_+%_final_from_mod"
-      },
-      {
-        "id": "ChestSummonNormals",
-        "text": "chestsummonnormals crowded prefix chest_delay_drops_until_daemons_finish number_of_additional_normal_packs_to_summon"
-      },
-      {
         "id": "DamageWithBows1",
         "text": "damagewithbows1 acute prefix damage_+%_with_bow_skills"
-      },
-      {
-        "id": "EzomyteStrongboxIceSpikes",
-        "text": "ezomytestrongboxicespikes frosted prefix chest_display_ezomyte chest_play_warning_sound"
       },
       {
         "id": "IncreasedAccuracy1",
@@ -9644,10 +9624,6 @@
         "text": "jewelpoisondamage venomous prefix base_poison_effect_+%"
       },
       {
-        "id": "JewelPresenceRadius",
-        "text": "jewelpresenceradius iconic prefix presence_area_+%"
-      },
-      {
         "id": "JewelProjectileDamage",
         "text": "jewelprojectiledamage archer's prefix projectile_damage_+%"
       },
@@ -9872,10 +9848,6 @@
         "text": "jewelradiuspoisondamage venomous prefix base_poison_effect_+%"
       },
       {
-        "id": "JewelRadiusPresenceRadius",
-        "text": "jewelradiuspresenceradius iconic prefix presence_area_+%"
-      },
-      {
         "id": "JewelRadiusProjectileDamage",
         "text": "jewelradiusprojectiledamage archer's prefix projectile_damage_+%"
       },
@@ -10088,78 +10060,6 @@
         "text": "spelldamageonweapon1 apprentice's prefix spell_damage_+%"
       },
       {
-        "id": "UltimatumWagerCurrencyAddEquipmentSocket",
-        "text": "ultimatumwagercurrencyaddequipmentsocket artificer's prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyAddModToRare",
-        "text": "ultimatumwagercurrencyaddmodtorare exalted prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyAddModToRare2",
-        "text": "ultimatumwagercurrencyaddmodtorare2 greater exalted prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyAddModToRare3",
-        "text": "ultimatumwagercurrencyaddmodtorare3 perfect exalted prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyArmourQuality",
-        "text": "ultimatumwagercurrencyarmourquality armourer's prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyCorrupt",
-        "text": "ultimatumwagercurrencycorrupt vaal prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyMagicQuality",
-        "text": "ultimatumwagercurrencymagicquality arcanist's prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyModValues",
-        "text": "ultimatumwagercurrencymodvalues divine prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyRemoveMod",
-        "text": "ultimatumwagercurrencyremovemod null prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyRerollRare",
-        "text": "ultimatumwagercurrencyrerollrare chaotic prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyRerollRare2",
-        "text": "ultimatumwagercurrencyrerollrare2 greater chaotic prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyRerollRare3",
-        "text": "ultimatumwagercurrencyrerollrare3 perfect chaotic prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyUpgradeMagicToRare",
-        "text": "ultimatumwagercurrencyupgrademagictorare regal prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyUpgradeMagicToRare2",
-        "text": "ultimatumwagercurrencyupgrademagictorare2 greater regal prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyUpgradeMagicToRare3",
-        "text": "ultimatumwagercurrencyupgrademagictorare3 perfect regal prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyUpgradeRandomly",
-        "text": "ultimatumwagercurrencyupgraderandomly chancing prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyUpgradeToRare",
-        "text": "ultimatumwagercurrencyupgradetorare alchemist's prefix ultimatum_wager_type_hash"
-      },
-      {
-        "id": "UltimatumWagerCurrencyWeaponQuality",
-        "text": "ultimatumwagercurrencyweaponquality blacksmith's prefix ultimatum_wager_type_hash"
-      },
-      {
         "id": "ChaosDamagePrefixOnTwoHandWeapon1",
         "text": "chaosdamageprefixontwohandweapon1 impure prefix chaos_damage_+%"
       },
@@ -10326,10 +10226,6 @@
       {
         "id": "ChaosDamagePrefixOnWeapon2",
         "text": "chaosdamageprefixonweapon2 tainted prefix chaos_damage_+%"
-      },
-      {
-        "id": "ChestFreeze",
-        "text": "chestfreeze arctic prefix chest_display_freeze chest_item_rarity_+%_final_from_mod"
       },
       {
         "id": "ColdDamagePercent1",
@@ -10538,10 +10434,6 @@
       {
         "id": "AttackerTakesDamage2",
         "text": "attackertakesdamage2 spiny prefix thorns_minimum_base_physical_damage thorns_maximum_base_physical_damage"
-      },
-      {
-        "id": "ChestSummonMagics",
-        "text": "chestsummonmagics intimidating prefix chest_delay_drops_until_daemons_finish number_of_additional_magic_packs_to_summon"
       },
       {
         "id": "ItemFoundRarityIncreasePrefix1",
@@ -11426,10 +11318,6 @@
       {
         "id": "WeaponElementalDamageOnTwohandWeapon3",
         "text": "weaponelementaldamageontwohandweapon3 empowering prefix elemental_damage_with_attack_skills_+%"
-      },
-      {
-        "id": "ChestSummonRares",
-        "text": "chestsummonrares menacing prefix chest_delay_drops_until_daemons_finish number_of_additional_rare_packs_to_summon"
       },
       {
         "id": "LocalIncreasedPhysicalDamageReductionRatingPercent3",
@@ -14196,22 +14084,6 @@
         "text": "strength1 of the brute suffix additional_strength"
       },
       {
-        "id": "StrongboxChestDropUnique1",
-        "text": "strongboxchestdropunique1 of singularity suffix chest_drop_additional_unqiue_items"
-      },
-      {
-        "id": "StrongboxChestItemLevel1",
-        "text": "strongboxchestitemlevel1 of ascendance suffix chest_dropped_item_level_+"
-      },
-      {
-        "id": "StrongboxChestItemQuantity1",
-        "text": "strongboxchestitemquantity1 of bounty suffix chest_item_quantity_+%_final_from_mod"
-      },
-      {
-        "id": "StrongboxChestItemRarity1",
-        "text": "strongboxchestitemrarity1 of treasures suffix chest_item_rarity_+%_final_from_mod"
-      },
-      {
         "id": "StunThreshold1",
         "text": "stunthreshold1 of thick skin suffix stun_threshold_+"
       },
@@ -14620,10 +14492,6 @@
         "text": "managainedfromenemydeath3 of infusion suffix base_mana_gained_on_enemy_death"
       },
       {
-        "id": "PresenceRadius1",
-        "text": "presenceradius1 of direction suffix presence_area_+%"
-      },
-      {
         "id": "FireResist3",
         "text": "fireresist3 of the drake suffix base_fire_damage_resistance_%"
       },
@@ -14952,10 +14820,6 @@
         "text": "nearbyalliesallresistances3 of adaptation suffix allies_in_presence_resist_all_elements_%"
       },
       {
-        "id": "PresenceRadius2",
-        "text": "presenceradius2 of outreach suffix presence_area_+%"
-      },
-      {
         "id": "ReducedLocalAttributeRequirements3",
         "text": "reducedlocalattributerequirements3 of the talented suffix local_attribute_requirements_+%"
       },
@@ -15274,10 +15138,6 @@
       {
         "id": "NearbyAlliesIncreasedCastSpeed4",
         "text": "nearbyalliesincreasedcastspeed4 of sortilege suffix allies_in_presence_cast_speed_+%"
-      },
-      {
-        "id": "PresenceRadius3",
-        "text": "presenceradius3 of guidance suffix presence_area_+%"
       },
       {
         "id": "DamageTakenGainedAsMana3",
@@ -16070,10 +15930,6 @@
       {
         "id": "GrenadeSkillAdditionalProjectile1",
         "text": "grenadeskilladditionalprojectile1 of blasting suffix grenade_skill_number_of_additional_projectiles"
-      },
-      {
-        "id": "PresenceRadius4",
-        "text": "presenceradius4 of influence suffix presence_area_+%"
       },
       {
         "id": "StunThreshold10",

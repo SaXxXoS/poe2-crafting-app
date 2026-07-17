@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T18:57:51.391Z",
+  "generatedAt": "2026-07-17T19:31:59.228Z",
   "status": "app-data-ready",
   "filters": {
     "equipmentOnly": true,
@@ -46,6 +46,22 @@
       "sanctum",
       "vendor"
     ],
+    "excludedModHints": [
+      "chest_",
+      "ultimatum_",
+      "wager_",
+      "expedition_",
+      "map_",
+      "monster_",
+      "sanctum_",
+      "heist_",
+      "warning_sound",
+      "display_generic",
+      "dropped_item_level",
+      "additional_unique_items",
+      "item_quantity_final_from_mod",
+      "item_rarity_final_from_mod"
+    ],
     "keepsSpawnWeights": true,
     "keepsPrefixSuffix": true,
     "keepsRequiredLevel": true,
@@ -61,139 +77,139 @@
   "counts": {
     "inputBases": 5246,
     "equipmentBases": 1802,
-    "candidateEquipmentMods": 3161,
-    "referencedEquipmentMods": 1781,
+    "candidateEquipmentMods": 3043,
+    "referencedEquipmentMods": 1745,
     "itemClasses": 28,
     "poolFiles": 28,
     "directPools": 0,
     "fallbackPools": 1802,
-    "prefixReferences": 161295,
-    "suffixReferences": 180326
+    "prefixReferences": 114436,
+    "suffixReferences": 173054
   },
   "files": {
     "bases.json": {
       "bytes": 1271152,
-      "sha256": "936ccb6c22e63a4ac74f03bffb12afcb0fbd9d00d983c075ba102a6746a9803e"
+      "sha256": "1d83e08105e5929676db9afcb47b9aef4809e8424cf9ed9831a45f0b4f22efc6"
     },
     "mods.json": {
-      "bytes": 1305557,
-      "sha256": "a299e16ff2b1dafb4c39ae9884dfe752e2b00e3d15feb0c67e71777a508774e7"
+      "bytes": 1283830,
+      "sha256": "c24e5fdcec285601185b7508a05a50565bedb241725453b1fa0d6a97f753f12f"
     },
     "index.json": {
-      "bytes": 780919,
-      "sha256": "b8914c20893697b3e72f7366873cb0f2e0e8f2a12249e73f534f0bf69f6834f5"
+      "bytes": 775069,
+      "sha256": "051b11df617c6f343706c60bcd1850e39a53f3ee1a9721196d0bfa5d22211ba1"
     },
     "pools/amulet.json": {
-      "bytes": 541318,
-      "sha256": "cfd8f0111bfbfd723cddfe1a40595d8d348c609972c391a39d8c9162e286dad9"
+      "bytes": 474343,
+      "sha256": "76701064abfdfc7efc46af1697aaeaf069f0156afcccdbe1ca76c33777480ae4"
     },
     "pools/belt.json": {
-      "bytes": 268716,
-      "sha256": "4e217c10348fe1e797be905e267c85fb90e0f6c8aa5a538440451c662aa76840"
+      "bytes": 215136,
+      "sha256": "23766f84dd9cecdc4ede9930f2f08d612b0a6cf97b0b2f62b7d2f3f1ac817826"
     },
     "pools/body-armour.json": {
-      "bytes": 6084804,
-      "sha256": "1e71033ef71b52e2a87d23d24c39abbc2263b5a79838a1a4d88c575ced6594e6"
+      "bytes": 5096253,
+      "sha256": "9f77a96aec626bc8d12b9d92e090f5ee8ef631acfecccb78546e251af5ac9f2a"
     },
     "pools/boots.json": {
-      "bytes": 2888599,
-      "sha256": "b857b6f3644526b55bc9c36f093130c52cf122a1cd1a2ab10d8a3ab629dfcd76"
+      "bytes": 2374231,
+      "sha256": "80428db2c0a77e7d5045f7be4c3f7bc04ccc44ef81af076705273db3558d7bbb"
     },
     "pools/bow.json": {
-      "bytes": 572155,
-      "sha256": "f1ed16304a7e6b2edd73e0b7bbc6350b84645d917ea0b2e0b0ece4c05cddafd2"
+      "bytes": 478390,
+      "sha256": "612e16bda427743ac78f61c5af2264f954b1cf98639f1706cc6128d8b0574007"
     },
     "pools/buckler.json": {
-      "bytes": 722235,
-      "sha256": "ebf12988384e69d6fcb3931cade384f029eb046cd1abdb3fbc53ae91435c040c"
+      "bytes": 582927,
+      "sha256": "e4fb13e42579686ab3c144d8d2f49d90477432d279a4d23a106c2427470a8fdc"
     },
     "pools/claw.json": {
-      "bytes": 207508,
-      "sha256": "148517e31355d57e0e9c479d9d64432e72219b2c54e58d5abe3f26331baf56e9"
+      "bytes": 172681,
+      "sha256": "27649fedaf5bfc53f8989d6fa5726be41a45cc9003715ec8ebcf5f82b175900d"
     },
     "pools/crossbow.json": {
-      "bytes": 577835,
-      "sha256": "84323a9e38060b5b0aa4bc250ca00b7736c22c4d42a4db02f7ff0f64fa2d0fbd"
+      "bytes": 486749,
+      "sha256": "5f585b1b345f471291db78abc525841e436dfbc08e25ab807908f0a0ffb6fbf9"
     },
     "pools/dagger.json": {
-      "bytes": 364173,
-      "sha256": "5638a874d1b59e493f3344fd5d69171c7ea6903196b04bb777aba9c2bba04af1"
+      "bytes": 305235,
+      "sha256": "7cf10677930aa1d1bcdeb7981718b3d62bb58a8f93d6433342dbec4939c9f294"
     },
     "pools/flail.json": {
-      "bytes": 347418,
-      "sha256": "a093cedf33871726faae2b1d7da25e1f059b982faff396bd09dc876aac015a62"
+      "bytes": 291159,
+      "sha256": "3dc3d6c05f0907f27c03318b7e6f3e284d963804de1934c6b2a3723c20a3aab4"
     },
     "pools/focus.json": {
-      "bytes": 817312,
-      "sha256": "3bf3d0b35e47efefb5b50e474f2b747e2458992dae03e3f573142cd83d64458a"
+      "bytes": 680683,
+      "sha256": "3e4dd0069a455bd1d6fc1ab29148a068380715688ca661ebcbf296c2e7e31021"
     },
     "pools/gloves.json": {
-      "bytes": 3770828,
-      "sha256": "111453fb0c4e367f7adab5f911bf616c67cc15ce05ae9c10ca9b835d377fa10c"
+      "bytes": 3226991,
+      "sha256": "85b457b1a228d5a5925863bd51f11f13d5421a93450cdf95da08606d4a44c75d"
     },
     "pools/helmet.json": {
-      "bytes": 3955269,
-      "sha256": "e230a7cacabc45d8a58d782b51518568c3e04aa9f4141c3c480730b7884a6b4e"
+      "bytes": 3253371,
+      "sha256": "5b9b5ff27fdae345971baba60a47f4d7f67596d2828495bc39c8bab7faaf4cc2"
     },
     "pools/jewel.json": {
-      "bytes": 110212,
-      "sha256": "1fb2c6f86118f76269de1a8cf03f859ae7656f8c3d50d1b20fe9dbc20ffcb3f5"
+      "bytes": 85530,
+      "sha256": "1d0fa8f9138d2fcee6cba98b7e634b605a22145b197d0ad288a41da177ea6265"
     },
     "pools/one-hand-axe.json": {
-      "bytes": 335224,
-      "sha256": "a1bbc58f5e69ac8167d20bc0cf368b8b4794eb111268e59746eb0a64f5041e14"
+      "bytes": 278965,
+      "sha256": "4c4430fc0f09b76895cdb69c3dadd50aabd0eefb7d3fbbbca61d127c8dedd31b"
     },
     "pools/one-hand-mace.json": {
-      "bytes": 758362,
-      "sha256": "e804c19f347246d835de459048766c3a7477e497eb9cbfad392583cc53db218c"
+      "bytes": 640486,
+      "sha256": "49f38579ec4ce64446c5f21d6976d3a223d53ab24daad7e662f7dbb5bc124450"
     },
     "pools/one-hand-sword.json": {
-      "bytes": 396790,
-      "sha256": "082d0d04c1d76728fdeee2ef347dfd9b1c13710048d55054b254be9c40b0e4dd"
+      "bytes": 332494,
+      "sha256": "041bfdf90614622498585ff38150b6b26f9311b1728b6b11ba88e0e2a2164167"
     },
     "pools/warstaff.json": {
-      "bytes": 670864,
-      "sha256": "a904e1fdb8180f59c255df5c0a41adb697baa72cfe1a49343a1a45cc061f3ac3"
+      "bytes": 569062,
+      "sha256": "08887145e5007bafc3287e03dcb96e37595754a879d963c4380c83f76ba7a81a"
     },
     "pools/quiver.json": {
-      "bytes": 128624,
-      "sha256": "34ac866c6b6b814ecc5a7f4b08f7c9c3ab95f4e34793ef92a92c1a5b70c81610"
+      "bytes": 99155,
+      "sha256": "6911cdc58eaf274b849fd7c30235e2d1adb7198254e093e3f82fe20c3f4c85f3"
     },
     "pools/ring.json": {
-      "bytes": 611227,
-      "sha256": "a84431f9549bb6d1801ec8e6a3b54b46488df8ebf26e60e7805a898515a9bdcc"
+      "bytes": 533536,
+      "sha256": "5f381db7388bd2bb4b76aef3a497fafd5d4426d4acca0b3306c4b7c4aac508e7"
     },
     "pools/sceptre.json": {
-      "bytes": 244670,
-      "sha256": "3fe4d0f3a0da530a7d92b08d0e4041509d2356b6c4abc895d6db715e9ec16afb"
+      "bytes": 196942,
+      "sha256": "42a48813c2ac95d65cf5d30b66b158d26cabb9bc5deca9c5e58dc462739b7d15"
     },
     "pools/shield.json": {
-      "bytes": 2325762,
-      "sha256": "1415579f135c245b2e57daa0ef377e2014163d0d44d45271ede0ab330e54793a"
+      "bytes": 1921233,
+      "sha256": "95f28790e744dda8142265a0ebe160f39360ba33c7a2acef148a2b88c38d6c0c"
     },
     "pools/spear.json": {
-      "bytes": 637535,
-      "sha256": "9f6abc95f77fd81c1b805f1b986e373dac3547e0f4e8fb71bb659558c0663b5d"
+      "bytes": 541091,
+      "sha256": "93f8b1e384c4a873cdbe3ccf1bb0b8edd9a6e211edc8327304ba745ae9fcf4b7"
     },
     "pools/staff.json": {
-      "bytes": 317147,
-      "sha256": "d6ba9d98a48b200f0a81a2bd2ca00ede1656200023571fd05f803dadfe0c3ece"
+      "bytes": 266246,
+      "sha256": "ec4242385ba4702df3457817185ae7e3422f149e7e1389207fc28fa534ba5855"
     },
     "pools/two-hand-axe.json": {
-      "bytes": 342889,
-      "sha256": "be51e422b8358ed5ff6055a4c058da3f495a5d62cc719100214317e7072cd735"
+      "bytes": 286630,
+      "sha256": "687e3edef6296985cc953cdf831e4c134d07783cd12f9be86170b48fd594bc8b"
     },
     "pools/two-hand-mace.json": {
-      "bytes": 756818,
-      "sha256": "4ff27a1978a028481cfb7a77b0ea45149a995d4af64eb288dde4047f64739bd7"
+      "bytes": 641621,
+      "sha256": "9fc04d1186b1d75f59c7afbee78c07fc05005ae462dd69dbd23f7ad51593dff6"
     },
     "pools/two-hand-sword.json": {
-      "bytes": 388652,
-      "sha256": "4d01d8efce9e39f51d7cea9010ddc9c28ec2528a905ca676d4a0412dcb6d0f7b"
+      "bytes": 327035,
+      "sha256": "66039484a9bd6190233d3e16d8beefce2bd0fc57768012b820ede25149384479"
     },
     "pools/wand.json": {
-      "bytes": 289421,
-      "sha256": "6bc4e87b327af7b00e40d0388608ef1a67130e2fc6a0d8b4f4223fd98443b495"
+      "bytes": 241199,
+      "sha256": "44694cb925b84e671ef04cf2f4d10c97e2bc7b3955460a1ffa13fcc70f1cb5ee"
     }
   }
 }

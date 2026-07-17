@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T18:57:51.391Z",
+  "generatedAt": "2026-07-17T19:31:59.228Z",
   "itemClass": "Sceptre",
   "compactRowFormat": [
     "modId",
@@ -360,136 +360,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -824,26 +694,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -871,26 +721,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -1246,136 +1076,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -1710,26 +1410,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -1757,26 +1437,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -2132,136 +1792,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -2596,26 +2126,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -2643,26 +2153,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -3018,136 +2508,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -3482,26 +2842,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -3529,26 +2869,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -3904,136 +3224,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -4368,26 +3558,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -4415,26 +3585,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -4790,136 +3940,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -5254,26 +4274,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -5301,26 +4301,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -5676,136 +4656,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -6140,26 +4990,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -6187,26 +5017,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -6562,136 +5372,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -7026,26 +5706,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -7073,26 +5733,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -7448,136 +6088,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -7912,26 +6422,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -7959,26 +6449,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -8334,136 +6804,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -8798,26 +7138,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -8845,26 +7165,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -9220,136 +7520,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -9684,26 +7854,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -9731,26 +7881,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -10106,136 +8236,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -10570,26 +8570,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -10617,26 +8597,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -10992,136 +8952,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -11456,26 +9286,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -11503,26 +9313,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -11878,136 +9668,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -12342,26 +10002,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -12389,26 +10029,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -12764,136 +10384,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -13228,26 +10718,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -13275,26 +10745,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
@@ -13650,136 +11100,6 @@
           "LocalIncreasedSpiritAndMana7",
           70,
           1
-        ],
-        [
-          "ChestFreeze",
-          8,
-          1
-        ],
-        [
-          "ChestSummonRares",
-          35,
-          1
-        ],
-        [
-          "ChestSummonMagics",
-          10,
-          1
-        ],
-        [
-          "ChestSummonNormals",
-          1,
-          1
-        ],
-        [
-          "ChestFlameVolatile",
-          1,
-          1
-        ],
-        [
-          "ChestLightningStorm",
-          1,
-          1
-        ],
-        [
-          "ChestChaosProjectiles",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddEquipmentSocket",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeMagicToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRerollRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyCorrupt",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare2",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyAddModToRare3",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyModValues",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyRemoveMod",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyUpgradeRandomly",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyArmourQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyWeaponQuality",
-          1,
-          1
-        ],
-        [
-          "UltimatumWagerCurrencyMagicQuality",
-          1,
-          1
-        ],
-        [
-          "EzomyteStrongboxIceSpikes",
-          1,
-          1
         ]
       ],
       "s": [
@@ -14114,26 +11434,6 @@
           1
         ],
         [
-          "PresenceRadius1",
-          23,
-          1
-        ],
-        [
-          "PresenceRadius2",
-          40,
-          1
-        ],
-        [
-          "PresenceRadius3",
-          56,
-          1
-        ],
-        [
-          "PresenceRadius4",
-          72,
-          1
-        ],
-        [
           "MinionLife1",
           2,
           1
@@ -14161,26 +11461,6 @@
         [
           "MinionLife6",
           80,
-          1
-        ],
-        [
-          "StrongboxChestItemQuantity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemRarity1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestDropUnique1",
-          1,
-          1
-        ],
-        [
-          "StrongboxChestItemLevel1",
-          1,
           1
         ]
       ]
