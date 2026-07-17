@@ -1,10 +1,16 @@
-name: Build RePoE Database
+name: Build ExileForge Database
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "20 4 * * *"
 
 permissions:
   contents: write
+
+concurrency:
+  group: exileforge-database
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -19,20 +25,32 @@ jobs:
         with:
           node-version: "22"
 
-      - name: RePoE-Datenbank erzeugen
+      - name: RePoE-Daten importieren
         run: node tools/import-repoe-database.mjs
+
+      - name: App-Datenbank erzeugen
+        run: node tools/build-app-data.mjs
+
+      - name: Daten prüfen
+        run: |
+          test -f generated/repoe/manifest.json
+          test -f generated/app-data/manifest.json
+          test -f generated/app-data/bases.json
+          test -f generated/app-data/mods.json
+          test -f generated/app-data/pools.json
+          test -f generated/app-data/index.json
 
       - name: Daten speichern
         run: |
           git config user.name "ExileForge Data Bot"
           git config user.email "actions@users.noreply.github.com"
 
-          git add -f generated/repoe generated/app-v2
+          git add -f generated/repoe generated/app-v2 generated/app-data
 
           if git diff --cached --quiet; then
             echo "Keine Änderungen gefunden."
             exit 0
           fi
 
-          git commit -m "RePoE-Datenbank aktualisieren"
+          git commit -m "ExileForge-Datenbank aktualisieren"
           git push
