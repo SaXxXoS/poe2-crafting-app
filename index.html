@@ -14,13 +14,14 @@
         <div class="brandmark">EF</div>
         <div>
           <h1>ExileForge</h1>
-          <small>PoE2 Crafting Navigator · v2.3</small>
+          <small>PoE2 Crafting Navigator · Live-Daten</small>
         </div>
       </div>
       <button id="captureBtn" class="iconbtn" type="button" aria-label="Item erfassen">📷</button>
     </header>
 
     <main>
+      <div id="dataStatus" class="status data-status">ExileForge-Datenbank wird geladen …</div>
       <section id="home" class="view active">
         <div class="hero">
           <div class="eyebrow">Mobile-first</div>
@@ -178,10 +179,14 @@
       </section>
 
       <section id="database" class="view">
-        <div class="section-title"><h2>Datenbank</h2><span>Struktur</span></div>
+        <div class="section-title"><h2>Datenbank</h2><span>automatisch generiert</span></div>
         <div class="card">
-          <h3>Geplante Datenbereiche</h3>
-          <p>Bases, Itemklassen, natürliche Affixe, Tiers, Mindest-Item-Level, Mod-Gruppen, Spawn-Gewichte, Tags, Essenzen, Omens und Patch-Versionen.</p>
+          <h3>ExileForge Live-Daten</h3>
+          <p>Basen, Itemklassen, Präfixe, Suffixe, Mindest-Item-Level, Mod-Gruppen und Spawn-Gewichte werden direkt aus generated/app-data geladen.</p>
+          <div id="databaseStats" class="database-grid"></div>
+          <div class="status">
+            Die Pool-Datei einer Gegenstandsklasse wird erst geladen, wenn sie benötigt wird.
+          </div>
         </div>
       </section>
 
@@ -267,8 +272,7 @@
     </div>
   </div>
 
-  <script src="data.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
