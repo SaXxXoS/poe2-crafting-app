@@ -292,13 +292,19 @@ const TYPE_MAP = {
   "Staff": ["weapon", "Stab"],
   "Mace": ["weapon", "Streitkolben"],
   "One Handed Mace": ["weapon", "Streitkolben"],
+  "One Hand Mace": ["weapon", "Streitkolben"],
   "Two Handed Mace": ["weapon", "Streitkolben"],
+  "Two Hand Mace": ["weapon", "Streitkolben"],
   "Sword": ["weapon", "Schwert"],
   "One Handed Sword": ["weapon", "Schwert"],
+  "One Hand Sword": ["weapon", "Schwert"],
   "Two Handed Sword": ["weapon", "Schwert"],
+  "Two Hand Sword": ["weapon", "Schwert"],
   "Axe": ["weapon", "Axt"],
   "One Handed Axe": ["weapon", "Axt"],
+  "One Hand Axe": ["weapon", "Axt"],
   "Two Handed Axe": ["weapon", "Axt"],
+  "Two Hand Axe": ["weapon", "Axt"],
   "Dagger": ["weapon", "Dolch"],
   "Flail": ["weapon", "Flegel"],
   "Claw": ["weapon", "Klaue"],
@@ -310,10 +316,17 @@ const TYPE_MAP = {
   "Shield": ["armour", "Schild"],
   "Focus": ["armour", "Fokus"],
   "Quiver": ["armour", "Köcher"],
+  "Fishing Rod": ["weapon", "Angelrute"],
+  "TrapTool": ["weapon", "Fallenwerkzeug"],
 
   "Ring": ["jewellery", "Ring"],
   "Amulet": ["jewellery", "Amulett"],
-  "Belt": ["jewellery", "Gürtel"]
+  "Belt": ["jewellery", "Gürtel"],
+  "Charm": ["jewellery", "Talisman"],
+  "Talisman": ["jewellery", "Talisman"],
+  "Jewel": ["jewellery", "Juwel"],
+  "Flask": ["jewellery", "Fläschchen"],
+  "Transcendent Limb": ["armour", "Transzendentes Glied"]
 };
 
 function inferType(value) {
