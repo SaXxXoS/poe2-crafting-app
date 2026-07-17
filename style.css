@@ -179,3 +179,15 @@ main{padding:16px}
   }
 }
 
+
+
+/* EXILEFORGE LIVE DATABASE */
+.data-status{margin-bottom:16px}
+.status.success{border-color:#315c3d;background:#102117;color:#a9e7bb}
+.gold-text{color:var(--gold2)}
+.base-subtitle{color:var(--muted);font-size:11px;margin-top:4px}
+.muted-small{color:var(--muted);font-size:11px}
+.database-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.database-stat{padding:13px;border-radius:14px;background:#0e141c;border:1px solid var(--line)}
+.database-stat small{display:block;color:var(--muted);font-size:10px;margin-bottom:5px}
+.database-stat b{font-size:20px;color:var(--gold2)}
