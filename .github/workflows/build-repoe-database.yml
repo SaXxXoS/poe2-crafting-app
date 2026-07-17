@@ -37,8 +37,14 @@ jobs:
           test -f generated/app-data/manifest.json
           test -f generated/app-data/bases.json
           test -f generated/app-data/mods.json
-          test -f generated/app-data/pools.json
           test -f generated/app-data/index.json
+          test -d generated/app-data/pools
+
+          find generated/app-data -type f -size +99M -print -quit | \
+            grep -q . && {
+              echo "Mindestens eine erzeugte Datei ist größer als 99 MB."
+              exit 1
+            } || true
 
       - name: Daten speichern
         run: |
