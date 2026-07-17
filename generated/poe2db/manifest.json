@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:22:05.264Z",
-  "status": "validated-normal-weapon-classes",
-  "supportedClassTarget": "All requested normal ExileForge weapon classes.",
+  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "status": "validated-craftable-equipment-classes",
+  "supportedClassTarget": "All requested normal weapon, armour, off-hand, jewellery, and jewel classes.",
   "sources": {
     "primary": "PoE2DB English and German pages",
     "technicalSupplement": "RePoE only for IDs and complete ordered weight rules"
@@ -247,168 +247,808 @@
         "prefixes": 1,
         "suffixes": 1
       }
+    },
+    {
+      "key": "body-armours",
+      "itemClass": "Body Armour",
+      "dataFile": "body-armours.json",
+      "qualityReportFile": "body-armours-quality-report.json",
+      "counts": {
+        "bases": 369,
+        "prefixes": 298,
+        "suffixes": 193
+      },
+      "poolCounts": {
+        "prefixes": 8,
+        "suffixes": 8
+      }
+    },
+    {
+      "key": "helmets",
+      "itemClass": "Helmet",
+      "dataFile": "helmets.json",
+      "qualityReportFile": "helmets-quality-report.json",
+      "counts": {
+        "bases": 262,
+        "prefixes": 185,
+        "suffixes": 89
+      },
+      "poolCounts": {
+        "prefixes": 8,
+        "suffixes": 8
+      }
+    },
+    {
+      "key": "gloves",
+      "itemClass": "Gloves",
+      "dataFile": "gloves.json",
+      "qualityReportFile": "gloves-quality-report.json",
+      "counts": {
+        "bases": 204,
+        "prefixes": 174,
+        "suffixes": 110
+      },
+      "poolCounts": {
+        "prefixes": 9,
+        "suffixes": 9
+      }
+    },
+    {
+      "key": "boots",
+      "itemClass": "Boots",
+      "dataFile": "boots.json",
+      "qualityReportFile": "boots-quality-report.json",
+      "counts": {
+        "bases": 192,
+        "prefixes": 135,
+        "suffixes": 112
+      },
+      "poolCounts": {
+        "prefixes": 8,
+        "suffixes": 8
+      }
+    },
+    {
+      "key": "shields",
+      "itemClass": "Shield",
+      "dataFile": "shields.json",
+      "qualityReportFile": "shields-quality-report.json",
+      "counts": {
+        "bases": 151,
+        "prefixes": 87,
+        "suffixes": 82
+      },
+      "poolCounts": {
+        "prefixes": 5,
+        "suffixes": 5
+      }
+    },
+    {
+      "key": "bucklers",
+      "itemClass": "Buckler",
+      "dataFile": "bucklers.json",
+      "qualityReportFile": "bucklers-quality-report.json",
+      "counts": {
+        "bases": 52,
+        "prefixes": 45,
+        "suffixes": 43
+      },
+      "poolCounts": {
+        "prefixes": 2,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "focuses",
+      "itemClass": "Focus",
+      "dataFile": "focuses.json",
+      "qualityReportFile": "focuses-quality-report.json",
+      "counts": {
+        "bases": 51,
+        "prefixes": 70,
+        "suffixes": 40
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "quivers",
+      "itemClass": "Quiver",
+      "dataFile": "quivers.json",
+      "qualityReportFile": "quivers-quality-report.json",
+      "counts": {
+        "bases": 11,
+        "prefixes": 56,
+        "suffixes": 44
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "amulets",
+      "itemClass": "Amulet",
+      "dataFile": "amulets.json",
+      "qualityReportFile": "amulets-quality-report.json",
+      "counts": {
+        "bases": 25,
+        "prefixes": 81,
+        "suffixes": 128
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "rings",
+      "itemClass": "Ring",
+      "dataFile": "rings.json",
+      "qualityReportFile": "rings-quality-report.json",
+      "counts": {
+        "bases": 29,
+        "prefixes": 100,
+        "suffixes": 103
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "belts",
+      "itemClass": "Belt",
+      "dataFile": "belts.json",
+      "qualityReportFile": "belts-quality-report.json",
+      "counts": {
+        "bases": 20,
+        "prefixes": 53,
+        "suffixes": 82
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "jewels",
+      "itemClass": "Jewel",
+      "dataFile": "jewels.json",
+      "qualityReportFile": "jewels-quality-report.json",
+      "counts": {
+        "bases": 10,
+        "prefixes": 70,
+        "suffixes": 90
+      },
+      "poolCounts": {
+        "prefixes": 5,
+        "suffixes": 5
+      }
     }
   ],
   "files": {
     "english-spears.html": {
       "url": "https://poe2db.tw/us/Spears",
       "bytes": 684804,
-      "sha256": "af72f2a2733840e1fceb00e3607efad17a8ed67ea96cad9143c0c6a1ab67c765"
+      "sha256": "027716ee5cd83b199d30905f79c4f1d5da71550c93e310aff2b0008f309dd95d"
     },
     "german-spears.html": {
       "url": "https://poe2db.tw/de/Spears",
       "bytes": 658544,
-      "sha256": "899473cfaca6d31a7574e35e413ee475e01ead76337a6fd9c432091572fbc6d9"
+      "sha256": "4dd06b14085f33f4f17e92fad1675b0c088a6f72c693519ab621340dd15a7fff"
     },
     "english-bows.html": {
       "url": "https://poe2db.tw/us/Bows",
       "bytes": 695982,
-      "sha256": "3fbf4ae64768c82633dfc458dada3cf7dcf5850f2015755bc43ddd2802bec35b"
+      "sha256": "1ff79468a2d97fb8af9f4a1653b21b858592b4782bb1551d769dcb237b64ba07"
     },
     "german-bows.html": {
       "url": "https://poe2db.tw/de/Bows",
       "bytes": 647574,
-      "sha256": "999159a25fbc063b84dd315fb22f3d959cfd603262e91a1eb737041bd5087394"
+      "sha256": "ad8fb6e65dd9d9a8dc8afbd69294127d2d62b45d44605492ec33e3d4cf5d45b3"
     },
     "english-crossbows.html": {
       "url": "https://poe2db.tw/us/Crossbows",
       "bytes": 686639,
-      "sha256": "12c8b3d79f026c45e3882b4cf0f4f12f44b6fb6e48ae09883bad5b0e46cd01fe"
+      "sha256": "24d41cdc1bbca26d17939059c055c0449becdb53029b0ee8d02a46360f3ae3cc"
     },
     "german-crossbows.html": {
       "url": "https://poe2db.tw/de/Crossbows",
       "bytes": 652994,
-      "sha256": "31136587a79fc10c3a56d8ac36d4edf41dec79105aa8bb979ca484cefd3e25db"
+      "sha256": "cfbf3d341ff0aa5f2b94a8138c785efa9cf936aa2129da83fafd9e5cb9976080"
     },
     "english-wands.html": {
       "url": "https://poe2db.tw/us/Wands",
       "bytes": 553879,
-      "sha256": "d36a9d4d7462c30808843f56f5a22d9482b120b012d2098c084b1a1ca750e703"
+      "sha256": "79ad7b3b153db62f5eafdad14181d0adff84a69cbe6b97d3656e46b8ec78a975"
     },
     "german-wands.html": {
       "url": "https://poe2db.tw/de/Wands",
       "bytes": 501400,
-      "sha256": "bc964d0a96b917390360e12310123626a7fd37ab94474e0741939ccc35b7b7c9"
+      "sha256": "aa5171d292fe31908a77610bb91e517a2539d5d8e7c2475524e00d87667e1bc6"
     },
     "english-staves.html": {
       "url": "https://poe2db.tw/us/Staves",
       "bytes": 544547,
-      "sha256": "86fc0c2c31a0fc342ce2f9136053869f86c43337335af882530d05eb5a5c26be"
+      "sha256": "e0bd71b539781a72c182d2626f98a954bdfc9ad2ec33a1a9d700d39a4d38b353"
     },
     "german-staves.html": {
       "url": "https://poe2db.tw/de/Staves",
       "bytes": 498723,
-      "sha256": "8756eb458975edf04b3418ebff9af74d04ec0fd1bf714367248f62ecdfd5f397"
+      "sha256": "f068aa8b101639eb8f3a2f4be3a8f88dd51218998d82bfe6c88d13d7cc2fc0ea"
     },
     "english-warstaves.html": {
       "url": "https://poe2db.tw/us/Quarterstaves",
       "bytes": 642239,
-      "sha256": "5a1e7f0d2d9e237908b570edfccb13954d77d0749dc99d41b1700e424eb419ca"
+      "sha256": "02e112260c6107c9bb744e6a964d5c24404d6b55e56ca8b0373691e430c8d4d8"
     },
     "german-warstaves.html": {
       "url": "https://poe2db.tw/de/Quarterstaves",
       "bytes": 609554,
-      "sha256": "6b02aa398c17f237a3a456dacba51e5ede8cbe0e5dbb6172edf63644ead92f1c"
+      "sha256": "7f709e5cc6392e9e522575c21e9d6d299e4cf5aa50d4e8a888cfb3b6a178b66c"
     },
     "english-one-hand-swords.html": {
       "url": "https://poe2db.tw/us/One_Hand_Swords",
       "bytes": 525457,
-      "sha256": "09266d62b494241ae53c4828259ed451b6934c8f55f7c07bada69e13fc2f0170"
+      "sha256": "2c9b9fb2847dcf9d5fef733b034dacc66fcdc55c7085ecae6d0c6d44eee7fbb4"
     },
     "german-one-hand-swords.html": {
       "url": "https://poe2db.tw/de/One_Hand_Swords",
       "bytes": 476026,
-      "sha256": "8bdc9b50ebaed7ebf34d6267566fe4f331fd4c954e4ef382a30ccf21017a772c"
+      "sha256": "0cf6cc308c30323b8f130baebb130b81770985890e989d32f5857c000a5e6f16"
     },
     "english-two-hand-swords.html": {
       "url": "https://poe2db.tw/us/Two_Hand_Swords",
       "bytes": 474781,
-      "sha256": "e1c4b365dd40c036529b049c6744b8601cc00ddd299ce850ef59e265926bf53d"
+      "sha256": "e1279d26584786d50f91ff9edcff7ebe843fb9156e3115554ab8118683972472"
     },
     "german-two-hand-swords.html": {
       "url": "https://poe2db.tw/de/Two_Hand_Swords",
       "bytes": 428329,
-      "sha256": "2a705a9737f976ba9f3cb8b2be7be20a96f8033829c1ff880d0dd26f31a9e5af"
+      "sha256": "24db113efd866b41c342ed64b44001eeaa79762653574f6828631105a910a041"
     },
     "english-one-hand-axes.html": {
       "url": "https://poe2db.tw/us/One_Hand_Axes",
       "bytes": 509513,
-      "sha256": "27f9b765ca9d8033417a7b874a2632cf7ac5ec1005920bf46e76920963f501ee"
+      "sha256": "dedfbca374f010605aff1df45ad915eb7cedea07e356a0610b69dc696ba25ed0"
     },
     "german-one-hand-axes.html": {
       "url": "https://poe2db.tw/de/One_Hand_Axes",
       "bytes": 462802,
-      "sha256": "44c7857a962440f8dbfc9f13e91567227db60961fc5d7d10072abd2c33352478"
+      "sha256": "a46025eca26b7db065a2722e7df33b549d9afd23976c314d6a8f887effb5be73"
     },
     "english-two-hand-axes.html": {
       "url": "https://poe2db.tw/us/Two_Hand_Axes",
       "bytes": 507287,
-      "sha256": "c078b8caec15d4f9b240706ba50cdb2f76ea7232c7c1e24bc9470036174e3780"
+      "sha256": "106570a1a436dd300d14acc8a667ceab6ad86db0c1db86d8f3943f990b41a49c"
     },
     "german-two-hand-axes.html": {
       "url": "https://poe2db.tw/de/Two_Hand_Axes",
       "bytes": 462800,
-      "sha256": "00993a28693f58b999e958f717bb8ea2615d3e69208d5344c847d398d830390d"
+      "sha256": "be96dfa222fe72f8c913866ea34544f445520dcf2cf1da4972b56451ce2f4e42"
     },
     "english-one-hand-maces.html": {
       "url": "https://poe2db.tw/us/One_Hand_Maces",
       "bytes": 628657,
-      "sha256": "d1d93815e7f6c88ef1ae27636663f1978c356b62c86244a6fde755ea01c55487"
+      "sha256": "2fe0dab263e096d2fb6395715934ae1b0c0c4ec8c47f9af80dadd80d2404ac66"
     },
     "german-one-hand-maces.html": {
       "url": "https://poe2db.tw/de/One_Hand_Maces",
       "bytes": 586199,
-      "sha256": "7bfcb7f0fe21d069adffdf7b081ce7f3f15447c1f0c7ebd48e500461d65e7e9c"
+      "sha256": "196aa96ceba50d5b770deb3abd36cb09ad002914a7218f2c68a28bf7629d7edd"
     },
     "english-two-hand-maces.html": {
       "url": "https://poe2db.tw/us/Two_Hand_Maces",
       "bytes": 619062,
-      "sha256": "2eb3039e7d4f387a0bcac0e8ae388cdf5d747be90821b669b07d16f258091d0a"
+      "sha256": "6819d401cfa26371edc79a1a013de687494fbbfba9fa8687631fa7ba8753972a"
     },
     "german-two-hand-maces.html": {
       "url": "https://poe2db.tw/de/Two_Hand_Maces",
       "bytes": 588297,
-      "sha256": "de78768094c65c92138ae3fedfba48e36fa6da0d3d8a6d1a459c3096efd71acd"
+      "sha256": "e992728843a4fe24df48703a7e1e76effdcf32c8d45f886a8b79bc4d785bca43"
     },
     "english-daggers.html": {
       "url": "https://poe2db.tw/us/Daggers",
       "bytes": 478443,
-      "sha256": "cc786c83d187733ec970f92ad903421a551a2391544e5591c749eaf7dbac245e"
+      "sha256": "f589695b45d46246640e40e66d7733bde0bf44a0656ea2b91f80a6dbd90d4bb5"
     },
     "german-daggers.html": {
       "url": "https://poe2db.tw/de/Daggers",
       "bytes": 435380,
-      "sha256": "a5a98d1a6a5817aaa5e42604354172c886949990563d6dd761d3d04e3346f316"
+      "sha256": "795801e62b1812d215e1e1f055129051154d643cb8f239aaf528728622386d66"
     },
     "english-claws.html": {
       "url": "https://poe2db.tw/us/Claws",
       "bytes": 432465,
-      "sha256": "919c2be9cf1bcdf2ea35c5bbc2effb5c3b6075e2369c8fe598d261304bc5eaf3"
+      "sha256": "2bec70b0d579ce511315afe49004dc725ac2a60a1cf638e6d55ad5793d4707b0"
     },
     "german-claws.html": {
       "url": "https://poe2db.tw/de/Claws",
       "bytes": 401301,
-      "sha256": "1296a69dafaccde07dfbd1851329790484ac301dc7171d68b257a98e01fd3952"
+      "sha256": "edfcd04d5cd59050ee758888ce0d564e942ccad8f762130684a50cd32eaab133"
     },
     "english-flails.html": {
       "url": "https://poe2db.tw/us/Flails",
       "bytes": 517731,
-      "sha256": "c510606a1376bf9a3d3efaca7c9920b20c3d826448abe935ebac47d97443eb66"
+      "sha256": "4756ca9da645fe8abe8b5cad8dd165b9807a3a983aefa8ab2c4922e680c70d20"
     },
     "german-flails.html": {
       "url": "https://poe2db.tw/de/Flails",
       "bytes": 473206,
-      "sha256": "33dc3fd3b35ad9ed524565a77addf83f7c83cb92dd7be4b875a104170d92cffb"
+      "sha256": "c07e455898b1e86dde29848830be24fc8050f461b8859ea3bc7aeb9adcab891e"
     },
     "english-sceptres.html": {
       "url": "https://poe2db.tw/us/Sceptres",
       "bytes": 448495,
-      "sha256": "c00048035e8b77d767b479a2c325385e3268ca13e93b2c3c5e6c06e653102c6a"
+      "sha256": "658266b26f2fe0ec9b12e1cbec82bb16ea22b8e67622212517e536023975edb1"
     },
     "german-sceptres.html": {
       "url": "https://poe2db.tw/de/Sceptres",
       "bytes": 414546,
-      "sha256": "7f33de226a709a8d39402d696b920082a1632d143c541bfb6cec7f2011cc34e3"
+      "sha256": "4c5ee5aec9c78d7b256b81d8fa2a04ea033337bfebd4e5b9319dfd628b61d5e3"
+    },
+    "english-body-armours.html": {
+      "url": "https://poe2db.tw/us/Body_Armours",
+      "bytes": 711192,
+      "sha256": "bf7c9caa1801cd4b7fa671359417a8ee6d73cc022483c580f8f891b80c2e7330"
+    },
+    "german-body-armours.html": {
+      "url": "https://poe2db.tw/de/Body_Armours",
+      "bytes": 713400,
+      "sha256": "2405ab8238f099210eab1e8175b5194075a8d3af94e76bb4138a2f4ec6f5949b"
+    },
+    "english-body-armours--body-armours-str.html": {
+      "url": "https://poe2db.tw/us/Body_Armours_str",
+      "bytes": 522896,
+      "sha256": "6fa71f26cd6d3dd313de3dd9be1d685f68b5be0b274b4df9bdaa03370a19e590"
+    },
+    "german-body-armours--body-armours-str.html": {
+      "url": "https://poe2db.tw/de/Body_Armours_str",
+      "bytes": 476292,
+      "sha256": "c3e4a35ae780398f87c40263d6e9faf7a9c6f2d0c78de7100fa9a882e2472d04"
+    },
+    "english-body-armours--body-armours-dex.html": {
+      "url": "https://poe2db.tw/us/Body_Armours_dex",
+      "bytes": 525009,
+      "sha256": "2f2efed7bd86bbaed0963a9f499e4927d32f070beec5dfa27caa02cf13e0a93f"
+    },
+    "german-body-armours--body-armours-dex.html": {
+      "url": "https://poe2db.tw/de/Body_Armours_dex",
+      "bytes": 479994,
+      "sha256": "b4ffff8552c555f9d5b2665a6bf28f67254706ca9b6355cb2f6a877f60ab77f2"
+    },
+    "english-body-armours--body-armours-int.html": {
+      "url": "https://poe2db.tw/us/Body_Armours_int",
+      "bytes": 521747,
+      "sha256": "3dc64b17526ebf3e9e60c8f7b47abd8d1d3eb332a6f46a110527036ba526fa9c"
+    },
+    "german-body-armours--body-armours-int.html": {
+      "url": "https://poe2db.tw/de/Body_Armours_int",
+      "bytes": 479706,
+      "sha256": "b80904406af6f025b1284de7356537192d7b9bb8a74fc292dc3c7584066e4df8"
+    },
+    "english-body-armours--body-armours-str-dex.html": {
+      "url": "https://poe2db.tw/us/Body_Armours_str_dex",
+      "bytes": 571566,
+      "sha256": "37d1255c6c196de39cde25eaf04edc178d714d4c9c907d50965ef5a3db22f9bf"
+    },
+    "german-body-armours--body-armours-str-dex.html": {
+      "url": "https://poe2db.tw/de/Body_Armours_str_dex",
+      "bytes": 516819,
+      "sha256": "9bd9edbffe740867cf12ebac5f95d5f406bb7a4454a13d2d6e31779a8d9b173d"
+    },
+    "english-body-armours--body-armours-str-int.html": {
+      "url": "https://poe2db.tw/us/Body_Armours_str_int",
+      "bytes": 569422,
+      "sha256": "f325a00690b2c481c4a72b2ad826cc6f5efe9538fa6079b5134cfe82bd6044c9"
+    },
+    "german-body-armours--body-armours-str-int.html": {
+      "url": "https://poe2db.tw/de/Body_Armours_str_int",
+      "bytes": 519655,
+      "sha256": "f4f55e6c540748435a14b0c99d5236714f0aa3b34bec1786b23318ad46415c30"
+    },
+    "english-body-armours--body-armours-dex-int.html": {
+      "url": "https://poe2db.tw/us/Body_Armours_dex_int",
+      "bytes": 554267,
+      "sha256": "7778dae77279b64ad4c68767e7d89888c8f09e333a2857a79da7e1cd6dfbe47b"
+    },
+    "german-body-armours--body-armours-dex-int.html": {
+      "url": "https://poe2db.tw/de/Body_Armours_dex_int",
+      "bytes": 503337,
+      "sha256": "776808501dbf832664a2d6ab5ba3c0d30838203e3298c7817c7ca4df571090b4"
+    },
+    "english-body-armours--body-armours-str-dex-int.html": {
+      "url": "https://poe2db.tw/us/Body_Armours_str_dex_int",
+      "bytes": 537471,
+      "sha256": "9a9e894fb557d8b9c77c4deace0d1589e506a6c727d2847884de909a76b0df0b"
+    },
+    "german-body-armours--body-armours-str-dex-int.html": {
+      "url": "https://poe2db.tw/de/Body_Armours_str_dex_int",
+      "bytes": 485435,
+      "sha256": "9035296af710047171834c3cb6dbdc3b7ced0e0f154f4571441657e5e2ff27af"
+    },
+    "english-helmets.html": {
+      "url": "https://poe2db.tw/us/Helmets",
+      "bytes": 492690,
+      "sha256": "a32a71d1dc0e01551ad7c8c357048b3388eef5f54e7833cddbc1f6c30bbf6e15"
+    },
+    "german-helmets.html": {
+      "url": "https://poe2db.tw/de/Helmets",
+      "bytes": 468648,
+      "sha256": "9951f6f5ac5cda282b77db51eef96b6fbfcd2f2a874ca60110a7ffb9544a2474"
+    },
+    "english-helmets--helmets-str.html": {
+      "url": "https://poe2db.tw/us/Helmets_str",
+      "bytes": 497276,
+      "sha256": "62be4aa689cc1c1b75e7532d496ef4779286e1166562291575094e6dd7332dee"
+    },
+    "german-helmets--helmets-str.html": {
+      "url": "https://poe2db.tw/de/Helmets_str",
+      "bytes": 461273,
+      "sha256": "28b3bd016b046dc190b8cdb039c6d95916d603a8151cf80f11720ae9a93fd342"
+    },
+    "english-helmets--helmets-dex.html": {
+      "url": "https://poe2db.tw/us/Helmets_dex",
+      "bytes": 498552,
+      "sha256": "848aed0cf9b191f403833cc72cf67b7106857edac0614538b927a073d59109d3"
+    },
+    "german-helmets--helmets-dex.html": {
+      "url": "https://poe2db.tw/de/Helmets_dex",
+      "bytes": 459523,
+      "sha256": "4bdcf711e1ca7998e2d220da3d768937586ef999c88fa8d8f43012b91347d1bf"
+    },
+    "english-helmets--helmets-int.html": {
+      "url": "https://poe2db.tw/us/Helmets_int",
+      "bytes": 488716,
+      "sha256": "4280641c214a6227252775e854e5f5510bfa4fd4cb5e9687e82f4779009e5af6"
+    },
+    "german-helmets--helmets-int.html": {
+      "url": "https://poe2db.tw/de/Helmets_int",
+      "bytes": 453956,
+      "sha256": "687db70af121cf231c26e07cef6ff7119ccb956e213d27eea51dc26fd842fa55"
+    },
+    "english-helmets--helmets-str-dex.html": {
+      "url": "https://poe2db.tw/us/Helmets_str_dex",
+      "bytes": 520234,
+      "sha256": "f5315b225648c8f9c409c3e39a653a7404e70f94978bf183a17ab4a3205fb782"
+    },
+    "german-helmets--helmets-str-dex.html": {
+      "url": "https://poe2db.tw/de/Helmets_str_dex",
+      "bytes": 480713,
+      "sha256": "8b1b275f4156bfa9df0e587b965ee5da02cd0692862a3b0823e2aa25c1552797"
+    },
+    "english-helmets--helmets-str-int.html": {
+      "url": "https://poe2db.tw/us/Helmets_str_int",
+      "bytes": 520277,
+      "sha256": "656b11f7334f55ca3c1db5027b4b913a74d5061fa27f6b1acf10b6f94f0990df"
+    },
+    "german-helmets--helmets-str-int.html": {
+      "url": "https://poe2db.tw/de/Helmets_str_int",
+      "bytes": 479150,
+      "sha256": "31e82082fbe1f7daf4b41364f3cd555e7ded2bb445adc85444e77c71c020a4e6"
+    },
+    "english-helmets--helmets-dex-int.html": {
+      "url": "https://poe2db.tw/us/Helmets_dex_int",
+      "bytes": 510160,
+      "sha256": "963c52ccc24d763604bbf7c92fb24a82a799b0192d8594ba9010333c7177c456"
+    },
+    "german-helmets--helmets-dex-int.html": {
+      "url": "https://poe2db.tw/de/Helmets_dex_int",
+      "bytes": 468514,
+      "sha256": "8ddb00a9b1005a0a773487f88cf554c364b122df3738d5513c8e076655568138"
+    },
+    "english-gloves.html": {
+      "url": "https://poe2db.tw/us/Gloves",
+      "bytes": 967288,
+      "sha256": "3ab7f331f81a69172c6aa535f1463b0fe85cd7a4d969b6f1e2901abfeeaa3ea4"
+    },
+    "german-gloves.html": {
+      "url": "https://poe2db.tw/de/Gloves",
+      "bytes": 794814,
+      "sha256": "f758063a87e9d9bc78af84e7c0e35f233be17de0f5a9f440ade24a1eb8adb984"
+    },
+    "english-gloves--gloves-str.html": {
+      "url": "https://poe2db.tw/us/Gloves_str",
+      "bytes": 567276,
+      "sha256": "4dc4b4bf1e2e13f614c1a7d1775c6f4d3681f1f6f9a0d86ff7c2c8d9a9fe43b0"
+    },
+    "german-gloves--gloves-str.html": {
+      "url": "https://poe2db.tw/de/Gloves_str",
+      "bytes": 520565,
+      "sha256": "23394e511890a40c49986fc3df0dbcc0e0190b76ab0f503bfb2ed983d7eb3af8"
+    },
+    "english-gloves--gloves-dex.html": {
+      "url": "https://poe2db.tw/us/Gloves_dex",
+      "bytes": 558234,
+      "sha256": "a2e1f31bce530922bac0a2525765c08e04edfb6273daa1ddbcfbc0d8d7b6d35e"
+    },
+    "german-gloves--gloves-dex.html": {
+      "url": "https://poe2db.tw/de/Gloves_dex",
+      "bytes": 513224,
+      "sha256": "963f53a773cee5c8a8cbd2077a2d440eee0c2a082fb6f8ea51ffd4eb6c738ea7"
+    },
+    "english-gloves--gloves-int.html": {
+      "url": "https://poe2db.tw/us/Gloves_int",
+      "bytes": 567005,
+      "sha256": "850dd17a3473259f8954bc9275fd5509d1f8362c6641222e3e9637b4b42ce38a"
+    },
+    "german-gloves--gloves-int.html": {
+      "url": "https://poe2db.tw/de/Gloves_int",
+      "bytes": 522813,
+      "sha256": "16dac46a20b59b3154777008f3647dc922741f2bcde1dc76d730d96e0317b3c4"
+    },
+    "english-gloves--gloves-str-dex.html": {
+      "url": "https://poe2db.tw/us/Gloves_str_dex",
+      "bytes": 579133,
+      "sha256": "80362350462ae7e66ceec8195a9a9c093354653ca5d30ba1e95c18e753c85ce3"
+    },
+    "german-gloves--gloves-str-dex.html": {
+      "url": "https://poe2db.tw/de/Gloves_str_dex",
+      "bytes": 529235,
+      "sha256": "43bd957b6663b23c03be8ecc86befca9142d8de56d73c47c01615cace4e1667b"
+    },
+    "english-gloves--gloves-str-int.html": {
+      "url": "https://poe2db.tw/us/Gloves_str_int",
+      "bytes": 583252,
+      "sha256": "0b5940c3b4a1a00f497ceb85fa956ce80e32347375a5dbaea83ca2c224283902"
+    },
+    "german-gloves--gloves-str-int.html": {
+      "url": "https://poe2db.tw/de/Gloves_str_int",
+      "bytes": 533839,
+      "sha256": "3aab028356acccf4f83beeb592f38a72ac911d1153382623d30b146dc51a5930"
+    },
+    "english-gloves--gloves-dex-int.html": {
+      "url": "https://poe2db.tw/us/Gloves_dex_int",
+      "bytes": 572306,
+      "sha256": "804f43fe805262c6d3dfa238bd43d5adb06cc8dce41a003a5c03adc629065f54"
+    },
+    "german-gloves--gloves-dex-int.html": {
+      "url": "https://poe2db.tw/de/Gloves_dex_int",
+      "bytes": 525595,
+      "sha256": "96c9c213ed14febf804007dfe5bf6008f6cac09aa8241c8c25bdba98ac259c37"
+    },
+    "english-boots.html": {
+      "url": "https://poe2db.tw/us/Boots",
+      "bytes": 326141,
+      "sha256": "78de6bb02fa9fc006ac5723073e1abc83df76db63574779f775a105ad390de39"
+    },
+    "german-boots.html": {
+      "url": "https://poe2db.tw/de/Boots",
+      "bytes": 310554,
+      "sha256": "dbfdeb81e4d41ff327b54bb18b598ad31815ef5dfb56f98d4591376e351aec9b"
+    },
+    "english-boots--boots-str.html": {
+      "url": "https://poe2db.tw/us/Boots_str",
+      "bytes": 454443,
+      "sha256": "38e5b88ca8bc808c56f94900ccdca307385fe72d925f0189c9168febc167f529"
+    },
+    "german-boots--boots-str.html": {
+      "url": "https://poe2db.tw/de/Boots_str",
+      "bytes": 417876,
+      "sha256": "2239484c1a670855e76be6cae6841513e05b3d9ca5c6f6f67e693339f4e1bd9c"
+    },
+    "english-boots--boots-dex.html": {
+      "url": "https://poe2db.tw/us/Boots_dex",
+      "bytes": 454592,
+      "sha256": "aa59909019c6239f53b6f28e8add131e42078654a2fd47499d60e9c41342e4cc"
+    },
+    "german-boots--boots-dex.html": {
+      "url": "https://poe2db.tw/de/Boots_dex",
+      "bytes": 415726,
+      "sha256": "e7d02dc94ee744dac2b05e4804c0befe35b3ce7f728b43845012219b8a96a12c"
+    },
+    "english-boots--boots-int.html": {
+      "url": "https://poe2db.tw/us/Boots_int",
+      "bytes": 451249,
+      "sha256": "e19bd46e1c2bbdd5ed7fba53f9166a8caa85d3afec06c9b4263c57120ff8bd1c"
+    },
+    "german-boots--boots-int.html": {
+      "url": "https://poe2db.tw/de/Boots_int",
+      "bytes": 414076,
+      "sha256": "03791d2d6623df5cc4ebe7ff8ef92141d5fb51cfae9bff39b40d64c46e4184b3"
+    },
+    "english-boots--boots-str-dex.html": {
+      "url": "https://poe2db.tw/us/Boots_str_dex",
+      "bytes": 472644,
+      "sha256": "3de4fe34f5cc783d9e6d9d2593a97111ef72eaee8af92ddde1f8416d64b95505"
+    },
+    "german-boots--boots-str-dex.html": {
+      "url": "https://poe2db.tw/de/Boots_str_dex",
+      "bytes": 427722,
+      "sha256": "b01412efdc02901025a45f9d1f3935905468a3e1703c5bfb255f983c7a8df67b"
+    },
+    "english-boots--boots-str-int.html": {
+      "url": "https://poe2db.tw/us/Boots_str_int",
+      "bytes": 466864,
+      "sha256": "d1f2d40f4e4e299941e2b8d54d66034b3877f140366c594dacd12d5702d5560e"
+    },
+    "german-boots--boots-str-int.html": {
+      "url": "https://poe2db.tw/de/Boots_str_int",
+      "bytes": 424591,
+      "sha256": "192972beaf0e3427cde137cd475710e9f2b0818a6a7779584c4a99fbd9159902"
+    },
+    "english-boots--boots-dex-int.html": {
+      "url": "https://poe2db.tw/us/Boots_dex_int",
+      "bytes": 464276,
+      "sha256": "e170fcebe837dd3d36f5014878c55a244fcf274e43195ebf2f799dfe7f84086d"
+    },
+    "german-boots--boots-dex-int.html": {
+      "url": "https://poe2db.tw/de/Boots_dex_int",
+      "bytes": 421941,
+      "sha256": "b44119a115e3b5f6bce22aeada404a86e4258b494d5ffe51615202a097b89610"
+    },
+    "english-shields.html": {
+      "url": "https://poe2db.tw/us/Shields",
+      "bytes": 486675,
+      "sha256": "b2cd67d1748ee04a434113d60874fec1687d89e54ed6eca808479afb578374c2"
+    },
+    "german-shields.html": {
+      "url": "https://poe2db.tw/de/Shields",
+      "bytes": 429943,
+      "sha256": "cfc99bc09811ff33cb4d0d1abfda4f00c14f27a773d08156edbd0e961dd6d04b"
+    },
+    "english-shields--shields-str.html": {
+      "url": "https://poe2db.tw/us/Shields_str",
+      "bytes": 470849,
+      "sha256": "0b4e8cf7318dcc21a4b9f0d242a919c7ffae727099c6d2d20e51d181b3c8e804"
+    },
+    "german-shields--shields-str.html": {
+      "url": "https://poe2db.tw/de/Shields_str",
+      "bytes": 428874,
+      "sha256": "480afec68ada939c3fb5389c360b0c3b9bff72869c4d6c771a709fd9edab2de3"
+    },
+    "english-shields--shields-str-dex.html": {
+      "url": "https://poe2db.tw/us/Shields_str_dex",
+      "bytes": 477450,
+      "sha256": "d260daeec52b0b0ad5b8ff461ab46699f8a4810caf090e1d2fc32ca838164df4"
+    },
+    "german-shields--shields-str-dex.html": {
+      "url": "https://poe2db.tw/de/Shields_str_dex",
+      "bytes": 425106,
+      "sha256": "ab27d8676cb92663c2569731e9e76bd2fc5649b4b3032251a60f93869f4f78b3"
+    },
+    "english-shields--shields-str-int.html": {
+      "url": "https://poe2db.tw/us/Shields_str_int",
+      "bytes": 485207,
+      "sha256": "a72a92f8ef1f217cb4633a66f2ff0622bad7cd9a30873f2a647922f274e08417"
+    },
+    "german-shields--shields-str-int.html": {
+      "url": "https://poe2db.tw/de/Shields_str_int",
+      "bytes": 443725,
+      "sha256": "c7076dddf258197bb07bb78ae7e951f256137da4648b48e5061cc76a6f11c32c"
+    },
+    "english-bucklers.html": {
+      "url": "https://poe2db.tw/us/Bucklers",
+      "bytes": 486210,
+      "sha256": "be31331784e8ff6d2c6bdfecbd3fd72a1abf635037f60ff289de2e252b1fc144"
+    },
+    "german-bucklers.html": {
+      "url": "https://poe2db.tw/de/Bucklers",
+      "bytes": 464234,
+      "sha256": "3ac12ef35265630622cf02abdb5610bb14b4eb2a980e2a2b07c400df37acfa1b"
+    },
+    "english-focuses.html": {
+      "url": "https://poe2db.tw/us/Foci",
+      "bytes": 513710,
+      "sha256": "1579ecbdab37e2456ff66e606c4c140133a4880305763ab43c7cd037c9a813ce"
+    },
+    "german-focuses.html": {
+      "url": "https://poe2db.tw/de/Foci",
+      "bytes": 465909,
+      "sha256": "f5d435e4575a236934e37bfb1b330b14360901e4c14d4494df097fbd2054e26e"
+    },
+    "english-quivers.html": {
+      "url": "https://poe2db.tw/us/Quivers",
+      "bytes": 272883,
+      "sha256": "1e9263216d40956557366ed3ebb7b88fc5980d8f817ec3c2ad8033378da80e18"
+    },
+    "german-quivers.html": {
+      "url": "https://poe2db.tw/de/Quivers",
+      "bytes": 237579,
+      "sha256": "4953c4f308488c7281191b54223842adaf3ba7ade917c8a6e1079da0162040b0"
+    },
+    "english-amulets.html": {
+      "url": "https://poe2db.tw/us/Amulets",
+      "bytes": 2163797,
+      "sha256": "c89b2e5e790c50da0471f878d075a7aee406c3c89e91c1a0dcfd5f50ea315425"
+    },
+    "german-amulets.html": {
+      "url": "https://poe2db.tw/de/Amulets",
+      "bytes": 1865476,
+      "sha256": "1b6999356f2e576d44c61da07376b9e9e2fb52ab843026b6c7f9ff790c8657ce"
+    },
+    "english-rings.html": {
+      "url": "https://poe2db.tw/us/Rings",
+      "bytes": 583230,
+      "sha256": "aa709024042aed29dc45ba3890f8a6897920e59db80d3216e678df578a35d5e5"
+    },
+    "german-rings.html": {
+      "url": "https://poe2db.tw/de/Rings",
+      "bytes": 509237,
+      "sha256": "072b91c2cca7d53f58437f75e1164f29592852d4222be587bb02b4c720b4875f"
+    },
+    "english-belts.html": {
+      "url": "https://poe2db.tw/us/Belts",
+      "bytes": 408210,
+      "sha256": "7b3c798f8671e80c1bba5f5ae917df23876f5677f26cb1baef6b3083be6c1232"
+    },
+    "german-belts.html": {
+      "url": "https://poe2db.tw/de/Belts",
+      "bytes": 366714,
+      "sha256": "39994d2b5d136b8a0850569a7bba08156e83ac3a47448ea944d2f5583482116f"
+    },
+    "english-jewels.html": {
+      "url": "https://poe2db.tw/us/Jewels",
+      "bytes": 214622,
+      "sha256": "785e8f03b5d6f4c2676118384cc2d0455d385f78b0e99f0ff2cdc879d694d858"
+    },
+    "german-jewels.html": {
+      "url": "https://poe2db.tw/de/Jewels",
+      "bytes": 232972,
+      "sha256": "78bd46fa157542a36c0f9c49af13bc82366a1933362db558b96c80efdde85034"
+    },
+    "english-jewels--ruby.html": {
+      "url": "https://poe2db.tw/us/Ruby",
+      "bytes": 186570,
+      "sha256": "a0ae405d4333b806a322b0b3c9d26e2afb2d2e169e4db432bb87b2bf2c84bfec"
+    },
+    "german-jewels--ruby.html": {
+      "url": "https://poe2db.tw/de/Ruby",
+      "bytes": 155309,
+      "sha256": "10c361cfca53f003729b009b71ee2889b8982119cfde4a54e9927c858218a720"
+    },
+    "english-jewels--emerald.html": {
+      "url": "https://poe2db.tw/us/Emerald",
+      "bytes": 208126,
+      "sha256": "a55efe4926d85b98a74739943c9f2c9aedf3fd37433fe18ff393c09d9ac89fe3"
+    },
+    "german-jewels--emerald.html": {
+      "url": "https://poe2db.tw/de/Emerald",
+      "bytes": 175094,
+      "sha256": "f6b859982d94a172aa27c5fde01be88b1974d2c60e8de9fa47fb01bcd2b4c932"
+    },
+    "english-jewels--sapphire.html": {
+      "url": "https://poe2db.tw/us/Sapphire",
+      "bytes": 201297,
+      "sha256": "d70fb34a814cbeec19e0393a71a6a5692f9b79dd083e3f0f453cdf9a795041e1"
+    },
+    "german-jewels--sapphire.html": {
+      "url": "https://poe2db.tw/de/Sapphire",
+      "bytes": 169900,
+      "sha256": "9a03e9e11386719694c02dba82abefc4b53037e6aa2fd21557bc3fbfd452b4ae"
+    },
+    "english-jewels--time-lost-ruby.html": {
+      "url": "https://poe2db.tw/us/Time-Lost_Ruby",
+      "bytes": 165508,
+      "sha256": "1c6c563a70f454d60592737114ccaee8dedf0a4bf9b959c565ece4bc5b0d4a54"
+    },
+    "german-jewels--time-lost-ruby.html": {
+      "url": "https://poe2db.tw/de/Time-Lost_Ruby",
+      "bytes": 137534,
+      "sha256": "83a242a2146d2cdd57e575d092c39909c5312c078f776afa697a93b43199405b"
+    },
+    "english-jewels--time-lost-emerald.html": {
+      "url": "https://poe2db.tw/us/Time-Lost_Emerald",
+      "bytes": 191098,
+      "sha256": "dbdbb36fddedbbf28777fb37302be31afc2236203ec97ad88c96dae8e43d1b26"
+    },
+    "german-jewels--time-lost-emerald.html": {
+      "url": "https://poe2db.tw/de/Time-Lost_Emerald",
+      "bytes": 160991,
+      "sha256": "7d61d2f15a4b28cca9a2de0abacdf7fe69574c63e294bd89b706551161da1b7b"
+    },
+    "english-jewels--time-lost-sapphire.html": {
+      "url": "https://poe2db.tw/us/Time-Lost_Sapphire",
+      "bytes": 176156,
+      "sha256": "47c4f39bf9f0f4fc89432180011b735a14f956b27be5f74888639fdd28be34d9"
+    },
+    "german-jewels--time-lost-sapphire.html": {
+      "url": "https://poe2db.tw/de/Time-Lost_Sapphire",
+      "bytes": 146761,
+      "sha256": "cc36d0a8c5b4ee9fb263750d0057125c096eb0b5c435b22d5b95d32f3562e8b2"
     }
   }
 }

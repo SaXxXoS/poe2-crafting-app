@@ -40,7 +40,49 @@ const CLASS_CONFIGS = [
   { key: "daggers", itemClass: "Dagger", tag: "dagger", page: "Daggers" },
   { key: "claws", itemClass: "Claw", tag: "claw", page: "Claws" },
   { key: "flails", itemClass: "Flail", tag: "flail", page: "Flails" },
-  { key: "sceptres", itemClass: "Sceptre", tag: "sceptre", page: "Sceptres" }
+  { key: "sceptres", itemClass: "Sceptre", tag: "sceptre", page: "Sceptres" },
+  {
+    key: "body-armours", itemClass: "Body Armour", tag: "body_armour", page: "Body_Armours",
+    modPages: ["str", "dex", "int", "str_dex", "str_int", "dex_int", "str_dex_int"]
+      .map(type => ({ page: `Body_Armours_${type}`, selectorTags: ["body_armour", `${type}_armour`] }))
+  },
+  {
+    key: "helmets", itemClass: "Helmet", tag: "helmet", page: "Helmets",
+    modPages: ["str", "dex", "int", "str_dex", "str_int", "dex_int"]
+      .map(type => ({ page: `Helmets_${type}`, selectorTags: ["helmet", `${type}_armour`] }))
+  },
+  {
+    key: "gloves", itemClass: "Gloves", tag: "gloves", page: "Gloves",
+    modPages: ["str", "dex", "int", "str_dex", "str_int", "dex_int"]
+      .map(type => ({ page: `Gloves_${type}`, selectorTags: ["gloves", `${type}_armour`] }))
+  },
+  {
+    key: "boots", itemClass: "Boots", tag: "boots", page: "Boots",
+    modPages: ["str", "dex", "int", "str_dex", "str_int", "dex_int"]
+      .map(type => ({ page: `Boots_${type}`, selectorTags: ["boots", `${type}_armour`] }))
+  },
+  {
+    key: "shields", itemClass: "Shield", tag: "shield", page: "Shields",
+    modPages: ["str", "str_dex", "str_int"]
+      .map(type => ({ page: `Shields_${type}`, selectorTags: ["shield", `${type}_armour`] }))
+  },
+  { key: "bucklers", itemClass: "Buckler", tag: "buckler", page: "Bucklers", selectorTags: ["buckler", "shield", "dex_armour", "dex_shield"] },
+  { key: "focuses", itemClass: "Focus", tag: "focus", page: "Foci", selectorTags: ["focus", "int_armour"] },
+  { key: "quivers", itemClass: "Quiver", tag: "quiver", page: "Quivers" },
+  { key: "amulets", itemClass: "Amulet", tag: "amulet", page: "Amulets" },
+  { key: "rings", itemClass: "Ring", tag: "ring", page: "Rings" },
+  { key: "belts", itemClass: "Belt", tag: "belt", page: "Belts" },
+  {
+    key: "jewels", itemClass: "Jewel", tag: "jewel", page: "Jewels",
+    modPages: [
+      { page: "Ruby", selectorTags: ["strjewel"] },
+      { page: "Emerald", selectorTags: ["dexjewel"] },
+      { page: "Sapphire", selectorTags: ["intjewel"] },
+      { page: "Time-Lost_Ruby", selectorTags: ["strjewel"] },
+      { page: "Time-Lost_Emerald", selectorTags: ["dexjewel"] },
+      { page: "Time-Lost_Sapphire", selectorTags: ["intjewel"] }
+    ]
+  }
 ];
 
 function ensureDir(directory) {
@@ -79,8 +121,8 @@ function decodeHtml(value) {
     .trim();
 }
 
-async function download(config, language, url) {
-  const filePath = path.join(rawRoot, `${language}-${config.key}.html`);
+async function download(config, language, url, snapshotKey = config.key) {
+  const filePath = path.join(rawRoot, `${language}-${snapshotKey}.html`);
 
   if (offline) {
     if (!fs.existsSync(filePath)) {
@@ -148,8 +190,9 @@ function parseModsView(html) {
 function baseSection(html, config) {
   const heading = html.match(/<h5 class="card-header">[^<]*(?:Item|Gegenstand)\s*\/\s*\d+/i);
   const start = heading?.index ?? -1;
-  const end = html.indexOf("new ModsView(", start);
-  if (start < 0 || end < 0) throw new Error("Speer-Basisabschnitt fehlt.");
+  const modsStart = html.indexOf("new ModsView(", start);
+  const end = modsStart < 0 ? html.length : modsStart;
+  if (start < 0) throw new Error(`Basisabschnitt fehlt: ${config.itemClass}`);
   return html.slice(start, end);
 }
 
@@ -199,7 +242,12 @@ function parseBasePage(html, config) {
         physicalDamage: physical?.match(/(\d+)\s*[-–]\s*(\d+)/)?.slice(1).map(Number) ?? null,
         criticalHitChance: Number(properties.find(value => /Critical Hit|Kritische Treffer/i.test(value))?.match(/([\d.]+)%/)?.[1] ?? 0),
         attacksPerSecond: Number(properties.find(value => /Attacks per Second|Angriffe pro Sekunde/i.test(value))?.match(/([\d.]+)\s*$/)?.[1] ?? 0),
-        weaponRange: Number(properties.find(value => /Weapon Range|Waffenreichweite/i.test(value))?.match(/([\d.]+)\s*$/)?.[1] ?? 0)
+        weaponRange: Number(properties.find(value => /Weapon Range|Waffenreichweite/i.test(value))?.match(/([\d.]+)\s*$/)?.[1] ?? 0),
+        armour: Number(properties.find(value => /^Armour:/i.test(value))?.match(/([\d.]+)\s*$/)?.[1] ?? 0),
+        evasion: Number(properties.find(value => /^Evasion Rating:/i.test(value))?.match(/([\d.]+)\s*$/)?.[1] ?? 0),
+        energyShield: Number(properties.find(value => /^Energy Shield:/i.test(value))?.match(/([\d.]+)\s*$/)?.[1] ?? 0),
+        blockChance: Number(properties.find(value => /Block Chance:/i.test(value))?.match(/([\d.]+)%/)?.[1] ?? 0),
+        movementSpeedModifier: Number(properties.find(value => /Movement Speed:/i.test(value))?.match(/([-+\d.]+)%/)?.[1] ?? 0)
       },
       requirements: parseRequirement(decodeHtml(requirementMatch?.[1] ?? "")),
       implicits
@@ -234,7 +282,9 @@ function localizedBases(english, german) {
 
 function classifyBase(base, raw) {
   const tags = raw.tags ?? [];
-  const isSpecial = tags.includes("runeforged") || /Verisium/i.test(base.id);
+  const isSpecial = tags.some(tag => [
+    "runeforged", "experimental_base", "desecrated", "grasping_mail"
+  ].includes(tag)) || /Verisium|Experimented|Heist|Lake|Grasping|Abyss|Breach|Ritual|Delirium/i.test(base.id);
   const released = raw.release_state === "released";
   const droppable = released && Number(raw.drop_level) > 0;
   let classification = "regular";
@@ -278,6 +328,8 @@ function modJoinKey(row, occurrences) {
 }
 
 function modStructuralKey(row) {
+  const keywordIds = [...String(row.str ?? "").matchAll(/data-keyword=\\?"([^"\\]+)\\?"/g)]
+    .map(match => match[1]);
   return [
     row.ModGenerationTypeID,
     row.Level,
@@ -285,36 +337,67 @@ function modStructuralKey(row) {
     ...(row.ModFamilyList ?? []),
     `spawn:${(row.spawn_no ?? []).join(",")}`,
     `fossil:${(row.fossil_no ?? []).join(",")}`,
-    `adds:${(row.adds_no ?? []).join(",")}`
+    `adds:${(row.adds_no ?? []).join(",")}`,
+    `keywords:${keywordIds.join(",")}`
   ].join("|");
 }
 
-function classMods(document, classTag) {
-  return (document.normal ?? []).filter(row =>
+function classMods(document, selectorTags) {
+  const selected = new Set(selectorTags);
+  const rows = (document.normal ?? []).filter(row =>
     ["1", "2"].includes(String(row.ModGenerationTypeID))
     && Array.isArray(row.spawn_no)
-    && row.spawn_no.includes(classTag)
+    && row.spawn_no.some(tag => selected.has(tag))
     && Number(row.DropChance) > 0
   );
+  const seen = new Set();
+  return rows.filter(row => {
+    const key = `${modStructuralKey(row)}|text:${decodeHtml(row.str)}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
-function localizeMods(englishDocument, germanDocument, classTag) {
-  const english = classMods(englishDocument, classTag);
-  const german = classMods(germanDocument, classTag);
-  for (const [language, rows] of [["english", english], ["german", german]]) {
-    const keys = rows.map(modStructuralKey);
-    const duplicate = keys.find((key, index) => keys.indexOf(key) !== index);
-    if (duplicate) throw new Error(`Mehrdeutige ${language} Mod-Zuordnung: ${duplicate}`);
-  }
-  const germanOccurrences = new Map();
-  const germanByKey = new Map(german.map(row => [modJoinKey(row, germanOccurrences), row]));
-  const englishOccurrences = new Map();
+function localizeMods(englishDocument, germanDocument, selectorTags) {
+  const english = classMods(englishDocument, selectorTags);
+  const german = classMods(germanDocument, selectorTags);
+  const germanGroups = Map.groupBy(german, modStructuralKey);
+  const joined = [];
+  for (const [baseKey, englishRows] of Map.groupBy(english, modStructuralKey)) {
+    const germanRows = germanGroups.get(baseKey) ?? [];
+    if (englishRows.length === 1) {
+      joined.push({ row: englishRows[0], translated: germanRows[0] ?? null, key: baseKey });
+      continue;
+    }
 
-  const joined = english.map(row => {
-    const key = modJoinKey(row, englishOccurrences);
-    const translated = germanByKey.get(key);
-    return { row, translated, key };
-  });
+    const technicalId = row => decodeURIComponent(String(row.hover ?? ""))
+      .match(/[\\/]Mods[\\/]([^?&#]+)/)?.[1] ?? null;
+    const remainingGerman = new Set(germanRows);
+    const pairs = englishRows.map(row => {
+      const id = technicalId(row);
+      const matches = id ? [...remainingGerman].filter(candidate => technicalId(candidate) === id) : [];
+      if (matches.length > 1) throw new Error(`Mehrdeutige deutsche Mod-Zuordnung: ${baseKey} (${id})`);
+      const translated = matches[0] ?? null;
+      if (translated) remainingGerman.delete(translated);
+      return { row, translated, id };
+    });
+    const unresolved = pairs.filter(pair => !pair.translated);
+    if (unresolved.length === 1 && remainingGerman.size === 1) {
+      unresolved[0].translated = [...remainingGerman][0];
+      remainingGerman.clear();
+    }
+    if (pairs.some(pair => !pair.translated) && germanRows.length > 0) {
+      throw new Error(`Mehrdeutige englisch/deutsche Mod-Zuordnung: ${baseKey}`);
+    }
+    for (const pair of pairs) {
+      joined.push({
+        row: pair.row,
+        translated: pair.translated,
+        key: `${baseKey}|technical:${pair.id ?? technicalId(pair.translated) ?? "untranslated"}`
+      });
+    }
+  }
 
   const familyGroups = new Map();
   for (const entry of joined) {
@@ -341,20 +424,40 @@ function localizeMods(englishDocument, germanDocument, classTag) {
     tier: tiers.get(key),
     spawnWeight: Number(row.DropChance),
     family: row.ModFamilyList ?? [],
+    poe2dbSpawnTags: row.spawn_no ?? [],
+    poe2dbFossilTags: row.fossil_no ?? [],
     generationType: String(row.ModGenerationTypeID) === "1" ? "prefix" : "suffix"
   }));
 }
 
-function attachWeightRules(mods, repoeMods, classTag, bases) {
+function mergeLocalizedMods(groups) {
+  const byId = new Map();
+  for (const mod of groups.flat()) {
+    const existing = byId.get(mod.id);
+    if (existing && (
+      existing.textEn !== mod.textEn
+      || existing.textDe !== mod.textDe
+      || existing.generationType !== mod.generationType
+    )) {
+      throw new Error(`Mehrdeutiger Mod über mehrere PoE2DB-Unterseiten: ${mod.id}`);
+    }
+    if (!existing) byId.set(mod.id, mod);
+  }
+  return [...byId.values()];
+}
+
+function attachWeightRules(mods, repoeMods, bases, domain = "item") {
   return mods.map(mod => {
     const candidates = Object.entries(repoeMods).filter(([, row]) =>
-      row.domain === "item"
+      row.domain === domain
       && row.is_essence_only !== true
       && row.name === mod.nameEn
       && Number(row.required_level) === mod.itemLevel
       && row.generation_type === mod.generationType
       && mod.family.every(family => (row.groups ?? []).includes(family))
-      && row.spawn_weights?.some(weight => weight.tag === classTag && Number(weight.weight) > 0)
+      && row.spawn_weights?.some(weight =>
+        Number(weight.weight) > 0 && mod.poe2dbSpawnTags.includes(weight.tag)
+      )
       && bases.some(base => firstMatchingWeight(row.spawn_weights, base.tags).weight > 0)
     );
 
@@ -514,23 +617,36 @@ async function main() {
   ensureDir(outputRoot);
   const indexClasses = [];
   const rawFiles = {};
-  const snapshots = new Map(await Promise.all(
-    CLASS_CONFIGS.flatMap(config => ["english", "german"].map(async language => {
-      const locale = language === "english" ? "us" : "de";
-      const url = `https://poe2db.tw/${locale}/${config.page}`;
-      return [`${config.key}:${language}`, await download(config, language, url)];
-    }))
-  ));
 
   for (const config of CLASS_CONFIGS) {
-    const pages = {
+    const sourcePages = [...new Set([config.page, ...(config.modPages ?? []).map(entry => entry.page)])];
+    const sourceEntries = sourcePages.flatMap(page => ["english", "german"].map(language => {
+      const locale = language === "english" ? "us" : "de";
+      const snapshotKey = page === config.page
+        ? config.key
+        : `${config.key}--${page.toLowerCase().replaceAll("_", "-")}`;
+      return { page, language, snapshotKey, url: `https://poe2db.tw/${locale}/${page}` };
+    }));
+    const snapshotRows = await Promise.all(sourceEntries.map(async entry => ({
+      ...entry,
+      html: await download(config, entry.language, entry.url, entry.snapshotKey)
+    })));
+    const snapshots = new Map();
+    for (const row of snapshotRows) {
+      snapshots.set(`${row.page}:${row.language}`, row.html);
+      rawFiles[`${row.language}-${row.snapshotKey}.html`] = {
+        url: row.url,
+        bytes: Buffer.byteLength(row.html),
+        sha256: sha256(row.html)
+      };
+    }
+    const basePages = {
       english: `https://poe2db.tw/us/${config.page}`,
       german: `https://poe2db.tw/de/${config.page}`
     };
-    const englishHtml = snapshots.get(`${config.key}:english`);
-    const germanHtml = snapshots.get(`${config.key}:german`);
-    const englishMods = parseModsView(englishHtml);
-    const germanMods = parseModsView(germanHtml);
+    const modPages = config.modPages ?? [{ page: config.page, selectorTags: config.selectorTags ?? [config.tag] }];
+    const englishHtml = snapshots.get(`${config.page}:english`);
+    const germanHtml = snapshots.get(`${config.page}:german`);
     const bases = localizedBases(
       parseBasePage(englishHtml, config),
       parseBasePage(germanHtml, config)
@@ -539,11 +655,16 @@ async function main() {
       if (!raw) throw new Error(`Interne Basisdaten fehlen: ${base.id}`);
       return classifyBase(base, raw);
     });
+    const localizedGroups = modPages.map(modPage => localizeMods(
+      parseModsView(snapshots.get(`${modPage.page}:english`)),
+      parseModsView(snapshots.get(`${modPage.page}:german`)),
+      modPage.selectorTags
+    ));
     const mods = attachWeightRules(
-      localizeMods(englishMods, germanMods, config.tag),
+      mergeLocalizedMods(localizedGroups),
       repoeMods,
-      config.tag,
-      bases
+      bases,
+      config.itemClass === "Jewel" ? "misc" : "item"
     );
     const prefixes = mods.filter(mod => mod.generationType === "prefix");
     const suffixes = mods.filter(mod => mod.generationType === "suffix");
@@ -554,7 +675,15 @@ async function main() {
       scope: config.itemClass,
       source: {
         site: "PoE2DB",
-        pages,
+        pages: {
+          bases: basePages,
+          modifiers: modPages.map(modPage => ({
+            page: modPage.page,
+            selectorTags: modPage.selectorTags,
+            english: `https://poe2db.tw/us/${modPage.page}`,
+            german: `https://poe2db.tw/de/${modPage.page}`
+          }))
+        },
         strategy: {
           bases: `HTML cards on ${config.page}`,
           modifiers: "embedded JSON passed to new ModsView(...)",
@@ -582,16 +711,6 @@ async function main() {
         suffixes: qualityReport.counts.distinctSuffixPools
       }
     });
-    rawFiles[`english-${config.key}.html`] = {
-      url: pages.english,
-      bytes: Buffer.byteLength(englishHtml),
-      sha256: sha256(englishHtml)
-    };
-    rawFiles[`german-${config.key}.html`] = {
-      url: pages.german,
-      bytes: Buffer.byteLength(germanHtml),
-      sha256: sha256(germanHtml)
-    };
     console.log(`${config.itemClass}: Basen ${bases.length}, Präfixe ${prefixes.length}, Suffixe ${suffixes.length}`);
   }
 
@@ -603,8 +722,8 @@ async function main() {
   const manifest = {
     schemaVersion: 2,
     generatedAt,
-    status: "validated-normal-weapon-classes",
-    supportedClassTarget: "All requested normal ExileForge weapon classes.",
+    status: "validated-craftable-equipment-classes",
+    supportedClassTarget: "All requested normal weapon, armour, off-hand, jewellery, and jewel classes.",
     sources: {
       primary: "PoE2DB English and German pages",
       technicalSupplement: "RePoE only for IDs and complete ordered weight rules"

@@ -1,12 +1,24 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:22:05.264Z",
+  "generatedAt": "2026-07-17T23:50:40.675Z",
   "scope": "Two Hand Axe",
   "source": {
     "site": "PoE2DB",
     "pages": {
-      "english": "https://poe2db.tw/us/Two_Hand_Axes",
-      "german": "https://poe2db.tw/de/Two_Hand_Axes"
+      "bases": {
+        "english": "https://poe2db.tw/us/Two_Hand_Axes",
+        "german": "https://poe2db.tw/de/Two_Hand_Axes"
+      },
+      "modifiers": [
+        {
+          "page": "Two_Hand_Axes",
+          "selectorTags": [
+            "axe"
+          ],
+          "english": "https://poe2db.tw/us/Two_Hand_Axes",
+          "german": "https://poe2db.tw/de/Two_Hand_Axes"
+        }
+      ]
     },
     "strategy": {
       "bases": "HTML cards on Two_Hand_Axes",
@@ -37,7 +49,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 1,
@@ -85,7 +102,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.25,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 4,
@@ -133,7 +155,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 10,
@@ -186,7 +213,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.15,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 16,
@@ -234,7 +266,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 20,
@@ -282,7 +319,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 27,
@@ -335,7 +377,12 @@
         ],
         "criticalHitChance": 6.5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 33,
@@ -383,7 +430,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.15,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 40,
@@ -436,7 +488,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 45,
@@ -480,7 +537,12 @@
         "physicalDamage": null,
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 50,
@@ -532,7 +594,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 52,
@@ -584,7 +651,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 57,
@@ -632,7 +704,12 @@
         ],
         "criticalHitChance": 5,
         "attacksPerSecond": 1.2,
-        "weaponRange": 1.5
+        "weaponRange": 1.5,
+        "armour": 0,
+        "evasion": 0,
+        "energyShield": 0,
+        "blockChance": 0,
+        "movementSpeedModifier": 0
       },
       "requirements": {
         "level": 65,
@@ -665,7 +742,7 @@
   ],
   "prefixes": [
     {
-      "id": "poe2db:768f6f3b531b496ebb63",
+      "id": "poe2db:a4b1e8f957ae485d1970",
       "nameEn": "Heated",
       "nameDe": "{Erhitzter}{Erhitzte}{Erhitztes}{Erhitzte}{Erhitzte}{Erhitzte}",
       "textEn": "Adds (2—4) to (5—7) Fire Damage",
@@ -675,6 +752,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand1",
@@ -715,7 +809,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:5e4b141d2008af0bd30d",
+      "id": "poe2db:c40ca5ae7be291b3055e",
       "nameEn": "Smouldering",
       "nameDe": "{Schwelender}{Schwelende}{Schwelendes}{Schwelende}{Schwelende}{Schwelende}",
       "textEn": "Adds (6—9) to (10—16) Fire Damage",
@@ -725,6 +819,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand2",
@@ -765,7 +876,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:7b31d4bb8cad18e67461",
+      "id": "poe2db:5603e7151aedb99e69a5",
       "nameEn": "Smoking",
       "nameDe": "{Rauchender}{Rauchende}{Rauchendes}{Rauchende}{Rauchende}{Rauchende}",
       "textEn": "Adds (11—17) to (19—28) Fire Damage",
@@ -775,6 +886,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand3",
@@ -815,7 +943,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:0a3a685273f2009b2878",
+      "id": "poe2db:83abdb9d4f146bef4898",
       "nameEn": "Burning",
       "nameDe": "{Brennender}{Brennende}{Brennendes}{Brennende}{Brennende}{Brennende}",
       "textEn": "Adds (19—27) to (30—42) Fire Damage",
@@ -825,6 +953,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand4",
@@ -865,7 +1010,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:cfa4ace376f35b7dcb90",
+      "id": "poe2db:f6774d34842275c9ae3d",
       "nameEn": "Flaming",
       "nameDe": "{Lodernder}{Lodernde}{Loderndes}{Lodernde}{Lodernde}{Lodernde}",
       "textEn": "Adds (30—37) to (45—56) Fire Damage",
@@ -875,6 +1020,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand5",
@@ -915,7 +1077,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:c1e4175d72ca9e452826",
+      "id": "poe2db:613718ec28064ee152f8",
       "nameEn": "Scorching",
       "nameDe": "{Sengender}{Sengende}{Sengendes}{Sengende}{Sengende}{Sengende}",
       "textEn": "Adds (39—53) to (59—80) Fire Damage",
@@ -925,6 +1087,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand6",
@@ -965,7 +1144,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:3c132b5e9105cc83de0b",
+      "id": "poe2db:13fe8902b9236c23f2ec",
       "nameEn": "Incinerating",
       "nameDe": "{Verzehrender}{Verzehrende}{Verzehrendes}{Verzehrende}{Verzehrende}{Verzehrende}",
       "textEn": "Adds (56—70) to (84—107) Fire Damage",
@@ -975,6 +1154,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand7",
@@ -1015,7 +1211,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:ecae57e36044e370bd22",
+      "id": "poe2db:26901abe6f659d4b5703",
       "nameEn": "Blasting",
       "nameDe": "{Explodierender}{Explodierende}{Explodierendes}{Explodierende}{Explodierende}{Explodierende}",
       "textEn": "Adds (73—97) to (112—149) Fire Damage",
@@ -1025,6 +1221,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand8_",
@@ -1065,7 +1278,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:65e4c6e8ec6af993de5f",
+      "id": "poe2db:0392a68fe9c26c4a2a7a",
       "nameEn": "Cremating",
       "nameDe": "{Einäschernder}{Einäschernde}{Einäscherndes}{Einäschernde}{Einäschernde}{Einäschernde}",
       "textEn": "Adds (102—130) to (155—198) Fire Damage",
@@ -1075,6 +1288,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand9",
@@ -1115,7 +1345,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:ac5df2370a3fd3717737",
+      "id": "poe2db:7f47f9ffdd441fac0bf7",
       "nameEn": "Carbonising",
       "nameDe": "{Verschwelender}{Verschwelende}{Verschwelendes}{Verschwelende}{Verschwelende}{Verschwelende}",
       "textEn": "Adds (135—156) to (205—236) Fire Damage",
@@ -1125,6 +1355,23 @@
       "spawnWeight": 1,
       "family": [
         "FireDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "fire",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedFireDamageTwoHand10",
@@ -1165,7 +1412,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:db532063ccd71f7c116a",
+      "id": "poe2db:2389522f9bae33aa6537",
       "nameEn": "Frosted",
       "nameDe": "{Gefrorener}{Gefrorene}{Gefrorenes}{Gefrorene}{Gefrorene}{Gefrorene}",
       "textEn": "Adds (2—3) to (4—6) Cold Damage",
@@ -1175,6 +1422,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand1",
@@ -1215,7 +1479,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:0e9c89aaa2f88b0cb6c7",
+      "id": "poe2db:be4ceb6eb304efe21c2a",
       "nameEn": "Chilled",
       "nameDe": "{Unterkühlter}{Unterkühlte}{Unterkühltes}{Unterkühlte}{Unterkühlte}{Unterkühlte}",
       "textEn": "Adds (5—8) to (9—14) Cold Damage",
@@ -1225,6 +1489,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand2",
@@ -1265,7 +1546,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:ec9ce2d05aae2131ec0a",
+      "id": "poe2db:a018da1e9fcd56ba2077",
       "nameEn": "Icy",
       "nameDe": "{Eisiger}{Eisige}{Eisiges}{Eisige}{Eisige}{Eisige}",
       "textEn": "Adds (10—14) to (15—23) Cold Damage",
@@ -1275,6 +1556,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand3",
@@ -1315,7 +1613,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:2ecd30fea228072ad1b3",
+      "id": "poe2db:3e1e5af55548a4d7b730",
       "nameEn": "Frigid",
       "nameDe": "{Kühler}{Kühle}{Kühles}{Kühle}{Kühle}{Kühle}",
       "textEn": "Adds (16—23) to (25—35) Cold Damage",
@@ -1325,6 +1623,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand4",
@@ -1365,7 +1680,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:96b73a469d8c7fb84c82",
+      "id": "poe2db:4cf7020f9560df30f22b",
       "nameEn": "Freezing",
       "nameDe": "{Einfrierender}{Einfrierende}{Einfrierendes}{Einfrierende}{Einfrierende}{Einfrierende}",
       "textEn": "Adds (25—30) to (38—46) Cold Damage",
@@ -1375,6 +1690,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand5",
@@ -1415,7 +1747,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:0a387e7e68d0ca808046",
+      "id": "poe2db:7c77fca518ac6c564ce8",
       "nameEn": "Frozen",
       "nameDe": "{Eingefrorener}{Eingefrorene}{Eingefrorenes}{Eingefrorene}{Eingefrorene}{Eingefrorene}",
       "textEn": "Adds (32—43) to (49—66) Cold Damage",
@@ -1425,6 +1757,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand6",
@@ -1465,7 +1814,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:ad3d38a57ff8e90a962c",
+      "id": "poe2db:bd9309b36bbaa458dc5e",
       "nameEn": "Glaciated",
       "nameDe": "{Vereister}{Vereiste}{Vereistes}{Vereiste}{Vereiste}{Vereiste}",
       "textEn": "Adds (46—57) to (70—88) Cold Damage",
@@ -1475,6 +1824,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand7",
@@ -1515,7 +1881,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:bc29a9bbbb1d621af86a",
+      "id": "poe2db:235a345de7584c700946",
       "nameEn": "Polar",
       "nameDe": "{Polarer}{Polare}{Polares}{Polare}{Polare}{Polare}",
       "textEn": "Adds (60—80) to (92—121) Cold Damage",
@@ -1525,6 +1891,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand8",
@@ -1565,7 +1948,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:dbaaffccb284e211cbaf",
+      "id": "poe2db:6932eabee29d65c3e0ef",
       "nameEn": "Entombing",
       "nameDe": "{Umschließender}{Umschließende}{Umschließendes}{Umschließende}{Umschließende}{Umschließende}",
       "textEn": "Adds (84—107) to (126—161) Cold Damage",
@@ -1575,6 +1958,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand9",
@@ -1615,7 +2015,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:013cd9d7c936cb02ef21",
+      "id": "poe2db:a4e82dba472f577d00a5",
       "nameEn": "Crystalising",
       "nameDe": "{Kristallisierender}{Kristallisierende}{Kristallisierendes}{Kristallisierende}{Kristallisierende}{Kristallisierende}",
       "textEn": "Adds (112—124) to (168—189) Cold Damage",
@@ -1625,6 +2025,23 @@
       "spawnWeight": 1,
       "family": [
         "ColdDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "cold",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedColdDamageTwoHand10",
@@ -1665,7 +2082,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:ce2bb4eb07f49ae52f78",
+      "id": "poe2db:657c9646213a578b62d4",
       "nameEn": "Humming",
       "nameDe": "{Summender}{Summende}{Summendes}{Summende}{Summende}{Summende}",
       "textEn": "Adds 1 to (7—10) Lightning Damage",
@@ -1675,6 +2092,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand1_",
@@ -1715,7 +2149,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:ed54773ba47221791412",
+      "id": "poe2db:236afe826d3c80ef84ce",
       "nameEn": "Buzzing",
       "nameDe": "{Surrender}{Surrende}{Surrendes}{Surrende}{Surrende}{Surrende}",
       "textEn": "Adds (1—2) to (19—27) Lightning Damage",
@@ -1725,6 +2159,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand2",
@@ -1765,7 +2216,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:41dc9f09b39e3b5f0f36",
+      "id": "poe2db:c48525270552604d03ca",
       "nameEn": "Snapping",
       "nameDe": "{Reißender}{Reißende}{Reißendes}{Reißende}{Reißende}{Reißende}",
       "textEn": "Adds (1—3) to (31—43) Lightning Damage",
@@ -1775,6 +2226,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand3",
@@ -1815,7 +2283,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:ab9bdd4fde80104b2a83",
+      "id": "poe2db:71325b239b637935746b",
       "nameEn": "Crackling",
       "nameDe": "{Knisternder}{Knisternde}{Knisterndes}{Knisternde}{Knisternde}{Knisternde}",
       "textEn": "Adds (1—4) to (53—76) Lightning Damage",
@@ -1825,6 +2293,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand4",
@@ -1865,7 +2350,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:717a1f99a7afb84042d8",
+      "id": "poe2db:2ab3191390206fd24d27",
       "nameEn": "Sparking",
       "nameDe": "{Funkensprühender}{Funkensprühende}{Funkensprühendes}{Funkensprühende}{Funkensprühende}{Funkensprühende}",
       "textEn": "Adds (1—4) to (80—88) Lightning Damage",
@@ -1875,6 +2360,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand5",
@@ -1915,7 +2417,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:1d45cf551a727735045a",
+      "id": "poe2db:f92aa5a2ebf84061e1e4",
       "nameEn": "Arcing",
       "nameDe": "{Funkender}{Funkende}{Funkendes}{Funkende}{Funkende}{Funkende}",
       "textEn": "Adds (1—6) to (93—122) Lightning Damage",
@@ -1925,6 +2427,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand6",
@@ -1965,7 +2484,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:97aa2511f9239d7c206c",
+      "id": "poe2db:84ead55e49af7d3eb955",
       "nameEn": "Shocking",
       "nameDe": "{Schockender}{Schockende}{Schockendes}{Schockende}{Schockende}{Schockende}",
       "textEn": "Adds (1—8) to (128—162) Lightning Damage",
@@ -1975,6 +2494,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand7",
@@ -2015,7 +2551,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:8ae5d361ca36dc347ed5",
+      "id": "poe2db:dc3e87af7a3f7051c2ce",
       "nameEn": "Discharging",
       "nameDe": "{Entladender}{Entladende}{Entladendes}{Entladende}{Entladende}{Entladende}",
       "textEn": "Adds (1—13) to (168—231) Lightning Damage",
@@ -2025,6 +2561,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand8",
@@ -2065,7 +2618,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:cdbf4bba56eda21d6a5f",
+      "id": "poe2db:c391ad63bb12b64a2c57",
       "nameEn": "Electrocuting",
       "nameDe": "{Elektrisierender}{Elektrisierende}{Elektrisierendes}{Elektrisierende}{Elektrisierende}{Elektrisierende}",
       "textEn": "Adds (1—16) to (239—300) Lightning Damage",
@@ -2075,6 +2628,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand9",
@@ -2115,7 +2685,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:e0553de7b56fb95fc8ab",
+      "id": "poe2db:c644205f6b392da5aa8a",
       "nameEn": "Vapourising",
       "nameDe": "{Verdunstender}{Verdunstende}{Verdunstendes}{Verdunstende}{Verdunstende}{Verdunstende}",
       "textEn": "Adds (1—19) to (310—358) Lightning Damage",
@@ -2125,6 +2695,23 @@
       "spawnWeight": 1,
       "family": [
         "LightningDamage"
+      ],
+      "poe2dbSpawnTags": [
+        "one_hand_weapon",
+        "crossbow",
+        "sword",
+        "axe",
+        "mace",
+        "warstaff",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "elemental_damage",
+        "damage",
+        "elemental",
+        "lightning",
+        "attack"
       ],
       "generationType": "prefix",
       "sourceId": "LocalAddedLightningDamageTwoHand10",
@@ -2167,7 +2754,7 @@
   ],
   "suffixes": [
     {
-      "id": "poe2db:6e6d5043eb1467108c01",
+      "id": "poe2db:4f9c723411b97266ac24",
       "nameEn": "of the Brute",
       "nameDe": "des Wüstlings",
       "textEn": "+(5—8) to Strength",
@@ -2177,6 +2764,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength1",
@@ -2249,7 +2857,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:5649ad0295608df1f3e6",
+      "id": "poe2db:d4a9e2db93052a771028",
       "nameEn": "of the Wrestler",
       "nameDe": "des Ringers",
       "textEn": "+(9—12) to Strength",
@@ -2259,6 +2867,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength2",
@@ -2331,7 +2960,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:8c69066e2219420e946c",
+      "id": "poe2db:d2175759eb5bb94aa06d",
       "nameEn": "of the Bear",
       "nameDe": "des Bären",
       "textEn": "+(13—16) to Strength",
@@ -2341,6 +2970,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength3",
@@ -2413,7 +3063,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:2a2709eefb540d7a3d61",
+      "id": "poe2db:9fae7b310ed794a78d13",
       "nameEn": "of the Lion",
       "nameDe": "des Löwen",
       "textEn": "+(17—20) to Strength",
@@ -2423,6 +3073,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength4",
@@ -2495,7 +3166,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:f21c384524e4b513831d",
+      "id": "poe2db:7e303c605cecb3fd975c",
       "nameEn": "of the Gorilla",
       "nameDe": "des Gorillas",
       "textEn": "+(21—24) to Strength",
@@ -2505,6 +3176,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength5",
@@ -2577,7 +3269,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:4505650284628949f0dc",
+      "id": "poe2db:387afb85a62c5e5a5a56",
       "nameEn": "of the Goliath",
       "nameDe": "des Goliaths",
       "textEn": "+(25—27) to Strength",
@@ -2587,6 +3279,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength6",
@@ -2659,7 +3372,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:16f653dfc3beba77aff1",
+      "id": "poe2db:c62c311075d89b3bc3d4",
       "nameEn": "of the Leviathan",
       "nameDe": "des Giganten",
       "textEn": "+(28—30) to Strength",
@@ -2669,6 +3382,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength7",
@@ -2741,7 +3475,7 @@
       "generationWeights": []
     },
     {
-      "id": "poe2db:513b519bf7976c26959c",
+      "id": "poe2db:285be0896d28c0402806",
       "nameEn": "of the Titan",
       "nameDe": "des Titanen",
       "textEn": "+(31—33) to Strength",
@@ -2751,6 +3485,27 @@
       "spawnWeight": 1,
       "family": [
         "Strength"
+      ],
+      "poe2dbSpawnTags": [
+        "ring",
+        "amulet",
+        "belt",
+        "str_armour",
+        "str_dex_armour",
+        "str_int_armour",
+        "str_dex_int_armour",
+        "mace",
+        "axe",
+        "sword",
+        "spear",
+        "flail",
+        "crossbow",
+        "sceptre",
+        "talisman",
+        "default"
+      ],
+      "poe2dbFossilTags": [
+        "attribute"
       ],
       "generationType": "suffix",
       "sourceId": "Strength8",
@@ -2838,7 +3593,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2847,7 +3602,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2856,7 +3611,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2865,7 +3620,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2874,7 +3629,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2883,7 +3638,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2892,7 +3647,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2901,7 +3656,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2910,7 +3665,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2919,7 +3674,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2928,7 +3683,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2937,7 +3692,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2946,7 +3701,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2955,7 +3710,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2964,7 +3719,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2973,7 +3728,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2982,7 +3737,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -2991,7 +3746,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3000,7 +3755,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3009,7 +3764,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3018,7 +3773,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3027,7 +3782,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3036,7 +3791,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3045,7 +3800,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3054,7 +3809,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3063,7 +3818,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3072,7 +3827,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3081,7 +3836,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3090,7 +3845,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3099,7 +3854,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3110,7 +3865,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3119,7 +3874,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3128,7 +3883,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3137,7 +3892,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3146,7 +3901,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3155,7 +3910,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3164,7 +3919,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3173,7 +3928,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3199,7 +3954,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3208,7 +3963,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3217,7 +3972,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3226,7 +3981,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3235,7 +3990,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3244,7 +3999,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3253,7 +4008,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3262,7 +4017,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3271,7 +4026,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3280,7 +4035,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3289,7 +4044,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3298,7 +4053,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3307,7 +4062,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3316,7 +4071,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3325,7 +4080,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3334,7 +4089,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3343,7 +4098,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3352,7 +4107,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3361,7 +4116,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3370,7 +4125,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3379,7 +4134,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3388,7 +4143,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3397,7 +4152,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3406,7 +4161,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3415,7 +4170,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3424,7 +4179,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3433,7 +4188,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3442,7 +4197,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3451,7 +4206,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3460,7 +4215,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3471,7 +4226,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3480,7 +4235,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3489,7 +4244,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3498,7 +4253,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3507,7 +4262,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3516,7 +4271,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3525,7 +4280,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3534,7 +4289,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3560,7 +4315,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3569,7 +4324,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3578,7 +4333,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3587,7 +4342,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3596,7 +4351,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3605,7 +4360,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3614,7 +4369,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3623,7 +4378,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3632,7 +4387,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3641,7 +4396,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3650,7 +4405,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3659,7 +4414,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3668,7 +4423,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3677,7 +4432,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3686,7 +4441,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3695,7 +4450,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3704,7 +4459,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3713,7 +4468,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3722,7 +4477,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3731,7 +4486,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3740,7 +4495,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3749,7 +4504,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3758,7 +4513,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3767,7 +4522,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3776,7 +4531,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3785,7 +4540,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3794,7 +4549,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3803,7 +4558,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3812,7 +4567,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3821,7 +4576,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3832,7 +4587,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3841,7 +4596,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3850,7 +4605,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3859,7 +4614,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3868,7 +4623,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3877,7 +4632,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3886,7 +4641,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3895,7 +4650,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3921,7 +4676,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3930,7 +4685,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3939,7 +4694,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3948,7 +4703,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3957,7 +4712,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3966,7 +4721,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3975,7 +4730,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3984,7 +4739,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -3993,7 +4748,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4002,7 +4757,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4011,7 +4766,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4020,7 +4775,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4029,7 +4784,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4038,7 +4793,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4047,7 +4802,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4056,7 +4811,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4065,7 +4820,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4074,7 +4829,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4083,7 +4838,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4092,7 +4847,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4101,7 +4856,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4110,7 +4865,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4119,7 +4874,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4128,7 +4883,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4137,7 +4892,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4146,7 +4901,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4155,7 +4910,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4164,7 +4919,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4173,7 +4928,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4182,7 +4937,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4193,7 +4948,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4202,7 +4957,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4211,7 +4966,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4220,7 +4975,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4229,7 +4984,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4238,7 +4993,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4247,7 +5002,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4256,7 +5011,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4282,7 +5037,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4291,7 +5046,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4300,7 +5055,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4309,7 +5064,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4318,7 +5073,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4327,7 +5082,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4336,7 +5091,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4345,7 +5100,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4354,7 +5109,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4363,7 +5118,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4372,7 +5127,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4381,7 +5136,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4390,7 +5145,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4399,7 +5154,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4408,7 +5163,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4417,7 +5172,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4426,7 +5181,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4435,7 +5190,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4444,7 +5199,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4453,7 +5208,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4462,7 +5217,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4471,7 +5226,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4480,7 +5235,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4489,7 +5244,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4498,7 +5253,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4507,7 +5262,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4516,7 +5271,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4525,7 +5280,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4534,7 +5289,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4543,7 +5298,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4554,7 +5309,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4563,7 +5318,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4572,7 +5327,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4581,7 +5336,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4590,7 +5345,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4599,7 +5354,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4608,7 +5363,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4617,7 +5372,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4643,7 +5398,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4652,7 +5407,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4661,7 +5416,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4670,7 +5425,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4679,7 +5434,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4688,7 +5443,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4697,7 +5452,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4706,7 +5461,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4715,7 +5470,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4724,7 +5479,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4733,7 +5488,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4742,7 +5497,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4751,7 +5506,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4760,7 +5515,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4769,7 +5524,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4778,7 +5533,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4787,7 +5542,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4796,7 +5551,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4805,7 +5560,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4814,7 +5569,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4823,7 +5578,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4832,7 +5587,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4841,7 +5596,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4850,7 +5605,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4859,7 +5614,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4868,7 +5623,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4877,7 +5632,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4886,7 +5641,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4895,7 +5650,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4904,7 +5659,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4915,7 +5670,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4924,7 +5679,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4933,7 +5688,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4942,7 +5697,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4951,7 +5706,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4960,7 +5715,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4969,7 +5724,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -4978,7 +5733,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5004,7 +5759,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5013,7 +5768,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5022,7 +5777,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5031,7 +5786,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5040,7 +5795,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5049,7 +5804,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5058,7 +5813,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5067,7 +5822,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5076,7 +5831,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5085,7 +5840,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5094,7 +5849,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5103,7 +5858,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5112,7 +5867,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5121,7 +5876,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5130,7 +5885,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5139,7 +5894,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5148,7 +5903,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5157,7 +5912,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5166,7 +5921,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5175,7 +5930,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5184,7 +5939,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5193,7 +5948,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5202,7 +5957,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5211,7 +5966,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5220,7 +5975,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5229,7 +5984,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5238,7 +5993,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5247,7 +6002,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5256,7 +6011,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5265,7 +6020,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5276,7 +6031,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5285,7 +6040,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5294,7 +6049,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5303,7 +6058,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5312,7 +6067,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5321,7 +6076,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5330,7 +6085,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5339,7 +6094,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5365,7 +6120,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5374,7 +6129,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5383,7 +6138,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5392,7 +6147,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5401,7 +6156,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5410,7 +6165,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5419,7 +6174,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5428,7 +6183,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5437,7 +6192,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5446,7 +6201,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5455,7 +6210,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5464,7 +6219,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5473,7 +6228,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5482,7 +6237,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5491,7 +6246,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5500,7 +6255,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5509,7 +6264,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5518,7 +6273,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5527,7 +6282,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5536,7 +6291,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5545,7 +6300,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5554,7 +6309,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5563,7 +6318,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5572,7 +6327,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5581,7 +6336,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5590,7 +6345,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5599,7 +6354,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5608,7 +6363,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5617,7 +6372,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5626,7 +6381,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5637,7 +6392,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5646,7 +6401,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5655,7 +6410,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5664,7 +6419,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5673,7 +6428,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5682,7 +6437,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5691,7 +6446,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5700,7 +6455,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5725,7 +6480,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5734,7 +6489,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5743,7 +6498,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5752,7 +6507,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5761,7 +6516,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5770,7 +6525,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5779,7 +6534,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5788,7 +6543,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5797,7 +6552,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5806,7 +6561,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5815,7 +6570,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5824,7 +6579,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5833,7 +6588,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5842,7 +6597,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5851,7 +6606,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5860,7 +6615,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5869,7 +6624,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5878,7 +6633,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5887,7 +6642,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5896,7 +6651,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5905,7 +6660,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5914,7 +6669,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5923,7 +6678,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5932,7 +6687,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5941,7 +6696,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5950,7 +6705,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5959,7 +6714,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5968,7 +6723,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5977,7 +6732,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5986,7 +6741,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -5997,7 +6752,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6006,7 +6761,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6015,7 +6770,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6024,7 +6779,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6033,7 +6788,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6042,7 +6797,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6051,7 +6806,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6060,7 +6815,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6085,7 +6840,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6094,7 +6849,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6103,7 +6858,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6112,7 +6867,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6121,7 +6876,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6130,7 +6885,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6139,7 +6894,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6148,7 +6903,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6157,7 +6912,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6166,7 +6921,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6175,7 +6930,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6184,7 +6939,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6193,7 +6948,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6202,7 +6957,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6211,7 +6966,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6220,7 +6975,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6229,7 +6984,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6238,7 +6993,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6247,7 +7002,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6256,7 +7011,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6265,7 +7020,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6274,7 +7029,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6283,7 +7038,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6292,7 +7047,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6301,7 +7056,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6310,7 +7065,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6319,7 +7074,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6328,7 +7083,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6337,7 +7092,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6346,7 +7101,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6357,7 +7112,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6366,7 +7121,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6375,7 +7130,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6384,7 +7139,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6393,7 +7148,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6402,7 +7157,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6411,7 +7166,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6420,7 +7175,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6445,7 +7200,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6454,7 +7209,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6463,7 +7218,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6472,7 +7227,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6481,7 +7236,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6490,7 +7245,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6499,7 +7254,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6508,7 +7263,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6517,7 +7272,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6526,7 +7281,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6535,7 +7290,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6544,7 +7299,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6553,7 +7308,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6562,7 +7317,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6571,7 +7326,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6580,7 +7335,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6589,7 +7344,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6598,7 +7353,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6607,7 +7362,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6616,7 +7371,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6625,7 +7380,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6634,7 +7389,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6643,7 +7398,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6652,7 +7407,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6661,7 +7416,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6670,7 +7425,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6679,7 +7434,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6688,7 +7443,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6697,7 +7452,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6706,7 +7461,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6717,7 +7472,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6726,7 +7481,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6735,7 +7490,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6744,7 +7499,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6753,7 +7508,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6762,7 +7517,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6771,7 +7526,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6780,7 +7535,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6805,7 +7560,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6814,7 +7569,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6823,7 +7578,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6832,7 +7587,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6841,7 +7596,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6850,7 +7605,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6859,7 +7614,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6868,7 +7623,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6877,7 +7632,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6886,7 +7641,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6895,7 +7650,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6904,7 +7659,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6913,7 +7668,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6922,7 +7677,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6931,7 +7686,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6940,7 +7695,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6949,7 +7704,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6958,7 +7713,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6967,7 +7722,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6976,7 +7731,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6985,7 +7740,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -6994,7 +7749,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7003,7 +7758,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7012,7 +7767,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7021,7 +7776,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7030,7 +7785,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7039,7 +7794,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7048,7 +7803,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7057,7 +7812,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7066,7 +7821,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7077,7 +7832,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7086,7 +7841,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7095,7 +7850,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7104,7 +7859,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7113,7 +7868,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7122,7 +7877,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7131,7 +7886,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7140,7 +7895,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7165,7 +7920,7 @@
       "evaluatedSuffixRules": 8,
       "prefixes": [
         {
-          "modId": "poe2db:768f6f3b531b496ebb63",
+          "modId": "poe2db:a4b1e8f957ae485d1970",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7174,7 +7929,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5e4b141d2008af0bd30d",
+          "modId": "poe2db:c40ca5ae7be291b3055e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7183,7 +7938,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:7b31d4bb8cad18e67461",
+          "modId": "poe2db:5603e7151aedb99e69a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7192,7 +7947,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a3a685273f2009b2878",
+          "modId": "poe2db:83abdb9d4f146bef4898",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7201,7 +7956,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cfa4ace376f35b7dcb90",
+          "modId": "poe2db:f6774d34842275c9ae3d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7210,7 +7965,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:c1e4175d72ca9e452826",
+          "modId": "poe2db:613718ec28064ee152f8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7219,7 +7974,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:3c132b5e9105cc83de0b",
+          "modId": "poe2db:13fe8902b9236c23f2ec",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7228,7 +7983,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ecae57e36044e370bd22",
+          "modId": "poe2db:26901abe6f659d4b5703",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7237,7 +7992,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:65e4c6e8ec6af993de5f",
+          "modId": "poe2db:0392a68fe9c26c4a2a7a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7246,7 +8001,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ac5df2370a3fd3717737",
+          "modId": "poe2db:7f47f9ffdd441fac0bf7",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7255,7 +8010,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:db532063ccd71f7c116a",
+          "modId": "poe2db:2389522f9bae33aa6537",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7264,7 +8019,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0e9c89aaa2f88b0cb6c7",
+          "modId": "poe2db:be4ceb6eb304efe21c2a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7273,7 +8028,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ec9ce2d05aae2131ec0a",
+          "modId": "poe2db:a018da1e9fcd56ba2077",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7282,7 +8037,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2ecd30fea228072ad1b3",
+          "modId": "poe2db:3e1e5af55548a4d7b730",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7291,7 +8046,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:96b73a469d8c7fb84c82",
+          "modId": "poe2db:4cf7020f9560df30f22b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7300,7 +8055,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:0a387e7e68d0ca808046",
+          "modId": "poe2db:7c77fca518ac6c564ce8",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7309,7 +8064,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ad3d38a57ff8e90a962c",
+          "modId": "poe2db:bd9309b36bbaa458dc5e",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7318,7 +8073,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:bc29a9bbbb1d621af86a",
+          "modId": "poe2db:235a345de7584c700946",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7327,7 +8082,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:dbaaffccb284e211cbaf",
+          "modId": "poe2db:6932eabee29d65c3e0ef",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7336,7 +8091,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:013cd9d7c936cb02ef21",
+          "modId": "poe2db:a4e82dba472f577d00a5",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7345,7 +8100,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ce2bb4eb07f49ae52f78",
+          "modId": "poe2db:657c9646213a578b62d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7354,7 +8109,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ed54773ba47221791412",
+          "modId": "poe2db:236afe826d3c80ef84ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7363,7 +8118,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:41dc9f09b39e3b5f0f36",
+          "modId": "poe2db:c48525270552604d03ca",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7372,7 +8127,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:ab9bdd4fde80104b2a83",
+          "modId": "poe2db:71325b239b637935746b",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7381,7 +8136,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:717a1f99a7afb84042d8",
+          "modId": "poe2db:2ab3191390206fd24d27",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7390,7 +8145,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:1d45cf551a727735045a",
+          "modId": "poe2db:f92aa5a2ebf84061e1e4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7399,7 +8154,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:97aa2511f9239d7c206c",
+          "modId": "poe2db:84ead55e49af7d3eb955",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7408,7 +8163,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8ae5d361ca36dc347ed5",
+          "modId": "poe2db:dc3e87af7a3f7051c2ce",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7417,7 +8172,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:cdbf4bba56eda21d6a5f",
+          "modId": "poe2db:c391ad63bb12b64a2c57",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7426,7 +8181,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:e0553de7b56fb95fc8ab",
+          "modId": "poe2db:c644205f6b392da5aa8a",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7437,7 +8192,7 @@
       ],
       "suffixes": [
         {
-          "modId": "poe2db:6e6d5043eb1467108c01",
+          "modId": "poe2db:4f9c723411b97266ac24",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7446,7 +8201,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:5649ad0295608df1f3e6",
+          "modId": "poe2db:d4a9e2db93052a771028",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7455,7 +8210,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:8c69066e2219420e946c",
+          "modId": "poe2db:d2175759eb5bb94aa06d",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7464,7 +8219,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:2a2709eefb540d7a3d61",
+          "modId": "poe2db:9fae7b310ed794a78d13",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7473,7 +8228,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:f21c384524e4b513831d",
+          "modId": "poe2db:7e303c605cecb3fd975c",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7482,7 +8237,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:4505650284628949f0dc",
+          "modId": "poe2db:387afb85a62c5e5a5a56",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7491,7 +8246,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:16f653dfc3beba77aff1",
+          "modId": "poe2db:c62c311075d89b3bc3d4",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",
@@ -7500,7 +8255,7 @@
           "poe2dbDropChance": 1
         },
         {
-          "modId": "poe2db:513b519bf7976c26959c",
+          "modId": "poe2db:285be0896d28c0402806",
           "allowed": true,
           "spawnWeight": 1,
           "spawnMatchedTag": "axe",

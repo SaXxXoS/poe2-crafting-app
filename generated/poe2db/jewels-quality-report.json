@@ -1,0 +1,457 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:51:18.353Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Jewel.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Jewel DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 10,
+    "regularUsableBases": 9,
+    "excludedBases": 1,
+    "distinctPrefixPools": 5,
+    "distinctSuffixPools": 5
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [
+      {
+        "id": "poe2db:f2b7b505d475c54662da",
+        "nameEn": "Bleeding",
+        "textEn": "(3—7)% chance to inflict Bleeding on Hit"
+      },
+      {
+        "id": "poe2db:c8beb3319a419b126c15",
+        "nameEn": "Empowering",
+        "textEn": "Empowered Attacks deal (10—20)% increased Damage"
+      },
+      {
+        "id": "poe2db:6a095d1aa061d25f7229",
+        "nameEn": "Searing",
+        "textEn": "Damage Penetrates (5—10)% Fire Resistance"
+      },
+      {
+        "id": "poe2db:594ae2eecd86e561517f",
+        "nameEn": "Burning",
+        "textEn": "(5—15)% increased Ignite Magnitude"
+      },
+      {
+        "id": "poe2db:1e1886f47d790d3d056a",
+        "nameEn": "Acrimonious",
+        "textEn": "(5—15)% increased Magnitude of Ailments you inflict"
+      },
+      {
+        "id": "poe2db:080ac90a05b0b68b6513",
+        "nameEn": "Surging",
+        "textEn": "Damage Penetrates (5—10)% Lightning Resistance"
+      },
+      {
+        "id": "poe2db:f14f38c291cb845a7c64",
+        "nameEn": "Numbing",
+        "textEn": "Damage Penetrates (5—10)% Cold Resistance"
+      },
+      {
+        "id": "poe2db:2c505ffee06954fd6080",
+        "nameEn": "Necromantic",
+        "textEn": "(10—20)% increased Damage if you have Consumed a Corpse Recently"
+      },
+      {
+        "id": "poe2db:c7d179d626f2c1d52525",
+        "nameEn": "Withering",
+        "textEn": "(5—10)% increased Withered Magnitude"
+      },
+      {
+        "id": "poe2db:e903f026aebd298b4b65",
+        "nameEn": "of Ignition",
+        "textEn": "(10—20)% increased Flammability Magnitude"
+      },
+      {
+        "id": "poe2db:05d129070ec51b3dc6e0",
+        "nameEn": "of Raging",
+        "textEn": "Gain 1 Rage on Melee Hit"
+      },
+      {
+        "id": "poe2db:64f07ef0db3319ec4c90",
+        "nameEn": "of Blinding",
+        "textEn": "(3—7)% chance to Blind Enemies on Hit with Attacks"
+      },
+      {
+        "id": "poe2db:4ea9d6438775caa47684",
+        "nameEn": "of Dazing",
+        "textEn": "(5—10)% chance to Daze on Hit"
+      },
+      {
+        "id": "poe2db:6631ccb2908681334bed",
+        "nameEn": "of Diminishing",
+        "textEn": "Debuffs on you expire (5—10)% faster"
+      },
+      {
+        "id": "poe2db:9d08a60c5c0370beadb7",
+        "nameEn": "of Poisoning",
+        "textEn": "(5—10)% chance to Poison on Hit"
+      },
+      {
+        "id": "poe2db:c0bd1bbf7847bc2c42aa",
+        "nameEn": "of Stoutness",
+        "textEn": "(15—25)% increased Stun Threshold if you haven't been Stunned Recently"
+      },
+      {
+        "id": "poe2db:385943475ef0dab44d63",
+        "nameEn": "of Orchestration",
+        "textEn": "Minions have (2—4)% increased Attack and Cast Speed"
+      }
+    ],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Jewels/JewelTimeless",
+      "nameEn": "Timeless Jewel",
+      "classification": "experimental",
+      "reason": "Release state is unique_only."
+    }
+  ],
+  "restrictedModExamples": [
+    {
+      "modId": "poe2db:712c7dc6bf618dabc6b7",
+      "nameEn": "Blasting",
+      "textDe": "(4—6)% vergrößerter Wirkungsbereich",
+      "allowedBaseCount": 4
+    },
+    {
+      "modId": "poe2db:b1e922bf17fcb3eecbd4",
+      "nameEn": "Armoured",
+      "textDe": "(10—20)% erhöhte Rüstung",
+      "allowedBaseCount": 3
+    },
+    {
+      "modId": "poe2db:caca7418af41647e7ed6",
+      "nameEn": "Shattering",
+      "textDe": "Zerbrecht (5—15)% erhöhte Rüstung",
+      "allowedBaseCount": 3
+    },
+    {
+      "modId": "poe2db:d9afa09e2559344fc1be",
+      "nameEn": "Combat",
+      "textDe": "(5—15)% erhöhter Angriffsschaden",
+      "allowedBaseCount": 4
+    },
+    {
+      "modId": "poe2db:f2b7b505d475c54662da",
+      "nameEn": "Bleeding",
+      "textDe": null,
+      "allowedBaseCount": 3
+    }
+  ],
+  "restrictedModFinding": "At least one imported modifier is not available to every imported Jewel base.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Jewels/JewelTimeless",
+      "nameEn": "Timeless Jewel",
+      "nameDe": "Immerwährendes Juwel",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "intjewel",
+        "dexjewel",
+        "strjewel",
+        "not_for_sale",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelTimeless",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "unique_only"
+      },
+      "availability": {
+        "droppable": false,
+        "classification": "experimental",
+        "regularUsable": false,
+        "reason": "Release state is unique_only."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelStr",
+      "nameEn": "Ruby",
+      "nameDe": "Rubin",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "strjewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelStr",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelDex",
+      "nameEn": "Emerald",
+      "nameDe": "Smaragd",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "dexjewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelDex",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelInt",
+      "nameEn": "Sapphire",
+      "nameDe": "Saphir",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "intjewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelInt",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelDiamond",
+      "nameEn": "Diamond",
+      "nameDe": "Diamant",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "strjewel",
+        "dexjewel",
+        "intjewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelDiamond",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusStr",
+      "nameEn": "Time-Lost Ruby",
+      "nameDe": "Zeitverlorener Rubin",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "str_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelRadiusStr",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusDex",
+      "nameEn": "Time-Lost Emerald",
+      "nameDe": "Zeitverlorener Smaragd",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "dex_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelRadiusDex",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusInt",
+      "nameEn": "Time-Lost Sapphire",
+      "nameDe": "Zeitverlorener Saphir",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "int_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelRadiusInt",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusDiamond",
+      "nameEn": "Time-Lost Diamond",
+      "nameDe": "Zeitverlorener Diamant",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "str_radius_jewel",
+        "dex_radius_jewel",
+        "int_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Jewels/JewelRadiusDiamond",
+        "inheritsFrom": "Metadata/Items/Jewels/AbstractJewel",
+        "domain": "misc",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/RuneWarpingCreateJewelSocket",
+      "nameEn": "Cadigan's Epiphany",
+      "nameDe": "Cadigans Erleuchtung",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "rune",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/SoulCores/RuneWarpingCreateJewelSocket",
+        "inheritsFrom": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "domain": "undefined",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

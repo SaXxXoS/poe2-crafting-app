@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:22:05.264Z",
+  "generatedAt": "2026-07-17T23:50:40.675Z",
   "classes": [
     {
       "key": "spears",
@@ -240,6 +240,186 @@
       "poolCounts": {
         "prefixes": 1,
         "suffixes": 1
+      }
+    },
+    {
+      "key": "body-armours",
+      "itemClass": "Body Armour",
+      "dataFile": "body-armours.json",
+      "qualityReportFile": "body-armours-quality-report.json",
+      "counts": {
+        "bases": 369,
+        "prefixes": 298,
+        "suffixes": 193
+      },
+      "poolCounts": {
+        "prefixes": 8,
+        "suffixes": 8
+      }
+    },
+    {
+      "key": "helmets",
+      "itemClass": "Helmet",
+      "dataFile": "helmets.json",
+      "qualityReportFile": "helmets-quality-report.json",
+      "counts": {
+        "bases": 262,
+        "prefixes": 185,
+        "suffixes": 89
+      },
+      "poolCounts": {
+        "prefixes": 8,
+        "suffixes": 8
+      }
+    },
+    {
+      "key": "gloves",
+      "itemClass": "Gloves",
+      "dataFile": "gloves.json",
+      "qualityReportFile": "gloves-quality-report.json",
+      "counts": {
+        "bases": 204,
+        "prefixes": 174,
+        "suffixes": 110
+      },
+      "poolCounts": {
+        "prefixes": 9,
+        "suffixes": 9
+      }
+    },
+    {
+      "key": "boots",
+      "itemClass": "Boots",
+      "dataFile": "boots.json",
+      "qualityReportFile": "boots-quality-report.json",
+      "counts": {
+        "bases": 192,
+        "prefixes": 135,
+        "suffixes": 112
+      },
+      "poolCounts": {
+        "prefixes": 8,
+        "suffixes": 8
+      }
+    },
+    {
+      "key": "shields",
+      "itemClass": "Shield",
+      "dataFile": "shields.json",
+      "qualityReportFile": "shields-quality-report.json",
+      "counts": {
+        "bases": 151,
+        "prefixes": 87,
+        "suffixes": 82
+      },
+      "poolCounts": {
+        "prefixes": 5,
+        "suffixes": 5
+      }
+    },
+    {
+      "key": "bucklers",
+      "itemClass": "Buckler",
+      "dataFile": "bucklers.json",
+      "qualityReportFile": "bucklers-quality-report.json",
+      "counts": {
+        "bases": 52,
+        "prefixes": 45,
+        "suffixes": 43
+      },
+      "poolCounts": {
+        "prefixes": 2,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "focuses",
+      "itemClass": "Focus",
+      "dataFile": "focuses.json",
+      "qualityReportFile": "focuses-quality-report.json",
+      "counts": {
+        "bases": 51,
+        "prefixes": 70,
+        "suffixes": 40
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "quivers",
+      "itemClass": "Quiver",
+      "dataFile": "quivers.json",
+      "qualityReportFile": "quivers-quality-report.json",
+      "counts": {
+        "bases": 11,
+        "prefixes": 56,
+        "suffixes": 44
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "amulets",
+      "itemClass": "Amulet",
+      "dataFile": "amulets.json",
+      "qualityReportFile": "amulets-quality-report.json",
+      "counts": {
+        "bases": 25,
+        "prefixes": 81,
+        "suffixes": 128
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "rings",
+      "itemClass": "Ring",
+      "dataFile": "rings.json",
+      "qualityReportFile": "rings-quality-report.json",
+      "counts": {
+        "bases": 29,
+        "prefixes": 100,
+        "suffixes": 103
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "belts",
+      "itemClass": "Belt",
+      "dataFile": "belts.json",
+      "qualityReportFile": "belts-quality-report.json",
+      "counts": {
+        "bases": 20,
+        "prefixes": 53,
+        "suffixes": 82
+      },
+      "poolCounts": {
+        "prefixes": 1,
+        "suffixes": 1
+      }
+    },
+    {
+      "key": "jewels",
+      "itemClass": "Jewel",
+      "dataFile": "jewels.json",
+      "qualityReportFile": "jewels-quality-report.json",
+      "counts": {
+        "bases": 10,
+        "prefixes": 70,
+        "suffixes": 90
+      },
+      "poolCounts": {
+        "prefixes": 5,
+        "suffixes": 5
       }
     }
   ]

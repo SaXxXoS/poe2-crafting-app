@@ -1,0 +1,1203 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:51:15.176Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Ring.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Ring DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 29,
+    "regularUsableBases": 22,
+    "excludedBases": 7,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Rings/FourRing13a",
+        "nameEn": "Two-Stone Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRing13b",
+        "nameEn": "Two-Stone Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRing13c",
+        "nameEn": "Two-Stone Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRingB1",
+        "nameEn": "Biostatic Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRingB2",
+        "nameEn": "Vitalic Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRingB3",
+        "nameEn": "Mnemonic Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRingB4",
+        "nameEn": "Kinetic Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRingB5",
+        "nameEn": "Oneiric Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRingB6",
+        "nameEn": "Grasping Ring"
+      },
+      {
+        "id": "Metadata/Items/Rings/FourRingBreach2",
+        "nameEn": "Refined Breach Ring"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Rings/FourRing13a",
+        "baseNameEn": "Two-Stone Ring",
+        "textEn": "+(12—16)% to Fire and Cold Resistances"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRing13b",
+        "baseNameEn": "Two-Stone Ring",
+        "textEn": "+(12—16)% to Fire and Lightning Resistances"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRing13c",
+        "baseNameEn": "Two-Stone Ring",
+        "textEn": "+(12—16)% to Cold and Lightning Resistances"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRingB1",
+        "baseNameEn": "Biostatic Ring",
+        "textEn": "+1% to all maximum Resistances"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRingB2",
+        "baseNameEn": "Vitalic Ring",
+        "textEn": "(4—6)% increased maximum Life"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRingB3",
+        "baseNameEn": "Mnemonic Ring",
+        "textEn": "(4—6)% increased maximum Mana"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRingB4",
+        "baseNameEn": "Kinetic Ring",
+        "textEn": "Adds (6—9) to (11—15) Physical Damage to Attacks"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRingB5",
+        "baseNameEn": "Oneiric Ring",
+        "textEn": "(11—23)% increased Chaos Damage"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRingB6",
+        "baseNameEn": "Grasping Ring",
+        "textEn": "This item gains bonuses from Socketed Items as though it was Gloves"
+      },
+      {
+        "baseId": "Metadata/Items/Rings/FourRingBreach2",
+        "baseNameEn": "Refined Breach Ring",
+        "textEn": "+25% to Maximum Quality"
+      }
+    ],
+    "missingGermanModifierTexts": [
+      {
+        "id": "poe2db:9256162cb7d65f6b6202",
+        "nameEn": "Glinting",
+        "textEn": "Adds (1—2) to 3 Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:d8ae7e359965160341a8",
+        "nameEn": "Burnished",
+        "textEn": "Adds (2—3) to (4—6) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:c250ce7aa1c65f366759",
+        "nameEn": "Polished",
+        "textEn": "Adds (2—4) to (5—8) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:8e2baff7f001142dd82b",
+        "nameEn": "Honed",
+        "textEn": "Adds (4—6) to (8—11) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:01b9952c5f5d211ad081",
+        "nameEn": "Gleaming",
+        "textEn": "Adds (5—7) to (9—13) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:b317154c781020ee5205",
+        "nameEn": "Annealed",
+        "textEn": "Adds (6—10) to (12—17) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:195370d2a90f68d1c177",
+        "nameEn": "Razor-sharp",
+        "textEn": "Adds (7—11) to (14—20) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:699c7c8b65e3f4a7fc0d",
+        "nameEn": "Tempered",
+        "textEn": "Adds (10—15) to (18—26) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:fffbe62a0a513bfa2f17",
+        "nameEn": "Flaring",
+        "textEn": "Adds (12—19) to (22—32) Physical Damage to Attacks"
+      },
+      {
+        "id": "poe2db:32b0629fdd6573de65ae",
+        "nameEn": "Heated",
+        "textEn": "Adds (1—2) to 3 Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:5f28e269a703f854a4fb",
+        "nameEn": "Smouldering",
+        "textEn": "Adds (3—5) to (6—9) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:5e9ea449b2ba094e7ac6",
+        "nameEn": "Smoking",
+        "textEn": "Adds (6—8) to (10—13) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:e3bd1ff90cdfb140bdcf",
+        "nameEn": "Burning",
+        "textEn": "Adds (9—11) to (14—17) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:9c189df096ade737a1fc",
+        "nameEn": "Flaming",
+        "textEn": "Adds (12—13) to (18—20) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:ffab0b7fdcdd9bc3745b",
+        "nameEn": "Scorching",
+        "textEn": "Adds (11—16) to (21—26) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:a6c0af75e4e3d8af7138",
+        "nameEn": "Incinerating",
+        "textEn": "Adds (13—19) to (27—32) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:e7409148338792fd560a",
+        "nameEn": "Blasting",
+        "textEn": "Adds (20—24) to (33—36) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:3c31321caf3fbdedc817",
+        "nameEn": "Cremating",
+        "textEn": "Adds (25—29) to (37—45) Fire damage to Attacks"
+      },
+      {
+        "id": "poe2db:42fa664ed15f375cdad5",
+        "nameEn": "Frosted",
+        "textEn": "Adds 1 to (2—3) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:8fbb1d00f24abeeec5a9",
+        "nameEn": "Chilled",
+        "textEn": "Adds (3—4) to (5—8) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:fb5729d39f16f4e37c6e",
+        "nameEn": "Icy",
+        "textEn": "Adds (5—6) to (9—11) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:0751486341ad74f3ad06",
+        "nameEn": "Frigid",
+        "textEn": "Adds (7—8) to (12—14) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:55c9d077112231d8766f",
+        "nameEn": "Freezing",
+        "textEn": "Adds (9—10) to (15—17) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:11dda09c67d79d92c4df",
+        "nameEn": "Frozen",
+        "textEn": "Adds (11—13) to (18—21) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:e6f8e18edef85d944f16",
+        "nameEn": "Glaciated",
+        "textEn": "Adds (14—15) to (22—24) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:ebf009f991c9054799f7",
+        "nameEn": "Polar",
+        "textEn": "Adds (16—20) to (25—31) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:cf1c50ff3eae8c780ada",
+        "nameEn": "Entombing",
+        "textEn": "Adds (21—24) to (32—37) Cold damage to Attacks"
+      },
+      {
+        "id": "poe2db:5ade26f756c4eeecca04",
+        "nameEn": "Humming",
+        "textEn": "Adds 1 to (4—6) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:a3b00dd4eb55713323e7",
+        "nameEn": "Buzzing",
+        "textEn": "Adds 1 to (10—15) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:cef4a0294e4f1c53a801",
+        "nameEn": "Snapping",
+        "textEn": "Adds 1 to (16—22) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:56cba4e8fd8a34f04ee0",
+        "nameEn": "Crackling",
+        "textEn": "Adds 1 to (23—27) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:0b5bca57d963ddcb62d7",
+        "nameEn": "Sparking",
+        "textEn": "Adds 1 to (28—32) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:b97675c7c0053d7c9c49",
+        "nameEn": "Arcing",
+        "textEn": "Adds (1—2) to (33—40) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:2958ccb9d846973b7d87",
+        "nameEn": "Shocking",
+        "textEn": "Adds (1—2) to (41—47) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:ba0ca2a1ee0d98ca139a",
+        "nameEn": "Discharging",
+        "textEn": "Adds (1—3) to (48—59) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:082701a77655682ff744",
+        "nameEn": "Electrocuting",
+        "textEn": "Adds (1—4) to (60—71) Lightning damage to Attacks"
+      },
+      {
+        "id": "poe2db:222cba58d59151b3bc84",
+        "nameEn": "of the Crystal",
+        "textEn": "+(3—5)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:4ac03976a027dbe26b57",
+        "nameEn": "of the Prism",
+        "textEn": "+(6—8)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:cb9937e715cc895d3ca7",
+        "nameEn": "of the Kaleidoscope",
+        "textEn": "+(9—11)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:43a4fbd4bcb997de9a75",
+        "nameEn": "of Variegation",
+        "textEn": "+(12—14)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:346236290f4cbba06488",
+        "nameEn": "of the Rainbow",
+        "textEn": "+(15—16)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:4a9105139d83993cb52a",
+        "nameEn": "of the Locust",
+        "textEn": "Leech (6—6.9)% of Physical Attack Damage as Life"
+      },
+      {
+        "id": "poe2db:0e63bba3652f70133688",
+        "nameEn": "of the Remora",
+        "textEn": "Leech (7—7.9)% of Physical Attack Damage as Life"
+      },
+      {
+        "id": "poe2db:9425d5b9a288044a6721",
+        "nameEn": "of the Parched",
+        "textEn": "Leech (5—5.9)% of Physical Attack Damage as Mana"
+      },
+      {
+        "id": "poe2db:7f7a396bf19b37d98c23",
+        "nameEn": "of the Arid",
+        "textEn": "Leech (6—6.9)% of Physical Attack Damage as Mana"
+      }
+    ],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Rings/RingDemigods1",
+      "nameEn": "Golden Hoop",
+      "classification": "experimental",
+      "reason": "Release state is unique_only."
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake1",
+      "nameEn": "Dusk Ring",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake2",
+      "nameEn": "Gloam Ring",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake3",
+      "nameEn": "Penumbra Ring",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake4",
+      "nameEn": "Tenebrous Ring",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingBreach",
+      "nameEn": "Breach Ring",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingBreach2",
+      "nameEn": "Refined Breach Ring",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Ring modifier matches the shared 'ring' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Rings/RingDemigods1",
+      "nameEn": "Golden Hoop",
+      "nameDe": "Goldenes Band",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "not_for_sale",
+        "demigods",
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/RingDemigods1",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "unique_only"
+      },
+      "availability": {
+        "droppable": false,
+        "classification": "experimental",
+        "regularUsable": false,
+        "reason": "Release state is unique_only."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing1",
+      "nameEn": "Iron Ring",
+      "nameDe": "Eisenring",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing1",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing2",
+      "nameEn": "Lazuli Ring",
+      "nameDe": "Lazuliring",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing2",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing3",
+      "nameEn": "Ruby Ring",
+      "nameDe": "Rubinring",
+      "dropLevel": 8,
+      "requirements": {
+        "level": 8,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing3",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing4",
+      "nameEn": "Sapphire Ring",
+      "nameDe": "Saphirring",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing4",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing5",
+      "nameEn": "Topaz Ring",
+      "nameDe": "Topasring",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing5",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing6",
+      "nameEn": "Amethyst Ring",
+      "nameDe": "Amethystring",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing6",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing7",
+      "nameEn": "Emerald Ring",
+      "nameDe": "Smaragdring",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing7",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing8",
+      "nameEn": "Pearl Ring",
+      "nameDe": "Perlenring",
+      "dropLevel": 32,
+      "requirements": {
+        "level": 32,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing8",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing9",
+      "nameEn": "Prismatic Ring",
+      "nameDe": "Spektralring",
+      "dropLevel": 35,
+      "requirements": {
+        "level": 35,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing9",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing10",
+      "nameEn": "Gold Ring",
+      "nameDe": "Goldring",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing10",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing11",
+      "nameEn": "Unset Ring",
+      "nameDe": "Sockelring",
+      "dropLevel": 44,
+      "requirements": {
+        "level": 44,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing11",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing12",
+      "nameEn": "Abyssal Signet",
+      "nameDe": "Abgrund-Siegel",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing12",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing13a",
+      "nameEn": "Two-Stone Ring",
+      "nameDe": null,
+      "dropLevel": 35,
+      "requirements": {
+        "level": 35,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing13a",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing13b",
+      "nameEn": "Two-Stone Ring",
+      "nameDe": null,
+      "dropLevel": 35,
+      "requirements": {
+        "level": 35,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing13b",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRing13c",
+      "nameEn": "Two-Stone Ring",
+      "nameDe": null,
+      "dropLevel": 35,
+      "requirements": {
+        "level": 35,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRing13c",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingB1",
+      "nameEn": "Biostatic Ring",
+      "nameDe": null,
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingB1",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingB2",
+      "nameEn": "Vitalic Ring",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingB2",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingB3",
+      "nameEn": "Mnemonic Ring",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingB3",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingB4",
+      "nameEn": "Kinetic Ring",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingB4",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingB5",
+      "nameEn": "Oneiric Ring",
+      "nameDe": null,
+      "dropLevel": 47,
+      "requirements": {
+        "level": 47,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingB5",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingB6",
+      "nameEn": "Grasping Ring",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingB6",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingBase",
+      "nameEn": "Ring",
+      "nameDe": "Ring",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingBase",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake1",
+      "nameEn": "Dusk Ring",
+      "nameDe": "Dämmerungs-Ring",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingLake1",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake2",
+      "nameEn": "Gloam Ring",
+      "nameDe": "Zwielichtring",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingLake2",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake3",
+      "nameEn": "Penumbra Ring",
+      "nameDe": "Halbschattenring",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingLake3",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingLake4",
+      "nameEn": "Tenebrous Ring",
+      "nameDe": "Dunkelheit-Ring",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingLake4",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingBreach",
+      "nameEn": "Breach Ring",
+      "nameDe": "Riss-Ring",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingBreach",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Rings/FourRingBreach2",
+      "nameEn": "Refined Breach Ring",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ring",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Rings/FourRingBreach2",
+        "inheritsFrom": "Metadata/Items/Rings/AbstractRing",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    }
+  ]
+}

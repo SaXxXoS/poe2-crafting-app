@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:22:06.903Z",
+  "generatedAt": "2026-07-17T23:50:42.453Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Crossbow.",
@@ -77,13 +77,13 @@
   ],
   "restrictedModExamples": [
     {
-      "modId": "poe2db:239a74ebb717541ec66c",
+      "modId": "poe2db:94a954ae67ad9741e991",
       "nameEn": "of Shelling",
       "textDe": "Lädt einen zusätzlichen Bolzen",
       "allowedBaseCount": 33
     },
     {
-      "modId": "poe2db:2b08291c7be765d672c0",
+      "modId": "poe2db:6b6f819bf37a9e155685",
       "nameEn": "of Bursting",
       "textDe": "Lädt 2 zusätzliche Bolzen",
       "allowedBaseCount": 33
