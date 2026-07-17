@@ -1,1173 +1,536 @@
 #!/usr/bin/env node
 
+/**
+ * ExileForge app data builder
+ *
+ * Input:
+ *   generated/app-v2/bases.json
+ *   generated/app-v2/mods.json
+ *   generated/app-v2/mods-by-base.json
+ *   generated/app-v2/item-classes.json
+ *   generated/app-v2/tags.json
+ *
+ * Output:
+ *   generated/app-data/manifest.json
+ *   generated/app-data/index.json
+ *   generated/app-data/bases.json
+ *   generated/app-data/mods.json
+ *   generated/app-data/pools.json
+ */
+
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const root = process.cwd();
-const rawRoot = path.join(root, "generated", "raw");
-const englishDir = path.join(rawRoot, "english");
-const germanDir = path.join(rawRoot, "german");
-const outputFile = path.join(root, "data.js");
-const reportFile = path.join(root, "generated", "app-data-report.json");
+const inputRoot = path.join(root, "generated", "app-v2");
+const outputRoot = path.join(root, "generated", "app-data");
 
-function readJson(filePath, required = true) {
+const INPUTS = {
+  bases: path.join(inputRoot, "bases.json"),
+  mods: path.join(inputRoot, "mods.json"),
+  pools: path.join(inputRoot, "mods-by-base.json"),
+  itemClasses: path.join(inputRoot, "item-classes.json"),
+  tags: path.join(inputRoot, "tags.json")
+};
+
+const EQUIPMENT_CLASS_HINTS = [
+  "armour", "body", "boots", "bow", "buckler", "claw", "crossbow",
+  "dagger", "focus", "gloves", "helmet", "jewel", "mace", "martial",
+  "quiver", "ring", "amulet", "belt", "sceptre", "shield", "spear",
+  "staff", "sword", "wand", "weapon"
+];
+
+function ensureDir(dir) {
+  fs.mkdirSync(dir, { recursive: true });
+}
+
+function readJson(filePath) {
   if (!fs.existsSync(filePath)) {
-    if (required) {
-      throw new Error(`Datei fehlt: ${path.relative(root, filePath)}`);
-    }
-    return [];
+    throw new Error(`Eingabedatei fehlt: ${path.relative(root, filePath)}`);
   }
+
   return JSON.parse(fs.readFileSync(filePath, "utf8"));
+}
+
+function writeJson(filePath, value) {
+  ensureDir(path.dirname(filePath));
+  fs.writeFileSync(filePath, JSON.stringify(value, null, 2) + "\n", "utf8");
+}
+
+function sha256File(filePath) {
+  return crypto
+    .createHash("sha256")
+    .update(fs.readFileSync(filePath))
+    .digest("hex");
 }
 
 function asArray(value) {
   return Array.isArray(value) ? value : [];
 }
 
-function refId(value) {
-  if (!value) return "";
+function asString(value, fallback = "") {
+  return typeof value === "string" ? value : fallback;
+}
+
+function uniqueStrings(values) {
+  return [...new Set(values.filter(value => typeof value === "string" && value))];
+}
+
+function extractId(value) {
   if (typeof value === "string") return value;
-  if (Array.isArray(value)) return "";
-  return value.Id ?? value.id ?? "";
-}
 
-function normalize(value) {
-  return String(value ?? "")
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/([a-z])([A-Z])/g, "$1 $2")
-    .replace(/[_/.\-]+/g, " ")
-    .toLowerCase()
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function slug(value) {
-  return normalize(value)
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "") || "unknown";
-}
-
-function firstValue(object, keys, fallback = null) {
-  for (const key of keys) {
-    const value = object?.[key];
-    if (value !== undefined && value !== null && value !== "") return value;
-  }
-  return fallback;
-}
-
-function numericValue(object, keys, fallback = null) {
-  const value = firstValue(object, keys, fallback);
-  if (value === null || value === undefined || value === "") return fallback;
-  const number = Number(value);
-  return Number.isFinite(number) ? number : fallback;
-}
-
-function unique(values) {
-  return [...new Set(values.filter(Boolean))];
-}
-
-function collectRefs(value, refs = []) {
-  if (!value) return refs;
-
-  if (typeof value === "string") {
-    if (value.startsWith("Metadata/")) refs.push(value);
-    return refs;
-  }
-
-  if (Array.isArray(value)) {
-    for (const entry of value) collectRefs(entry, refs);
-    return refs;
-  }
-
-  if (typeof value === "object") {
-    const id = refId(value);
-    if (id) refs.push(id);
-
-    for (const nested of Object.values(value)) {
-      collectRefs(nested, refs);
-    }
-  }
-
-  return refs;
-}
-
-const CLASS_DEFINITIONS = [
-  { name: "Armbrust", category: "weapon", aliases: ["armbrust", "crossbow"], tokens: ["crossbow"] },
-  { name: "Kampfstab", category: "weapon", aliases: ["kampfstab", "quarterstaff"], tokens: ["quarterstaff"] },
-  { name: "Kriegsstab", category: "weapon", aliases: ["kriegsstab", "warstaff"], tokens: ["warstaff"] },
-  { name: "Fallenwerkzeug", category: "weapon", aliases: ["fallenwerkzeug", "trap tool"], tokens: ["trap tool", "traptool"] },
-  { name: "Angelrute", category: "weapon", aliases: ["angelrute", "fishing rod"], tokens: ["fishing rod", "fishingrod"] },
-  { name: "Zauberstab", category: "weapon", aliases: ["zauberstab", "wand"], tokens: ["wand"] },
-  { name: "Zepter", category: "weapon", aliases: ["zepter", "sceptre", "scepter"], tokens: ["sceptre", "scepter"] },
-  { name: "Stab", category: "weapon", aliases: ["stab", "staff"], tokens: ["staff"] },
-  { name: "Speer", category: "weapon", aliases: ["speer", "spear"], tokens: ["spear"] },
-  { name: "Bogen", category: "weapon", aliases: ["bogen", "bow"], tokens: ["bow"] },
-  { name: "Streitkolben", category: "weapon", aliases: ["streitkolben", "mace"], tokens: ["mace"] },
-  { name: "Schwert", category: "weapon", aliases: ["schwert", "sword"], tokens: ["sword"] },
-  { name: "Axt", category: "weapon", aliases: ["axt", "axe"], tokens: ["axe"] },
-  { name: "Dolch", category: "weapon", aliases: ["dolch", "dagger"], tokens: ["dagger"] },
-  { name: "Flegel", category: "weapon", aliases: ["flegel", "flail"], tokens: ["flail"] },
-  { name: "Klaue", category: "weapon", aliases: ["klaue", "claw"], tokens: ["claw"] },
-
-  { name: "Helm", category: "armour", aliases: ["helm", "helmet"], tokens: ["helmet"] },
-  { name: "Körperrüstung", category: "armour", aliases: ["körperrüstung", "body armour", "body armor"], tokens: ["body armour", "body armor"] },
-  { name: "Handschuhe", category: "armour", aliases: ["handschuhe", "gloves"], tokens: ["gloves"] },
-  { name: "Stiefel", category: "armour", aliases: ["stiefel", "boots"], tokens: ["boots"] },
-  { name: "Schild", category: "armour", aliases: ["schild", "shield"], tokens: ["shield"] },
-  { name: "Fokus", category: "armour", aliases: ["fokus", "focus"], tokens: ["focus"] },
-  { name: "Köcher", category: "armour", aliases: ["köcher", "quiver"], tokens: ["quiver"] },
-
-  { name: "Ring", category: "jewellery", aliases: ["ring"], tokens: ["ring"] },
-  { name: "Amulett", category: "jewellery", aliases: ["amulett", "amulet"], tokens: ["amulet"] },
-  { name: "Gürtel", category: "jewellery", aliases: ["gürtel", "belt"], tokens: ["belt"] }
-];
-
-function definitionForClassId(classId) {
-  const normalized = ` ${normalize(classId)} `;
-
-  for (const definition of CLASS_DEFINITIONS) {
-    for (const token of definition.tokens) {
-      if (normalized.includes(` ${normalize(token)} `)) return definition;
-    }
+  if (value && typeof value === "object") {
+    return value.id
+      ?? value.Id
+      ?? value.mod_id
+      ?? value.modId
+      ?? value.key
+      ?? null;
   }
 
   return null;
 }
 
-function localizedMap(rows) {
-  return new Map(rows.map(row => [row.Id, row]));
-}
-
-const baseEnglish = readJson(path.join(englishDir, "baseitemtypes.json"));
-const baseGerman = readJson(path.join(germanDir, "baseitemtypes.json"), false);
-const modsEnglish = readJson(path.join(englishDir, "mods.json"));
-const modsGerman = readJson(path.join(germanDir, "mods.json"), false);
-const statsEnglish = readJson(path.join(englishDir, "stats.json"), false);
-const statsGerman = readJson(path.join(germanDir, "stats.json"), false);
-const currencyEnglish = readJson(path.join(englishDir, "currencyitems.json"), false);
-const currencyGerman = readJson(path.join(germanDir, "currencyitems.json"), false);
-
-const detailFileNames = [
-  "weapontypes.json",
-  "armourtypes.json",
-  "shieldtypes.json",
-  "belttypes.json",
-  "focustypes.json",
-  "quivers.json",
-  "ringtypes.json",
-  "amuletTypes.json"
-];
-
-const detailRows = [];
-for (const fileName of detailFileNames) {
-  const rows = readJson(path.join(englishDir, fileName), false);
-  for (const row of rows) detailRows.push({ ...row, __sourceFile: fileName });
-}
-
-const germanBaseById = localizedMap(baseGerman);
-const germanModById = localizedMap(modsGerman);
-const germanStatById = localizedMap(statsGerman);
-const englishStatById = localizedMap(statsEnglish);
-const germanCurrencyById = localizedMap(currencyGerman);
-const englishModById = localizedMap(modsEnglish);
-
-function extractBaseReferences(row) {
-  const refs = [];
-
-  for (const [key, value] of Object.entries(row ?? {})) {
-    const normalizedKey = normalize(key);
-
-    if (
-      normalizedKey.includes("base item") ||
-      normalizedKey.includes("baseitem") ||
-      normalizedKey.includes("base type") ||
-      normalizedKey.includes("basetype")
-    ) {
-      collectRefs(value, refs);
-    }
+function extractIds(value) {
+  if (Array.isArray(value)) {
+    return uniqueStrings(value.map(extractId));
   }
 
-  return unique(refs);
+  if (value && typeof value === "object") {
+    return uniqueStrings(Object.keys(value));
+  }
+
+  return [];
 }
 
-function buildDetailIndex(rows) {
-  const index = new Map();
+function normalizeGenerationType(value) {
+  const type = String(value ?? "").toLowerCase();
+
+  if (type.includes("prefix")) return "prefix";
+  if (type.includes("suffix")) return "suffix";
+  if (type.includes("implicit")) return "implicit";
+  if (type.includes("corrupt")) return "corrupted";
+  if (type.includes("enchant")) return "enchantment";
+
+  return type || "unknown";
+}
+
+function normalizeWeightRows(value) {
+  return asArray(value)
+    .map(row => {
+      if (Array.isArray(row)) {
+        return {
+          tag: String(row[0] ?? ""),
+          weight: Number(row[1] ?? 0) || 0
+        };
+      }
+
+      if (row && typeof row === "object") {
+        return {
+          tag: String(row.tag ?? row.id ?? row.name ?? ""),
+          weight: Number(row.weight ?? row.value ?? 0) || 0
+        };
+      }
+
+      return null;
+    })
+    .filter(Boolean)
+    .filter(row => row.tag);
+}
+
+function normalizeStatRows(stats) {
+  if (Array.isArray(stats)) {
+    return stats.map((stat, index) => {
+      if (stat && typeof stat === "object") {
+        return {
+          id: String(stat.id ?? stat.stat ?? stat.stat_id ?? index),
+          min: Number(stat.min ?? stat.min_value ?? stat.value_min ?? 0),
+          max: Number(stat.max ?? stat.max_value ?? stat.value_max ?? 0)
+        };
+      }
+
+      return {
+        id: String(stat ?? index),
+        min: 0,
+        max: 0
+      };
+    });
+  }
+
+  if (stats && typeof stats === "object") {
+    return Object.entries(stats).map(([id, value]) => {
+      if (value && typeof value === "object") {
+        return {
+          id,
+          min: Number(value.min ?? value.min_value ?? 0),
+          max: Number(value.max ?? value.max_value ?? 0)
+        };
+      }
+
+      return {
+        id,
+        min: Number(value ?? 0),
+        max: Number(value ?? 0)
+      };
+    });
+  }
+
+  return [];
+}
+
+function looksLikeEquipment(base) {
+  const itemClass = String(base.itemClass ?? "").toLowerCase();
+  const tags = asArray(base.tags).join(" ").toLowerCase();
+  const id = String(base.id ?? "").toLowerCase();
+
+  if (id.includes("/currency/") || id.includes("/gems/")) return false;
+  if (itemClass.includes("currency") || itemClass.includes("gem")) return false;
+
+  return EQUIPMENT_CLASS_HINTS.some(hint =>
+    itemClass.includes(hint) || tags.includes(hint)
+  );
+}
+
+function displayClassName(itemClassId, itemClasses) {
+  const row = itemClasses?.[itemClassId];
+
+  if (typeof row === "string") return row;
+
+  if (row && typeof row === "object") {
+    return row.name
+      ?? row.display_name
+      ?? row.displayName
+      ?? row.id
+      ?? itemClassId;
+  }
+
+  return itemClassId;
+}
+
+function normalizeBase(base, itemClasses) {
+  const raw = base.raw && typeof base.raw === "object" ? base.raw : {};
+  const properties = base.properties && typeof base.properties === "object"
+    ? base.properties
+    : {};
+
+  return {
+    id: String(base.id),
+    name: asString(base.nameEn, String(base.id)),
+    nameDe: null,
+    itemClass: asString(base.itemClass),
+    itemClassName: displayClassName(base.itemClass, itemClasses),
+    dropLevel: Number(base.dropLevel ?? 0) || 0,
+    tags: uniqueStrings(asArray(base.tags)),
+    requirements: base.requirements ?? {},
+    properties,
+    implicits: asArray(base.implicits),
+    width: Number(base.width ?? raw.inventory_width ?? 0) || 0,
+    height: Number(base.height ?? raw.inventory_height ?? 0) || 0,
+    releaseState: raw.release_state ?? null,
+    inheritsFrom: raw.inherits_from ?? null,
+    visualIdentity: raw.visual_identity ?? null
+  };
+}
+
+function normalizeMod(mod) {
+  const raw = mod.raw && typeof mod.raw === "object" ? mod.raw : {};
+
+  return {
+    id: String(mod.id),
+    generationType: normalizeGenerationType(mod.generationType),
+    requiredLevel: Number(mod.requiredLevel ?? 0) || 0,
+    domain: mod.domain ?? null,
+    group: asString(mod.group),
+    stats: normalizeStatRows(mod.stats),
+    spawnWeights: normalizeWeightRows(mod.spawnWeights),
+    generationWeights: normalizeWeightRows(mod.generationWeights),
+    tags: uniqueStrings(asArray(mod.tags)),
+    name: raw.name ?? raw.display_name ?? raw.displayName ?? null,
+    type: raw.type ?? raw.mod_type ?? raw.modType ?? null
+  };
+}
+
+function normalizeSourcePool(pool) {
+  const raw = pool.raw && typeof pool.raw === "object" ? pool.raw : {};
+  const prefixIds = extractIds(pool.prefixes ?? raw.prefixes ?? raw.prefix_mods);
+  const suffixIds = extractIds(pool.suffixes ?? raw.suffixes ?? raw.suffix_mods);
+  const allIds = extractIds(pool.all ?? raw.mods ?? raw.mod_ids);
+
+  return {
+    key: String(pool.baseId),
+    prefixIds,
+    suffixIds,
+    allIds: uniqueStrings([...allIds, ...prefixIds, ...suffixIds])
+  };
+}
+
+function spawnWeightForBase(mod, base) {
+  const rows = asArray(mod.spawnWeights);
+
+  if (rows.length === 0) return 0;
+
+  const tags = new Set([
+    ...asArray(base.tags),
+    base.itemClass,
+    "default"
+  ].filter(Boolean));
 
   for (const row of rows) {
-    const refs = extractBaseReferences(row);
-
-    for (const baseId of refs) {
-      if (!index.has(baseId)) index.set(baseId, []);
-      index.get(baseId).push(row);
-    }
+    if (tags.has(row.tag)) return row.weight;
   }
 
-  return index;
+  return 0;
 }
 
-const detailsByBaseId = buildDetailIndex(detailRows);
+function findDirectPool(base, sourcePoolsByKey) {
+  const keys = uniqueStrings([
+    base.id,
+    base.itemClass,
+    ...asArray(base.tags)
+  ]);
 
-function chooseDetails(base) {
-  const direct = detailsByBaseId.get(base.Id);
-  if (direct?.length) return direct[0];
+  const matched = keys
+    .map(key => sourcePoolsByKey.get(key))
+    .filter(Boolean);
 
-  const baseIdNormalized = normalize(base.Id);
-  const baseNameNormalized = normalize(base.Name);
-
-  for (const row of detailRows) {
-    const searchable = normalize(JSON.stringify(row));
-
-    if (
-      (baseIdNormalized && searchable.includes(baseIdNormalized)) ||
-      (baseNameNormalized && searchable.includes(baseNameNormalized))
-    ) {
-      return row;
-    }
-  }
-
-  return null;
-}
-
-
-function flattenFields(value, prefix = "", output = []) {
-  if (value === null || value === undefined) return output;
-
-  if (Array.isArray(value)) {
-    value.forEach((entry, index) => flattenFields(entry, `${prefix}[${index}]`, output));
-    return output;
-  }
-
-  if (typeof value === "object") {
-    for (const [key, nested] of Object.entries(value)) {
-      const pathName = prefix ? `${prefix}.${key}` : key;
-      flattenFields(nested, pathName, output);
-    }
-    return output;
-  }
-
-  output.push({ key: prefix, value });
-  return output;
-}
-
-function recursiveNumericByPatterns(object, includePatterns, excludePatterns = []) {
-  for (const entry of flattenFields(object)) {
-    const normalizedKey = normalize(entry.key);
-
-    if (!includePatterns.some(pattern => normalizedKey.includes(pattern))) continue;
-    if (excludePatterns.some(pattern => normalizedKey.includes(pattern))) continue;
-
-    const number = Number(entry.value);
-    if (Number.isFinite(number)) return number;
-  }
-
-  return null;
-}
-
-const STAT_PHRASES = [
-  [/^local weapon implicit hidden % base damage is lightning$/i, "Der Grundschaden dieser Waffe ist Blitzschaden"],
-  [/^local weapon uses both hands$/i, "Wird mit beiden Händen geführt"],
-  [/^local weapon range \+%$/i, "Erhöhte Waffenreichweite"],
-  [/^local increased attack speed %$/i, "Erhöhte Angriffsgeschwindigkeit"],
-  [/^local critical strike chance \+%$/i, "Erhöhte kritische Trefferchance"],
-  [/^local physical damage \+%$/i, "Erhöhter physischer Schaden"],
-  [/^local minimum added physical damage$/i, "Minimum an zusätzlichem physischem Schaden"],
-  [/^local maximum added physical damage$/i, "Maximum an zusätzlichem physischem Schaden"],
-  [/^attack minimum added fire damage$/i, "Minimum an zusätzlichem Feuerschaden bei Angriffen"],
-  [/^attack maximum added fire damage$/i, "Maximum an zusätzlichem Feuerschaden bei Angriffen"],
-  [/^attack minimum added cold damage$/i, "Minimum an zusätzlichem Kälteschaden bei Angriffen"],
-  [/^attack maximum added cold damage$/i, "Maximum an zusätzlichem Kälteschaden bei Angriffen"],
-  [/^attack minimum added lightning damage$/i, "Minimum an zusätzlichem Blitzschaden bei Angriffen"],
-  [/^attack maximum added lightning damage$/i, "Maximum an zusätzlichem Blitzschaden bei Angriffen"],
-  [/^base maximum life$/i, "Maximales Leben"],
-  [/^base maximum mana$/i, "Maximales Mana"],
-  [/^base fire damage resistance %$/i, "Feuerwiderstand"],
-  [/^base cold damage resistance %$/i, "Kältewiderstand"],
-  [/^base lightning damage resistance %$/i, "Blitzwiderstand"],
-  [/^base chaos damage resistance %$/i, "Chaoswiderstand"]
-];
-
-const BAD_MOD_TOKENS = [
-  "allies in presence",
-  "ally in presence",
-  "minion",
-  "monster",
-  "flask",
-  "strongbox",
-  "map ",
-  "sanctum",
-  "ultimatum",
-  "heist",
-  "aura effect on allies",
-  "enemy",
-  "enemies",
-  "skill gem",
-  "support gem",
-  "jewel radius",
-  "abyss",
-  "charm ",
-  "presence attack"
-];
-
-const ITEM_STAT_TOKENS = [
-  "local ",
-  "attack minimum added",
-  "attack maximum added",
-  "damage +%",
-  "attack speed",
-  "critical",
-  "accuracy",
-  "resistance",
-  "maximum life",
-  "maximum mana",
-  "strength",
-  "dexterity",
-  "intelligence",
-  "armour",
-  "evasion",
-  "energy shield",
-  "stun",
-  "block"
-];
-
-function humanizeStatId(statId) {
-  const normalized = normalize(statId);
-
-  for (const [pattern, replacement] of STAT_PHRASES) {
-    if (pattern.test(normalized)) return replacement;
-  }
-
-  const replacements = [
-    ["local", ""],
-    ["weapon", "Waffe"],
-    ["attack", "Angriff"],
-    ["minimum", "Minimum"],
-    ["maximum", "Maximum"],
-    ["added", "zusätzlicher"],
-    ["physical", "physischer"],
-    ["fire", "Feuer"],
-    ["cold", "Kälte"],
-    ["lightning", "Blitz"],
-    ["chaos", "Chaos"],
-    ["damage", "Schaden"],
-    ["critical strike chance", "kritische Trefferchance"],
-    ["attack speed", "Angriffsgeschwindigkeit"],
-    ["accuracy rating", "Trefferwert"],
-    ["resistance", "Widerstand"],
-    ["maximum life", "maximales Leben"],
-    ["maximum mana", "maximales Mana"]
-  ];
-
-  let text = normalized;
-  for (const [from, to] of replacements) {
-    text = text.replaceAll(from, to);
-  }
-
-  text = text
-    .replace(/\s+/g, " ")
-    .replace(/\+\s*%/g, "")
-    .trim();
-
-  if (!text) return "Unbekannte Eigenschaft";
-  return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
-function isBadMod(mod) {
-  const searchable = normalize([
-    mod.Id,
-    mod.Name,
-    ...statParts(mod).map(part => part.id)
-  ].join(" "));
-
-  return BAD_MOD_TOKENS.some(token => searchable.includes(token));
-}
-
-function looksLikeItemMod(mod) {
-  const searchable = normalize([
-    mod.Id,
-    mod.Name,
-    ...statParts(mod).map(part => part.id)
-  ].join(" "));
-
-  return ITEM_STAT_TOKENS.some(token => searchable.includes(token));
-}
-
-function formatRange(min, max) {
-  if (min === null && max === null) return "–";
-  if (min === null) return String(max);
-  if (max === null || min === max) return String(min);
-  return `${min}–${max}`;
-}
-
-function formatPercent(value) {
-  if (value === null) return "–";
-
-  let result = Number(value);
-  if (!Number.isFinite(result)) return "–";
-
-  /*
-   * Die Datendumps verwenden je nach Feld unterschiedliche Skalen:
-   * 0.05 = 5 %, 5 = 5 %, 500 = 5 %.
-   */
-  if (result > 0 && result <= 1) {
-    result *= 100;
-  } else if (result > 100) {
-    result /= 100;
-  }
-
-  return `${result.toLocaleString("de-DE", {
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 2
-  })} %`;
-}
-
-function formatNumber(value) {
-  if (value === null) return "–";
-  return value.toLocaleString("de-DE", {
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 2
-  });
-}
-
-function findNumericByPatterns(object, includePatterns, excludePatterns = []) {
-  for (const [key, value] of Object.entries(object ?? {})) {
-    const normalizedKey = normalize(key);
-
-    if (!includePatterns.some(pattern => normalizedKey.includes(pattern))) continue;
-    if (excludePatterns.some(pattern => normalizedKey.includes(pattern))) continue;
-
-    const number = Number(value);
-    if (Number.isFinite(number)) return number;
-  }
-
-  return null;
-}
-
-function requirementsText(base, details) {
-  const combined = { ...base, ...(details ?? {}) };
-
-  const strength = recursiveNumericByPatterns(combined, ["strength requirement", "required strength", "req str"]);
-  const dexterity = recursiveNumericByPatterns(combined, ["dexterity requirement", "required dexterity", "req dex"]);
-  const intelligence = recursiveNumericByPatterns(combined, ["intelligence requirement", "required intelligence", "req int"]);
-
-  const parts = [];
-  if (strength > 0) parts.push(`${strength} Str`);
-  if (dexterity > 0) parts.push(`${dexterity} Ges`);
-  if (intelligence > 0) parts.push(`${intelligence} Int`);
-
-  return parts.join(" · ");
-}
-
-function baseStats(base, details) {
-  const combined = { ...base, ...(details ?? {}) };
-
-  const physicalMin = recursiveNumericByPatterns(
-    combined,
-    ["physical damage min", "damage min", "min damage", "damage minimum"],
-    ["elemental", "fire", "cold", "lightning", "chaos"]
-  );
-
-  const physicalMax = recursiveNumericByPatterns(
-    combined,
-    ["physical damage max", "damage max", "max damage", "damage maximum"],
-    ["elemental", "fire", "cold", "lightning", "chaos"]
-  );
-
-  const directAps = recursiveNumericByPatterns(
-    combined,
-    [
-      "attacks per second",
-      "attack rate",
-      "attack speed per second",
-      "aps"
-    ]
-  );
-
-  const attackTime = recursiveNumericByPatterns(
-    combined,
-    [
-      "attack time",
-      "base attack time",
-      "attack milliseconds",
-      "attack duration",
-      "weapon speed",
-      "milliseconds per attack"
-    ],
-    ["cast", "animation", "recovery"]
-  );
-
-  let aps = directAps;
-
-  if (aps === null && attackTime) {
-    /*
-     * Übliche Dump-Formate:
-     * 625 ms  -> 1.60 APS
-     * 0.625 s -> 1.60 APS
-     * 62.5 cs -> 1.60 APS
-     */
-    if (attackTime >= 100) {
-      aps = 1000 / attackTime;
-    } else if (attackTime >= 10) {
-      aps = 100 / attackTime;
-    } else {
-      aps = 1 / attackTime;
-    }
-  }
-
-  const criticalChance = recursiveNumericByPatterns(combined, ["critical chance", "crit chance", "critical"], ["multiplier", "bonus"]);
+  if (matched.length === 0) return null;
 
   return {
-    requirements: requirementsText(base, details),
-    physical: formatRange(physicalMin, physicalMax),
-    crit: formatPercent(criticalChance),
-    aps: formatNumber(aps)
+    prefixIds: uniqueStrings(matched.flatMap(pool => pool.prefixIds)),
+    suffixIds: uniqueStrings(matched.flatMap(pool => pool.suffixIds)),
+    allIds: uniqueStrings(matched.flatMap(pool => pool.allIds))
   };
 }
 
-function statLabel(statId) {
-  const row = germanStatById.get(statId) ?? englishStatById.get(statId);
+function buildPoolForBase(base, mods, sourcePoolsByKey) {
+  const direct = findDirectPool(base, sourcePoolsByKey);
 
-  const raw = firstValue(row, ["Text", "Name"], "");
-  if (raw && !raw.includes("_")) return raw;
-  return humanizeStatId(statId);
-}
+  const candidates = direct?.allIds?.length
+    ? direct.allIds
+        .map(id => mods.byId.get(id))
+        .filter(Boolean)
+    : mods.list.filter(mod => spawnWeightForBase(mod, base) > 0);
 
-function statParts(mod) {
-  const parts = [];
+  const available = candidates
+    .filter(mod => mod.requiredLevel <= 100)
+    .map(mod => ({
+      id: mod.id,
+      level: mod.requiredLevel,
+      group: mod.group,
+      weight: spawnWeightForBase(mod, base)
+    }));
 
-  for (let index = 1; index <= 6; index += 1) {
-    const statId = refId(mod[`StatsKey${index}`]);
-    if (!statId) continue;
-
-    const min = Number(mod[`Stat${index}Min`] ?? 0);
-    const max = Number(mod[`Stat${index}Max`] ?? min);
-
-    parts.push({
-      id: statId,
-      label: statLabel(statId),
-      min,
-      max,
-      value: min === max ? `${min}` : `${min}–${max}`
-    });
-  }
-
-  return parts;
-}
-
-
-function semanticAffixText(parts) {
-  const byId = new Map(parts.map(part => [normalize(part.id), part]));
-
-  function get(...ids) {
-    for (const id of ids) {
-      const part = byId.get(normalize(id));
-      if (part) return part;
-    }
-    return null;
-  }
-
-  function damagePair(element, germanElement) {
-    const min = get(
-      `attack minimum added ${element} damage`,
-      `local minimum added ${element} damage`
-    );
-    const max = get(
-      `attack maximum added ${element} damage`,
-      `local maximum added ${element} damage`
-    );
-
-    if (min && max) {
-      return {
-        name: `Fügt ${germanElement}schaden bei Angriffen hinzu`,
-        range: `${min.value} bis ${max.value}`
-      };
-    }
-
-    return null;
-  }
-
-  for (const [element, germanElement] of [
-    ["physical", "physischen "],
-    ["fire", "Feuer"],
-    ["cold", "Kälte"],
-    ["lightning", "Blitz"],
-    ["chaos", "Chaos"]
-  ]) {
-    const result = damagePair(element, germanElement);
-    if (result) return result;
-  }
-
-  const increasedPhysical = get("local physical damage +%");
-  if (increasedPhysical) {
-    return {
-      name: "Erhöhter physischer Schaden",
-      range: `${increasedPhysical.value} %`
-    };
-  }
-
-  const attackSpeed = get("local increased attack speed %");
-  if (attackSpeed) {
-    return {
-      name: "Erhöhte Angriffsgeschwindigkeit",
-      range: `${attackSpeed.value} %`
-    };
-  }
-
-  const critChance = get(
-    "local critical strike chance +%",
-    "local critical chance +%"
+  const prefixes = available.filter(row =>
+    mods.byId.get(row.id)?.generationType === "prefix"
   );
-  if (critChance) {
-    return {
-      name: "Erhöhte kritische Trefferchance",
-      range: `${critChance.value} %`
-    };
-  }
 
-  const accuracy = get("local accuracy rating", "accuracy rating");
-  if (accuracy) {
-    return {
-      name: "Trefferwert",
-      range: accuracy.value
-    };
-  }
-
-  for (const [id, name] of [
-    ["base fire damage resistance %", "Feuerwiderstand"],
-    ["base cold damage resistance %", "Kältewiderstand"],
-    ["base lightning damage resistance %", "Blitzwiderstand"],
-    ["base chaos damage resistance %", "Chaoswiderstand"],
-    ["base maximum life", "Maximales Leben"],
-    ["base maximum mana", "Maximales Mana"],
-    ["additional strength", "Stärke"],
-    ["additional dexterity", "Geschicklichkeit"],
-    ["additional intelligence", "Intelligenz"]
-  ]) {
-    const part = get(id);
-    if (part) {
-      return {
-        name,
-        range: part.value
-      };
-    }
-  }
-
-  return null;
-}
-
-function readableMod(mod) {
-  const localized = germanModById.get(mod.Id) ?? mod;
-  const parts = statParts(mod);
-  const semantic = semanticAffixText(parts);
-
-  if (semantic) {
-    return {
-      name: semantic.name,
-      range: semantic.range,
-      parts
-    };
-  }
-
-  let name;
-  if (parts.length === 1) {
-    name = parts[0].label;
-  } else if (parts.length > 1) {
-    const labels = unique(parts.map(part => part.label));
-    name = labels.join(" und ");
-  } else {
-    const rawName = localized.Name ?? mod.Name ?? mod.Id;
-    name = rawName.includes("_") ? humanizeStatId(rawName) : rawName;
-  }
+  const suffixes = available.filter(row =>
+    mods.byId.get(row.id)?.generationType === "suffix"
+  );
 
   return {
-    name,
-    range: parts.length ? parts.map(part => part.value).join(" / ") : "–",
-    parts
+    baseId: base.id,
+    prefixes,
+    suffixes,
+    source: direct?.allIds?.length ? "mods-by-base" : "spawn-weights"
   };
 }
 
-function readableImplicit(modId) {
-  const mod = englishModById.get(modId);
-  if (!mod) {
-    return { name: modId, kind: "Basis-Implizit", range: "–" };
-  }
+function buildClassIndex(bases) {
+  const groups = new Map();
 
-  const readable = readableMod(mod);
+  for (const base of bases) {
+    const key = base.itemClass || "Unknown";
 
-  return {
-    name: readable.name,
-    kind: "Basis-Implizit",
-    range: readable.range
-  };
-}
-
-const report = {
-  generatedAt: new Date().toISOString(),
-  importedBases: 0,
-  importedModAssignments: 0,
-  classes: {},
-  affixesByClass: {},
-  skippedBaseClasses: {},
-  basesWithoutDetails: [],
-  detailSources: {},
-  globalFallbackMods: 0,
-  filteredBadMods: 0,
-  strictClassMatching: true,
-  globalFallbackEnabled: true,
-  fallbackMode: "semantic-category",
-  builderVersion: 6
-};
-
-const classOptions = {
-  weapon: CLASS_DEFINITIONS.filter(row => row.category === "weapon").map(row => row.name),
-  armour: CLASS_DEFINITIONS.filter(row => row.category === "armour").map(row => row.name),
-  jewellery: CLASS_DEFINITIONS.filter(row => row.category === "jewellery").map(row => row.name)
-};
-
-const baseItems = Object.fromEntries(CLASS_DEFINITIONS.map(row => [row.name, []]));
-const baseTagsByClass = new Map(CLASS_DEFINITIONS.map(row => [row.name, new Set()]));
-const classIdsByDefinition = new Map(CLASS_DEFINITIONS.map(row => [row.name, new Set()]));
-
-for (const row of baseEnglish) {
-  const classId = refId(row.ItemClassesKey);
-  const definition = definitionForClassId(classId);
-
-  if (!definition) {
-    const key = classId || "Unbekannt";
-    report.skippedBaseClasses[key] = (report.skippedBaseClasses[key] ?? 0) + 1;
-    continue;
-  }
-
-  if (!row.Name) continue;
-  const baseSearchable = normalize(`${row.Id} ${row.Name}`);
-  if (
-    baseSearchable.includes("test") ||
-    baseSearchable.includes("dummy") ||
-    baseSearchable.includes("unused")
-  ) continue;
-
-  classIdsByDefinition.get(definition.name).add(classId);
-
-  const tags = asArray(row.TagsKeys).map(refId).filter(Boolean);
-  for (const tag of tags) baseTagsByClass.get(definition.name).add(tag);
-
-  const details = chooseDetails(row);
-  const localized = germanBaseById.get(row.Id) ?? row;
-  const stats = baseStats(row, details);
-  const implicitIds = asArray(row.Implicit_ModsKeys).map(refId).filter(Boolean);
-
-  if (!details) {
-    report.basesWithoutDetails.push({
-      id: row.Id,
-      name: localized.Name ?? row.Name,
-      classId,
-      mappedClass: definition.name
-    });
-  } else {
-    report.detailSources[details.__sourceFile] = (report.detailSources[details.__sourceFile] ?? 0) + 1;
-  }
-
-  baseItems[definition.name].push({
-    id: slug(row.Id),
-    sourceId: row.Id,
-    name: localized.Name ?? row.Name,
-    requiredLevel: Number(row.DropLevel ?? 0),
-    requirements: stats.requirements,
-    physical: stats.physical,
-    crit: stats.crit,
-    aps: stats.aps,
-    implicits: implicitIds.map(readableImplicit)
-  });
-
-  report.importedBases += 1;
-  report.classes[definition.name] = (report.classes[definition.name] ?? 0) + 1;
-}
-
-for (const list of Object.values(baseItems)) {
-  list.sort((a, b) =>
-    a.requiredLevel - b.requiredLevel ||
-    a.name.localeCompare(b.name, "de")
-  );
-}
-
-function generationType(mod) {
-  const value = Number(mod.GenerationType);
-  if (value === 1) return "prefix";
-  if (value === 2) return "suffix";
-  return null;
-}
-
-function weightedTags(mod) {
-  const output = new Set();
-
-  const tagFields = [
-    ["SpawnWeight_TagsKeys", "SpawnWeight_Values"],
-    ["GenerationWeight_TagsKeys", "GenerationWeight_Values"]
-  ];
-
-  for (const [tagsKey, valuesKey] of tagFields) {
-    const tags = asArray(mod[tagsKey]).map(refId);
-    const values = asArray(mod[valuesKey]);
-
-    tags.forEach((tag, index) => {
-      const weight = Number(values[index] ?? 1);
-      if (tag && weight > 0) output.add(tag);
-    });
-  }
-
-  for (const tag of asArray(mod.TagsKeys).map(refId)) {
-    if (tag) output.add(tag);
-  }
-
-  return output;
-}
-
-function restrictionRefs(mod) {
-  const refs = [];
-
-  for (const value of asArray(mod.CraftingItemClassRestrictions)) {
-    const id = refId(value);
-    if (id) refs.push(id);
-    collectRefs(value, refs);
-  }
-
-  return unique(refs);
-}
-
-function restrictionMatches(mod, definition) {
-  const restrictions = restrictionRefs(mod);
-  if (!restrictions.length) return false;
-
-  const knownClassIds = classIdsByDefinition.get(definition.name) ?? new Set();
-
-  return restrictions.some(restriction => {
-    if (knownClassIds.has(restriction)) return true;
-
-    const normalizedRestriction = normalize(restriction);
-    return definition.tokens.some(token =>
-      normalizedRestriction.includes(normalize(token))
-    );
-  });
-}
-
-function genericTagMatches(tag, definition) {
-  const normalizedTag = normalize(tag);
-
-  /*
-   * Nur konkrete Klassenbegriffe zählen.
-   * Allgemeine Tags wie "weapon" oder "armour" reichen nicht aus,
-   * da sie sonst Mods auf unpassende Klassen verteilen.
-   */
-  return definition.tokens.some(token => {
-    const normalizedToken = normalize(token);
-    return (
-      normalizedTag === normalizedToken ||
-      normalizedTag.includes(`${normalizedToken} `) ||
-      normalizedTag.includes(` ${normalizedToken}`)
-    );
-  });
-}
-
-
-function modSemanticCategory(mod) {
-  const searchable = normalize([
-    mod.Id,
-    mod.Name,
-    ...statParts(mod).map(part => part.id)
-  ].join(" "));
-
-  const defenceTokens = [
-    "evasion rating",
-    "base evasion",
-    "armour",
-    "armor",
-    "energy shield",
-    "block chance",
-    "ward",
-    "stun threshold"
-  ];
-
-  const weaponTokens = [
-    "local physical damage",
-    "local minimum added",
-    "local maximum added",
-    "attack minimum added",
-    "attack maximum added",
-    "local increased attack speed",
-    "local critical strike chance",
-    "local accuracy",
-    "weapon range",
-    "weapon damage"
-  ];
-
-  const genericTokens = [
-    "resistance",
-    "maximum life",
-    "maximum mana",
-    "additional strength",
-    "additional dexterity",
-    "additional intelligence",
-    "rarity of items found",
-    "quantity of items found",
-    "movement speed"
-  ];
-
-  if (defenceTokens.some(token => searchable.includes(token))) return "armour";
-  if (weaponTokens.some(token => searchable.includes(token))) return "weapon";
-  if (genericTokens.some(token => searchable.includes(token))) return "generic";
-
-  return null;
-}
-
-function controlledFallbackMatches(mod, definition) {
-  const domain = Number(mod.Domain ?? mod.ModDomain ?? -1);
-  if (domain !== 1) return false;
-
-  if (weightedTags(mod).size > 0 || restrictionRefs(mod).length > 0) {
-    return false;
-  }
-
-  const category = modSemanticCategory(mod);
-
-  if (category === "weapon") return definition.category === "weapon";
-  if (category === "armour") return definition.category === "armour";
-  if (category === "generic") return true;
-
-  return false;
-}
-
-function appliesToClass(mod, definition) {
-  if (restrictionMatches(mod, definition)) return true;
-
-  const modTags = weightedTags(mod);
-  const classTags = baseTagsByClass.get(definition.name) ?? new Set();
-
-  for (const tag of modTags) {
-    if (classTags.has(tag) || genericTagMatches(tag, definition)) return true;
-  }
-
-  /*
-   * Kontrollierter Fallback:
-   * Nur Mods mit eindeutig erkennbarem Stat-Typ werden zugeordnet.
-   * Verteidigungsmods gehen ausschließlich auf Rüstung,
-   * Waffenmods ausschließlich auf Waffen.
-   */
-  if (controlledFallbackMatches(mod, definition)) {
-    report.globalFallbackMods += 1;
-    return true;
-  }
-
-  return false;
-}
-
-const mods = Object.fromEntries(
-  CLASS_DEFINITIONS.map(row => [row.name, { prefix: [], suffix: [] }])
-);
-
-for (const mod of modsEnglish) {
-  const type = generationType(mod);
-  if (!type) continue;
-  if (Number(mod.Level ?? 0) < 1) continue;
-  if (mod.IsEssenceOnlyModifier === true) continue;
-  if (isBadMod(mod)) {
-    report.filteredBadMods += 1;
-    continue;
-  }
-
-  const readable = readableMod(mod);
-  const familyIds = asArray(mod.Families).map(refId).filter(Boolean);
-  const group = familyIds[0] || refId(mod.ModTypeKey) || String(mod.ModTypeKey?.RowIndex ?? mod.Id);
-
-  for (const definition of CLASS_DEFINITIONS) {
-    if (!appliesToClass(mod, definition)) continue;
-
-    const modSearchable = normalize([
-      mod.Id,
-      mod.Name,
-      ...statParts(mod).map(part => part.id)
-    ].join(" "));
-
-    if (
-      definition.category === "weapon" &&
-      (
-        modSearchable.includes("evasion rating") ||
-        modSearchable.includes("armour +") ||
-        modSearchable.includes("energy shield") ||
-        modSearchable.includes("base evasion")
-      )
-    ) {
-      continue;
-    }
-
-    mods[definition.name][type].push({
-      id: slug(mod.Id),
-      sourceId: mod.Id,
-      name: readable.name,
-      group,
-      lvl: Number(mod.Level ?? 1),
-      tier: "",
-      range: readable.range
-    });
-
-    report.importedModAssignments += 1;
-  }
-}
-
-for (const definition of CLASS_DEFINITIONS) {
-  for (const type of ["prefix", "suffix"]) {
-    const list = mods[definition.name][type];
-    const grouped = new Map();
-
-    for (const mod of list) {
-      if (!grouped.has(mod.group)) grouped.set(mod.group, []);
-      grouped.get(mod.group).push(mod);
-    }
-
-    for (const groupMods of grouped.values()) {
-      groupMods.sort((a, b) => b.lvl - a.lvl || a.name.localeCompare(b.name, "de"));
-      groupMods.forEach((mod, index) => {
-        mod.tier = `T${index + 1}`;
+    if (!groups.has(key)) {
+      groups.set(key, {
+        id: key,
+        name: base.itemClassName || key,
+        baseIds: []
       });
     }
 
-    list.sort((a, b) =>
-      a.name.localeCompare(b.name, "de") ||
-      b.lvl - a.lvl
-    );
+    groups.get(key).baseIds.push(base.id);
   }
 
-  report.affixesByClass[definition.name] = {
-    prefix: mods[definition.name].prefix.length,
-    suffix: mods[definition.name].suffix.length
+  return [...groups.values()]
+    .map(group => ({
+      ...group,
+      baseIds: group.baseIds.sort()
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name, "en"));
+}
+
+function buildSearchIndex(bases, mods) {
+  return {
+    bases: bases.map(base => ({
+      id: base.id,
+      text: [
+        base.name,
+        base.nameDe,
+        base.itemClass,
+        base.itemClassName,
+        ...base.tags
+      ].filter(Boolean).join(" ").toLowerCase()
+    })),
+    mods: mods.map(mod => ({
+      id: mod.id,
+      text: [
+        mod.id,
+        mod.name,
+        mod.group,
+        mod.generationType,
+        ...mod.stats.map(stat => stat.id),
+        ...mod.tags
+      ].filter(Boolean).join(" ").toLowerCase()
+    }))
   };
 }
 
-const currencyNames = currencyEnglish
-  .map(row => germanCurrencyById.get(row.Id)?.Name ?? row.Name)
-  .filter(Boolean);
+function main() {
+  ensureDir(outputRoot);
 
-const preferredCurrencyNames = [
-  "Divine Orb",
-  "Exalted Orb",
-  "Regal Orb",
-  "Orb of Annulment",
-  "Chaos Orb"
-];
+  const baseDocument = readJson(INPUTS.bases);
+  const modDocument = readJson(INPUTS.mods);
+  const poolDocument = readJson(INPUTS.pools);
+  const itemClasses = readJson(INPUTS.itemClasses);
+  readJson(INPUTS.tags);
 
-const priceItems = unique([...preferredCurrencyNames, ...currencyNames]);
+  const allBases = asArray(baseDocument.bases)
+    .map(base => normalizeBase(base, itemClasses));
 
-const recognition = {
-  classAliases: Object.fromEntries(CLASS_DEFINITIONS.map(row => [row.name, row.aliases])),
-  categoryByClass: Object.fromEntries(CLASS_DEFINITIONS.map(row => [row.name, row.category]))
-};
+  const bases = allBases
+    .filter(looksLikeEquipment)
+    .sort((a, b) =>
+      a.itemClassName.localeCompare(b.itemClassName, "en")
+      || a.dropLevel - b.dropLevel
+      || a.name.localeCompare(b.name, "en")
+    );
 
-const data = {
-  generatedAt: new Date().toISOString(),
-  classOptions,
-  baseItems,
-  mods,
-  priceItems,
-  recognition
-};
+  const mods = asArray(modDocument.mods)
+    .map(normalizeMod)
+    .filter(mod => mod.generationType === "prefix" || mod.generationType === "suffix")
+    .sort((a, b) =>
+      a.generationType.localeCompare(b.generationType)
+      || a.group.localeCompare(b.group)
+      || a.requiredLevel - b.requiredLevel
+      || a.id.localeCompare(b.id)
+    );
 
-fs.writeFileSync(
-  outputFile,
-  `window.EXILEFORGE_DATA = ${JSON.stringify(data, null, 2)};\n`,
-  "utf8"
-);
+  const modsById = new Map(mods.map(mod => [mod.id, mod]));
 
-fs.mkdirSync(path.dirname(reportFile), { recursive: true });
-fs.writeFileSync(reportFile, JSON.stringify(report, null, 2) + "\n", "utf8");
+  const sourcePools = asArray(poolDocument.pools).map(normalizeSourcePool);
+  const sourcePoolsByKey = new Map(sourcePools.map(pool => [pool.key, pool]));
 
+  const pools = {};
+  let directPoolCount = 0;
+  let fallbackPoolCount = 0;
+  let prefixReferenceCount = 0;
+  let suffixReferenceCount = 0;
 
-const STYLE_PATCH_MARKER = "/* EXILEFORGE_GENERATED_DATA_UI_FIX_V4 */";
-const styleFile = path.join(root, "style.css");
-const stylePatch = `
-${STYLE_PATCH_MARKER}
-.sheet-results,
-.result,
-.result > div,
-.implicit,
-.implicit > div {
-  min-width: 0;
-  max-width: 100%;
-}
+  for (const base of bases) {
+    const pool = buildPoolForBase(
+      base,
+      { list: mods, byId: modsById },
+      sourcePoolsByKey
+    );
 
-.sheet-results {
-  overflow-x: hidden;
-}
+    pools[base.id] = pool;
 
-.result {
-  align-items: flex-start;
-}
+    if (pool.source === "mods-by-base") directPoolCount += 1;
+    else fallbackPoolCount += 1;
 
-.result > div {
-  flex: 1 1 auto;
-  overflow: hidden;
-}
-
-.result b,
-.result small,
-.implicit b,
-.implicit small,
-.affix-select b,
-.affix-select small {
-  display: block;
-  max-width: 100%;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
-  hyphens: auto;
-}
-
-.result b,
-.implicit b {
-  line-height: 1.35;
-}
-
-.result .add,
-.add {
-  flex: 0 0 auto;
-  max-width: 96px;
-}
-
-.implicit .lock {
-  flex: 0 0 27px;
-}
-
-.base-stat b {
-  overflow-wrap: anywhere;
-}
-
-@media (max-width: 520px) {
-  .result {
-    gap: 12px;
-    padding-right: 0;
+    prefixReferenceCount += pool.prefixes.length;
+    suffixReferenceCount += pool.suffixes.length;
   }
 
-  .result b {
-    font-size: 12px;
+  const classes = buildClassIndex(bases);
+  const search = buildSearchIndex(bases, mods);
+  const generatedAt = new Date().toISOString();
+
+  writeJson(path.join(outputRoot, "bases.json"), {
+    schemaVersion: 1,
+    generatedAt,
+    count: bases.length,
+    bases
+  });
+
+  writeJson(path.join(outputRoot, "mods.json"), {
+    schemaVersion: 1,
+    generatedAt,
+    count: mods.length,
+    mods
+  });
+
+  writeJson(path.join(outputRoot, "pools.json"), {
+    schemaVersion: 1,
+    generatedAt,
+    count: Object.keys(pools).length,
+    pools
+  });
+
+  writeJson(path.join(outputRoot, "index.json"), {
+    schemaVersion: 1,
+    generatedAt,
+    classes,
+    search
+  });
+
+  const manifest = {
+    schemaVersion: 1,
+    generatedAt,
+    status: "app-data-ready",
+    localization: {
+      englishBaseNames: true,
+      germanBaseNames: false,
+      renderedModifierText: false,
+      note: "Deutsche Namen und lesbare Mod-Texte benötigen eine separate Übersetzungsquelle."
+    },
+    counts: {
+      inputBases: allBases.length,
+      equipmentBases: bases.length,
+      affixMods: mods.length,
+      itemClasses: classes.length,
+      pools: Object.keys(pools).length,
+      directPools: directPoolCount,
+      fallbackPools: fallbackPoolCount,
+      prefixReferences: prefixReferenceCount,
+      suffixReferences: suffixReferenceCount
+    },
+    files: {}
+  };
+
+  for (const filename of ["bases.json", "mods.json", "pools.json", "index.json"]) {
+    const filePath = path.join(outputRoot, filename);
+    manifest.files[filename] = {
+      bytes: fs.statSync(filePath).size,
+      sha256: sha256File(filePath)
+    };
   }
 
-  .result small {
-    font-size: 10px;
-    line-height: 1.35;
+  writeJson(path.join(outputRoot, "manifest.json"), manifest);
+
+  if (bases.length === 0) {
+    throw new Error("Keine Ausrüstungsbasen erkannt.");
   }
 
-  .add {
-    padding: 9px 10px;
+  if (mods.length === 0) {
+    throw new Error("Keine Prefix- oder Suffix-Modifikatoren erkannt.");
   }
+
+  console.log("");
+  console.log("ExileForge-App-Datenbank erfolgreich erstellt.");
+  console.log(`Ausrüstungsbasen: ${bases.length}`);
+  console.log(`Affix-Mods: ${mods.length}`);
+  console.log(`Gegenstandsklassen: ${classes.length}`);
+  console.log(`Direkte Mod-Pools: ${directPoolCount}`);
+  console.log(`Fallback-Mod-Pools: ${fallbackPoolCount}`);
 }
-`;
 
-if (fs.existsSync(styleFile)) {
-  const currentStyle = fs.readFileSync(styleFile, "utf8");
-  if (!currentStyle.includes(STYLE_PATCH_MARKER)) {
-    fs.writeFileSync(styleFile, `${currentStyle.trim()}\n\n${stylePatch}\n`, "utf8");
-    console.log("Mobiler Darstellungs-Fix an style.css angehängt.");
-  }
+try {
+  main();
+} catch (error) {
+  console.error(error);
+  process.exit(1);
 }
-
-console.log(`data.js erzeugt: ${report.importedBases} Basen.`);
-console.log(`Affix-Zuordnungen: ${report.importedModAssignments}.`);
-console.log(`Diagnose: ${path.relative(root, reportFile)}`);
