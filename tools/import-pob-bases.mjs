@@ -362,20 +362,74 @@ function inferType(value) {
   return null;
 }
 
+function firstText(row, keys) {
+  for (const key of keys) {
+    const value = row?.[key];
+    if (typeof value === "string" && value.trim()) return value.trim();
+  }
+  return "";
+}
+
 function buildTranslationMaps() {
   const englishRows = readJson(englishBaseFile);
   const germanRows = readJson(germanBaseFile);
-  const germanById = new Map(germanRows.map(row => [row.Id, row.Name]));
+
+  const idKeys = ["Id", "ID", "id", "MetadataId", "MetadataID"];
+  const nameKeys = [
+    "Name",
+    "name",
+    "DisplayName",
+    "displayName",
+    "TranslatedName",
+    "NameGerman",
+    "GermanName",
+    "Name_de",
+    "name_de"
+  ];
+
+  const germanById = new Map();
+
+  for (const row of germanRows) {
+    const id = firstText(row, idKeys);
+    const name = firstText(row, nameKeys);
+    if (id && name) germanById.set(id, name);
+  }
+
   const nameMap = new Map();
 
   for (const row of englishRows) {
-    const germanName = germanById.get(row.Id);
-    if (row.Name && germanName) {
-      nameMap.set(normalize(row.Name), germanName);
+    const id = firstText(row, idKeys);
+    const englishName = firstText(row, nameKeys);
+    const germanName = germanById.get(id);
+
+    if (englishName && germanName) {
+      nameMap.set(englishName, germanName);
+      nameMap.set(normalize(englishName), germanName);
     }
   }
 
   return nameMap;
+}
+
+const BASE_NAME_FALLBACKS = new Map([
+  ["Flying Spear", "Fliegender Speer"],
+  ["War Spear", "Kriegsspeer"],
+  ["Hunting Spear", "Jagdspeer"],
+  ["Ironhead Spear", "Eisenkopf-Speer"],
+  ["Helix Spear", "Helix-Speer"]
+]);
+
+function translateBaseName(englishName, translations) {
+  const exact = translations.get(englishName);
+  if (exact) return { name: exact, source: "raw" };
+
+  const normalized = translations.get(normalize(englishName));
+  if (normalized) return { name: normalized, source: "raw" };
+
+  const fallback = BASE_NAME_FALLBACKS.get(englishName);
+  if (fallback) return { name: fallback, source: "fallback" };
+
+  return { name: englishName, source: "untranslated" };
 }
 
 
@@ -521,7 +575,10 @@ const report = {
   hiddenSkipped: 0,
   unmappedTypes: {},
   classes: {},
-  englishImplicitLines: 0
+  englishImplicitLines: 0,
+  translatedBaseNamesFromRaw: 0,
+  translatedBaseNamesFromFallback: 0,
+  untranslatedBaseNames: []
 };
 
 const files = fs.readdirSync(basesDir)
@@ -557,12 +614,22 @@ for (const file of files) {
 
     const weapon = value.weapon ?? {};
     const implicits = implicitLines(value);
+    const translatedBase = translateBaseName(entry.name, translations);
+
     report.englishImplicitLines += implicits.length;
+
+    if (translatedBase.source === "raw") {
+      report.translatedBaseNamesFromRaw += 1;
+    } else if (translatedBase.source === "fallback") {
+      report.translatedBaseNamesFromFallback += 1;
+    } else if (!report.untranslatedBaseNames.includes(entry.name)) {
+      report.untranslatedBaseNames.push(entry.name);
+    }
 
     baseItems[itemClass].push({
       id: slug(`${value.type ?? itemClass}-${entry.name}`),
       sourceId: `pob:${entry.sourceFile}:${entry.name}`,
-      name: translations.get(normalize(entry.name)) ?? entry.name,
+      name: translatedBase.name,
       englishName: entry.name,
       requiredLevel: Number(value.req?.level ?? 0),
       requirements: requirements(value),
@@ -590,6 +657,8 @@ for (const file of files) {
     report.classes[itemClass] = (report.classes[itemClass] ?? 0) + 1;
   }
 }
+
+report.untranslatedBaseNames.sort((a, b) => a.localeCompare(b, "en"));
 
 for (const category of Object.keys(classOptions)) {
   classOptions[category].sort((a, b) => a.localeCompare(b, "de"));
