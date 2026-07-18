@@ -44,7 +44,8 @@ function technicalGroups(technicalId, fallback = []) {
 }
 
 function signature(entry) {
-  return [entry.generationType, technicalGroups(entry.sourceKey, entry.groups).join("+"), statIds(entry.sourceKey).join("+")].join("|");
+  const weights = rules => (rules ?? []).map(rule => `${rule.tag}:${rule.weight}`).join(">");
+  return [entry.generationType, technicalGroups(entry.sourceKey, entry.groups).join("+"), statIds(entry.sourceKey).join("+"), weights(entry.spawnWeights), weights(entry.generationWeights)].join("|");
 }
 
 function valueSummary(text, values = []) {
@@ -151,6 +152,16 @@ for (const entry of entriesBySource.values()) {
 }
 
 const groups = [...groupsBySignature.entries()].map(([technicalSignature, tiers]) => {
+  const displayTiersBySource = new Map();
+  for (const itemClass of allClasses) {
+    const regularTiers = tiers
+      .filter(tier => tier.regularClasses.includes(itemClass))
+      .sort((a, b) => b.requiredLevel - a.requiredLevel || Number(a.tier ?? 999) - Number(b.tier ?? 999) || a.sourceKey.localeCompare(b.sourceKey));
+    regularTiers.forEach((tier, index) => {
+      if (!displayTiersBySource.has(tier.sourceKey)) displayTiersBySource.set(tier.sourceKey, {});
+      displayTiersBySource.get(tier.sourceKey)[itemClass] = index + 1;
+    });
+  }
   tiers.sort((a, b) => Number(a.tier ?? 999) - Number(b.tier ?? 999) || b.requiredLevel - a.requiredLevel || a.sourceKey.localeCompare(b.sourceKey));
   const representative = tiers.find(tier => tier.displayTextDe) ?? tiers[0];
   return {
@@ -162,6 +173,8 @@ const groups = [...groupsBySignature.entries()].map(([technicalSignature, tiers]
       modId: tier.appModId || `special:${tier.sourceKey}`,
       sourceKey: tier.sourceKey,
       tier: tier.tier,
+      technicalTier: tier.tier,
+      displayTiers: displayTiersBySource.get(tier.sourceKey) ?? {},
       displayText: tier.displayTextDe || tier.displayTextEn,
       displayTextDe: tier.displayTextDe,
       displayTextEn: tier.displayTextEn,

@@ -941,6 +941,7 @@
         ...regular,
         group: group.familyId,
         lvl: Number(tier.requiredLevel || 0),
+        tier: tier.displayTier ? `Tier ${tier.displayTier} · ab Item-Level ${tier.requiredLevel}` : `ab Item-Level ${tier.requiredLevel}`,
         spawnWeight
       };
     }
@@ -949,7 +950,7 @@
       name: tier.displayText,
       displayText: tier.displayText,
       range: tier.valueSummary || '',
-      tier: tier.tier ? `Tier ${tier.tier} · ab Item-Level ${tier.requiredLevel}` : `ab Item-Level ${tier.requiredLevel}`,
+      tier: tier.displayTier ? `Tier ${tier.displayTier} · ab Item-Level ${tier.requiredLevel}` : `ab Item-Level ${tier.requiredLevel}`,
       lvl: Number(tier.requiredLevel || 0),
       group: group.familyId,
       generationType: group.generationType,
@@ -997,6 +998,7 @@
           }
           return {
             ...tier,
+            displayTier: tier.displayTiers?.[base.itemClass] ?? null,
             requiredLevel,
             spawnWeight: poolRow?.weight ?? orderedWeight(tier.spawnWeights, base.tags),
             sources,
@@ -1005,6 +1007,7 @@
           };
         }).filter(Boolean);
         if (!tiers.length) return null;
+        tiers.sort((a, b) => Number(a.displayTier ?? 999) - Number(b.displayTier ?? 999) || b.requiredLevel - a.requiredLevel || a.sourceKey.localeCompare(b.sourceKey));
         return {
           ...group,
           tiers,
@@ -1077,7 +1080,7 @@
         const badges = tier.sources.map(source => `<span class="source-badge source-${normalizeText(source.type)}">${source.type}</span>`).join('');
         tierRow.innerHTML = `
           <div class="affix-tier-main">
-            <b>${tier.tier ? `T${tier.tier}` : 'Spezial'}</b>
+            <b>${tier.displayTier ? `T${tier.displayTier}` : 'Spezial'}</b>
             <span>${tier.valueSummary || tier.displayText}</span>
             <small>ilvl ${tier.requiredLevel}</small>
           </div>
