@@ -4,6 +4,7 @@
   "scripts": {
     "audit:season-readiness": "node tools/audit-season-readiness.mjs",
     "baseline:season-readiness": "node tools/baseline-season-readiness.mjs",
+    "test:engine:item-state": "node --test src/engine/tests/item-state.test.mjs",
     "test:season-readiness": "node --test tools/tests/season-readiness.test.mjs"
   }
 }
