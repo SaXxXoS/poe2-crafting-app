@@ -1,4 +1,5 @@
 import { CURRENT_MAX_ITEM_LEVEL } from "./constants.mjs";
+import { isValidWeightRules, validateModifierCatalog } from "./catalog-validation.mjs";
 import { ENGINE_RULE_ERROR_CODES } from "./errors.mjs";
 import { immutableCopy } from "./immutability.mjs";
 
@@ -7,13 +8,18 @@ export const ENGINE_RULE_SETS = Object.freeze([
 ]);
 
 const issue = (ruleSet, code, message, path, details = {}) => ({ code, message, path, details, ruleSet });
-const validWeightRules = value => Array.isArray(value) && value.every(rule => rule && typeof rule === "object" && !Array.isArray(rule) && typeof rule.tag === "string" && rule.tag.length > 0 && Number.isFinite(rule.weight) && rule.weight >= 0 && Object.keys(rule).every(key => key === "tag" || key === "weight"));
 const valueStatus = (value, known = null) => value === null || value === undefined ? "notPresent" : known === null || known.includes(value) ? "presentKnown" : "presentUnknown";
 
 export function evaluateRuleSets(context) {
   const errors = [];
   const warnings = [];
   const { catalog } = context;
+  try {
+    validateModifierCatalog(catalog);
+  } catch (error) {
+    errors.push(issue("catalog", error.code ?? ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA, error.message, error.path ?? "catalog", error.details ?? {}));
+    return immutableCopy({ valid: false, errors, warnings, evaluatedRuleSets: [...ENGINE_RULE_SETS], contextSummary: null });
+  }
   const itemClass = catalog.itemClasses[context.itemClassId];
   const baseType = catalog.baseTypes[context.baseTypeId];
   const modId = context.actionContext.modId ?? null;
@@ -39,7 +45,7 @@ export function evaluateRuleSets(context) {
   if (modifier && modifier.displayTiers !== null && itemClass && modifier.displayTiers[context.itemClassId] === undefined) warnings.push(issue("itemLevel", ENGINE_RULE_ERROR_CODES.DISPLAY_TIER_CONTEXT_REQUIRED, "No displayTier exists for this item-class context.", "itemClassId", { modId, itemClassId: context.itemClassId }));
 
   for (const [field, value] of [["spawnWeights", modifier?.spawnWeights], ["generationWeights", modifier?.generationWeights]]) {
-    if (modifier && value !== null && !validWeightRules(value)) errors.push(issue("tagAndWeightStructure", ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE, "Modifier weight rules have an unsupported structure.", `catalog.modifiers.${field}`, { modId, field }));
+    if (modifier && value !== null && !isValidWeightRules(value)) errors.push(issue("tagAndWeightStructure", ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE, "Modifier weight rules have an unsupported structure.", `catalog.modifiers.${field}`, { modId, field }));
     if (modifier && value === null) warnings.push(issue("tagAndWeightStructure", ENGINE_RULE_ERROR_CODES.RULE_DATA_NOT_AVAILABLE, "Modifier weight data is not present in the structured catalog data.", `catalog.modifiers.${field}`, { modId, field, status: "notPresent" }));
   }
 
@@ -59,8 +65,8 @@ export function evaluateRuleSets(context) {
         domain: valueStatus(modifier.domain, catalog.knownDomains),
         itemDomain: valueStatus(modifier.itemDomain, catalog.knownDomains),
         generationType: valueStatus(modifier.generationType, catalog.knownGenerationTypes),
-        spawnWeights: modifier.spawnWeights === null ? "notPresent" : validWeightRules(modifier.spawnWeights) ? "presentKnown" : "presentUnknown",
-        generationWeights: modifier.generationWeights === null ? "notPresent" : validWeightRules(modifier.generationWeights) ? "presentKnown" : "presentUnknown",
+        spawnWeights: modifier.spawnWeights === null ? "notPresent" : isValidWeightRules(modifier.spawnWeights) ? "presentKnown" : "presentUnknown",
+        generationWeights: modifier.generationWeights === null ? "notPresent" : isValidWeightRules(modifier.generationWeights) ? "presentKnown" : "presentUnknown",
         flags: valueStatus(modifier.flags)
       } : null
     }

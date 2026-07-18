@@ -1,4 +1,5 @@
 import { ENGINE_ELIGIBILITY_CODES, ENGINE_RULE_ERROR_CODES } from "./errors.mjs";
+import { isValidWeightRules, validateModifierCatalog } from "./catalog-validation.mjs";
 import { immutableCopy } from "./immutability.mjs";
 import { createRuleContext } from "./rule-context.mjs";
 import { evaluateRuleSets } from "./rule-evaluation.mjs";
@@ -13,9 +14,6 @@ const SPECIAL_SOURCES = new Set(["crafted", "essence", "desecrated", "desecratio
 const REGULAR_SOURCES = new Set(["normal", "poe2db"]);
 const REGULAR_GENERATION_TYPES = new Set(["prefix", "suffix"]);
 const isRecord = value => Boolean(value) && typeof value === "object" && !Array.isArray(value);
-const validWeights = value => Array.isArray(value) && value.every(rule => isRecord(rule)
-  && typeof rule.tag === "string" && rule.tag.length > 0 && Number.isFinite(rule.weight) && rule.weight >= 0
-  && Object.keys(rule).every(key => key === "tag" || key === "weight"));
 const reason = (code, outcome, message, rule, path, details = {}) => ({ code, outcome, message, rule, path, details });
 export function compareTechnicalStrings(left, right) {
   if (left === right) return 0;
@@ -66,7 +64,7 @@ function emptyResult(error, itemState) {
 
 function firstWeight(rules, tags, emptyFallback) {
   if (rules === null || rules === undefined) return { state: "missing", weight: null, matchedTag: null };
-  if (!validWeights(rules)) return { state: "invalid", weight: null, matchedTag: null };
+  if (!isValidWeightRules(rules)) return { state: "invalid", weight: null, matchedTag: null };
   if (!rules.length) return { state: "matched", weight: emptyFallback, matchedTag: null };
   const tagSet = new Set(tags);
   const match = rules.find(rule => tagSet.has(rule.tag));
@@ -182,6 +180,12 @@ function evaluateCandidate(modifier, context, options) {
 }
 
 export function resolveEligibleModifiers({ itemState, catalog, ruleContext = null, actionContext = {}, options = {} } = {}) {
+  try {
+    validateModifierCatalog(catalog);
+  } catch (error) {
+    return emptyResult(reason(ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID, "unresolved", error.message, "catalog", error.path ?? "catalog",
+      { code: error.code ?? null, details: error.details ?? {} }), itemState);
+  }
   let context;
   try {
     context = ruleContext ?? createRuleContext({ itemState, catalog, actionContext });
