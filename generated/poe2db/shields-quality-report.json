@@ -1,0 +1,5436 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:51:08.756Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Shield.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Shield DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 151,
+    "regularUsableBases": 69,
+    "excludedBases": 82,
+    "distinctPrefixPools": 5,
+    "distinctSuffixPools": 5
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldStrDex1VerisiumUnique1",
+        "nameEn": "Runemastered Hardwood Targe"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4VerisiumUnique1",
+        "nameEn": "Runemastered Crescent Targe"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique1",
+        "nameEn": "Runemastered Venerable Defender"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique2",
+        "nameEn": "Runemastered Venerable Defender"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique4",
+        "nameEn": "Runemastered Venerable Defender"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldStrDex1VerisiumUnique1",
+        "baseNameEn": "Runemastered Hardwood Targe",
+        "textEn": "Grants Skill: Raise Shield"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldStrDex4VerisiumUnique1",
+        "baseNameEn": "Runemastered Crescent Targe",
+        "textEn": "Grants Skill: Raise Shield"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique1",
+        "baseNameEn": "Runemastered Venerable Defender",
+        "textEn": "Grants Skill: Raise Shield"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique2",
+        "baseNameEn": "Runemastered Venerable Defender",
+        "textEn": "Grants Skill: Raise Shield"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique4",
+        "baseNameEn": "Runemastered Venerable Defender",
+        "textEn": "Grants Skill: Raise Shield"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Armours/Shields/ShieldDemigods",
+      "nameEn": "Golden Flame",
+      "classification": "experimental",
+      "reason": "Release state is unique_only."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr1Verisium",
+      "nameEn": "Runeforged Splintered Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr2Verisium",
+      "nameEn": "Runeforged Painted Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3Verisium",
+      "nameEn": "Runeforged Braced Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr4Verisium",
+      "nameEn": "Runeforged Barricade Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr5Verisium",
+      "nameEn": "Runeforged Effigial Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6Verisium",
+      "nameEn": "Runeforged Rampart Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7Verisium",
+      "nameEn": "Runeforged Heraldric Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8Verisium",
+      "nameEn": "Runeforged Stone Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9Verisium",
+      "nameEn": "Runeforged Crucible Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr10Verisium",
+      "nameEn": "Runeforged Ancestor Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr11Verisium",
+      "nameEn": "Runeforged Phalanx Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr12Verisium",
+      "nameEn": "Runeforged Defiant Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr13Verisium",
+      "nameEn": "Runeforged Blacksteel Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex1Verisium",
+      "nameEn": "Runeforged Hardwood Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Verisium",
+      "nameEn": "Runeforged Pelage Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex3Verisium",
+      "nameEn": "Runeforged Studded Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Verisium",
+      "nameEn": "Runeforged Crescent Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex5Verisium",
+      "nameEn": "Runeforged Chiseled Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Verisium",
+      "nameEn": "Runeforged Feathered Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex7Verisium",
+      "nameEn": "Runeforged Stratified Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex8Verisium",
+      "nameEn": "Runeforged Carved Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex9Verisium",
+      "nameEn": "Runeforged Mosaic Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex10Verisium",
+      "nameEn": "Runeforged Aureate Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex11Verisium",
+      "nameEn": "Runeforged Grand Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt1Verisium",
+      "nameEn": "Runeforged Blazon Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Verisium",
+      "nameEn": "Runeforged Sigil Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt3Verisium",
+      "nameEn": "Runeforged Emblem Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Verisium",
+      "nameEn": "Runeforged Jingling Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt5Verisium",
+      "nameEn": "Runeforged Sectarian Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Verisium",
+      "nameEn": "Runeforged Omen Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt7Verisium",
+      "nameEn": "Runeforged Wayward Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt8Verisium",
+      "nameEn": "Runeforged Seer Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt9Verisium",
+      "nameEn": "Runeforged Stoic Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt10Verisium",
+      "nameEn": "Runeforged Empyreal Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt11Verisium",
+      "nameEn": "Runeforged Deified Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6CruelVerisium",
+      "nameEn": "Runeforged Bulwark Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7CruelVerisium",
+      "nameEn": "Runeforged Noble Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8CruelVerisium",
+      "nameEn": "Runeforged Goldworked Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4CruelVerisium",
+      "nameEn": "Runeforged Polished Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex5CruelVerisium",
+      "nameEn": "Runeforged Stone Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6CruelVerisium",
+      "nameEn": "Runeforged Avian Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4CruelVerisium",
+      "nameEn": "Runeforged Dekharan Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt5CruelVerisium",
+      "nameEn": "Runeforged Quartered Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6CruelVerisium",
+      "nameEn": "Runeforged Glowering Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3EndgameVerisium",
+      "nameEn": "Runeforged Royal Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6EndgameVerisium",
+      "nameEn": "Runeforged Fortress Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8EndgameVerisium",
+      "nameEn": "Runeforged Vaal Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr10EndgameVerisium",
+      "nameEn": "Runeforged Tawhoan Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex2EndgameVerisium",
+      "nameEn": "Runeforged Mammoth Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4EndgameVerisium",
+      "nameEn": "Runeforged Baroque Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6EndgameVerisium",
+      "nameEn": "Runeforged Soaring Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex10EndgameVerisium",
+      "nameEn": "Runeforged Golden Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2EndgameVerisium",
+      "nameEn": "Runeforged Intricate Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4EndgameVerisium",
+      "nameEn": "Runeforged Sekheman Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6EndgameVerisium",
+      "nameEn": "Runeforged Vaal Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt7EndgameVerisium",
+      "nameEn": "Runeforged Blacksteel Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr1VerisiumUnique1",
+      "nameEn": "Runemastered Splintered Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr2VerisiumUnique1",
+      "nameEn": "Runemastered Painted Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3VerisiumUnique1",
+      "nameEn": "Runemastered Braced Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr4VerisiumUnique1",
+      "nameEn": "Runemastered Barricade Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr5VerisiumUnique1",
+      "nameEn": "Runemastered Effigial Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6VerisiumUnique1",
+      "nameEn": "Runemastered Rampart Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7VerisiumUnique1",
+      "nameEn": "Runemastered Heraldric Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique1",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique2",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique3",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique4",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr13VerisiumUnique1",
+      "nameEn": "Runemastered Blacksteel Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8EndgameVerisiumUnique1",
+      "nameEn": "Runemastered Vaal Tower Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Glacial Fortress",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex1VerisiumUnique1",
+      "nameEn": "Runemastered Hardwood Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4VerisiumUnique1",
+      "nameEn": "Runemastered Crescent Targe",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt1VerisiumUnique1",
+      "nameEn": "Runemastered Blazon Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2VerisiumUnique1",
+      "nameEn": "Runemastered Sigil Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt3VerisiumUnique1",
+      "nameEn": "Runemastered Emblem Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4VerisiumUnique1",
+      "nameEn": "Runemastered Jingling Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6VerisiumUnique1",
+      "nameEn": "Runemastered Omen Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Venerable Defender",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Venerable Defender",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique4",
+      "nameEn": "Runemastered Venerable Defender",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2EndgameVerisiumUnique1",
+      "nameEn": "Runemastered Intricate Crest Shield",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [
+    {
+      "modId": "poe2db:747ae4d9cb3eeecd3e58",
+      "nameEn": "Hale",
+      "textDe": "+(10—19) zu maximalem Leben",
+      "allowedBaseCount": 150
+    },
+    {
+      "modId": "poe2db:42ed3b4ff29b311ec74e",
+      "nameEn": "Healthy",
+      "textDe": "+(20—29) zu maximalem Leben",
+      "allowedBaseCount": 150
+    },
+    {
+      "modId": "poe2db:07b76bb482fcdc79edb8",
+      "nameEn": "Sanguine",
+      "textDe": "+(30—39) zu maximalem Leben",
+      "allowedBaseCount": 150
+    },
+    {
+      "modId": "poe2db:4d5b119e9a0ac32571c5",
+      "nameEn": "Stalwart",
+      "textDe": "+(40—59) zu maximalem Leben",
+      "allowedBaseCount": 150
+    },
+    {
+      "modId": "poe2db:975f5590ae87ac2f89f8",
+      "nameEn": "Stout",
+      "textDe": "+(60—69) zu maximalem Leben",
+      "allowedBaseCount": 150
+    }
+  ],
+  "restrictedModFinding": "At least one imported modifier is not available to every imported Shield base.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Armours/Shields/ShieldDemigods",
+      "nameEn": "Golden Flame",
+      "nameDe": "Goldene Flamme",
+      "dropLevel": 15,
+      "requirements": {
+        "level": 15,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "not_for_sale",
+        "demigods",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/ShieldDemigods",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "unique_only"
+      },
+      "availability": {
+        "droppable": false,
+        "classification": "experimental",
+        "regularUsable": false,
+        "reason": "Release state is unique_only."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr1",
+      "nameEn": "Splintered Tower Shield",
+      "nameDe": "Gesplitterter Turmschild",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr2",
+      "nameEn": "Painted Tower Shield",
+      "nameDe": "Bemalter Turmschild",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 11,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr2",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3",
+      "nameEn": "Braced Tower Shield",
+      "nameDe": "Verstärkter Turmschild",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 19,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr3",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr4",
+      "nameEn": "Barricade Tower Shield",
+      "nameDe": "BarrikadenTurmschild",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 25,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr4",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr5",
+      "nameEn": "Effigial Tower Shield",
+      "nameDe": "Bildnis-Turmschild",
+      "dropLevel": 21,
+      "requirements": {
+        "level": 21,
+        "strength": 32,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr5",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6",
+      "nameEn": "Rampart Tower Shield",
+      "nameDe": "Schutzwall-Turmschild",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 42,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr6",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7",
+      "nameEn": "Heraldric Tower Shield",
+      "nameDe": "Herold-Turmschild",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 48,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "vaal_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr7",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8",
+      "nameEn": "Stone Tower Shield",
+      "nameDe": "Stein-Turmschild",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 52,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "vaal_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr8",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9",
+      "nameEn": "Crucible Tower Shield",
+      "nameDe": "Schmelztiegel-Turmschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 64,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr9",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr10",
+      "nameEn": "Ancestor Tower Shield",
+      "nameDe": "Ahnen-Turmschild",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 71,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr10",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr11",
+      "nameEn": "Phalanx Tower Shield",
+      "nameDe": "Phalanx-Turmschild",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 74,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr11",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr12",
+      "nameEn": "Defiant Tower Shield",
+      "nameDe": "Kühner Turmschild",
+      "dropLevel": 58,
+      "requirements": {
+        "level": 58,
+        "strength": 82,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr12",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr13",
+      "nameEn": "Blacksteel Tower Shield",
+      "nameDe": "Schwarzstahl-Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr13",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex1",
+      "nameEn": "Hardwood Targe",
+      "nameDe": "Hartholz-Tartsche",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "ezomyte_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex2",
+      "nameEn": "Pelage Targe",
+      "nameDe": "Fellbezogene Tartsche",
+      "dropLevel": 8,
+      "requirements": {
+        "level": 8,
+        "strength": 9,
+        "dexterity": 9,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "ezomyte_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex2",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex3",
+      "nameEn": "Studded Targe",
+      "nameDe": "Beschlagene Tartsche",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 15,
+        "dexterity": 15,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "maraketh_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex3",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4",
+      "nameEn": "Crescent Targe",
+      "nameDe": "Halbmondtartsche",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 22,
+        "dexterity": 22,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "maraketh_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex4",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex5",
+      "nameEn": "Chiseled Targe",
+      "nameDe": "Kantige Tartsche",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 27,
+        "dexterity": 27,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "vaal_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex5",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6",
+      "nameEn": "Feathered Targe",
+      "nameDe": "Gefiederte Tartsche",
+      "dropLevel": 37,
+      "requirements": {
+        "level": 37,
+        "strength": 30,
+        "dexterity": 30,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "vaal_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex6",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex7",
+      "nameEn": "Stratified Targe",
+      "nameDe": "Mehrschichtige Tartsche",
+      "dropLevel": 46,
+      "requirements": {
+        "level": 46,
+        "strength": 37,
+        "dexterity": 37,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex7",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex8",
+      "nameEn": "Carved Targe",
+      "nameDe": "Geschnitzte Tartsche",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 40,
+        "dexterity": 40,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex8",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex9",
+      "nameEn": "Mosaic Targe",
+      "nameDe": "Mosaik-Tartsche",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 41,
+        "dexterity": 41,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex9",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex10",
+      "nameEn": "Aureate Targe",
+      "nameDe": "Goldene Tartsche",
+      "dropLevel": 57,
+      "requirements": {
+        "level": 57,
+        "strength": 45,
+        "dexterity": 45,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex10",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex11",
+      "nameEn": "Grand Targe",
+      "nameDe": "Große Tartsche",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 50,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex11",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt1",
+      "nameEn": "Blazon Crest Shield",
+      "nameDe": "Geschmückter Wappenschild",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "ezomyte_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2",
+      "nameEn": "Sigil Crest Shield",
+      "nameDe": "Siegel-Wappenschild",
+      "dropLevel": 7,
+      "requirements": {
+        "level": 7,
+        "strength": 8,
+        "dexterity": 0,
+        "intelligence": 8
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "ezomyte_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt2",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt3",
+      "nameEn": "Emblem Crest Shield",
+      "nameDe": "Emblem-Wappenschild",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 15,
+        "dexterity": 0,
+        "intelligence": 15
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "maraketh_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt3",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4",
+      "nameEn": "Jingling Crest Shield",
+      "nameDe": "Schellen-Wappenschild",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 23,
+        "dexterity": 0,
+        "intelligence": 23
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "maraketh_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt4",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt5",
+      "nameEn": "Sectarian Crest Shield",
+      "nameDe": "Konfessioneller Wappenschild",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 27,
+        "dexterity": 0,
+        "intelligence": 27
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "vaal_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt5",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6",
+      "nameEn": "Omen Crest Shield",
+      "nameDe": "Omen-Wappenschild",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 30,
+        "dexterity": 0,
+        "intelligence": 30
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "vaal_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt6",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt7",
+      "nameEn": "Wayward Crest Shield",
+      "nameDe": "Beständiger Wappenschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 36,
+        "dexterity": 0,
+        "intelligence": 36
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt7",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt8",
+      "nameEn": "Seer Crest Shield",
+      "nameDe": "Seher-Wappenschild",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 39,
+        "dexterity": 0,
+        "intelligence": 39
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt8",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt9",
+      "nameEn": "Stoic Crest Shield",
+      "nameDe": "Stoiker-Wappenschild",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 41,
+        "dexterity": 0,
+        "intelligence": 41
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt9",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt10",
+      "nameEn": "Empyreal Crest Shield",
+      "nameDe": "Himmlischer Wappenschild",
+      "dropLevel": 57,
+      "requirements": {
+        "level": 57,
+        "strength": 45,
+        "dexterity": 0,
+        "intelligence": 45
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt10",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt11",
+      "nameEn": "Deified Crest Shield",
+      "nameDe": "Vergötterter Wappenschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 0,
+        "intelligence": 50
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt11",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDemigod",
+      "nameEn": "Golden Shield",
+      "nameDe": "Goldener Schild",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDemigod",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr2Cruel",
+      "nameEn": "Aged Tower Shield",
+      "nameDe": "Gealterter Turmschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 64,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr2Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3Cruel",
+      "nameEn": "Metalworked Tower Shield",
+      "nameDe": "Metallverarbeiteter Turmschild",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 69,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr3Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr5Cruel",
+      "nameEn": "Cultist Tower Shield",
+      "nameDe": "Kultisten-Turmschild",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 73,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr5Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6Cruel",
+      "nameEn": "Bulwark Tower Shield",
+      "nameDe": "Bollwerk-Turmschild",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 77,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr6Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7Cruel",
+      "nameEn": "Noble Tower Shield",
+      "nameDe": "Edler Turmschild",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 83,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr7Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8Cruel",
+      "nameEn": "Goldworked Tower Shield",
+      "nameDe": "Vergoldeter Turmschild",
+      "dropLevel": 61,
+      "requirements": {
+        "level": 61,
+        "strength": 86,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr8Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex1Cruel",
+      "nameEn": "Ironwood Targe",
+      "nameDe": "Eisenholz-Tartsche",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 36,
+        "dexterity": 36,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex1Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Cruel",
+      "nameEn": "Fur-lined Targe",
+      "nameDe": "Pelzgefütterte Tartsche",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 38,
+        "dexterity": 38,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex2Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex3Cruel",
+      "nameEn": "Mercenary Targe",
+      "nameDe": "Söldner-Tartsche",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 40,
+        "dexterity": 40,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex3Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Cruel",
+      "nameEn": "Polished Targe",
+      "nameDe": "Polierte Tartsche",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 42,
+        "dexterity": 42,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex4Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex5Cruel",
+      "nameEn": "Stone Targe",
+      "nameDe": "Steintartsche",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 46,
+        "dexterity": 46,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex5Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Cruel",
+      "nameEn": "Avian Targe",
+      "nameDe": "Vogeltartsche",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 48,
+        "dexterity": 48,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex6Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt1Cruel",
+      "nameEn": "Painted Crest Shield",
+      "nameDe": "Bemalter Wappenschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 36,
+        "dexterity": 0,
+        "intelligence": 36
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt1Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Cruel",
+      "nameEn": "Engraved Crest Shield",
+      "nameDe": "Gravierter Wappenschild",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 38,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt2Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt3Cruel",
+      "nameEn": "Descry Crest Shield",
+      "nameDe": "Entdecker Wappenschild",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 40,
+        "dexterity": 0,
+        "intelligence": 40
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt3Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Cruel",
+      "nameEn": "Dekharan Crest Shield",
+      "nameDe": "Dhekara-Wappenschild",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 42,
+        "dexterity": 0,
+        "intelligence": 42
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt4Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt5Cruel",
+      "nameEn": "Quartered Crest Shield",
+      "nameDe": "Geviertelter Wappenschild",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 46,
+        "dexterity": 0,
+        "intelligence": 46
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt5Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Cruel",
+      "nameEn": "Glowering Crest Shield",
+      "nameDe": "Grollender Wappenschild",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 48,
+        "dexterity": 0,
+        "intelligence": 48
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt6Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3Endgame",
+      "nameEn": "Royal Tower Shield",
+      "nameDe": "Adeliger Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr3Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6Endgame",
+      "nameEn": "Fortress Tower Shield",
+      "nameDe": "Festungs-Turmschild",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 99,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr6Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8Endgame",
+      "nameEn": "Vaal Tower Shield",
+      "nameDe": "Vaal-Turmschild",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 107,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr8Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr10Endgame",
+      "nameEn": "Tawhoan Tower Shield",
+      "nameDe": "Tawhoa-Turmschild",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 115,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr10Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrUnique1",
+      "nameEn": "Glacial Fortress",
+      "nameDe": "Gletscherfestung",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 99,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Endgame",
+      "nameEn": "Mammoth Targe",
+      "nameDe": "Mammut-Tartsche",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 50,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex2Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Endgame",
+      "nameEn": "Baroque Targe",
+      "nameDe": "Barocke Tartsche",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 54,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex4Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Endgame",
+      "nameEn": "Soaring Targe",
+      "nameDe": "Schwingen-Tartsche",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 59,
+        "dexterity": 59,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex6Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex10Endgame",
+      "nameEn": "Golden Targe",
+      "nameDe": "Goldene Tartsche",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 63,
+        "dexterity": 63,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex10Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1",
+      "nameEn": "Venerable Defender",
+      "nameDe": "Ehrwürdiger Verteidiger",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 64,
+        "dexterity": 64,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Endgame",
+      "nameEn": "Intricate Crest Shield",
+      "nameDe": "Aufwändiger Wappenschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 0,
+        "intelligence": 50
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt2Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Endgame",
+      "nameEn": "Sekheman Crest Shield",
+      "nameDe": "Sekhema-Wappenschild",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 54
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt4Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Endgame",
+      "nameEn": "Vaal Crest Shield",
+      "nameDe": "Vaal-Wappenschild",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 59,
+        "dexterity": 0,
+        "intelligence": 59
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt6Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt7Endgame",
+      "nameEn": "Blacksteel Crest Shield",
+      "nameDe": "Schwarzstahl-Wappenschild",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 63,
+        "dexterity": 0,
+        "intelligence": 63
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "karui_basetype",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt7Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr1Verisium",
+      "nameEn": "Runeforged Splintered Tower Shield",
+      "nameDe": "Runengeschmiedeter Gesplitterter Turmschild",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr1Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr2Verisium",
+      "nameEn": "Runeforged Painted Tower Shield",
+      "nameDe": "Runengeschmiedeter Bemalter Turmschild",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 11,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr2Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3Verisium",
+      "nameEn": "Runeforged Braced Tower Shield",
+      "nameDe": "Runengeschmiedeter Verstärkter Turmschild",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 19,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr3Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr4Verisium",
+      "nameEn": "Runeforged Barricade Tower Shield",
+      "nameDe": "Runengeschmiedeter BarrikadenTurmschild",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 25,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr4Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr5Verisium",
+      "nameEn": "Runeforged Effigial Tower Shield",
+      "nameDe": "Runengeschmiedeter Bildnis-Turmschild",
+      "dropLevel": 21,
+      "requirements": {
+        "level": 21,
+        "strength": 32,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr5Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6Verisium",
+      "nameEn": "Runeforged Rampart Tower Shield",
+      "nameDe": "Runengeschmiedeter Schutzwall-Turmschild",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 42,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr6Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7Verisium",
+      "nameEn": "Runeforged Heraldric Tower Shield",
+      "nameDe": "Runengeschmiedeter Herold-Turmschild",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 48,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr7Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8Verisium",
+      "nameEn": "Runeforged Stone Tower Shield",
+      "nameDe": "Runengeschmiedeter Stein-Turmschild",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 52,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr8Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9Verisium",
+      "nameEn": "Runeforged Crucible Tower Shield",
+      "nameDe": "Runengeschmiedeter Schmelztiegel-Turmschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 64,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr9Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr10Verisium",
+      "nameEn": "Runeforged Ancestor Tower Shield",
+      "nameDe": "Runengeschmiedeter Ahnen-Turmschild",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 71,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr10Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr11Verisium",
+      "nameEn": "Runeforged Phalanx Tower Shield",
+      "nameDe": "Runengeschmiedeter Phalanx-Turmschild",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 74,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr11Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr12Verisium",
+      "nameEn": "Runeforged Defiant Tower Shield",
+      "nameDe": "Runengeschmiedeter Kühner Turmschild",
+      "dropLevel": 58,
+      "requirements": {
+        "level": 58,
+        "strength": 82,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr12Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr13Verisium",
+      "nameEn": "Runeforged Blacksteel Tower Shield",
+      "nameDe": "Runengeschmiedeter Schwarzstahl-Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr13Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex1Verisium",
+      "nameEn": "Runeforged Hardwood Targe",
+      "nameDe": "Runengeschmiedete Hartholz-Tartsche",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex1Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex2Verisium",
+      "nameEn": "Runeforged Pelage Targe",
+      "nameDe": "Runengeschmiedete Fellbezogene Tartsche",
+      "dropLevel": 8,
+      "requirements": {
+        "level": 8,
+        "strength": 9,
+        "dexterity": 9,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex2Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex3Verisium",
+      "nameEn": "Runeforged Studded Targe",
+      "nameDe": "Runengeschmiedete Beschlagene Tartsche",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 15,
+        "dexterity": 15,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex3Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4Verisium",
+      "nameEn": "Runeforged Crescent Targe",
+      "nameDe": "Runengeschmiedete Halbmondtartsche",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 22,
+        "dexterity": 22,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex4Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex5Verisium",
+      "nameEn": "Runeforged Chiseled Targe",
+      "nameDe": "Runengeschmiedete Kantige Tartsche",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 27,
+        "dexterity": 27,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex5Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6Verisium",
+      "nameEn": "Runeforged Feathered Targe",
+      "nameDe": "Runengeschmiedete Gefiederte Tartsche",
+      "dropLevel": 37,
+      "requirements": {
+        "level": 37,
+        "strength": 30,
+        "dexterity": 30,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex6Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex7Verisium",
+      "nameEn": "Runeforged Stratified Targe",
+      "nameDe": "Runengeschmiedete Mehrschichtige Tartsche",
+      "dropLevel": 46,
+      "requirements": {
+        "level": 46,
+        "strength": 37,
+        "dexterity": 37,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex7Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex8Verisium",
+      "nameEn": "Runeforged Carved Targe",
+      "nameDe": "Runengeschmiedete Geschnitzte Tartsche",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 40,
+        "dexterity": 40,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex8Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex9Verisium",
+      "nameEn": "Runeforged Mosaic Targe",
+      "nameDe": "Runengeschmiedete Mosaik-Tartsche",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 41,
+        "dexterity": 41,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex9Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex10Verisium",
+      "nameEn": "Runeforged Aureate Targe",
+      "nameDe": "Runengeschmiedete Goldene Tartsche",
+      "dropLevel": 57,
+      "requirements": {
+        "level": 57,
+        "strength": 45,
+        "dexterity": 45,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex10Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex11Verisium",
+      "nameEn": "Runeforged Grand Targe",
+      "nameDe": "Runengeschmiedete Große Tartsche",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 50,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex11Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt1Verisium",
+      "nameEn": "Runeforged Blazon Crest Shield",
+      "nameDe": "Runengeschmiedeter Geschmückter Wappenschild",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt1Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2Verisium",
+      "nameEn": "Runeforged Sigil Crest Shield",
+      "nameDe": "Runengeschmiedeter Siegel-Wappenschild",
+      "dropLevel": 7,
+      "requirements": {
+        "level": 7,
+        "strength": 8,
+        "dexterity": 0,
+        "intelligence": 8
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt2Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt3Verisium",
+      "nameEn": "Runeforged Emblem Crest Shield",
+      "nameDe": "Runengeschmiedeter Emblem-Wappenschild",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 15,
+        "dexterity": 0,
+        "intelligence": 15
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt3Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4Verisium",
+      "nameEn": "Runeforged Jingling Crest Shield",
+      "nameDe": "Runengeschmiedeter Schellen-Wappenschild",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 23,
+        "dexterity": 0,
+        "intelligence": 23
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt4Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt5Verisium",
+      "nameEn": "Runeforged Sectarian Crest Shield",
+      "nameDe": "Runengeschmiedeter Konfessioneller Wappenschild",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 27,
+        "dexterity": 0,
+        "intelligence": 27
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt5Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6Verisium",
+      "nameEn": "Runeforged Omen Crest Shield",
+      "nameDe": "Runengeschmiedeter Omen-Wappenschild",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 30,
+        "dexterity": 0,
+        "intelligence": 30
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt6Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt7Verisium",
+      "nameEn": "Runeforged Wayward Crest Shield",
+      "nameDe": "Runengeschmiedeter Beständiger Wappenschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 36,
+        "dexterity": 0,
+        "intelligence": 36
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt7Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt8Verisium",
+      "nameEn": "Runeforged Seer Crest Shield",
+      "nameDe": "Runengeschmiedeter Seher-Wappenschild",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 39,
+        "dexterity": 0,
+        "intelligence": 39
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt8Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt9Verisium",
+      "nameEn": "Runeforged Stoic Crest Shield",
+      "nameDe": "Runengeschmiedeter Stoiker-Wappenschild",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 41,
+        "dexterity": 0,
+        "intelligence": 41
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt9Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt10Verisium",
+      "nameEn": "Runeforged Empyreal Crest Shield",
+      "nameDe": "Runengeschmiedeter Himmlischer Wappenschild",
+      "dropLevel": 57,
+      "requirements": {
+        "level": 57,
+        "strength": 45,
+        "dexterity": 0,
+        "intelligence": 45
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt10Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt11Verisium",
+      "nameEn": "Runeforged Deified Crest Shield",
+      "nameDe": "Runengeschmiedeter Vergötterter Wappenschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 0,
+        "intelligence": 50
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt11Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6CruelVerisium",
+      "nameEn": "Runeforged Bulwark Tower Shield",
+      "nameDe": "Runengeschmiedeter Bollwerk-Turmschild",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 77,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr6CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7CruelVerisium",
+      "nameEn": "Runeforged Noble Tower Shield",
+      "nameDe": "Runengeschmiedeter Edler Turmschild",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 83,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr7CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8CruelVerisium",
+      "nameEn": "Runeforged Goldworked Tower Shield",
+      "nameDe": "Runengeschmiedeter Vergoldeter Turmschild",
+      "dropLevel": 61,
+      "requirements": {
+        "level": 61,
+        "strength": 86,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr8CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4CruelVerisium",
+      "nameEn": "Runeforged Polished Targe",
+      "nameDe": "Runengeschmiedete Polierte Tartsche",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 42,
+        "dexterity": 42,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex4CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex5CruelVerisium",
+      "nameEn": "Runeforged Stone Targe",
+      "nameDe": "Runengeschmiedete Steintartsche",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 46,
+        "dexterity": 46,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex5CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6CruelVerisium",
+      "nameEn": "Runeforged Avian Targe",
+      "nameDe": "Runengeschmiedete Vogeltartsche",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 48,
+        "dexterity": 48,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex6CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4CruelVerisium",
+      "nameEn": "Runeforged Dekharan Crest Shield",
+      "nameDe": "Runengeschmiedeter Dhekara-Wappenschild",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 42,
+        "dexterity": 0,
+        "intelligence": 42
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt4CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt5CruelVerisium",
+      "nameEn": "Runeforged Quartered Crest Shield",
+      "nameDe": "Runengeschmiedeter Geviertelter Wappenschild",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 46,
+        "dexterity": 0,
+        "intelligence": 46
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt5CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6CruelVerisium",
+      "nameEn": "Runeforged Glowering Crest Shield",
+      "nameDe": "Runengeschmiedeter Grollender Wappenschild",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 48,
+        "dexterity": 0,
+        "intelligence": 48
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt6CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3EndgameVerisium",
+      "nameEn": "Runeforged Royal Tower Shield",
+      "nameDe": "Runengeschmiedeter Adeliger Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr3EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6EndgameVerisium",
+      "nameEn": "Runeforged Fortress Tower Shield",
+      "nameDe": "Runengeschmiedeter Festungs-Turmschild",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 99,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr6EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8EndgameVerisium",
+      "nameEn": "Runeforged Vaal Tower Shield",
+      "nameDe": "Runengeschmiedeter Vaal-Turmschild",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 107,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr8EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr10EndgameVerisium",
+      "nameEn": "Runeforged Tawhoan Tower Shield",
+      "nameDe": "Runengeschmiedeter Tawhoa-Turmschild",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 115,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr10EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex2EndgameVerisium",
+      "nameEn": "Runeforged Mammoth Targe",
+      "nameDe": "Runengeschmiedete Mammut-Tartsche",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 50,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex2EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4EndgameVerisium",
+      "nameEn": "Runeforged Baroque Targe",
+      "nameDe": "Runengeschmiedete Barocke Tartsche",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 54,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex4EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex6EndgameVerisium",
+      "nameEn": "Runeforged Soaring Targe",
+      "nameDe": "Runengeschmiedete Schwingen-Tartsche",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 59,
+        "dexterity": 59,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex6EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex10EndgameVerisium",
+      "nameEn": "Runeforged Golden Targe",
+      "nameDe": "Runengeschmiedete Goldene Tartsche",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 63,
+        "dexterity": 63,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex10EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2EndgameVerisium",
+      "nameEn": "Runeforged Intricate Crest Shield",
+      "nameDe": "Runengeschmiedeter Aufwändiger Wappenschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 0,
+        "intelligence": 50
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt2EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4EndgameVerisium",
+      "nameEn": "Runeforged Sekheman Crest Shield",
+      "nameDe": "Runengeschmiedeter Sekhema-Wappenschild",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 54
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt4EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6EndgameVerisium",
+      "nameEn": "Runeforged Vaal Crest Shield",
+      "nameDe": "Runengeschmiedeter Vaal-Wappenschild",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 59,
+        "dexterity": 0,
+        "intelligence": 59
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt6EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt7EndgameVerisium",
+      "nameEn": "Runeforged Blacksteel Crest Shield",
+      "nameDe": "Runengeschmiedeter Schwarzstahl-Wappenschild",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 63,
+        "dexterity": 0,
+        "intelligence": 63
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt7EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr1VerisiumUnique1",
+      "nameEn": "Runemastered Splintered Tower Shield",
+      "nameDe": "Runenveredelter Gesplitterter Turmschild",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr2VerisiumUnique1",
+      "nameEn": "Runemastered Painted Tower Shield",
+      "nameDe": "Runenveredelter Bemalter Turmschild",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr2VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr3VerisiumUnique1",
+      "nameEn": "Runemastered Braced Tower Shield",
+      "nameDe": "Runenveredelter Verstärkter Turmschild",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr3VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr4VerisiumUnique1",
+      "nameEn": "Runemastered Barricade Tower Shield",
+      "nameDe": "Runenveredelter BarrikadenTurmschild",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr4VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr5VerisiumUnique1",
+      "nameEn": "Runemastered Effigial Tower Shield",
+      "nameDe": "Runenveredelter Bildnis-Turmschild",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr5VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr6VerisiumUnique1",
+      "nameEn": "Runemastered Rampart Tower Shield",
+      "nameDe": "Runenveredelter Schutzwall-Turmschild",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 58,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr6VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr7VerisiumUnique1",
+      "nameEn": "Runemastered Heraldric Tower Shield",
+      "nameDe": "Runenveredelter Herold-Turmschild",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 71,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr7VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique1",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "nameDe": "Runenveredelter Schmelztiegel-Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique2",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "nameDe": "Runenveredelter Schmelztiegel-Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique3",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "nameDe": "Runenveredelter Schmelztiegel-Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 91,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique4",
+      "nameEn": "Runemastered Crucible Tower Shield",
+      "nameDe": "Runenveredelter Schmelztiegel-Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr9VerisiumUnique4",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr13VerisiumUnique1",
+      "nameEn": "Runemastered Blacksteel Tower Shield",
+      "nameDe": "Runenveredelter Schwarzstahl-Turmschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 91,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr13VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStr8EndgameVerisiumUnique1",
+      "nameEn": "Runemastered Vaal Tower Shield",
+      "nameDe": "Runenveredelter Vaal-Turmschild",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 107,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStr8EndgameVerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Glacial Fortress",
+      "nameDe": "Runenveredelte Gletscherfestung",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 99,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_armour",
+        "str_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrUnique1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex1VerisiumUnique1",
+      "nameEn": "Runemastered Hardwood Targe",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 31,
+        "dexterity": 31,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDex4VerisiumUnique1",
+      "nameEn": "Runemastered Crescent Targe",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 31,
+        "dexterity": 31,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDex4VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt1VerisiumUnique1",
+      "nameEn": "Runemastered Blazon Crest Shield",
+      "nameDe": "Runenveredelter Geschmückter Wappenschild",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 32,
+        "dexterity": 0,
+        "intelligence": 32
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2VerisiumUnique1",
+      "nameEn": "Runemastered Sigil Crest Shield",
+      "nameDe": "Runenveredelter Siegel-Wappenschild",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 32,
+        "dexterity": 0,
+        "intelligence": 32
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt2VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt3VerisiumUnique1",
+      "nameEn": "Runemastered Emblem Crest Shield",
+      "nameDe": "Runenveredelter Emblem-Wappenschild",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 31,
+        "dexterity": 0,
+        "intelligence": 31
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt3VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt4VerisiumUnique1",
+      "nameEn": "Runemastered Jingling Crest Shield",
+      "nameDe": "Runenveredelter Schellen-Wappenschild",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 31,
+        "dexterity": 0,
+        "intelligence": 31
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt4VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt6VerisiumUnique1",
+      "nameEn": "Runemastered Omen Crest Shield",
+      "nameDe": "Runenveredelter Omen-Wappenschild",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 38,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "vaal_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt6VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Venerable Defender",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 107,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Venerable Defender",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 107
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique4",
+      "nameEn": "Runemastered Venerable Defender",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 67,
+        "dexterity": 67,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique4",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrInt2EndgameVerisiumUnique1",
+      "nameEn": "Runemastered Intricate Crest Shield",
+      "nameDe": "Runenveredelter Aufwändiger Wappenschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 50,
+        "dexterity": 0,
+        "intelligence": 50
+      },
+      "tags": [
+        "str_int_armour",
+        "str_int_shield",
+        "runeforged",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrInt2EndgameVerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractShield",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/CarvedMischief",
+      "nameEn": "Carved Mischief",
+      "nameDe": "Eingraviertes Unheil",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 60,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "rune",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/SoulCores/CarvedMischief",
+        "inheritsFrom": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "domain": "undefined",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

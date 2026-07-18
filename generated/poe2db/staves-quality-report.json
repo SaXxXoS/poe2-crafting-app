@@ -1,0 +1,661 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:50:45.934Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Staff.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Staff DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 17,
+    "regularUsableBases": 17,
+    "excludedBases": 0,
+    "distinctPrefixPools": 6,
+    "distinctSuffixPools": 6
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique4",
+        "nameEn": "Perching Staff"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique4",
+        "baseNameEn": "Perching Staff",
+        "textEn": "Grants Skill: Spiraling Conspiracy"
+      }
+    ],
+    "missingGermanModifierTexts": [
+      {
+        "id": "poe2db:3a960c6b7d8788847ef3",
+        "nameEn": "Punishing",
+        "textEn": "(50—68)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:90848e335d1ac65eb778",
+        "nameEn": "Unforgiving",
+        "textEn": "(69—88)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:3876f57d0205f6ff1b45",
+        "nameEn": "Vengeful",
+        "textEn": "(89—108)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:6c846e746f50e3943e2b",
+        "nameEn": "Sadistic",
+        "textEn": "(109—128)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:bb80be89894a626b12dd",
+        "nameEn": "Pitiless",
+        "textEn": "(129—148)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:1eb8bab3887447337d39",
+        "nameEn": "Agonising",
+        "textEn": "(149—188)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:f27e3c05ec5b3cada6d6",
+        "nameEn": "Oppressor's",
+        "textEn": "(189—208)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:05203c194d63378e28e2",
+        "nameEn": "Torturer's",
+        "textEn": "(209—238)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:33442ae90f71d7ba139e",
+        "nameEn": "of Ignition",
+        "textEn": "(51—60)% increased Flammability Magnitude"
+      },
+      {
+        "id": "poe2db:02c57b48fffbee9f7b0a",
+        "nameEn": "of Scorching",
+        "textEn": "(61—70)% increased Flammability Magnitude"
+      },
+      {
+        "id": "poe2db:26c7988a3612a9472597",
+        "nameEn": "of Incineration",
+        "textEn": "(71—80)% increased Flammability Magnitude"
+      },
+      {
+        "id": "poe2db:3f9c9d0b9af656085e1b",
+        "nameEn": "of Combustion",
+        "textEn": "(81—90)% increased Flammability Magnitude"
+      },
+      {
+        "id": "poe2db:780e7b25fe3ea7794540",
+        "nameEn": "of Conflagration",
+        "textEn": "(91—100)% increased Flammability Magnitude"
+      }
+    ],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [
+    {
+      "modId": "poe2db:0354e20647f1df189d1d",
+      "nameEn": "Searing",
+      "textDe": "(50—68)% erhöhter Feuerschaden",
+      "allowedBaseCount": 11
+    },
+    {
+      "modId": "poe2db:27b1b7a5a5267f3b6972",
+      "nameEn": "Sizzling",
+      "textDe": "(69—88)% erhöhter Feuerschaden",
+      "allowedBaseCount": 11
+    },
+    {
+      "modId": "poe2db:370229220e1161e60fab",
+      "nameEn": "Blistering",
+      "textDe": "(89—108)% erhöhter Feuerschaden",
+      "allowedBaseCount": 11
+    },
+    {
+      "modId": "poe2db:52336825cb5b4aff9964",
+      "nameEn": "Cauterising",
+      "textDe": "(109—128)% erhöhter Feuerschaden",
+      "allowedBaseCount": 11
+    },
+    {
+      "modId": "poe2db:ea9119dac5f1027702ab",
+      "nameEn": "Smoldering",
+      "textDe": "(129—148)% erhöhter Feuerschaden",
+      "allowedBaseCount": 11
+    }
+  ],
+  "restrictedModFinding": "At least one imported modifier is not available to every imported Staff base.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff1",
+      "nameEn": "Ashen Staff",
+      "nameDe": "Aschestab",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff1",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff2",
+      "nameEn": "Gelid Staff",
+      "nameDe": "Eisiger Stab",
+      "dropLevel": 2,
+      "requirements": {
+        "level": 2,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff2",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff3",
+      "nameEn": "Voltaic Staff",
+      "nameDe": "Voltaischer Stab",
+      "dropLevel": 2,
+      "requirements": {
+        "level": 2,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff3",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff4",
+      "nameEn": "Spriggan Staff",
+      "nameDe": "Sprigganstab",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 23
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff4",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff5",
+      "nameEn": "Pyrophyte Staff",
+      "nameDe": "Pyrophyt-Stab",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 31
+      },
+      "tags": [
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff5",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff6",
+      "nameEn": "Chiming Staff",
+      "nameDe": "Klangstab",
+      "dropLevel": 25,
+      "requirements": {
+        "level": 25,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 46
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff6",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff7",
+      "nameEn": "Rending Staff",
+      "nameDe": "Entzweireißender Stab",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 60
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_physical_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff7",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff8",
+      "nameEn": "Reaping Staff",
+      "nameDe": "Sensenstab",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 68
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff8",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff9",
+      "nameEn": "Icicle Staff",
+      "nameDe": "Vereister Stab",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 80
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_lightning_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff9",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff10",
+      "nameEn": "Roaring Staff",
+      "nameDe": "Brüllender Stab",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 87
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff10",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff11",
+      "nameEn": "Paralysing Staff",
+      "nameDe": "Paralysierender Stab",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 92
+      },
+      "tags": [
+        "no_fire_spell_mods",
+        "no_cold_spell_mods",
+        "no_chaos_spell_mods",
+        "no_physical_spell_mods",
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff11",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff12",
+      "nameEn": "Sanctified Staff",
+      "nameDe": "Heiliger Stab",
+      "dropLevel": 56,
+      "requirements": {
+        "level": 56,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 99
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff12",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff13",
+      "nameEn": "Dark Staff",
+      "nameDe": "Dunkler Stab",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff13",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff14",
+      "nameEn": "Ravenous Staff",
+      "nameDe": "Unersättlicher Stab",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaff14",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique1",
+      "nameEn": "Permafrost Staff",
+      "nameDe": "Permafrost-Stab",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique1",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique3",
+      "nameEn": "Reflecting Staff",
+      "nameDe": "Reflektierender Stab",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique3",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique4",
+      "nameEn": "Perching Staff",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 114
+      },
+      "tags": [
+        "staff",
+        "twohand",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique4",
+        "inheritsFrom": "Metadata/Items/Staves/AbstractStaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

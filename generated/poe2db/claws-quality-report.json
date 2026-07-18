@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:50:50.083Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Claw.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Claw DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 13,
+    "regularUsableBases": 13,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Claw modifier matches the shared 'claw' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw1",
+      "nameEn": "Crude Claw",
+      "nameDe": "Grobe Klaue",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw2",
+      "nameEn": "Pict Claw",
+      "nameDe": "Vielfraß-Klaue",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 0,
+        "dexterity": 14,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw3",
+      "nameEn": "Wolfbone Claw",
+      "nameDe": "Wolfsknochen-Klaue",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 0,
+        "dexterity": 24,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw4",
+      "nameEn": "Forked Claw",
+      "nameDe": "Gegabelte Klaue",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 31,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw5",
+      "nameEn": "Plated Claw",
+      "nameDe": "Beschlagene Klaue",
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 0,
+        "dexterity": 41,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw6",
+      "nameEn": "Edged Claw",
+      "nameDe": "Geschliffene Klaue",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 0,
+        "dexterity": 52,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw6",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw7",
+      "nameEn": "Arced Claw",
+      "nameDe": "Gebogene Klaue",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 60,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw7",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw8",
+      "nameEn": "Hooked Claw",
+      "nameDe": "Hakenklaue",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 0,
+        "dexterity": 65,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw8",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw9",
+      "nameEn": "Razorglass Claw",
+      "nameDe": "Rasierklingen-Klaue",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 80,
+        "intelligence": 0
+      },
+      "tags": [
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw9",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw10",
+      "nameEn": "Sharktooth Claw",
+      "nameDe": "Haifischzahnklaue",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 0,
+        "dexterity": 87,
+        "intelligence": 0
+      },
+      "tags": [
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw10",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw11",
+      "nameEn": "Armoured Claw",
+      "nameDe": "Panzerklaue",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 92,
+        "intelligence": 0
+      },
+      "tags": [
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw11",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw12",
+      "nameEn": "Piercing Claw",
+      "nameDe": "Durchbohrende Klaue",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 97,
+        "intelligence": 0
+      },
+      "tags": [
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw12",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw13",
+      "nameEn": "Talon Claw",
+      "nameDe": "Raubvogelklaue",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 114,
+        "intelligence": 0
+      },
+      "tags": [
+        "claw",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Claws/FourClaw13",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Claws/AbstractClaw",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

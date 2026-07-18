@@ -1,0 +1,1929 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:51:10.686Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Focus.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Focus DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 51,
+    "regularUsableBases": 23,
+    "excludedBases": 28,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus1Verisium",
+        "nameEn": "Runeforged Twig Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus2Verisium",
+        "nameEn": "Runeforged Woven Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus3Verisium",
+        "nameEn": "Runeforged Antler Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus4Verisium",
+        "nameEn": "Runeforged Engraved Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus5Verisium",
+        "nameEn": "Runeforged Tonal Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus6Verisium",
+        "nameEn": "Runeforged Crystal Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus7Verisium",
+        "nameEn": "Runeforged Voodoo Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus8Verisium",
+        "nameEn": "Runeforged Plumed Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus9Verisium",
+        "nameEn": "Runeforged Runed Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus10Verisium",
+        "nameEn": "Runeforged Whorl Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus11Verisium",
+        "nameEn": "Runeforged Elegant Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus12Verisium",
+        "nameEn": "Runeforged Attuned Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus13Verisium",
+        "nameEn": "Runeforged Magus Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus6CruelVerisium",
+        "nameEn": "Runeforged Arrayed Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus7CruelVerisium",
+        "nameEn": "Runeforged Cultist Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus8CruelVerisium",
+        "nameEn": "Runeforged Hallowed Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus3EndgameVerisium",
+        "nameEn": "Runeforged Druidic Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus6EndgameVerisium",
+        "nameEn": "Runeforged Leyline Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus8EndgameVerisium",
+        "nameEn": "Runeforged Sacred Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus10EndgameVerisium",
+        "nameEn": "Runeforged Tasalian Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus1VerisiumUnique1",
+        "nameEn": "Runemastered Twig Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus2VerisiumUnique1",
+        "nameEn": "Runemastered Woven Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus3VerisiumUnique1",
+        "nameEn": "Runemastered Antler Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus4VerisiumUnique1",
+        "nameEn": "Runemastered Engraved Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus5VerisiumUnique1",
+        "nameEn": "Runemastered Tonal Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus6VerisiumUnique1",
+        "nameEn": "Runemastered Crystal Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus7VerisiumUnique1",
+        "nameEn": "Runemastered Voodoo Focus"
+      },
+      {
+        "id": "Metadata/Items/Armours/Focii/FourFocus8VerisiumUnique1",
+        "nameEn": "Runemastered Plumed Focus"
+      }
+    ],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [
+      {
+        "id": "poe2db:6adc328e01c104a3470c",
+        "nameEn": "Punishing",
+        "textEn": "(25—34)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:cf2242c621dcc1a36396",
+        "nameEn": "Unforgiving",
+        "textEn": "(35—44)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:80f1be92c4d602fa543a",
+        "nameEn": "Vengeful",
+        "textEn": "(45—54)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:a469afa85a69abcaae16",
+        "nameEn": "Sadistic",
+        "textEn": "(55—64)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:d455e1ab19c7a585d59d",
+        "nameEn": "Pitiless",
+        "textEn": "(65—74)% increased Spell Physical Damage"
+      },
+      {
+        "id": "poe2db:e49204652f5a53b146ed",
+        "nameEn": "Agonising",
+        "textEn": "(75—89)% increased Spell Physical Damage"
+      }
+    ],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus1Verisium",
+      "nameEn": "Runeforged Twig Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus2Verisium",
+      "nameEn": "Runeforged Woven Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3Verisium",
+      "nameEn": "Runeforged Antler Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus4Verisium",
+      "nameEn": "Runeforged Engraved Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus5Verisium",
+      "nameEn": "Runeforged Tonal Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6Verisium",
+      "nameEn": "Runeforged Crystal Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7Verisium",
+      "nameEn": "Runeforged Voodoo Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8Verisium",
+      "nameEn": "Runeforged Plumed Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus9Verisium",
+      "nameEn": "Runeforged Runed Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus10Verisium",
+      "nameEn": "Runeforged Whorl Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus11Verisium",
+      "nameEn": "Runeforged Elegant Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus12Verisium",
+      "nameEn": "Runeforged Attuned Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus13Verisium",
+      "nameEn": "Runeforged Magus Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6CruelVerisium",
+      "nameEn": "Runeforged Arrayed Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7CruelVerisium",
+      "nameEn": "Runeforged Cultist Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8CruelVerisium",
+      "nameEn": "Runeforged Hallowed Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3EndgameVerisium",
+      "nameEn": "Runeforged Druidic Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6EndgameVerisium",
+      "nameEn": "Runeforged Leyline Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8EndgameVerisium",
+      "nameEn": "Runeforged Sacred Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus10EndgameVerisium",
+      "nameEn": "Runeforged Tasalian Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus1VerisiumUnique1",
+      "nameEn": "Runemastered Twig Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus2VerisiumUnique1",
+      "nameEn": "Runemastered Woven Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3VerisiumUnique1",
+      "nameEn": "Runemastered Antler Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus4VerisiumUnique1",
+      "nameEn": "Runemastered Engraved Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus5VerisiumUnique1",
+      "nameEn": "Runemastered Tonal Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6VerisiumUnique1",
+      "nameEn": "Runemastered Crystal Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7VerisiumUnique1",
+      "nameEn": "Runemastered Voodoo Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8VerisiumUnique1",
+      "nameEn": "Runemastered Plumed Focus",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Focus modifier matches the shared 'focus' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus1",
+      "nameEn": "Twig Focus",
+      "nameDe": "Zweig-Fokus",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus2",
+      "nameEn": "Woven Focus",
+      "nameDe": "Gewobener Fokus",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 11
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus2",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3",
+      "nameEn": "Antler Focus",
+      "nameDe": "Geweih-Fokus",
+      "dropLevel": 10,
+      "requirements": {
+        "level": 10,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 17
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus3",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus4",
+      "nameEn": "Engraved Focus",
+      "nameDe": "Gravierter Fokus",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 25
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus4",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus5",
+      "nameEn": "Tonal Focus",
+      "nameDe": "Klangfokus",
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 33
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus5",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6",
+      "nameEn": "Crystal Focus",
+      "nameDe": "Kristallfokus",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus6",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7",
+      "nameEn": "Voodoo Focus",
+      "nameDe": "Voodoofokus",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 48
+      },
+      "tags": [
+        "int_armour",
+        "vaal_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus7",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8",
+      "nameEn": "Plumed Focus",
+      "nameDe": "Federfokus",
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 52
+      },
+      "tags": [
+        "int_armour",
+        "vaal_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus8",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus9",
+      "nameEn": "Runed Focus",
+      "nameDe": "Runengravierter Fokus",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 64
+      },
+      "tags": [
+        "int_armour",
+        "karui_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus9",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus10",
+      "nameEn": "Whorl Focus",
+      "nameDe": "Spiralfokus",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 73
+      },
+      "tags": [
+        "int_armour",
+        "karui_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus10",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus11",
+      "nameEn": "Elegant Focus",
+      "nameDe": "Eleganter Fokus",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 74
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus11",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus12",
+      "nameEn": "Attuned Focus",
+      "nameDe": "Robuster Fokus",
+      "dropLevel": 57,
+      "requirements": {
+        "level": 57,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 81
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus12",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus13",
+      "nameEn": "Magus Focus",
+      "nameDe": "Magierfokus",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 91
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus13",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus2Cruel",
+      "nameEn": "Wreath Focus",
+      "nameDe": "Kranz-Fokus",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 64
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus2Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3Cruel",
+      "nameEn": "Staghorn Focus",
+      "nameDe": "Hirschgeweih-Fokus",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 69
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus3Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus5Cruel",
+      "nameEn": "Jingling Focus",
+      "nameDe": "Klirrender Fokus",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 73
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus5Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6Cruel",
+      "nameEn": "Arrayed Focus",
+      "nameDe": "Angeordneter Fokus",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 77
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus6Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7Cruel",
+      "nameEn": "Cultist Focus",
+      "nameDe": "Kultisten-Fokus",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 83
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus7Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8Cruel",
+      "nameEn": "Hallowed Focus",
+      "nameDe": "Geheiligter Fokus",
+      "dropLevel": 61,
+      "requirements": {
+        "level": 61,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 86
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus8Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3Endgame",
+      "nameEn": "Druidic Focus",
+      "nameDe": "Druidenfokus",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 91
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus3Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6Endgame",
+      "nameEn": "Leyline Focus",
+      "nameDe": "Ley-Linien-Fokus",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 99
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus6Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8Endgame",
+      "nameEn": "Sacred Focus",
+      "nameDe": "Geweihter Fokus",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 107
+      },
+      "tags": [
+        "int_armour",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus8Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus10Endgame",
+      "nameEn": "Tasalian Focus",
+      "nameDe": "Tasalio-Fokus",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 115
+      },
+      "tags": [
+        "int_armour",
+        "karui_basetype",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus10Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus1Verisium",
+      "nameEn": "Runeforged Twig Focus",
+      "nameDe": null,
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus1Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus2Verisium",
+      "nameEn": "Runeforged Woven Focus",
+      "nameDe": null,
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 11
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus2Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3Verisium",
+      "nameEn": "Runeforged Antler Focus",
+      "nameDe": null,
+      "dropLevel": 10,
+      "requirements": {
+        "level": 10,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 17
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus3Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus4Verisium",
+      "nameEn": "Runeforged Engraved Focus",
+      "nameDe": null,
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 25
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus4Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus5Verisium",
+      "nameEn": "Runeforged Tonal Focus",
+      "nameDe": null,
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 33
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus5Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6Verisium",
+      "nameEn": "Runeforged Crystal Focus",
+      "nameDe": null,
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 38
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus6Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7Verisium",
+      "nameEn": "Runeforged Voodoo Focus",
+      "nameDe": null,
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 48
+      },
+      "tags": [
+        "int_armour",
+        "vaal_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus7Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8Verisium",
+      "nameEn": "Runeforged Plumed Focus",
+      "nameDe": null,
+      "dropLevel": 36,
+      "requirements": {
+        "level": 36,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 52
+      },
+      "tags": [
+        "int_armour",
+        "vaal_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus8Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus9Verisium",
+      "nameEn": "Runeforged Runed Focus",
+      "nameDe": null,
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 64
+      },
+      "tags": [
+        "int_armour",
+        "karui_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus9Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus10Verisium",
+      "nameEn": "Runeforged Whorl Focus",
+      "nameDe": null,
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 73
+      },
+      "tags": [
+        "int_armour",
+        "karui_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus10Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus11Verisium",
+      "nameEn": "Runeforged Elegant Focus",
+      "nameDe": null,
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 74
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus11Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus12Verisium",
+      "nameEn": "Runeforged Attuned Focus",
+      "nameDe": null,
+      "dropLevel": 57,
+      "requirements": {
+        "level": 57,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 81
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus12Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus13Verisium",
+      "nameEn": "Runeforged Magus Focus",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 91
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus13Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6CruelVerisium",
+      "nameEn": "Runeforged Arrayed Focus",
+      "nameDe": null,
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 77
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus6CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7CruelVerisium",
+      "nameEn": "Runeforged Cultist Focus",
+      "nameDe": null,
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 83
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus7CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8CruelVerisium",
+      "nameEn": "Runeforged Hallowed Focus",
+      "nameDe": null,
+      "dropLevel": 61,
+      "requirements": {
+        "level": 61,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 86
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus8CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3EndgameVerisium",
+      "nameEn": "Runeforged Druidic Focus",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 91
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus3EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6EndgameVerisium",
+      "nameEn": "Runeforged Leyline Focus",
+      "nameDe": null,
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 99
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus6EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8EndgameVerisium",
+      "nameEn": "Runeforged Sacred Focus",
+      "nameDe": null,
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 107
+      },
+      "tags": [
+        "int_armour",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus8EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus10EndgameVerisium",
+      "nameEn": "Runeforged Tasalian Focus",
+      "nameDe": null,
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 115
+      },
+      "tags": [
+        "int_armour",
+        "karui_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus10EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus1VerisiumUnique1",
+      "nameEn": "Runemastered Twig Focus",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 54
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus2VerisiumUnique1",
+      "nameEn": "Runemastered Woven Focus",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 54
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus2VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus3VerisiumUnique1",
+      "nameEn": "Runemastered Antler Focus",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 54
+      },
+      "tags": [
+        "int_armour",
+        "ezomyte_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus3VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus4VerisiumUnique1",
+      "nameEn": "Runemastered Engraved Focus",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 54
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus4VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus5VerisiumUnique1",
+      "nameEn": "Runemastered Tonal Focus",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 54
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus5VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus6VerisiumUnique1",
+      "nameEn": "Runemastered Crystal Focus",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 58
+      },
+      "tags": [
+        "int_armour",
+        "maraketh_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus6VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus7VerisiumUnique1",
+      "nameEn": "Runemastered Voodoo Focus",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 78
+      },
+      "tags": [
+        "int_armour",
+        "vaal_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus7VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Focii/FourFocus8VerisiumUnique1",
+      "nameEn": "Runemastered Plumed Focus",
+      "nameDe": null,
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 91
+      },
+      "tags": [
+        "int_armour",
+        "vaal_basetype",
+        "runeforged",
+        "focus",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Focii/FourFocus8VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Focus/AbstractFocus",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    }
+  ]
+}

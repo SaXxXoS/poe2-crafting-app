@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Crafting - PoE2DB, Path of Exile Wiki de</title>
+    <meta name="description" content="path of exile is simply a tool to test your path of building creation">
+    <link rel="alternate" hreflang="en" href="https://poe2db.tw/us/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://poe2db.tw/tw/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://poe2db.tw/cn/" />
+        <link href="/favicon2.png" rel="shortcut icon" >
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css" integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-5-theme/1.3.0/select2-bootstrap-5-theme.min.css" integrity="sha512-z/90a5SWiu4MWVelb5+ny7sAayYUfMmdXKEAbpj27PfdkamNdyI3hcjxPxkOPbrXoKIm7r9V2mElt5f1OtVhqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css" integrity="sha512-HbPh+j4V7pXprvQMt2dtmK/zCEsUeZWYXRln4sOwmoyHPQAPqy/k9lIquKUyKNpNbDGAY06UdiDHcEkBc72yCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.min.css" integrity="sha512-OkYLbkJ4DB7ewvcpNLF9DSFmhdmxFXQ1Cs+XyjMsMMC94LynFJaA9cPXOokugkmZo6O6lwZg+V5dwQMH4S5/3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" integrity="sha256-nd8IBqNn9uqwZKfZcLIXQcNxk5TjqrxiLx7PzN5PFW0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video-js.min.css" integrity="sha512-J3tx4ssoARFr4U9VmZmQe2q672q0jUeYizJW3vglkOBTlQ/N6kF3eVqZZzaey/TdIXH69s3HYe2nQwyxK/Emzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdn.poe2db.tw/css/stdtheme.80f86f8d795885a7.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha256-Ikk5myJowmDQaYVCUD0Wr+vIDkN8hGI58SGWdE671A8=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js" integrity="sha512-gbruucq/Opx9jlHfqqZeAg2LNK3Y4BbpXHKDhRC88/tARL/izPOE4Zt2w6X9Sn1UeWaGbL38zW7nkL2jdn5JIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.1/marked.min.js" integrity="sha512-VUuO/d6MS7hXmiFGEj7HtUa2FCI6Ll+xPvX9yX3bxn7ZqDWwleqXa8dtW13brbZ1ld2jiTrv8hWbpfp4B5mi4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.all.js" integrity="sha512-A7LzqKE/pm9ofgS0Lxu7qroQS5SkKJQaYJkJ/66nQiWZfEdeGlBq5zEXQ63VRmXZK8zPpCgFf2WQJIAljI0Vdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/js/modal-video.min.js" integrity="sha256-VqINwNxkS4VEDMq5O52YTckX+Mx84X6bafO8NxF21Xw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" integrity="sha256-DiHJ7hbvMejsMyP76bpVWacb5HSHQ2sQlrJV8n7KEvA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js" integrity="sha512-4/g9GAdOdTpUP2mKClpKsEzaK7FQNgMjq+No0rX8XZlfrCGtbi4r+T/p5fnacsEC3zIAmHKLJUL7sh3/yVA4OQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/theme/dark.min.js" integrity="sha512-3Zm64ayK7DflnnyO2pKkLJX3v9Sb90mvahbwPUuMzEf42HI6k8tquIx5VsNBjEWAcYJWzvimbqnTkLl2QdCUmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video.min.js" integrity="sha512-48NkCweTzA9u2sP4GgKcEDm6IScPIMga142ipKFNcHfz7feUJXDJxO1jwc2l+5MvWfwMj4BDfQv8WIMhrPxZLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.2.1/mustache.min.js" integrity="sha512-Qjrukx28QnvFWISw9y4wCB0kTB/ISnWXPz5/RME5o8OlZqllWygc1AB64dOBlngeTeStmYmNTNcM6kfEjUdnnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://cdn.poe2db.tw/js/ModsView.f39fca410dd746d3.js"></script>
+        <script src="https://cdn.poe2db.tw/js/poedb_header.c33c3bc986782ab1.js"></script>
+    
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2013.js"></script>
+
+    <meta property="og:site_name" content="poe2db.tw">
+
+  </head>
+
+  <body>
+
+    <div id="consent-box" style="display:none">
+      <button onclick="window.__cmp('showModal');">
+        Update cookie preferences
+      </button>
+    </div>
+    
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("consent-box").style.display = window["__tcfapi"]
+          ? ""
+          : "none";
+      } else {
+        document.addEventListener(
+          "nitroAds.loaded",
+          () =>
+            (document.getElementById("consent-box").style.display = window["__tcfapi"]
+              ? ""
+              : "none")
+        );
+      }
+    </script>
+
+
+    <div class="background-image item-popup--poe2"></div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6598Z863E2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6598Z863E2');
+</script>
+
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="/de/">PoE2<span class='brand-suffix'>DB</span><sub></sub></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"  aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Gegenstand</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/de/Items" data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Gegenstand</a></li>
+                    <li><a class="dropdown-item" href="/de/Unique_item" data-i18n="ClientStrings|ItemDisplayStringUnique|Name"></a></li>
+                    <li><a class="dropdown-item" href="/de/Reforging_Bench" data-i18n="ClientStrings|RecipeBenchTitle|Name"></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/de/Gem" data-i18n="ClientStrings|ItemDisplayStringGem|Name">Gemme</a></li>
+                    <li><a class="dropdown-item" href="/de/Skill_Gems" data-i18n="ItemClasses|Active Skill Gem|Name">Fertigkeitengemmen</a></li>
+                    <li><a class="dropdown-item" href="/de/Support_Gems" data-i18n="ItemClasses|Support Skill Gem|Name">Unterstützungsgemmen</a></li>
+                    <li><a class="dropdown-item" href="/de/Spirit_Gems" data-i18n-tw="精神寶石">Spirit Gems</a></li>
+                    <li><a class="dropdown-item" href="/de/Lineage_Supports" data-i18n="KeywordPopups|LineageSupports|Name">Lineage Supports</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifikatoren</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/de/Modifiers" data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifikatoren</a></li>
+                    <li><a class="dropdown-item" href="/de/Desecrated_Modifiers" data-i18n="KeywordPopups|Abyssalify|Name">Entweihte Modifikatoren</a></li>
+                    <li><a class="dropdown-item" href="/de/Keywords" data-i18n-tw="提示字">Keywords</a></li>
+                    <li><a class="dropdown-item" href="/de/Crafting" data-i18n="ClientStrings|CraftingWindowTitle|Name">Anfertigen</a></li>
+                    <li><a class="dropdown-item" href="/de/Liquid_Emotions" data-i18n="KeywordPopups|DistilledEmotion|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/de/Quest" data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</a></li>
+                    <li><a class="dropdown-item" href="/de/Ascendancy_class" data-i18n="ClientStrings|TutorialPanelAscendancies|Name">Aszendenzklassen</a></li>
+                    <li><a class="dropdown-item" href="/de/passive-skill-tree/" data-i18n="ClientStrings|ActionOpenPassivePanel|Name">Fertigkeitenbaum</a></li>
+                    <li><a class="dropdown-item" href="/de/Act" data-i18n-tw="章節">Act</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/de/Waystones" data-i18n="ItemClasses|Map|Name">Wegsteine</a></li>
+                    <li><a class="dropdown-item" href="/de/EndGame" data-i18n="Acts|Endgame|Name"></a></li>
+                    <li><a class="dropdown-item" href="/de/atlas-skill-tree/" data-i18n="ClientStrings|ActionOpenAtlasPassivesScreen|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item"><a class="nav-link" href="Economy" data-i18n-tw="經濟" data-i18n-cn="经济">Economy</a></li>
+    
+                <li class="nav-item"><a class="ms-4 nav-link  bg-warning rounded-circle" style="color: white" href="/de/patreon">Patreon</a></li>
+              </ul>
+    
+    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="https://poedb.tw/de/Crafting">PoE<span class="brand-suffix">DB</span></a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-language fa-lg"></i> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/tw/Crafting">TW 繁體中文</a></li>
+                    <li><a class="dropdown-item" href="/cn/Crafting">CN 简体中文</a></li>
+                    <li><a class="dropdown-item" href="/us/Crafting">US English</a></li>
+                    <li><a class="dropdown-item" href="/kr/Crafting">KR 한국어</a></li>
+                    <li><a class="dropdown-item" href="/jp/Crafting">JP Japanese</a></li>
+                    <li><a class="dropdown-item" href="/ru/Crafting">RU Русский</a></li>
+                    <li><a class="dropdown-item" href="/pt/Crafting">PO Português</a></li>
+                    <li><a class="dropdown-item" href="/th/Crafting">TH ภาษาไทย</a></li>
+                    <li><a class="dropdown-item" href="/fr/Crafting">FR Français</a></li>
+                    <li><a class="dropdown-item" href="/de/Crafting">DE Deutsch</a></li>
+                    <li><a class="dropdown-item" href="/sp/Crafting">ES Spanish</a></li>
+                  </ul>
+                </li>
+              </ul>
+    
+            <form class="form-inline my-2 my-lg-0" role="search" action="search">
+              <input type="hidden" name="token" value="27aeb2e0f7ed21984047f52f756247ccd1881822888de03932a4bc561da5a56f009689">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" id="navautosearch">
+            </form>
+    
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+    </header>
+
+<script>sidebar160("leftside_banner", "left");</script>
+<script>sidebar160("rightside_banner", "right");</script>
+
+
+
+    <div class="page poe2">
+    <div class="page-content theme-showcase container" role="main">
+
+
+<div class="card mb-2" id="head_toolbar" style="background: transparent">
+  <div class="card-body p-1">
+    <div class="league_bar text-center">
+      <a href="Atziris_Temple" data-bs-toggle="tooltip" title="Atziri v0.4" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/IncursionAtziriActive.webp" alt="IncursionAtziriActive" class="league_minimap" /></span></a><a href="Waystones" data-bs-toggle="tooltip" title="Wegsteine" data-hover="?s=Data%5CKeywordPopups%2FWaystone"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2ditems/maps/endgamemaps/endgamemap1.webp" class="league_minimap"/></a><a href="Shrine" data-bs-toggle="tooltip" title="Schrein" data-hover="?s=Data%5CKeywordPopups%2FShrine"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Shrine.webp" alt="Shrine" class="league_minimap" /></span></a><a href="Strongbox" data-bs-toggle="tooltip" title="Tresor" data-hover="?s=Data%5CKeywordPopups%2FStrongbox"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Strongbox.webp" alt="Strongbox" class="league_minimap" /></span></a><a href="Essence" data-bs-toggle="tooltip" title="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp" alt="Essence" class="league_minimap" /></span></a><a href="Archnemesis" data-bs-toggle="tooltip" title="Archnemesis" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RareMonsterAlive.webp" alt="RareMonsterAlive" class="league_minimap" /></span></a><a href="Azmeri_Spirit" data-bs-toggle="tooltip" title="Azmeri-Geist v0.2" data-hover="?s=Data%5CKeywordPopups%2FAzmeriSpirit"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/SpiritActivated.webp" alt="SpiritActivated" class="league_minimap" /></span></a><a href="Rogue_Exile" data-bs-toggle="tooltip" title="Abtr&uuml;nniger Verbannter" data-hover="?s=Data%5CKeywordPopups%2FRogueExile"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RogueExile.webp" alt="RogueExile" class="league_minimap" /></span></a><a href="Map_Boss" data-bs-toggle="tooltip" title="Kartenboss" data-hover="?s=Data%5CKeywordPopups%2FMapBoss"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentMapBoss.webp" class="league_minimap"/></a><a href="Precursor_Towers" data-bs-toggle="tooltip" title="T&uuml;rme der Wegbereiter" data-hover="?s=Data%5CKeywordPopups%2FPrecursorTower"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/MapLegend/LostTower.webp" class="league_minimap"/></a><a href="Corrupted_Nexus" data-bs-toggle="tooltip" title="Verderbter Nexus" data-hover="?s=Data%5CKeywordPopups%2FCorruptedNexus"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentCorruptionNexusNoGrowth.webp" class="league_minimap"/></a><a href="Abyss" data-bs-toggle="tooltip" title="Abgrund v0.3" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/textures/interface/2d/2dart/uiimages/ingame/worldmap/mapbuttonabysshub.webp" class="league_minimap"/></a><a href="Breach" data-bs-toggle="tooltip" title="Riss" data-hover="?s=Data%5CKeywordPopups%2FContainsBreach"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentbreach.webp" class="league_minimap"/></a><a href="Ritual" data-bs-toggle="tooltip" title="Ritual" data-hover="?s=Data%5CKeywordPopups%2FContainsRitual"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentritual.webp" class="league_minimap"/></a><a href="Delirium" data-bs-toggle="tooltip" title="Delirium" data-hover="?s=Data%5CKeywordPopups%2FContainsDelirium"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentdelirium.webp" class="league_minimap"/></a><a href="Expedition" data-bs-toggle="tooltip" title="Expedition" data-hover="?s=Data%5CKeywordPopups%2FContainsExpedition"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentexpedition.webp" class="league_minimap"/></a><a href="The_Burning_Monolith" data-bs-toggle="tooltip" title="Der Brennende Monolith" data-hover="?s=Data%5CKeywordPopups%2FTheBurningMonoilth"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/maplegend/monolith.webp" class="league_minimap"/></a><a href="Trial_of_the_Sekhemas" data-bs-toggle="tooltip" title="Pr&uuml;fung der Sekhemas" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonSanctum.webp" class="league_minimap"/></a><a href="The_Trial_of_Chaos" data-bs-toggle="tooltip" title="Die Pr&uuml;fung des Chaos" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonUltimatum.webp" class="league_minimap"/></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="topbanner970"></div><script>topbanner970("topbanner970");</script>
+
+<div class="card"><h4 class="card-header" data-tabname="Community Wiki">Community Wiki</h4></div><div class="card mb-1">
+    <div class="card-body markdown-body">
+        <a class="btn btn-primary float-end" href='/de/marked?id=Crafting' data-i18n="ClientStrings|HideoutEditControlEdit|Name">Edit</a>
+        <div id="markContent"><h1 id="crafting">Crafting</h1>
+<h2 id="mechanics">Mechanics</h2>
+<h5 id="upgrading-rarity">Upgrading rarity</h5>
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+<th>Currency</th>
+<th>Restriction</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/438747e22ee80c89c020d85ba4a5897b4efd2484fc5cec1e58865b5ea1a9e2eb" href="Orb_of_Transmutation"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.webp" alt="CurrencyUpgradeToMagic" height="16" />Orb of Transmutation</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/2e6fdb558c2dd2986e173c27ec79008fd1306b5228b828594eeceb060f03eba9" href="Greater_Orb_of_Transmutation"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.webp" alt="CurrencyUpgradeToMagic" height="16" />Greater Orb of Transmutation</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/33b3fbcf17c279ef4891d4c746dcec1367fe325f15ee6658a0d2a2ddf553c456" href="Perfect_Orb_of_Transmutation"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToMagic.webp" alt="CurrencyUpgradeToMagic" height="16" />Perfect Orb of Transmutation</a></td>
+<td>Normal</td>
+<td>Upgrades a Normal to a <span class="magicitem">Magic</span>, adding 1 affix</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/36fd34c4a2bc6242fba8e473556779b877c6a76d7e7417c9c101cbe8dff9fcaa" href="Orb_of_Alchemy"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToRare.webp" alt="CurrencyUpgradeToRare" height="16" />Orb of Alchemy</a></td>
+<td>Normal</td>
+<td>Upgrades a Normal to a <span class="rareitem">Rare</span>, adding 4 affixes</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/aaecf19e739aef5944d331ffd5290ebf3568889908d6de3d46b13d7db5f6b98e" href="Orb_of_Chance"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToUnique.webp" alt="CurrencyUpgradeToUnique" height="16" />Orb of Chance</a></td>
+<td>Normal</td>
+<td>Upgrades a Normal to a <span class="uniqueitem">Unique</span>, or destroys it</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/ed474ef7e99430852e7519a0df6db70fc6724f48e5c41c88a64481f798046c8a" href="Regal_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp" alt="CurrencyUpgradeMagicToRare" height="16" />Regal Orb</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/fd696757129be082e30d3ae794c407461540e9e1ffc8f9c11aa20020b253282d" href="Greater_Regal_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp" alt="CurrencyUpgradeMagicToRare" height="16" />Greater Regal Orb</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/f2171b31b17850021484a7dfc2bc3b18c5920d8348fc5488692019cc1aebe37d" href="Perfect_Regal_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp" alt="CurrencyUpgradeMagicToRare" height="16" />Perfect Regal Orb</a></td>
+<td><span class="magicitem">Magic</span></td>
+<td><span class="magicitem"> Upgrade Magic to Rare, adding 1 affix.</td>
+</tr>
+<tr>
+<td>Lesser <a class="KeywordPopups" data-keyword="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence" href="Essence">Essence</a>, <a class="KeywordPopups" data-keyword="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence" href="Essence">Essence</a>, Greater <a class="KeywordPopups" data-keyword="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence" href="Essence">Essence</a></td>
+<td><span class="magicitem">Magic</span></td>
+<td>Upgrade <span class="magicitem">Magic</span>  to <span class="rareitem">Rare</span>, adding 1 specific affix.</td>
+</tr>
+</tbody></table>
+<p>Omens:</p>
+<ul>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/041376b8ea87f3293430e4f01b89704485e2ce53b5f716d6a0a949eb96b4a16a" href="Omen_of_Sinistral_Alchemy">Omen of Sinistral Alchemy</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/36fd34c4a2bc6242fba8e473556779b877c6a76d7e7417c9c101cbe8dff9fcaa" href="Orb_of_Alchemy"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToRare.webp" alt="CurrencyUpgradeToRare" height="16" />Orb of Alchemy</a> inflicts the maximum number of prefixes.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/df68eef89f6a6cb98b8a2bf7e1b311ce1027cbc00cc227eb0eadbb9067a7b12a" href="Omen_of_Dextral_Alchemy">Omen of Dextral Alchemy</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/36fd34c4a2bc6242fba8e473556779b877c6a76d7e7417c9c101cbe8dff9fcaa" href="Orb_of_Alchemy"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToRare.webp" alt="CurrencyUpgradeToRare" height="16" />Orb of Alchemy</a> inflicts the maximum number of suffixes.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/b8556f0b41ecc1873b45bf84feaf76a846a255a02ce7f5efc5b12ab06d2cc1f3" href="Omen_of_Sinistral_Coronation">Omen of Sinistral Coronation</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/ed474ef7e99430852e7519a0df6db70fc6724f48e5c41c88a64481f798046c8a" href="Regal_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp" alt="CurrencyUpgradeMagicToRare" height="16" />Regal Orb</a> will only have a prefix added.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/02f304b6ff3b0878aa2d31157a87e2ecfdb0dd8e5a90b0aea751b7a711e3e087" href="Omen_of_Dextral_Coronation">Omen of Dextral Coronation</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/ed474ef7e99430852e7519a0df6db70fc6724f48e5c41c88a64481f798046c8a" href="Regal_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp" alt="CurrencyUpgradeMagicToRare" height="16" />Regal Orb</a> will only have a prefix added.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/f2eb64502caf1e4816bb88125214f02e75d03d42bbc467c4a00ed08a866b40ed" href="Omen_of_Homogenising_Coronation">Omen of Homogenising Coronation</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/ed474ef7e99430852e7519a0df6db70fc6724f48e5c41c88a64481f798046c8a" href="Regal_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeMagicToRare.webp" alt="CurrencyUpgradeMagicToRare" height="16" />Regal Orb</a> adds an affix of the same type as the one currently on the item.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/238b1e892cfabf27cc7ba3eeb9530d3eda834403250ef3680e039454f0ddc439" href="Omen_of_the_Ancients">Omen of the Ancients</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/aaecf19e739aef5944d331ffd5290ebf3568889908d6de3d46b13d7db5f6b98e" href="Orb_of_Chance"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToUnique.webp" alt="CurrencyUpgradeToUnique" height="16" />Orb of Chance</a> upgrades the item to a random <span class="uniqueitem">Unique</span> item of the same type.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/5e1e0b9b3f8d420fc866085f499fdea9e9e10249cac58cf2bf91fab0980bb9e9" href="Omen_of_Chance">Omen of Chance</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/aaecf19e739aef5944d331ffd5290ebf3568889908d6de3d46b13d7db5f6b98e" href="Orb_of_Chance"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyUpgradeToUnique.webp" alt="CurrencyUpgradeToUnique" height="16" />Orb of Chance</a> does not destroy the item.</li>
+</ul>
+<h5 id="augmenting-and-removing-modifiers">Augmenting and removing modifiers</h5>
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+<th>Currency</th>
+<th>Restrictions</th>
+<th>Effects</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/30e59d2585156a228fb222886ca5431a2267510ac9f262f2b44d3aa2f87cfe76" href="Orb_of_Augmentation"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToMagic.webp" alt="CurrencyAddModToMagic" height="16" />Orb of Augmentation</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/d2054d67ef16461bd280012d7796fedeca50ca19c38f5e30674e7cd4af7246f8" href="Greater_Orb_of_Augmentation"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToMagic.webp" alt="CurrencyAddModToMagic" height="16" />Greater Orb of Augmentation</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/009efb60270adfa8e0b66bf0229c2825ea2d06bf6d2f1498ecfdec5536be0208" href="Perfect_Orb_of_Augmentation"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToMagic.webp" alt="CurrencyAddModToMagic" height="16" />Perfect Orb of Augmentation</a></td>
+<td><span class="magicitem">Magic</span></td>
+<td><span class="magicitem">Magic</span> Adds 1 affix to magic item.</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/5e8700fba8106c2ccaa785d15ad533aa7beb6d3b7a7c054f5b44bdaf6a8859a8" href="Exalted_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp" alt="CurrencyAddModToRare" height="16" />Exalted Orb</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/1a4db2cdbbd9459ad6745cb3b024529a4de9df7d0e518d5fa1a5be95d4ff4438" href="Greater_Exalted_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp" alt="CurrencyAddModToRare" height="16" />Greater Exalted Orb</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/0e025f9a518c22494552e9116159ef779136e6046855ba1337dece87825d3535" href="Perfect_Exalted_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp" alt="CurrencyAddModToRare" height="16" />Perfect Exalted Orb</a></td>
+<td><span class="rareitem">Rare</span></td>
+<td>Adds 1 affix to rare item.</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/434598c4fdfe710dc2b889cbe823a46875f6b33d64ee52a5ea780bed63570dc6" href="Orb_of_Annulment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/AnnullOrb.webp" alt="AnnullOrb" height="16" />Orb of Annulment</a></td>
+<td><span class="magicitem">Magic</span>  or <span class="rareitem">Rare</span></td>
+<td>Removes 1 affix from <span class="magicitem">Magic</span> or <span class="rareitem">Rare</span> item, without affecting rarity.</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/a69a4ace49d254f7a0b1d3eb61005c4ff1bb60598baa11e4299453090beae80e" href="Chaos_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp" alt="CurrencyRerollRare" height="16" />Chaos Orb</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/80cb3ee5e3b32c3fcac84696577861306c06491378c5305af5e3b4a3a73d1df9" href="Greater_Chaos_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp" alt="CurrencyRerollRare" height="16" />Greater Chaos Orb</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/8029d54d62c601cf9e7db01e9aa2ea6f142d049a25aa2476e0848cafbb839a05" href="Perfect_Chaos_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp" alt="CurrencyRerollRare" height="16" />Perfect Chaos Orb</a></td>
+<td><span class="rareitem">Rare</span></td>
+<td><span class="rareitem">Rare</span> item remove 1 affix and add 1 affix.</td>
+</tr>
+<tr>
+<td>Perfect <a class="KeywordPopups" data-keyword="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence" href="Essence">Essence</a></td>
+<td><span class="rareitem">Rare</span></td>
+<td>Removes a random modifier and augments a <span class="rareitem">Rare</span> item with a new guaranteed modifier</td>
+</tr>
+</tbody></table>
+<p>Omens:</p>
+<ul>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/233e9fc9a06c635b6782c9aed004efddefe938403bb165fb1f0782f368cd336a" href="Omen_of_Greater_Exaltation">Omen of Greater Exaltation</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/5e8700fba8106c2ccaa785d15ad533aa7beb6d3b7a7c054f5b44bdaf6a8859a8" href="Exalted_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp" alt="CurrencyAddModToRare" height="16" />Exalted Orb</a> adds 2 affixes.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/dc2cb88d37bf1d322080287e793b365a1351aec952e6620a75bef423fe8206de" href="Omen_of_Sinistral_Exaltation">Omen of Sinistral Exaltation</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/5e8700fba8106c2ccaa785d15ad533aa7beb6d3b7a7c054f5b44bdaf6a8859a8" href="Exalted_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp" alt="CurrencyAddModToRare" height="16" />Exalted Orb</a> adds 1 prefix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/700dc7e5364ad83ed11c7bb5b757439c7117a37fa75eb58af5eff7deba3e13e5" href="Omen_of_Dextral_Exaltation">Omen of Dextral Exaltation</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/5e8700fba8106c2ccaa785d15ad533aa7beb6d3b7a7c054f5b44bdaf6a8859a8" href="Exalted_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp" alt="CurrencyAddModToRare" height="16" />Exalted Orb</a> adds 1 suffix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/a2375f7f5571eb31aa6f548689cdb2f6e2a1d7530f0cfe222388b03f0275f9d8" href="Omen_of_Homogenising_Exaltation">Omen of Homogenising Exaltation</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/5e8700fba8106c2ccaa785d15ad533aa7beb6d3b7a7c054f5b44bdaf6a8859a8" href="Exalted_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyAddModToRare.webp" alt="CurrencyAddModToRare" height="16" />Exalted Orb</a> adds an affix of the same type as the one currently on this item.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/032984ef490c578882e6acd6d0f957fcbc05419bd94ed60fc14e4183267a7b5d" href="Omen_of_Greater_Annulment">Omen of Greater Annulment</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/434598c4fdfe710dc2b889cbe823a46875f6b33d64ee52a5ea780bed63570dc6" href="Orb_of_Annulment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/AnnullOrb.webp" alt="AnnullOrb" height="16" />Orb of Annulment</a> removes 2 affixes.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/6de84671f61599a5251a98eb34e189e5e024fb5860119cc5c29838f539502582" href="Omen_of_Sinistral_Annulment">Omen of Sinistral Annulment</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/434598c4fdfe710dc2b889cbe823a46875f6b33d64ee52a5ea780bed63570dc6" href="Orb_of_Annulment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/AnnullOrb.webp" alt="AnnullOrb" height="16" />Orb of Annulment</a> removes 1 prefix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/2877f2dd4fc934cf1212f95c3e17e95880dad37eb8233d8f77e56f7fd73015a0" href="Omen_of_Dextral_Annulment">Omen of Dextral Annulment</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/434598c4fdfe710dc2b889cbe823a46875f6b33d64ee52a5ea780bed63570dc6" href="Orb_of_Annulment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/AnnullOrb.webp" alt="AnnullOrb" height="16" />Orb of Annulment</a> removes 1 suffix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/02cff026ef17b336779156c4ea61d0d1c0acb8f6bbda0b49783a8a01c2e416db" href="Omen_of_Sinistral_Erasure">Omen of Sinistral Erasure</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/a69a4ace49d254f7a0b1d3eb61005c4ff1bb60598baa11e4299453090beae80e" href="Chaos_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp" alt="CurrencyRerollRare" height="16" />Chaos Orb</a> removes 1 prefix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/ba36c84dc20bdfc143a3eca53e64bd966e9f946c281d19eb79bd466565e3cbc8" href="Omen_of_Dextral_Erasure">Omen of Dextral Erasure</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/a69a4ace49d254f7a0b1d3eb61005c4ff1bb60598baa11e4299453090beae80e" href="Chaos_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp" alt="CurrencyRerollRare" height="16" />Chaos Orb</a> removes 1 suffix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/4bdc32bcb54e48d2d2c52de9b9a5067dfea92533689bfcb4e2621c393af33f02" href="Omen_of_Whittling">Omen of Whittling</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/a69a4ace49d254f7a0b1d3eb61005c4ff1bb60598baa11e4299453090beae80e" href="Chaos_Orb"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyRerollRare.webp" alt="CurrencyRerollRare" height="16" />Chaos Orb</a> removes the lowest level affix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/cce297de832a0035440552e3891d67e17688e7de497d4151147974161a868a97" href="Omen_of_Sinistral_Crystallisation">Omen of Sinistral Crystallisation</a>: Your next Perfect or Corrupted Essence removes the prefix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/b3eeb3cae4da30ba2b743603ecd7f13fc84d81cb0dc8ccf495a587f6b0967d39" href="Omen_of_Dextral_Crystallisation">Omen of Dextral Crystallisation</a>: Your next Perfect or Corrupted Essence removes the suffix.</li>
+</ul>
+<h5 id="desecration">Desecration</h5>
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+<th>Currency</th>
+<th>Restriction</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/668b2bd79ac389041e11955e757a8531fdec8d2102e42d1cde7f6211407cdef2" href="Ancient_Collarbone"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/AncientClavicle.webp" alt="AncientClavicle" height="16" />Ancient Collarbone</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/3a87b0b6de3ae1d6daf88fdecafd34a5a4b21190932310c7bbd079403b144239" href="Preserved_Collarbone"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedCalvicle.webp" alt="PreservedCalvicle" height="16" />Preserved Collarbone</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/02c12a4928ffcc419a7d76ef6a3b86e43898b02e2622008a0473dcd90e40ea8c" href="Gnawed_Collarbone"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/GnawedClavicle.webp" alt="GnawedClavicle" height="16" />Gnawed Collarbone</a></td>
+<td><span class="rareitem">Rare</span> Necklace, Ring, or Belt</td>
+<td>Desecration</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/0378de5b61065059c4733d868f0048324d01a0558f618e3b94e3f6d3b6a1a6d3" href="Ancient_Jawbone"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/AncientJawbone.webp" alt="AncientJawbone" height="16" />Ancient Jawbone</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/65a9a91fad512683573dbaff22389b23d8fbcee97794414cc83f87db4c199af3" href="Preserved_Jawbone"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedJawbone.webp" alt="PreservedJawbone" height="16" />Preserved Jawbone</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/326b209ba871b7f7776d0ad57d44b4e9d6aaedba75ef7a6224da6d72c56e44ed" href="Gnawed_Jawbone"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/GnawedJawbone.webp" alt="GnawedJawbone" height="16" />Gnawed Jawbone</a></td>
+<td><span class="rareitem">Rare</span> Weapon or Quiver</td>
+<td>Desecration</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/74a65b1a99a8ccf2af8e523cffd5904f3653c6a86fba989a658de3a0fd3998a1" href="Ancient_Rib"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/AncientRibs.webp" alt="AncientRibs" height="16" />Ancient Rib</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/1e83f47615878adc9e49bd41ba469d5a634dc7c0f875c5b0f6651f550b5999c9" href="Preserved_Rib"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedRibs.webp" alt="PreservedRibs" height="16" />Preserved Rib</a>, <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/24d1c03764051f29198ed3aecd8f62eced530124e6db37e2001adefeb4391f8b" href="Gnawed_Rib"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/GnawedRibs.webp" alt="GnawedRibs" height="16" />Gnawed Rib</a></td>
+<td><span class="rareitem">Rare</span> Armor</td>
+<td>Desecration</td>
+</tr>
+<tr>
+<td><a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/e3d008c54dcc679e22e4da1d7ac543b27b13d32f59a5e414534202f8f1e83d43" href="Preserved_Cranium"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Abyss/PreservedCranium.webp" alt="PreservedCranium" height="16" />Preserved Cranium</a></td>
+<td><span class="rareitem">Rare</span> Jewel</td>
+<td>Desecration</td>
+</tr>
+</tbody></table>
+<p>Omens:</p>
+<ul>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/90ae69137ab8d843abc67b04fb2d8774474cc24b758763f62aef10e098bbbe67" href="Omen_of_Abyssal_Echoes">Omen of Abyssal Echoes</a>: The next Desecration roll grants a single reroll.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/e1745d65cfc748c71dff5e521f52ad30b2ab7c966e97a1d0952034bb88a5c61f" href="Omen_of_Dextral_Necromancy">Omen of Dextral Necromancy</a>: The next Desecration roll grants only a suffix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/91e984d4b3b05c3b3aa65604f43108e2bc5051851cf31f6761d596686a43f6e8" href="Omen_of_Sinistral_Necromancy">Omen of Sinistral Necromancy</a>: The next Desecration roll grants only a prefix.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/48a999a8ca0e9101545dbd6ce995ea405dcc6cfaf9a506fb0ac71fcb11e6b8cb" href="Omen_of_Putrefaction">Omen of Putrefaction</a>: The next Desecration roll will replace all affixes on the item, creating an item with up to 6 Desecrated affixes and corrupting the item.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/d7c266a990d3e2bd36f644c315a90617b459a60bacc579b884f0482b1faf793f" href="Omen_of_the_Blackblooded">Omen of the Blackblooded</a>: The next Desecration roll will grant a random Kurgal affix to weapons and jewellery.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/84831b9c1b8cd67e2e0551cc2ec655841c3bfab7b48865800acdd17b7ff0bc90" href="Omen_of_the_Liege">Omen of the Liege</a>: The next Desecration roll will grant a random Amanamu affix to weapons and jewellery.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/7764824fb7801e3dc6c67f5ae23341b9c8b69848a508fc521a041dc14765b4cc" href="Omen_of_the_Sovereign">Omen of the Sovereign</a>: The next Desecrate will grant a random Ulaman affix to weapons and jewellery.</li>
+<li><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/b236006efda196b5aee662f998770bd12c335d7526272ee921e7bbd0ea59a54d" href="Omen_of_Light">Omen of Light</a>: The next <a class="item_currency StackableCurrency" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/434598c4fdfe710dc2b889cbe823a46875f6b33d64ee52a5ea780bed63570dc6" href="Orb_of_Annulment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/AnnullOrb.webp" alt="AnnullOrb" height="16" />Orb of Annulment</a> will only remove Desecrate affixes.</li>
+</ul>
+</div>
+        <div><hr style='border-top: 1px solid white'>Wikis Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a> unless otherwise noted.</div>
+    </div>
+</div>
+<script>
+$(function() {
+    lightbox_panel();
+});
+</script>
+
+
+<footer class="ccontainer text-center text-lg-left">
+  <div class="card p-4">
+    <div class="row">
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sites</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a target="_blank" href="https://poedb.tw/">poedb.tw</a> </li>
+          <li> <a target="_blank" href="https://tlidb.com/">tlidb.com</a> </li>
+          <!--<li> <a target="_blank" href="https://diablo4.cc/">diablo4.cc</a> </li>-->
+          <li> <a target="_blank" href="https://poe2db.tw/">poe2db.tw</a> </li>
+              <li> <a target="_blank" href="https://paldb.cc/">paldb.cc</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">News</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="news">GGG Tracker</a> </li>
+          <li> <a href="League#ConcurrentPlayers">Concurrent Players</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Site</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="privacy">Privacy</a> </li>
+          <li> <a href="patreon">Patreon</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Community</h5>
+        <ul class="list-unstyled mb-0">
+
+
+
+          <li><a target="_blank" href="https://www.reddit.com/user/chuanhsing">/u/chuanhsing</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright &copy; 2014-2026 PoE2DB.
+  </div>
+</footer>
+
+<div style=""></div>
+<div class="clearfix"></div><div id="bottom_banner"></div><script>topbanner970("bottom_banner");</script>
+    </div>
+    </div>
+
+    <a href="#top" id="toTop"><span class="fas fa-arrow-circle-up fa-3x"></span></a>
+<script>
+ $(document).ready(function()
+ {
+    if (window.location.hostname != "poedb.tw" && window.location.hostname != "poe2db.tw") {
+        window.location.href="https://poedb.tw/";
+    }
+ });
+</script>
+    <script src="https://cdn.poe2db.tw/js/poedb_footer.43e536bf51dca9e4.js"></script>
+
+  </body>
+</html>

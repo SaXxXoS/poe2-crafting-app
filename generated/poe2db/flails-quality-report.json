@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:50:50.517Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Flail.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Flail DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 13,
+    "regularUsableBases": 13,
+    "excludedBases": 0,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [],
+    "missingGermanImplicits": [],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Flail modifier matches the shared 'flail' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail1",
+      "nameEn": "Splintered Flail",
+      "nameDe": "Splitterflegel",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail1",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail2",
+      "nameEn": "Chain Flail",
+      "nameDe": "Kettenflegel",
+      "dropLevel": 6,
+      "requirements": {
+        "level": 6,
+        "strength": 12,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail2",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail3",
+      "nameEn": "Holy Flail",
+      "nameDe": "Heiliger Flegel",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 18,
+        "dexterity": 0,
+        "intelligence": 9
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail3",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail4",
+      "nameEn": "Iron Flail",
+      "nameDe": "Eisenflegel",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 25,
+        "dexterity": 0,
+        "intelligence": 12
+      },
+      "tags": [
+        "maraketh_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail4",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail5",
+      "nameEn": "Twin Flail",
+      "nameDe": "Zwillingsflegel",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 30,
+        "dexterity": 0,
+        "intelligence": 14
+      },
+      "tags": [
+        "maraketh_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail5",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail6",
+      "nameEn": "Slender Flail",
+      "nameDe": "Schlanker Flegel",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 38,
+        "dexterity": 0,
+        "intelligence": 17
+      },
+      "tags": [
+        "maraketh_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail6",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail7",
+      "nameEn": "Stone Flail",
+      "nameDe": "Steinflegel",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 47,
+        "dexterity": 0,
+        "intelligence": 20
+      },
+      "tags": [
+        "vaal_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail7",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail8",
+      "nameEn": "Ring Flail",
+      "nameDe": "Ringflegel",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 54,
+        "dexterity": 0,
+        "intelligence": 23
+      },
+      "tags": [
+        "vaal_basetype",
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail8",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail9",
+      "nameEn": "Guarded Flail",
+      "nameDe": "Geschützter Flegel",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 63,
+        "dexterity": 0,
+        "intelligence": 26
+      },
+      "tags": [
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail9",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail10",
+      "nameEn": "Icicle Flail",
+      "nameDe": "Vereister Flegel",
+      "dropLevel": 47,
+      "requirements": {
+        "level": 47,
+        "strength": 66,
+        "dexterity": 0,
+        "intelligence": 27
+      },
+      "tags": [
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail10",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail11",
+      "nameEn": "Tearing Flail",
+      "nameDe": "Zerreißender Flegel",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 72,
+        "dexterity": 0,
+        "intelligence": 29
+      },
+      "tags": [
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail11",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail12",
+      "nameEn": "Great Flail",
+      "nameDe": "Großer Flegel",
+      "dropLevel": 58,
+      "requirements": {
+        "level": 58,
+        "strength": 80,
+        "dexterity": 0,
+        "intelligence": 32
+      },
+      "tags": [
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail12",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail13",
+      "nameEn": "Abyssal Flail",
+      "nameDe": "Abgründiger Flegel",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 89,
+        "dexterity": 0,
+        "intelligence": 36
+      },
+      "tags": [
+        "flail",
+        "one_hand_weapon",
+        "onehand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail13",
+        "inheritsFrom": "Metadata/Items/Weapons/OneHandWeapons/Flail/AbstractFlail",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

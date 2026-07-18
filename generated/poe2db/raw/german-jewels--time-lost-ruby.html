@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Zeitverlorener Rubin - PoE2DB, Path of Exile Wiki de</title>
+    <meta name="description" content="path of exile is simply a tool to test your path of building creation">
+    <link rel="alternate" hreflang="en" href="https://poe2db.tw/us/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://poe2db.tw/tw/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://poe2db.tw/cn/" />
+        <link href="/favicon2.png" rel="shortcut icon" >
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css" integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-5-theme/1.3.0/select2-bootstrap-5-theme.min.css" integrity="sha512-z/90a5SWiu4MWVelb5+ny7sAayYUfMmdXKEAbpj27PfdkamNdyI3hcjxPxkOPbrXoKIm7r9V2mElt5f1OtVhqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css" integrity="sha512-HbPh+j4V7pXprvQMt2dtmK/zCEsUeZWYXRln4sOwmoyHPQAPqy/k9lIquKUyKNpNbDGAY06UdiDHcEkBc72yCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.min.css" integrity="sha512-OkYLbkJ4DB7ewvcpNLF9DSFmhdmxFXQ1Cs+XyjMsMMC94LynFJaA9cPXOokugkmZo6O6lwZg+V5dwQMH4S5/3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" integrity="sha256-nd8IBqNn9uqwZKfZcLIXQcNxk5TjqrxiLx7PzN5PFW0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video-js.min.css" integrity="sha512-J3tx4ssoARFr4U9VmZmQe2q672q0jUeYizJW3vglkOBTlQ/N6kF3eVqZZzaey/TdIXH69s3HYe2nQwyxK/Emzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdn.poe2db.tw/css/stdtheme.80f86f8d795885a7.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha256-Ikk5myJowmDQaYVCUD0Wr+vIDkN8hGI58SGWdE671A8=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js" integrity="sha512-gbruucq/Opx9jlHfqqZeAg2LNK3Y4BbpXHKDhRC88/tARL/izPOE4Zt2w6X9Sn1UeWaGbL38zW7nkL2jdn5JIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.1/marked.min.js" integrity="sha512-VUuO/d6MS7hXmiFGEj7HtUa2FCI6Ll+xPvX9yX3bxn7ZqDWwleqXa8dtW13brbZ1ld2jiTrv8hWbpfp4B5mi4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.all.js" integrity="sha512-A7LzqKE/pm9ofgS0Lxu7qroQS5SkKJQaYJkJ/66nQiWZfEdeGlBq5zEXQ63VRmXZK8zPpCgFf2WQJIAljI0Vdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/js/modal-video.min.js" integrity="sha256-VqINwNxkS4VEDMq5O52YTckX+Mx84X6bafO8NxF21Xw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" integrity="sha256-DiHJ7hbvMejsMyP76bpVWacb5HSHQ2sQlrJV8n7KEvA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js" integrity="sha512-4/g9GAdOdTpUP2mKClpKsEzaK7FQNgMjq+No0rX8XZlfrCGtbi4r+T/p5fnacsEC3zIAmHKLJUL7sh3/yVA4OQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/theme/dark.min.js" integrity="sha512-3Zm64ayK7DflnnyO2pKkLJX3v9Sb90mvahbwPUuMzEf42HI6k8tquIx5VsNBjEWAcYJWzvimbqnTkLl2QdCUmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video.min.js" integrity="sha512-48NkCweTzA9u2sP4GgKcEDm6IScPIMga142ipKFNcHfz7feUJXDJxO1jwc2l+5MvWfwMj4BDfQv8WIMhrPxZLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.2.1/mustache.min.js" integrity="sha512-Qjrukx28QnvFWISw9y4wCB0kTB/ISnWXPz5/RME5o8OlZqllWygc1AB64dOBlngeTeStmYmNTNcM6kfEjUdnnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://cdn.poe2db.tw/js/ModsView.f39fca410dd746d3.js"></script>
+        <script src="https://cdn.poe2db.tw/js/poedb_header.c33c3bc986782ab1.js"></script>
+    
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2013.js"></script>
+
+    <meta property="og:site_name" content="poe2db.tw">
+<meta property="og:title" content="Zeitverlorener Rubin" />
+<meta property="og:image" content="https://cdn.poe2db.tw/image/Art/2DItems/Jewels/SpecialRubyJewel.webp" />
+
+  </head>
+
+  <body>
+
+    <div id="consent-box" style="display:none">
+      <button onclick="window.__cmp('showModal');">
+        Update cookie preferences
+      </button>
+    </div>
+    
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("consent-box").style.display = window["__tcfapi"]
+          ? ""
+          : "none";
+      } else {
+        document.addEventListener(
+          "nitroAds.loaded",
+          () =>
+            (document.getElementById("consent-box").style.display = window["__tcfapi"]
+              ? ""
+              : "none")
+        );
+      }
+    </script>
+
+
+    <div class="background-image item-popup--poe2"></div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6598Z863E2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6598Z863E2');
+</script>
+
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="/de/">PoE2<span class='brand-suffix'>DB</span><sub></sub></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"  aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Gegenstand</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/de/Items" data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Gegenstand</a></li>
+                    <li><a class="dropdown-item" href="/de/Unique_item" data-i18n="ClientStrings|ItemDisplayStringUnique|Name"></a></li>
+                    <li><a class="dropdown-item" href="/de/Reforging_Bench" data-i18n="ClientStrings|RecipeBenchTitle|Name"></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/de/Gem" data-i18n="ClientStrings|ItemDisplayStringGem|Name">Gemme</a></li>
+                    <li><a class="dropdown-item" href="/de/Skill_Gems" data-i18n="ItemClasses|Active Skill Gem|Name">Fertigkeitengemmen</a></li>
+                    <li><a class="dropdown-item" href="/de/Support_Gems" data-i18n="ItemClasses|Support Skill Gem|Name">Unterstützungsgemmen</a></li>
+                    <li><a class="dropdown-item" href="/de/Spirit_Gems" data-i18n-tw="精神寶石">Spirit Gems</a></li>
+                    <li><a class="dropdown-item" href="/de/Lineage_Supports" data-i18n="KeywordPopups|LineageSupports|Name">Lineage Supports</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifikatoren</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/de/Modifiers" data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifikatoren</a></li>
+                    <li><a class="dropdown-item" href="/de/Desecrated_Modifiers" data-i18n="KeywordPopups|Abyssalify|Name">Entweihte Modifikatoren</a></li>
+                    <li><a class="dropdown-item" href="/de/Keywords" data-i18n-tw="提示字">Keywords</a></li>
+                    <li><a class="dropdown-item" href="/de/Crafting" data-i18n="ClientStrings|CraftingWindowTitle|Name">Anfertigen</a></li>
+                    <li><a class="dropdown-item" href="/de/Liquid_Emotions" data-i18n="KeywordPopups|DistilledEmotion|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/de/Quest" data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</a></li>
+                    <li><a class="dropdown-item" href="/de/Ascendancy_class" data-i18n="ClientStrings|TutorialPanelAscendancies|Name">Aszendenzklassen</a></li>
+                    <li><a class="dropdown-item" href="/de/passive-skill-tree/" data-i18n="ClientStrings|ActionOpenPassivePanel|Name">Fertigkeitenbaum</a></li>
+                    <li><a class="dropdown-item" href="/de/Act" data-i18n-tw="章節">Act</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/de/Waystones" data-i18n="ItemClasses|Map|Name">Wegsteine</a></li>
+                    <li><a class="dropdown-item" href="/de/EndGame" data-i18n="Acts|Endgame|Name"></a></li>
+                    <li><a class="dropdown-item" href="/de/atlas-skill-tree/" data-i18n="ClientStrings|ActionOpenAtlasPassivesScreen|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item"><a class="nav-link" href="Economy" data-i18n-tw="經濟" data-i18n-cn="经济">Economy</a></li>
+    
+                <li class="nav-item"><a class="ms-4 nav-link  bg-warning rounded-circle" style="color: white" href="/de/patreon">Patreon</a></li>
+              </ul>
+    
+    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="https://poedb.tw/de/">PoE<span class="brand-suffix">DB</span></a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-language fa-lg"></i> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/tw/Time-Lost_Ruby">TW 繁體中文</a></li>
+                    <li><a class="dropdown-item" href="/cn/Time-Lost_Ruby">CN 简体中文</a></li>
+                    <li><a class="dropdown-item" href="/us/Time-Lost_Ruby">US English</a></li>
+                    <li><a class="dropdown-item" href="/kr/Time-Lost_Ruby">KR 한국어</a></li>
+                    <li><a class="dropdown-item" href="/jp/Time-Lost_Ruby">JP Japanese</a></li>
+                    <li><a class="dropdown-item" href="/ru/Time-Lost_Ruby">RU Русский</a></li>
+                    <li><a class="dropdown-item" href="/pt/Time-Lost_Ruby">PO Português</a></li>
+                    <li><a class="dropdown-item" href="/th/Time-Lost_Ruby">TH ภาษาไทย</a></li>
+                    <li><a class="dropdown-item" href="/fr/Time-Lost_Ruby">FR Français</a></li>
+                    <li><a class="dropdown-item" href="/de/Time-Lost_Ruby">DE Deutsch</a></li>
+                    <li><a class="dropdown-item" href="/sp/Time-Lost_Ruby">ES Spanish</a></li>
+                  </ul>
+                </li>
+              </ul>
+    
+            <form class="form-inline my-2 my-lg-0" role="search" action="search">
+              <input type="hidden" name="token" value="22ef1c25df4acaed716f722cbd08cf8e5b9ef0e40f4968ae5958b37ecbbfadcc8f5c54">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" id="navautosearch">
+            </form>
+    
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+    </header>
+
+<script>sidebar160("leftside_banner", "left");</script>
+<script>sidebar160("rightside_banner", "right");</script>
+
+
+
+    <div class="page poe2">
+    <div class="page-content theme-showcase container" role="main">
+
+
+<div class="card mb-2" id="head_toolbar" style="background: transparent">
+  <div class="card-body p-1">
+    <div class="league_bar text-center">
+      <a href="Atziris_Temple" data-bs-toggle="tooltip" title="Atziri v0.4" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/IncursionAtziriActive.webp" alt="IncursionAtziriActive" class="league_minimap" /></span></a><a href="Waystones" data-bs-toggle="tooltip" title="Wegsteine" data-hover="?s=Data%5CKeywordPopups%2FWaystone"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2ditems/maps/endgamemaps/endgamemap1.webp" class="league_minimap"/></a><a href="Shrine" data-bs-toggle="tooltip" title="Schrein" data-hover="?s=Data%5CKeywordPopups%2FShrine"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Shrine.webp" alt="Shrine" class="league_minimap" /></span></a><a href="Strongbox" data-bs-toggle="tooltip" title="Tresor" data-hover="?s=Data%5CKeywordPopups%2FStrongbox"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Strongbox.webp" alt="Strongbox" class="league_minimap" /></span></a><a href="Essence" data-bs-toggle="tooltip" title="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp" alt="Essence" class="league_minimap" /></span></a><a href="Archnemesis" data-bs-toggle="tooltip" title="Archnemesis" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RareMonsterAlive.webp" alt="RareMonsterAlive" class="league_minimap" /></span></a><a href="Azmeri_Spirit" data-bs-toggle="tooltip" title="Azmeri-Geist v0.2" data-hover="?s=Data%5CKeywordPopups%2FAzmeriSpirit"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/SpiritActivated.webp" alt="SpiritActivated" class="league_minimap" /></span></a><a href="Rogue_Exile" data-bs-toggle="tooltip" title="Abtr&uuml;nniger Verbannter" data-hover="?s=Data%5CKeywordPopups%2FRogueExile"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RogueExile.webp" alt="RogueExile" class="league_minimap" /></span></a><a href="Map_Boss" data-bs-toggle="tooltip" title="Kartenboss" data-hover="?s=Data%5CKeywordPopups%2FMapBoss"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentMapBoss.webp" class="league_minimap"/></a><a href="Precursor_Towers" data-bs-toggle="tooltip" title="T&uuml;rme der Wegbereiter" data-hover="?s=Data%5CKeywordPopups%2FPrecursorTower"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/MapLegend/LostTower.webp" class="league_minimap"/></a><a href="Corrupted_Nexus" data-bs-toggle="tooltip" title="Verderbter Nexus" data-hover="?s=Data%5CKeywordPopups%2FCorruptedNexus"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentCorruptionNexusNoGrowth.webp" class="league_minimap"/></a><a href="Abyss" data-bs-toggle="tooltip" title="Abgrund v0.3" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/textures/interface/2d/2dart/uiimages/ingame/worldmap/mapbuttonabysshub.webp" class="league_minimap"/></a><a href="Breach" data-bs-toggle="tooltip" title="Riss" data-hover="?s=Data%5CKeywordPopups%2FContainsBreach"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentbreach.webp" class="league_minimap"/></a><a href="Ritual" data-bs-toggle="tooltip" title="Ritual" data-hover="?s=Data%5CKeywordPopups%2FContainsRitual"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentritual.webp" class="league_minimap"/></a><a href="Delirium" data-bs-toggle="tooltip" title="Delirium" data-hover="?s=Data%5CKeywordPopups%2FContainsDelirium"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentdelirium.webp" class="league_minimap"/></a><a href="Expedition" data-bs-toggle="tooltip" title="Expedition" data-hover="?s=Data%5CKeywordPopups%2FContainsExpedition"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentexpedition.webp" class="league_minimap"/></a><a href="The_Burning_Monolith" data-bs-toggle="tooltip" title="Der Brennende Monolith" data-hover="?s=Data%5CKeywordPopups%2FTheBurningMonoilth"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/maplegend/monolith.webp" class="league_minimap"/></a><a href="Trial_of_the_Sekhemas" data-bs-toggle="tooltip" title="Pr&uuml;fung der Sekhemas" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonSanctum.webp" class="league_minimap"/></a><a href="The_Trial_of_Chaos" data-bs-toggle="tooltip" title="Die Pr&uuml;fung des Chaos" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonUltimatum.webp" class="league_minimap"/></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="topbanner970"></div><script>topbanner970("topbanner970");</script>
+
+<ul class="nav nav-tabs d-flex flex-wrap" role="tablist"><li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true" href="#ModifiersCalc">Modifiers Calc</a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#VaalsphäreVerderbtVerzauberung">Vaalsphäre Verderbt Verzauberung /11</a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#ZeitverlorenerRubinJewelRadiusStr">Zeitverlorener Rubin JewelRadiusStr</a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#Forgerecipe">Forge recipe</a></li></ul><div class="tab-content"><div id="ModifiersCalc" class="tab-pane fade show active"><span data-tabname="Modifiers Calc"></span>
+
+<script type="x-tmpl-mustache" data="">
+<h4>{{{ baseitem.link_name }}}</h4>
+</script>
+
+<script id="clickable_div_modal" type="x-tmpl-mustache">
+<div class="mod-title explicitMod {{modHide}} {{pasted}} {{even_odd2}}" data-gengroup="{{GenGroup}}" data-fossil="{{data-fossil}}" data-bs-toggle="modal" data-bs-target="#collapseOne{{panel_count}}">
+    {{{title}}}
+</div>
+</script>
+
+<script id="display_div_modal" type="x-tmpl-mustache">
+<div class="modal fade" id="collapseOne{{panel_count}}" tabindex="-1" aria-modal="true" role="dialog">
+  <div class="modal-lg modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        {{{tbl}}}
+      </div>
+      <div class="modal-footer p-1">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</script>
+
+<script id="tbl_modal" type="x-tmpl-mustache">
+    <div class="d-flex justify-content-between p-1">
+        <div style="color:#ff9000">{{{CorrectGroup}}}</div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <table class='table table-hover table-striped orig mb-0 table-sm table-dark'>
+    <!--<caption class="p-1">Family: {{{CorrectGroup}}}</caption>-->
+    <tbody>
+    {{#normal}}
+    <tr>
+      <td>{{#Tier}}T{{Tier}}{{/Tier}}</td>
+      <td>{{{Name}}}</td>
+      <td>{{{Level}}}</td>
+      <td>
+        <div class="d-flex justify-content-between">
+            <div>
+                <span class="d-none badge rounded-pill bg-secondary">{{{Level}}}</span> {{{str}}} {{{mod_no}}}
+            </div>
+            <div class="float-end2">
+                <span class="badge rounded-pill bg-danger" {{#pct}}data-bs-toggle="tooltip" data-bs-title="{{pct}}"{{/pct}}>{{{DropChance}}}</span>
+                {{#origDropChance}}
+                <span class="badge rounded-pill bg-warning text-black"><s>{{origDropChance}}</s></span>
+                {{/origDropChance}}
+            </div>
+        </div>
+      </td>
+{{^ hover }} {{# Code }}
+      <td><i target="_blank" class="fas fa-info-circle" data-hover="?s=Data%5CMods%2F{{{Code}}}"></i>
+{{/ Code }} {{/ hover }}
+{{# hover }}
+      <td><i target="_blank" class="fas fa-info-circle" data-hover="{{hover}}"></i></td>
+{{/ hover }}
+{{# action }}
+      <td class="text-end"><div class="crafter_btn {{action}}" data-identify="{{identify}}" data-code="{{Code}}"></div></td>
+{{/ action }}
+    </tr>
+    {{/normal}}
+    </tbody>
+    </table>
+    <table class='table table-hover table-striped orig mb-0 table-sm table-dark'>
+    <tbody></tbody>
+    </table>
+    {{{SameGroup}}}
+</script>
+<script id="modgroup" type="x-tmpl-mustache">
+<div class="col-lg-6 {{f}}">
+</div>
+</script>
+
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <i class="fa-solid fa-triangle-exclamation"></i> 
+  <span data-i18n-tw="<a href='weightings' class='text-primary'>比重資訊</a>非遊戲檔案資料。">
+    <a href="weightings" class="text-primary">Modifier weight</a> information cannot be obtained from game files.
+  </span>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+<div class="checkboxes" id="checkboxes">
+
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingulaman_mod" id="harvest-ulaman_mod" data-harvest="ulaman_mod">Ulaman</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingamanamu_mod" id="harvest-amanamu_mod" data-harvest="amanamu_mod">Amanamu</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingkurgal_mod" id="harvest-kurgal_mod" data-harvest="kurgal_mod">Kurgal</div>
+
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingarmour" id="harvest-armour" data-harvest="armour">Rüstung</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftinggem" id="harvest-gem" data-harvest="gem">Gemme</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingcaster" id="harvest-caster" data-harvest="caster">Zauberer</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingfire" id="harvest-fire" data-harvest="fire">Feuer</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingcold" id="harvest-cold" data-harvest="cold">Kälte</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftinglightning" id="harvest-lightning" data-harvest="lightning">Blitz</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingchaos" id="harvest-chaos" data-harvest="chaos">Chaos</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingphysical" id="harvest-physical" data-harvest="physical">Physisch</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftinglife" id="harvest-life" data-harvest="life">Leben</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingelemental" id="harvest-elemental" data-harvest="elemental">Elementar</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingattack" id="harvest-attack" data-harvest="attack">Angriff</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingminion" id="harvest-minion" data-harvest="minion">Kreatur</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingaura" id="harvest-aura" data-harvest="aura">Aura</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingmana" id="harvest-mana" data-harvest="mana">Mana</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingspeed" id="harvest-speed" data-harvest="speed">Geschwindigkeit</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingcritical" id="harvest-critical" data-harvest="critical">Kritisch</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingevasion" id="harvest-evasion" data-harvest="evasion">Ausweichen</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingenergy_shield" id="harvest-energy_shield" data-harvest="energy_shield">Energieschild</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingdamage" id="harvest-damage" data-harvest="damage">Schaden</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingresistance" id="harvest-resistance" data-harvest="resistance">Widerstand</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingattribute" id="harvest-attribute" data-harvest="attribute">Attribut</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingailment" id="harvest-ailment" data-harvest="ailment">Beeinträchtigung</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingcurse" id="harvest-curse" data-harvest="curse">Fluch</div>
+    <div class="harvest-tag d-inline-block p-1 whatever mr-1 craftingcharm" id="harvest-charm" data-harvest="charm">Phiole</div>
+
+</div>
+
+<div class="row align-items-center mb-2">
+    <div class="col-auto"><input type="input" class="form-control input-sm" name="modifier-col-query" placeholder="Filter:"></div>
+    <div class="col-auto"><input type="input" class="form-control input-sm" id="min_mod_ilvl" placeholder="Min iLvL:"></div>
+    <div class="col-auto"><input type="input" class="form-control input-sm" id="max_mod_ilvl" placeholder="Max iLvL:"></div>
+    <div class="col-auto"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Import Gegenstand</button></div>
+    <div class="col-auto"><button class="btn btn-primary modHide" id="toggleModHide" data-i18n-tw="切換隱藏">Toggle Hide</button></div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4 fontinSmallCaps">
+        <div id="craftPopup" class="newItemPopup normalPopup item-popup--poe2 ">
+            <div class="itemHeader singleLine">
+                <div class="itemName typeLine">
+                    <span class="lc">Crafting Project</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="property"><span data-i18n="ClientStrings|ItemDisplayStringItemLevel|Name">Item Level</span>: <span class="colourDefault" data-val="max_mod_lv"></span></div>
+                <div class="Stats" id="crafted"></div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+            <button class="btn btn-warning" id="resetCraft" data-i18n="ClientStrings|ConsoleReset|Name">Reset</button>
+            <div>P<span data-val="prefixNums"></span> S<span data-val="suffixNums"></span></div>
+            <button class="btn btn-primary" id="manualCraft" data-i18n="ClientStrings|CraftingWindowCraftButton|Name">Craft</button>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="d-flex flex-wrap" id="crafting"></div>
+        <div class="d-flex flex-wrap" id="omenCurrencies"></div>
+        <div class="checkboxes" style="display: none;" id="fossilGroup">
+        </div>
+
+
+        <div><a data-hover="?s=Data%5CKeywordPopups%2FBetterCurrencyMinimumLevel" href="Minimum_Modifier_Level">Minimum Modifier Level</a>: <span data-val="min_mod_lv"></span></div>
+        <div><a data-hover="?s=Data%5CKeywordPopups%2FCurrencyMaximumItemLevel" href="Maximum_Modifier_Level">Maximum Modifier Level</a>: <span data-val="currency_max_mod_lv"></span></div>
+        <div data-val="noTags"></div>
+        <div data-val="AddsTags"></div>
+    </div>
+</div>
+ 
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content" style="background-color: #222;">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Import Gegenstand</h4>
+      </div>
+      <div class="modal-body">
+        <textarea id="myTextarea" class="form-control" rows="15" style="min-width: 100%" data-bs-tooltip="" placeholder="Ctrl-C on Item and Ctrl-V to here"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Schließen</button>
+        <button type="button" class="btn btn-warning" id="CleanPaste">Zurücksetzen</button>
+        <button type="button" class="btn btn-primary" id="ImportPaste">Import Gegenstand</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="canvasHeader"></div>
+<div id="canvas"></div>
+<script>
+$(function() {
+    new ModsView({"baseitem":{"ItemType":"Metadata/Items/Jewels/JewelRadiusStr","Code":"Time-Lost Ruby","ModDomainsID":"11","ItemVisualIdentityID":"11480","ItemClassesID":"41","cn":"Jewel","IconPath":"","link_name":"<a class=\"whiteitem Jewel\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FJewels%2FJewelRadiusStr\" href=\"Time-Lost_Ruby\">Zeitverlorener Rubin</a><span data-tabname=\"Zeitverlorener Rubin Modifiers\"></span>","attr":[],"tags":null},"ids":[134,33,1109,1112],"config":{"normal":{"icon":"","title":"Basis"},"shaper":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup/shaper-symbol.webp\" alt=\"shapersymbol\" width=\"32\" />","title":"The Shaper"},"elder":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup/elder-symbol.webp\" alt=\"eldersymbol\" width=\"32\" />","title":"The Elder"},"crusader":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup/crusader-symbol.webp\" alt=\"crusadersymbol\" width=\"32\" />","title":"Der Kreuzritter"},"redeemer":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup/redeemer-symbol.webp\" alt=\"redeemersymbol\" width=\"32\" />","title":"Die Erlöserin"},"hunter":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup/hunter-symbol.webp\" alt=\"huntersymbol\" width=\"32\" />","title":"Der Jäger"},"warlord":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup/warlord-symbol.webp\" alt=\"warlordsymbol\" width=\"32\" />","title":"Der Kriegsfürst"},"delve":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/DelveMineralVein.webp\" alt=\"DelveMineralVein\" width=\"32\" /></span>","title":"Delve"},"incursion":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/IncursionCraftingBench.webp\" alt=\"IncursionCraftingBench\" width=\"32\" /></span>","title":"Incursion"},"desecrated":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup2/desecrated-symbol.webp\" alt=\"desecratedsymbol\" width=\"32\" />","title":"<a class=\"KeywordPopups\" data-keyword=\"Abyssalify\" data-hover=\"?s=Data%5CKeywordPopups%2FAbyssalify\" href=\"Desecrated_Modifiers\">Entweihte Modifikatoren</a>"},"veiled":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/item/popup/veiled-symbol.webp\" alt=\"veiledsymbol\" width=\"32\" />","title":"Verhüllt"},"master":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/CraftingUnlockObject.webp\" alt=\"CraftingUnlockObject\" width=\"32\" /></span>","title":"Werkbank"},"essence":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp\" alt=\"Essence\" width=\"32\" /></span>","title":"Essence"},"perfect_essence":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp\" alt=\"Essence\" width=\"32\" /></span>","title":"Perfect Essence"},"bestiary":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/BestiaryRareMonster.webp\" alt=\"BestiaryRareMonster\" width=\"32\" /></span>","title":"Bestiary"},"warbands":{"title":"Warbands"},"sentinel":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Sentinel/ArmourRecombinator.webp\" alt=\"ArmourRecombinator\" width=\"32\" />","title":"Rekombinator"},"infamous":{"title":"Infamous","icon":""},"haunted":{"icon":"<span >NecropolisCorpse</span>","title":"Haunted Modifiers"},"socketable":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/Runes/FireRune.webp\" alt=\"FireRune\" width=\"32\" />","title":"<a class=\"ItemClasses  KeywordPopups\" href=\"Augment\" data-hover=\"?s=Data%5CKeywordPopups%2FAugment\">Augmentation</a>","class":"enchantMod"},"bonded":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/Shaman/ShamanRunesTalismans.webp\" alt=\"ShamanRunesTalismans\" width=\"32\" />","title":"<a class=\"KeywordPopups\" data-keyword=\"ShamanOnlyMods\" data-hover=\"?s=Data%5CKeywordPopups%2FShamanOnlyMods\" href=\"Bonded_Modifiers\">Verbundene Modifikatoren</a>","class":"bondedMod"},"enchant":{"title":"Verzaubern","class":"enchantMod"},"corrupted":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DItems/Currency/CurrencyVaal.webp\" alt=\"CurrencyVaal\" width=\"32\" />","title":"<a data-keyword=\"Corrupted\" href=\"Corrupted_Items\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/0d20c5a011071d8645ad7cab156530f1718a665489526b37e9defefe4d68bf9f\">Verderbt</a>","class":"enchantMod"},"graft_corrupted":{"title":"Unstable Implant"},"searing":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/CleansingFireAltar.webp\" alt=\"CleansingFireAltar\" width=\"32\" /></span>","title":"The Searing Exarch"},"eater":{"icon":"<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/TangleAltar.webp\" alt=\"TangleAltar\" width=\"32\" /></span>","title":"The Eater of Worlds"},"synthesis":{"icon":"<img loading=\"lazy\" src=\"https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/SynthesisFragmentEntrance.webp\" alt=\"SynthesisFragmentEntrance\" width=\"32\" />","title":"Synthesis","class":"enchantMod"},"synthesis_corrupted":{"title":"Synthesis <a data-keyword=\"Corrupted\" href=\"Corrupted_Items\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/0d20c5a011071d8645ad7cab156530f1718a665489526b37e9defefe4d68bf9f\">Verderbt</a>","class":"enchantMod"},"scourgeup":{"title":"Scourge Beneficial","class":"scourged"},"scourgedown":{"title":"Scourge Detrimental","class":"scourged"}},"gen":{"1":"Präfix","2":"Suffix"},"opt":{"ModDomainsID":"11","ids":[134,33,1109,1112],"ItemClassesID":"41","ItemClassesCode":"Jewel","tags":null},"normal":[{"Name":"<if:MS>{Großer}<elif:FS>{Große}<elif:NS>{Großes}<elif:MP>{Große}<elif:FP>{Große}<elif:NP>{Große}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["JewelRadiusLargerRadius"],"DropChance":1,"str":"Wertet Radius zu mittel auf<br><span class=\"secondary\">local jewel effect base radius [150]</span>","fossil_no":[],"adds_no":[],"spawn_no":["radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMediumSize"},{"Name":"<if:MS>{Großartiger}<elif:FS>{Großartige}<elif:NS>{Großartiges}<elif:MP>{Großartige}<elif:FP>{Großartige}<elif:NP>{Großartige}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["JewelRadiusLargerRadius"],"DropChance":1,"str":"Wertet Radius zu groß auf<br><span class=\"secondary\">local jewel effect base radius [300]</span>","fossil_no":[],"adds_no":[],"spawn_no":["radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusLargeSize"},{"Name":"der Wirksamkeit","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["JewelRadiusSmallNodeEffect"],"DropChance":1,"str":"<span class='mod-value'>(15<span class=\"ndash\">—</span>25)</span>% erhöhte Wirkung von <a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">kleinen Passiven</a> im Radius","fossil_no":[],"adds_no":[],"spawn_no":["radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusSmallNodeEffect"},{"Name":"der Vormachtstellung","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["JewelRadiusNotableEffect"],"DropChance":1,"str":"<span class='mod-value'>(15<span class=\"ndash\">—</span>25)</span>% erhöhte Wirkung von bedeutenden Passiven im Radius","fossil_no":[],"adds_no":[],"spawn_no":["radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusNotableEffectNew"},{"Name":"<if:MS>{Explodierender}<elif:FS>{Explodierende}<elif:NS>{Explodierendes}<elif:MP>{Explodierende}<elif:FP>{Explodierende}<elif:NP>{Explodierende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AreaOfEffect"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% vergrößerter Wirkungsbereich","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","int_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusAreaofEffect"},{"Name":"<if:MS>{Bewehrter}<elif:FS>{Bewehrte}<elif:NS>{Bewehrtes}<elif:MP>{Bewehrte}<elif:FP>{Bewehrte}<elif:NP>{Bewehrte}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["IncreasedPhysicalDamageReductionRatingPercent"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhte <a data-keyword=\"Armour\" href=\"Armour\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/ffe76102f76b187368d81975c36b0e0d82a3f7307475cc3db026fae1c7674007\">Rüstung</a>","fossil_no":["defences","armour"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingarmour\" data-tag=\"armour\">Rüstung</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusArmour"},{"Name":"<if:MS>{Zerschmetternder}<elif:FS>{Zerschmetternde}<elif:NS>{Zerschmetterndes}<elif:MP>{Zerschmetternde}<elif:FP>{Zerschmetternde}<elif:NP>{Zerschmetternde}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["ArmourBreak"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <a data-keyword=\"ArmourBreak\" href=\"Armour_Break\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c1a8f5c48e1929d7be4855209a18f58d616f961fa457623021fbd5c001fc73e8\">Zerbrecht</a> <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhte <a data-keyword=\"Armour\" href=\"Armour\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/ffe76102f76b187368d81975c36b0e0d82a3f7307475cc3db026fae1c7674007\">Rüstung</a>","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusArmourBreak"},{"Name":"<if:MS>{Nachhallender}<elif:FS>{Nachhallende}<elif:NS>{Nachhallendes}<elif:MP>{Nachhallende}<elif:FP>{Nachhallende}<elif:NP>{Nachhallende}","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["ArmourBreakDuration"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(5<span class=\"ndash\">—</span>10)</span>% verlängerte Dauer <a data-keyword=\"ArmourBreak\" href=\"Armour_Break\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c1a8f5c48e1929d7be4855209a18f58d616f961fa457623021fbd5c001fc73e8\">zerbrochener Rüstung</a>","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusArmourBreakDuration"},{"Name":"Des Kampfes","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AttackDamage"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter <a data-keyword=\"Attack\" href=\"Attacks\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/a66ac2a6b0d471862e1d3739755f9ee75d2d5607e13d5dd2883e709857e89cef\">Angriffs</a>schaden","fossil_no":["damage","attack"],"adds_no":[],"spawn_no":["str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusAttackDamage"},{"Name":"<if:MS>{Blutender}<elif:FS>{Blutende}<elif:NS>{Blutendes}<elif:MP>{Blutende}<elif:FP>{Blutende}<elif:NP>{Blutende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["BleedChanceIncrease"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>1</span>% Chance, bei <a data-keyword=\"HitDamage\" href=\"Hit_Damage\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FHitDamage\">Treffer</a> <a data-keyword=\"Bleeding\" href=\"Bleeding\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/f788f933f6cc5ed844ced32082b0c68888795381e4b4b1c5cc7be90979532cb3\">Bluten</a> zu verursachen","fossil_no":["bleed","physical","ailment"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingphysical\" data-tag=\"physical\">Physisch</span>","<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Beeinträchtigung</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusBleedingChance"},{"Name":"der Hämophilie","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["BleedDuration"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>7)</span>% verlängerte Blutungsdauer","fossil_no":["bleed","physical","attack","ailment"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingphysical\" data-tag=\"physical\">Physisch</span>","<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>","<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Beeinträchtigung</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusBleedingDuration"},{"Name":"<if:MS>{Beschützender}<elif:FS>{Beschützende}<elif:NS>{Beschützendes}<elif:MP>{Beschützende}<elif:FP>{Beschützende}<elif:NP>{Beschützende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["IncreasedBlockChance"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>3)</span>% erhöhte Chance auf <a data-keyword=\"Block\" href=\"Block\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/27ae2d3051d82d54ca572d4c64775b4f554c6cfa6ef5d17c54e620e8802b5e37\">Blocken</a>","fossil_no":["block"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusBlock"},{"Name":"<if:MS>{Ausnutzender}<elif:FS>{Ausnutzende}<elif:NS>{Ausnutzendes}<elif:MP>{Ausnutzende}<elif:FP>{Ausnutzende}<elif:NP>{Ausnutzende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["DamagevsArmourBrokenEnemies"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>4)</span>% erhöhter Schaden gegen Gegner mit <a data-keyword=\"ArmourBreak\" href=\"Armour_Break\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c1a8f5c48e1929d7be4855209a18f58d616f961fa457623021fbd5c001fc73e8\">vollständig zerbrochener Rüstung</a>","fossil_no":["damage"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusDamagevsArmourBrokenEnemies"},{"Name":"<if:MS>{Prsimatischer}<elif:FS>{Prsimatische}<elif:NS>{Prsimatisches}<elif:MP>{Prsimatische}<elif:FP>{Prsimatische}<elif:NP>{Prsimatische}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["ElementalDamagePercent"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter <a data-keyword=\"ElementalDamage\" href=\"Elemental_Damage_Types\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/113c73844a64c4a0ae2180e73038693a73e8d10cfb7c2f238d1ca5d6b8c9fb1d\">Elementar</a>schaden","fossil_no":["elemental_damage","damage","elemental","fire","cold","lightning"],"adds_no":[],"spawn_no":["str_radius_jewel","int_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Feuer</span>","<span class=\"badge bg-primary craftingcold\" data-tag=\"cold\">Kälte</span>","<span class=\"badge bg-primary craftinglightning\" data-tag=\"lightning\">Blitz</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusElementalDamage"},{"Name":"<if:MS>{Ermächtigender}<elif:FS>{Ermächtigende}<elif:NS>{Ermächtigendes}<elif:MP>{Ermächtigende}<elif:FP>{Ermächtigende}<elif:NP>{Ermächtigende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["ExertedAttackDamage"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <a data-keyword=\"Empowered\" href=\"Empowered_Skills\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/e6254cb24b9cd99bdaf2050f75bbcc7a83308f529ac9b7161f55aad0dce78d09\">Potenzierte</a> <a data-keyword=\"Attack\" href=\"Attacks\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/a66ac2a6b0d471862e1d3739755f9ee75d2d5607e13d5dd2883e709857e89cef\">Angriffe</a> verursachen <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhten Schaden","fossil_no":["damage","attack"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusEmpoweredAttackDamage"},{"Name":"<if:MS>{Lodernder}<elif:FS>{Lodernde}<elif:NS>{Loderndes}<elif:MP>{Lodernde}<elif:FP>{Lodernde}<elif:NP>{Lodernde}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["FireDamagePercentage"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter <a data-keyword=\"Fire\" href=\"Fire_Damage\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/872db6cab76a9c9587217f162e92320069ea030e32a5280b8c55f4d316b1b85a\">Feuer</a>schaden","fossil_no":["elemental_damage","damage","elemental","fire"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Feuer</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusFireDamage"},{"Name":"<if:MS>{Versengender}<elif:FS>{Versengende}<elif:NS>{Versengendes}<elif:MP>{Versengende}<elif:FP>{Versengende}<elif:NP>{Versengende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["FireResistancePenetration"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch Schaden <a data-keyword=\"Penetration\" href=\"Resistance_Penetration\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/8fe87aaed34762a62557b238bfc5472666f863608c082a482e29eda8c89af1e6\">durchdringt</a> <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% <a data-keyword=\"Fire\" href=\"Fire_Damage\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/872db6cab76a9c9587217f162e92320069ea030e32a5280b8c55f4d316b1b85a\">Feuer</a>widerstand","fossil_no":["elemental_damage","damage","elemental","fire"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Feuer</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusFirePenetration"},{"Name":"des Entzündens","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["IgniteChanceIncrease"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhte <a data-keyword=\"BuffMagnitude\" href=\"Buff_Debuff_Magnitude\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/d129e1d55fa4e2017b6ca5ee943a8551ee7adf6271d88f7d1fec339031b35ddf\">Magnitude</a> von <a data-keyword=\"Flammability\" href=\"Flammability\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/91aa80d31737530da42e4b26e0a57ff0fe815fb4fede067b2a0b7b9c5c9787bd\">Entflammbarkeit</a>","fossil_no":["elemental","fire","ailment"],"adds_no":["no_cold_spell_mods","no_lightning_spell_mods","no_chaos_spell_mods"],"spawn_no":["str_radius_jewel","int_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Feuer</span>","<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Beeinträchtigung</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusIgniteChance"},{"Name":"<if:MS>{Brennender}<elif:FS>{Brennende}<elif:NS>{Brennendes}<elif:MP>{Brennende}<elif:FP>{Brennende}<elif:NP>{Brennende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["IgniteEffect"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>7)</span>% erhöhte <a data-keyword=\"BuffMagnitude\" href=\"Buff_Debuff_Magnitude\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/d129e1d55fa4e2017b6ca5ee943a8551ee7adf6271d88f7d1fec339031b35ddf\">Magnitude</a> von <a data-keyword=\"Ignite\" href=\"Ignite\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/b492c5d8d4ee2b411d534a0c6e24061c0b27ce9fb2a43d8fc89d190c51e289a4\">Entzünden</a>","fossil_no":["elemental_damage","damage","elemental","fire","ailment"],"adds_no":[],"spawn_no":["str_radius_jewel","int_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Feuer</span>","<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Beeinträchtigung</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusIgniteEffect"},{"Name":"der Verlängerung","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["SkillEffectDuration"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>5)</span>% verlängerte Fertigkeitseffektdauer","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","int_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusIncreasedDuration"},{"Name":"der Abwehr","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["Knockback"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>7)</span>% erhöhte <a data-keyword=\"Knockback\" href=\"Knockback\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/1b91b87d79786e8b31431071381a6599ee647d24911b12ffa4e0219038046a2a\">Rückstoß</a>distanz","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusKnockback"},{"Name":"der Aufopferung","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["LifeCost"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% der Manakosten von Fertigkeiten werden in Lebenskosten <a data-keyword=\"StatConversion\" href=\"Stat_Conversion\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/1189217f045888a9752b3f541cdf617c817598dde2fdc2eea6054aa8db8ef390\">umgewandelt</a>","fossil_no":["resource","life"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusLifeCost"},{"Name":"der Raserei","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["LifeLeech"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhte Menge von <a data-keyword=\"LifeLeech\" href=\"Life_Leech\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/6c8949ef0a88568830c21869efde6c1ccf6cabf3374ad81501510d52a115e502\">geraubtem</a> Leben","fossil_no":["resource","life"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusLifeLeech"},{"Name":"der Regenerierung","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["LifeRegenerationRate"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>5)</span>% erhöhte Lebensregenerations-Rate","fossil_no":["resource","life"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusLifeRegeneration"},{"Name":"<if:MS>{Prügelnder}<elif:FS>{Prügelnde}<elif:NS>{Prügelndes}<elif:MP>{Prügelnde}<elif:FP>{Prügelnde}<elif:NP>{Prügelnde}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["SpecificWeaponDamage"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter Schaden mit <a data-keyword=\"Mace\" href=\"Maces\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/eb0f5663abbc39873b09a8ce339bbf3ed6873a989c0dca2d11fef33904976476\">Streitkolben</a>","fossil_no":["damage","attack"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMaceDamage"},{"Name":"des Klopfens","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["MaceStun"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(6<span class=\"ndash\">—</span>12)</span>% erhöhter <a data-keyword=\"Stun\" href=\"Stun\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/2d3e98f7033b2695df6430da65590f2d60e5a458096ba75877d0ec568be34bf3\">Betäubungsaufbau</a> mit <a data-keyword=\"Mace\" href=\"Maces\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/eb0f5663abbc39873b09a8ce339bbf3ed6873a989c0dca2d11fef33904976476\">Streitkolben</a>","fossil_no":["attack"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMaceStun"},{"Name":"<if:MS>{Zorniger}<elif:FS>{Zornige}<elif:NS>{Zorniges}<elif:MP>{Zornige}<elif:FP>{Zornige}<elif:NP>{Zornige}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["MaximumRage"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>+1</span> zu maximalem <a data-keyword=\"Rage\" href=\"Rage\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/19f5f3eaa303dc0eda99da43753bf9314fb9bf17206a1002d498e62a8e19d9ed\">Rausch</a>","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMaximumRage"},{"Name":"<if:MS>{Zusammenprallender}<elif:FS>{Zusammenprallende}<elif:NS>{Zusammenprallendes}<elif:MP>{Zusammenprallende}<elif:FP>{Zusammenprallende}<elif:NP>{Zusammenprallende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["MeleeDamage"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter <a data-keyword=\"Melee\" href=\"Melee\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/f78dbc5e0ab642388a4483f48885761d81a214d8837b60e9982e84a0ff76124b\">Nahkampf</a>schaden","fossil_no":["damage","attack"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMeleeDamage"},{"Name":"<if:MS>{Begleitender}<elif:FS>{Begleitende}<elif:NS>{Begleitendes}<elif:MP>{Begleitende}<elif:FP>{Begleitende}<elif:NP>{Begleitende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["MinionAreaOfEffect"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <a data-keyword=\"Minion\" href=\"Minions\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c5dcd61860625d99364c28d8dbf223df04a0f4574506311ab657259086add059\">Kreaturen</a> haben <span class='mod-value'>(3<span class=\"ndash\">—</span>5)</span>% vergrößerten Wirkungsbereich","fossil_no":["minion"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingminion\" data-tag=\"minion\">Kreatur</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMinionArea"},{"Name":"<if:MS>{Zufallsbedingter}<elif:FS>{Zufallsbedingte}<elif:NS>{Zufallsbedingtes}<elif:MP>{Zufallsbedingte}<elif:FP>{Zufallsbedingte}<elif:NP>{Zufallsbedingte}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["MinionLife"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <a data-keyword=\"Minion\" href=\"Minions\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c5dcd61860625d99364c28d8dbf223df04a0f4574506311ab657259086add059\">Kreaturen</a> haben <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhtes maximales Leben","fossil_no":["resource","life","minion"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>","<span class=\"badge bg-primary craftingminion\" data-tag=\"minion\">Kreatur</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMinionLife"},{"Name":"der Zuversicht","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["MinionPhysicalDamageReduction"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <a data-keyword=\"Minion\" href=\"Minions\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c5dcd61860625d99364c28d8dbf223df04a0f4574506311ab657259086add059\">Kreaturen</a> haben <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% zusätzliche <a data-keyword=\"Physical\" href=\"Physical_Damage\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/555dfef3dc443d5a5ef0240c7d29e2021856691e920e4618663eecc36eac6c8e\">physische</a> Schadensminderung","fossil_no":["physical","minion"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingphysical\" data-tag=\"physical\">Physisch</span>","<span class=\"badge bg-primary craftingminion\" data-tag=\"minion\">Kreatur</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusMinionPhysicalDamageReduction"},{"Name":"<if:MS>{Gespitzter}<elif:FS>{Gespitzte}<elif:NS>{Gespitztes}<elif:MP>{Gespitzte}<elif:FP>{Gespitzte}<elif:NP>{Gespitzte}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["PhysicalDamagePercent"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter globaler <a data-keyword=\"Physical\" href=\"Physical_Damage\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/555dfef3dc443d5a5ef0240c7d29e2021856691e920e4618663eecc36eac6c8e\">physischer</a> Schaden","fossil_no":["physical_damage","damage","physical"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingphysical\" data-tag=\"physical\">Physisch</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusPhysicalDamage"},{"Name":"des Wutausbruchs","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["RageOnHit"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch Erhaltet <span class='mod-value'>1</span> <a data-keyword=\"Rage\" href=\"Rage\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FRage\">Rausch</a> bei <a data-keyword=\"HitDamage\" href=\"Hit_Damage\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FHitDamage\">Nahkampftreffer</a>","fossil_no":["attack"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusRageonHit"},{"Name":"der Rache","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["GainRage"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch Erhaltet <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span> <a data-keyword=\"Rage\" href=\"Rage\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FRage\">Rausch</a>, wenn Ihr von einem Gegner <a data-keyword=\"HitDamage\" href=\"Hit_Damage\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FHitDamage\">getroffen</a> werdet","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusRagewhenHit"},{"Name":"<if:MS>{Abschirmender}<elif:FS>{Abschirmende}<elif:NS>{Abschirmendes}<elif:MP>{Abschirmende}<elif:FP>{Abschirmende}<elif:NP>{Abschirmende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["ShieldArmourIncrease"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(8<span class=\"ndash\">—</span>15)</span>% erhöhte <a data-keyword=\"Armour\" href=\"Armour\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/ffe76102f76b187368d81975c36b0e0d82a3f7307475cc3db026fae1c7674007\">Rüstung</a>, <a data-keyword=\"Evasion\" href=\"Evasion\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FEvasion\">Ausweichwert</a> und <a data-keyword=\"EnergyShield\" href=\"Energy_Shield\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/69969198424bf4434239d4e93c5248c5d2db69b2a8cfb1a548d0637cd17dd948\">Energieschild</a> vom ausgerüsteten <a data-keyword=\"Shield\" href=\"Shields\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/6169640080e6bcb9f212dcaaee5facb99e06e5e3c0df81a589ecdd8af33b8ae9\">Schild</a>","fossil_no":["defences"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusShieldDefences"},{"Name":"der Betäubung","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["StunDamageIncrease"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(5<span class=\"ndash\">—</span>10)</span>% erhöhter <a data-keyword=\"Stun\" href=\"Stun\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/2d3e98f7033b2695df6430da65590f2d60e5a458096ba75877d0ec568be34bf3\">Betäubungs</a>aufbau","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusStunBuildup"},{"Name":"der Standhaftigkeit","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["IncreasedStunThreshold"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhte <a data-keyword=\"StunThreshold\" href=\"Player_Stun_Threshold\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/b98e8dd5bdbd6fd1c3c9e59010fe1ee8d8ae78c753f08da634ec318c3ddfe11a\">Betäubungsschwelle</a>","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusStunThreshold"},{"Name":"<if:MS>{Nachblutender}<elif:FS>{Nachblutende}<elif:NS>{Nachblutendes}<elif:MP>{Nachblutende}<elif:FP>{Nachblutende}<elif:NP>{Nachblutende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["BleedingDamage"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>7)</span>% erhöhte <a data-keyword=\"BuffMagnitude\" href=\"Buff_Debuff_Magnitude\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FBuffMagnitude\">Magnitude</a> von <a data-keyword=\"Bleeding\" href=\"Bleeding\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/f788f933f6cc5ed844ced32082b0c68888795381e4b4b1c5cc7be90979532cb3\">Bluten</a>, das Ihr verursacht","fossil_no":["bleed","physical_damage","damage","physical","attack","ailment"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>","<span class=\"badge bg-primary craftingphysical\" data-tag=\"physical\">Physisch</span>","<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Angriff</span>","<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Beeinträchtigung</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusBleedingEffect"},{"Name":"<if:MS>{Vergeltender}<elif:FS>{Vergeltende}<elif:NS>{Vergeltendes}<elif:MP>{Vergeltende}<elif:FP>{Vergeltende}<elif:NP>{Vergeltende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["Thorns"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhter <a data-keyword=\"Thorns\" href=\"Thorns\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/6e330d2d37040ab3fcfff6ae18dd247a0a8068249d2fa0a1266c782f2364d45d\">Dornen</a>schaden","fossil_no":["damage"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusThorns"},{"Name":"Des Schamanen","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["TotemDamage"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhter <a data-keyword=\"Totem\" href=\"Totems\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c62ff6633e7f92872b650c4c83d51828a8244a062a66d521ee7a7647639b22de\">Totem</a>schaden","fossil_no":["damage"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusTotemDamage"},{"Name":"<if:MS>{Geschnitzter}<elif:FS>{Geschnitzte}<elif:NS>{Geschnitztes}<elif:MP>{Geschnitzte}<elif:FP>{Geschnitzte}<elif:NP>{Geschnitzte}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["IncreasedTotemLife"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhtes <a data-keyword=\"Totem\" href=\"Totems\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c62ff6633e7f92872b650c4c83d51828a8244a062a66d521ee7a7647639b22de\">Totem</a>leben","fossil_no":["resource","life"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusTotemLife"},{"Name":"der Ahnen","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["SummonTotemCastSpeed"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhte <a data-keyword=\"Totem\" href=\"Totems\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/c62ff6633e7f92872b650c4c83d51828a8244a062a66d521ee7a7647639b22de\">Totem</a>-Platzierungsgeschwindigkeit","fossil_no":["speed"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingspeed\" data-tag=\"speed\">Geschwindigkeit</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusTotemPlacementSpeed"},{"Name":"des Schlachtrufs","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["WarcryCooldownSpeed"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>7)</span>% beschleunigte Abklingzeit-Rate von <a data-keyword=\"Warcry\" href=\"Warcries\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/9d8a8a016a993a8c676d83cf0f408de0ac64574173f14b9040e8ef962529529b\">Kriegsschreien</a>","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusWarcryCooldown"},{"Name":"<if:MS>{Schreiender}<elif:FS>{Schreiende}<elif:NS>{Schreiendes}<elif:MP>{Schreiende}<elif:FP>{Schreiende}<elif:NP>{Schreiende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["WarcryDamage"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhter Schaden mit <a data-keyword=\"Warcry\" href=\"Warcries\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/9d8a8a016a993a8c676d83cf0f408de0ac64574173f14b9040e8ef962529529b\">Kriegsschreien</a>","fossil_no":["damage"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusWarcryDamage"},{"Name":"der Lungen","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["WarcrySpeed"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhte <a data-keyword=\"Warcry\" href=\"Warcries\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/9d8a8a016a993a8c676d83cf0f408de0ac64574173f14b9040e8ef962529529b\">Kriegsschrei</a>-Geschwindigkeit","fossil_no":["speed"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingspeed\" data-tag=\"speed\">Geschwindigkeit</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusWarcrySpeed"},{"Name":"<if:MS>{Einschneidender}<elif:FS>{Einschneidende}<elif:NS>{Einschneidendes}<elif:MP>{Einschneidende}<elif:FP>{Einschneidende}<elif:NP>{Einschneidende}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["IncisionChance"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(3<span class=\"ndash\">—</span>5)</span>% Chance, dass <a data-keyword=\"Attack\" href=\"Attacks\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/a66ac2a6b0d471862e1d3739755f9ee75d2d5607e13d5dd2883e709857e89cef\">Angriffs</a><a data-keyword=\"HitDamage\" href=\"Hit_Damage\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/7b3925742f089d10cfc44dae2ac5812bec9ab03125e29ab6e576d1fa0ea58ebb\">treffer</a> <a data-keyword=\"Incision\" href=\"Incision\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/2b365cad49755abd0e91ce8a490dcc5c0b18ddc71a09d83cca41b64d7238c680\">Einschnitt</a> anwenden","fossil_no":["bleed","physical","ailment"],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingphysical\" data-tag=\"physical\">Physisch</span>","<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Beeinträchtigung</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusIncisionChance"},{"Name":"des Heldenmuts","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["BannerValourGained"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(8<span class=\"ndash\">—</span>12)</span>% erhöhte <a data-keyword=\"Glory\" href=\"Glory\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/f852acb0557b90a03f7c9a2599638765f7fd0da4915208f2be493921b19f722a\">Ruhm</a>-Generierung für <a data-keyword=\"Banner\" href=\"Banner_Skills\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/4793d23f757433a08033314fbd02d1d84d9d8e3ca161dc9f96da2de4f72dc54c\">Banner</a>-Fertigkeiten","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusBannerValourGained"},{"Name":"<if:MS>{Sammelnder}<elif:FS>{Sammelnde}<elif:NS>{Sammelndes}<elif:MP>{Sammelnde}<elif:FP>{Sammelnde}<elif:NP>{Sammelnde}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["BannerArea"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <a data-keyword=\"Banner\" href=\"Banner_Skills\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/4793d23f757433a08033314fbd02d1d84d9d8e3ca161dc9f96da2de4f72dc54c\">Banner</a>-Fertigkeiten haben <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% vergrößerten Wirkungsbereich","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusBannerArea"},{"Name":"der Inspiration","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["BannerDuration"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <a data-keyword=\"Banner\" href=\"Banner_Skills\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/4793d23f757433a08033314fbd02d1d84d9d8e3ca161dc9f96da2de4f72dc54c\">Banner</a>-Fertigkeiten haben <span class='mod-value'>(3<span class=\"ndash\">—</span>4)</span>% verlängerte Dauer","fossil_no":[],"adds_no":[],"spawn_no":["str_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusBannerDuration"},{"Name":"<if:MS>{Ikonischer}<elif:FS>{Ikonische}<elif:NS>{Ikonisches}<elif:MP>{Ikonische}<elif:FP>{Ikonische}<elif:NP>{Ikonische}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["PresenceRadius"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(8<span class=\"ndash\">—</span>12)</span>% vergrößerter <a data-keyword=\"Presence\" href=\"Presence\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/416b234aaf466f9634e070c4967b7696b65e97346b509cfb65a1e9aaa433d5bd\">Präsenz</a>-Wirkungsbereich","fossil_no":["aura"],"adds_no":[],"spawn_no":["str_radius_jewel","int_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingaura\" data-tag=\"aura\">Aura</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusPresenceRadius"},{"Name":"der Wildnis","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["SpecificWeaponSpeed"],"DropChance":1,"str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhte <a data-keyword=\"SkillSpeed\" href=\"Skill_Speed\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/50c44866f5373082a8c31f1fb46ade13b83e7f2be85a04ed825536d9de8cbd30\">Fertigkeitengeschwindigkeit</a>, während Ihr <a data-keyword=\"Shapeshift\" href=\"Shapeshifting\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/baa15263d383a9885098c15ed2dee7a13e42f349d53d1c845550766f0d828f0f\">verwandelt</a> seid","fossil_no":["speed"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingspeed\" data-tag=\"speed\">Geschwindigkeit</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusShapeshiftSpeed"},{"Name":"<if:MS>{Tierischer}<elif:FS>{Tierische}<elif:NS>{Tierisches}<elif:MP>{Tierische}<elif:FP>{Tierische}<elif:NP>{Tierische}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["DamageForm"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter Schaden, während Ihr <a data-keyword=\"Shapeshift\" href=\"Shapeshifting\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/baa15263d383a9885098c15ed2dee7a13e42f349d53d1c845550766f0d828f0f\">verwandelt</a> seid","fossil_no":["damage"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusShapeshiftDamage"},{"Name":"<if:MS>{Überwachsener}<elif:FS>{Überwachsene}<elif:NS>{Überwachsenes}<elif:MP>{Überwachsene}<elif:FP>{Überwachsene}<elif:NP>{Überwachsene}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["DamageForm"],"DropChance":1,"str":"<a data-keyword=\"SmallPassive\" href=\"Small_Passives\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FSmallPassive\">Kleine Passive</a> Fertigkeiten im Radius gewähren auch <span class='mod-value'>(1<span class=\"ndash\">—</span>2)</span>% erhöhter Schaden mit <a data-keyword=\"Plant\" href=\"Plant_Skills_and_Overgrowth\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/db228499ff87f64bd1438076f018203512fe420755bb67438d85d4d1a5c8c3f3\">Pflanzen</a>-Fertigkeiten","fossil_no":["damage"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingdamage\" data-tag=\"damage\">Schaden</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FJewelRadiusPlantDamage"}],"corrupted":[{"ModFamilyList":["Strength"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"<span class='mod-value'>+(4<span class=\"ndash\">—</span>6)</span> zu <a data-keyword=\"Strength\" href=\"Strength\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/edd24eef9f77a9746b432c3bb228af07d4c7ff3b93dde7b728a032b4e0cbb4b7\">Stärke</a>","fossil_no":["attribute"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingattribute\" data-tag=\"attribute\">Attribut</span>"],"Name":"CorruptionJewelStrength1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelStrength1"},{"ModFamilyList":["Dexterity"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"<span class='mod-value'>+(4<span class=\"ndash\">—</span>6)</span> zu <a data-keyword=\"Dexterity\" href=\"Dexterity\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FDexterity\">Geschick</a>","fossil_no":["attribute"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingattribute\" data-tag=\"attribute\">Attribut</span>"],"Name":"CorruptionJewelDexterity1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelDexterity1"},{"ModFamilyList":["Intelligence"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"<span class='mod-value'>+(4<span class=\"ndash\">—</span>6)</span> zu <a data-keyword=\"Intelligence\" href=\"Intelligence\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FIntelligence\">Intelligenz</a>","fossil_no":["attribute"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingattribute\" data-tag=\"attribute\">Attribut</span>"],"Name":"CorruptionJewelIntelligence1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelIntelligence1"},{"ModFamilyList":["FireResistance"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"<span class='mod-value'>+(5<span class=\"ndash\">—</span>10)</span>% zu <a data-keyword=\"Resistances\" href=\"Resistances\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f\">Feuer</a>widerstand","fossil_no":["elemental_resistance","fire_resistance","elemental","fire","resistance"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Feuer</span>","<span class=\"badge bg-primary craftingresistance\" data-tag=\"resistance\">Widerstand</span>"],"Name":"CorruptionJewelFireResist1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelFireResist1"},{"ModFamilyList":["ColdResistance"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"<span class='mod-value'>+(5<span class=\"ndash\">—</span>10)</span>% zu <a data-keyword=\"Resistances\" href=\"Resistances\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f\">Kälte</a>widerstand","fossil_no":["cold_resistance","elemental_resistance","elemental","cold","resistance"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftingcold\" data-tag=\"cold\">Kälte</span>","<span class=\"badge bg-primary craftingresistance\" data-tag=\"resistance\">Widerstand</span>"],"Name":"CorruptionJewelColdResist1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelColdResist1"},{"ModFamilyList":["LightningResistance"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"<span class='mod-value'>+(5<span class=\"ndash\">—</span>10)</span>% zu <a data-keyword=\"Resistances\" href=\"Resistances\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f\">Blitz</a>widerstand","fossil_no":["elemental_resistance","lightning_resistance","elemental","lightning","resistance"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elementar</span>","<span class=\"badge bg-primary craftinglightning\" data-tag=\"lightning\">Blitz</span>","<span class=\"badge bg-primary craftingresistance\" data-tag=\"resistance\">Widerstand</span>"],"Name":"CorruptionJewelLightningResist1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelLightningResist1"},{"ModFamilyList":["ChaosResistance"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"<span class='mod-value'>+(3<span class=\"ndash\">—</span>7)</span>% zu <a data-keyword=\"Resistances\" href=\"Resistances\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f\">Chaoswiderstand</a>","fossil_no":["chaos_resistance","chaos","resistance"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingchaos\" data-tag=\"chaos\">Chaos</span>","<span class=\"badge bg-primary craftingresistance\" data-tag=\"resistance\">Widerstand</span>"],"Name":"CorruptionJewelChaosResist1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelChaosResist1"},{"ModFamilyList":["ImmuneToMaim"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"Immun gegen <a data-keyword=\"Maim\" href=\"Maim\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FMaim\">Verstümmelung</a>","fossil_no":[],"adds_no":[],"spawn_no":["default"],"mod_no":[],"Name":"CorruptionJewelMaimImmunity1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelMaimImmunity1"},{"ModFamilyList":["YouCannotBeHindered"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"Ihr könnt nicht gelähmt werden","fossil_no":["blue_herring"],"adds_no":[],"spawn_no":["default"],"mod_no":[],"Name":"CorruptionJewelHinderImmunity1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelHinderImmunity1"},{"ModFamilyList":["CorruptedBlood"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"Ihr könnt nicht von <a data-keyword=\"CorruptedBlood\" href=\"Corrupted_Blood\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/b0224efa11c35cb8be5285cb74b67e4f10df334d3ce4a4f48d2c3cf1262c7247\">verderbtem Blut</a> betroffen werden","fossil_no":["bleed","physical","ailment"],"adds_no":[],"spawn_no":["default"],"mod_no":["<span class=\"badge bg-primary craftingphysical\" data-tag=\"physical\">Physisch</span>","<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Beeinträchtigung</span>"],"Name":"CorruptionJewelCorruptedBloodImmunity1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelCorruptedBloodImmunity1"},{"ModFamilyList":["ImmunityToBlind"],"ModGenerationTypeID":"5","Level":"1","DropChance":"1","str":"Kann nicht <a data-keyword=\"Blind\" href=\"Blind\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FBlind\">geblendet</a> werden","fossil_no":[],"adds_no":[],"spawn_no":["default"],"mod_no":[],"Name":"CorruptionJewelBlindImmunity1","mod_fossil_item":[],"hover":"?s=Data%5CMods%2FCorruptionJewelBlindImmunity1"}],"desecrated":[{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <a data-keyword=\"Charm\" href=\"Charms\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FCharm\">Phiolen</a> erhalten <span class='mod-value'>0.1</span> Füllungen pro Sekunde","fossil_no":["charm","unveiled_mod"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingcharm\" data-tag=\"charm\">Phiole</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixCharmChargesPerSecond"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>1</span>% des Schadens werden zuerst vom Mana abgezogen","fossil_no":["resource","unveiled_mod","mana"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingmana\" data-tag=\"mana\">Mana</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixDamageTakenFromManaBeforeLife"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>1</span>% des erlittenen Schadens werden als Leben <a data-keyword=\"Recoup\" href=\"Recoup\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FRecoup\">wiedergewonnen</a>","fossil_no":["resource","unveiled_mod","life"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixDamageTakenRecoupLife"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>1</span>% des erlittenen Schadens werden als Mana <a data-keyword=\"Recoup\" href=\"Recoup\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FRecoup\">wiedergewonnen</a>","fossil_no":["resource","unveiled_mod","mana"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingmana\" data-tag=\"mana\">Mana</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixDamageTakenRecoupMana"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhte globale <a data-keyword=\"Armour\" href=\"Armour\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/ffe76102f76b187368d81975c36b0e0d82a3f7307475cc3db026fae1c7674007\">Rüstung</a>, <a data-keyword=\"Evasion\" href=\"Evasion\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FEvasion\">Ausweichwert</a> und <a data-keyword=\"EnergyShield\" href=\"Energy_Shield\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/69969198424bf4434239d4e93c5248c5d2db69b2a8cfb1a548d0637cd17dd948\">Energieschild</a>","fossil_no":["defences","unveiled_mod","armour","evasion","energy_shield"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingarmour\" data-tag=\"armour\">Rüstung</span>","<span class=\"badge bg-primary craftingevasion\" data-tag=\"evasion\">Ausweichen</span>","<span class=\"badge bg-primary craftingenergy_shield\" data-tag=\"energy_shield\">Energieschild</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixGlobalDefences"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch Lebens<a data-keyword=\"Flask\" href=\"Flasks\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FFlask\">fläschchen</a> erhalten <span class='mod-value'>0.1</span> Füllungen pro Sekunde","fossil_no":["flask","unveiled_mod"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixLifeFlaskChargesPerSecond"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>(2<span class=\"ndash\">—</span>3)</span>% erhöhte Manakosten<a data-keyword=\"Efficiency\" href=\"Efficiency\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/89679388ff1734eb22585fb945a61114c8ae8115e4022437a59b9dae70bd73a6\">effizienz</a>","fossil_no":["resource","unveiled_mod","mana"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingmana\" data-tag=\"mana\">Mana</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixManaCostEfficiency"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch Mana<a data-keyword=\"Flask\" href=\"Flasks\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FFlask\">fläschchen</a> erhalten <span class='mod-value'>0.1</span> Füllungen pro Sekunde","fossil_no":["flask","unveiled_mod"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":[],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixManaFlaskChargesPerSecond"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>1</span>% erhöhtes maximales Leben","fossil_no":["resource","unveiled_mod","life"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixPercentMaximumLife"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"1","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <span class='mod-value'>1</span>% erhöhtes maximales Mana","fossil_no":["resource","unveiled_mod","mana"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingmana\" data-tag=\"mana\">Mana</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixPercentMaximumMana"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch <a data-keyword=\"HitDamage\" href=\"Hit_Damage\" class=\"KeywordPopups\" data-hover=\"?s=Data%5CKeywordPopups%2FHitDamage\">Treffer</a> haben <span class='mod-value'>(3<span class=\"ndash\">—</span>5)</span>% verringerte <a data-keyword=\"Critical\" href=\"Critical_Hits\" class=\"KeywordPopups\" data-hover=\"https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/621a77f23d73aaf5dad3ec4c0d6731cdb0d359dcea3598a4718431304010044e\">kritische Trefferchance</a> gegen Euch","fossil_no":["unveiled_mod","critical"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Kritisch</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixReducedCriticalHitChanceAgainstYou"},{"Name":"<if:MS>{Lichtloser}<elif:FS>{Lichtlose}<elif:NS>{Lichtloses}<elif:MP>{Lichtlose}<elif:FP>{Lichtlose}<elif:NP>{Lichtlose}","Level":"1","ModGenerationTypeID":"2","ModFamilyList":["AbyssRadiusJewelMod"],"type":"Desecrated","str":"Bedeutende Passive Fertigkeiten im Radius gewähren auch Regeneriert <span class='mod-value'>(0.03<span class=\"ndash\">—</span>0.07)</span>% des Lebens pro Sekunde","fossil_no":["resource","unveiled_mod","life"],"adds_no":[],"spawn_no":["int_radius_jewel","str_radius_jewel","dex_radius_jewel","default"],"mod_no":["<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Leben</span>"],"mod_fossil_item":[],"hover":"?s=Data%5CMods%2FAbyssModRadiusJewelPrefixRegeneratePercentLifePerSecond"}],"master":[],"essence":[],"delve":[],"incursion":[],"elder":[],"shaper":[],"crusader":[],"redeemer":[],"hunter":[],"warlord":[],"veiled":[],"scourgeup":[],"scourgedown":[],"bestiary":[],"haunted":[],"sentinel":[],"synthesis":[],"synthesis_corrupted":[],"infamous":[],"searing":[],"eater":[],"enchant":[],"warbands":[],"graft_corrupted":[],"perfect_essence":[],"socketable":[],"bonded":[]});
+});
+</script>
+
+
+</div><div id="VaalsphäreVerderbtVerzauberung" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header"><span data-fossil='vaal'>Vaalsphäre Verderbt Verzauberung /11</span></h5>  <div class="card-body"><div class="mod-title  " id="accordionXIRYsC0ZDz" data-fossil="attribute vaal" data-bs-toggle="modal" data-bs-target="#collapseOneXIRYsC0ZDz">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingattribute" data-tag="attribute">Attribut</span></span><span class='mod-value'>+#</span> zu <a data-keyword="Strength" href="Strength" class="KeywordPopups" data-hover="https://cdn.poe#db.tw/cache#/de/Poe_Data_KeywordPopups_hover/edd#eef#f#a#b#c#bb#af#d#c#ff#b#dde#b#a#b#e#cbb#b#">Stärke</a>
+</div>
+<div class="modal fade" id="collapseOneXIRYsC0ZDz" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td><span class='mod-value'>+(4<span class="ndash">—</span>6)</span> zu <a data-keyword="Strength" href="Strength" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/edd24eef9f77a9746b432c3bb228af07d4c7ff3b93dde7b728a032b4e0cbb4b7">Stärke</a> <span class="float-end"><span class="badge bg-primary craftingattribute" data-tag="attribute">Attribut</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelStrength1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionyiTzEEUO7Q" data-fossil="attribute vaal" data-bs-toggle="modal" data-bs-target="#collapseOneyiTzEEUO7Q">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingattribute" data-tag="attribute">Attribut</span></span><span class='mod-value'>+#</span> zu <a data-keyword="Dexterity" href="Dexterity" class="KeywordPopups" data-hover="?s=Data%#CKeywordPopups%#FDexterity">Geschick</a>
+</div>
+<div class="modal fade" id="collapseOneyiTzEEUO7Q" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td><span class='mod-value'>+(4<span class="ndash">—</span>6)</span> zu <a data-keyword="Dexterity" href="Dexterity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FDexterity">Geschick</a> <span class="float-end"><span class="badge bg-primary craftingattribute" data-tag="attribute">Attribut</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelDexterity1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionv4FQxwFmfF" data-fossil="attribute vaal" data-bs-toggle="modal" data-bs-target="#collapseOnev4FQxwFmfF">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingattribute" data-tag="attribute">Attribut</span></span><span class='mod-value'>+#</span> zu <a data-keyword="Intelligence" href="Intelligence" class="KeywordPopups" data-hover="?s=Data%#CKeywordPopups%#FIntelligence">Intelligenz</a>
+</div>
+<div class="modal fade" id="collapseOnev4FQxwFmfF" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td><span class='mod-value'>+(4<span class="ndash">—</span>6)</span> zu <a data-keyword="Intelligence" href="Intelligence" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FIntelligence">Intelligenz</a> <span class="float-end"><span class="badge bg-primary craftingattribute" data-tag="attribute">Attribut</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelIntelligence1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordioni5ALpDe9Vb" data-fossil="elemental_resistance fire_resistance elemental fire resistance vaal" data-bs-toggle="modal" data-bs-target="#collapseOnei5ALpDe9Vb">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingelemental" data-tag="elemental">Elementar</span> <span class="badge bg-primary craftingfire" data-tag="fire">Feuer</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span><span class='mod-value'>+#</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe#db.tw/cache#/de/Poe_Data_KeywordPopups_hover/#a#c#f#f#a#d#de#f#d#a#c#c#c#a#cf#f">Feuer</a>widerstand
+</div>
+<div class="modal fade" id="collapseOnei5ALpDe9Vb" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td><span class='mod-value'>+(5<span class="ndash">—</span>10)</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f">Feuer</a>widerstand <span class="float-end"><span class="badge bg-primary craftingelemental" data-tag="elemental">Elementar</span> <span class="badge bg-primary craftingfire" data-tag="fire">Feuer</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelFireResist1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionIe1wfsLhXv" data-fossil="cold_resistance elemental_resistance elemental cold resistance vaal" data-bs-toggle="modal" data-bs-target="#collapseOneIe1wfsLhXv">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingelemental" data-tag="elemental">Elementar</span> <span class="badge bg-primary craftingcold" data-tag="cold">Kälte</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span><span class='mod-value'>+#</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe#db.tw/cache#/de/Poe_Data_KeywordPopups_hover/#a#c#f#f#a#d#de#f#d#a#c#c#c#a#cf#f">Kälte</a>widerstand
+</div>
+<div class="modal fade" id="collapseOneIe1wfsLhXv" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td><span class='mod-value'>+(5<span class="ndash">—</span>10)</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f">Kälte</a>widerstand <span class="float-end"><span class="badge bg-primary craftingelemental" data-tag="elemental">Elementar</span> <span class="badge bg-primary craftingcold" data-tag="cold">Kälte</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelColdResist1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionAVXHA2e3DJ" data-fossil="elemental_resistance lightning_resistance elemental lightning resistance vaal" data-bs-toggle="modal" data-bs-target="#collapseOneAVXHA2e3DJ">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingelemental" data-tag="elemental">Elementar</span> <span class="badge bg-primary craftinglightning" data-tag="lightning">Blitz</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span><span class='mod-value'>+#</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe#db.tw/cache#/de/Poe_Data_KeywordPopups_hover/#a#c#f#f#a#d#de#f#d#a#c#c#c#a#cf#f">Blitz</a>widerstand
+</div>
+<div class="modal fade" id="collapseOneAVXHA2e3DJ" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td><span class='mod-value'>+(5<span class="ndash">—</span>10)</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f">Blitz</a>widerstand <span class="float-end"><span class="badge bg-primary craftingelemental" data-tag="elemental">Elementar</span> <span class="badge bg-primary craftinglightning" data-tag="lightning">Blitz</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelLightningResist1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionW94pTEdh5J" data-fossil="chaos_resistance chaos resistance vaal" data-bs-toggle="modal" data-bs-target="#collapseOneW94pTEdh5J">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingchaos" data-tag="chaos">Chaos</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span><span class='mod-value'>+#</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe#db.tw/cache#/de/Poe_Data_KeywordPopups_hover/#a#c#f#f#a#d#de#f#d#a#c#c#c#a#cf#f">Chaoswiderstand</a>
+</div>
+<div class="modal fade" id="collapseOneW94pTEdh5J" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td><span class='mod-value'>+(3<span class="ndash">—</span>7)</span>% zu <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/18a01c8f4f7989a357d92de980f8756d40a55c218c7103076c4706a966cf531f">Chaoswiderstand</a> <span class="float-end"><span class="badge bg-primary craftingchaos" data-tag="chaos">Chaos</span> <span class="badge bg-primary craftingresistance" data-tag="resistance">Widerstand</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelChaosResist1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordiondjwJMs7sYF" data-fossil="vaal" data-bs-toggle="modal" data-bs-target="#collapseOnedjwJMs7sYF">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span>Immun gegen <a data-keyword="Maim" href="Maim" class="KeywordPopups" data-hover="?s=Data%#CKeywordPopups%#FMaim">Verstümmelung</a>
+</div>
+<div class="modal fade" id="collapseOnedjwJMs7sYF" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td>Immun gegen <a data-keyword="Maim" href="Maim" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMaim">Verstümmelung</a> <span data-hover="?s=Data%5CMods%2FCorruptionJewelMaimImmunity1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionY2W3N6erDf" data-fossil="blue_herring vaal" data-bs-toggle="modal" data-bs-target="#collapseOneY2W3N6erDf">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span>Ihr könnt nicht gelähmt werden
+</div>
+<div class="modal fade" id="collapseOneY2W3N6erDf" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td>Ihr könnt nicht gelähmt werden <span data-hover="?s=Data%5CMods%2FCorruptionJewelHinderImmunity1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionKEoDerqMa5" data-fossil="bleed physical ailment vaal" data-bs-toggle="modal" data-bs-target="#collapseOneKEoDerqMa5">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span><span style='float: right'><span class="badge bg-primary craftingphysical" data-tag="physical">Physisch</span> <span class="badge bg-primary craftingailment" data-tag="ailment">Beeinträchtigung</span></span>Ihr könnt nicht von <a data-keyword="CorruptedBlood" href="Corrupted_Blood" class="KeywordPopups" data-hover="https://cdn.poe#db.tw/cache#/de/Poe_Data_KeywordPopups_hover/b#efa#c#cb#be#cb#b#e#f#df#d#ce#a#f#d#c#cf#c#">verderbtem Blut</a> betroffen werden
+</div>
+<div class="modal fade" id="collapseOneKEoDerqMa5" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td>Ihr könnt nicht von <a data-keyword="CorruptedBlood" href="Corrupted_Blood" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/de/Poe_Data_KeywordPopups_hover/b0224efa11c35cb8be5285cb74b67e4f10df334d3ce4a4f48d2c3cf1262c7247">verderbtem Blut</a> betroffen werden <span class="float-end"><span class="badge bg-primary craftingphysical" data-tag="physical">Physisch</span> <span class="badge bg-primary craftingailment" data-tag="ailment">Beeinträchtigung</span></span> <span data-hover="?s=Data%5CMods%2FCorruptionJewelCorruptedBloodImmunity1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-title  " id="accordionkSb7OZiuih" data-fossil="vaal" data-bs-toggle="modal" data-bs-target="#collapseOnekSb7OZiuih">
+    <span class='badge rounded-pill bg-success' data-bs-toggle='tooltip' title='tiers'>1</span><span class='badge rounded-pill bg-secondary' data-bs-toggle='tooltip' title='iLvL'>1</span><span class='badge rounded-pill bg-danger float-end' data-bs-toggle='tooltip' title='weight'>1</span>Kann nicht <a data-keyword="Blind" href="Blind" class="KeywordPopups" data-hover="?s=Data%#CKeywordPopups%#FBlind">geblendet</a> werden
+</div>
+<div class="modal fade" id="collapseOnekSb7OZiuih" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <table class='table table-hover table-striped orig table-dark'><thead><tr><th>Gegenstandsstufe<th>Global<th>Weight<tbody><tr><td>1<td>Kann nicht <a data-keyword="Blind" href="Blind" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBlind">geblendet</a> werden <span data-hover="?s=Data%5CMods%2FCorruptionJewelBlindImmunity1" class="fas fa-info-circle" data-bs-html="true"></span><td><span class='badge rounded-pill bg-danger'>1</span></table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mod-total"><span class="float-end"><span class="badge rounded-pill bg-danger">11</span></span><span class="badge rounded-pill bg-secondary" data-bs-tooltip="iLvL">1</span><span style="color: white">Total</span></div></div>   </div></div><div id="ZeitverlorenerRubinJewelRadiusStr" class="tab-pane fade"><span data-tabname="Zeitverlorener Rubin <small>JewelRadiusStr</small>"></span><div class="py-2"><div class="d-flex flex-wrap">
+
+<div class="newItemPopup NormalPopup item-popup--poe2 "
+>
+    <div class="itemHeader singleLine">
+
+        <div class="itemName typeLine">
+            <span class="lc">Zeitverlorener Rubin</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="Stats">
+            <div class="property">Juwelen</div><div class="separator"></div><div class="implicitMod"><span class="secondary">local jewel effect base radius [1000]</span></div>
+        </div>
+
+
+        <div class="separator"></div>
+        <div class="default fst-italic">
+            Platziere das Juwel in einer zugewiesenen Fassung im Fertigkeitenbaum. Mit Rechtsklick kannst du es aus seiner Fassung entfernen.
+        </div>
+
+        <div>
+            Time-Lost Ruby
+        </div>
+    </div>
+</div>
+
+
+        <div class="itemboximage">
+
+                <img loading="lazy" class="" src="https://cdn.poe2db.tw/image/Art/2DItems/Jewels/SpecialRubyJewel.webp"/>
+
+        </div>
+
+
+
+</div>
+</div><div   class="card mb-2 ">
+   <h5 class="card-header">Zeitverlorener Rubin JewelRadiusStr /8 </h5>   <div class='table-responsive'><table class='table table-hover table-striped mb-0 filters '><thead><tr><th>Name</th><th>Vollständige Beschreibung 
+zeigen</th></tr></thead><tbody>
+<tr><td>DropLevel <span class='fas fa-info-circle' data-bs-toggle='tooltip' title='Item Filter'></span></td><td>20</td></tr>
+<tr><td>BaseType <span class='fas fa-info-circle' data-bs-toggle='tooltip' title='Item Filter'></span></td><td>Time-Lost Ruby</td></tr>
+<tr><td>BaseType <span class='fas fa-info-circle' data-bs-toggle='tooltip' title='Item Filter'></span></td><td>Zeitverlorener Rubin</td></tr>
+<tr><td>Class <span class='fas fa-info-circle' data-bs-toggle='tooltip' title='Item Filter'></span></td><td><a class="ItemClasses  KeywordPopups" href="Jewels" data-hover="?s=Data%5CKeywordPopups%2FJewel">Juwelen</a></td></tr>
+<tr><td>Flags</td><td><span>AlwaysAllocate</span>, <span>CanHaveInfluence</span>, <span>CanBeCorrupted</span></td></tr>
+<tr><td>Type</td><td>Metadata/Items/Jewels/JewelRadiusStr</td></tr>
+<tr><td>Tags</td><td>jewel, not_for_sale, str_radius_jewel, radius_jewel</td></tr>
+<tr><td>Icon</td><td>Art/2DItems/Jewels/SpecialRubyJewel</td></tr></tbody></table></div>  </div><div class='clearfix row'><div class=''><div   class="card mb-2 ">
+   <h5 class="card-header"><span class='item_magic'><span class="secondary">local jewel effect base radius [1000]</span></span></h5>   <table class='table table-hover table-striped mb-0'>
+<tr><th>Family<td>JewelEffectBaseRadius
+<tr><th>Domains<td>Jewel (11)
+<tr><th>GenerationType<td>Einzigartig (3)
+<tr><th>Req. level<td>1
+<tr><th>Stats<td><li>local jewel effect base radius <span class="badge bg-primary">1000 <span class="ndash">—</span> 1000</span> <span class="badge bg-secondary">Lokal</span> <span class="badge bg-warning">Unscalable Value</span></li></table>  </div></div></div><div   class="card mb-2 ">
+      <div class="table-responsive"><table class='table table-hover table-striped mb-0 filters '><thead><tr><th>key</th><th>val</th></tr></thead><tbody id="M4w58Ox3Zz"><tr><td>Base.base_level</td><td>1</td></tr><tr><td>Base.tag</td><td>default</td></tr><tr><td>Base.x_size</td><td>1</td></tr><tr><td>Base.y_size</td><td>1</td></tr><tr><td>Base.description_text</td><td>ItemDescriptionPassiveJewel</td></tr><tr><td>Mods.stat_description_list</td><td>Data/StatDescriptions/stat_descriptions.csd</td></tr><tr><td>Mods.mod_stat_description_list</td><td>Data/StatDescriptions/advanced_mod_stat_descriptions.csd</td></tr><tr><td>Mods.enable_rarity</td><td>magic, rare, unique</td></tr><tr><td>Mods.inventory_type</td><td>passivejewels</td></tr></tbody></table></div>  </div></div><div id="Forgerecipe" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header">Forge recipe</h5>     </div></div></div><div class="card mb-1">
+    <div class="card-body markdown-body">
+        <a class="btn btn-primary float-end" href='/de/marked?id=Time-Lost_Ruby' data-i18n="ClientStrings|HideoutEditControlEdit|Name">Edit</a>
+        
+        <div><hr style='border-top: 1px solid white'>Wikis Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a> unless otherwise noted.</div>
+    </div>
+</div>
+
+
+<footer class="ccontainer text-center text-lg-left">
+  <div class="card p-4">
+    <div class="row">
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sites</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a target="_blank" href="https://poedb.tw/">poedb.tw</a> </li>
+          <li> <a target="_blank" href="https://tlidb.com/">tlidb.com</a> </li>
+          <!--<li> <a target="_blank" href="https://diablo4.cc/">diablo4.cc</a> </li>-->
+          <li> <a target="_blank" href="https://poe2db.tw/">poe2db.tw</a> </li>
+              <li> <a target="_blank" href="https://paldb.cc/">paldb.cc</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">News</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="news">GGG Tracker</a> </li>
+          <li> <a href="League#ConcurrentPlayers">Concurrent Players</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Site</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="privacy">Privacy</a> </li>
+          <li> <a href="patreon">Patreon</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Community</h5>
+        <ul class="list-unstyled mb-0">
+
+
+
+          <li><a target="_blank" href="https://www.reddit.com/user/chuanhsing">/u/chuanhsing</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright &copy; 2014-2026 PoE2DB.
+  </div>
+</footer>
+
+<div style=""></div>
+<div class="clearfix"></div><div id="bottom_banner"></div><script>topbanner970("bottom_banner");</script>
+    </div>
+    </div>
+
+    <a href="#top" id="toTop"><span class="fas fa-arrow-circle-up fa-3x"></span></a>
+<script>
+ $(document).ready(function()
+ {
+    if (window.location.hostname != "poedb.tw" && window.location.hostname != "poe2db.tw") {
+        window.location.href="https://poedb.tw/";
+    }
+ });
+</script>
+    <script src="https://cdn.poe2db.tw/js/poedb_footer.43e536bf51dca9e4.js"></script>
+
+  </body>
+</html>

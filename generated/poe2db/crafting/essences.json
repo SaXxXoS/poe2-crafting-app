@@ -1,0 +1,4264 @@
+{
+  "schemaVersion": 1,
+  "source": "PoE2DB Essence; RePoE technical modifier rules",
+  "essences": [
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceLife",
+      "nameEn": "Lesser Essence of the Body",
+      "nameDe": "Geringere Essenz des Körpers",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedLife3",
+        "IncreasedLife2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceMana",
+      "nameEn": "Lesser Essence of the Mind",
+      "nameDe": "Geringere Essenz des Geistes",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedMana3"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceDefences",
+      "nameEn": "Lesser Essence of Enhancement",
+      "nameDe": "Geringere Essenz der Verstärkung",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalIncreasedArmourAndEvasionAndEnergyShield2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssencePhysical",
+      "nameEn": "Lesser Essence of Abrasion",
+      "nameDe": "Geringere Essenz der Abschürfung",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedPhysicalDamage2",
+        "LocalAddedPhysicalDamageTwoHand2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceFire",
+      "nameEn": "Lesser Essence of Flames",
+      "nameDe": "Geringere Essenz der Flammen",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedFireDamage2",
+        "LocalAddedFireDamageTwoHand2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceCold",
+      "nameEn": "Lesser Essence of Ice",
+      "nameDe": "Geringere Essenz des Eises",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedColdDamage2",
+        "LocalAddedColdDamageTwoHand2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceLightning",
+      "nameEn": "Lesser Essence of Electricity",
+      "nameDe": "Geringere Essenz der Elektrizität",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedLightningDamage2",
+        "LocalAddedLightningDamageTwoHand2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceChaos",
+      "nameEn": "Lesser Essence of Ruin",
+      "nameDe": "Geringere Essenz des Verfalls",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ChaosResist1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceAttack",
+      "nameEn": "Lesser Essence of Battle",
+      "nameDe": "Geringere Essenz des Kampfes",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceCaster",
+      "nameEn": "Lesser Essence of Sorcery",
+      "nameDe": "Geringere Essenz der Zauberei",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "SpellDamageOnWeapon2",
+        "SpellDamageOnTwoHandWeapon2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceSpeed",
+      "nameEn": "Lesser Essence of Haste",
+      "nameDe": "Geringere Essenz der Hast",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null,
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceAttribute",
+      "nameEn": "Lesser Essence of the Infinite",
+      "nameDe": "Geringere Essenz des Unendlichen",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceLife",
+      "nameEn": "Essence of the Body",
+      "nameDe": "Essenz des Körpers",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedLife7",
+        "IncreasedLife6"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceMana",
+      "nameEn": "Essence of the Mind",
+      "nameDe": "Essenz des Geistes",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedMana6",
+        "IncreasedMana7"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceDefences",
+      "nameEn": "Essence of Enhancement",
+      "nameDe": "Essenz der Verstärkung",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalIncreasedArmourAndEvasionAndEnergyShield4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssencePhysical",
+      "nameEn": "Essence of Abrasion",
+      "nameDe": "Essenz der Abschürfung",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedPhysicalDamage5",
+        "LocalAddedPhysicalDamageTwoHand5"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceFire",
+      "nameEn": "Essence of Flames",
+      "nameDe": "Essenz der Flammen",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedFireDamage5",
+        "LocalAddedFireDamageTwoHand5"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceCold",
+      "nameEn": "Essence of Ice",
+      "nameDe": "Essenz des Eises",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedColdDamage5",
+        "LocalAddedColdDamageTwoHand5"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceLightning",
+      "nameEn": "Essence of Electricity",
+      "nameDe": "Essenz der Elektrizität",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedLightningDamage5",
+        "LocalAddedLightningDamageTwoHand5"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceChaos",
+      "nameEn": "Essence of Ruin",
+      "nameDe": "Essenz des Verfalls",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ChaosResist2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceAttack",
+      "nameEn": "Essence of Battle",
+      "nameDe": "Essenz des Kampfes",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceCaster",
+      "nameEn": "Essence of Sorcery",
+      "nameDe": "Essenz der Zauberei",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "SpellDamageOnWeapon4",
+        "SpellDamageOnTwoHandWeapon4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceSpeed",
+      "nameEn": "Essence of Haste",
+      "nameDe": "Essenz der Hast",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalIncreasedAttackSpeed5",
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceAttribute",
+      "nameEn": "Essence of the Infinite",
+      "nameDe": "Essenz des Unendlichen",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceLife",
+      "nameEn": "Greater Essence of the Body",
+      "nameDe": "Größere Essenz des Körpers",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedLife8",
+        "IncreasedLife7"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceMana",
+      "nameEn": "Greater Essence of the Mind",
+      "nameDe": "Größere Essenz des Geistes",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedMana7",
+        "IncreasedMana8"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceDefences",
+      "nameEn": "Greater Essence of Enhancement",
+      "nameDe": "Größere Essenz der Verstärkung",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalIncreasedArmourAndEvasionAndEnergyShield5"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssencePhysical",
+      "nameEn": "Greater Essence of Abrasion",
+      "nameDe": "Größere Essenz der Abschürfung",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedPhysicalDamage7",
+        "LocalAddedPhysicalDamageTwoHand7"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceFire",
+      "nameEn": "Greater Essence of Flames",
+      "nameDe": "Größere Essenz der Flammen",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedFireDamage7",
+        "LocalAddedFireDamageTwoHand7"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceCold",
+      "nameEn": "Greater Essence of Ice",
+      "nameDe": "Größere Essenz des Eises",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedColdDamage7",
+        "LocalAddedColdDamageTwoHand7"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceLightning",
+      "nameEn": "Greater Essence of Electricity",
+      "nameDe": "Größere Essenz der Elektrizität",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalAddedLightningDamage7",
+        "LocalAddedLightningDamageTwoHand7"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceChaos",
+      "nameEn": "Greater Essence of Ruin",
+      "nameDe": "Größere Essenz des Verfalls",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ChaosResist4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceAttack",
+      "nameEn": "Greater Essence of Battle",
+      "nameDe": "Größere Essenz des Kampfes",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceCaster",
+      "nameEn": "Greater Essence of Sorcery",
+      "nameDe": "Größere Essenz der Zauberei",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "SpellDamageOnWeapon6",
+        "SpellDamageOnTwoHandWeapon6"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeed",
+      "nameEn": "Greater Essence of Haste",
+      "nameDe": "Größere Essenz der Hast",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LocalIncreasedAttackSpeed7",
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceAttribute",
+      "nameEn": "Greater Essence of the Infinite",
+      "nameDe": "Größere Essenz des Unendlichen",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceLife",
+      "nameEn": "Perfect Essence of the Body",
+      "nameDe": "Perfekte Essenz des Körpers",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceIncreasedLifePercent1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceMana",
+      "nameEn": "Perfect Essence of the Mind",
+      "nameDe": "Perfekte Essenz des Geistes",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceIncreasedManaPercent1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceDefences",
+      "nameEn": "Perfect Essence of Enhancement",
+      "nameDe": "Perfekte Essenz der Verstärkung",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceGlobalDefences1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssencePhysical",
+      "nameEn": "Perfect Essence of Abrasion",
+      "nameDe": "Perfekte Essenz der Abschürfung",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceDamageasExtraPhysical1",
+        "EssenceDamageasExtraPhysical2H"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceFire",
+      "nameEn": "Perfect Essence of Flames",
+      "nameDe": "Perfekte Essenz der Flammen",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceDamageasExtraFire1",
+        "EssenceDamageasExtraFire2H"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceCold",
+      "nameEn": "Perfect Essence of Ice",
+      "nameDe": "Perfekte Essenz des Eises",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceDamageasExtraCold1",
+        "EssenceDamageasExtraCold2H"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceLightning",
+      "nameEn": "Perfect Essence of Electricity",
+      "nameDe": "Perfekte Essenz der Elektrizität",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceDamageasExtraLightning1",
+        "EssenceDamageasExtraLightning2H"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceChaos",
+      "nameEn": "Perfect Essence of Ruin",
+      "nameDe": "Perfekte Essenz des Verfalls",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssencePhysicalDamageTakenAsChaos1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceAttack",
+      "nameEn": "Perfect Essence of Battle",
+      "nameDe": "Perfekte Essenz des Kampfes",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceAttackSkillLevel1H1",
+        "EssenceAttackSkillLevel2H1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceCaster",
+      "nameEn": "Perfect Essence of Sorcery",
+      "nameDe": "Perfekte Essenz der Zauberei",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null,
+        "EssenceSpellSkillLevel2H1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeed",
+      "nameEn": "Perfect Essence of Haste",
+      "nameDe": "Perfekte Essenz der Hast",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceOnslaughtonKill1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceAttribute",
+      "nameEn": "Perfect Essence of the Infinite",
+      "nameDe": "Perfekte Essenz des Unendlichen",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceCritical",
+      "nameEn": "Lesser Essence of Seeking",
+      "nameDe": "Geringere Essenz der Suche",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null,
+        "SpellCriticalStrikeChance2",
+        "SpellCriticalStrikeChanceTwoHand2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceCritical",
+      "nameEn": "Essence of Seeking",
+      "nameDe": "Essenz der Suche",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null,
+        "SpellCriticalStrikeChance3",
+        "SpellCriticalStrikeChanceTwoHand3"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceCritical",
+      "nameEn": "Greater Essence of Seeking",
+      "nameDe": "Größere Essenz der Suche",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null,
+        "SpellCriticalStrikeChance4",
+        "SpellCriticalStrikeChanceTwoHand4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceCritical",
+      "nameEn": "Perfect Essence of Seeking",
+      "nameDe": "Perfekte Essenz der Suche",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceReducedCriticalDamageAgainstYou1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "nameEn": "Essence of Hysteria",
+      "nameDe": "Essenz der Hysterie",
+      "quality": "normal",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null,
+        "AttackerTakesDamage6",
+        "CriticalMultiplier4",
+        "MovementVelocity5",
+        "ManaRegeneration5",
+        "DamageTakenGainedAsLife4_",
+        "StunThreshold10",
+        "LocalBlockChance2",
+        "DamageWithBows5",
+        "EnergyShieldRechargeRate5______"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyCorruptedEssenceDelirium",
+      "nameEn": "Essence of Delirium",
+      "nameDe": "Essenz des Deliriums",
+      "quality": "normal",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyCorruptedEssenceHorror",
+      "nameEn": "Essence of Horror",
+      "nameDe": "Essenz des Horrors",
+      "quality": "normal",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceLocalRuneAndSoulCoreEffect1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyCorruptedEssenceInsanity",
+      "nameEn": "Essence of Insanity",
+      "nameDe": "Essenz des Irrsinns",
+      "quality": "normal",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceCorruptForTwoEnchantments1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyCorruptedEssenceAbyss",
+      "nameEn": "Essence of the Abyss",
+      "nameDe": "Essenz des Abgrunds",
+      "quality": "normal",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyCorruptedEssenceBreach",
+      "nameEn": "Essence of the Breach",
+      "nameDe": "Essenz des Risses",
+      "quality": "normal",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceBreach"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceFireResist",
+      "nameEn": "Lesser Essence of Insulation",
+      "nameDe": "Geringere Essenz der Isolierung",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "FireResist2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceFireResist",
+      "nameEn": "Essence of Insulation",
+      "nameDe": "Essenz der Isolierung",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "FireResist4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceFireResist",
+      "nameEn": "Greater Essence of Insulation",
+      "nameDe": "Größere Essenz der Isolierung",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "FireResist6"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceFireResist",
+      "nameEn": "Perfect Essence of Insulation",
+      "nameDe": "Perfekte Essenz der Isolierung",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceFireRecoupLife1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceColdResist",
+      "nameEn": "Lesser Essence of Thawing",
+      "nameDe": "Geringere Essenz des Auftauens",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ColdResist2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceColdResist",
+      "nameEn": "Essence of Thawing",
+      "nameDe": "Essenz des Auftauens",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ColdResist4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceColdResist",
+      "nameEn": "Greater Essence of Thawing",
+      "nameDe": "Größere Essenz des Auftauens",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ColdResist6"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceColdResist",
+      "nameEn": "Perfect Essence of Thawing",
+      "nameDe": "Perfekte Essenz des Auftauens",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceColdRecoupLife1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceLightningResist",
+      "nameEn": "Lesser Essence of Grounding",
+      "nameDe": "Geringere Essenz der Erdung",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LightningResist2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceLightningResist",
+      "nameEn": "Essence of Grounding",
+      "nameDe": "Essenz der Erdung",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LightningResist4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceLightningResist",
+      "nameEn": "Greater Essence of Grounding",
+      "nameDe": "Größere Essenz der Erdung",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "LightningResist6"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceLightningResist",
+      "nameEn": "Perfect Essence of Grounding",
+      "nameDe": "Perfekte Essenz der Erdung",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceLightningRecoupLife1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceSpeedCaster",
+      "nameEn": "Lesser Essence of Alacrity",
+      "nameDe": "Geringere Essenz der Schnelligkeit",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedCastSpeed2",
+        "IncreasedCastSpeedTwoHand2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceSpeedCaster",
+      "nameEn": "Essence of Alacrity",
+      "nameDe": "Essenz der Schnelligkeit",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "IncreasedCastSpeed3",
+        "IncreasedCastSpeedTwoHand3"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeedCaster",
+      "nameEn": "Greater Essence of Alacrity",
+      "nameDe": "Größere Essenz der Schnelligkeit",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        null,
+        "IncreasedCastSpeedTwoHand5"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeedCaster",
+      "nameEn": "Perfect Essence of Alacrity",
+      "nameDe": "Perfekte Essenz der Schnelligkeit",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceManaCostReduction",
+        "EssenceManaCostReduction2H"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceRarity",
+      "nameEn": "Lesser Essence of Opulence",
+      "nameDe": "Geringere Essenz des Überflusses",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ItemFoundRarityIncrease1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceRarity",
+      "nameEn": "Essence of Opulence",
+      "nameDe": "Essenz des Überflusses",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ItemFoundRarityIncrease2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceRarity",
+      "nameEn": "Greater Essence of Opulence",
+      "nameDe": "Größere Essenz des Überflusses",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "ItemFoundRarityIncrease3"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceRarity",
+      "nameEn": "Perfect Essence of Opulence",
+      "nameDe": "Perfekte Essenz des Überflusses",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceGoldDropped1"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyLesserEssenceAlly",
+      "nameEn": "Lesser Essence of Command",
+      "nameDe": "Geringere Essenz des Befehls",
+      "quality": "lesser",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "NearbyAlliesAllDamage2"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyEssenceAlly",
+      "nameEn": "Essence of Command",
+      "nameDe": "Essenz des Befehls",
+      "quality": "normal",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "NearbyAlliesAllDamage4"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyGreaterEssenceAlly",
+      "nameEn": "Greater Essence of Command",
+      "nameDe": "Größere Essenz des Befehls",
+      "quality": "greater",
+      "effectEn": "Upgrades a Magic item to a Rare item, adding a guaranteed modifier",
+      "effectDe": "Wertet einen magischen Gegenstand zu einem seltenen Gegenstand und fügt ein garantierten Modifikator hinzu.",
+      "inputRarity": "magic",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "NearbyAlliesAllDamage6"
+      ]
+    },
+    {
+      "id": "Metadata/Items/Currency/CurrencyPerfectEssenceAlly",
+      "nameEn": "Perfect Essence of Command",
+      "nameDe": "Perfekte Essenz des Befehls",
+      "quality": "perfect",
+      "effectEn": "Removes a random modifier and augments a Rare item with a new guaranteed modifier",
+      "effectDe": "Entfernt einen zufälligen Modifikator und stattet einen seltenen Gegenstand mit einem neuen garantierten Modifikator aus.",
+      "inputRarity": "rare",
+      "outputRarity": "rare",
+      "guaranteedModifierIds": [
+        "EssenceAuraEffect1"
+      ]
+    }
+  ],
+  "guaranteedModifiers": [
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceLife",
+      "essenceNameEn": "Lesser Essence of the Body",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt"
+      ],
+      "textEn": "+(30—39) to maximum Life",
+      "textDe": "+(30—39) zu maximalem Leben",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 30,
+          "max": 39
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "IncreasedLife3",
+      "modGroups": [
+        "IncreasedLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 16
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceLife",
+      "essenceNameEn": "Lesser Essence of the Body",
+      "allowedItemClasses": [
+        "Jewellery"
+      ],
+      "textEn": "+(20—29) to maximum Life",
+      "textDe": "+(20—29) zu maximalem Leben",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 20,
+          "max": 29
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "IncreasedLife2",
+      "modGroups": [
+        "IncreasedLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 6
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceMana",
+      "essenceNameEn": "Lesser Essence of the Mind",
+      "allowedItemClasses": [
+        "Belt",
+        "Boots",
+        "Gloves",
+        "Helmet",
+        "Jewellery"
+      ],
+      "textEn": "+(25—34) to maximum Mana",
+      "textDe": "+(25—34) zu maximalem Mana",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 25,
+          "max": 34
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "IncreasedMana3",
+      "modGroups": [
+        "IncreasedMana"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 16
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceDefences",
+      "essenceNameEn": "Lesser Essence of Enhancement",
+      "allowedItemClasses": [
+        "Armour"
+      ],
+      "textEn": "(27—42)% increased Armour, Evasion and Energy Shield",
+      "textDe": "(27—42)% erhöhte Rüstung, Ausweichwert und Energieschild",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 27,
+          "max": 42
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalIncreasedArmourAndEvasionAndEnergyShield2",
+      "modGroups": [
+        "DefencesPercent"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 16
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssencePhysical",
+      "essenceNameEn": "Lesser Essence of Abrasion",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (4—6) to (7—11) Physical Damage",
+      "textDe": "Fügt (4—6) bis (7—11) physischen Schaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 4,
+          "max": 6
+        },
+        {
+          "min": 7,
+          "max": 11
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedPhysicalDamage2",
+      "modGroups": [
+        "PhysicalDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssencePhysical",
+      "essenceNameEn": "Lesser Essence of Abrasion",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (5—8) to (10—15) Physical Damage",
+      "textDe": "Fügt (5—8) bis (10—15) physischen Schaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 5,
+          "max": 8
+        },
+        {
+          "min": 10,
+          "max": 15
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedPhysicalDamageTwoHand2",
+      "modGroups": [
+        "PhysicalDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceFire",
+      "essenceNameEn": "Lesser Essence of Flames",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (4—6) to (7—10) Fire Damage",
+      "textDe": "Fügt (4—6) bis (7—10) Feuerschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 4,
+          "max": 6
+        },
+        {
+          "min": 7,
+          "max": 10
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedFireDamage2",
+      "modGroups": [
+        "FireDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceFire",
+      "essenceNameEn": "Lesser Essence of Flames",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (6—9) to (10—16) Fire Damage",
+      "textDe": "Fügt (6—9) bis (10—16) Feuerschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 6,
+          "max": 9
+        },
+        {
+          "min": 10,
+          "max": 16
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedFireDamageTwoHand2",
+      "modGroups": [
+        "FireDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceCold",
+      "essenceNameEn": "Lesser Essence of Ice",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (3—5) to (6—9) Cold Damage",
+      "textDe": "Fügt (3—5) bis (6—9) Kälteschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 3,
+          "max": 5
+        },
+        {
+          "min": 6,
+          "max": 9
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedColdDamage2",
+      "modGroups": [
+        "ColdDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceCold",
+      "essenceNameEn": "Lesser Essence of Ice",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (5—8) to (9—14) Cold Damage",
+      "textDe": "Fügt (5—8) bis (9—14) Kälteschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 5,
+          "max": 8
+        },
+        {
+          "min": 9,
+          "max": 14
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedColdDamageTwoHand2",
+      "modGroups": [
+        "ColdDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceLightning",
+      "essenceNameEn": "Lesser Essence of Electricity",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds 1 to (13—19) Lightning Damage",
+      "textDe": "Fügt 1 bis (13—19) Blitzschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        },
+        {
+          "min": 13,
+          "max": 19
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedLightningDamage2",
+      "modGroups": [
+        "LightningDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceLightning",
+      "essenceNameEn": "Lesser Essence of Electricity",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (1—2) to (19—27) Lightning Damage",
+      "textDe": "Fügt (1—2) bis (19—27) Blitzschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        },
+        {
+          "min": 19,
+          "max": 27
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LocalAddedLightningDamageTwoHand2",
+      "modGroups": [
+        "LightningDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceChaos",
+      "essenceNameEn": "Lesser Essence of Ruin",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(4—7)% to Chaos Resistance",
+      "textDe": "+(4—7)% zu Chaoswiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 4,
+          "max": 7
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "ChaosResist1",
+      "modGroups": [
+        "ChaosResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 16
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceAttack",
+      "essenceNameEn": "Lesser Essence of Battle",
+      "allowedItemClasses": [
+        "Martial Weapon"
+      ],
+      "textEn": "+(61—84) to Accuracy Rating",
+      "textDe": "+(61—84) zu Treffgenauigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 61,
+          "max": 84
+        }
+      ],
+      "tier": 1,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceCaster",
+      "essenceNameEn": "Lesser Essence of Sorcery",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(35—44)% increased Spell Damage",
+      "textDe": "(35—44)% erhöhter Zauberschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 35,
+          "max": 44
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "SpellDamageOnWeapon2",
+      "modGroups": [
+        "WeaponCasterDamagePrefix"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceCaster",
+      "essenceNameEn": "Lesser Essence of Sorcery",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(69—88)% increased Spell Damage",
+      "textDe": "(69—88)% erhöhter Zauberschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 69,
+          "max": 88
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "SpellDamageOnTwoHandWeapon2",
+      "modGroups": [
+        "WeaponCasterDamagePrefix"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceSpeed",
+      "essenceNameEn": "Lesser Essence of Haste",
+      "allowedItemClasses": [
+        "Melee Weapon"
+      ],
+      "textEn": "(11—13)% increased Attack Speed",
+      "textDe": "(11—13)% erhöhte Angriffsgeschwindigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 11,
+          "max": 13
+        }
+      ],
+      "tier": 1,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceSpeed",
+      "essenceNameEn": "Lesser Essence of Haste",
+      "allowedItemClasses": [
+        "Bow",
+        "Crossbow"
+      ],
+      "textEn": "(8—10)% increased Attack Speed",
+      "textDe": "(8—10)% erhöhte Angriffsgeschwindigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 8,
+          "max": 10
+        }
+      ],
+      "tier": 1,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceAttribute",
+      "essenceNameEn": "Lesser Essence of the Infinite",
+      "allowedItemClasses": [
+        "Equipment"
+      ],
+      "textEn": "+(9—12) to Strength, Dexterity or Intelligence",
+      "textDe": "+(9—12) zu Stärke, Geschick oder Intelligenz",
+      "generationType": null,
+      "values": [
+        {
+          "min": 9,
+          "max": 12
+        }
+      ],
+      "tier": 1,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceLife",
+      "essenceNameEn": "Essence of the Body",
+      "allowedItemClasses": [
+        "Belt",
+        "Body Armour",
+        "Helmet",
+        "Shield"
+      ],
+      "textEn": "+(85—99) to maximum Life",
+      "textDe": "+(85—99) zu maximalem Leben",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 85,
+          "max": 99
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "IncreasedLife7",
+      "modGroups": [
+        "IncreasedLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceLife",
+      "essenceNameEn": "Essence of the Body",
+      "allowedItemClasses": [
+        "Amulet",
+        "Boots",
+        "Gloves",
+        "Ring"
+      ],
+      "textEn": "+(70—84) to maximum Life",
+      "textDe": "+(70—84) zu maximalem Leben",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 70,
+          "max": 84
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "IncreasedLife6",
+      "modGroups": [
+        "IncreasedLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 38
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceMana",
+      "essenceNameEn": "Essence of the Mind",
+      "allowedItemClasses": [
+        "Belt",
+        "Boots",
+        "Gloves",
+        "Helmet"
+      ],
+      "textEn": "+(65—79) to maximum Mana",
+      "textDe": "+(65—79) zu maximalem Mana",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 65,
+          "max": 79
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "IncreasedMana6",
+      "modGroups": [
+        "IncreasedMana"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 38
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceMana",
+      "essenceNameEn": "Essence of the Mind",
+      "allowedItemClasses": [
+        "Jewellery"
+      ],
+      "textEn": "+(80—89) to maximum Mana",
+      "textDe": "+(80—89) zu maximalem Mana",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 80,
+          "max": 89
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "IncreasedMana7",
+      "modGroups": [
+        "IncreasedMana"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceDefences",
+      "essenceNameEn": "Essence of Enhancement",
+      "allowedItemClasses": [
+        "Armour"
+      ],
+      "textEn": "(56—67)% increased Armour, Evasion and Energy Shield",
+      "textDe": "(56—67)% erhöhte Rüstung, Ausweichwert und Energieschild",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 56,
+          "max": 67
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalIncreasedArmourAndEvasionAndEnergyShield4",
+      "modGroups": [
+        "DefencesPercent"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssencePhysical",
+      "essenceNameEn": "Essence of Abrasion",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (10—15) to (18—26) Physical Damage",
+      "textDe": "Fügt (10—15) bis (18—26) physischen Schaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 10,
+          "max": 15
+        },
+        {
+          "min": 18,
+          "max": 26
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedPhysicalDamage5",
+      "modGroups": [
+        "PhysicalDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssencePhysical",
+      "essenceNameEn": "Essence of Abrasion",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (14—21) to (25—37) Physical Damage",
+      "textDe": "Fügt (14—21) bis (25—37) physischen Schaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 14,
+          "max": 21
+        },
+        {
+          "min": 25,
+          "max": 37
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedPhysicalDamageTwoHand5",
+      "modGroups": [
+        "PhysicalDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceFire",
+      "essenceNameEn": "Essence of Flames",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (20—24) to (32—37) Fire Damage",
+      "textDe": "Fügt (20—24) bis (32—37) Feuerschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 20,
+          "max": 24
+        },
+        {
+          "min": 32,
+          "max": 37
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedFireDamage5",
+      "modGroups": [
+        "FireDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceFire",
+      "essenceNameEn": "Essence of Flames",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (30—37) to (45—56) Fire Damage",
+      "textDe": "Fügt (30—37) bis (45—56) Feuerschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 30,
+          "max": 37
+        },
+        {
+          "min": 45,
+          "max": 56
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedFireDamageTwoHand5",
+      "modGroups": [
+        "FireDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceCold",
+      "essenceNameEn": "Essence of Ice",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (17—20) to (26—32) Cold Damage",
+      "textDe": "Fügt (17—20) bis (26—32) Kälteschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 17,
+          "max": 20
+        },
+        {
+          "min": 26,
+          "max": 32
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedColdDamage5",
+      "modGroups": [
+        "ColdDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceCold",
+      "essenceNameEn": "Essence of Ice",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (25—30) to (38—46) Cold Damage",
+      "textDe": "Fügt (25—30) bis (38—46) Kälteschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 25,
+          "max": 30
+        },
+        {
+          "min": 38,
+          "max": 46
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedColdDamageTwoHand5",
+      "modGroups": [
+        "ColdDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceLightning",
+      "essenceNameEn": "Essence of Electricity",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (1—3) to (55—60) Lightning Damage",
+      "textDe": "Fügt (1—3) bis (55—60) Blitzschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 1,
+          "max": 3
+        },
+        {
+          "min": 55,
+          "max": 60
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedLightningDamage5",
+      "modGroups": [
+        "LightningDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceLightning",
+      "essenceNameEn": "Essence of Electricity",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (1—4) to (80—88) Lightning Damage",
+      "textDe": "Fügt (1—4) bis (80—88) Blitzschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 1,
+          "max": 4
+        },
+        {
+          "min": 80,
+          "max": 88
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalAddedLightningDamageTwoHand5",
+      "modGroups": [
+        "LightningDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceChaos",
+      "essenceNameEn": "Essence of Ruin",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(8—11)% to Chaos Resistance",
+      "textDe": "+(8—11)% zu Chaoswiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 8,
+          "max": 11
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "ChaosResist2",
+      "modGroups": [
+        "ChaosResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 30
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceAttack",
+      "essenceNameEn": "Essence of Battle",
+      "allowedItemClasses": [
+        "Martial Weapon"
+      ],
+      "textEn": "+(124—167) to Accuracy Rating",
+      "textDe": "+(124—167) zu Treffgenauigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 124,
+          "max": 167
+        }
+      ],
+      "tier": 2,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceCaster",
+      "essenceNameEn": "Essence of Sorcery",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(55—64)% increased Spell Damage",
+      "textDe": "(55—64)% erhöhter Zauberschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 55,
+          "max": 64
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "SpellDamageOnWeapon4",
+      "modGroups": [
+        "WeaponCasterDamagePrefix"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 33
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceCaster",
+      "essenceNameEn": "Essence of Sorcery",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(109—128)% increased Spell Damage",
+      "textDe": "(109—128)% erhöhter Zauberschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 109,
+          "max": 128
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "SpellDamageOnTwoHandWeapon4",
+      "modGroups": [
+        "WeaponCasterDamagePrefix"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 33
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceSpeed",
+      "essenceNameEn": "Essence of Haste",
+      "allowedItemClasses": [
+        "Melee Weapon"
+      ],
+      "textEn": "(17—19)% increased Attack Speed",
+      "textDe": "(17—19)% erhöhte Angriffsgeschwindigkeit",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 17,
+          "max": 19
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalIncreasedAttackSpeed5",
+      "modGroups": [
+        "IncreasedAttackSpeed"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 37
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceSpeed",
+      "essenceNameEn": "Essence of Haste",
+      "allowedItemClasses": [
+        "Bow",
+        "Crossbow"
+      ],
+      "textEn": "(11—13)% increased Attack Speed",
+      "textDe": "(11—13)% erhöhte Angriffsgeschwindigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 11,
+          "max": 13
+        }
+      ],
+      "tier": 2,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceAttribute",
+      "essenceNameEn": "Essence of the Infinite",
+      "allowedItemClasses": [
+        "Equipment"
+      ],
+      "textEn": "+(17—20) to Strength, Dexterity or Intelligence",
+      "textDe": "+(17—20) zu Stärke, Geschick oder Intelligenz",
+      "generationType": null,
+      "values": [
+        {
+          "min": 17,
+          "max": 20
+        }
+      ],
+      "tier": 2,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceLife",
+      "essenceNameEn": "Greater Essence of the Body",
+      "allowedItemClasses": [
+        "Belt",
+        "Body Armour",
+        "Helmet",
+        "Shield"
+      ],
+      "textEn": "+(100—119) to maximum Life",
+      "textDe": "+(100—119) zu maximalem Leben",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 100,
+          "max": 119
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "IncreasedLife8",
+      "modGroups": [
+        "IncreasedLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 54
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceLife",
+      "essenceNameEn": "Greater Essence of the Body",
+      "allowedItemClasses": [
+        "Amulet",
+        "Boots",
+        "Gloves"
+      ],
+      "textEn": "+(85—99) to maximum Life",
+      "textDe": "+(85—99) zu maximalem Leben",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 85,
+          "max": 99
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "IncreasedLife7",
+      "modGroups": [
+        "IncreasedLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceMana",
+      "essenceNameEn": "Greater Essence of the Mind",
+      "allowedItemClasses": [
+        "Belt",
+        "Boots",
+        "Gloves",
+        "Helmet"
+      ],
+      "textEn": "+(80—89) to maximum Mana",
+      "textDe": "+(80—89) zu maximalem Mana",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 80,
+          "max": 89
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "IncreasedMana7",
+      "modGroups": [
+        "IncreasedMana"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 46
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceMana",
+      "essenceNameEn": "Greater Essence of the Mind",
+      "allowedItemClasses": [
+        "Jewellery"
+      ],
+      "textEn": "+(90—104) to maximum Mana",
+      "textDe": "+(90—104) zu maximalem Mana",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 90,
+          "max": 104
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "IncreasedMana8",
+      "modGroups": [
+        "IncreasedMana"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 54
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceDefences",
+      "essenceNameEn": "Greater Essence of Enhancement",
+      "allowedItemClasses": [
+        "Armour"
+      ],
+      "textEn": "(68—79)% increased Armour, Evasion and Energy Shield",
+      "textDe": "(68—79)% erhöhte Rüstung, Ausweichwert und Energieschild",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 68,
+          "max": 79
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalIncreasedArmourAndEvasionAndEnergyShield5",
+      "modGroups": [
+        "DefencesPercent"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 54
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssencePhysical",
+      "essenceNameEn": "Greater Essence of Abrasion",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (16—24) to (28—42) Physical Damage",
+      "textDe": "Fügt (16—24) bis (28—42) physischen Schaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 16,
+          "max": 24
+        },
+        {
+          "min": 28,
+          "max": 42
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedPhysicalDamage7",
+      "modGroups": [
+        "PhysicalDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssencePhysical",
+      "essenceNameEn": "Greater Essence of Abrasion",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (23—35) to (39—59) Physical Damage",
+      "textDe": "Fügt (23—35) bis (39—59) physischen Schaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 23,
+          "max": 35
+        },
+        {
+          "min": 39,
+          "max": 59
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedPhysicalDamageTwoHand7",
+      "modGroups": [
+        "PhysicalDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceFire",
+      "essenceNameEn": "Greater Essence of Flames",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (35—44) to (56—71) Fire Damage",
+      "textDe": "Fügt (35—44) bis (56—71) Feuerschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 35,
+          "max": 44
+        },
+        {
+          "min": 56,
+          "max": 71
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedFireDamage7",
+      "modGroups": [
+        "FireDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceFire",
+      "essenceNameEn": "Greater Essence of Flames",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (56—70) to (84—107) Fire Damage",
+      "textDe": "Fügt (56—70) bis (84—107) Feuerschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 56,
+          "max": 70
+        },
+        {
+          "min": 84,
+          "max": 107
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedFireDamageTwoHand7",
+      "modGroups": [
+        "FireDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceCold",
+      "essenceNameEn": "Greater Essence of Ice",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (31—38) to (47—59) Cold Damage",
+      "textDe": "Fügt (31—38) bis (47—59) Kälteschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 31,
+          "max": 38
+        },
+        {
+          "min": 47,
+          "max": 59
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedColdDamage7",
+      "modGroups": [
+        "ColdDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceCold",
+      "essenceNameEn": "Greater Essence of Ice",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (46—57) to (70—88) Cold Damage",
+      "textDe": "Fügt (46—57) bis (70—88) Kälteschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 46,
+          "max": 57
+        },
+        {
+          "min": 70,
+          "max": 88
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedColdDamageTwoHand7",
+      "modGroups": [
+        "ColdDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceLightning",
+      "essenceNameEn": "Greater Essence of Electricity",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Adds (1—6) to (85—107) Lightning Damage",
+      "textDe": "Fügt (1—6) bis (85—107) Blitzschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 1,
+          "max": 6
+        },
+        {
+          "min": 85,
+          "max": 107
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedLightningDamage7",
+      "modGroups": [
+        "LightningDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceLightning",
+      "essenceNameEn": "Greater Essence of Electricity",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Adds (1—8) to (128—162) Lightning Damage",
+      "textDe": "Fügt (1—8) bis (128—162) Blitzschaden hinzu",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 1,
+          "max": 8
+        },
+        {
+          "min": 128,
+          "max": 162
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalAddedLightningDamageTwoHand7",
+      "modGroups": [
+        "LightningDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceChaos",
+      "essenceNameEn": "Greater Essence of Ruin",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(16—19)% to Chaos Resistance",
+      "textDe": "+(16—19)% zu Chaoswiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 16,
+          "max": 19
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "ChaosResist4",
+      "modGroups": [
+        "ChaosResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 56
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceAttack",
+      "essenceNameEn": "Greater Essence of Battle",
+      "allowedItemClasses": [
+        "Martial Weapon",
+        "Gloves",
+        "Quiver"
+      ],
+      "textEn": "+(237—346) to Accuracy Rating",
+      "textDe": "+(237—346) zu Treffgenauigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 237,
+          "max": 346
+        }
+      ],
+      "tier": 3,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceCaster",
+      "essenceNameEn": "Greater Essence of Sorcery",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(75—89)% increased Spell Damage",
+      "textDe": "(75—89)% erhöhter Zauberschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 75,
+          "max": 89
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "SpellDamageOnWeapon6",
+      "modGroups": [
+        "WeaponCasterDamagePrefix"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceCaster",
+      "essenceNameEn": "Greater Essence of Sorcery",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(149—188)% increased Spell Damage",
+      "textDe": "(149—188)% erhöhter Zauberschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 149,
+          "max": 188
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "SpellDamageOnTwoHandWeapon6",
+      "modGroups": [
+        "WeaponCasterDamagePrefix"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeed",
+      "essenceNameEn": "Greater Essence of Haste",
+      "allowedItemClasses": [
+        "Melee Weapon"
+      ],
+      "textEn": "(23—25)% increased Attack Speed",
+      "textDe": "(23—25)% erhöhte Angriffsgeschwindigkeit",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 23,
+          "max": 25
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LocalIncreasedAttackSpeed7",
+      "modGroups": [
+        "IncreasedAttackSpeed"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeed",
+      "essenceNameEn": "Greater Essence of Haste",
+      "allowedItemClasses": [
+        "Bow",
+        "Crossbow"
+      ],
+      "textEn": "(14—16)% increased Attack Speed",
+      "textDe": "(14—16)% erhöhte Angriffsgeschwindigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 14,
+          "max": 16
+        }
+      ],
+      "tier": 3,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceAttribute",
+      "essenceNameEn": "Greater Essence of the Infinite",
+      "allowedItemClasses": [
+        "Equipment"
+      ],
+      "textEn": "+(25—27) to Strength, Dexterity or Intelligence",
+      "textDe": "+(25—27) zu Stärke, Geschick oder Intelligenz",
+      "generationType": null,
+      "values": [
+        {
+          "min": 25,
+          "max": 27
+        }
+      ],
+      "tier": 3,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceLife",
+      "essenceNameEn": "Perfect Essence of the Body",
+      "allowedItemClasses": [
+        "Body Armour"
+      ],
+      "textEn": "(8—10)% increased maximum Life",
+      "textDe": "(8—10)% erhöhtes maximales Leben",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 8,
+          "max": 10
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceIncreasedLifePercent1",
+      "modGroups": [
+        "MaximumLifeIncreasePercent"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceMana",
+      "essenceNameEn": "Perfect Essence of the Mind",
+      "allowedItemClasses": [
+        "Ring"
+      ],
+      "textEn": "(4—6)% increased maximum Mana",
+      "textDe": "(4—6)% erhöhtes maximales Mana",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 4,
+          "max": 6
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceIncreasedManaPercent1",
+      "modGroups": [
+        "MaximumManaIncreasePercent"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceDefences",
+      "essenceNameEn": "Perfect Essence of Enhancement",
+      "allowedItemClasses": [
+        "Amulet"
+      ],
+      "textEn": "(20—30)% increased Global Armour, Evasion and Energy Shield",
+      "textDe": "(20—30)% erhöhte globale Rüstung, Ausweichwert und Energieschild",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 20,
+          "max": 30
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceGlobalDefences1",
+      "modGroups": [
+        "AllDefences"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssencePhysical",
+      "essenceNameEn": "Perfect Essence of Abrasion",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Gain (15—20)% of Damage as Extra Physical Damage",
+      "textDe": "Verursacht (15—20)% des Schadens als extra physischen Schaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 15,
+          "max": 20
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraPhysical1",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssencePhysical",
+      "essenceNameEn": "Perfect Essence of Abrasion",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Gain (25—33)% of Damage as Extra Physical Damage",
+      "textDe": "Verursacht (25—33)% des Schadens als extra physischen Schaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 25,
+          "max": 33
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraPhysical2H",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceFire",
+      "essenceNameEn": "Perfect Essence of Flames",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Gain (15—20)% of Damage as Extra Fire Damage",
+      "textDe": "Verursacht (15—20)% des Schadens als extra Feuerschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 15,
+          "max": 20
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraFire1",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceFire",
+      "essenceNameEn": "Perfect Essence of Flames",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Gain (25—33)% of Damage as Extra Fire Damage",
+      "textDe": "Verursacht (25—33)% des Schadens als extra Feuerschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 25,
+          "max": 33
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraFire2H",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceCold",
+      "essenceNameEn": "Perfect Essence of Ice",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Gain (15—20)% of Damage as Extra Cold Damage",
+      "textDe": "Verursacht (15—20)% des Schadens als extra Kälteschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 15,
+          "max": 20
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraCold1",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceCold",
+      "essenceNameEn": "Perfect Essence of Ice",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Gain (25—33)% of Damage as Extra Cold Damage",
+      "textDe": "Verursacht (25—33)% des Schadens als extra Kälteschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 25,
+          "max": 33
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraCold2H",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceLightning",
+      "essenceNameEn": "Perfect Essence of Electricity",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "Gain (15—20)% of Damage as Extra Lightning Damage",
+      "textDe": "Verursacht (15—20)% des Schadens als extra Blitzschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 15,
+          "max": 20
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraLightning1",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceLightning",
+      "essenceNameEn": "Perfect Essence of Electricity",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "Gain (25—33)% of Damage as Extra Lightning Damage",
+      "textDe": "Verursacht (25—33)% des Schadens als extra Blitzschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 25,
+          "max": 33
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceDamageasExtraLightning2H",
+      "modGroups": [
+        "MartialWeaponGainedDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceChaos",
+      "essenceNameEn": "Perfect Essence of Ruin",
+      "allowedItemClasses": [
+        "Body Armour"
+      ],
+      "textEn": "(10—15)% of Physical Damage from Hits taken as Chaos Damage",
+      "textDe": "Erleidet (10—15)% des physischen Schadens von Treffern als Chaosschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 10,
+          "max": 15
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssencePhysicalDamageTakenAsChaos1",
+      "modGroups": [
+        "PhysicalDamageTakenAsChaos"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceAttack",
+      "essenceNameEn": "Perfect Essence of Battle",
+      "allowedItemClasses": [
+        "One Handed Melee Weapon",
+        "Bow"
+      ],
+      "textEn": "+2 to Level of all Attack Skills",
+      "textDe": "+2 zur Stufe aller Angriffsfertigkeiten",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 2,
+          "max": 2
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceAttackSkillLevel1H1",
+      "modGroups": [
+        "IncreaseSocketedGemLevel"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceAttack",
+      "essenceNameEn": "Perfect Essence of Battle",
+      "allowedItemClasses": [
+        "Two Handed Melee Weapon",
+        "Crossbow"
+      ],
+      "textEn": "+3 to Level of all Attack Skills",
+      "textDe": "+3 zur Stufe aller Angriffsfertigkeiten",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceAttackSkillLevel2H1",
+      "modGroups": [
+        "IncreaseSocketedGemLevel"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceCaster",
+      "essenceNameEn": "Perfect Essence of Sorcery",
+      "allowedItemClasses": [
+        "Wand"
+      ],
+      "textEn": "+3 to Level of all Spell Skills",
+      "textDe": "+3 zur Stufe aller Zauber-Fertigkeiten",
+      "generationType": null,
+      "values": [
+        {
+          "min": 3,
+          "max": 3
+        }
+      ],
+      "tier": 4,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceCaster",
+      "essenceNameEn": "Perfect Essence of Sorcery",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "+5 to Level of all Spell Skills",
+      "textDe": "+5 zur Stufe aller Zauber-Fertigkeiten",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 5,
+          "max": 5
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceSpellSkillLevel2H1",
+      "modGroups": [
+        "IncreaseSocketedGemLevel"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeed",
+      "essenceNameEn": "Perfect Essence of Haste",
+      "allowedItemClasses": [
+        "Martial Weapon"
+      ],
+      "textEn": "(20—25)% chance to gain Onslaught on Killing Hits with this Weapon",
+      "textDe": "(20—25)% Chance, bei tödlichen Treffern mit dieser Waffe Ansturm zu erhalten",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 20,
+          "max": 25
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceOnslaughtonKill1",
+      "modGroups": [
+        "Onslaught"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceAttribute",
+      "essenceNameEn": "Perfect Essence of the Infinite",
+      "allowedItemClasses": [
+        "Amulet"
+      ],
+      "textEn": "(7—10)% increased Strength, Dexterity or Intelligence",
+      "textDe": "(7—10)% erhöhte Stärke, Geschick oder Intelligenz",
+      "generationType": null,
+      "values": [
+        {
+          "min": 7,
+          "max": 10
+        }
+      ],
+      "tier": 4,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceCritical",
+      "essenceNameEn": "Lesser Essence of Seeking",
+      "allowedItemClasses": [
+        "Martial Weapon"
+      ],
+      "textEn": "+(1.51—2.1)% to Critical Hit Chance",
+      "textDe": "+(1.51—2.1)% zu kritischer Trefferchance",
+      "generationType": null,
+      "values": [
+        {
+          "min": 1.51,
+          "max": 2.1
+        }
+      ],
+      "tier": 1,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceCritical",
+      "essenceNameEn": "Lesser Essence of Seeking",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(34—39)% increased Critical Hit Chance for Spells",
+      "textDe": "(34—39)% erhöhte kritische Trefferchance von Zaubern",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 34,
+          "max": 39
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "SpellCriticalStrikeChance2",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 21
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceCritical",
+      "essenceNameEn": "Lesser Essence of Seeking",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(50—59)% increased Critical Hit Chance for Spells",
+      "textDe": "(50—59)% erhöhte kritische Trefferchance von Zaubern",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 50,
+          "max": 59
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "SpellCriticalStrikeChanceTwoHand2",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 21
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceCritical",
+      "essenceNameEn": "Essence of Seeking",
+      "allowedItemClasses": [
+        "Martial Weapon"
+      ],
+      "textEn": "+(2.11—2.7)% to Critical Hit Chance",
+      "textDe": "+(2.11—2.7)% zu kritischer Trefferchance",
+      "generationType": null,
+      "values": [
+        {
+          "min": 2.11,
+          "max": 2.7
+        }
+      ],
+      "tier": 2,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceCritical",
+      "essenceNameEn": "Essence of Seeking",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(40—46)% increased Critical Hit Chance for Spells",
+      "textDe": "(40—46)% erhöhte kritische Trefferchance von Zaubern",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 40,
+          "max": 46
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "SpellCriticalStrikeChance3",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 28
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceCritical",
+      "essenceNameEn": "Essence of Seeking",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(60—69)% increased Critical Hit Chance for Spells",
+      "textDe": "(60—69)% erhöhte kritische Trefferchance von Zaubern",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 60,
+          "max": 69
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "SpellCriticalStrikeChanceTwoHand3",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 28
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceCritical",
+      "essenceNameEn": "Greater Essence of Seeking",
+      "allowedItemClasses": [
+        "Martial Weapon"
+      ],
+      "textEn": "+(3.11—3.8)% to Critical Hit Chance",
+      "textDe": "+(3.11—3.8)% zu kritischer Trefferchance",
+      "generationType": null,
+      "values": [
+        {
+          "min": 3.11,
+          "max": 3.8
+        }
+      ],
+      "tier": 3,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceCritical",
+      "essenceNameEn": "Greater Essence of Seeking",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(47—53)% increased Critical Hit Chance for Spells",
+      "textDe": "(47—53)% erhöhte kritische Trefferchance von Zaubern",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 47,
+          "max": 53
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "SpellCriticalStrikeChance4",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 41
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceCritical",
+      "essenceNameEn": "Greater Essence of Seeking",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(70—79)% increased Critical Hit Chance for Spells",
+      "textDe": "(70—79)% erhöhte kritische Trefferchance von Zaubern",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 70,
+          "max": 79
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "SpellCriticalStrikeChanceTwoHand4",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 41
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceCritical",
+      "essenceNameEn": "Perfect Essence of Seeking",
+      "allowedItemClasses": [
+        "Body Armour"
+      ],
+      "textEn": "Hits against you have (40—50)% reduced Critical Damage Bonus",
+      "textDe": "Treffer gegen Euch haben (40—50)% verringerten Bonus für kritische Treffer",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 40,
+          "max": 50
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceReducedCriticalDamageAgainstYou1",
+      "modGroups": [
+        "ReducedCriticalStrikeDamageTaken"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Helmet"
+      ],
+      "textEn": "+1 to Level of all Minion Skills",
+      "textDe": "+1 zur Stufe aller Kreaturen-Fertigkeiten",
+      "generationType": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "tier": 2,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Body Armour"
+      ],
+      "textEn": "(64—97) to (98—145) Physical Thorns damage",
+      "textDe": "(64—97) bis (98—145) physischer Dornenschaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 64,
+          "max": 97
+        },
+        {
+          "min": 98,
+          "max": 145
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "AttackerTakesDamage6",
+      "modGroups": [
+        "Thorns"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 63
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Gloves"
+      ],
+      "textEn": "(25—29)% increased Critical Damage Bonus",
+      "textDe": "(25—29)% erhöhter Bonus für kritische Treffer",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 25,
+          "max": 29
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "CriticalMultiplier4",
+      "modGroups": [
+        "CriticalStrikeMultiplier"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 45
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Boots"
+      ],
+      "textEn": "30% increased Movement Speed",
+      "textDe": "30% erhöhte Bewegungsgeschwindigkeit",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 30,
+          "max": 30
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "MovementVelocity5",
+      "modGroups": [
+        "MovementVelocity"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 65
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Ring"
+      ],
+      "textEn": "(50—59)% increased Mana Regeneration Rate",
+      "textDe": "(50—59)% erhöhte Manaregenerations-Rate",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 50,
+          "max": 59
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "ManaRegeneration5",
+      "modGroups": [
+        "ManaRegeneration"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 55
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Amulet"
+      ],
+      "textEn": "(19—21)% of Damage taken Recouped as Life",
+      "textDe": "(19—21)% des erlittenen Schadens werden als Leben wiedergewonnen",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 19,
+          "max": 21
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "DamageTakenGainedAsLife4_",
+      "modGroups": [
+        "DamageTakenGainedAsLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 68
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Belt"
+      ],
+      "textEn": "+(254—304) to Stun Threshold",
+      "textDe": "+(254—304) zur Betäubungsschwelle",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 254,
+          "max": 304
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "StunThreshold10",
+      "modGroups": [
+        "StunThreshold"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Shield"
+      ],
+      "textEn": "(20—24)% increased Block chance",
+      "textDe": "(20—24)% erhöhte Blockchance",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 20,
+          "max": 24
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LocalBlockChance2",
+      "modGroups": [
+        "IncreasedShieldBlockPercentage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 33
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Quiver"
+      ],
+      "textEn": "(43—50)% increased Damage with Bow Skills",
+      "textDe": "(43—50)% erhöhter Schaden mit Bogen-Fertigkeiten",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 43,
+          "max": 50
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "DamageWithBows5",
+      "modGroups": [
+        "DamageWithWeaponTypeSkill"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHysteria",
+      "essenceNameEn": "Essence of Hysteria",
+      "allowedItemClasses": [
+        "Focus"
+      ],
+      "textEn": "(20—23)% increased Energy Shield Recharge Rate",
+      "textDe": "(20—23)% erhöhte Energieschild-Wiederaufladungsrate",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 20,
+          "max": 23
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "EnergyShieldRechargeRate5______",
+      "modGroups": [
+        "EnergyShieldRegeneration"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 66
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceDelirium",
+      "essenceNameEn": "Essence of Delirium",
+      "allowedItemClasses": [
+        "Body Armour"
+      ],
+      "textEn": "Allocates a random Notable Passive Skill",
+      "textDe": "Weist per Zufall eine bedeutende passive Fertigkeit zu",
+      "generationType": null,
+      "values": [],
+      "tier": 2,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceHorror",
+      "essenceNameEn": "Essence of Horror",
+      "allowedItemClasses": [
+        "Gloves",
+        "Boots"
+      ],
+      "textEn": "60% increased effect of Socketed Augment Items",
+      "textDe": "60% erhöhte Wirkung von eingefassten Gegenständen",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 60,
+          "max": 60
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "EssenceLocalRuneAndSoulCoreEffect1",
+      "modGroups": [
+        "SoulCore"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 1
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceInsanity",
+      "essenceNameEn": "Essence of Insanity",
+      "allowedItemClasses": [
+        "Belt"
+      ],
+      "textEn": "On Corruption, Item gains two Enchantments",
+      "textDe": "Bei Verderbung erhält der Gegenstand zwei Verzauberungen",
+      "generationType": "suffix",
+      "values": [],
+      "tier": 2,
+      "technicalModId": "EssenceCorruptForTwoEnchantments1",
+      "modGroups": [
+        "CorruptionIntertactions"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 1
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceAbyss",
+      "essenceNameEn": "Essence of the Abyss",
+      "allowedItemClasses": [
+        "Equipment"
+      ],
+      "textEn": "Mark of the Abyssal Lord",
+      "textDe": "Mal des Abgründigen Fürsten",
+      "generationType": null,
+      "values": [],
+      "tier": 2,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyCorruptedEssenceBreach",
+      "essenceNameEn": "Essence of the Breach",
+      "allowedItemClasses": [
+        "Jewellery"
+      ],
+      "textEn": "+20% to Maximum Quality",
+      "textDe": "+20% zur maximalen Qualität",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 20,
+          "max": 20
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "EssenceBreach",
+      "modGroups": [
+        "LocalMaximumQuality"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 1
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceFireResist",
+      "essenceNameEn": "Lesser Essence of Insulation",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(11—15)% to Fire Resistance",
+      "textDe": "+(11—15)% zu Feuerwiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 11,
+          "max": 15
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "FireResist2",
+      "modGroups": [
+        "FireResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 12
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceFireResist",
+      "essenceNameEn": "Essence of Insulation",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(21—25)% to Fire Resistance",
+      "textDe": "+(21—25)% zu Feuerwiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 21,
+          "max": 25
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "FireResist4",
+      "modGroups": [
+        "FireResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 36
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceFireResist",
+      "essenceNameEn": "Greater Essence of Insulation",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(31—35)% to Fire Resistance",
+      "textDe": "+(31—35)% zu Feuerwiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 31,
+          "max": 35
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "FireResist6",
+      "modGroups": [
+        "FireResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceFireResist",
+      "essenceNameEn": "Perfect Essence of Insulation",
+      "allowedItemClasses": [
+        "Belt"
+      ],
+      "textEn": "(26—30)% of Fire Damage taken Recouped as Life",
+      "textDe": "(26—30)% des erlittenen Feuerschadens werden als Leben wiedergewonnen",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 26,
+          "max": 30
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceFireRecoupLife1",
+      "modGroups": [
+        "FireDamageTakenRecoupedAsLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceColdResist",
+      "essenceNameEn": "Lesser Essence of Thawing",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(11—15)% to Cold Resistance",
+      "textDe": "+(11—15)% zu Kältewiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 11,
+          "max": 15
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "ColdResist2",
+      "modGroups": [
+        "ColdResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 14
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceColdResist",
+      "essenceNameEn": "Essence of Thawing",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(21—25)% to Cold Resistance",
+      "textDe": "+(21—25)% zu Kältewiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 21,
+          "max": 25
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "ColdResist4",
+      "modGroups": [
+        "ColdResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 38
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceColdResist",
+      "essenceNameEn": "Greater Essence of Thawing",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(31—35)% to Cold Resistance",
+      "textDe": "+(31—35)% zu Kältewiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 31,
+          "max": 35
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "ColdResist6",
+      "modGroups": [
+        "ColdResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceColdResist",
+      "essenceNameEn": "Perfect Essence of Thawing",
+      "allowedItemClasses": [
+        "Helmet"
+      ],
+      "textEn": "(26—30)% of Cold Damage taken Recouped as Life",
+      "textDe": "(26—30)% des erlittenen Kälteschadens werden als Leben wiedergewonnen",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 26,
+          "max": 30
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceColdRecoupLife1",
+      "modGroups": [
+        "ColdDamageTakenRecoupedAsLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceLightningResist",
+      "essenceNameEn": "Lesser Essence of Grounding",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(11—15)% to Lightning Resistance",
+      "textDe": "+(11—15)% zu Blitzwiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 11,
+          "max": 15
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "LightningResist2",
+      "modGroups": [
+        "LightningResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 13
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceLightningResist",
+      "essenceNameEn": "Essence of Grounding",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(21—25)% to Lightning Resistance",
+      "textDe": "+(21—25)% zu Blitzwiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 21,
+          "max": 25
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "LightningResist4",
+      "modGroups": [
+        "LightningResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 37
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceLightningResist",
+      "essenceNameEn": "Greater Essence of Grounding",
+      "allowedItemClasses": [
+        "Armour",
+        "Belt",
+        "Jewellery"
+      ],
+      "textEn": "+(31—35)% to Lightning Resistance",
+      "textDe": "+(31—35)% zu Blitzwiderstand",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 31,
+          "max": 35
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "LightningResist6",
+      "modGroups": [
+        "LightningResistance"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceLightningResist",
+      "essenceNameEn": "Perfect Essence of Grounding",
+      "allowedItemClasses": [
+        "Gloves"
+      ],
+      "textEn": "(26—30)% of Lightning Damage taken Recouped as Life",
+      "textDe": "(26—30)% des erlittenen Blitzschadens werden als Leben wiedergewonnen",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 26,
+          "max": 30
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceLightningRecoupLife1",
+      "modGroups": [
+        "LightningDamageTakenRecoupedAsLife"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceSpeedCaster",
+      "essenceNameEn": "Lesser Essence of Alacrity",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(13—16)% increased Cast Speed",
+      "textDe": "(13—16)% erhöhte Zaubergeschwindigkeit",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 13,
+          "max": 16
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "IncreasedCastSpeed2",
+      "modGroups": [
+        "IncreasedCastSpeed"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 15
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceSpeedCaster",
+      "essenceNameEn": "Lesser Essence of Alacrity",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(20—25)% increased Cast Speed",
+      "textDe": "(20—25)% erhöhte Zaubergeschwindigkeit",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 20,
+          "max": 25
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "IncreasedCastSpeedTwoHand2",
+      "modGroups": [
+        "IncreasedCastSpeed"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 15
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceSpeedCaster",
+      "essenceNameEn": "Essence of Alacrity",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(17—20)% increased Cast Speed",
+      "textDe": "(17—20)% erhöhte Zaubergeschwindigkeit",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 17,
+          "max": 20
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "IncreasedCastSpeed3",
+      "modGroups": [
+        "IncreasedCastSpeed"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 30
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceSpeedCaster",
+      "essenceNameEn": "Essence of Alacrity",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(26—31)% increased Cast Speed",
+      "textDe": "(26—31)% erhöhte Zaubergeschwindigkeit",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 26,
+          "max": 31
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "IncreasedCastSpeedTwoHand3",
+      "modGroups": [
+        "IncreasedCastSpeed"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 30
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeedCaster",
+      "essenceNameEn": "Greater Essence of Alacrity",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(25—28)% increased Cast Speed",
+      "textDe": "(25—28)% erhöhte Zaubergeschwindigkeit",
+      "generationType": null,
+      "values": [
+        {
+          "min": 25,
+          "max": 28
+        }
+      ],
+      "tier": 3,
+      "technicalModId": null,
+      "modGroups": [],
+      "essenceOnly": false,
+      "requiredLevel": null
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceSpeedCaster",
+      "essenceNameEn": "Greater Essence of Alacrity",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(38—43)% increased Cast Speed",
+      "textDe": "(38—43)% erhöhte Zaubergeschwindigkeit",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 38,
+          "max": 43
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "IncreasedCastSpeedTwoHand5",
+      "modGroups": [
+        "IncreasedCastSpeed"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeedCaster",
+      "essenceNameEn": "Perfect Essence of Alacrity",
+      "allowedItemClasses": [
+        "Focus",
+        "Wand"
+      ],
+      "textEn": "(18—20)% increased Mana Cost Efficiency",
+      "textDe": "(18—20)% erhöhte Manakosteneffizienz",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 18,
+          "max": 20
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceManaCostReduction",
+      "modGroups": [
+        "ManaCostEfficiency"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceSpeedCaster",
+      "essenceNameEn": "Perfect Essence of Alacrity",
+      "allowedItemClasses": [
+        "Staff"
+      ],
+      "textEn": "(28—32)% increased Mana Cost Efficiency",
+      "textDe": "(28—32)% erhöhte Manakosteneffizienz",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 28,
+          "max": 32
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceManaCostReduction2H",
+      "modGroups": [
+        "ManaCostEfficiency"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceRarity",
+      "essenceNameEn": "Lesser Essence of Opulence",
+      "allowedItemClasses": [
+        "Boots",
+        "Gloves",
+        "Helmet",
+        "Jewellery"
+      ],
+      "textEn": "(6—10)% increased Rarity of Items found",
+      "textDe": "(6—10)% erhöhte Seltenheit gefundener Gegenstände",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 6,
+          "max": 10
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "ItemFoundRarityIncrease1",
+      "modGroups": [
+        "ItemFoundRarityIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 3
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceRarity",
+      "essenceNameEn": "Essence of Opulence",
+      "allowedItemClasses": [
+        "Boots",
+        "Gloves",
+        "Helmet",
+        "Jewellery"
+      ],
+      "textEn": "(11—14)% increased Rarity of Items found",
+      "textDe": "(11—14)% erhöhte Seltenheit gefundener Gegenstände",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 11,
+          "max": 14
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "ItemFoundRarityIncrease2",
+      "modGroups": [
+        "ItemFoundRarityIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 24
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceRarity",
+      "essenceNameEn": "Greater Essence of Opulence",
+      "allowedItemClasses": [
+        "Boots",
+        "Gloves",
+        "Helmet",
+        "Jewellery"
+      ],
+      "textEn": "(15—18)% increased Rarity of Items found",
+      "textDe": "(15—18)% erhöhte Seltenheit gefundener Gegenstände",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 15,
+          "max": 18
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "ItemFoundRarityIncrease3",
+      "modGroups": [
+        "ItemFoundRarityIncrease"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 40
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceRarity",
+      "essenceNameEn": "Perfect Essence of Opulence",
+      "allowedItemClasses": [
+        "Gloves"
+      ],
+      "textEn": "(10—15)% increased Quantity of Gold Dropped by Slain Enemies",
+      "textDe": "(10—15)% erhöhte Menge fallen gelassenen Goldes von getöteten Gegnern",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 10,
+          "max": 15
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceGoldDropped1",
+      "modGroups": [
+        "EssenceGoldDropped"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyLesserEssenceAlly",
+      "essenceNameEn": "Lesser Essence of Command",
+      "allowedItemClasses": [
+        "Sceptre"
+      ],
+      "textEn": "Allies in your Presence deal (35—44)% increased Damage",
+      "textDe": "Verbündete in Eurer Präsenz verursachen (35—44)% erhöhten Schaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 35,
+          "max": 44
+        }
+      ],
+      "tier": 1,
+      "technicalModId": "NearbyAlliesAllDamage2",
+      "modGroups": [
+        "AllDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 8
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyEssenceAlly",
+      "essenceNameEn": "Essence of Command",
+      "allowedItemClasses": [
+        "Sceptre"
+      ],
+      "textEn": "Allies in your Presence deal (55—64)% increased Damage",
+      "textDe": "Verbündete in Eurer Präsenz verursachen (55—64)% erhöhten Schaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 55,
+          "max": 64
+        }
+      ],
+      "tier": 2,
+      "technicalModId": "NearbyAlliesAllDamage4",
+      "modGroups": [
+        "AllDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 33
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyGreaterEssenceAlly",
+      "essenceNameEn": "Greater Essence of Command",
+      "allowedItemClasses": [
+        "Sceptre"
+      ],
+      "textEn": "Allies in your Presence deal (75—89)% increased Damage",
+      "textDe": "Verbündete in Eurer Präsenz verursachen (75—89)% erhöhten Schaden",
+      "generationType": "prefix",
+      "values": [
+        {
+          "min": 75,
+          "max": 89
+        }
+      ],
+      "tier": 3,
+      "technicalModId": "NearbyAlliesAllDamage6",
+      "modGroups": [
+        "AllDamage"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 60
+    },
+    {
+      "essenceId": "Metadata/Items/Currency/CurrencyPerfectEssenceAlly",
+      "essenceNameEn": "Perfect Essence of Command",
+      "allowedItemClasses": [
+        "Sceptre"
+      ],
+      "textEn": "Aura Skills have (15—20)% increased Magnitudes",
+      "textDe": "Aura-Fertigkeiten haben (15—20)% erhöhte Magnituden",
+      "generationType": "suffix",
+      "values": [
+        {
+          "min": 15,
+          "max": 20
+        }
+      ],
+      "tier": 4,
+      "technicalModId": "EssenceAuraEffect1",
+      "modGroups": [
+        "AuraEffect"
+      ],
+      "essenceOnly": false,
+      "requiredLevel": 72
+    }
+  ]
+}

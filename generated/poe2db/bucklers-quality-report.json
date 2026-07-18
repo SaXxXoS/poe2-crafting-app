@@ -1,0 +1,2174 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:51:09.596Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Buckler.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Buckler DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 52,
+    "regularUsableBases": 23,
+    "excludedBases": 29,
+    "distinctPrefixPools": 2,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex2Verisium",
+        "nameEn": "Runeforged Wooden Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex3Verisium",
+        "nameEn": "Runeforged Plated Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex4Verisium",
+        "nameEn": "Runeforged Iron Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex5Verisium",
+        "nameEn": "Runeforged Ridged Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex6Verisium",
+        "nameEn": "Runeforged Spiked Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex7Verisium",
+        "nameEn": "Runeforged Ringed Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex8Verisium",
+        "nameEn": "Runeforged Edged Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex9Verisium",
+        "nameEn": "Runeforged Laminate Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex10Verisium",
+        "nameEn": "Runeforged Pearl Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex11Verisium",
+        "nameEn": "Runeforged Ornate Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex6CruelVerisium",
+        "nameEn": "Runeforged Spikeward Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex7CruelVerisium",
+        "nameEn": "Runeforged Jingling Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex8CruelVerisium",
+        "nameEn": "Runeforged Bladeguard Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex3EndgameVerisium",
+        "nameEn": "Runeforged Ornate Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex6EndgameVerisium",
+        "nameEn": "Runeforged Gutspike Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex9EndgameVerisium",
+        "nameEn": "Runeforged Desert Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex1VerisiumUnique1",
+        "nameEn": "Runemastered Leather Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex2VerisiumUnique1",
+        "nameEn": "Runemastered Wooden Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex3VerisiumUnique1",
+        "nameEn": "Runemastered Plated Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex4VerisiumUnique1",
+        "nameEn": "Runemastered Iron Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex5VerisiumUnique1",
+        "nameEn": "Runemastered Ridged Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex6VerisiumUnique1",
+        "nameEn": "Runemastered Spiked Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex11VerisiumUnique1",
+        "nameEn": "Runemastered Ornate Buckler"
+      },
+      {
+        "id": "Metadata/Items/Armours/Shields/FourShieldDex12VerisiumUnique1",
+        "nameEn": "Runemastered Array Buckler"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex2Verisium",
+        "baseNameEn": "Runeforged Wooden Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex3Verisium",
+        "baseNameEn": "Runeforged Plated Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex4Verisium",
+        "baseNameEn": "Runeforged Iron Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex5Verisium",
+        "baseNameEn": "Runeforged Ridged Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex6Verisium",
+        "baseNameEn": "Runeforged Spiked Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex7Verisium",
+        "baseNameEn": "Runeforged Ringed Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex8Verisium",
+        "baseNameEn": "Runeforged Edged Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex9Verisium",
+        "baseNameEn": "Runeforged Laminate Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex10Verisium",
+        "baseNameEn": "Runeforged Pearl Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex11Verisium",
+        "baseNameEn": "Runeforged Ornate Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex6CruelVerisium",
+        "baseNameEn": "Runeforged Spikeward Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex7CruelVerisium",
+        "baseNameEn": "Runeforged Jingling Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex8CruelVerisium",
+        "baseNameEn": "Runeforged Bladeguard Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex3EndgameVerisium",
+        "baseNameEn": "Runeforged Ornate Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex6EndgameVerisium",
+        "baseNameEn": "Runeforged Gutspike Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex9EndgameVerisium",
+        "baseNameEn": "Runeforged Desert Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex1VerisiumUnique1",
+        "baseNameEn": "Runemastered Leather Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex2VerisiumUnique1",
+        "baseNameEn": "Runemastered Wooden Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex3VerisiumUnique1",
+        "baseNameEn": "Runemastered Plated Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex4VerisiumUnique1",
+        "baseNameEn": "Runemastered Iron Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex5VerisiumUnique1",
+        "baseNameEn": "Runemastered Ridged Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex6VerisiumUnique1",
+        "baseNameEn": "Runemastered Spiked Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex11VerisiumUnique1",
+        "baseNameEn": "Runemastered Ornate Buckler",
+        "textEn": "Grants Skill: Parry"
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Shields/FourShieldDex12VerisiumUnique1",
+        "baseNameEn": "Runemastered Array Buckler",
+        "textEn": "Grants Skill: Parry"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex1Verisium",
+      "nameEn": "Runeforged Leather Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex2Verisium",
+      "nameEn": "Runeforged Wooden Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3Verisium",
+      "nameEn": "Runeforged Plated Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex4Verisium",
+      "nameEn": "Runeforged Iron Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex5Verisium",
+      "nameEn": "Runeforged Ridged Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6Verisium",
+      "nameEn": "Runeforged Spiked Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex7Verisium",
+      "nameEn": "Runeforged Ringed Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8Verisium",
+      "nameEn": "Runeforged Edged Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex9Verisium",
+      "nameEn": "Runeforged Laminate Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex10Verisium",
+      "nameEn": "Runeforged Pearl Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex11Verisium",
+      "nameEn": "Runeforged Ornate Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex12Verisium",
+      "nameEn": "Runeforged Array Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex13Verisium",
+      "nameEn": "Runeforged Aegis Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6CruelVerisium",
+      "nameEn": "Runeforged Spikeward Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex7CruelVerisium",
+      "nameEn": "Runeforged Jingling Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8CruelVerisium",
+      "nameEn": "Runeforged Bladeguard Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3EndgameVerisium",
+      "nameEn": "Runeforged Ornate Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6EndgameVerisium",
+      "nameEn": "Runeforged Gutspike Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8EndgameVerisium",
+      "nameEn": "Runeforged Ancient Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex9EndgameVerisium",
+      "nameEn": "Runeforged Desert Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex1VerisiumUnique1",
+      "nameEn": "Runemastered Leather Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex2VerisiumUnique1",
+      "nameEn": "Runemastered Wooden Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3VerisiumUnique1",
+      "nameEn": "Runemastered Plated Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex4VerisiumUnique1",
+      "nameEn": "Runemastered Iron Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex5VerisiumUnique1",
+      "nameEn": "Runemastered Ridged Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6VerisiumUnique1",
+      "nameEn": "Runemastered Spiked Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex11VerisiumUnique1",
+      "nameEn": "Runemastered Ornate Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex12VerisiumUnique1",
+      "nameEn": "Runemastered Array Buckler",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Venerable Defender",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [
+    {
+      "modId": "poe2db:e03b184f3760c0d18aa2",
+      "nameEn": "Agile",
+      "textDe": "+(11—18) zu Ausweichwert",
+      "allowedBaseCount": 51
+    },
+    {
+      "modId": "poe2db:dae5e3a4045f5b541f99",
+      "nameEn": "Dancer's",
+      "textDe": "+(19—46) zu Ausweichwert",
+      "allowedBaseCount": 51
+    },
+    {
+      "modId": "poe2db:483401e90c72b8d7e56d",
+      "nameEn": "Acrobat's",
+      "textDe": "+(47—66) zu Ausweichwert",
+      "allowedBaseCount": 51
+    },
+    {
+      "modId": "poe2db:f8ae80934e4b03103b06",
+      "nameEn": "Fleet",
+      "textDe": "+(67—87) zu Ausweichwert",
+      "allowedBaseCount": 51
+    },
+    {
+      "modId": "poe2db:24016fa127c5af8afb42",
+      "nameEn": "Blurred",
+      "textDe": "+(88—116) zu Ausweichwert",
+      "allowedBaseCount": 51
+    }
+  ],
+  "restrictedModFinding": "At least one imported modifier is not available to every imported Buckler base.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex1",
+      "nameEn": "Leather Buckler",
+      "nameDe": "Leder-Faustschild",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex2",
+      "nameEn": "Wooden Buckler",
+      "nameDe": "Hölzerner Faustschild",
+      "dropLevel": 5,
+      "requirements": {
+        "level": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex2",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3",
+      "nameEn": "Plated Buckler",
+      "nameDe": "Beschlagener Faustschild",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 0,
+        "dexterity": 18,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex3",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex4",
+      "nameEn": "Iron Buckler",
+      "nameDe": "Eisenfaustschild",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 25,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex4",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex5",
+      "nameEn": "Ridged Buckler",
+      "nameDe": "Gezahnter Faustschild",
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 0,
+        "dexterity": 33,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex5",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6",
+      "nameEn": "Spiked Buckler",
+      "nameDe": "Stachel-Faustschild",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 0,
+        "dexterity": 38,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex6",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex7",
+      "nameEn": "Ringed Buckler",
+      "nameDe": "Ring-Faustschild",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 48,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "vaal_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex7",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8",
+      "nameEn": "Edged Buckler",
+      "nameDe": "Kantiger Faustschild",
+      "dropLevel": 39,
+      "requirements": {
+        "level": 39,
+        "strength": 0,
+        "dexterity": 56,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "vaal_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex8",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex9",
+      "nameEn": "Laminate Buckler",
+      "nameDe": "Laminierter Faustschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 64,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "karui_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex9",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex10",
+      "nameEn": "Pearl Buckler",
+      "nameDe": "Perlen-Faustschild",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 0,
+        "dexterity": 71,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "karui_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex10",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex11",
+      "nameEn": "Ornate Buckler",
+      "nameDe": "Verzierter Faustschild",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 74,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex11",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex12",
+      "nameEn": "Array Buckler",
+      "nameDe": "Geschmückter Faustschild",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 78,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex12",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex13",
+      "nameEn": "Aegis Buckler",
+      "nameDe": "Ägis-Faustschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 91,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex13",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex2Cruel",
+      "nameEn": "Oak Buckler",
+      "nameDe": "Eichen-Faustschild",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 64,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex2Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3Cruel",
+      "nameEn": "Painted Buckler",
+      "nameDe": "Bemalter Faustschild",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 0,
+        "dexterity": 69,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex3Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex5Cruel",
+      "nameEn": "Coiled Buckler",
+      "nameDe": "Aufgewickelter Faustschild",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 0,
+        "dexterity": 73,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex5Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6Cruel",
+      "nameEn": "Spikeward Buckler",
+      "nameDe": "Stachelspitze-Faustschild",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 0,
+        "dexterity": 77,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex6Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex7Cruel",
+      "nameEn": "Jingling Buckler",
+      "nameDe": "Klirrender Faustschild",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 0,
+        "dexterity": 83,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex7Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8Cruel",
+      "nameEn": "Bladeguard Buckler",
+      "nameDe": "Klingenschutz-Faustschild",
+      "dropLevel": 61,
+      "requirements": {
+        "level": 61,
+        "strength": 0,
+        "dexterity": 86,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex8Cruel",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3Endgame",
+      "nameEn": "Ornate Buckler",
+      "nameDe": "Verzierter Faustschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 91,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex3Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6Endgame",
+      "nameEn": "Gutspike Buckler",
+      "nameDe": "Aufspießender Faustschild",
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 0,
+        "dexterity": 99,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex6Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8Endgame",
+      "nameEn": "Ancient Buckler",
+      "nameDe": "Uralter Faustschild",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 0,
+        "dexterity": 107,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex8Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex9Endgame",
+      "nameEn": "Desert Buckler",
+      "nameDe": "Wüsten-Faustschild",
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 0,
+        "dexterity": 115,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "karui_basetype",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex9Endgame",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex1Verisium",
+      "nameEn": "Runeforged Leather Buckler",
+      "nameDe": "Runengeschmiedeter Leder-Faustschild",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex1Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex2Verisium",
+      "nameEn": "Runeforged Wooden Buckler",
+      "nameDe": null,
+      "dropLevel": 5,
+      "requirements": {
+        "level": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex2Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3Verisium",
+      "nameEn": "Runeforged Plated Buckler",
+      "nameDe": null,
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 0,
+        "dexterity": 18,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex3Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex4Verisium",
+      "nameEn": "Runeforged Iron Buckler",
+      "nameDe": null,
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 25,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex4Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex5Verisium",
+      "nameEn": "Runeforged Ridged Buckler",
+      "nameDe": null,
+      "dropLevel": 22,
+      "requirements": {
+        "level": 22,
+        "strength": 0,
+        "dexterity": 33,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex5Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6Verisium",
+      "nameEn": "Runeforged Spiked Buckler",
+      "nameDe": null,
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 0,
+        "dexterity": 38,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex6Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex7Verisium",
+      "nameEn": "Runeforged Ringed Buckler",
+      "nameDe": null,
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 48,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "vaal_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex7Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8Verisium",
+      "nameEn": "Runeforged Edged Buckler",
+      "nameDe": null,
+      "dropLevel": 39,
+      "requirements": {
+        "level": 39,
+        "strength": 0,
+        "dexterity": 56,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "vaal_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex8Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex9Verisium",
+      "nameEn": "Runeforged Laminate Buckler",
+      "nameDe": null,
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 64,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex9Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex10Verisium",
+      "nameEn": "Runeforged Pearl Buckler",
+      "nameDe": null,
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 0,
+        "dexterity": 71,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex10Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex11Verisium",
+      "nameEn": "Runeforged Ornate Buckler",
+      "nameDe": null,
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 74,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex11Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex12Verisium",
+      "nameEn": "Runeforged Array Buckler",
+      "nameDe": "Runengeschmiedeter Geschmückter Faustschild",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 78,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex12Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex13Verisium",
+      "nameEn": "Runeforged Aegis Buckler",
+      "nameDe": "Runengeschmiedeter Ägis-Faustschild",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 91,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex13Verisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6CruelVerisium",
+      "nameEn": "Runeforged Spikeward Buckler",
+      "nameDe": null,
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 0,
+        "dexterity": 77,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex6CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex7CruelVerisium",
+      "nameEn": "Runeforged Jingling Buckler",
+      "nameDe": null,
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 0,
+        "dexterity": 83,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex7CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8CruelVerisium",
+      "nameEn": "Runeforged Bladeguard Buckler",
+      "nameDe": null,
+      "dropLevel": 61,
+      "requirements": {
+        "level": 61,
+        "strength": 0,
+        "dexterity": 86,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex8CruelVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3EndgameVerisium",
+      "nameEn": "Runeforged Ornate Buckler",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 91,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex3EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6EndgameVerisium",
+      "nameEn": "Runeforged Gutspike Buckler",
+      "nameDe": null,
+      "dropLevel": 70,
+      "requirements": {
+        "level": 70,
+        "strength": 0,
+        "dexterity": 99,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex6EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex8EndgameVerisium",
+      "nameEn": "Runeforged Ancient Buckler",
+      "nameDe": "Runengeschmiedeter Uralter Faustschild",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 0,
+        "dexterity": 107,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex8EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex9EndgameVerisium",
+      "nameEn": "Runeforged Desert Buckler",
+      "nameDe": null,
+      "dropLevel": 80,
+      "requirements": {
+        "level": 80,
+        "strength": 0,
+        "dexterity": 115,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex9EndgameVerisium",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex1VerisiumUnique1",
+      "nameEn": "Runemastered Leather Buckler",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex2VerisiumUnique1",
+      "nameEn": "Runemastered Wooden Buckler",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex2VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex3VerisiumUnique1",
+      "nameEn": "Runemastered Plated Buckler",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "ezomyte_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex3VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex4VerisiumUnique1",
+      "nameEn": "Runemastered Iron Buckler",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex4VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex5VerisiumUnique1",
+      "nameEn": "Runemastered Ridged Buckler",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 58,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex5VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex6VerisiumUnique1",
+      "nameEn": "Runemastered Spiked Buckler",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 58,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "maraketh_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex6VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex11VerisiumUnique1",
+      "nameEn": "Runemastered Ornate Buckler",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 78,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex11VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldDex12VerisiumUnique1",
+      "nameEn": "Runemastered Array Buckler",
+      "nameDe": null,
+      "dropLevel": 60,
+      "requirements": {
+        "level": 60,
+        "strength": 0,
+        "dexterity": 85,
+        "intelligence": 0
+      },
+      "tags": [
+        "dex_armour",
+        "dex_shield",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldDex12VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Venerable Defender",
+      "nameDe": "Runenveredelter Ehrwürdiger Verteidiger",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 107,
+        "intelligence": 0
+      },
+      "tags": [
+        "str_dex_armour",
+        "str_dex_shield",
+        "karui_basetype",
+        "runeforged",
+        "buckler",
+        "shield",
+        "armour",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Armours/Shields/FourShieldStrDexUnique1VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Armours/Shields/AbstractBuckler",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    }
+  ]
+}

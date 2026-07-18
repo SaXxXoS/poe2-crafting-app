@@ -1,0 +1,874 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:51:13.509Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Amulet.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Amulet DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 25,
+    "regularUsableBases": 16,
+    "excludedBases": 9,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique1",
+        "nameEn": "Runemastered Veridical Chain"
+      },
+      {
+        "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique2",
+        "nameEn": "Runemastered Veridical Chain"
+      },
+      {
+        "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique3",
+        "nameEn": "Runemastered Veridical Chain"
+      },
+      {
+        "id": "Metadata/Items/Amulets/FourAmuletB2",
+        "nameEn": "Corona Amulet"
+      },
+      {
+        "id": "Metadata/Items/Amulets/FourAmuletDelirium2",
+        "nameEn": "Distorted Amulet"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique1",
+        "baseNameEn": "Runemastered Veridical Chain",
+        "textEn": "+(30—40) to maximum Runic Ward"
+      },
+      {
+        "baseId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique1",
+        "baseNameEn": "Runemastered Veridical Chain",
+        "textEn": "+(2—3)% to Maximum Cold Resistance"
+      },
+      {
+        "baseId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique2",
+        "baseNameEn": "Runemastered Veridical Chain",
+        "textEn": "+(30—40) to maximum Runic Ward"
+      },
+      {
+        "baseId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique2",
+        "baseNameEn": "Runemastered Veridical Chain",
+        "textEn": "+(1—2) to Level of all Cold Skills"
+      },
+      {
+        "baseId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique3",
+        "baseNameEn": "Runemastered Veridical Chain",
+        "textEn": "(15—20)% increased maximum Runic Ward"
+      },
+      {
+        "baseId": "Metadata/Items/Amulets/FourAmuletB2",
+        "baseNameEn": "Corona Amulet",
+        "textEn": "This item gains bonuses from Socketed Items as though it was a Helmet"
+      },
+      {
+        "baseId": "Metadata/Items/Amulets/FourAmuletDelirium2",
+        "baseNameEn": "Distorted Amulet",
+        "textEn": "-1 Suffix Modifier allowed"
+      }
+    ],
+    "missingGermanModifierTexts": [
+      {
+        "id": "poe2db:222cba58d59151b3bc84",
+        "nameEn": "of the Crystal",
+        "textEn": "+(3—5)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:4ac03976a027dbe26b57",
+        "nameEn": "of the Prism",
+        "textEn": "+(6—8)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:cb9937e715cc895d3ca7",
+        "nameEn": "of the Kaleidoscope",
+        "textEn": "+(9—11)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:43a4fbd4bcb997de9a75",
+        "nameEn": "of Variegation",
+        "textEn": "+(12—14)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:346236290f4cbba06488",
+        "nameEn": "of the Rainbow",
+        "textEn": "+(15—16)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:8098419898ad4a65c07a",
+        "nameEn": "of the Span",
+        "textEn": "+(17—18)% to all Elemental Resistances"
+      }
+    ],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Veridical Chain",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Veridical Chain",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Veridical Chain",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake1",
+      "nameEn": "Dusk Amulet",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake2",
+      "nameEn": "Gloam Amulet",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake3",
+      "nameEn": "Penumbra Amulet",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake4",
+      "nameEn": "Tenebrous Amulet",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletDelirium1",
+      "nameEn": "Twisted Amulet",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletDelirium2",
+      "nameEn": "Distorted Amulet",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Amulet modifier matches the shared 'amulet' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet1",
+      "nameEn": "Crimson Amulet",
+      "nameDe": "Blutrotes Amulett",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet1",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet2",
+      "nameEn": "Azure Amulet",
+      "nameDe": "Azurblaues Amulett",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet2",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet3",
+      "nameEn": "Amber Amulet",
+      "nameDe": "Bernsteinamulett",
+      "dropLevel": 8,
+      "requirements": {
+        "level": 8,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet3",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet4",
+      "nameEn": "Jade Amulet",
+      "nameDe": "Jadeamulett",
+      "dropLevel": 8,
+      "requirements": {
+        "level": 8,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet4",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet5",
+      "nameEn": "Lapis Amulet",
+      "nameDe": "Lapisamulett",
+      "dropLevel": 8,
+      "requirements": {
+        "level": 8,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet5",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet6",
+      "nameEn": "Lunar Amulet",
+      "nameDe": "Mondamulett",
+      "dropLevel": 14,
+      "requirements": {
+        "level": 14,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet6",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet7",
+      "nameEn": "Bloodstone Amulet",
+      "nameDe": "Blutsteinamulett",
+      "dropLevel": 18,
+      "requirements": {
+        "level": 18,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet7",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet8",
+      "nameEn": "Stellar Amulet",
+      "nameDe": "Sternamulett",
+      "dropLevel": 25,
+      "requirements": {
+        "level": 25,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet8",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet9",
+      "nameEn": "Solar Amulet",
+      "nameDe": "Sonnenamulett",
+      "dropLevel": 30,
+      "requirements": {
+        "level": 30,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet9",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet10",
+      "nameEn": "Gold Amulet",
+      "nameDe": "Goldamulett",
+      "dropLevel": 35,
+      "requirements": {
+        "level": 35,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet10",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmulet11",
+      "nameEn": "Pearlescent Amulet",
+      "nameDe": "Perlmutt-Amulett",
+      "dropLevel": 8,
+      "requirements": {
+        "level": 8,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmulet11",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletUnique1",
+      "nameEn": "Veridical Chain",
+      "nameDe": "Veridikale Kette",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletUnique1",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Veridical Chain",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Veridical Chain",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Veridical Chain",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletUnique1VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletB1a",
+      "nameEn": "Lament Amulet",
+      "nameDe": "Klage-Amulett",
+      "dropLevel": 42,
+      "requirements": {
+        "level": 42,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletB1a",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletB1b",
+      "nameEn": "Portent Amulet",
+      "nameDe": "Omen-Amulett",
+      "dropLevel": 42,
+      "requirements": {
+        "level": 42,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletB1b",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletB1c",
+      "nameEn": "Absent Amulet",
+      "nameDe": "Verlorenes Amulett",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletB1c",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletB2",
+      "nameEn": "Corona Amulet",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletB2",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake1",
+      "nameEn": "Dusk Amulet",
+      "nameDe": "Dämmerungs-Amulett",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletLake1",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake2",
+      "nameEn": "Gloam Amulet",
+      "nameDe": "Zwielicht-Amulett",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletLake2",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake3",
+      "nameEn": "Penumbra Amulet",
+      "nameDe": "Halbschatten-Amulett",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletLake3",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletLake4",
+      "nameEn": "Tenebrous Amulet",
+      "nameDe": "Dunkelheit-Amulett",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletLake4",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletDelirium1",
+      "nameEn": "Twisted Amulet",
+      "nameDe": "Verzerrtes Amulett",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletDelirium1",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Amulets/FourAmuletDelirium2",
+      "nameEn": "Distorted Amulet",
+      "nameDe": null,
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "amulet",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Amulets/FourAmuletDelirium2",
+        "inheritsFrom": "Metadata/Items/Amulets/AbstractAmulet",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    }
+  ]
+}

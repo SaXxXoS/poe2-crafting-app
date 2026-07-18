@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "source": "PoE2DB Crafting, Alloy, Liquid Emotions, Mark of the Abyssal Lord",
+  "methods": [
+    {
+      "id": "alloys",
+      "nameEn": "Alloys",
+      "nameDe": null,
+      "descriptionEn": "Replace an existing modifier with a guaranteed crafted modifier.",
+      "items": []
+    },
+    {
+      "id": "liquid-emotions",
+      "nameEn": "Liquid Emotion Jewel Crafting",
+      "nameDe": null,
+      "descriptionEn": "Replace a modifier on a Rare Jewel with a guaranteed Crafted modifier."
+    },
+    {
+      "id": "omen-meta-crafting",
+      "nameEn": "Omen Meta-crafting",
+      "nameDe": null,
+      "descriptionEn": "Influences the next applicable crafting action while active in the inventory."
+    },
+    {
+      "id": "desecration",
+      "nameEn": "Desecration",
+      "nameDe": null,
+      "descriptionEn": "Adds an unrevealed Desecrated modifier selected at the Well of Souls."
+    },
+    {
+      "id": "mark-of-the-abyssal-lord",
+      "nameEn": "Mark of the Abyssal Lord",
+      "nameDe": null,
+      "descriptionEn": "Upgrades into a higher-tier unrevealed Desecrated modifier on Desecration."
+    }
+  ]
+}

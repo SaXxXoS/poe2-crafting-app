@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:51:16.653Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Belt.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Belt DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 20,
+    "regularUsableBases": 15,
+    "excludedBases": 5,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Belts/FourBeltB2",
+        "nameEn": "Invoking Belt"
+      },
+      {
+        "id": "Metadata/Items/Belts/FourBeltB3",
+        "nameEn": "Sinew Belt"
+      },
+      {
+        "id": "Metadata/Items/Belts/FourBeltB4",
+        "nameEn": "Forking Belt"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB2",
+        "baseNameEn": "Invoking Belt",
+        "textEn": "Has (1—3) Charm Slots"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB2",
+        "baseNameEn": "Invoking Belt",
+        "textEn": "Has 1 Charm Slots"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB2",
+        "baseNameEn": "Invoking Belt",
+        "textEn": "(8—12)% increased Cast Speed"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB3",
+        "baseNameEn": "Sinew Belt",
+        "textEn": "Has (1—3) Charm Slots"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB3",
+        "baseNameEn": "Sinew Belt",
+        "textEn": "Has 1 Charm Slots"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB3",
+        "baseNameEn": "Sinew Belt",
+        "textEn": "+(15—20) to Strength"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB4",
+        "baseNameEn": "Forking Belt",
+        "textEn": "Has (1—3) Charm Slots"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB4",
+        "baseNameEn": "Forking Belt",
+        "textEn": "Has 1 Charm Slots"
+      },
+      {
+        "baseId": "Metadata/Items/Belts/FourBeltB4",
+        "baseNameEn": "Forking Belt",
+        "textEn": "Adds 1 to (20—30) Lightning damage to Attacks"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Belts/BeltDemigods1",
+      "nameEn": "Golden Obi",
+      "classification": "experimental",
+      "reason": "Release state is unique_only."
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique1",
+      "nameEn": "Runemastered Heavy Belt",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique2",
+      "nameEn": "Runemastered Heavy Belt",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique3",
+      "nameEn": "Runemastered Heavy Belt",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique4",
+      "nameEn": "Runemastered Heavy Belt",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Belt modifier matches the shared 'belt' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Belts/BeltDemigods1",
+      "nameEn": "Golden Obi",
+      "nameDe": "Goldener Gürtel",
+      "dropLevel": 12,
+      "requirements": {
+        "level": 12,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "not_for_sale",
+        "demigods",
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/BeltDemigods1",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "unique_only"
+      },
+      "availability": {
+        "droppable": false,
+        "classification": "experimental",
+        "regularUsable": false,
+        "reason": "Release state is unique_only."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt1",
+      "nameEn": "Rawhide Belt",
+      "nameDe": "Rohleder-Gürtel",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt1",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt2",
+      "nameEn": "Linen Belt",
+      "nameDe": "Leinengürtel",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt2",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt3",
+      "nameEn": "Wide Belt",
+      "nameDe": "Breiter Gürtel",
+      "dropLevel": 14,
+      "requirements": {
+        "level": 14,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt3",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt4",
+      "nameEn": "Long Belt",
+      "nameDe": "Langgürtel",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt4",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt5",
+      "nameEn": "Plate Belt",
+      "nameDe": "Plattengürtel",
+      "dropLevel": 25,
+      "requirements": {
+        "level": 25,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt5",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt6",
+      "nameEn": "Ornate Belt",
+      "nameDe": "Verzierter Gürtel",
+      "dropLevel": 31,
+      "requirements": {
+        "level": 31,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt6",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt7",
+      "nameEn": "Mail Belt",
+      "nameDe": "Kettengürtel",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt7",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt8",
+      "nameEn": "Double Belt",
+      "nameDe": "Doppelgürtel",
+      "dropLevel": 44,
+      "requirements": {
+        "level": 44,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt8",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9",
+      "nameEn": "Heavy Belt",
+      "nameDe": "Robuster Gürtel",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt9",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique1",
+      "nameEn": "Runemastered Heavy Belt",
+      "nameDe": "Runenveredelter Robuster Gürtel",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt9VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique2",
+      "nameEn": "Runemastered Heavy Belt",
+      "nameDe": "Runenveredelter Robuster Gürtel",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt9VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique3",
+      "nameEn": "Runemastered Heavy Belt",
+      "nameDe": "Runenveredelter Robuster Gürtel",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt9VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt9VerisiumUnique4",
+      "nameEn": "Runemastered Heavy Belt",
+      "nameDe": "Runenveredelter Robuster Gürtel",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "runeforged",
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt9VerisiumUnique4",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt10",
+      "nameEn": "Utility Belt",
+      "nameDe": "Universalgürtel",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt10",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBelt11",
+      "nameEn": "Fine Belt",
+      "nameDe": "Feiner Gürtel",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBelt11",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBeltB1",
+      "nameEn": "Stalking Belt",
+      "nameDe": "Verfolgungsgürtel",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBeltB1",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBeltB2",
+      "nameEn": "Invoking Belt",
+      "nameDe": null,
+      "dropLevel": 32,
+      "requirements": {
+        "level": 32,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBeltB2",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBeltB3",
+      "nameEn": "Sinew Belt",
+      "nameDe": null,
+      "dropLevel": 32,
+      "requirements": {
+        "level": 32,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBeltB3",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Belts/FourBeltB4",
+      "nameEn": "Forking Belt",
+      "nameDe": null,
+      "dropLevel": 32,
+      "requirements": {
+        "level": 32,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "belt",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Belts/FourBeltB4",
+        "inheritsFrom": "Metadata/Items/Belts/AbstractBelt",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

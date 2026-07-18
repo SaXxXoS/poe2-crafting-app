@@ -1,0 +1,1384 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:50:46.383Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Warstaff.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Warstaff DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 38,
+    "regularUsableBases": 28,
+    "excludedBases": 10,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 1
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2a",
+        "nameEn": "Runeforged Long Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2b",
+        "nameEn": "Runemastered Long Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3a",
+        "nameEn": "Runeforged Gothic Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
+        "nameEn": "Runeforged Crescent Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium6",
+        "nameEn": "Runeforged Steelpoint Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1",
+        "nameEn": "Warding Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique1",
+        "nameEn": "Runemastered Warding Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique2",
+        "nameEn": "Runemastered Warding Quarterstaff"
+      },
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique3",
+        "nameEn": "Runemastered Warding Quarterstaff"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2a",
+        "baseNameEn": "Runeforged Long Quarterstaff",
+        "textEn": "16% increased Melee Strike Range with this weapon"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2b",
+        "baseNameEn": "Runemastered Long Quarterstaff",
+        "textEn": "16% increased Melee Strike Range with this weapon"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2b",
+        "baseNameEn": "Runemastered Long Quarterstaff",
+        "textEn": "local weapon implicit hidden % base damage is cold [100]"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3a",
+        "baseNameEn": "Runeforged Gothic Quarterstaff",
+        "textEn": "local weapon implicit hidden % base damage is fire [100]"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
+        "baseNameEn": "Runeforged Crescent Quarterstaff",
+        "textEn": "local weapon implicit hidden % base damage is cold [50]"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
+        "baseNameEn": "Runeforged Crescent Quarterstaff",
+        "textEn": "local weapon implicit hidden % base damage is lightning [50]"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1",
+        "baseNameEn": "Warding Quarterstaff",
+        "textEn": "+(30—50) to maximum Runic Ward"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique1",
+        "baseNameEn": "Runemastered Warding Quarterstaff",
+        "textEn": "+(30—50) to maximum Runic Ward"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique2",
+        "baseNameEn": "Runemastered Warding Quarterstaff",
+        "textEn": "+(30—50) to maximum Runic Ward"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique3",
+        "baseNameEn": "Runemastered Warding Quarterstaff",
+        "textEn": "+(30—50) to maximum Runic Ward"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium1",
+      "nameEn": "Runeforged Wrapped Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2a",
+      "nameEn": "Runeforged Long Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2b",
+      "nameEn": "Runemastered Long Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3a",
+      "nameEn": "Runeforged Gothic Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3b",
+      "nameEn": "Runemastered Gothic Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
+      "nameEn": "Runeforged Crescent Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium6",
+      "nameEn": "Runeforged Steelpoint Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Warding Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Warding Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Warding Quarterstaff",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [],
+  "restrictedModFinding": "No such examples exist: every imported normal Warstaff modifier matches the shared 'warstaff' tag before any zero-weight fallback. Extra base tags do not occur in these modifiers' weight rules.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff1",
+      "nameEn": "Wrapped Quarterstaff",
+      "nameDe": "Gewickelter Kampfstab",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff2",
+      "nameEn": "Long Quarterstaff",
+      "nameDe": "Langer Kampfstab",
+      "dropLevel": 4,
+      "requirements": {
+        "level": 4,
+        "strength": 0,
+        "dexterity": 9,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff3",
+      "nameEn": "Gothic Quarterstaff",
+      "nameDe": "Gotischer Kampfstab",
+      "dropLevel": 11,
+      "requirements": {
+        "level": 11,
+        "strength": 0,
+        "dexterity": 18,
+        "intelligence": 9
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4",
+      "nameEn": "Crackling Quarterstaff",
+      "nameDe": "Knisternder Kampfstab",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 0,
+        "dexterity": 25,
+        "intelligence": 12
+      },
+      "tags": [
+        "maraketh_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff5",
+      "nameEn": "Crescent Quarterstaff",
+      "nameDe": "Halbmond-Kampfstab",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 0,
+        "dexterity": 30,
+        "intelligence": 14
+      },
+      "tags": [
+        "maraketh_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff6",
+      "nameEn": "Steelpoint Quarterstaff",
+      "nameDe": "Stahlspitzen-Kampfstab",
+      "dropLevel": 28,
+      "requirements": {
+        "level": 28,
+        "strength": 0,
+        "dexterity": 41,
+        "intelligence": 18
+      },
+      "tags": [
+        "maraketh_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff7",
+      "nameEn": "Slicing Quarterstaff",
+      "nameDe": "Aufschlitzender Kampfstab",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 0,
+        "dexterity": 47,
+        "intelligence": 20
+      },
+      "tags": [
+        "vaal_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff8",
+      "nameEn": "Barrier Quarterstaff",
+      "nameDe": "Barrieren-Kampfstab",
+      "dropLevel": 37,
+      "requirements": {
+        "level": 37,
+        "strength": 0,
+        "dexterity": 52,
+        "intelligence": 22
+      },
+      "tags": [
+        "vaal_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff9",
+      "nameEn": "Hefty Quarterstaff",
+      "nameDe": "Gewaltiger Kampfstab",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 63,
+        "intelligence": 26
+      },
+      "tags": [
+        "karui_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff9",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff10",
+      "nameEn": "Smooth Quarterstaff",
+      "nameDe": "Geschmeidiger Kampfstab",
+      "dropLevel": 49,
+      "requirements": {
+        "level": 49,
+        "strength": 0,
+        "dexterity": 68,
+        "intelligence": 28
+      },
+      "tags": [
+        "karui_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff10",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff11",
+      "nameEn": "Anima Quarterstaff",
+      "nameDe": "Animakampfstab",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 0,
+        "dexterity": 72,
+        "intelligence": 29
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff11",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff12",
+      "nameEn": "Graceful Quarterstaff",
+      "nameDe": "Anmutiger Kampfstab",
+      "dropLevel": 56,
+      "requirements": {
+        "level": 56,
+        "strength": 0,
+        "dexterity": 77,
+        "intelligence": 31
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff12",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff13",
+      "nameEn": "Wyrm Quarterstaff",
+      "nameDe": "Wyrm-Kampfstab",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 89,
+        "intelligence": 36
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff13",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff2Cruel",
+      "nameEn": "Reaching Quarterstaff",
+      "nameDe": "Weitreichender Kampfstab",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 0,
+        "dexterity": 63,
+        "intelligence": 26
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff2Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff3Cruel",
+      "nameEn": "Barbarous Quarterstaff",
+      "nameDe": "Barbarischer Kampfstab",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 0,
+        "dexterity": 67,
+        "intelligence": 27
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff3Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Cruel",
+      "nameEn": "Arcing Quarterstaff",
+      "nameDe": "Gebogener Kampfstab",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 0,
+        "dexterity": 71,
+        "intelligence": 29
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff5Cruel",
+      "nameEn": "Waxing Quarterstaff",
+      "nameDe": "Gewachster Kampfstab",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 0,
+        "dexterity": 75,
+        "intelligence": 30
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff5Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff7Cruel",
+      "nameEn": "Bladed Quarterstaff",
+      "nameDe": "Klingen-Kampfstab",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 0,
+        "dexterity": 81,
+        "intelligence": 33
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff7Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff8Cruel",
+      "nameEn": "Guardian Quarterstaff",
+      "nameDe": "Wächter-Kampfstab",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 0,
+        "dexterity": 85,
+        "intelligence": 34
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff8Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium1",
+      "nameEn": "Runeforged Wrapped Quarterstaff",
+      "nameDe": "Runengeschmiedeter Gewickelter Kampfstab",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 54,
+        "intelligence": 23
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2a",
+      "nameEn": "Runeforged Long Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 54,
+        "intelligence": 23
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2b",
+      "nameEn": "Runemastered Long Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 76,
+        "intelligence": 31
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3a",
+      "nameEn": "Runeforged Gothic Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 0,
+        "dexterity": 54,
+        "intelligence": 23
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3b",
+      "nameEn": "Runemastered Gothic Quarterstaff",
+      "nameDe": "Runenveredelter Gotischer Kampfstab",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 0,
+        "dexterity": 76,
+        "intelligence": 31
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
+      "nameEn": "Runeforged Crescent Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 56,
+        "intelligence": 23
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium6",
+      "nameEn": "Runeforged Steelpoint Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 0,
+        "dexterity": 56,
+        "intelligence": 23
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff3Endgame",
+      "nameEn": "Sinister Quarterstaff",
+      "nameDe": "Finsterer Kampfstab",
+      "dropLevel": 67,
+      "requirements": {
+        "level": 67,
+        "strength": 0,
+        "dexterity": 104,
+        "intelligence": 41
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff3Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff5Endgame",
+      "nameEn": "Lunar Quarterstaff",
+      "nameDe": "Lunarer Kampfstab",
+      "dropLevel": 72,
+      "requirements": {
+        "level": 72,
+        "strength": 0,
+        "dexterity": 115,
+        "intelligence": 46
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff5Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff2Endgame",
+      "nameEn": "Striking Quarterstaff",
+      "nameDe": "Schlag-Kampfstab",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff2Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Endgame",
+      "nameEn": "Bolting Quarterstaff",
+      "nameDe": "Verwehrender Kampfstab",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff8Endgame",
+      "nameEn": "Aegis Quarterstaff",
+      "nameDe": "Ägis-Kampfstab",
+      "dropLevel": 79,
+      "requirements": {
+        "level": 79,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff8Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff7Endgame",
+      "nameEn": "Razor Quarterstaff",
+      "nameDe": "Aufschlitzender Kampfstab",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff7Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff9Endgame",
+      "nameEn": "Skullcrusher Quarterstaff",
+      "nameDe": "Schädelzertrümmernder Kampfstab",
+      "dropLevel": 75,
+      "requirements": {
+        "level": 75,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "karui_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff9Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff10Endgame",
+      "nameEn": "Dreaming Quarterstaff",
+      "nameDe": "Träumender Kampfstab",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "karui_basetype",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff10Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1",
+      "nameEn": "Warding Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique1",
+      "nameEn": "Runemastered Warding Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique2",
+      "nameEn": "Runemastered Warding Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique3",
+      "nameEn": "Runemastered Warding Quarterstaff",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 0,
+        "dexterity": 127,
+        "intelligence": 50
+      },
+      "tags": [
+        "runeforged",
+        "warstaff",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1VerisiumUnique3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Staves/AbstractWarstaff",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    }
+  ]
+}

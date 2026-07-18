@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T00:18:29.114Z",
+  "counts": {
+    "essences": 82,
+    "guaranteedEssenceModifiers": 130,
+    "omens": 50,
+    "craftingOmens": 32,
+    "desecratedPrefixes": 100,
+    "desecratedSuffixes": 130,
+    "desecrationItems": 12,
+    "currencies": 201,
+    "craftedModifiers": 89,
+    "methods": 5
+  },
+  "files": [
+    "essences.json",
+    "omens.json",
+    "desecration.json",
+    "currencies.json",
+    "crafted-modifiers.json",
+    "methods.json",
+    "quality-report.json"
+  ]
+}

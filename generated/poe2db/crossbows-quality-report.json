@@ -1,0 +1,1209 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-17T23:50:42.453Z",
+  "methodology": {
+    "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
+    "modifierSelection": "PoE2DB embedded ModsView JSON for Crossbow.",
+    "weightEvaluation": "Ordered first matching spawn/generation weight from RePoE raw mod data; PoE2DB DropChance retained separately.",
+    "importantFinding": "PoE2DB embeds only the already selected Crossbow DropChance and tag names, not complete per-tag numeric weights."
+  },
+  "counts": {
+    "importedBases": 34,
+    "regularUsableBases": 27,
+    "excludedBases": 7,
+    "distinctPrefixPools": 1,
+    "distinctSuffixPools": 2
+  },
+  "localization": {
+    "missingGermanBaseNames": [
+      {
+        "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow14Endgame",
+        "nameEn": "Trarthan Cannon"
+      }
+    ],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow14Endgame",
+        "baseNameEn": "Trarthan Cannon",
+        "textEn": "Cannot load or fire Ammunition"
+      }
+    ],
+    "missingGermanModifierTexts": [],
+    "ambiguousTranslations": []
+  },
+  "excludedBases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium1",
+      "nameEn": "Runeforged Makeshift Crossbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium2a",
+      "nameEn": "Runeforged Tense Crossbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium2b",
+      "nameEn": "Runemastered Tense Crossbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium3",
+      "nameEn": "Runeforged Sturdy Crossbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium5a",
+      "nameEn": "Runeforged Dyad Crossbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium5b",
+      "nameEn": "Runemastered Dyad Crossbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium7",
+      "nameEn": "Runeforged Bombard Crossbow",
+      "classification": "special-variant",
+      "reason": "Runeforged/Verisium variant with its own internal base tag."
+    }
+  ],
+  "restrictedModExamples": [
+    {
+      "modId": "poe2db:94a954ae67ad9741e991",
+      "nameEn": "of Shelling",
+      "textDe": "Lädt einen zusätzlichen Bolzen",
+      "allowedBaseCount": 33
+    },
+    {
+      "modId": "poe2db:6b6f819bf37a9e155685",
+      "nameEn": "of Bursting",
+      "textDe": "Lädt 2 zusätzliche Bolzen",
+      "allowedBaseCount": 33
+    }
+  ],
+  "restrictedModFinding": "At least one imported modifier is not available to every imported Crossbow base.",
+  "bases": [
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow1",
+      "nameEn": "Makeshift Crossbow",
+      "nameDe": "Einfache Armbrust",
+      "dropLevel": 1,
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow2",
+      "nameEn": "Tense Crossbow",
+      "nameDe": "Gespannte Armbrust",
+      "dropLevel": 4,
+      "requirements": {
+        "level": 4,
+        "strength": 8,
+        "dexterity": 8,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow2",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow3",
+      "nameEn": "Sturdy Crossbow",
+      "nameDe": "Stabile Armbrust",
+      "dropLevel": 10,
+      "requirements": {
+        "level": 10,
+        "strength": 13,
+        "dexterity": 13,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow4",
+      "nameEn": "Varnished Crossbow",
+      "nameDe": "Lackierte Armbrust",
+      "dropLevel": 16,
+      "requirements": {
+        "level": 16,
+        "strength": 19,
+        "dexterity": 19,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow4",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow5",
+      "nameEn": "Dyad Crossbow",
+      "nameDe": "Doppelarmbrust",
+      "dropLevel": 20,
+      "requirements": {
+        "level": 20,
+        "strength": 22,
+        "dexterity": 22,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow5",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow6",
+      "nameEn": "Alloy Crossbow",
+      "nameDe": "Legierte Armbrust",
+      "dropLevel": 26,
+      "requirements": {
+        "level": 26,
+        "strength": 28,
+        "dexterity": 28,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow6",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow7",
+      "nameEn": "Bombard Crossbow",
+      "nameDe": "Bombardier-Armbrust",
+      "dropLevel": 33,
+      "requirements": {
+        "level": 33,
+        "strength": 34,
+        "dexterity": 34,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow8",
+      "nameEn": "Construct Crossbow",
+      "nameDe": "Zusammengesetzte Armbrust",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 39,
+        "dexterity": 39,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow8",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow9",
+      "nameEn": "Blackfire Crossbow",
+      "nameDe": "Schwarzfeuer-Armbrust",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 45,
+        "dexterity": 45,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow9",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow10",
+      "nameEn": "Piercing Crossbow",
+      "nameDe": "Durchbohrende Armbrust",
+      "dropLevel": 50,
+      "requirements": {
+        "level": 50,
+        "strength": 49,
+        "dexterity": 49,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow10",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow11",
+      "nameEn": "Cumbrous Crossbow",
+      "nameDe": "Schwerfällige Armbrust",
+      "dropLevel": 52,
+      "requirements": {
+        "level": 52,
+        "strength": 51,
+        "dexterity": 51,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow11",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow12",
+      "nameEn": "Dedalian Crossbow",
+      "nameDe": "Kunstvolle Armbrust",
+      "dropLevel": 56,
+      "requirements": {
+        "level": 56,
+        "strength": 55,
+        "dexterity": 55,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow12",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow13",
+      "nameEn": "Esoteric Crossbow",
+      "nameDe": "Esoterische Armbrust",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 63,
+        "dexterity": 63,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow13",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow2Cruel",
+      "nameEn": "Taut Crossbow",
+      "nameDe": "Aufgespannte Armbrust",
+      "dropLevel": 45,
+      "requirements": {
+        "level": 45,
+        "strength": 45,
+        "dexterity": 45,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow2Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow3Cruel",
+      "nameEn": "Robust Crossbow",
+      "nameDe": "Robuste Armbrust",
+      "dropLevel": 48,
+      "requirements": {
+        "level": 48,
+        "strength": 48,
+        "dexterity": 48,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow3Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow4Cruel",
+      "nameEn": "Painted Crossbow",
+      "nameDe": "Gestrichene Armbrust",
+      "dropLevel": 51,
+      "requirements": {
+        "level": 51,
+        "strength": 50,
+        "dexterity": 50,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow4Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow5Cruel",
+      "nameEn": "Twin Crossbow",
+      "nameDe": "Zwillingsarmbrust",
+      "dropLevel": 54,
+      "requirements": {
+        "level": 54,
+        "strength": 53,
+        "dexterity": 53,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow5Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow7Cruel",
+      "nameEn": "Cannonade Crossbow",
+      "nameDe": "Geschützfeuer-Armbrust",
+      "dropLevel": 59,
+      "requirements": {
+        "level": 59,
+        "strength": 58,
+        "dexterity": 58,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow7Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow8Cruel",
+      "nameEn": "Bleak Crossbow",
+      "nameDe": "Düstere Armbrust",
+      "dropLevel": 62,
+      "requirements": {
+        "level": 62,
+        "strength": 60,
+        "dexterity": 60,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow8Cruel",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium1",
+      "nameEn": "Runeforged Makeshift Crossbow",
+      "nameDe": "Runengeschmiedete Einfache Armbrust",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 39,
+        "dexterity": 39,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium1",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium2a",
+      "nameEn": "Runeforged Tense Crossbow",
+      "nameDe": "Runengeschmiedete Gespannte Armbrust",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 39,
+        "dexterity": 39,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium2a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium2b",
+      "nameEn": "Runemastered Tense Crossbow",
+      "nameDe": "Runenveredelte Gespannte Armbrust",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 54,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium2b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium3",
+      "nameEn": "Runeforged Sturdy Crossbow",
+      "nameDe": "Runengeschmiedete Stabile Armbrust",
+      "dropLevel": 38,
+      "requirements": {
+        "level": 38,
+        "strength": 39,
+        "dexterity": 39,
+        "intelligence": 0
+      },
+      "tags": [
+        "ezomyte_basetype",
+        "runeforged",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium3",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium5a",
+      "nameEn": "Runeforged Dyad Crossbow",
+      "nameDe": "Runengeschmiedete Doppelarmbrust",
+      "dropLevel": 40,
+      "requirements": {
+        "level": 40,
+        "strength": 40,
+        "dexterity": 40,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium5a",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium5b",
+      "nameEn": "Runemastered Dyad Crossbow",
+      "nameDe": "Runenveredelte Doppelarmbrust",
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 63,
+        "dexterity": 63,
+        "intelligence": 0
+      },
+      "tags": [
+        "maraketh_basetype",
+        "runeforged",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium5b",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium7",
+      "nameEn": "Runeforged Bombard Crossbow",
+      "nameDe": "Runengeschmiedete Bombardier-Armbrust",
+      "dropLevel": 55,
+      "requirements": {
+        "level": 55,
+        "strength": 54,
+        "dexterity": 54,
+        "intelligence": 0
+      },
+      "tags": [
+        "vaal_basetype",
+        "runeforged",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbowVerisium7",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "special-variant",
+        "regularUsable": false,
+        "reason": "Runeforged/Verisium variant with its own internal base tag."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow3Endgame",
+      "nameEn": "Stout Crossbow",
+      "nameDe": "Starke Armbrust",
+      "dropLevel": 67,
+      "requirements": {
+        "level": 67,
+        "strength": 74,
+        "dexterity": 74,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow3Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow4Endgame",
+      "nameEn": "Engraved Crossbow",
+      "nameDe": "Gravierte Armbrust",
+      "dropLevel": 72,
+      "requirements": {
+        "level": 72,
+        "strength": 82,
+        "dexterity": 82,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow4Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow2Endgame",
+      "nameEn": "Flexed Crossbow",
+      "nameDe": "Gebogene Armbrust",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 89,
+        "dexterity": 89,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow2Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow5Endgame",
+      "nameEn": "Gemini Crossbow",
+      "nameDe": "Zwillingsarmbrust",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 89,
+        "dexterity": 89,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow5Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow7Endgame",
+      "nameEn": "Siege Crossbow",
+      "nameDe": "Belagerungsarmbrust",
+      "dropLevel": 79,
+      "requirements": {
+        "level": 79,
+        "strength": 89,
+        "dexterity": 89,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow7Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow8Endgame",
+      "nameEn": "Desolate Crossbow",
+      "nameDe": "Verwüstende Armbrust",
+      "dropLevel": 77,
+      "requirements": {
+        "level": 77,
+        "strength": 89,
+        "dexterity": 89,
+        "intelligence": 0
+      },
+      "tags": [
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow8Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow10Endgame",
+      "nameEn": "Elegant Crossbow",
+      "nameDe": "Elegante Armbrust",
+      "dropLevel": 78,
+      "requirements": {
+        "level": 78,
+        "strength": 89,
+        "dexterity": 89,
+        "intelligence": 0
+      },
+      "tags": [
+        "karui_basetype",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow10Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    },
+    {
+      "id": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow14Endgame",
+      "nameEn": "Trarthan Cannon",
+      "nameDe": null,
+      "dropLevel": 65,
+      "requirements": {
+        "level": 65,
+        "strength": 114,
+        "dexterity": 63,
+        "intelligence": 0
+      },
+      "tags": [
+        "cannon",
+        "crossbow",
+        "ranged",
+        "two_hand_weapon",
+        "twohand",
+        "weapon",
+        "default"
+      ],
+      "internal": {
+        "metadataId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow14Endgame",
+        "inheritsFrom": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/AbstractCrossbow",
+        "domain": "item",
+        "releaseState": "released"
+      },
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      }
+    }
+  ]
+}

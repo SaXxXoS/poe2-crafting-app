@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T00:18:23.519Z",
+  "files": {
+    "english-essences.html": {
+      "url": "https://poe2db.tw/us/Essence",
+      "bytes": 634993,
+      "sha256": "6efcaf4372499d28d6bc21753538584fbe890ad0330424c595bbfba1541c8719"
+    },
+    "german-essences.html": {
+      "url": "https://poe2db.tw/de/Essence",
+      "bytes": 514977,
+      "sha256": "aac63bbb8e7e2d3b4eb4afcc33ad237578b9ea2d21812742f744fbecc206a28a"
+    },
+    "english-omens.html": {
+      "url": "https://poe2db.tw/us/Omen",
+      "bytes": 81284,
+      "sha256": "4390d01dd8b2d4dda1579c465fa777c268ad2fe31ca54dcdc79d61c0ee1502f1"
+    },
+    "german-omens.html": {
+      "url": "https://poe2db.tw/de/Omen",
+      "bytes": 80626,
+      "sha256": "3514b16ebfa6fabd3533f3665304f330b43a010f28b8c08e4455efb54d39900a"
+    },
+    "english-desecration.html": {
+      "url": "https://poe2db.tw/us/Desecrated_Modifiers",
+      "bytes": 204183,
+      "sha256": "d8815887c735dd209240959be83415f549b68eac0f02fbd91a0bdf90d2a77d14"
+    },
+    "german-desecration.html": {
+      "url": "https://poe2db.tw/de/Desecrated_Modifiers",
+      "bytes": 220432,
+      "sha256": "4af3379cdb4dda48bc6c031c9e8bf6f33c6a218c7f3611b74834b02013ac5ec4"
+    },
+    "english-currencies.html": {
+      "url": "https://poe2db.tw/us/Stackable_Currency",
+      "bytes": 578075,
+      "sha256": "9bc18500dcd76956dd83dec03d8ed2418d438956065f70e4505a7a3513507e19"
+    },
+    "german-currencies.html": {
+      "url": "https://poe2db.tw/de/Stackable_Currency",
+      "bytes": 471262,
+      "sha256": "a59a7315b9c1677c0d4b57d8cb7cf86500868e4db8e22820b7cbec0d1cfab90f"
+    },
+    "english-crafted-modifiers.html": {
+      "url": "https://poe2db.tw/us/Crafted_Modifiers",
+      "bytes": 110247,
+      "sha256": "935151697fd1d0e237e98cefdc1a4653a891750a30f3de9b66084485b8eec7ca"
+    },
+    "german-crafted-modifiers.html": {
+      "url": "https://poe2db.tw/de/Crafted_Modifiers",
+      "bytes": 71859,
+      "sha256": "18dbb4954c5f914a334b7663d5a24b056d64c774dbfa1dac99d22c3fb9298ec1"
+    },
+    "english-crafting.html": {
+      "url": "https://poe2db.tw/us/Crafting",
+      "bytes": 53495,
+      "sha256": "e5e1ccf09a31722a993c0449831a0b23a0b3177852da5e0804d4fea76fda062d"
+    },
+    "german-crafting.html": {
+      "url": "https://poe2db.tw/de/Crafting",
+      "bytes": 54041,
+      "sha256": "d4e86eb85033b3ea1d9b618e6715a8236875957b530f2cee6eee3df8ba3c9b99"
+    },
+    "english-liquid-emotions.html": {
+      "url": "https://poe2db.tw/us/Liquid_Emotions",
+      "bytes": 1832738,
+      "sha256": "7704290af1ac283ddc9b24197eed4dce23c7dde29ae503f6c0cbe78db0f8fe8f"
+    },
+    "german-liquid-emotions.html": {
+      "url": "https://poe2db.tw/de/Liquid_Emotions",
+      "bytes": 1428477,
+      "sha256": "56185a97ac74143b8b75cd3fdc1a25da17cb0c5a0fc2f7be71247ef25817d4af"
+    },
+    "english-alloys.html": {
+      "url": "https://poe2db.tw/us/Alloy",
+      "bytes": 30931,
+      "sha256": "1d114ce7768dd4462466ead9491b6aa9a116775c4eab877a3b8fb82152b50e2e"
+    },
+    "german-alloys.html": {
+      "url": "https://poe2db.tw/de/Alloy",
+      "bytes": 31480,
+      "sha256": "2343ffcf4c500658c713b684618c60223004bb33eb99435d2df13b7edc329fa1"
+    },
+    "english-mark-abyssal-lord.html": {
+      "url": "https://poe2db.tw/us/Mark_of_the_Abyssal_Lord",
+      "bytes": 28291,
+      "sha256": "c9f3dfe1aed0729e13c16f26a0f1a9ee436576e65fa48b3711b00936e139e85e"
+    },
+    "german-mark-abyssal-lord.html": {
+      "url": "https://poe2db.tw/de/Mark_of_the_Abyssal_Lord",
+      "bytes": 28857,
+      "sha256": "484bc3299ab9738f61332ed867587dc246a819436266380fe44081c929cb88a3"
+    },
+    "english-abyss.html": {
+      "url": "https://poe2db.tw/us/Abyss",
+      "bytes": 198550,
+      "sha256": "972cfa6146b9c7db30fdd1ee000468a403f7493704b06eb7f5ad1dcee0e86235"
+    },
+    "german-abyss.html": {
+      "url": "https://poe2db.tw/de/Abyss",
+      "bytes": 171246,
+      "sha256": "2b91f4c4fc551b47b58318ac8ec696804a884a59f99767838f498b1728bcbb59"
+    }
+  }
+}
