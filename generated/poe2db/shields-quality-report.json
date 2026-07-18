@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:38:10.372Z",
+  "generatedAt": "2026-07-18T10:54:25.223Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Shield.",
@@ -64,7 +64,63 @@
         "textEn": "Grants Skill: Raise Shield"
       }
     ],
-    "missingGermanModifierTexts": [],
+    "missingGermanModifierTexts": [
+      {
+        "id": "poe2db:0d83688ab7a5823a20be",
+        "nameEn": "of Dulling",
+        "textEn": "Hits against you have (21—27)% reduced Critical Damage Bonus"
+      },
+      {
+        "id": "poe2db:9a0ce1b18061c0f40f9e",
+        "nameEn": "of Deadening",
+        "textEn": "Hits against you have (28—34)% reduced Critical Damage Bonus"
+      },
+      {
+        "id": "poe2db:959ac4b5d87fe337ba6e",
+        "nameEn": "of Interference",
+        "textEn": "Hits against you have (35—41)% reduced Critical Damage Bonus"
+      },
+      {
+        "id": "poe2db:dde02060766ba3cf11e9",
+        "nameEn": "of Obstruction",
+        "textEn": "Hits against you have (42—47)% reduced Critical Damage Bonus"
+      },
+      {
+        "id": "poe2db:e6da7c9565dad0043134",
+        "nameEn": "of the Bastion",
+        "textEn": "Hits against you have (48—54)% reduced Critical Damage Bonus"
+      },
+      {
+        "id": "poe2db:93ee3611fda96f8dd186",
+        "nameEn": "of the Crystal",
+        "textEn": "+(3—5)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:c3348996c1bb5bd0fe08",
+        "nameEn": "of the Prism",
+        "textEn": "+(6—8)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:36483a7c1cba3534d6f6",
+        "nameEn": "of the Kaleidoscope",
+        "textEn": "+(9—11)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:a9a706dca968890729a5",
+        "nameEn": "of Variegation",
+        "textEn": "+(12—14)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:b654b858f22eca65f65b",
+        "nameEn": "of the Rainbow",
+        "textEn": "+(15—16)% to all Elemental Resistances"
+      },
+      {
+        "id": "poe2db:f90eb52378809ee1eb21",
+        "nameEn": "of the Span",
+        "textEn": "+(17—18)% to all Elemental Resistances"
+      }
+    ],
     "ambiguousTranslations": []
   },
   "excludedBases": [
@@ -563,31 +619,31 @@
   ],
   "restrictedModExamples": [
     {
-      "modId": "poe2db:747ae4d9cb3eeecd3e58",
+      "modId": "poe2db:99a86b82d36202f75fa2",
       "nameEn": "Hale",
       "textDe": "+(10—19) zu maximalem Leben",
       "allowedBaseCount": 150
     },
     {
-      "modId": "poe2db:42ed3b4ff29b311ec74e",
+      "modId": "poe2db:e660f421b9f54db581c9",
       "nameEn": "Healthy",
       "textDe": "+(20—29) zu maximalem Leben",
       "allowedBaseCount": 150
     },
     {
-      "modId": "poe2db:07b76bb482fcdc79edb8",
+      "modId": "poe2db:03a0742c953fb79491f4",
       "nameEn": "Sanguine",
       "textDe": "+(30—39) zu maximalem Leben",
       "allowedBaseCount": 150
     },
     {
-      "modId": "poe2db:4d5b119e9a0ac32571c5",
+      "modId": "poe2db:bcdbd8d08062268f58d1",
       "nameEn": "Stalwart",
       "textDe": "+(40—59) zu maximalem Leben",
       "allowedBaseCount": 150
     },
     {
-      "modId": "poe2db:975f5590ae87ac2f89f8",
+      "modId": "poe2db:49fd616f5e88b0b6c0a0",
       "nameEn": "Stout",
       "textDe": "+(60—69) zu maximalem Leben",
       "allowedBaseCount": 150

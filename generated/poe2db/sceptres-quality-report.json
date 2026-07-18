@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:37:12.050Z",
+  "generatedAt": "2026-07-18T10:54:11.379Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Sceptre.",
@@ -19,212 +19,212 @@
     "missingGermanImplicits": [],
     "missingGermanModifierTexts": [
       {
-        "id": "poe2db:06b920db10ffb8589872",
+        "id": "poe2db:295e37adba178debc377",
         "nameEn": "Glinting",
         "textEn": "Allies in your Presence deal (1—2) to (3—4) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:6eeecd6a801eb6158ca1",
+        "id": "poe2db:80200c90acf6377647c7",
         "nameEn": "Burnished",
         "textEn": "Allies in your Presence deal (2—3) to (4—6) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:e17d34ecd1928f7a1a5a",
+        "id": "poe2db:6538c1c5bcc6a62d3d67",
         "nameEn": "Polished",
         "textEn": "Allies in your Presence deal (2—4) to (5—8) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:460c2c3cab7647ab9d9a",
+        "id": "poe2db:2351ac2e261d951f5499",
         "nameEn": "Honed",
         "textEn": "Allies in your Presence deal (4—6) to (8—11) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:53a7a5e9c4d2390bedca",
+        "id": "poe2db:6a406e842e1dc2b9447b",
         "nameEn": "Gleaming",
         "textEn": "Allies in your Presence deal (5—7) to (9—13) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:9c4694f0c425060a331b",
+        "id": "poe2db:6d8baa24d68228c9ec7b",
         "nameEn": "Annealed",
         "textEn": "Allies in your Presence deal (6—10) to (12—17) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:9b65a43af8428812f095",
+        "id": "poe2db:898488e05038b73597e8",
         "nameEn": "Razor-sharp",
         "textEn": "Allies in your Presence deal (7—11) to (14—20) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:4d6ec29dfa905e760a53",
+        "id": "poe2db:c6f8123caf10d3f38bf5",
         "nameEn": "Tempered",
         "textEn": "Allies in your Presence deal (10—15) to (18—26) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:35fe3c46e23e95f65cb3",
+        "id": "poe2db:df8132af7354bf181782",
         "nameEn": "Flaring",
         "textEn": "Allies in your Presence deal (12—19) to (22—32) added Attack Physical Damage"
       },
       {
-        "id": "poe2db:d1f390d02251cbc5fea6",
+        "id": "poe2db:86118ac2e9580c7f28e6",
         "nameEn": "Heated",
         "textEn": "Allies in your Presence deal (1—2) to (3—4) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:58acf8d0fc2a3f121e0d",
+        "id": "poe2db:118621363d5c6c4337bf",
         "nameEn": "Smouldering",
         "textEn": "Allies in your Presence deal (3—5) to (6—9) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:63305033e2ab56f7d3ea",
+        "id": "poe2db:b57638f94288d1a3a101",
         "nameEn": "Smoking",
         "textEn": "Allies in your Presence deal (6—8) to (10—13) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:3522a31f30ccd841719b",
+        "id": "poe2db:10d3f2821eab30077a11",
         "nameEn": "Burning",
         "textEn": "Allies in your Presence deal (9—11) to (14—17) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:300e11a3175be685d79e",
+        "id": "poe2db:b6f1b96a7999a0402577",
         "nameEn": "Flaming",
         "textEn": "Allies in your Presence deal (12—13) to (18—20) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:b449ce96101eda7b4abd",
+        "id": "poe2db:dd7a19fe9f89d70d31d5",
         "nameEn": "Scorching",
         "textEn": "Allies in your Presence deal (14—16) to (21—26) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:6ccc09576628a2fb23f9",
+        "id": "poe2db:822cfce24c35c5147185",
         "nameEn": "Incinerating",
         "textEn": "Allies in your Presence deal (17—19) to (27—30) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:98ac8a30fe0f9cba3e42",
+        "id": "poe2db:3153548104f3ad49c29b",
         "nameEn": "Blasting",
         "textEn": "Allies in your Presence deal (20—24) to (31—38) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:cd3a65b80778a6895122",
+        "id": "poe2db:fa00c2a064bf44c8efc8",
         "nameEn": "Cremating",
         "textEn": "Allies in your Presence deal (25—29) to (39—45) added Attack Fire Damage"
       },
       {
-        "id": "poe2db:eb7f657a3dddddc27f9b",
+        "id": "poe2db:cdd56f3290a06ba15137",
         "nameEn": "Frosted",
         "textEn": "Allies in your Presence deal (1—2) to (3—4) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:3ef4fc4ac3ec78c1f0d1",
+        "id": "poe2db:2b7e77c4d9269f359b3b",
         "nameEn": "Chilled",
         "textEn": "Allies in your Presence deal (3—4) to (5—8) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:cad6e8e71887f8d1941b",
+        "id": "poe2db:e7e3e362117d9bbf6519",
         "nameEn": "Icy",
         "textEn": "Allies in your Presence deal (5—6) to (9—11) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:6982724281d6fab26d34",
+        "id": "poe2db:000ca3b0d6e8c7651f3f",
         "nameEn": "Frigid",
         "textEn": "Allies in your Presence deal (7—8) to (12—14) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:89cb68b4d32919bc0cd1",
+        "id": "poe2db:8b75d1a0a16109177661",
         "nameEn": "Freezing",
         "textEn": "Allies in your Presence deal (9—10) to (15—17) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:151642183e7157a59dd5",
+        "id": "poe2db:d037b116f2a79d54aee3",
         "nameEn": "Frozen",
         "textEn": "Allies in your Presence deal (11—13) to (18—21) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:2faadf98243a0da486dd",
+        "id": "poe2db:0245748a0cc66577cfcb",
         "nameEn": "Glaciated",
         "textEn": "Allies in your Presence deal (14—15) to (22—24) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:e9eea962a8d1b151a30b",
+        "id": "poe2db:7f5770a2404f4f833bf3",
         "nameEn": "Polar",
         "textEn": "Allies in your Presence deal (16—20) to (25—31) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:99951303c94b410c1d0b",
+        "id": "poe2db:1a52c60d633b535c81b9",
         "nameEn": "Entombing",
         "textEn": "Allies in your Presence deal (21—24) to (32—37) added Attack Cold Damage"
       },
       {
-        "id": "poe2db:8a6398677468eb739552",
+        "id": "poe2db:5fb6d8c4a61a5156c44b",
         "nameEn": "Humming",
         "textEn": "Allies in your Presence deal 1 to (5—7) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:aa236cb2bed47c8488af",
+        "id": "poe2db:ee28cb9bd9a4579df8b0",
         "nameEn": "Buzzing",
         "textEn": "Allies in your Presence deal 1 to (10—15) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:2798f872697373861957",
+        "id": "poe2db:db9f1cb0ae308ed66d4b",
         "nameEn": "Snapping",
         "textEn": "Allies in your Presence deal 1 to (16—22) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:72a7e8efd0ff0fad6953",
+        "id": "poe2db:d124bdecfa4e99041c65",
         "nameEn": "Crackling",
         "textEn": "Allies in your Presence deal 1 to (23—27) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:e890485a89ba0fbe4319",
+        "id": "poe2db:e69ed584103432f84cad",
         "nameEn": "Sparking",
         "textEn": "Allies in your Presence deal 1 to (28—32) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:3a92dfce6d8fcf4863b5",
+        "id": "poe2db:e5e8c132780821bff506",
         "nameEn": "Arcing",
         "textEn": "Allies in your Presence deal (1—2) to (33—40) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:deaf973fba631d83461b",
+        "id": "poe2db:d34b907c6b6a994ad303",
         "nameEn": "Shocking",
         "textEn": "Allies in your Presence deal (1—2) to (41—47) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:6edda27b60a770d84880",
+        "id": "poe2db:608e683f0780f0842198",
         "nameEn": "Discharging",
         "textEn": "Allies in your Presence deal (1—3) to (48—59) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:92776cc9bf7e42f43b7c",
+        "id": "poe2db:b59b1a2e1501f1af4b75",
         "nameEn": "Electrocuting",
         "textEn": "Allies in your Presence deal (1—4) to (60—71) added Attack Lightning Damage"
       },
       {
-        "id": "poe2db:66f67b9737e1dc7ee4de",
+        "id": "poe2db:15f39bbaa49fcdff9f74",
         "nameEn": "of Ire",
         "textEn": "Allies in your Presence have (10—14)% increased Critical Damage Bonus"
       },
       {
-        "id": "poe2db:1f44cedf7ee4e2a2dd74",
+        "id": "poe2db:01ab06cc4de7ce8f1267",
         "nameEn": "of Anger",
         "textEn": "Allies in your Presence have (15—19)% increased Critical Damage Bonus"
       },
       {
-        "id": "poe2db:26a368db9cbe034eb744",
+        "id": "poe2db:d6b1661cae8d04d25ea6",
         "nameEn": "of Rage",
         "textEn": "Allies in your Presence have (20—24)% increased Critical Damage Bonus"
       },
       {
-        "id": "poe2db:e4863f45844afdbd9603",
+        "id": "poe2db:8d5c8234e1d6728d9d79",
         "nameEn": "of Fury",
         "textEn": "Allies in your Presence have (25—29)% increased Critical Damage Bonus"
       },
       {
-        "id": "poe2db:faaada59a48c5939c650",
+        "id": "poe2db:7ce5c50c69cee3051f4a",
         "nameEn": "of Ferocity",
         "textEn": "Allies in your Presence have (30—34)% increased Critical Damage Bonus"
       },
       {
-        "id": "poe2db:9f175d87bb80a2844604",
+        "id": "poe2db:53917fbf6706acc14eaf",
         "nameEn": "of Destruction",
         "textEn": "Allies in your Presence have (35—39)% increased Critical Damage Bonus"
       }

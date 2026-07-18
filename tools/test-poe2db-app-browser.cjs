@@ -6,13 +6,19 @@ const { chromium } = require("playwright");
 
 const root = path.resolve(__dirname, "..");
 const appMods = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app/mods.json"), "utf8"));
+const appIndex = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app/index.json"), "utf8"));
+const modById = new Map(appMods.mods.map(mod => [mod.modId, mod]));
 const completeTexts = new Set(appMods.mods.map(mod => mod.displayText).filter(Boolean));
 const forbidden = /(?:Implicit|LocalChance|AdditionalArrows\d|(?:^|\s)\+%(?:\s|$)|minimaler[^\n]+\+[^\n]+maximaler)/i;
 const samples = [
   ["weapon", "Bow"],
-  ["weapon", "Spear"],
-  ["jewellery", "Ring"],
+  ["weapon", "Two Hand Sword"],
+  ["weapon", "One Hand Axe"],
+  ["weapon", "Wand"],
   ["armour", "Body Armour"],
+  ["armour", "Gloves"],
+  ["jewellery", "Ring"],
+  ["jewellery", "Amulet"],
   ["jewellery", "Jewel"]
 ];
 
@@ -54,16 +60,56 @@ let browser;
       const picker = document.querySelector("#basePicker");
       return picker && !picker.disabled && picker.dataset.baseId;
     });
-    await page.locator("#prefixSlots .affix-slot").first().dispatchEvent("click");
-    await page.waitForSelector("#modResults .result b", { timeout: 10000 });
-    const visibleTexts = await page.locator("#modResults .result b").allTextContents();
-    if (!visibleTexts.length) throw new Error(`${itemClass}: kein sichtbarer Präfix-Pool`);
-    for (const text of visibleTexts) {
-      if (!completeTexts.has(text)) throw new Error(`${itemClass}: DOM-Text stammt nicht aus displayText: ${text}`);
-      if (forbidden.test(text)) throw new Error(`${itemClass}: technischer oder künstlicher DOM-Text: ${text}`);
+    await page.locator("#ilevel").evaluate(element => { element.value = "100"; element.dispatchEvent(new Event("input", { bubbles: true })); });
+    const baseId = await page.locator("#basePicker").getAttribute("data-base-id");
+    const poolFile = appIndex.poolFiles[itemClass];
+    const classPools = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app", poolFile), "utf8")).pools;
+    const expectedPool = classPools[baseId];
+    if (!expectedPool) throw new Error(`${itemClass}: Adapter-Pool fehlt für ${baseId}`);
+    const observed = {};
+    for (const [type, slotSelector, poolKey] of [["prefix", "#prefixSlots", "p"], ["suffix", "#suffixSlots", "s"]]) {
+      await page.locator(`${slotSelector} .affix-slot`).first().dispatchEvent("click");
+      await page.waitForSelector('#modResults .result[data-mod-id]', { state: "attached", timeout: 10000 });
+      const rows = await page.locator('#modResults .result[data-mod-id]').evaluateAll(elements => elements.map(element => ({
+        modId: element.dataset.modId,
+        text: element.querySelector("b")?.textContent ?? ""
+      })));
+      const actualIds = rows.map(row => row.modId).sort();
+      const expectedIds = expectedPool[poolKey].map(row => row[0]).sort();
+      if (JSON.stringify(actualIds) !== JSON.stringify(expectedIds)) {
+        const actual = new Set(actualIds);
+        const expected = new Set(expectedIds);
+        throw new Error(`${itemClass}/${type}: DOM-ID-Abweichung; fehlt=${expectedIds.filter(id => !actual.has(id)).join(",")}; extra=${actualIds.filter(id => !expected.has(id)).join(",")}`);
+      }
+      for (const { modId, text } of rows) {
+        if (text !== modById.get(modId)?.displayText || !completeTexts.has(text)) throw new Error(`${itemClass}: DOM-Text stammt nicht aus displayText: ${modId} ${text}`);
+        if (forbidden.test(text)) throw new Error(`${itemClass}: technischer oder künstlicher DOM-Text: ${text}`);
+      }
+      observed[type] = rows.length;
+      await page.keyboard.press("Escape");
     }
-    classes.push({ itemClass, base: await page.textContent("#basePickerName"), prefixRows: visibleTexts.length, firstText: visibleTexts[0] });
-    await page.keyboard.press("Escape");
+    classes.push({ itemClass, baseId, base: await page.textContent("#basePickerName"), prefixes: observed.prefix, suffixes: observed.suffix });
+  }
+
+  const bowResult = classes.find(row => row.itemClass === "Bow");
+  const bowPool = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app", appIndex.poolFiles.Bow), "utf8")).pools[bowResult.baseId];
+  const bowMods = [...bowPool.p, ...bowPool.s].map(row => modById.get(row[0]));
+  const bowFamilies = {
+    increasedPhysical: /increased physical damage/i,
+    addedPhysical: /adds? .* physical damage/i,
+    attackSpeed: /attack speed/i,
+    criticalChance: /critical (?:hit|strike) chance/i,
+    criticalMultiplier: /critical.*(?:damage bonus|multiplier)/i,
+    accuracy: /accuracy/i,
+    fire: /fire damage/i,
+    cold: /cold damage/i,
+    lightning: /lightning damage/i,
+    elementalWithAttacks: /elemental damage with attack/i,
+    projectileOrBow: /projectile|arrow|bow/i
+  };
+  for (const [family, pattern] of Object.entries(bowFamilies)) {
+    const matches = bowMods.filter(mod => pattern.test(`${mod.displayTextEn} ${mod.groups.join(" ")} ${mod.technicalStats.map(stat => stat.id).join(" ")}`));
+    if (!matches.length) throw new Error(`Bow: erwartete gültige Modfamilie fehlt im DOM-geprüften Pool: ${family}`);
   }
 
   await setSelect("#category", "weapon");

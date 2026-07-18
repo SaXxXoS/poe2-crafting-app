@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:38:28.858Z",
+  "generatedAt": "2026-07-18T10:54:31.140Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Ring.",
@@ -111,227 +111,227 @@
     ],
     "missingGermanModifierTexts": [
       {
-        "id": "poe2db:9256162cb7d65f6b6202",
+        "id": "poe2db:f072eb7726c48eb1adf9",
         "nameEn": "Glinting",
         "textEn": "Adds (1—2) to 3 Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:d8ae7e359965160341a8",
+        "id": "poe2db:029cfe44b12ae76fe53b",
         "nameEn": "Burnished",
         "textEn": "Adds (2—3) to (4—6) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:c250ce7aa1c65f366759",
+        "id": "poe2db:636bd98ba7aebd82ad16",
         "nameEn": "Polished",
         "textEn": "Adds (2—4) to (5—8) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:8e2baff7f001142dd82b",
+        "id": "poe2db:ae1f3ce426d542298041",
         "nameEn": "Honed",
         "textEn": "Adds (4—6) to (8—11) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:01b9952c5f5d211ad081",
+        "id": "poe2db:1f8a32956dbfc26d9823",
         "nameEn": "Gleaming",
         "textEn": "Adds (5—7) to (9—13) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:b317154c781020ee5205",
+        "id": "poe2db:d32272177a55118863b1",
         "nameEn": "Annealed",
         "textEn": "Adds (6—10) to (12—17) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:195370d2a90f68d1c177",
+        "id": "poe2db:de28f8502c5c3f48c3ff",
         "nameEn": "Razor-sharp",
         "textEn": "Adds (7—11) to (14—20) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:699c7c8b65e3f4a7fc0d",
+        "id": "poe2db:ceaec1aa089a1d975457",
         "nameEn": "Tempered",
         "textEn": "Adds (10—15) to (18—26) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:fffbe62a0a513bfa2f17",
+        "id": "poe2db:e5868300f149abd2662c",
         "nameEn": "Flaring",
         "textEn": "Adds (12—19) to (22—32) Physical Damage to Attacks"
       },
       {
-        "id": "poe2db:32b0629fdd6573de65ae",
+        "id": "poe2db:77b9ea92abffb229b1f2",
         "nameEn": "Heated",
         "textEn": "Adds (1—2) to 3 Fire damage to Attacks"
       },
       {
-        "id": "poe2db:5f28e269a703f854a4fb",
+        "id": "poe2db:10d960de11ee8588201b",
         "nameEn": "Smouldering",
         "textEn": "Adds (3—5) to (6—9) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:5e9ea449b2ba094e7ac6",
+        "id": "poe2db:4b82053fb9d7d43341c1",
         "nameEn": "Smoking",
         "textEn": "Adds (6—8) to (10—13) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:e3bd1ff90cdfb140bdcf",
+        "id": "poe2db:d8cfe7cc17bce3eb785c",
         "nameEn": "Burning",
         "textEn": "Adds (9—11) to (14—17) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:9c189df096ade737a1fc",
+        "id": "poe2db:fb09eed681a8c04feb6c",
         "nameEn": "Flaming",
         "textEn": "Adds (12—13) to (18—20) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:ffab0b7fdcdd9bc3745b",
+        "id": "poe2db:dd610a336817719562c4",
         "nameEn": "Scorching",
         "textEn": "Adds (11—16) to (21—26) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:a6c0af75e4e3d8af7138",
+        "id": "poe2db:92619eb70df1726ec38c",
         "nameEn": "Incinerating",
         "textEn": "Adds (13—19) to (27—32) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:e7409148338792fd560a",
+        "id": "poe2db:b83c1ca9b43c7d95bd04",
         "nameEn": "Blasting",
         "textEn": "Adds (20—24) to (33—36) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:3c31321caf3fbdedc817",
+        "id": "poe2db:9453092962b86e8fa80e",
         "nameEn": "Cremating",
         "textEn": "Adds (25—29) to (37—45) Fire damage to Attacks"
       },
       {
-        "id": "poe2db:42fa664ed15f375cdad5",
+        "id": "poe2db:405817f5d63914b4331b",
         "nameEn": "Frosted",
         "textEn": "Adds 1 to (2—3) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:8fbb1d00f24abeeec5a9",
+        "id": "poe2db:47182b72ae17f9b89e90",
         "nameEn": "Chilled",
         "textEn": "Adds (3—4) to (5—8) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:fb5729d39f16f4e37c6e",
+        "id": "poe2db:d09cd5611845e5dbaca4",
         "nameEn": "Icy",
         "textEn": "Adds (5—6) to (9—11) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:0751486341ad74f3ad06",
+        "id": "poe2db:fee1db2d954a3be64ecd",
         "nameEn": "Frigid",
         "textEn": "Adds (7—8) to (12—14) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:55c9d077112231d8766f",
+        "id": "poe2db:67fb9cbc809bad396620",
         "nameEn": "Freezing",
         "textEn": "Adds (9—10) to (15—17) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:11dda09c67d79d92c4df",
+        "id": "poe2db:e3eaf8adaee2a830095a",
         "nameEn": "Frozen",
         "textEn": "Adds (11—13) to (18—21) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:e6f8e18edef85d944f16",
+        "id": "poe2db:b42d4a7f7c803a8da757",
         "nameEn": "Glaciated",
         "textEn": "Adds (14—15) to (22—24) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:ebf009f991c9054799f7",
+        "id": "poe2db:48f15ae092ad955d2827",
         "nameEn": "Polar",
         "textEn": "Adds (16—20) to (25—31) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:cf1c50ff3eae8c780ada",
+        "id": "poe2db:d4ed79e60d4030b858d9",
         "nameEn": "Entombing",
         "textEn": "Adds (21—24) to (32—37) Cold damage to Attacks"
       },
       {
-        "id": "poe2db:5ade26f756c4eeecca04",
+        "id": "poe2db:a62a5dc3782f57d3d37b",
         "nameEn": "Humming",
         "textEn": "Adds 1 to (4—6) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:a3b00dd4eb55713323e7",
+        "id": "poe2db:f7d7b8aa4bf3f3b6ad0c",
         "nameEn": "Buzzing",
         "textEn": "Adds 1 to (10—15) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:cef4a0294e4f1c53a801",
+        "id": "poe2db:42ce812557a4394c1b2a",
         "nameEn": "Snapping",
         "textEn": "Adds 1 to (16—22) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:56cba4e8fd8a34f04ee0",
+        "id": "poe2db:1e1b4efb424592724904",
         "nameEn": "Crackling",
         "textEn": "Adds 1 to (23—27) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:0b5bca57d963ddcb62d7",
+        "id": "poe2db:67d8c016d998978c9427",
         "nameEn": "Sparking",
         "textEn": "Adds 1 to (28—32) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:b97675c7c0053d7c9c49",
+        "id": "poe2db:fe28cf0b86706090e9c6",
         "nameEn": "Arcing",
         "textEn": "Adds (1—2) to (33—40) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:2958ccb9d846973b7d87",
+        "id": "poe2db:8ca841d3516b74424b5d",
         "nameEn": "Shocking",
         "textEn": "Adds (1—2) to (41—47) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:ba0ca2a1ee0d98ca139a",
+        "id": "poe2db:d5dbdcd29920f0ffa65c",
         "nameEn": "Discharging",
         "textEn": "Adds (1—3) to (48—59) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:082701a77655682ff744",
+        "id": "poe2db:ab3af3c7cdda0757a770",
         "nameEn": "Electrocuting",
         "textEn": "Adds (1—4) to (60—71) Lightning damage to Attacks"
       },
       {
-        "id": "poe2db:222cba58d59151b3bc84",
+        "id": "poe2db:93ee3611fda96f8dd186",
         "nameEn": "of the Crystal",
         "textEn": "+(3—5)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:4ac03976a027dbe26b57",
+        "id": "poe2db:c3348996c1bb5bd0fe08",
         "nameEn": "of the Prism",
         "textEn": "+(6—8)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:cb9937e715cc895d3ca7",
+        "id": "poe2db:36483a7c1cba3534d6f6",
         "nameEn": "of the Kaleidoscope",
         "textEn": "+(9—11)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:43a4fbd4bcb997de9a75",
+        "id": "poe2db:a9a706dca968890729a5",
         "nameEn": "of Variegation",
         "textEn": "+(12—14)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:346236290f4cbba06488",
+        "id": "poe2db:b654b858f22eca65f65b",
         "nameEn": "of the Rainbow",
         "textEn": "+(15—16)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:4a9105139d83993cb52a",
+        "id": "poe2db:bd1a6351dc3356196a2b",
         "nameEn": "of the Locust",
         "textEn": "Leech (6—6.9)% of Physical Attack Damage as Life"
       },
       {
-        "id": "poe2db:0e63bba3652f70133688",
+        "id": "poe2db:7346c73defb3ad98044a",
         "nameEn": "of the Remora",
         "textEn": "Leech (7—7.9)% of Physical Attack Damage as Life"
       },
       {
-        "id": "poe2db:9425d5b9a288044a6721",
+        "id": "poe2db:2622aaaac94b0af050a7",
         "nameEn": "of the Parched",
         "textEn": "Leech (5—5.9)% of Physical Attack Damage as Mana"
       },
       {
-        "id": "poe2db:7f7a396bf19b37d98c23",
+        "id": "poe2db:00c5ddc082e656efd52a",
         "nameEn": "of the Arid",
         "textEn": "Leech (6—6.9)% of Physical Attack Damage as Mana"
       }

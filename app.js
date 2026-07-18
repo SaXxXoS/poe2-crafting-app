@@ -810,6 +810,7 @@
     list.forEach(base => {
       const row = document.createElement('div');
       row.className = 'result';
+      row.dataset.baseId = base.id;
 
       const implicitText = base.implicitsDisplay
         .map(implicit => implicit.name)
@@ -941,6 +942,7 @@
     list.forEach(mod => {
       const row = document.createElement('div');
       row.className = 'result';
+      row.dataset.modId = mod.id;
       const weightText = mod.spawnWeight > 0
         ? ` · Spawn-Gewicht ${mod.spawnWeight}`
         : '';

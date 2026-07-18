@@ -348,12 +348,9 @@ function modStructuralKey(row) {
   ].join("|");
 }
 
-function classMods(document, selectorTags) {
-  const selected = new Set(selectorTags);
+function classMods(document) {
   const rows = (document.normal ?? []).filter(row =>
     ["1", "2"].includes(String(row.ModGenerationTypeID))
-    && Array.isArray(row.spawn_no)
-    && row.spawn_no.some(tag => selected.has(tag))
     && Number(row.DropChance) > 0
   );
   const seen = new Set();
@@ -365,9 +362,9 @@ function classMods(document, selectorTags) {
   });
 }
 
-function localizeMods(englishDocument, germanDocument, selectorTags) {
-  const english = classMods(englishDocument, selectorTags);
-  const german = classMods(germanDocument, selectorTags);
+function localizeMods(englishDocument, germanDocument) {
+  const english = classMods(englishDocument);
+  const german = classMods(germanDocument);
   const germanGroups = Map.groupBy(german, modStructuralKey);
   const joined = [];
   for (const [baseKey, englishRows] of Map.groupBy(english, modStructuralKey)) {
@@ -379,12 +376,17 @@ function localizeMods(englishDocument, germanDocument, selectorTags) {
 
     const technicalId = row => decodeURIComponent(String(row.hover ?? ""))
       .match(/[\\/]Mods[\\/]([^?&#]+)/)?.[1] ?? null;
+    const numericSignature = row => (decodeHtml(row.str).match(/-?\d+(?:\.\d+)?/g) ?? []).join("|");
     const remainingGerman = new Set(germanRows);
-    const pairs = englishRows.map(row => {
+    const pairs = englishRows.map((row, rowIndex) => {
       const id = technicalId(row);
-      const matches = id ? [...remainingGerman].filter(candidate => technicalId(candidate) === id) : [];
-      if (matches.length > 1) throw new Error(`Mehrdeutige deutsche Mod-Zuordnung: ${baseKey} (${id})`);
-      const translated = matches[0] ?? null;
+      const matches = id
+        ? [...remainingGerman].filter(candidate => technicalId(candidate) === id)
+        : [...remainingGerman].filter(candidate => numericSignature(candidate) === numericSignature(row));
+      const positional = germanRows[rowIndex];
+      const translated = matches.length === 1
+        ? matches[0]
+        : (!id && remainingGerman.has(positional) && numericSignature(positional) === numericSignature(row) ? positional : null);
       if (translated) remainingGerman.delete(translated);
       return { row, translated, id };
     });
@@ -421,7 +423,7 @@ function localizeMods(englishDocument, germanDocument, selectorTags) {
   }
 
   return joined.map(({ row, translated, key }) => ({
-    id: `poe2db:${sha256(key).slice(0, 20)}`,
+    id: `poe2db:${sha256(`${key}|text:${decodeHtml(row.str)}`).slice(0, 20)}`,
     nameEn: decodeHtml(row.Name),
     nameDe: translated ? decodeHtml(translated.Name) : null,
     textEn: decodeHtml(row.str),
@@ -453,7 +455,7 @@ function mergeLocalizedMods(groups) {
 }
 
 function attachWeightRules(mods, repoeMods, bases, domain = "item") {
-  return mods.map(mod => {
+  return mods.flatMap(mod => {
     const candidates = Object.entries(repoeMods).filter(([, row]) =>
       row.domain === domain
       && row.is_essence_only !== true
@@ -467,18 +469,45 @@ function attachWeightRules(mods, repoeMods, bases, domain = "item") {
       && bases.some(base => firstMatchingWeight(row.spawn_weights, base.tags).weight > 0)
     );
 
+    if (candidates.length === 0) return [];
     if (candidates.length !== 1) {
       throw new Error(`Gewichtsregel für ${mod.nameEn} (iLvl ${mod.itemLevel}) ist nicht eindeutig: ${candidates.length}`);
     }
 
     const [sourceId, row] = candidates[0];
-    return {
+    return [{
       ...mod,
       sourceId,
       spawnWeights: row.spawn_weights ?? [],
       generationWeights: row.generation_weights ?? []
-    };
+    }];
   });
+}
+
+function finalizeTechnicalMods(mods) {
+  const bySourceId = new Map();
+  for (const mod of mods) {
+    const existing = bySourceId.get(mod.sourceId);
+    if (existing && (
+      existing.textEn !== mod.textEn
+      || existing.generationType !== mod.generationType
+      || existing.itemLevel !== mod.itemLevel
+    )) {
+      throw new Error(`Widersprüchliche PoE2DB-Zeilen für technische Mod-ID ${mod.sourceId}`);
+    }
+    if (!existing || (!existing.textDe && mod.textDe)) bySourceId.set(mod.sourceId, mod);
+  }
+
+  const unique = [...bySourceId.values()].map(mod => ({
+    ...mod,
+    id: `poe2db:${sha256(`repoe:${mod.sourceId}`).slice(0, 20)}`
+  }));
+  for (const entries of Map.groupBy(unique, mod => `${mod.generationType}|${mod.family.join("+")}`).values()) {
+    entries
+      .sort((a, b) => b.itemLevel - a.itemLevel || a.sourceId.localeCompare(b.sourceId))
+      .forEach((mod, index) => { mod.tier = index + 1; });
+  }
+  return unique;
 }
 
 function firstMatchingWeight(rows, tags) {
@@ -666,12 +695,12 @@ async function main() {
       parseModsView(snapshots.get(`${modPage.page}:german`)),
       modPage.selectorTags
     ));
-    const mods = attachWeightRules(
+    const mods = finalizeTechnicalMods(attachWeightRules(
       mergeLocalizedMods(localizedGroups),
       repoeMods,
       bases,
       config.itemClass === "Jewel" ? "misc" : "item"
-    );
+    ));
     const prefixes = mods.filter(mod => mod.generationType === "prefix");
     const suffixes = mods.filter(mod => mod.generationType === "suffix");
     const pools = buildPools(bases, prefixes, suffixes);

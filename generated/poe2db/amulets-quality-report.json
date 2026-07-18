@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:38:23.959Z",
+  "generatedAt": "2026-07-18T10:54:29.635Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Amulet.",
@@ -76,32 +76,32 @@
     ],
     "missingGermanModifierTexts": [
       {
-        "id": "poe2db:222cba58d59151b3bc84",
+        "id": "poe2db:93ee3611fda96f8dd186",
         "nameEn": "of the Crystal",
         "textEn": "+(3—5)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:4ac03976a027dbe26b57",
+        "id": "poe2db:c3348996c1bb5bd0fe08",
         "nameEn": "of the Prism",
         "textEn": "+(6—8)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:cb9937e715cc895d3ca7",
+        "id": "poe2db:36483a7c1cba3534d6f6",
         "nameEn": "of the Kaleidoscope",
         "textEn": "+(9—11)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:43a4fbd4bcb997de9a75",
+        "id": "poe2db:a9a706dca968890729a5",
         "nameEn": "of Variegation",
         "textEn": "+(12—14)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:346236290f4cbba06488",
+        "id": "poe2db:b654b858f22eca65f65b",
         "nameEn": "of the Rainbow",
         "textEn": "+(15—16)% to all Elemental Resistances"
       },
       {
-        "id": "poe2db:8098419898ad4a65c07a",
+        "id": "poe2db:f90eb52378809ee1eb21",
         "nameEn": "of the Span",
         "textEn": "+(17—18)% to all Elemental Resistances"
       }

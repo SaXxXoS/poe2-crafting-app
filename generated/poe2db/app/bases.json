@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "generated/poe2db",
-  "count": 943,
+  "count": 947,
   "bases": [
     {
       "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpear1",
@@ -40158,6 +40158,176 @@
       "properties": {},
       "sourceProperties": [],
       "implicits": [],
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      },
+      "source": "poe2db"
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusStr",
+      "name": "Time-Lost Ruby",
+      "nameEn": "Time-Lost Ruby",
+      "nameDe": "Zeitverlorener Rubin",
+      "itemClass": "Jewel",
+      "itemClassName": "Jewel",
+      "dropLevel": 20,
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "str_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "properties": {},
+      "sourceProperties": [],
+      "implicits": [
+        {
+          "id": "Metadata/Items/Jewels/JewelRadiusStr:implicit:0",
+          "displayTextDe": null,
+          "displayTextEn": null,
+          "displayText": "Impliziter Modtext nicht verfügbar",
+          "textEn": null,
+          "textDe": null,
+          "type": "Basis-Implizit"
+        }
+      ],
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      },
+      "source": "poe2db"
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusDex",
+      "name": "Time-Lost Emerald",
+      "nameEn": "Time-Lost Emerald",
+      "nameDe": "Zeitverlorener Smaragd",
+      "itemClass": "Jewel",
+      "itemClassName": "Jewel",
+      "dropLevel": 20,
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "dex_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "properties": {},
+      "sourceProperties": [],
+      "implicits": [
+        {
+          "id": "Metadata/Items/Jewels/JewelRadiusDex:implicit:0",
+          "displayTextDe": null,
+          "displayTextEn": null,
+          "displayText": "Impliziter Modtext nicht verfügbar",
+          "textEn": null,
+          "textDe": null,
+          "type": "Basis-Implizit"
+        }
+      ],
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      },
+      "source": "poe2db"
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusInt",
+      "name": "Time-Lost Sapphire",
+      "nameEn": "Time-Lost Sapphire",
+      "nameDe": "Zeitverlorener Saphir",
+      "itemClass": "Jewel",
+      "itemClassName": "Jewel",
+      "dropLevel": 20,
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "int_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "properties": {},
+      "sourceProperties": [],
+      "implicits": [
+        {
+          "id": "Metadata/Items/Jewels/JewelRadiusInt:implicit:0",
+          "displayTextDe": null,
+          "displayTextEn": null,
+          "displayText": "Impliziter Modtext nicht verfügbar",
+          "textEn": null,
+          "textDe": null,
+          "type": "Basis-Implizit"
+        }
+      ],
+      "availability": {
+        "droppable": true,
+        "classification": "regular",
+        "regularUsable": true,
+        "reason": "Released equipment base with a positive drop level."
+      },
+      "source": "poe2db"
+    },
+    {
+      "id": "Metadata/Items/Jewels/JewelRadiusDiamond",
+      "name": "Time-Lost Diamond",
+      "nameEn": "Time-Lost Diamond",
+      "nameDe": "Zeitverlorener Diamant",
+      "itemClass": "Jewel",
+      "itemClassName": "Jewel",
+      "dropLevel": 20,
+      "tags": [
+        "jewel",
+        "not_for_sale",
+        "str_radius_jewel",
+        "dex_radius_jewel",
+        "int_radius_jewel",
+        "radius_jewel",
+        "default"
+      ],
+      "requirements": {
+        "level": 1,
+        "strength": 0,
+        "dexterity": 0,
+        "intelligence": 0
+      },
+      "properties": {},
+      "sourceProperties": [],
+      "implicits": [
+        {
+          "id": "Metadata/Items/Jewels/JewelRadiusDiamond:implicit:0",
+          "displayTextDe": null,
+          "displayTextEn": null,
+          "displayText": "Impliziter Modtext nicht verfügbar",
+          "textEn": null,
+          "textDe": null,
+          "type": "Basis-Implizit"
+        }
+      ],
       "availability": {
         "droppable": true,
         "classification": "regular",

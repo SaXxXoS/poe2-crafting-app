@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-18T09:36:32.102Z",
+  "generatedAt": "2026-07-18T10:53:52.288Z",
   "status": "validated-craftable-equipment-classes",
   "supportedClassTarget": "All requested normal weapon, armour, off-hand, jewellery, and jewel classes.",
   "sources": {
@@ -15,8 +15,8 @@
       "qualityReportFile": "spears-quality-report.json",
       "counts": {
         "bases": 36,
-        "prefixes": 30,
-        "suffixes": 24
+        "prefixes": 70,
+        "suffixes": 92
       },
       "poolCounts": {
         "prefixes": 1,
@@ -30,8 +30,8 @@
       "qualityReportFile": "bows-quality-report.json",
       "counts": {
         "bases": 35,
-        "prefixes": 45,
-        "suffixes": 16
+        "prefixes": 71,
+        "suffixes": 69
       },
       "poolCounts": {
         "prefixes": 1,
@@ -45,8 +45,8 @@
       "qualityReportFile": "crossbows-quality-report.json",
       "counts": {
         "bases": 34,
-        "prefixes": 30,
-        "suffixes": 22
+        "prefixes": 71,
+        "suffixes": 75
       },
       "poolCounts": {
         "prefixes": 1,
@@ -90,8 +90,8 @@
       "qualityReportFile": "warstaves-quality-report.json",
       "counts": {
         "bases": 38,
-        "prefixes": 30,
-        "suffixes": 16
+        "prefixes": 70,
+        "suffixes": 88
       },
       "poolCounts": {
         "prefixes": 1,
@@ -105,8 +105,8 @@
       "qualityReportFile": "one-hand-swords-quality-report.json",
       "counts": {
         "bases": 16,
-        "prefixes": 30,
-        "suffixes": 16
+        "prefixes": 70,
+        "suffixes": 88
       },
       "poolCounts": {
         "prefixes": 1,
@@ -120,8 +120,8 @@
       "qualityReportFile": "two-hand-swords-quality-report.json",
       "counts": {
         "bases": 14,
-        "prefixes": 30,
-        "suffixes": 16
+        "prefixes": 70,
+        "suffixes": 88
       },
       "poolCounts": {
         "prefixes": 1,
@@ -135,8 +135,8 @@
       "qualityReportFile": "one-hand-axes-quality-report.json",
       "counts": {
         "bases": 13,
-        "prefixes": 30,
-        "suffixes": 8
+        "prefixes": 70,
+        "suffixes": 80
       },
       "poolCounts": {
         "prefixes": 1,
@@ -150,8 +150,8 @@
       "qualityReportFile": "two-hand-axes-quality-report.json",
       "counts": {
         "bases": 13,
-        "prefixes": 30,
-        "suffixes": 8
+        "prefixes": 70,
+        "suffixes": 80
       },
       "poolCounts": {
         "prefixes": 1,
@@ -165,8 +165,8 @@
       "qualityReportFile": "one-hand-maces-quality-report.json",
       "counts": {
         "bases": 44,
-        "prefixes": 30,
-        "suffixes": 8
+        "prefixes": 70,
+        "suffixes": 80
       },
       "poolCounts": {
         "prefixes": 1,
@@ -180,8 +180,8 @@
       "qualityReportFile": "two-hand-maces-quality-report.json",
       "counts": {
         "bases": 43,
-        "prefixes": 30,
-        "suffixes": 8
+        "prefixes": 70,
+        "suffixes": 80
       },
       "poolCounts": {
         "prefixes": 1,
@@ -195,8 +195,8 @@
       "qualityReportFile": "daggers-quality-report.json",
       "counts": {
         "bases": 14,
-        "prefixes": 30,
-        "suffixes": 16
+        "prefixes": 70,
+        "suffixes": 88
       },
       "poolCounts": {
         "prefixes": 1,
@@ -210,8 +210,8 @@
       "qualityReportFile": "claws-quality-report.json",
       "counts": {
         "bases": 13,
-        "prefixes": 30,
-        "suffixes": 8
+        "prefixes": 70,
+        "suffixes": 80
       },
       "poolCounts": {
         "prefixes": 1,
@@ -225,8 +225,8 @@
       "qualityReportFile": "flails-quality-report.json",
       "counts": {
         "bases": 13,
-        "prefixes": 30,
-        "suffixes": 16
+        "prefixes": 70,
+        "suffixes": 88
       },
       "poolCounts": {
         "prefixes": 1,
@@ -255,8 +255,8 @@
       "qualityReportFile": "body-armours-quality-report.json",
       "counts": {
         "bases": 369,
-        "prefixes": 298,
-        "suffixes": 193
+        "prefixes": 213,
+        "suffixes": 110
       },
       "poolCounts": {
         "prefixes": 8,
@@ -271,7 +271,7 @@
       "counts": {
         "bases": 262,
         "prefixes": 185,
-        "suffixes": 89
+        "suffixes": 92
       },
       "poolCounts": {
         "prefixes": 8,
@@ -286,7 +286,7 @@
       "counts": {
         "bases": 204,
         "prefixes": 174,
-        "suffixes": 110
+        "suffixes": 113
       },
       "poolCounts": {
         "prefixes": 9,
@@ -301,7 +301,7 @@
       "counts": {
         "bases": 192,
         "prefixes": 135,
-        "suffixes": 112
+        "suffixes": 107
       },
       "poolCounts": {
         "prefixes": 8,
@@ -316,7 +316,7 @@
       "counts": {
         "bases": 151,
         "prefixes": 87,
-        "suffixes": 82
+        "suffixes": 114
       },
       "poolCounts": {
         "prefixes": 5,
@@ -331,7 +331,7 @@
       "counts": {
         "bases": 52,
         "prefixes": 45,
-        "suffixes": 43
+        "suffixes": 73
       },
       "poolCounts": {
         "prefixes": 2,
@@ -346,7 +346,7 @@
       "counts": {
         "bases": 51,
         "prefixes": 70,
-        "suffixes": 40
+        "suffixes": 70
       },
       "poolCounts": {
         "prefixes": 1,
@@ -420,12 +420,12 @@
       "qualityReportFile": "jewels-quality-report.json",
       "counts": {
         "bases": 10,
-        "prefixes": 70,
-        "suffixes": 90
+        "prefixes": 142,
+        "suffixes": 178
       },
       "poolCounts": {
-        "prefixes": 5,
-        "suffixes": 5
+        "prefixes": 9,
+        "suffixes": 9
       }
     }
   ],

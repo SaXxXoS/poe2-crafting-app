@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:38:52.086Z",
+  "generatedAt": "2026-07-18T10:54:43.827Z",
   "baseFallbackReport": [
     {
       "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow14Endgame",
@@ -255,13 +255,37 @@
       "itemClass": "Gloves",
       "implicitIndex": 0,
       "germanPage": "https://poe2db.tw/de/Gloves"
+    },
+    {
+      "baseId": "Metadata/Items/Jewels/JewelRadiusStr",
+      "itemClass": "Jewel",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Jewels"
+    },
+    {
+      "baseId": "Metadata/Items/Jewels/JewelRadiusDex",
+      "itemClass": "Jewel",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Jewels"
+    },
+    {
+      "baseId": "Metadata/Items/Jewels/JewelRadiusInt",
+      "itemClass": "Jewel",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Jewels"
+    },
+    {
+      "baseId": "Metadata/Items/Jewels/JewelRadiusDiamond",
+      "itemClass": "Jewel",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Jewels"
     }
   ],
   "counts": {
-    "germanBaseNames": 919,
+    "germanBaseNames": 923,
     "englishBaseFallbacks": 24,
-    "missingImplicitTexts": 14,
-    "germanModifierTexts": 1645,
-    "englishModifierFallbacks": 162
+    "missingImplicitTexts": 18,
+    "germanModifierTexts": 1463,
+    "englishModifierFallbacks": 192
   }
 }

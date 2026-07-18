@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:36:35.818Z",
+  "generatedAt": "2026-07-18T10:53:54.538Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Bow.",
@@ -57,7 +57,48 @@
         "textEn": null
       }
     ],
-    "missingGermanModifierTexts": [],
+    "missingGermanModifierTexts": [
+      {
+        "id": "poe2db:3db883c03c0034ef86cf",
+        "nameEn": "of the Locust",
+        "textEn": "Leeches (6—6.9)% of Physical Damage as Life"
+      },
+      {
+        "id": "poe2db:eaebf309a9b63d2923fe",
+        "nameEn": "of the Remora",
+        "textEn": "Leeches (7—7.9)% of Physical Damage as Life"
+      },
+      {
+        "id": "poe2db:afd6868726779077768f",
+        "nameEn": "of the Lamprey",
+        "textEn": "Leeches (8—8.9)% of Physical Damage as Life"
+      },
+      {
+        "id": "poe2db:c5ae13ec57de9cd3f8f0",
+        "nameEn": "of the Vampire",
+        "textEn": "Leeches (9—9.9)% of Physical Damage as Life"
+      },
+      {
+        "id": "poe2db:0a7329020fc0203e7392",
+        "nameEn": "of the Parched",
+        "textEn": "Leeches (5—5.9)% of Physical Damage as Mana"
+      },
+      {
+        "id": "poe2db:568bbade087798e032a2",
+        "nameEn": "of the Arid",
+        "textEn": "Leeches (6—6.9)% of Physical Damage as Mana"
+      },
+      {
+        "id": "poe2db:17e33df141e3870776a2",
+        "nameEn": "of the Drought",
+        "textEn": "Leeches (7—7.9)% of Physical Damage as Mana"
+      },
+      {
+        "id": "poe2db:eec5c37db07273f5f1d9",
+        "nameEn": "of the Desperate",
+        "textEn": "Leeches (8—8.9)% of Physical Damage as Mana"
+      }
+    ],
     "ambiguousTranslations": []
   },
   "excludedBases": [
