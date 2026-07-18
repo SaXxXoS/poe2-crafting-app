@@ -1,4 +1,5 @@
 import { ENGINE_ACTION_CODES } from "./errors.mjs";
+import { validateModifierCatalog } from "./catalog-validation.mjs";
 import { compareTechnicalStrings, resolveEligibleModifiers } from "./eligible-modifier-resolver.mjs";
 import { immutableCopy } from "./immutability.mjs";
 import { createRuleContext } from "./rule-context.mjs";
@@ -6,8 +7,12 @@ import { createRuleContext } from "./rule-context.mjs";
 const isRecord = value => Boolean(value) && typeof value === "object" && !Array.isArray(value);
 const compareNumbers = (left, right) => left === right ? 0 : left < right ? -1 : 1;
 const compareFields = values => values.find(value => value !== 0) ?? 0;
-const canonicalValue = value => Array.isArray(value) ? value.map(canonicalValue) : isRecord(value)
-  ? Object.fromEntries(Object.keys(value).sort(compareTechnicalStrings).map(key => [key, canonicalValue(value[key])])) : value;
+const canonicalValue = value => {
+  if (value === undefined) throw new TypeError("Canonical technical payload cannot contain undefined.");
+  if (Array.isArray(value)) return value.map(canonicalValue);
+  if (isRecord(value)) return Object.fromEntries(Object.keys(value).sort(compareTechnicalStrings).map(key => [key, canonicalValue(value[key])]));
+  return value;
+};
 const canonicalString = value => JSON.stringify(canonicalValue(value));
 const reason = (code, outcome, message, rule, path, details = {}) => ({ code, outcome, message, rule, path, details });
 const compareReasons = (left, right) => compareFields([
@@ -67,25 +72,40 @@ function validateActionContext(actionContext) {
   return null;
 }
 
-function additionRequest(action, itemState, count, candidates, eligibilityResult) {
+function additionRequest(action, itemState, catalog, count, candidates, eligibilityResult, capacityRules) {
   const compact = candidates.map(candidate => ({ modifierId: candidate.modifierId, generationType: candidate.generationType,
-    technicalTier: candidate.technicalTier, displayTier: candidate.displayTier, itemLevelRequirement: candidate.itemLevelRequirement,
-    rawWeight: candidate.applicableWeight })).sort(compareCandidates);
-  const deterministicKey = canonicalString({ actionId: action.id, count, itemId: itemState.itemId, revision: itemState.revision, type: "modifier-addition" });
+    technicalTier: candidate.technicalTier, displayTier: candidate.displayTier, source: candidate.source ?? null,
+    familyId: candidate.catalogReferences?.familyId ?? null, itemLevelRequirement: candidate.itemLevelRequirement,
+    rawSpawnWeights: catalog.modifiers[candidate.modifierId]?.spawnWeights ?? null,
+    rawGenerationWeights: catalog.modifiers[candidate.modifierId]?.generationWeights ?? null,
+    applicableWeight: candidate.applicableWeight })).sort(compareCandidates);
+  const weighting = { mode: "raw-technical-weights", normalized: false };
+  const replacementPolicy = "without-replacement";
+  const constraints = { generationTypes: [...new Set(compact.map(entry => entry.generationType))].sort(compareTechnicalStrings) };
+  const sourceResult = { mode: eligibilityResult.contextSummary.mode, candidateCount: eligibilityResult.candidateCount };
+  const keyPayload = { keyVersion: 1, actionId: action.id, type: "modifier-addition", count,
+    item: { itemId: itemState.itemId, revision: itemState.revision, itemClassId: itemState.itemClassId, baseTypeId: itemState.baseTypeId, rarity: itemState.rarity },
+    candidateStatus: "eligible", candidates: compact, weighting, replacementPolicy, constraints,
+    capacityRules: capacityRules ?? null, sourceResult };
+  const deterministicKey = canonicalString(keyPayload);
   return { id: `selection:${deterministicKey}`, type: "modifier-addition", actionId: action.id, count, candidateStatus: "eligible",
-    candidates: compact, weighting: { mode: "raw-technical-weights", normalized: false }, replacementPolicy: "without-replacement",
-    constraints: { generationTypes: [...new Set(compact.map(entry => entry.generationType))].sort(compareTechnicalStrings) },
-    sourceResult: { mode: eligibilityResult.contextSummary.mode, candidateCount: eligibilityResult.candidateCount }, deterministicKey };
+    candidates: compact, weighting, replacementPolicy, constraints, sourceResult, deterministicKey };
 }
 
 function removalRequest(action, itemState, count) {
   const candidates = [...itemState.prefixModifiers, ...itemState.suffixModifiers].map(instance => ({ instanceId: instance.instanceId,
-    modifierId: instance.modId, generationType: instance.generationType })).sort((left, right) => compareFields([
+    modifierId: instance.modId, familyId: instance.familyId, generationType: instance.generationType, domain: instance.domain,
+    technicalTier: instance.technicalTier, statIds: instance.statIds, source: instance.source, appliedAtRevision: instance.appliedAtRevision })).sort((left, right) => compareFields([
       compareTechnicalStrings(left.modifierId, right.modifierId), compareTechnicalStrings(left.instanceId, right.instanceId)
     ]));
-  const deterministicKey = canonicalString({ actionId: action.id, count, itemId: itemState.itemId, revision: itemState.revision, type: "modifier-removal" });
+  const replacementPolicy = "without-replacement";
+  const constraints = { regularModifiersOnly: true };
+  const keyPayload = { keyVersion: 1, actionId: action.id, type: "modifier-removal", count,
+    item: { itemId: itemState.itemId, revision: itemState.revision, itemClassId: itemState.itemClassId, baseTypeId: itemState.baseTypeId, rarity: itemState.rarity },
+    candidateStatus: "existing", candidates, weighting: { mode: "none", normalized: false }, replacementPolicy, constraints, executable: false };
+  const deterministicKey = canonicalString(keyPayload);
   return { id: `selection:${deterministicKey}`, type: "modifier-removal", actionId: action.id, count, candidateStatus: "existing", executable: false,
-    candidates, weighting: { mode: "none", normalized: false }, replacementPolicy: "without-replacement", constraints: { regularModifiersOnly: true },
+    candidates, weighting: { mode: "none", normalized: false }, replacementPolicy, constraints,
     sourceResult: { prefixCount: itemState.prefixModifiers.length, suffixCount: itemState.suffixModifiers.length },
     deferredReason: "Removal selection is not implemented in Crafting Actions Core v1.", deterministicKey };
 }
@@ -95,6 +115,13 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   if (!action) return emptyResult(actionId, null, reason(ENGINE_ACTION_CODES.UNKNOWN, "error", "Unknown crafting action ID.", "action", "actionId", { actionId: actionId ?? null }));
   const contextIssue = validateActionContext(actionContext);
   if (contextIssue || !isRecord(options)) return emptyResult(actionId, action, reason(ENGINE_ACTION_CODES.CONTEXT_INVALID, "error", contextIssue ?? "options must be an object.", "context", contextIssue ? "actionContext" : "options", {}));
+  if (action.requiresCatalog) {
+    try {
+      validateModifierCatalog(catalog);
+    } catch (error) {
+      return emptyResult(actionId, action, reason(ENGINE_ACTION_CODES.CATALOG_INVALID, "error", "Crafting action requires a structurally valid modifier catalog.", "catalog", error.path ?? "catalog", { catalogError: { code: error.code ?? null, message: error.message, path: error.path ?? "catalog", details: error.details ?? {} } }));
+    }
+  }
   let context;
   try {
     context = ruleContext ?? createRuleContext({ itemState, catalog, actionContext });
@@ -139,7 +166,7 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   const status = errors.length ? "error" : reasons.some(entry => entry.outcome === "fail") ? "inapplicable"
     : reasons.some(entry => entry.outcome === "unresolved") ? "unresolved" : "applicable";
   const selectionRequests = [];
-  if (status === "applicable" && action.requiresRandomSelection) selectionRequests.push(additionRequest(action, itemState, explicitCount, eligibilityResult.eligible, eligibilityResult));
+  if (status === "applicable" && action.requiresRandomSelection) selectionRequests.push(additionRequest(action, itemState, catalog, explicitCount, eligibilityResult.eligible, eligibilityResult, actionContext.capacityRules ?? options.capacityRules ?? null));
   if ((status === "applicable" || status === "unresolved") && action.requiresRandomRemoval && Number.isInteger(removalCount) && removalCount >= 0
     && action.inputRarities.includes(itemState.rarity)) selectionRequests.push(removalRequest(action, itemState, removalCount));
   selectionRequests.sort(compareRequests);

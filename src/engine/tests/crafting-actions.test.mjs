@@ -96,7 +96,7 @@ test("58 invalid eligibility result makes action error", () => { const base = ca
 test("59 eligible candidates are stably copied", () => assert.deepEqual(evaluate("currency:augmentation", "magic").selectionRequests[0].candidates.map(entry => entry.modifierId), ["mod:prefix", "mod:suffix"]));
 test("60 unresolved candidates are not selectable", () => assert.equal(evaluate("currency:augmentation", "magic", { actionContext: {} }).selectionRequests.length, 0));
 test("61 ineligible candidates are absent from request", () => assert.equal(evaluate("currency:augmentation", "magic").selectionRequests[0].candidates.some(entry => entry.modifierId === "mod:spear"), false));
-test("62 raw weights are retained", () => assert.deepEqual(evaluate("currency:augmentation", "magic").selectionRequests[0].candidates[0].rawWeight, { spawn: 100, generation: 1, spawnTag: "bow", generationTag: null }));
+test("62 raw weights are retained", () => { const candidate = evaluate("currency:augmentation", "magic").selectionRequests[0].candidates[0]; assert.deepEqual(candidate.applicableWeight, { spawn: 100, generation: 1, spawnTag: "bow", generationTag: null }); assert.deepEqual(candidate.rawSpawnWeights, [{ tag: "bow", weight: 100 }, { tag: "default", weight: 0 }]); assert.deepEqual(candidate.rawGenerationWeights, []); });
 test("63 no probabilities are calculated", () => assert.doesNotMatch(JSON.stringify(evaluate("currency:augmentation", "magic")), /probability|chance|percent/));
 test("64 no weighted selection result exists", () => assert.equal(evaluate("currency:augmentation", "magic").selectionRequests[0].weighting.normalized, false));
 
@@ -163,10 +163,10 @@ test("95 replacement mutation order clears before deferred replacement", () => {
     assert.equal(result.mutationPlan[1].selectionRequestId, null);
   }
 });
-test("96 replacement resolver deferral survives deliberately invalid modifier weights", () => {
+test("96 replacement actions reject invalid catalog weights without resolving eligibility", () => {
   const base = catalog(); const bad = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{}] } } });
   for (const [actionId, rarity] of [["currency:alteration", "magic"], ["currency:chaos", "rare"]]) {
-    const result = evaluate(actionId, rarity, { catalog: bad }); assert.equal(result.valid, true); assert.equal(result.status, "unresolved"); assert.equal(result.eligibilityResult, null);
+    const result = evaluate(actionId, rarity, { catalog: bad }); assert.equal(result.valid, false); assert.equal(result.status, "error"); assert.equal(result.errors[0].code, ENGINE_ACTION_CODES.CATALOG_INVALID); assert.equal(result.eligibilityResult, null); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []);
   }
 });
 test("97 non-replacement additions still use the resolver state and conflicts", () => {
@@ -188,4 +188,92 @@ test("99 request counts stay consistent with definitions and summaries", () => {
     if (definition.selectionCount !== null && additions.length) assert.equal(additions[0].count, definition.selectionCount);
     if (definition.removalCount !== null && removals.length) assert.equal(removals[0].count, definition.removalCount);
   }
+});
+
+test("100 different capacity contexts and candidate pools produce different request keys", () => {
+  const prefixBlocked = evaluate("currency:augmentation", "magic", { actionContext: rules({ capacityRules: { prefix: 0, suffix: 1 } }) }).selectionRequests[0];
+  const suffixBlocked = evaluate("currency:augmentation", "magic", { actionContext: rules({ capacityRules: { prefix: 1, suffix: 0 } }) }).selectionRequests[0];
+  assert.deepEqual(prefixBlocked.candidates.map(entry => entry.modifierId), ["mod:suffix"]);
+  assert.deepEqual(suffixBlocked.candidates.map(entry => entry.modifierId), ["mod:prefix"]);
+  assert.notDeepEqual(prefixBlocked.constraints, suffixBlocked.constraints);
+  assert.notEqual(prefixBlocked.deterministicKey, suffixBlocked.deterministicKey); assert.notEqual(prefixBlocked.id, suffixBlocked.id);
+});
+test("101 equivalent capacity key order produces byte-identical requests", () => {
+  const a = evaluate("currency:augmentation", "magic", { actionContext: rules({ capacityRules: { prefix: 10, suffix: 10 } }) }).selectionRequests[0];
+  const b = evaluate("currency:augmentation", "magic", { actionContext: rules({ capacityRules: { suffix: 10, prefix: 10 } }) }).selectionRequests[0];
+  assert.equal(JSON.stringify(a), JSON.stringify(b)); assert.equal(a.deterministicKey, b.deterministicKey);
+});
+test("102 different base types produce different keys for an otherwise equal request", () => {
+  const base = catalog(); const cat = immutableCopy({ ...base, baseTypes: { ...base.baseTypes, "base:bow-alt": { id: "base:bow-alt", itemClassId: "Bow", spawnTags: ["bow", "default", "weapon"] } } });
+  const a = evaluate("currency:augmentation", "magic", { catalog: cat, itemState: item("magic", { baseTypeId: "base:bow" }) }).selectionRequests[0];
+  const b = evaluate("currency:augmentation", "magic", { catalog: cat, itemState: item("magic", { baseTypeId: "base:bow-alt" }) }).selectionRequests[0];
+  assert.notEqual(a.deterministicKey, b.deterministicKey);
+});
+test("103 different item classes are encoded in request keys", () => {
+  const cat = catalog(); const bow = evaluate("currency:augmentation", "magic", { catalog: cat }).selectionRequests[0];
+  const spearState = createItemState({ itemId: "item:action", baseTypeId: "base:spear", itemClassId: "Spear", itemLevel: 86, rarity: "magic" });
+  const spear = evaluate("currency:augmentation", "magic", { catalog: cat, itemState: spearState }).selectionRequests[0];
+  assert.notEqual(bow.deterministicKey, spear.deterministicKey); assert.match(bow.deterministicKey, /"itemClassId":"Bow"/); assert.match(spear.deterministicKey, /"itemClassId":"Spear"/);
+});
+test("104 rarity and request type are encoded without ambiguous concatenation", () => {
+  const addition = evaluate("currency:augmentation", "magic").selectionRequests[0]; const removal = evaluate("currency:chaos", "rare").selectionRequests[0];
+  assert.match(addition.deterministicKey, /"rarity":"magic"/); assert.match(removal.deterministicKey, /"rarity":"rare"/); assert.notEqual(addition.deterministicKey, removal.deterministicKey);
+});
+test("105 different counts produce different keys and zero stays explicit", () => {
+  const one = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES, selectionCountRules: { "currency:transmutation": 1 } } }).selectionRequests[0];
+  const two = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES, selectionCountRules: { "currency:transmutation": 2 } } }).selectionRequests[0];
+  const zeroRemoval = evaluate("currency:chaos", "rare", { actionContext: rules({ removalRules: { "currency:chaos": 0 } }) }).selectionRequests[0];
+  assert.notEqual(one.deterministicKey, two.deterministicKey); assert.match(zeroRemoval.deterministicKey, /"count":0/);
+});
+test("106 different raw weights produce different keys", () => {
+  const base = catalog(); const changed = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{ tag: "bow", weight: 101 }, { tag: "default", weight: 0 }] } } });
+  const a = evaluate("currency:augmentation", "magic", { catalog: base }).selectionRequests[0]; const b = evaluate("currency:augmentation", "magic", { catalog: changed }).selectionRequests[0];
+  assert.deepEqual(a.candidates.map(entry => entry.modifierId), b.candidates.map(entry => entry.modifierId)); assert.notEqual(a.deterministicKey, b.deterministicKey);
+});
+test("107 delimiter-rich technical IDs remain unambiguous", () => {
+  const make = modId => catalog(d => { d.mods.mods[0].modId = modId; d.mods.mods[0].technicalStats = [{ id: `${modId}:stat` }]; d.affixGroups.groups[0].tiers[0].modId = modId; });
+  const a = evaluate("currency:augmentation", "magic", { catalog: make('mod:{a|b,[\"]}') }).selectionRequests[0];
+  const b = evaluate("currency:augmentation", "magic", { catalog: make('mod:{a|b,[]\"}') }).selectionRequests[0];
+  assert.notEqual(a.deterministicKey, b.deterministicKey); assert.doesNotThrow(() => JSON.parse(a.deterministicKey)); assert.doesNotThrow(() => JSON.parse(b.deterministicKey));
+});
+test("108 key payload contains no undefined and distinguishes null from empty structures", () => {
+  const addition = evaluate("currency:augmentation", "magic").selectionRequests[0]; assert.equal(addition.deterministicKey.includes("undefined"), false);
+  const payload = JSON.parse(addition.deterministicKey); assert.equal(payload.keyVersion, 1); assert.deepEqual(payload.candidates[0].rawGenerationWeights, []); assert.notEqual(payload.candidates[0].familyId, null);
+  const missingCount = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES } }); assert.deepEqual(missingCount.selectionRequests, []);
+});
+test("109 invalid generation weights fail all catalog-required actions", () => {
+  const base = catalog(); const bad = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], generationWeights: [{}] } } });
+  for (const [actionId, rarity] of [["currency:transmutation", "normal"], ["currency:augmentation", "magic"], ["currency:alteration", "magic"], ["currency:regal", "magic"], ["currency:exalted", "rare"], ["currency:chaos", "rare"]]) {
+    const result = evaluate(actionId, rarity, { catalog: bad }); assert.equal(result.status, "error"); assert.equal(result.valid, false); assert.equal(result.errors[0].code, ENGINE_ACTION_CODES.CATALOG_INVALID); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []);
+  }
+});
+test("110 invalid base and item-class references are catalog errors", () => {
+  const base = catalog(); const badBase = immutableCopy({ ...base, baseTypes: { ...base.baseTypes, "base:bow": { ...base.baseTypes["base:bow"], itemClassId: "Missing" } } });
+  const badClass = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], regularItemClassIds: ["Missing"] } } });
+  for (const bad of [badBase, badClass]) for (const [actionId, rarity] of [["currency:alteration", "magic"], ["currency:chaos", "rare"]]) {
+    const result = evaluate(actionId, rarity, { catalog: bad }); assert.equal(result.status, "error"); assert.equal(result.valid, false); assert.equal(result.eligibilityResult, null); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []);
+  }
+});
+test("111 invalid generation types domains and missing structures are catalog errors", () => {
+  const base = catalog(); const variants = [
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], generationType: "future" } } }),
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], domain: "future" } } }),
+    immutableCopy({ ...base, modifiers: null })
+  ];
+  for (const bad of variants) for (const [actionId, rarity] of [["currency:alteration", "magic"], ["currency:chaos", "rare"]]) {
+    const result = evaluate(actionId, rarity, { catalog: bad }); assert.equal(result.status, "error"); assert.equal(result.valid, false); assert.equal(result.eligibilityResult, null); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []);
+  }
+});
+test("112 invalid catalog outranks wrong rarity and complete replacement rules", () => {
+  const base = catalog(); const bad = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{}] } } });
+  for (const [actionId, rarity] of [["currency:alteration", "rare"], ["currency:chaos", "magic"]]) {
+    const state = item(rarity); const before = JSON.stringify(state); const result = evaluate(actionId, rarity, { catalog: bad, itemState: state });
+    assert.equal(result.status, "error"); assert.equal(result.valid, false); assert.equal(result.eligibilityResult, null); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []); assert.equal(JSON.stringify(state), before);
+  }
+});
+test("113 equivalent candidate insertion order produces byte-identical requests", () => {
+  const base = catalog(); const reversed = immutableCopy({ ...base, modifiers: Object.fromEntries(Object.entries(base.modifiers).reverse()) });
+  const a = evaluate("currency:augmentation", "magic", { catalog: base }).selectionRequests[0];
+  const b = evaluate("currency:augmentation", "magic", { catalog: reversed }).selectionRequests[0];
+  assert.equal(JSON.stringify(a), JSON.stringify(b)); assert.equal(a.deterministicKey, b.deterministicKey);
 });

@@ -67,3 +67,22 @@ Der **Mutation Plan** beschreibt mit `applied: false` ausschließlich beabsichti
 Alteration und Chaos verwenden bewusst den vollständig deferred Replacement-Vertrag: Der aktuelle Item State enthält noch Modifier, die vor der späteren Addition entfernt werden sollen, und ist deshalb keine fachlich korrekte Resolver-Grundlage. Solange kein expliziter unveränderlicher Post-Removal-Projektionszustand existiert, wird der Eligible Modifier Resolver für diese Aktionen nicht aufgerufen, `eligibilityResult` bleibt `null`, und es entsteht kein Addition Selection Request. Ein caller-belegter Removal Request darf den späteren Entfernungsschritt mit `executable: false` beschreiben; die Action bleibt unabhängig von Count- und Capacity-Regeln `unresolved`. Duplicate-, Modgruppen- und Capacity-Regeln werden dadurch weder gegen den falschen Ausgangszustand ausgewertet noch parallel umgangen. Im Mutation Plan steht der Clear-Schritt deterministisch vor dem deferred Replacement-Schritt.
 
 Definitionen, Bewertungen, Reasons, Selection Requests, Mutation Plans und Summaries sind defensiv kopiert und rekursiv eingefroren. Technische Sortierung verwendet JavaScript-Code-Unit-Reihenfolge ohne `localeCompare` oder `Intl.Collator`; identische Eingaben erzeugen bytegenau identische Ergebnisse. Dieser Meilenstein führt keine Currency tatsächlich aus. RNG, gewichtete Auswahl und die Anwendung eines Selection Requests bleiben dem nächsten Meilenstein vorbehalten und können auf den hier nachvollziehbar erzeugten Requests aufbauen.
+
+### Öffentliche Action-API und Counts
+
+Die öffentliche API exportiert `getCraftingActionDefinition(actionId)`, `listCraftingActionDefinitions()`, `evaluateCraftingAction(...)` und `ENGINE_ACTION_CODES` über `src/engine/index.mjs`.
+
+| Action | `selectionCount` | `removalCount` |
+| --- | ---: | ---: |
+| `currency:transmutation` | `null` | `0` |
+| `currency:augmentation` | `1` | `0` |
+| `currency:alteration` | `null` | `null` |
+| `currency:regal` | `1` | `0` |
+| `currency:exalted` | `1` | `0` |
+| `currency:chaos` | `null` | `null` |
+
+`null` bedeutet technisch unbekannt und ausdrücklich nicht `0`; `0` ist ein expliziter Count. Fehlen notwendige Count Rules, bleibt die Action `unresolved`. Ungültige Count Rules führen zu `error`.
+
+Jede Action mit `requiresCatalog=true` verlangt unabhängig von ihrem Ausführungspfad einen strukturell gültigen Katalog. Das gilt auch für deferred Replacement-Aktionen: Alteration und Chaos validieren den Katalog, ohne Eligibility gegen das Ausgangsitem auszuführen. Ein struktureller Katalogfehler führt zu `status: "error"`, `valid: false`, einem nachvollziehbaren `ENGINE_ACTION_CATALOG_INVALID`, leeren Selection Requests und einem leeren Mutation Plan.
+
+Der `deterministicKey` eines Selection Requests ist die kanonische Serialisierung einer strukturierten semantischen Payload. Sie umfasst im unterstützten Vertrag Action und Request-Typ, Itemkontext, Counts, Kandidatenpool, Constraints, Capacity-Informationen, Weighting- und Replacement-Vertrag sowie relevante rohe Spawn- und Generation-Weights. Objektkeys werden rekursiv sortiert und `undefined` ist nicht zulässig; dadurch bleiben `null`, `0`, leer und fehlend unterscheidbar. Die Payload enthält weder Zufalls- noch Zeitwerte und ist deterministisch, aber nicht kryptografisch. Semantisch identische Requests erzeugen innerhalb dieses Vertrags bytegleiche Keys; semantisch unterschiedliche Requests erzeugen unterschiedliche Keys. Die Request-ID wird deterministisch aus diesem Key abgeleitet. Pro Request-Typ erzeugt eine Evaluation im aktuellen Vertrag höchstens einen Request, sodass Mutation-Plan-Referenzen eindeutig bleiben.
