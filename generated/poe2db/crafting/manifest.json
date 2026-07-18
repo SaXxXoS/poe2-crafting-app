@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T00:18:29.114Z",
+  "sources": {
+    "visible": "PoE2DB English/German",
+    "technical": "RePoE IDs and complete rules only"
+  },
+  "rawSnapshotCount": 20,
+  "files": [
+    {
+      "file": "essences.json",
+      "sha256": "a3e7346de3eb6094935cde42f82be1941a88e2b25879313da53c6544fa4d82d4"
+    },
+    {
+      "file": "omens.json",
+      "sha256": "c8ba16c2855b7d0bf664cb79a07c13adfdb73aace911a23752c86457e7ccd494"
+    },
+    {
+      "file": "desecration.json",
+      "sha256": "1b4efbd94ba16762628d5c2c26b2dffe8e1ad644fa2686c27031e56e8b499469"
+    },
+    {
+      "file": "currencies.json",
+      "sha256": "c2384d844e7028a90741bd31f8cfd44286c5545a283c8b2b0d55994cf68694b4"
+    },
+    {
+      "file": "crafted-modifiers.json",
+      "sha256": "bd91cbe6990fc49f9512c6655058cbe56aa11f920a24a90f4574ea15debb4315"
+    },
+    {
+      "file": "methods.json",
+      "sha256": "c5a1e96e911caa18d1982e779b8a8cfd8a5d812183a0bc134b02d18f22178efb"
+    }
+  ]
+}

@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T00:18:29.114Z",
+  "counts": {
+    "essences": 82,
+    "guaranteedEssenceModifiers": 130,
+    "omens": 50,
+    "craftingOmens": 32,
+    "desecratedPrefixes": 100,
+    "desecratedSuffixes": 130,
+    "desecrationItems": 12,
+    "currencies": 201,
+    "craftedModifiers": 89,
+    "methods": 5
+  },
+  "missingGerman": [
+    {
+      "category": "omen",
+      "id": "Metadata/Items/Expedition/Expedition2LogbookSpecial",
+      "field": "nameDe"
+    },
+    {
+      "category": "omen",
+      "id": "Metadata/Items/Expedition/Expedition2LogbookSpecial",
+      "field": "textDe"
+    },
+    {
+      "category": "omen",
+      "id": "Metadata/Items/Expedition/Expedition2LogbookOlroth",
+      "field": "nameDe"
+    },
+    {
+      "category": "omen",
+      "id": "Metadata/Items/Expedition/Expedition2LogbookOlroth",
+      "field": "textDe"
+    },
+    {
+      "category": "omen",
+      "id": "Metadata/Items/Currency/OmenRecombination",
+      "field": "textDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModStaffAmanamuPrefixDamageAsChaos",
+      "field": "nameDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModStaffAmanamuPrefixDamageAsChaos",
+      "field": "textDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModTalismanKurgalPrefixWarcriesEmpowerXAdditionalAttacks",
+      "field": "nameDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModTalismanKurgalPrefixWarcriesEmpowerXAdditionalAttacks",
+      "field": "textDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModStaffAmanamuSuffixBlockChance",
+      "field": "nameDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModStaffAmanamuSuffixBlockChance",
+      "field": "textDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModStaffKurgalSuffixPuppetMasterStacks",
+      "field": "nameDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModStaffKurgalSuffixPuppetMasterStacks",
+      "field": "textDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModCrossbowUlamanSuffixAttacksChainAdditionalTime",
+      "field": "nameDe"
+    },
+    {
+      "category": "desecrated-modifier",
+      "id": "AbyssModCrossbowUlamanSuffixAttacksChainAdditionalTime",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantWeapon",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantWeapon",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantArmour",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantArmour",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantJewellery",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantJewellery",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantJewel",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMutateCorruptionEnchantJewel",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMartialWeaponQuality",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionMartialWeaponQuality",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionCasterWeaponQuality",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionCasterWeaponQuality",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionJewelleryQuality",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyIncursionJewelleryQuality",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy1",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy1",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy2",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy2",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy4",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy4",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy8",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy8",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy12",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyVerisiumAlloy12",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelleryQualityMinion",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelleryQualityMinion",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityDefences",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityDefences",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityCold",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityCold",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualitySpeed",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualitySpeed",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityAttribute",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityAttribute",
+      "field": "textDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityMinion",
+      "field": "nameDe"
+    },
+    {
+      "category": "currency",
+      "id": "Metadata/Items/Currency/CurrencyJewelQualityMinion",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelArmour",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelEnergyShield",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelEvasion",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelFireDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelColdDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelLightningDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelPhysicalDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 7,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelElementalDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelAttackDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 10,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelAttackSpeed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelLifeCost",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelSpellDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelCooldownSpeed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelLifeRegeneration",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 16,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelLifeonKill",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 18,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelSpellCriticalChance",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelAttackCriticalChance",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelWarcrySpeed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelSpellCriticalDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelAttackCriticalDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelMaximumRage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelAreaofEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelMovementSpeed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 27,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 28,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 29,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 30,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 31,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusEnergyShield",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusEvasion",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 34,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 35,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 36,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusPhysicalDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 38,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 39,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 40,
+      "field": "sourceNameDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 40,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 41,
+      "field": "sourceNameDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 41,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 42,
+      "field": "sourceNameDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 42,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusLifeCost",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 44,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusCooldownSpeed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusLifeRegeneration",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 47,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 48,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 49,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusSpellCriticalChance",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusAttackCriticalChance",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 52,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusSpellCriticalDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusAttackCriticalDamage",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "UniqueJewelRadiusAllocatedNonNotablesGrantNothing",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "JewelRadiusBannerArea",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "UniqueJewelRadiusAllocatedNonNotablesGrantNothing",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelDebilitateOnHitWhileEmeraldSapphireSocketed",
+      "field": "sourceNameDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelDebilitateOnHitWhileEmeraldSapphireSocketed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelExposureOnHitWhileRubyEmeraldSocketed",
+      "field": "sourceNameDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelExposureOnHitWhileRubyEmeraldSocketed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelBlindOnHitWhileRubySapphireSocketed",
+      "field": "sourceNameDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelBlindOnHitWhileRubySapphireSocketed",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelSuffixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelPrefixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelSuffixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelPrefixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelSuffixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelPrefixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelSuffixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelPrefixEffect",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelRadiusFireResistance",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": 78,
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelRadiusLightningResistance",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "CraftedJewelRadiusChaosResistance",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    },
+    {
+      "category": "crafted-modifier",
+      "id": "MapGainsRandomZanaMod",
+      "field": "textDe"
+    }
+  ],
+  "missingTechnicalMappings": [
+    {
+      "category": "essence",
+      "source": "Lesser Essence of Battle",
+      "textEn": "+(61—84) to Accuracy Rating"
+    },
+    {
+      "category": "essence",
+      "source": "Lesser Essence of Haste",
+      "textEn": "(11—13)% increased Attack Speed"
+    },
+    {
+      "category": "essence",
+      "source": "Lesser Essence of Haste",
+      "textEn": "(8—10)% increased Attack Speed"
+    },
+    {
+      "category": "essence",
+      "source": "Lesser Essence of the Infinite",
+      "textEn": "+(9—12) to Strength, Dexterity or Intelligence"
+    },
+    {
+      "category": "essence",
+      "source": "Essence of Battle",
+      "textEn": "+(124—167) to Accuracy Rating"
+    },
+    {
+      "category": "essence",
+      "source": "Essence of Haste",
+      "textEn": "(11—13)% increased Attack Speed"
+    },
+    {
+      "category": "essence",
+      "source": "Essence of the Infinite",
+      "textEn": "+(17—20) to Strength, Dexterity or Intelligence"
+    },
+    {
+      "category": "essence",
+      "source": "Greater Essence of Battle",
+      "textEn": "+(237—346) to Accuracy Rating"
+    },
+    {
+      "category": "essence",
+      "source": "Greater Essence of Haste",
+      "textEn": "(14—16)% increased Attack Speed"
+    },
+    {
+      "category": "essence",
+      "source": "Greater Essence of the Infinite",
+      "textEn": "+(25—27) to Strength, Dexterity or Intelligence"
+    },
+    {
+      "category": "essence",
+      "source": "Perfect Essence of Sorcery",
+      "textEn": "+3 to Level of all Spell Skills"
+    },
+    {
+      "category": "essence",
+      "source": "Perfect Essence of the Infinite",
+      "textEn": "(7—10)% increased Strength, Dexterity or Intelligence"
+    },
+    {
+      "category": "essence",
+      "source": "Lesser Essence of Seeking",
+      "textEn": "+(1.51—2.1)% to Critical Hit Chance"
+    },
+    {
+      "category": "essence",
+      "source": "Essence of Seeking",
+      "textEn": "+(2.11—2.7)% to Critical Hit Chance"
+    },
+    {
+      "category": "essence",
+      "source": "Greater Essence of Seeking",
+      "textEn": "+(3.11—3.8)% to Critical Hit Chance"
+    },
+    {
+      "category": "essence",
+      "source": "Essence of Hysteria",
+      "textEn": "+1 to Level of all Minion Skills"
+    },
+    {
+      "category": "essence",
+      "source": "Essence of Delirium",
+      "textEn": "Allocates a random Notable Passive Skill"
+    },
+    {
+      "category": "essence",
+      "source": "Essence of the Abyss",
+      "textEn": "Mark of the Abyssal Lord"
+    },
+    {
+      "category": "essence",
+      "source": "Greater Essence of Alacrity",
+      "textEn": "(25—28)% increased Cast Speed"
+    },
+    {
+      "category": "desecration",
+      "source": "Amanamu's",
+      "textEn": "Projectiles deal (20—30)% increased Damage with Hits against Enemies within 2m amanamu Damage"
+    },
+    {
+      "category": "desecration",
+      "source": "Kurgal's",
+      "textEn": "Projectiles deal (20—30)% increased Damage with Hits against Enemies further than 6m kurgal"
+    },
+    {
+      "category": "desecration",
+      "source": "Kurgal's",
+      "textEn": "Projectiles deal (85—109)% increased Damage with Hits against Enemies within 2m kurgal Damage"
+    },
+    {
+      "category": "desecration",
+      "source": "Ulaman's",
+      "textEn": "Projectiles deal (60—79)% increased Damage with Hits against Enemies further than 6m ulaman"
+    },
+    {
+      "category": "desecration",
+      "source": "of Amanamu",
+      "textEn": "(12—20)% reduced Slowing Potency of Debuffs on You amanamu"
+    },
+    {
+      "category": "desecration",
+      "source": "of Amanamu",
+      "textEn": "(10—20)% faster Curse Activation amanamu Caster Curse"
+    },
+    {
+      "category": "desecration",
+      "source": "of Amanamu",
+      "textEn": "Projectiles have (18—26)% increased Critical Damage Bonus against Enemies within 2m amanamu"
+    },
+    {
+      "category": "desecration",
+      "source": "of Amanamu",
+      "textEn": "Equipment and Skill Gems have (10—15)% reduced Attribute Requirements amanamu"
+    },
+    {
+      "category": "desecration",
+      "source": "of Kurgal",
+      "textEn": "(10—20)% of Damage taken Recouped as Mana kurgal Life Mana"
+    },
+    {
+      "category": "desecration",
+      "source": "of Kurgal",
+      "textEn": "Projectiles have (18—26)% increased Critical Hit Chance against Enemies further than 6m kurgal"
+    },
+    {
+      "category": "desecration",
+      "source": "of Kurgal",
+      "textEn": "(8—15)% increased Cost Efficiency of Attacks kurgal Attack"
+    },
+    {
+      "category": "desecration",
+      "source": "of Kurgal",
+      "textEn": "Projectiles have (25—34)% increased Critical Hit Chance against Enemies further than 6m kurgal"
+    },
+    {
+      "category": "desecration",
+      "source": "of Ulaman",
+      "textEn": "(17—25)% reduced Slowing Potency of Debuffs on You if you've used a Charm Recently Charm ulaman"
+    },
+    {
+      "category": "desecration",
+      "source": "of Ulaman",
+      "textEn": "Hits have (17—25)% reduced Critical Hit Chance against you ulaman Critical"
+    },
+    {
+      "category": "desecration",
+      "source": "of Ulaman",
+      "textEn": "(10—16)% chance for Spell Skills to fire 2 additional Projectiles ulaman Caster"
+    },
+    {
+      "category": "desecration",
+      "source": "of Ulaman",
+      "textEn": "(25—35)% chance for Spell Skills to fire 2 additional Projectiles ulaman Caster"
+    },
+    {
+      "category": "desecration",
+      "source": "of Ulaman",
+      "textEn": "Projectiles have (27—38)% increased Critical Damage Bonus against Enemies within 2m ulaman"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Diluted Liquid Greed",
+      "textEn": "(7—13)% increased Chaos Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Liquid Paranoia",
+      "textEn": "(2—4)% increased Cast Speed"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Liquid Disgust",
+      "textEn": "Recover (1—2)% of maximum Mana on Kill"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Liquid Despair",
+      "textEn": "Gain 1 Rage on Melee Hit"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Concentrated Liquid Isolation",
+      "textEn": "+1% to Maximum Fire Resistance"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Concentrated Liquid Isolation",
+      "textEn": "+1% to Maximum Cold Resistance"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Concentrated Liquid Isolation",
+      "textEn": "+1% to Maximum Lightning Resistance"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Concentrated Liquid Isolation",
+      "textEn": "+1% to Maximum Chaos Resistance"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Diluted Liquid Ire",
+      "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Armour"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Diluted Liquid Guilt",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Fire Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Diluted Liquid Guilt",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Cold Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Diluted Liquid Guilt",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Lightning Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Diluted Liquid Greed",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Chaos Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Diluted Liquid Greed",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Elemental Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Liquid Paranoia",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Attack Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Liquid Paranoia",
+      "textEn": "Notable Passive Skills in Radius also grant (1—2)% increased Cast Speed"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Liquid Paranoia",
+      "textEn": "Notable Passive Skills in Radius also grant (1—2)% increased Attack Speed"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Liquid Envy",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Spell Damage"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Liquid Disgust",
+      "textEn": "Notable Passive Skills in Radius also grant Recover 1% of maximum Mana on Kill"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Liquid Disgust",
+      "textEn": "Notable Passive Skills in Radius also grant Recover 1% of maximum Life on Kill"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Liquid Despair",
+      "textEn": "Notable Passive Skills in Radius also grant Gain 1 Rage on Melee Hit"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Concentrated Liquid Fear",
+      "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Warcry Speed"
+    },
+    {
+      "category": "crafted-modifier",
+      "source": "Ancient Potent Liquid Ferocity",
+      "textEn": "Notable Passive Skills in Radius also grant +(5—7)% to Cold Resistance"
+    }
+  ],
+  "ambiguousMappings": [],
+  "validation": {
+    "normalPoolsSeparated": true,
+    "essenceOnlySeparated": true,
+    "desecratedSeparated": true,
+    "emptyCategories": [],
+    "online": false
+  }
+}

@@ -1,4 +1,4 @@
-name: Import PoE2DB Spears
+name: Import PoE2DB Equipment and Crafting Data
 
 on:
   workflow_dispatch:
@@ -9,7 +9,6 @@ permissions:
 jobs:
   import:
     runs-on: ubuntu-latest
-
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
@@ -19,13 +18,22 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Speerdaten von PoE2DB importieren
-        run: node tools/import-poe2db.mjs
+      - name: PoE2DB-Daten online importieren
+        run: |
+          node --max-old-space-size=4096 tools/import-poe2db.mjs
+          node tools/import-poe2db-crafting.mjs
+
+      - name: Offline-Reimport prüfen
+        run: |
+          node --max-old-space-size=4096 tools/import-poe2db.mjs --offline
+          node tools/import-poe2db-crafting.mjs --offline
 
       - name: Import prüfen
         run: |
           node -e "const fs=require('fs');const i=require('./generated/poe2db/index.json');if(i.classes.length!==28)throw new Error('Erwartet 28 Ausrüstungsklassen, erhalten: '+i.classes.length);for(const c of i.classes){const d=require('./generated/poe2db/'+c.dataFile);if(!d.bases.length||!d.prefixes.length||!d.suffixes.length)throw new Error('Leere Klasse: '+c.itemClass);if(!d.bases.some(x=>x.nameDe)||![...d.prefixes,...d.suffixes].some(x=>x.textDe))throw new Error('Keine deutschen Texte: '+c.itemClass);if(d.pools.length!==d.bases.length)throw new Error('Basis-Pools fehlen: '+c.itemClass);if(!fs.existsSync('./generated/poe2db/'+c.qualityReportFile))throw new Error('Qualitätsbericht fehlt: '+c.itemClass);for(const p of d.pools){if(p.evaluatedPrefixRules!==d.prefixes.length||p.evaluatedSuffixRules!==d.suffixes.length)throw new Error('Gewichtsregeln ungeprüft: '+c.itemClass);if([...p.prefixes,...p.suffixes].some(x=>x.spawnWeight<=0||x.generationWeight<=0))throw new Error('Nullgewicht im Pool: '+c.itemClass)}}"
+          node -e "const c=require('./generated/poe2db/crafting/index.json');const q=require('./generated/poe2db/crafting/quality-report.json');for(const [key,value] of Object.entries(c.counts))if(!value)throw new Error('Leere Crafting-Kategorie: '+key);if(q.ambiguousMappings.length)throw new Error('Mehrdeutige Crafting-Zuordnungen');if(!q.validation.normalPoolsSeparated||!q.validation.essenceOnlySeparated||!q.validation.desecratedSeparated)throw new Error('Spezialmods nicht getrennt')"
           test -f generated/poe2db/manifest.json
+          test -f generated/poe2db/crafting/manifest.json
 
       - name: Importierte Daten speichern
         run: |
@@ -36,5 +44,5 @@ jobs:
             echo "Keine Änderungen gefunden."
             exit 0
           fi
-          git commit -m "PoE2DB-Speerdaten aktualisieren"
+          git commit -m "PoE2DB-Ausrüstungs- und Craftingdaten aktualisieren"
           git push

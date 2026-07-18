@@ -1,0 +1,2349 @@
+{
+  "schemaVersion": 1,
+  "source": "PoE2DB Crafted Modifiers; RePoE technical IDs",
+  "modifiers": [
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion1",
+      "sourceNameEn": "Diluted Liquid Ire",
+      "sourceNameDe": "Verdünnter Flüssiger Zorn",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "(10—20)% increased Armour",
+      "textDe": null,
+      "values": [
+        {
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "technicalModId": "JewelArmour",
+      "modGroups": [
+        "IncreasedPhysicalDamageReductionRatingPercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion1",
+      "sourceNameEn": "Diluted Liquid Ire",
+      "sourceNameDe": "Verdünnter Flüssiger Zorn",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "(10—20)% increased maximum Energy Shield",
+      "textDe": null,
+      "values": [
+        {
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "technicalModId": "JewelEnergyShield",
+      "modGroups": [
+        "EnergyShieldPercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion1",
+      "sourceNameEn": "Diluted Liquid Ire",
+      "sourceNameDe": "Verdünnter Flüssiger Zorn",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "(10—20)% increased Evasion Rating",
+      "textDe": null,
+      "values": [
+        {
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "technicalModId": "JewelEvasion",
+      "modGroups": [
+        "EvasionRatingPercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion2",
+      "sourceNameEn": "Diluted Liquid Guilt",
+      "sourceNameDe": "Verdünnte Flüssige Schuld",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "(5—15)% increased Fire Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelFireDamage",
+      "modGroups": [
+        "FireDamagePercentage"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion2",
+      "sourceNameEn": "Diluted Liquid Guilt",
+      "sourceNameDe": "Verdünnte Flüssige Schuld",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "(5—15)% increased Cold Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelColdDamage",
+      "modGroups": [
+        "ColdDamagePercentage"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion2",
+      "sourceNameEn": "Diluted Liquid Guilt",
+      "sourceNameDe": "Verdünnte Flüssige Schuld",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "(5—15)% increased Lightning Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelLightningDamage",
+      "modGroups": [
+        "LightningDamagePercentage"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion3",
+      "sourceNameEn": "Diluted Liquid Greed",
+      "sourceNameDe": "Verdünnte Flüssige Gier",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "(5—15)% increased Global Physical Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelPhysicalDamage",
+      "modGroups": [
+        "PhysicalDamagePercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion3",
+      "sourceNameEn": "Diluted Liquid Greed",
+      "sourceNameDe": "Verdünnte Flüssige Gier",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "(7—13)% increased Chaos Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 7,
+          "max": 13
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion3",
+      "sourceNameEn": "Diluted Liquid Greed",
+      "sourceNameDe": "Verdünnte Flüssige Gier",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "(5—15)% increased Elemental Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelElementalDamage",
+      "modGroups": [
+        "ElementalDamagePercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion4",
+      "sourceNameEn": "Liquid Paranoia",
+      "sourceNameDe": "Flüssige Paranoia",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "(5—15)% increased Attack Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelAttackDamage",
+      "modGroups": [
+        "AttackDamage"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion4",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion4",
+      "sourceNameEn": "Liquid Paranoia",
+      "sourceNameDe": "Flüssige Paranoia",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "(2—4)% increased Cast Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion4",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion4",
+      "sourceNameEn": "Liquid Paranoia",
+      "sourceNameDe": "Flüssige Paranoia",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "(2—4)% increased Attack Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 4
+        }
+      ],
+      "technicalModId": "JewelAttackSpeed",
+      "modGroups": [
+        "IncreasedAttackSpeed"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion4",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion5",
+      "sourceNameEn": "Liquid Envy",
+      "sourceNameDe": "Flüssiger Neid",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "(4—6)% of Skill Mana Costs Converted to Life Costs",
+      "textDe": null,
+      "values": [
+        {
+          "min": 4,
+          "max": 6
+        }
+      ],
+      "technicalModId": "JewelLifeCost",
+      "modGroups": [
+        "LifeCost"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion5",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion5",
+      "sourceNameEn": "Liquid Envy",
+      "sourceNameDe": "Flüssiger Neid",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "(5—15)% increased Spell Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelSpellDamage",
+      "modGroups": [
+        "WeaponCasterDamagePrefix"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion5",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion5",
+      "sourceNameEn": "Liquid Envy",
+      "sourceNameDe": "Flüssiger Neid",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "(3—5)% increased Cooldown Recovery Rate",
+      "textDe": null,
+      "values": [
+        {
+          "min": 3,
+          "max": 5
+        }
+      ],
+      "technicalModId": "JewelCooldownSpeed",
+      "modGroups": [
+        "CooldownRecovery"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion5",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion6",
+      "sourceNameEn": "Liquid Disgust",
+      "sourceNameDe": "Flüssiger Ekel",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "(5—10)% increased Life Regeneration rate",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 10
+        }
+      ],
+      "technicalModId": "JewelLifeRegeneration",
+      "modGroups": [
+        "LifeRegenerationRate"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion6",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion6",
+      "sourceNameEn": "Liquid Disgust",
+      "sourceNameDe": "Flüssiger Ekel",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "Recover (1—2)% of maximum Mana on Kill",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion6",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion6",
+      "sourceNameEn": "Liquid Disgust",
+      "sourceNameDe": "Flüssiger Ekel",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Recover (1—2)% of maximum Life on Kill",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": "JewelLifeonKill",
+      "modGroups": [
+        "MaximumLifeOnKillPercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion6",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion7",
+      "sourceNameEn": "Liquid Despair",
+      "sourceNameDe": "Flüssige Verzweiflung",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "Gain 1 Rage on Melee Hit",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion7",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion7",
+      "sourceNameEn": "Liquid Despair",
+      "sourceNameDe": "Flüssige Verzweiflung",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "(5—15)% increased Critical Hit Chance for Spells",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "technicalModId": "JewelSpellCriticalChance",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion7",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion7",
+      "sourceNameEn": "Liquid Despair",
+      "sourceNameDe": "Flüssige Verzweiflung",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "(6—16)% increased Critical Hit Chance for Attacks",
+      "textDe": null,
+      "values": [
+        {
+          "min": 6,
+          "max": 16
+        }
+      ],
+      "technicalModId": "JewelAttackCriticalChance",
+      "modGroups": [
+        "CriticalStrikeChanceIncrease"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion7",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion8",
+      "sourceNameEn": "Concentrated Liquid Fear",
+      "sourceNameDe": "Konzentrierte Flüssige Angst",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "(10—20)% increased Warcry Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "technicalModId": "JewelWarcrySpeed",
+      "modGroups": [
+        "WarcrySpeed"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion8",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion8",
+      "sourceNameEn": "Concentrated Liquid Fear",
+      "sourceNameDe": "Konzentrierte Flüssige Angst",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "(10—20)% increased Critical Spell Damage Bonus",
+      "textDe": null,
+      "values": [
+        {
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "technicalModId": "JewelSpellCriticalDamage",
+      "modGroups": [
+        "FormCritMultiplier"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion8",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion8",
+      "sourceNameEn": "Concentrated Liquid Fear",
+      "sourceNameDe": "Konzentrierte Flüssige Angst",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "(10—20)% increased Critical Damage Bonus for Attack Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "technicalModId": "JewelAttackCriticalDamage",
+      "modGroups": [
+        "CriticalStrikeMultiplier"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion8",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion9",
+      "sourceNameEn": "Concentrated Liquid Suffering",
+      "sourceNameDe": "Konzentriertes Flüssiges Leiden",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "+(1—2) to Maximum Rage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": "JewelMaximumRage",
+      "modGroups": [
+        "MaximumRage"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion9",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion9",
+      "sourceNameEn": "Concentrated Liquid Suffering",
+      "sourceNameDe": "Konzentriertes Flüssiges Leiden",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "(4—6)% increased Area of Effect",
+      "textDe": null,
+      "values": [
+        {
+          "min": 4,
+          "max": 6
+        }
+      ],
+      "technicalModId": "JewelAreaofEffect",
+      "modGroups": [
+        "AreaOfEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion9",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion9",
+      "sourceNameEn": "Concentrated Liquid Suffering",
+      "sourceNameDe": "Konzentriertes Flüssiges Leiden",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "(1—2)% increased Movement Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": "JewelMovementSpeed",
+      "modGroups": [
+        "MovementVelocity"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion9",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion10",
+      "sourceNameEn": "Concentrated Liquid Isolation",
+      "sourceNameDe": "Konzentrierte Flüssige Isolation",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "+1% to Maximum Fire Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion10",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion10",
+      "sourceNameEn": "Concentrated Liquid Isolation",
+      "sourceNameDe": "Konzentrierte Flüssige Isolation",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "+1% to Maximum Cold Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion10",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion10",
+      "sourceNameEn": "Concentrated Liquid Isolation",
+      "sourceNameDe": "Konzentrierte Flüssige Isolation",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "+1% to Maximum Lightning Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion10",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotion10",
+      "sourceNameEn": "Concentrated Liquid Isolation",
+      "sourceNameDe": "Konzentrierte Flüssige Isolation",
+      "itemClass": "Diamond",
+      "generationType": "suffix",
+      "textEn": "+1% to Maximum Chaos Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotion10",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost1",
+      "sourceNameEn": "Ancient Diluted Liquid Ire",
+      "sourceNameDe": "Uralter Verdünnter Zorn",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Armour",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 3
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost1",
+      "sourceNameEn": "Ancient Diluted Liquid Ire",
+      "sourceNameDe": "Uralter Verdünnter Zorn",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (2—3)% increased maximum Energy Shield",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 3
+        }
+      ],
+      "technicalModId": "JewelRadiusEnergyShield",
+      "modGroups": [
+        "EnergyShieldPercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost1",
+      "sourceNameEn": "Ancient Diluted Liquid Ire",
+      "sourceNameDe": "Uralter Verdünnter Zorn",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Evasion Rating",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 3
+        }
+      ],
+      "technicalModId": "JewelRadiusEvasion",
+      "modGroups": [
+        "EvasionRatingPercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost2",
+      "sourceNameEn": "Ancient Diluted Liquid Guilt",
+      "sourceNameDe": "Uralte Verdünnte Schuld",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Fire Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost2",
+      "sourceNameEn": "Ancient Diluted Liquid Guilt",
+      "sourceNameDe": "Uralte Verdünnte Schuld",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Cold Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost2",
+      "sourceNameEn": "Ancient Diluted Liquid Guilt",
+      "sourceNameDe": "Uralte Verdünnte Schuld",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Lightning Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Diluted Liquid Greed",
+      "sourceNameDe": "Uralte Verdünnte Gier",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Global Physical Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": "JewelRadiusPhysicalDamage",
+      "modGroups": [
+        "PhysicalDamagePercent"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Diluted Liquid Greed",
+      "sourceNameDe": "Uralte Verdünnte Gier",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Chaos Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Diluted Liquid Greed",
+      "sourceNameDe": "Uralte Verdünnte Gier",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Elemental Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+      "sourceNameEn": "Ancient Liquid Paranoia",
+      "sourceNameDe": null,
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Attack Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": null
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+      "sourceNameEn": "Ancient Liquid Paranoia",
+      "sourceNameDe": null,
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (1—2)% increased Cast Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": null
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+      "sourceNameEn": "Ancient Liquid Paranoia",
+      "sourceNameDe": null,
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (1—2)% increased Attack Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost4",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": null
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost5",
+      "sourceNameEn": "Ancient Liquid Envy",
+      "sourceNameDe": "Uralter Flüssiger Neid",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (2—3)% of Skill Mana Costs Converted to Life Costs",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 3
+        }
+      ],
+      "technicalModId": "JewelRadiusLifeCost",
+      "modGroups": [
+        "LifeCost"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost5",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost5",
+      "sourceNameEn": "Ancient Liquid Envy",
+      "sourceNameDe": "Uralter Flüssiger Neid",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "Small Passive Skills in Radius also grant (1—2)% increased Spell Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 2
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost5",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost5",
+      "sourceNameEn": "Ancient Liquid Envy",
+      "sourceNameDe": "Uralter Flüssiger Neid",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (1—3)% increased Cooldown Recovery Rate",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 3
+        }
+      ],
+      "technicalModId": "JewelRadiusCooldownSpeed",
+      "modGroups": [
+        "CooldownRecovery"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost5",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost6",
+      "sourceNameEn": "Ancient Liquid Disgust",
+      "sourceNameDe": "Uralter Flüssiger Ekel",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (3—5)% increased Life Regeneration rate",
+      "textDe": null,
+      "values": [
+        {
+          "min": 3,
+          "max": 5
+        }
+      ],
+      "technicalModId": "JewelRadiusLifeRegeneration",
+      "modGroups": [
+        "LifeRegenerationRate"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost6",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost6",
+      "sourceNameEn": "Ancient Liquid Disgust",
+      "sourceNameDe": "Uralter Flüssiger Ekel",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant Recover 1% of maximum Mana on Kill",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost6",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost6",
+      "sourceNameEn": "Ancient Liquid Disgust",
+      "sourceNameDe": "Uralter Flüssiger Ekel",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant Recover 1% of maximum Life on Kill",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost6",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost7",
+      "sourceNameEn": "Ancient Liquid Despair",
+      "sourceNameDe": "Uralte Flüssige Verzweiflung",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant Gain 1 Rage on Melee Hit",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost7",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost7",
+      "sourceNameEn": "Ancient Liquid Despair",
+      "sourceNameDe": "Uralte Flüssige Verzweiflung",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (3—7)% increased Critical Hit Chance for Spells",
+      "textDe": null,
+      "values": [
+        {
+          "min": 3,
+          "max": 7
+        }
+      ],
+      "technicalModId": "JewelRadiusSpellCriticalChance",
+      "modGroups": [
+        "SpellCriticalStrikeChanceIncrease"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost7",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost7",
+      "sourceNameEn": "Ancient Liquid Despair",
+      "sourceNameDe": "Uralte Flüssige Verzweiflung",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (3—7)% increased Critical Hit Chance for Attacks",
+      "textDe": null,
+      "values": [
+        {
+          "min": 3,
+          "max": 7
+        }
+      ],
+      "technicalModId": "JewelRadiusAttackCriticalChance",
+      "modGroups": [
+        "CriticalStrikeChanceIncrease"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost7",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost8",
+      "sourceNameEn": "Ancient Concentrated Liquid Fear",
+      "sourceNameDe": "Uralte Konzentrierte Flüssige Angst",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Warcry Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 3
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost8",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost8",
+      "sourceNameEn": "Ancient Concentrated Liquid Fear",
+      "sourceNameDe": "Uralte Konzentrierte Flüssige Angst",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (5—10)% increased Critical Spell Damage Bonus",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 10
+        }
+      ],
+      "technicalModId": "JewelRadiusSpellCriticalDamage",
+      "modGroups": [
+        "FormCritMultiplier"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost8",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost8",
+      "sourceNameEn": "Ancient Concentrated Liquid Fear",
+      "sourceNameDe": "Uralte Konzentrierte Flüssige Angst",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant (5—10)% increased Critical Damage Bonus for Attack Damage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 10
+        }
+      ],
+      "technicalModId": "JewelRadiusAttackCriticalDamage",
+      "modGroups": [
+        "CriticalStrikeMultiplier"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost8",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost9",
+      "sourceNameEn": "Ancient Concentrated Liquid Suffering",
+      "sourceNameDe": "Uraltes Konzentriertes Flüssiges Leiden",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "Notable Passive Skills in Radius also grant +1 to Maximum Rage",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "UniqueJewelRadiusAllocatedNonNotablesGrantNothing",
+      "modGroups": [
+        "AllocatedNonNotablesGrantNothing"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost9",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost9",
+      "sourceNameEn": "Ancient Concentrated Liquid Suffering",
+      "sourceNameDe": "Uraltes Konzentriertes Flüssiges Leiden",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "Notable Passive Skills in Radius also grant (2—3)% increased Area of Effect",
+      "textDe": null,
+      "values": [
+        {
+          "min": 2,
+          "max": 3
+        }
+      ],
+      "technicalModId": "JewelRadiusBannerArea",
+      "modGroups": [
+        "BannerArea"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost9",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/DistilledEmotionTimeLost9",
+      "sourceNameEn": "Ancient Concentrated Liquid Suffering",
+      "sourceNameDe": "Uraltes Konzentriertes Flüssiges Leiden",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant 1% increased Movement Speed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "UniqueJewelRadiusAllocatedNonNotablesGrantNothing",
+      "modGroups": [
+        "AllocatedNonNotablesGrantNothing"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/DistilledEmotionTimeLost9",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+      "sourceNameEn": "Potent Liquid Melancholy",
+      "sourceNameDe": null,
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "Debilitate Enemies on Hit while you have an Emerald and a Sapphire socketed in your tree",
+      "textDe": null,
+      "values": [],
+      "technicalModId": "CraftedJewelDebilitateOnHitWhileEmeraldSapphireSocketed",
+      "modGroups": [
+        "JewelStatusOnHitWhileSocketed"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": null
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+      "sourceNameEn": "Potent Liquid Melancholy",
+      "sourceNameDe": null,
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "Inflict Elemental Exposure on Hit while you have a Ruby and an Emerald socketed in your tree",
+      "textDe": null,
+      "values": [],
+      "technicalModId": "CraftedJewelExposureOnHitWhileRubyEmeraldSocketed",
+      "modGroups": [
+        "JewelStatusOnHitWhileSocketed"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": null
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+      "sourceNameEn": "Potent Liquid Melancholy",
+      "sourceNameDe": null,
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Blind Enemies on Hit while you have a Ruby and a Sapphire socketed in your tree",
+      "textDe": null,
+      "values": [],
+      "technicalModId": "CraftedJewelBlindOnHitWhileRubySapphireSocketed",
+      "modGroups": [
+        "JewelStatusOnHitWhileSocketed",
+        "BlindOnHit"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion1",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": null
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "(40—60)% increased Effect of Suffixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelSuffixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "(40—60)% increased Effect of Prefixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelPrefixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "(40—60)% increased Effect of Suffixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelSuffixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "(40—60)% increased Effect of Prefixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelPrefixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "(40—60)% increased Effect of Suffixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelSuffixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "(40—60)% increased Effect of Prefixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelPrefixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Diamond",
+      "generationType": "prefix",
+      "textEn": "(40—60)% increased Effect of Suffixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelSuffixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+      "sourceNameEn": "Potent Liquid Ferocity",
+      "sourceNameDe": "Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Diamond",
+      "generationType": "suffix",
+      "textEn": "(40—60)% increased Effect of Prefixes",
+      "textDe": null,
+      "values": [
+        {
+          "min": 40,
+          "max": 60
+        }
+      ],
+      "technicalModId": "CraftedJewelPrefixEffect",
+      "modGroups": [
+        "LocalPrefixSuffixEffect"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Diamond",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+      "sourceNameEn": "Potent Liquid Contempt",
+      "sourceNameDe": "Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Diamond",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotion3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Basic Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Basis-Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+      "sourceNameEn": "Ancient Potent Liquid Ferocity",
+      "sourceNameDe": "Uralte Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant +(5—7)% to Fire Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 7
+        }
+      ],
+      "technicalModId": "CraftedJewelRadiusFireResistance",
+      "modGroups": [
+        "FireResistance"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+      "sourceNameEn": "Ancient Potent Liquid Ferocity",
+      "sourceNameDe": "Uralte Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant +(5—7)% to Cold Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 7
+        }
+      ],
+      "technicalModId": null,
+      "modGroups": [],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+      "sourceNameEn": "Ancient Potent Liquid Ferocity",
+      "sourceNameDe": "Uralte Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant +(5—7)% to Lightning Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 5,
+          "max": 7
+        }
+      ],
+      "technicalModId": "CraftedJewelRadiusLightningResistance",
+      "modGroups": [
+        "LightningResistance"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+      "sourceNameEn": "Ancient Potent Liquid Ferocity",
+      "sourceNameDe": "Uralte Wirkungsvolle Flüssige Grausamkeit",
+      "itemClass": "Diamond",
+      "generationType": "suffix",
+      "textEn": "Notable Passive Skills in Radius also grant +(4—5)% to Chaos Resistance",
+      "textDe": null,
+      "values": [
+        {
+          "min": 4,
+          "max": 5
+        }
+      ],
+      "technicalModId": "CraftedJewelRadiusChaosResistance",
+      "modGroups": [
+        "ChaosResistance"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost2",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Ruby",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Ruby",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Sapphire",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Sapphire",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Emerald",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Emerald",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Diamond",
+      "generationType": "prefix",
+      "textEn": "+1 Suffix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    },
+    {
+      "sourceItemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+      "sourceNameEn": "Ancient Potent Liquid Contempt",
+      "sourceNameDe": "Uralter Wirkungsvoller Flüssiger Groll",
+      "itemClass": "Diamond",
+      "generationType": "suffix",
+      "textEn": "+1 Prefix Modifier allowed",
+      "textDe": null,
+      "values": [
+        {
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "technicalModId": "MapGainsRandomZanaMod",
+      "modGroups": [
+        "MapGainsRandomZanaMod"
+      ],
+      "cost": [
+        {
+          "itemId": "Metadata/Items/Currency/EndgameDistilledEmotionTimeLost3",
+          "amount": 1
+        }
+      ],
+      "requirementsEn": "Removes a random modifer and Augments a Rare Time-Lost Jewel with a\n\nnew guaranteed Crafted modifier",
+      "requirementsDe": "Entfernt einen zuälligen Modifikator und ergänzt ein seltenes Zeitverlorenes Juwel mit einem neuen garantierten\n\nangefertigten Modifikator."
+    }
+  ]
+}
