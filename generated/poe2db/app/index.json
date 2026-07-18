@@ -180,5 +180,6 @@
     "currencies": "../crafting/currencies.json",
     "craftedModifiers": "../crafting/crafted-modifiers.json",
     "methods": "../crafting/methods.json"
-  }
+  },
+  "affixGroupsFile": "affix-groups.json"
 }

@@ -3,6 +3,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
+const { CURRENT_MAX_ITEM_LEVEL } = require("../app-config.js");
 
 const root = path.resolve(__dirname, "..");
 const appMods = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app/mods.json"), "utf8"));
@@ -60,7 +61,7 @@ let browser;
       const picker = document.querySelector("#basePicker");
       return picker && !picker.disabled && picker.dataset.baseId;
     });
-    await page.locator("#ilevel").evaluate(element => { element.value = "100"; element.dispatchEvent(new Event("input", { bubbles: true })); });
+    await page.locator("#ilevel").evaluate((element, level) => { element.value = String(level); element.dispatchEvent(new Event("input", { bubbles: true })); }, CURRENT_MAX_ITEM_LEVEL);
     const baseId = await page.locator("#basePicker").getAttribute("data-base-id");
     const poolFile = appIndex.poolFiles[itemClass];
     const classPools = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app", poolFile), "utf8")).pools;
@@ -69,10 +70,10 @@ let browser;
     const observed = {};
     for (const [type, slotSelector, poolKey] of [["prefix", "#prefixSlots", "p"], ["suffix", "#suffixSlots", "s"]]) {
       await page.locator(`${slotSelector} .affix-slot`).first().dispatchEvent("click");
-      await page.waitForSelector('#modResults .result[data-mod-id]', { state: "attached", timeout: 10000 });
-      const rows = await page.locator('#modResults .result[data-mod-id]').evaluateAll(elements => elements.map(element => ({
+      await page.waitForSelector('#modResults .affix-tier-row[data-normal="true"]', { state: "attached", timeout: 10000 });
+      const rows = await page.locator('#modResults .affix-tier-row[data-normal="true"]').evaluateAll(elements => elements.map(element => ({
         modId: element.dataset.modId,
-        text: element.querySelector("b")?.textContent ?? ""
+        text: element.dataset.displayText ?? ""
       })));
       const actualIds = rows.map(row => row.modId).sort();
       const expectedIds = expectedPool[poolKey].map(row => row[0]).sort();

@@ -8,7 +8,9 @@
     "referencedEquipmentMods": 1655,
     "poolFiles": 28,
     "poolBases": 947,
-    "craftingFiles": 6
+    "craftingFiles": 6,
+    "affixGroups": 495,
+    "affixGroupTiers": 1897
   },
   "files": {
     "bases.json": {
@@ -18,7 +20,7 @@
       "sha256": "5df8da371114ca9df6fcf96a2c3c5e6560f8a18d37d47a1bf5c2cfc2dc4d8b2c"
     },
     "index.json": {
-      "sha256": "eef776460f2da8b6fd092903ce00cc43ffde5f2550ec21faeb41868ec47c1ff3"
+      "sha256": "c747985d739597d6f8be52416b7e7e2160c7ee356e13af01ff727444ed903ccb"
     },
     "quality-report.json": {
       "sha256": "f6f21071750d575dc769a390eaa85e01f396046b1a98c832bb262ad35965a851"
@@ -108,7 +110,7 @@
       "sha256": "49ddaee6518c1a8f12ba63388db4ab2634276f151513b72bffcd1aea5cee350d"
     },
     "audit/class-counts.json": {
-      "sha256": "90af08d0f5e91528b58ce7a877f9913baf186c026d93689ac0511d31b1ccb739"
+      "sha256": "8970ec456d03c4fb566f53714395097dbe44865b8f6fa6a192715238da7dc6fa"
     },
     "audit/missing-from-import.json": {
       "sha256": "b67a5db1d288084aa18221ca3ae57b3b7d6257d78d22143ebb5ffd202a9f3448"
@@ -126,10 +128,13 @@
       "sha256": "b739f0d85b2bd73b961e72516f02a0c7a0970393c6665976bfcca662099e249a"
     },
     "audit/audit-summary.json": {
-      "sha256": "053122c2c933d3dabd9b972bd5db74fc05e157ac04f0137f01c78bf5e110d2c1"
+      "sha256": "d12cecd37ea5dbcb3307dfc3c4ad0d49783ad8d06bf205877914dbc5424ac99c"
     },
     "audit/browser-dom-results.json": {
-      "sha256": "914928c3c6cf6e6c6128b1d52ea534b8976f3e31fcadb440f575cb68f6ea2d23"
+      "sha256": "20a976db7d7d547cb8b1f1850ff0dc2079899f8ec519a652f9d5249b473948d3"
+    },
+    "affix-groups.json": {
+      "sha256": "089fd454aac42ba32d4fb162abb580aa9428aa159b349531996ac883d6100a58"
     }
   },
   "audit": {
