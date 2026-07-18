@@ -17,8 +17,43 @@ const validWeights = value => Array.isArray(value) && value.every(rule => isReco
   && typeof rule.tag === "string" && rule.tag.length > 0 && Number.isFinite(rule.weight) && rule.weight >= 0
   && Object.keys(rule).every(key => key === "tag" || key === "weight"));
 const reason = (code, outcome, message, rule, path, details = {}) => ({ code, outcome, message, rule, path, details });
-const compareReasons = (a, b) => [a.rule, a.code, a.path].join("\0").localeCompare([b.rule, b.code, b.path].join("\0"));
-const compareCandidates = (a, b) => [a.generationType ?? "", a.modifierId, a.technicalTier ?? 0].join("\0").localeCompare([b.generationType ?? "", b.modifierId, b.technicalTier ?? 0].join("\0"));
+export function compareTechnicalStrings(left, right) {
+  if (left === right) return 0;
+  return left < right ? -1 : 1;
+}
+const compareTechnicalNumbers = (left, right) => left === right ? 0 : left < right ? -1 : 1;
+const canonicalTechnicalValue = value => {
+  if (Array.isArray(value)) return value.map(canonicalTechnicalValue);
+  if (!isRecord(value)) return value;
+  return Object.fromEntries(Object.keys(value).sort(compareTechnicalStrings).map(key => [key, canonicalTechnicalValue(value[key])]));
+};
+const canonicalTechnicalString = value => JSON.stringify(canonicalTechnicalValue(value));
+const compareFields = comparisons => comparisons.find(result => result !== 0) ?? 0;
+const compareReasons = (a, b) => compareFields([
+  compareTechnicalStrings(a.rule ?? "", b.rule ?? ""),
+  compareTechnicalStrings(a.code ?? "", b.code ?? ""),
+  compareTechnicalStrings(a.outcome ?? "", b.outcome ?? ""),
+  compareTechnicalStrings(a.path ?? "", b.path ?? ""),
+  compareTechnicalStrings(canonicalTechnicalString(a.details), canonicalTechnicalString(b.details))
+]);
+const compareCandidates = (a, b) => compareFields([
+  compareTechnicalStrings(a.generationType ?? "", b.generationType ?? ""),
+  compareTechnicalStrings(a.modifierId ?? "", b.modifierId ?? ""),
+  compareTechnicalNumbers(a.technicalTier ?? -1, b.technicalTier ?? -1),
+  compareTechnicalStrings(a.source ?? "", b.source ?? ""),
+  compareTechnicalStrings(a.catalogReferences?.familyId ?? "", b.catalogReferences?.familyId ?? "")
+]);
+const compareExistingModifiers = (a, b) => compareFields([
+  compareTechnicalStrings(a.modId ?? "", b.modId ?? ""),
+  compareTechnicalStrings(a.instanceId ?? "", b.instanceId ?? ""),
+  compareTechnicalStrings(a.generationType ?? "", b.generationType ?? ""),
+  compareTechnicalNumbers(a.technicalTier ?? -1, b.technicalTier ?? -1)
+]);
+const compareWarnings = (a, b) => compareFields([
+  compareTechnicalStrings(a.modifierId ?? "", b.modifierId ?? ""),
+  compareReasons(a, b)
+]);
+const SORTED_ELIGIBILITY_RULES = Object.freeze([...ELIGIBILITY_RULES].sort(compareTechnicalStrings));
 
 function emptyResult(error, itemState) {
   return immutableCopy({
@@ -39,12 +74,13 @@ function firstWeight(rules, tags, emptyFallback) {
 }
 
 function existingModifiers(itemState) {
-  return [...itemState.prefixModifiers, ...itemState.suffixModifiers, ...itemState.craftedModifiers, ...itemState.desecratedModifiers];
+  return [...itemState.prefixModifiers, ...itemState.suffixModifiers, ...itemState.craftedModifiers, ...itemState.desecratedModifiers].sort(compareExistingModifiers);
 }
 
 function evaluateCandidate(modifier, context, options) {
   const { itemState, catalog, itemClassId, baseTypeId, itemLevel } = context;
   const base = catalog.baseTypes[baseTypeId];
+  const baseTags = base.spawnTags === null ? null : [...base.spawnTags].sort(compareTechnicalStrings);
   const reasons = [];
   const errors = [];
   const add = (...args) => reasons.push(reason(...args));
@@ -61,7 +97,7 @@ function evaluateCandidate(modifier, context, options) {
   else add("ENGINE_ELIGIBILITY_ITEM_CLASS_MATCH", "pass", "Modifier belongs to the regular item-class pool.", "itemClass", "itemClassId", { itemClassId });
 
   const requiredTags = modifier.requiredBaseTagsAny;
-  if (requiredTags?.length && !requiredTags.some(tag => base.spawnTags?.includes(tag))) add(ENGINE_ELIGIBILITY_CODES.BASE_TYPE_MISMATCH, "fail", "Base type does not satisfy the structured base-tag restriction.", "baseType", "catalog.modifiers.requiredBaseTagsAny", { requiredTags, baseTags: base.spawnTags });
+  if (requiredTags?.length && !requiredTags.some(tag => baseTags?.includes(tag))) add(ENGINE_ELIGIBILITY_CODES.BASE_TYPE_MISMATCH, "fail", "Base type does not satisfy the structured base-tag restriction.", "baseType", "catalog.modifiers.requiredBaseTagsAny", { requiredTags, baseTags });
   else add("ENGINE_ELIGIBILITY_BASE_TYPE_MATCH", "pass", "No structured base restriction excludes the base type.", "baseType", "baseTypeId", { baseTypeId });
 
   if (modifier.requiredLevel === null) add(ENGINE_ELIGIBILITY_CODES.ITEM_LEVEL_UNRESOLVED, "unresolved", "Modifier item-level requirement is missing.", "itemLevel", "catalog.modifiers.requiredLevel", { requiredLevel: null });
@@ -88,17 +124,17 @@ function evaluateCandidate(modifier, context, options) {
   } else if (technicalEvaluation.errors.some(entry => entry.code === ENGINE_RULE_ERROR_CODES.UNKNOWN_MODIFIER_DOMAIN)) add(ENGINE_ELIGIBILITY_CODES.DOMAIN_UNRESOLVED, "unresolved", "Present domain is unknown.", "domain", "catalog.modifiers.domain", { status: "presentUnknown", domain: modifier.domain });
   else add("ENGINE_ELIGIBILITY_DOMAIN_KNOWN", "pass", "Domain is known.", "domain", "catalog.modifiers.domain", { domain: modifier.domain });
 
-  if (base.spawnTags === null) add(ENGINE_ELIGIBILITY_CODES.TAG_DATA_MISSING, "unresolved", "Base spawn tags are missing.", "tags", "catalog.baseTypes.spawnTags", { baseTypeId });
-  else add("ENGINE_ELIGIBILITY_TAG_DATA_PRESENT", "pass", "Base spawn tags are available.", "tags", "catalog.baseTypes.spawnTags", { tags: base.spawnTags });
+  if (baseTags === null) add(ENGINE_ELIGIBILITY_CODES.TAG_DATA_MISSING, "unresolved", "Base spawn tags are missing.", "tags", "catalog.baseTypes.spawnTags", { baseTypeId });
+  else add("ENGINE_ELIGIBILITY_TAG_DATA_PRESENT", "pass", "Base spawn tags are available.", "tags", "catalog.baseTypes.spawnTags", { tags: baseTags });
 
-  const spawn = firstWeight(modifier.spawnWeights, base.spawnTags ?? [], 0);
-  const generation = firstWeight(modifier.generationWeights, base.spawnTags ?? [], 1);
+  const spawn = firstWeight(modifier.spawnWeights, baseTags ?? [], 0);
+  const generation = firstWeight(modifier.generationWeights, baseTags ?? [], 1);
   for (const [field, resolved] of [["spawnWeights", spawn], ["generationWeights", generation]]) {
     if (resolved.state === "invalid" || technicalEvaluation.errors.some(entry => entry.code === ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE && entry.path.endsWith(field))) {
       const catalogError = reason(ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID, "unresolved", "Weight structure is invalid.", "weights", `catalog.modifiers.${field}`, { modifierId: modifier.id, field });
       reasons.push(catalogError); errors.push(catalogError);
     } else if (resolved.state === "missing") add(ENGINE_ELIGIBILITY_CODES.WEIGHT_MISSING, "unresolved", "Weight structure is missing.", "weights", `catalog.modifiers.${field}`, { field, status: "notPresent" });
-    else if (resolved.state === "noMatch") add(ENGINE_ELIGIBILITY_CODES.TAG_MISMATCH, "fail", "No weight rule matches the base tags.", "weights", `catalog.modifiers.${field}`, { field, baseTags: base.spawnTags });
+    else if (resolved.state === "noMatch") add(ENGINE_ELIGIBILITY_CODES.TAG_MISMATCH, "fail", "No weight rule matches the base tags.", "weights", `catalog.modifiers.${field}`, { field, baseTags });
     else if (resolved.weight === 0) add(ENGINE_ELIGIBILITY_CODES.ZERO_WEIGHT, "fail", "Applicable weight is explicitly zero.", "weights", `catalog.modifiers.${field}`, { field, matchedTag: resolved.matchedTag, weight: 0 });
     else add("ENGINE_ELIGIBILITY_POSITIVE_WEIGHT", "pass", "Applicable weight is positive.", "weights", `catalog.modifiers.${field}`, { field, matchedTag: resolved.matchedTag, weight: resolved.weight });
   }
@@ -134,7 +170,7 @@ function evaluateCandidate(modifier, context, options) {
     candidate: {
       modifierId: modifier.id, status, generationType: modifier.generationType, source: modifier.source,
       technicalTier: modifier.technicalTier, displayTier: modifier.displayTiers?.[itemClassId] ?? null,
-      itemLevelRequirement: modifier.requiredLevel, applicableWeight, reasons, evaluatedRules: [...ELIGIBILITY_RULES],
+      itemLevelRequirement: modifier.requiredLevel, applicableWeight, reasons, evaluatedRules: [...SORTED_ELIGIBILITY_RULES],
       catalogReferences: {
         familyId: modifier.familyId, modGroups: modifier.modGroups, statIds: modifier.statIds,
         regularItemClassIds: modifier.regularItemClassIds, requiredBaseTagsAny: modifier.requiredBaseTagsAny,
@@ -163,12 +199,12 @@ export function resolveEligibleModifiers({ itemState, catalog, ruleContext = nul
   const ineligible = candidates.filter(entry => entry.status === "ineligible");
   const unresolved = candidates.filter(entry => entry.status === "unresolved");
   const errors = resolved.flatMap(entry => entry.errors).sort(compareReasons);
-  const warnings = candidates.flatMap(candidate => candidate.reasons.filter(entry => entry.outcome === "unresolved" && entry.code !== ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID).map(entry => ({ ...entry, modifierId: candidate.modifierId }))).sort((a, b) => [a.modifierId, a.rule, a.code].join("\0").localeCompare([b.modifierId, b.rule, b.code].join("\0")));
+  const warnings = candidates.flatMap(candidate => candidate.reasons.filter(entry => entry.outcome === "unresolved" && entry.code !== ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID).map(entry => ({ ...entry, modifierId: candidate.modifierId }))).sort(compareWarnings);
   return immutableCopy({
     valid: errors.length === 0,
     contextSummary: { itemId: itemState.itemId, itemClassId: context.itemClassId, baseTypeId: context.baseTypeId, itemLevel: context.itemLevel, mode: REGULAR_MODIFIER_MODE },
     candidateCount: candidates.length, eligible, ineligible, unresolved, errors, warnings,
-    evaluatedRules: [...ELIGIBILITY_RULES],
+    evaluatedRules: [...SORTED_ELIGIBILITY_RULES],
     summary: { total: candidates.length, eligibleCount: eligible.length, ineligibleCount: ineligible.length, unresolvedCount: unresolved.length, prefixEligibleCount: eligible.filter(entry => entry.generationType === "prefix").length, suffixEligibleCount: eligible.filter(entry => entry.generationType === "suffix").length }
   });
 }

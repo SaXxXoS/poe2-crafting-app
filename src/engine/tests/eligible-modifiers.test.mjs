@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
-  ENGINE_ELIGIBILITY_CODES, createItemState, createModifierCatalog, createRuleContext,
+  ENGINE_ELIGIBILITY_CODES, compareTechnicalStrings, createItemState, createModifierCatalog, createRuleContext,
   immutableCopy, loadModifierCatalog, resolveEligibleModifiers
 } from "../index.mjs";
 
@@ -107,7 +108,34 @@ test("33 rule context is not mutated", () => { const cat = catalog(); const item
 test("34 action context is not mutated", () => { const value = { target: { type: "regular" } }; const before = JSON.stringify(value); resolve({ actionContext: value }); assert.equal(JSON.stringify(value), before); });
 test("35 result is recursively immutable", () => { const result = resolve({ options: { capacityRules: TEST_CAPACITY_RULES } }); assert.ok(Object.isFrozen(result)); assert.ok(Object.isFrozen(result.eligible)); assert.ok(Object.isFrozen(result.eligible[0].reasons[0].details)); });
 test("36 identical resolutions are byte-identical", () => assert.equal(JSON.stringify(resolve()), JSON.stringify(resolve())));
-test("37 candidate and reason order is deterministic", () => { const result = resolve(); const ids = [...result.eligible, ...result.ineligible, ...result.unresolved].map(x => x.modifierId); assert.equal(new Set(ids).size, 3); for (const entry of [...result.eligible, ...result.ineligible, ...result.unresolved]) assert.deepEqual(entry.reasons, [...entry.reasons].sort((a, b) => [a.rule, a.code, a.path].join("\0").localeCompare([b.rule, b.code, b.path].join("\0")))); });
+test("37 permuted equivalent inputs have byte-identical technical ordering", () => {
+  const base = catalog();
+  const unresolved = { ...base.modifiers["mod:prefix"], id: "mod:unresolved", source: null };
+  const modifierEntries = [...Object.entries(base.modifiers), [unresolved.id, unresolved]];
+  const makeCatalog = (entries, tags, reverseSuffixWeights) => immutableCopy({
+    ...base,
+    baseTypes: { ...base.baseTypes, "base:bow": { ...base.baseTypes["base:bow"], spawnTags: tags } },
+    modifiers: Object.fromEntries(entries.map(([id, modifier]) => [id, id === "mod:suffix" ? {
+      ...modifier,
+      spawnWeights: reverseSuffixWeights ? [{ tag: "bow", weight: 100 }, { tag: "staff", weight: 9 }] : [{ tag: "staff", weight: 9 }, { tag: "bow", weight: 100 }]
+    } : modifier]))
+  });
+  const resultA = resolve({ cat: makeCatalog(modifierEntries, ["bow", "default", "weapon"], false), options: { capacityRules: { prefix: 10, suffix: 10 } } });
+  const resultB = resolve({ cat: makeCatalog([...modifierEntries].reverse(), ["weapon", "default", "bow"], true), options: { capacityRules: { suffix: 10, prefix: 10 } } });
+  assert.equal(JSON.stringify(resultA), JSON.stringify(resultB));
+  assert.deepEqual(resultA.eligible.map(candidate => candidate.modifierId), ["mod:prefix", "mod:suffix"]);
+  assert.deepEqual(resultA.ineligible.map(candidate => candidate.modifierId), ["mod:spear"]);
+  assert.deepEqual(resultA.unresolved.map(candidate => candidate.modifierId), ["mod:unresolved"]);
+  assert.deepEqual(find(resultA, "mod:unresolved").reasons.map(entry => entry.code), [
+    "ENGINE_ELIGIBILITY_BASE_TYPE_MATCH", "ENGINE_ELIGIBILITY_CAPACITY_AVAILABLE", "ENGINE_ELIGIBILITY_DOMAIN_KNOWN",
+    "ENGINE_ELIGIBILITY_MOD_GROUP_CLEAR", "ENGINE_ELIGIBILITY_GENERATION_TYPE_REGULAR", "ENGINE_ELIGIBILITY_ITEM_CLASS_MATCH",
+    "ENGINE_ELIGIBILITY_ITEM_LEVEL_MET", "ENGINE_ELIGIBILITY_SPECIAL_SOURCE_EXCLUDED", "ENGINE_ELIGIBILITY_TAG_DATA_PRESENT",
+    "ENGINE_ELIGIBILITY_POSITIVE_WEIGHT", "ENGINE_ELIGIBILITY_POSITIVE_WEIGHT"
+  ]);
+  assert.deepEqual(resultA.errors, []);
+  assert.deepEqual(resultA.warnings.map(entry => `${entry.modifierId}|${entry.code}`), ["mod:unresolved|ENGINE_ELIGIBILITY_SPECIAL_SOURCE_EXCLUDED"]);
+  assert.deepEqual(resultA.evaluatedRules, ["baseType", "capacity", "domain", "existingModifiers", "generationType", "itemClass", "itemLevel", "source", "tags", "weights"]);
+});
 test("38 result has no time random or absolute paths", () => assert.doesNotMatch(JSON.stringify(resolve()), /generatedAt|Math\.random|Date\(|[A-Za-z]:\\/));
 test("39 empty candidate set is valid", () => { const base = catalog(); const cat = immutableCopy({ ...base, modifiers: {} }); const result = resolve({ cat }); assert.equal(result.valid, true); assert.equal(result.summary.total, 0); });
 
@@ -141,4 +169,26 @@ test("52 catalog error outranks a simultaneous safe exclusion without hiding eit
   assert.equal(result.unresolved.filter(candidate => candidate.modifierId === entry.modifierId).length, 1);
   assert.equal(result.ineligible.some(candidate => candidate.modifierId === entry.modifierId), false);
   assert.equal(result.eligible.some(candidate => candidate.modifierId === entry.modifierId), false);
+});
+test("53 technical comparator uses explicit JavaScript code-unit order", () => {
+  const values = ["ä:mod", "a:mod", "A:mod", "z:mod", "_:mod"];
+  assert.deepEqual([...values].sort(compareTechnicalStrings), ["A:mod", "_:mod", "a:mod", "z:mod", "ä:mod"]);
+  assert.equal(compareTechnicalStrings("same", "same"), 0);
+});
+test("54 resolver source contains no locale-sensitive comparator", () => {
+  const source = readFileSync(new URL("../eligible-modifier-resolver.mjs", import.meta.url), "utf8");
+  assert.equal(source.includes(".localeCompare("), false);
+  assert.equal(source.includes("Intl.Collator"), false);
+});
+test("55 existing modifier insertion order uses technical conflict tie-breakers", () => {
+  const base = catalog();
+  const existingA = { ...base.modifiers["mod:prefix"], id: "mod:existing-A", regularItemClassIds: ["Spear"] };
+  const existingB = { ...base.modifiers["mod:prefix"], id: "mod:existing-B", regularItemClassIds: ["Spear"] };
+  const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, [existingB.id]: existingB, [existingA.id]: existingA } });
+  const instanceA = modifierInstance(existingA.id);
+  const instanceB = { ...modifierInstance(existingB.id), instanceId: `instance:${existingB.id}` };
+  const resultA = resolve({ cat, item: state({ prefixModifiers: [instanceB, instanceA] }), options: { capacityRules: TEST_CAPACITY_RULES } });
+  const resultB = resolve({ cat, item: state({ prefixModifiers: [instanceA, instanceB] }), options: { capacityRules: TEST_CAPACITY_RULES } });
+  assert.equal(JSON.stringify(resultA), JSON.stringify(resultB));
+  assert.equal(find(resultA, "mod:prefix").reasons.find(entry => entry.code === ENGINE_ELIGIBILITY_CODES.MOD_GROUP_CONFLICT).details.existingModifierId, "mod:existing-A");
 });
