@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:38:39.275Z",
+  "generatedAt": "2026-07-18T10:54:34.270Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Jewel.",
@@ -11,8 +11,8 @@
     "importedBases": 10,
     "regularUsableBases": 9,
     "excludedBases": 1,
-    "distinctPrefixPools": 5,
-    "distinctSuffixPools": 5
+    "distinctPrefixPools": 9,
+    "distinctSuffixPools": 9
   },
   "localization": {
     "missingGermanBaseNames": [],
@@ -40,89 +40,174 @@
     ],
     "missingGermanModifierTexts": [
       {
-        "id": "poe2db:f2b7b505d475c54662da",
+        "id": "poe2db:110829e233825ee648bc",
         "nameEn": "Bleeding",
         "textEn": "(3—7)% chance to inflict Bleeding on Hit"
       },
       {
-        "id": "poe2db:c8beb3319a419b126c15",
+        "id": "poe2db:f141bfd63304daf59f5a",
         "nameEn": "Empowering",
         "textEn": "Empowered Attacks deal (10—20)% increased Damage"
       },
       {
-        "id": "poe2db:6a095d1aa061d25f7229",
+        "id": "poe2db:fbe4bc27cac368c6050b",
         "nameEn": "Searing",
         "textEn": "Damage Penetrates (5—10)% Fire Resistance"
       },
       {
-        "id": "poe2db:594ae2eecd86e561517f",
+        "id": "poe2db:d999cf15f458c1a304ef",
         "nameEn": "Burning",
         "textEn": "(5—15)% increased Ignite Magnitude"
       },
       {
-        "id": "poe2db:1e1886f47d790d3d056a",
+        "id": "poe2db:58a35023e4fe9d634429",
         "nameEn": "Acrimonious",
         "textEn": "(5—15)% increased Magnitude of Ailments you inflict"
       },
       {
-        "id": "poe2db:080ac90a05b0b68b6513",
+        "id": "poe2db:dfdd25d95890445fc65f",
         "nameEn": "Surging",
         "textEn": "Damage Penetrates (5—10)% Lightning Resistance"
       },
       {
-        "id": "poe2db:f14f38c291cb845a7c64",
+        "id": "poe2db:0d5603289f7119b53653",
         "nameEn": "Numbing",
         "textEn": "Damage Penetrates (5—10)% Cold Resistance"
       },
       {
-        "id": "poe2db:2c505ffee06954fd6080",
+        "id": "poe2db:999b135513bbe24ff136",
         "nameEn": "Necromantic",
         "textEn": "(10—20)% increased Damage if you have Consumed a Corpse Recently"
       },
       {
-        "id": "poe2db:c7d179d626f2c1d52525",
+        "id": "poe2db:cb16da404423c65e0b73",
         "nameEn": "Withering",
         "textEn": "(5—10)% increased Withered Magnitude"
       },
       {
-        "id": "poe2db:e903f026aebd298b4b65",
+        "id": "poe2db:496be12426982af50e8f",
+        "nameEn": "Bleeding",
+        "textEn": "Small Passive Skills in Radius also grant 1% chance to inflict Bleeding on Hit"
+      },
+      {
+        "id": "poe2db:14244d843c8a0d79d7e6",
+        "nameEn": "Empowering",
+        "textEn": "Small Passive Skills in Radius also grant Empowered Attacks deal (2—3)% increased Damage"
+      },
+      {
+        "id": "poe2db:05c5411774a00e11d649",
+        "nameEn": "Searing",
+        "textEn": "Small Passive Skills in Radius also grant Damage Penetrates (1—2)% Fire Resistance"
+      },
+      {
+        "id": "poe2db:a6dc8b3c14272e2ecfcc",
+        "nameEn": "Burning",
+        "textEn": "Notable Passive Skills in Radius also grant (3—7)% increased Ignite Magnitude"
+      },
+      {
+        "id": "poe2db:da63724d71802b49d790",
+        "nameEn": "Acrimonious",
+        "textEn": "Notable Passive Skills in Radius also grant (3—7)% increased Magnitude of Ailments you inflict"
+      },
+      {
+        "id": "poe2db:3c85134ef9dd9ea3145e",
+        "nameEn": "Surging",
+        "textEn": "Small Passive Skills in Radius also grant Damage Penetrates (1—2)% Lightning Resistance"
+      },
+      {
+        "id": "poe2db:6f1fc001040d8b6223c7",
+        "nameEn": "Numbing",
+        "textEn": "Small Passive Skills in Radius also grant Damage Penetrates (1—2)% Cold Resistance"
+      },
+      {
+        "id": "poe2db:c3cda6581053d02f8072",
+        "nameEn": "Necromantic",
+        "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Damage if you have Consumed a Corpse Recently"
+      },
+      {
+        "id": "poe2db:efd1553f13d364a12ae1",
+        "nameEn": "Withering",
+        "textEn": "Notable Passive Skills in Radius also grant (3—5)% increased Withered Magnitude"
+      },
+      {
+        "id": "poe2db:386e0e03c671d2702ad7",
         "nameEn": "of Ignition",
         "textEn": "(10—20)% increased Flammability Magnitude"
       },
       {
-        "id": "poe2db:05d129070ec51b3dc6e0",
+        "id": "poe2db:9a15d1be330669fa0801",
         "nameEn": "of Raging",
         "textEn": "Gain 1 Rage on Melee Hit"
       },
       {
-        "id": "poe2db:64f07ef0db3319ec4c90",
+        "id": "poe2db:abe3f6af02e268b01bab",
         "nameEn": "of Blinding",
         "textEn": "(3—7)% chance to Blind Enemies on Hit with Attacks"
       },
       {
-        "id": "poe2db:4ea9d6438775caa47684",
+        "id": "poe2db:780db08d0016f04aa45c",
         "nameEn": "of Dazing",
         "textEn": "(5—10)% chance to Daze on Hit"
       },
       {
-        "id": "poe2db:6631ccb2908681334bed",
+        "id": "poe2db:ea1324fe508e24dd155e",
         "nameEn": "of Diminishing",
         "textEn": "Debuffs on you expire (5—10)% faster"
       },
       {
-        "id": "poe2db:9d08a60c5c0370beadb7",
+        "id": "poe2db:1d9910f4a6225dc06c9c",
         "nameEn": "of Poisoning",
         "textEn": "(5—10)% chance to Poison on Hit"
       },
       {
-        "id": "poe2db:c0bd1bbf7847bc2c42aa",
+        "id": "poe2db:7dc022a4f4a1404cd380",
         "nameEn": "of Stoutness",
         "textEn": "(15—25)% increased Stun Threshold if you haven't been Stunned Recently"
       },
       {
-        "id": "poe2db:385943475ef0dab44d63",
+        "id": "poe2db:e0d11960ffcfa6b095f8",
         "nameEn": "of Orchestration",
         "textEn": "Minions have (2—4)% increased Attack and Cast Speed"
+      },
+      {
+        "id": "poe2db:eb8a9858786ab89e8105",
+        "nameEn": "of Ignition",
+        "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Flammability Magnitude"
+      },
+      {
+        "id": "poe2db:5bb5d76eb322003d965d",
+        "nameEn": "of Raging",
+        "textEn": "Notable Passive Skills in Radius also grant Gain 1 Rage on Melee Hit"
+      },
+      {
+        "id": "poe2db:5741a8b15b005cbc509d",
+        "nameEn": "of Blinding",
+        "textEn": "Small Passive Skills in Radius also grant 1% chance to Blind Enemies on Hit with Attacks"
+      },
+      {
+        "id": "poe2db:c3939e243f56ad001b10",
+        "nameEn": "of Dazing",
+        "textEn": "Small Passive Skills in Radius also grant 1% chance to Daze on Hit"
+      },
+      {
+        "id": "poe2db:1ddf5f92ac49d9da1bd6",
+        "nameEn": "of Diminishing",
+        "textEn": "Notable Passive Skills in Radius also grant Debuffs on you expire (3—5)% faster"
+      },
+      {
+        "id": "poe2db:5950293068744ddce46e",
+        "nameEn": "of Poisoning",
+        "textEn": "Small Passive Skills in Radius also grant 1% chance to Poison on Hit"
+      },
+      {
+        "id": "poe2db:9e93016782b9cb758dbb",
+        "nameEn": "of Stoutness",
+        "textEn": "Small Passive Skills in Radius also grant (2—3)% increased Stun Threshold if you haven't been Stunned Recently"
+      },
+      {
+        "id": "poe2db:054cd22ec6e227e604ed",
+        "nameEn": "of Orchestration",
+        "textEn": "Notable Passive Skills in Radius also grant Minions have (1—2)% increased Attack and Cast Speed"
       }
     ],
     "ambiguousTranslations": []
@@ -137,31 +222,31 @@
   ],
   "restrictedModExamples": [
     {
-      "modId": "poe2db:712c7dc6bf618dabc6b7",
+      "modId": "poe2db:1eba7879f63fc9763cc0",
       "nameEn": "Blasting",
       "textDe": "(4—6)% vergrößerter Wirkungsbereich",
       "allowedBaseCount": 4
     },
     {
-      "modId": "poe2db:b1e922bf17fcb3eecbd4",
+      "modId": "poe2db:30c45f266285ae3b7150",
       "nameEn": "Armoured",
       "textDe": "(10—20)% erhöhte Rüstung",
       "allowedBaseCount": 3
     },
     {
-      "modId": "poe2db:caca7418af41647e7ed6",
+      "modId": "poe2db:a138921ac6247cd63229",
       "nameEn": "Shattering",
       "textDe": "Zerbrecht (5—15)% erhöhte Rüstung",
       "allowedBaseCount": 3
     },
     {
-      "modId": "poe2db:d9afa09e2559344fc1be",
+      "modId": "poe2db:9ab8e838ffc4abaecfa5",
       "nameEn": "Combat",
       "textDe": "(5—15)% erhöhter Angriffsschaden",
       "allowedBaseCount": 4
     },
     {
-      "modId": "poe2db:f2b7b505d475c54662da",
+      "modId": "poe2db:110829e233825ee648bc",
       "nameEn": "Bleeding",
       "textDe": null,
       "allowedBaseCount": 3

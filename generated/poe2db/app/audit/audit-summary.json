@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T10:55:41.118Z",
+  "mode": "verification",
+  "totals": {
+    "poe2dbMods": 5063,
+    "importedMods": 5063,
+    "importPoolMods": 5063,
+    "adapterPoolMods": 5063,
+    "visibleEligibleMods": 5063,
+    "countingUnit": "class-to-mod assignments; the same technical mod may validly occur in multiple classes",
+    "uniqueTechnicalMods": {
+      "poe2db": 1655,
+      "imported": 1655,
+      "importPools": 1655,
+      "adapterPools": 1655,
+      "visibleEligible": 1655
+    }
+  },
+  "missing": {
+    "fromImport": 0,
+    "fromImportPools": 0,
+    "fromAdapterPools": 0,
+    "fromUiData": 0
+  },
+  "affectedClasses": [],
+  "discoveredCauses": [
+    "Der frühere classMods-Vorfilter verlangte eine Überschneidung von PoE2DB spawn_no mit einem manuell konfigurierten Klassentag. Globale reguläre Tags wie weapon, armour und default wurden dadurch vor der vollständigen Gewichtsauswertung verworfen.",
+    "Mehrere Rüstungs- und Juwel-Unterseiten lieferten dieselbe technische Mod-ID. Vor der Korrektur waren PoE2DB-Hash-IDs seitenabhängig und konnten dieselbe technische Mod mehrfach repräsentieren.",
+    "Die englisch/deutsche Zuordnung mehrerer strukturgleicher Juwel-Zeilen benötigte neben stabilen IDs eine validierte numerische Signatur und stabile Datensatzposition."
+  ],
+  "corrections": [
+    "Alle regulären PoE2DB-Normalzeilen mit Präfix-/Suffix-Generation und positiver DropChance werden vor einer Klassenentscheidung eingelesen.",
+    "Die Zulässigkeit wird ausschließlich durch die vollständigen geordneten RePoE Spawn- und Generation-Weights gegen sämtliche Tags jeder Basis bestimmt.",
+    "Mods werden nach der technischen RePoE-Mod-ID dedupliziert; widersprüchliche Texte, Generation Types oder Item-Level führen zum Fehler.",
+    "Tiers werden nach der technischen Deduplizierung pro Generation Type und Modfamilie neu berechnet.",
+    "App-Pools und Browser-DOM werden mit Mod-IDs statt nur sichtbaren Texten verglichen."
+  ],
+  "exclusions": [
+    {
+      "category": "non-normal-poe2db-collections",
+      "reason": "Essenzen, Entweihung, Corruption, Crafted-, Monster-, Map- und andere Spezialkollektionen bleiben außerhalb regulärer Zufallspools und werden separat importiert."
+    },
+    {
+      "category": "non-affix-generation-types",
+      "reason": "Nur ModGenerationTypeID 1 (Präfix) und 2 (Suffix) gehören in reguläre Affixpools."
+    },
+    {
+      "category": "zero-poe2db-dropchance",
+      "reason": "Zeilen mit DropChance 0 sind auf der jeweiligen PoE2DB-Seite nicht regulär spawnbar."
+    },
+    {
+      "category": "zero-effective-weight",
+      "reason": "Mods, deren erster passender Spawn- oder Generation-Weight für eine Basis 0 ist, werden aus genau diesem Basispool ausgeschlossen."
+    }
+  ],
+  "baseline": {
+    "ref": "HEAD",
+    "totals": {
+      "poe2dbMods": 5063,
+      "importedMods": 3276,
+      "importPoolMods": 3276,
+      "adapterPoolMods": 3276,
+      "visibleEligibleMods": 3276
+    },
+    "missingFromImport": 1787,
+    "affectedClasses": [
+      "Spear",
+      "Bow",
+      "Crossbow",
+      "Warstaff",
+      "One Hand Sword",
+      "Two Hand Sword",
+      "One Hand Axe",
+      "Two Hand Axe",
+      "One Hand Mace",
+      "Two Hand Mace",
+      "Dagger",
+      "Claw",
+      "Flail",
+      "Body Armour",
+      "Helmet",
+      "Gloves",
+      "Boots",
+      "Shield",
+      "Buckler",
+      "Focus",
+      "Jewel"
+    ]
+  }
+}

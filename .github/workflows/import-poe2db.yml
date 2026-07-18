@@ -32,6 +32,8 @@ jobs:
         run: |
           node tools/build-poe2db-app-adapter.mjs
           node tools/validate-poe2db-app.mjs
+          node tools/audit-poe2db-app.mjs
+          node tools/validate-poe2db-audit.mjs
 
       - name: Import prüfen
         run: |

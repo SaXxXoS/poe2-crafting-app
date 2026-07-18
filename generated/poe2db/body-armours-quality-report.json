@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:37:29.709Z",
+  "generatedAt": "2026-07-18T10:54:15.498Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Body Armour.",
@@ -706,102 +706,102 @@
     ],
     "missingGermanModifierTexts": [
       {
-        "id": "poe2db:edf6c5c4e1bf11606506",
+        "id": "poe2db:668e217e53ae9bccb3c8",
         "nameEn": "Shadowy",
         "textEn": "(15—26)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:163c5b13e3420b17ebc4",
+        "id": "poe2db:113b30ccd1e3644a8bb0",
         "nameEn": "Ethereal",
         "textEn": "(27—42)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:f8ae9260c97779106d0c",
+        "id": "poe2db:58c43028406a78ceef54",
         "nameEn": "Unworldly",
         "textEn": "(43—55)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:5ed388aa96ce36bc5941",
+        "id": "poe2db:5f025b36eedeb7609c4d",
         "nameEn": "Ephemeral",
         "textEn": "(56—67)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:5c1209b742d2e8b4bfe8",
+        "id": "poe2db:9b03c1378ae978dab976",
         "nameEn": "Evanescent",
         "textEn": "(68—79)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:87a65817bb35158048bd",
+        "id": "poe2db:0b5f8355e97c2bfd61a5",
         "nameEn": "Unreal",
         "textEn": "(80—91)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:5d1b739b7eaf029ba707",
+        "id": "poe2db:c4a7da5bed59c02af106",
         "nameEn": "Illusory",
         "textEn": "(92—100)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:a51ff2b58ec02f43a25b",
+        "id": "poe2db:603953917c3e6ac5cc23",
         "nameEn": "Incorporeal",
         "textEn": "(101—110)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:fc534c65e4b4d664ca9d",
+        "id": "poe2db:635b83f90874ba07ab3a",
         "nameEn": "Poet's",
         "textEn": "(6—13)% increased Evasion and Energy Shield +(7—10) to maximum Life"
       },
       {
-        "id": "poe2db:774eecb300a393639663",
+        "id": "poe2db:d538833c02d1a2d79c3b",
         "nameEn": "Musician's",
         "textEn": "(14—20)% increased Evasion and Energy Shield +(11—19) to maximum Life"
       },
       {
-        "id": "poe2db:854a3aef9600566f1474",
+        "id": "poe2db:cbf27ac5386a07bdb90e",
         "nameEn": "Troubadour's",
         "textEn": "(21—26)% increased Evasion and Energy Shield +(20—25) to maximum Life"
       },
       {
-        "id": "poe2db:1a1c8baf1cbbb66c596a",
+        "id": "poe2db:cc8829ee2fe2c5c0ca64",
         "nameEn": "Bard's",
         "textEn": "(27—32)% increased Evasion and Energy Shield +(26—32) to maximum Life"
       },
       {
-        "id": "poe2db:b3b22f4917f28841d46a",
+        "id": "poe2db:c43ba95fad1eebc61014",
         "nameEn": "Minstrel's",
         "textEn": "(33—38)% increased Evasion and Energy Shield +(33—41) to maximum Life"
       },
       {
-        "id": "poe2db:ee348327ec230e8900d1",
+        "id": "poe2db:d9297899dcc00b2bee65",
         "nameEn": "Maestro's",
         "textEn": "(39—42)% increased Evasion and Energy Shield +(42—49) to maximum Life"
       },
       {
-        "id": "poe2db:41a974ce1a6d9adb6b01",
+        "id": "poe2db:516caa56a26150919fb8",
         "nameEn": "Pursuer's",
         "textEn": "+(2—3) to Evasion Rating +(2—4) to maximum Energy Shield (6—13)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:0ae4df8a30b9a6324674",
+        "id": "poe2db:2a1d2d43e7d3217c9f2d",
         "nameEn": "Tracker's",
         "textEn": "+(4—14) to Evasion Rating +(5—6) to maximum Energy Shield (14—20)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:be2bcd5d9e92ef88db7e",
+        "id": "poe2db:7451457f766020744470",
         "nameEn": "Chaser's",
         "textEn": "+(15—21) to Evasion Rating +(7—8) to maximum Energy Shield (21—26)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:4e02abde301c221dca10",
+        "id": "poe2db:6bea0ff105691d2f7e15",
         "nameEn": "Phantom's",
         "textEn": "+(22—29) to Evasion Rating +(9—10) to maximum Energy Shield (27—32)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:680f3a49abe66558cda4",
+        "id": "poe2db:967f0edaffcadc189c79",
         "nameEn": "Rogue's",
         "textEn": "+(30—39) to Evasion Rating +(11—12) to maximum Energy Shield (33—38)% increased Evasion and Energy Shield"
       },
       {
-        "id": "poe2db:fdd58919ce39df933f77",
+        "id": "poe2db:e273f2dc54f1f35d5a2a",
         "nameEn": "Stalker's",
         "textEn": "+(40—50) to Evasion Rating +(13—15) to maximum Energy Shield (39—42)% increased Evasion and Energy Shield"
       }
@@ -2090,31 +2090,31 @@
   ],
   "restrictedModExamples": [
     {
-      "modId": "poe2db:c7cde2aa20791d433d09",
+      "modId": "poe2db:df05c231a4bfd1c8bbe3",
       "nameEn": "Lacquered",
       "textDe": "+(16—27) zu Rüstung",
       "allowedBaseCount": 78
     },
     {
-      "modId": "poe2db:bcb340d21fa393a236dc",
+      "modId": "poe2db:fd4b5c73dae3484215ea",
       "nameEn": "Studded",
       "textDe": "+(28—56) zu Rüstung",
       "allowedBaseCount": 78
     },
     {
-      "modId": "poe2db:9c8193a8b818bd151740",
+      "modId": "poe2db:7d86b2f32ad88e35d7af",
       "nameEn": "Ribbed",
       "textDe": "+(57—77) zu Rüstung",
       "allowedBaseCount": 78
     },
     {
-      "modId": "poe2db:051b78fab8c83ab93f24",
+      "modId": "poe2db:264589fb66aa7e43d751",
       "nameEn": "Fortified",
       "textDe": "+(78—98) zu Rüstung",
       "allowedBaseCount": 78
     },
     {
-      "modId": "poe2db:e7fa96f65efa3a414865",
+      "modId": "poe2db:eab871a39d23530a5b1c",
       "nameEn": "Plated",
       "textDe": "+(99—127) zu Rüstung",
       "allowedBaseCount": 78

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:36:47.794Z",
+  "generatedAt": "2026-07-18T10:53:58.404Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Staff.",
@@ -30,67 +30,67 @@
     ],
     "missingGermanModifierTexts": [
       {
-        "id": "poe2db:3a960c6b7d8788847ef3",
+        "id": "poe2db:1b5fc3fbd0d72d768772",
         "nameEn": "Punishing",
         "textEn": "(50—68)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:90848e335d1ac65eb778",
+        "id": "poe2db:989e4027ea743bb4f37d",
         "nameEn": "Unforgiving",
         "textEn": "(69—88)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:3876f57d0205f6ff1b45",
+        "id": "poe2db:3b943d2223c39af8a95e",
         "nameEn": "Vengeful",
         "textEn": "(89—108)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:6c846e746f50e3943e2b",
+        "id": "poe2db:9e432430c33d78d4babd",
         "nameEn": "Sadistic",
         "textEn": "(109—128)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:bb80be89894a626b12dd",
+        "id": "poe2db:c8f00b9deb43c054516d",
         "nameEn": "Pitiless",
         "textEn": "(129—148)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:1eb8bab3887447337d39",
+        "id": "poe2db:22a246f7f04c4e215295",
         "nameEn": "Agonising",
         "textEn": "(149—188)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:f27e3c05ec5b3cada6d6",
+        "id": "poe2db:e9b1c4b4328e675f14f5",
         "nameEn": "Oppressor's",
         "textEn": "(189—208)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:05203c194d63378e28e2",
+        "id": "poe2db:b11aca2533eb77eddb16",
         "nameEn": "Torturer's",
         "textEn": "(209—238)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:33442ae90f71d7ba139e",
+        "id": "poe2db:f58662f538fb51be57e6",
         "nameEn": "of Ignition",
         "textEn": "(51—60)% increased Flammability Magnitude"
       },
       {
-        "id": "poe2db:02c57b48fffbee9f7b0a",
+        "id": "poe2db:428715666a2cf49f23e6",
         "nameEn": "of Scorching",
         "textEn": "(61—70)% increased Flammability Magnitude"
       },
       {
-        "id": "poe2db:26c7988a3612a9472597",
+        "id": "poe2db:e00d159362e4c96dbcaa",
         "nameEn": "of Incineration",
         "textEn": "(71—80)% increased Flammability Magnitude"
       },
       {
-        "id": "poe2db:3f9c9d0b9af656085e1b",
+        "id": "poe2db:e6f672ec2c61f97de828",
         "nameEn": "of Combustion",
         "textEn": "(81—90)% increased Flammability Magnitude"
       },
       {
-        "id": "poe2db:780e7b25fe3ea7794540",
+        "id": "poe2db:9ddb3a5393d05e4d78b7",
         "nameEn": "of Conflagration",
         "textEn": "(91—100)% increased Flammability Magnitude"
       }
@@ -100,31 +100,31 @@
   "excludedBases": [],
   "restrictedModExamples": [
     {
-      "modId": "poe2db:0354e20647f1df189d1d",
+      "modId": "poe2db:d5274ea9c3aabf5eddfe",
       "nameEn": "Searing",
       "textDe": "(50—68)% erhöhter Feuerschaden",
       "allowedBaseCount": 11
     },
     {
-      "modId": "poe2db:27b1b7a5a5267f3b6972",
+      "modId": "poe2db:00e2cfad958efa5356a5",
       "nameEn": "Sizzling",
       "textDe": "(69—88)% erhöhter Feuerschaden",
       "allowedBaseCount": 11
     },
     {
-      "modId": "poe2db:370229220e1161e60fab",
+      "modId": "poe2db:2a902a224e6d8a612931",
       "nameEn": "Blistering",
       "textDe": "(89—108)% erhöhter Feuerschaden",
       "allowedBaseCount": 11
     },
     {
-      "modId": "poe2db:52336825cb5b4aff9964",
+      "modId": "poe2db:d5649a151f618e753df5",
       "nameEn": "Cauterising",
       "textDe": "(109—128)% erhöhter Feuerschaden",
       "allowedBaseCount": 11
     },
     {
-      "modId": "poe2db:ea9119dac5f1027702ab",
+      "modId": "poe2db:d117f4345f3e67975d54",
       "nameEn": "Smoldering",
       "textDe": "(129—148)% erhöhter Feuerschaden",
       "allowedBaseCount": 11

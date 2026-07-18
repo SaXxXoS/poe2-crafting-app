@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T09:38:15.987Z",
+  "generatedAt": "2026-07-18T10:54:27.108Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Focus.",
@@ -132,32 +132,32 @@
     "missingGermanImplicits": [],
     "missingGermanModifierTexts": [
       {
-        "id": "poe2db:6adc328e01c104a3470c",
+        "id": "poe2db:6cb9ef3e2299f9e86b14",
         "nameEn": "Punishing",
         "textEn": "(25—34)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:cf2242c621dcc1a36396",
+        "id": "poe2db:5636f3942c0bb11649f6",
         "nameEn": "Unforgiving",
         "textEn": "(35—44)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:80f1be92c4d602fa543a",
+        "id": "poe2db:342b3d18d70988c74d01",
         "nameEn": "Vengeful",
         "textEn": "(45—54)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:a469afa85a69abcaae16",
+        "id": "poe2db:e518218930d8f82444f5",
         "nameEn": "Sadistic",
         "textEn": "(55—64)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:d455e1ab19c7a585d59d",
+        "id": "poe2db:a47c4a25d89810b101e9",
         "nameEn": "Pitiless",
         "textEn": "(65—74)% increased Spell Physical Damage"
       },
       {
-        "id": "poe2db:e49204652f5a53b146ed",
+        "id": "poe2db:3dac9584aaa02cb18838",
         "nameEn": "Agonising",
         "textEn": "(75—89)% increased Spell Physical Damage"
       }
