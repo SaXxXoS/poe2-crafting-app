@@ -1,0 +1,9 @@
+{
+  "name": "exileforge",
+  "private": true,
+  "scripts": {
+    "audit:season-readiness": "node tools/audit-season-readiness.mjs",
+    "baseline:season-readiness": "node tools/baseline-season-readiness.mjs",
+    "test:season-readiness": "node --test tools/tests/season-readiness.test.mjs"
+  }
+}

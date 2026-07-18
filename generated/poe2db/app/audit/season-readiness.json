@@ -1,0 +1,63 @@
+{
+  "audit": {
+    "errors": [],
+    "warnings": []
+  },
+  "baseline": {
+    "generatedAt": "2026-07-18T15:28:25.692Z",
+    "id": "season-baseline-ba6e18c9cffd",
+    "sourceSnapshot": "ba6e18c9cffdac237128afe1f17997c95debff5a1a0db1fe8b383984e70407af"
+  },
+  "blocksRelease": false,
+  "changes": {
+    "breaking": [],
+    "dataOnly": [],
+    "engineReview": []
+  },
+  "compatible": true,
+  "current": {
+    "sourceSnapshot": "ba6e18c9cffdac237128afe1f17997c95debff5a1a0db1fe8b383984e70407af"
+  },
+  "generatedAt": "2026-07-18T16:05:02.247Z",
+  "recommendations": [
+    "No engine change is required; review and commit the data update."
+  ],
+  "requiresEngineReview": false,
+  "schemaVersion": 1,
+  "status": "green",
+  "summary": {
+    "changedGenerationWeights": 0,
+    "changedModifierValues": 0,
+    "changedRequiredLevels": 0,
+    "changedSpawnWeights": 0,
+    "newAffixFamilies": 0,
+    "newBaseTypes": 0,
+    "newCraftedModifiers": 0,
+    "newCraftingActions": 0,
+    "newCraftingCategories": 0,
+    "newCraftingCurrencies": 0,
+    "newCraftingSources": 0,
+    "newDesecratedModifiers": 0,
+    "newEssenceEffects": 0,
+    "newEssences": 0,
+    "newGenerationTypes": 0,
+    "newItemClasses": 0,
+    "newItemDomains": 0,
+    "newModDomains": 0,
+    "newModGroups": 0,
+    "newModifierFlags": 0,
+    "newModifiers": 0,
+    "newOmens": 0,
+    "newRegularTiers": 0,
+    "newRuleFields": 0,
+    "newSpawnTags": 0,
+    "newStatIds": 0,
+    "removedAffixFamilies": 0,
+    "removedBaseTypes": 0,
+    "removedEssences": 0,
+    "removedItemClasses": 0,
+    "removedModifiers": 0,
+    "removedOmens": 0,
+    "removedRegularTiers": 0
+  }
+}

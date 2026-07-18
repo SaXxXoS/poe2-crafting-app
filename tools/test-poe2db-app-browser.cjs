@@ -46,7 +46,9 @@ let browser;
 
   await page.goto(process.env.EXILEFORGE_TEST_URL || "http://127.0.0.1:8765/index.html", { waitUntil: "networkidle" });
   await page.waitForSelector("#dataStatus.success", { timeout: 30000 });
+  await page.waitForFunction(() => Boolean(document.querySelector("#basePicker")?.dataset.baseId && !document.querySelector("#basePicker")?.disabled), null, { timeout: 10000 });
   const setSelect = async (selector, value) => page.locator(selector).evaluate((element, nextValue) => {
+    if (element.value === nextValue) return;
     element.value = nextValue;
     element.dispatchEvent(new Event("change", { bubbles: true }));
   }, value);
@@ -56,31 +58,32 @@ let browser;
     await setSelect("#category", category);
     await page.waitForSelector(`#itemClass option[value="${itemClass}"]`, { state: "attached", timeout: 10000 });
     await setSelect("#itemClass", itemClass);
-    await page.waitForFunction(expected => document.querySelector("#itemClass")?.value === expected, itemClass);
-    await page.waitForFunction(() => {
-      const picker = document.querySelector("#basePicker");
-      return picker && !picker.disabled && picker.dataset.baseId;
-    });
-    await page.locator("#ilevel").evaluate((element, level) => { element.value = String(level); element.dispatchEvent(new Event("input", { bubbles: true })); }, CURRENT_MAX_ITEM_LEVEL);
-    const baseId = await page.locator("#basePicker").getAttribute("data-base-id");
     const poolFile = appIndex.poolFiles[itemClass];
     const classPools = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app", poolFile), "utf8")).pools;
+    await page.waitForFunction(({ expected, baseIds }) => document.querySelector("#itemClass")?.value === expected && baseIds.includes(document.querySelector("#basePicker")?.dataset.baseId), { expected: itemClass, baseIds: Object.keys(classPools) }, { timeout: 10000 });
+    await page.locator("#ilevel").evaluate((element, level) => { element.value = String(level); element.dispatchEvent(new Event("input", { bubbles: true })); }, CURRENT_MAX_ITEM_LEVEL);
+    const baseId = await page.locator("#basePicker").getAttribute("data-base-id");
     const expectedPool = classPools[baseId];
     if (!expectedPool) throw new Error(`${itemClass}: Adapter-Pool fehlt für ${baseId}`);
     const observed = {};
     for (const [type, slotSelector, poolKey] of [["prefix", "#prefixSlots", "p"], ["suffix", "#suffixSlots", "s"]]) {
       await page.locator(`${slotSelector} .affix-slot`).first().dispatchEvent("click");
-      await page.waitForSelector('#modResults .affix-tier-row[data-normal="true"]', { state: "attached", timeout: 10000 });
+      const expectedIds = expectedPool[poolKey].map(row => row[0]).sort();
+      await page.waitForFunction(expected => {
+        const actual = [...document.querySelectorAll('#modResults .affix-tier-row[data-normal="true"]')]
+          .map(element => element.dataset.modId)
+          .sort();
+        return JSON.stringify(actual) === JSON.stringify(expected);
+      }, expectedIds, { timeout: 10000 });
       const rows = await page.locator('#modResults .affix-tier-row[data-normal="true"]').evaluateAll(elements => elements.map(element => ({
         modId: element.dataset.modId,
         text: element.dataset.displayText ?? ""
       })));
       const actualIds = rows.map(row => row.modId).sort();
-      const expectedIds = expectedPool[poolKey].map(row => row[0]).sort();
       if (JSON.stringify(actualIds) !== JSON.stringify(expectedIds)) {
         const actual = new Set(actualIds);
         const expected = new Set(expectedIds);
-        throw new Error(`${itemClass}/${type}: DOM-ID-Abweichung; fehlt=${expectedIds.filter(id => !actual.has(id)).join(",")}; extra=${actualIds.filter(id => !expected.has(id)).join(",")}`);
+        throw new Error(`${itemClass}/${type}: DOM-ID-Abweichung; base=${baseId}; actual=${actualIds.length}; fehlt=${expectedIds.filter(id => !actual.has(id)).join(",")}; extra=${actualIds.filter(id => !expected.has(id)).join(",")}`);
       }
       for (const { modId, text } of rows) {
         if (text !== modById.get(modId)?.displayText || !completeTexts.has(text)) throw new Error(`${itemClass}: DOM-Text stammt nicht aus displayText: ${modId} ${text}`);
