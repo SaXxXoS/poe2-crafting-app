@@ -1,6 +1,7 @@
 export * from "./constants.mjs";
 export * from "./catalog-adapter.mjs";
 export * from "./errors.mjs";
+export * from "./eligible-modifier-resolver.mjs";
 export * from "./immutability.mjs";
 export * from "./item-state.mjs";
 export * from "./modifier-instance.mjs";

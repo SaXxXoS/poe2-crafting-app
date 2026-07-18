@@ -6,6 +6,7 @@
     "baseline:season-readiness": "node tools/baseline-season-readiness.mjs",
     "test:engine:item-state": "node --test src/engine/tests/item-state.test.mjs",
     "test:engine:rule-sets": "node --test src/engine/tests/rule-sets.test.mjs",
+    "test:engine:eligible-modifiers": "node --test src/engine/tests/eligible-modifiers.test.mjs",
     "test:season-readiness": "node --test tools/tests/season-readiness.test.mjs"
   }
 }

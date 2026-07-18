@@ -34,7 +34,10 @@ export function createModifierCatalog({ index, bases, mods, affixGroups }) {
         requiredLevel: tier.requiredLevel ?? null,
         spawnWeights: normalizeWeights(tier.spawnWeights),
         generationWeights: normalizeWeights(tier.generationWeights),
-        craftingSources: Array.isArray(tier.craftingSources) ? tier.craftingSources : tier.craftingSources ?? null
+        craftingSources: Array.isArray(tier.craftingSources) ? tier.craftingSources : tier.craftingSources ?? null,
+        regularItemClassIds: tier.regularClasses === undefined ? null : sortedUnique(tier.regularClasses),
+        specialItemClassIds: tier.specialClasses === undefined ? null : sortedUnique(tier.specialClasses),
+        requiredBaseTagsAny: tier.requiredBaseTagsAny === undefined ? null : sortedUnique(tier.requiredBaseTagsAny)
       };
       tiers[modId] = normalizedTier;
       const previous = familyByMod.get(modId);
@@ -67,6 +70,9 @@ export function createModifierCatalog({ index, bases, mods, affixGroups }) {
       modGroups: Array.isArray(row.groups) ? sortedUnique(row.groups) : row.group ? [row.group] : null,
       flags: row.flags === undefined ? null : row.flags,
       craftingSources: familyTier?.craftingSources ?? null,
+      regularItemClassIds: familyTier?.regularItemClassIds ?? null,
+      specialItemClassIds: familyTier?.specialItemClassIds ?? null,
+      requiredBaseTagsAny: familyTier?.requiredBaseTagsAny ?? null,
       source: row.source ?? null
     };
   }
