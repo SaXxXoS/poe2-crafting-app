@@ -346,7 +346,7 @@
       if (typeof implicit === 'string') {
         return {
           id: implicit,
-          name: IMPLICIT_TEXT_DE[implicit] || formatInternalName(implicit),
+          name: 'Impliziter Modtext nicht verfügbar',
           kind: 'Basis-Implizit'
         };
       }
@@ -355,7 +355,7 @@
         const id = implicit.id ?? implicit.mod_id ?? implicit.modId ?? `implicit-${index}`;
         return {
           id,
-          name: implicit.textDe ?? implicit.textEn ?? implicit.name ?? implicit.text ?? IMPLICIT_TEXT_DE[id] ?? formatInternalName(id),
+          name: implicit.displayText || 'Impliziter Modtext nicht verfügbar',
           kind: implicit.type ?? 'Basis-Implizit'
         };
       }
@@ -401,39 +401,22 @@
   }
 
   function adaptMod(mod) {
-    if (mod.source === 'poe2db') {
-      const localizedText = mod.textDe || mod.textEn;
-      const localizedName = mod.nameDe || mod.nameEn;
-
-      return {
-        id: mod.id,
-        name: localizedText || localizedName || formatInternalName(mod.sourceId || mod.id),
-        range: localizedName || localizedText || 'Kein darstellbarer Modtext',
-        tier: mod.tier
-          ? `Tier ${mod.tier} · ab Item-Level ${Number(mod.requiredLevel || 0)}`
-          : tierLabel(mod),
-        lvl: Number(mod.requiredLevel || 0),
-        group: mod.group || mod.id,
-        generationType: mod.generationType,
-        spawnWeights: mod.spawnWeights || [],
-        generationWeights: mod.generationWeights || [],
-        visible: Boolean(localizedText || localizedName),
-        raw: mod
-      };
-    }
-
-    const visibleStats = (mod.stats || []).filter(stat => !isHiddenStat(stat.id));
+    const displayText = mod.displayText;
 
     return {
       id: mod.id,
-      name: modDisplayName(mod),
-      range: modRange(mod),
-      tier: tierLabel(mod),
+      name: displayText,
+      displayText,
+      range: '',
+      tier: mod.tier
+        ? `Tier ${mod.tier} · ab Item-Level ${Number(mod.requiredLevel || 0)}`
+        : tierLabel(mod),
       lvl: Number(mod.requiredLevel || 0),
       group: mod.group || mod.id,
       generationType: mod.generationType,
       spawnWeights: mod.spawnWeights || [],
-      visible: visibleStats.length > 0,
+      generationWeights: mod.generationWeights || [],
+      visible: Boolean(displayText),
       raw: mod
     };
   }
@@ -793,12 +776,7 @@
         `;
         selectButton.addEventListener('click', () => openModSheet(type, index));
 
-        const range = document.createElement('div');
-        range.className = 'affix-range';
-        range.innerHTML = `<span>Möglicher Roll</span><strong>${mod.range}</strong>`;
-
         card.appendChild(selectButton);
-        card.appendChild(range);
         host.appendChild(card);
       }
 
@@ -970,10 +948,7 @@
       row.innerHTML = `
         <div>
           <b>${mod.name}</b>
-          <small>
-            ${mod.tier}${weightText}<br>
-            ${mod.range}
-          </small>
+          <small>${mod.tier}${weightText}</small>
         </div>
         <button class="add" type="button">Wählen</button>
       `;

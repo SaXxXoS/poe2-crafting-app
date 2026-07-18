@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "Spear",
   "source": {
     "site": "PoE2DB",
@@ -726,8 +726,8 @@
           "textDe": "Gewährt Fertigkeit: Speerwurf"
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is lightning [50]",
-          "textDe": "local weapon implicit hidden % base damage is lightning [50]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 55,
@@ -1439,8 +1439,8 @@
           "textDe": "Gewährt Fertigkeit: Speerwurf"
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is lightning [100]",
-          "textDe": "local weapon implicit hidden % base damage is lightning [100]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 40,
@@ -1629,8 +1629,8 @@
           "textDe": "Von Euch verursachtes Bluten verursacht den Schaden (10—20)% schneller"
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is fire [66]",
-          "textDe": "local weapon implicit hidden % base damage is fire [66]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 55,

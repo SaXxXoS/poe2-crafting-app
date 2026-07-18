@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:51:04.344Z",
+  "generatedAt": "2026-07-18T09:37:53.445Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Gloves.",
@@ -355,14 +355,19 @@
     ],
     "missingGermanImplicits": [
       {
-        "baseId": "Metadata/Items/Armours/Gloves/FourGlovesDexIntAscendancyVerisium",
-        "baseNameEn": "Runeforged Fists of Stone",
-        "textEn": "local hand wraps player level to use [0]"
+        "baseId": "Metadata/Items/Armours/Gloves/FourGlovesDexIntAscendancy",
+        "baseNameEn": "Fists of Stone",
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Armours/Gloves/FourGlovesDexIntAscendancyVerisium",
         "baseNameEn": "Runeforged Fists of Stone",
-        "textEn": "Has +2 to Evasion Rating per player level Has +1 to maximum Energy Shield per player level Has +1 to maximum Runic Ward per player level local level requirement override [1]"
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Armours/Gloves/FourGlovesDexIntAscendancyVerisium",
+        "baseNameEn": "Runeforged Fists of Stone",
+        "textEn": "Has +2 to Evasion Rating per player level Has +1 to maximum Energy Shield per player level Has +1 to maximum Runic Ward per player level"
       }
     ],
     "missingGermanModifierTexts": [

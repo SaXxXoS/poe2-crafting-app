@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:50:48.802Z",
+  "generatedAt": "2026-07-18T09:36:59.292Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for One Hand Mace.",
@@ -59,6 +59,26 @@
     ],
     "missingGermanImplicits": [
       {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2",
+        "baseNameEn": "Smithing Hammer",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique1",
+        "baseNameEn": "Runemastered Torment Club",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace13VerisiumUnique4",
+        "baseNameEn": "Runemastered Torment Club",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Cruel",
+        "baseNameEn": "Calescent Hammer",
+        "textEn": null
+      },
+      {
         "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium1a",
         "baseNameEn": "Runeforged Wooden Club",
         "textEn": "(20—30)% increased Area of Effect for Attacks"
@@ -71,7 +91,7 @@
       {
         "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium3",
         "baseNameEn": "Runeforged Slim Mace",
-        "textEn": "local weapon implicit hidden % base damage is cold [50]"
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace14Verisium1",
@@ -101,7 +121,12 @@
       {
         "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMaceVerisium9",
         "baseNameEn": "Runeforged Morning Star",
-        "textEn": "local weapon implicit hidden % base damage is fire [100]"
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Endgame",
+        "baseNameEn": "Molten Hammer",
+        "textEn": null
       }
     ],
     "missingGermanModifierTexts": [],

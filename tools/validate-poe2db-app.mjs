@@ -13,9 +13,33 @@ const mods = read("mods.json").mods;
 const manifest = read("manifest.json");
 const modsById = new Map(mods.map(mod => [mod.id, mod]));
 const basesByClass = Map.groupBy(bases, base => base.itemClass);
+const forbiddenVisiblePattern = /(?:Implicit|LocalChance|AdditionalArrows\d|(?:^|\s)\+%(?:\s|$)|minimaler[^\n]+\+[^\n]+maximaler)/i;
 
 if (index.source !== "generated/poe2db") throw new Error("Adapter verwendet nicht generated/poe2db");
 if (index.classes.length !== 28) throw new Error(`Erwartet 28 Klassen, erhalten: ${index.classes.length}`);
+for (const requiredClass of ["Bow", "Spear", "Ring", "Body Armour", "Jewel"]) {
+  if (!basesByClass.get(requiredClass)?.length) throw new Error(`Testklasse fehlt: ${requiredClass}`);
+}
+
+for (const mod of mods) {
+  if (!mod.displayText) throw new Error(`Vollständiger Modtext fehlt: ${mod.modId}`);
+  if (mod.displayText !== (mod.displayTextDe || mod.displayTextEn)) throw new Error(`Falsche Sprachpriorität: ${mod.modId}`);
+  if (forbiddenVisiblePattern.test(mod.displayText)) throw new Error(`Technischer oder künstlicher Affixtext: ${mod.displayText}`);
+  if (!Array.isArray(mod.technicalStats)) throw new Error(`Technische Stats fehlen intern: ${mod.modId}`);
+}
+
+for (const base of bases) {
+  if (!base.nameDe && !base.nameEn) throw new Error(`Sichtbarer Basisname fehlt: ${base.id}`);
+  for (const implicit of base.implicits) {
+    if (!implicit.displayText) throw new Error(`Implizittext fehlt: ${implicit.id}`);
+    if (implicit.displayText !== (implicit.displayTextDe || implicit.displayTextEn || "Impliziter Modtext nicht verfügbar")) {
+      throw new Error(`Falsche Implizit-Sprachpriorität: ${implicit.id}`);
+    }
+    if (implicit.displayText === implicit.id || forbiddenVisiblePattern.test(implicit.displayText)) {
+      throw new Error(`Technische Implizit-ID sichtbar: ${implicit.displayText}`);
+    }
+  }
+}
 
 let poolCount = 0;
 for (const itemClass of index.classes) {

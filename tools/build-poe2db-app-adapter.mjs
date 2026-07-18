@@ -8,6 +8,7 @@ const root = process.cwd();
 const sourceRoot = path.join(root, "generated", "poe2db");
 const outputRoot = path.join(sourceRoot, "app");
 const index = readJson(path.join(sourceRoot, "index.json"));
+const repoeMods = readJson(path.join(root, "generated", "repoe", "raw", "mods.min.json"));
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -53,20 +54,36 @@ function adaptBase(base, itemClass) {
     requirements: base.requirements ?? {},
     properties: appProperties(base),
     sourceProperties: base.values?.properties ?? [],
-    implicits: (base.implicits ?? []).map((implicit, index) => ({
-      id: `${base.id}:implicit:${index}`,
-      textEn: implicit.textEn ?? null,
-      textDe: implicit.textDe ?? null,
-      type: "Basis-Implizit"
-    })),
+    implicits: (base.implicits ?? []).map((implicit, index) => {
+      const displayTextDe = implicit.textDe ?? null;
+      const displayTextEn = implicit.textEn ?? null;
+      return {
+        id: `${base.id}:implicit:${index}`,
+        displayTextDe,
+        displayTextEn,
+        displayText: displayTextDe || displayTextEn || "Impliziter Modtext nicht verfügbar",
+        textEn: displayTextEn,
+        textDe: displayTextDe,
+        type: "Basis-Implizit"
+      };
+    }),
     availability: base.availability ?? null,
     source: "poe2db"
   };
 }
 
 function adaptMod(mod) {
+  const displayTextDe = mod.textDe ?? null;
+  const displayTextEn = mod.textEn ?? null;
+  const technical = repoeMods[mod.sourceId] ?? null;
   return {
     id: mod.id,
+    modId: mod.id,
+    sourceKey: mod.sourceId,
+    displayTextDe,
+    displayTextEn,
+    displayText: displayTextDe || displayTextEn,
+    technicalStats: technical?.stats ?? [],
     sourceId: mod.sourceId,
     generationType: mod.generationType,
     requiredLevel: Number(mod.itemLevel ?? 0),
@@ -79,6 +96,7 @@ function adaptMod(mod) {
     textDe: mod.textDe ?? null,
     spawnWeights: mod.spawnWeights ?? [],
     generationWeights: mod.generationWeights ?? [],
+    spawnWeight: Number(mod.spawnWeight ?? 0),
     poe2dbDropChance: Number(mod.spawnWeight ?? 0),
     source: "poe2db"
   };
@@ -88,6 +106,8 @@ const bases = [];
 const modsById = new Map();
 const classes = [];
 const poolFiles = {};
+const baseFallbackReport = [];
+const missingImplicitTexts = [];
 let poolBaseCount = 0;
 
 for (const classEntry of index.classes) {
@@ -104,7 +124,28 @@ for (const classEntry of index.classes) {
   if (!regularBases.length) throw new Error(`Keine regulären Basen für ${classEntry.itemClass}`);
 
   classes.push({ id: classEntry.itemClass, name: classEntry.itemClass, key: classEntry.key });
-  for (const base of regularBases) bases.push(adaptBase(base, classEntry.itemClass));
+  for (const base of regularBases) {
+    bases.push(adaptBase(base, classEntry.itemClass));
+    if (!base.nameDe) {
+      baseFallbackReport.push({
+        baseId: base.id,
+        nameEn: base.nameEn,
+        germanPage: document.source?.pages?.bases?.german ?? null,
+        foundGermanName: null,
+        reason: "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+      });
+    }
+    (base.implicits ?? []).forEach((implicit, implicitIndex) => {
+      if (!implicit.textDe && !implicit.textEn) {
+        missingImplicitTexts.push({
+          baseId: base.id,
+          itemClass: classEntry.itemClass,
+          implicitIndex,
+          germanPage: document.source?.pages?.bases?.german ?? null
+        });
+      }
+    });
+  }
   for (const mod of [...document.prefixes, ...document.suffixes]) {
     const adapted = adaptMod(mod);
     const existing = modsById.get(adapted.id);
@@ -136,6 +177,19 @@ for (const classEntry of index.classes) {
 const mods = [...modsById.values()];
 writeJson(path.join(outputRoot, "bases.json"), { schemaVersion: 1, source: "generated/poe2db", count: bases.length, bases });
 writeJson(path.join(outputRoot, "mods.json"), { schemaVersion: 1, source: "generated/poe2db", count: mods.length, mods });
+writeJson(path.join(outputRoot, "quality-report.json"), {
+  schemaVersion: 1,
+  generatedAt: new Date().toISOString(),
+  baseFallbackReport,
+  missingImplicitTexts,
+  counts: {
+    germanBaseNames: bases.filter(base => base.nameDe).length,
+    englishBaseFallbacks: baseFallbackReport.length,
+    missingImplicitTexts: missingImplicitTexts.length,
+    germanModifierTexts: mods.filter(mod => mod.displayTextDe).length,
+    englishModifierFallbacks: mods.filter(mod => !mod.displayTextDe && mod.displayTextEn).length
+  }
+});
 writeJson(path.join(outputRoot, "index.json"), {
   schemaVersion: 1,
   source: "generated/poe2db",
@@ -152,7 +206,7 @@ writeJson(path.join(outputRoot, "index.json"), {
 });
 
 const generatedAt = new Date().toISOString();
-const files = ["bases.json", "mods.json", "index.json", ...Object.values(poolFiles)];
+const files = ["bases.json", "mods.json", "index.json", "quality-report.json", ...Object.values(poolFiles)];
 writeJson(path.join(outputRoot, "manifest.json"), {
   schemaVersion: 1,
   generatedAt,

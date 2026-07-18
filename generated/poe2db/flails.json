@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "Flail",
   "source": {
     "site": "PoE2DB",
@@ -547,8 +547,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is cold [100]",
-          "textDe": "local weapon implicit hidden % base damage is cold [100]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 47,

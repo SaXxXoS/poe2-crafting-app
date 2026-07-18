@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:51:18.353Z",
+  "generatedAt": "2026-07-18T09:38:39.275Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Jewel.",
@@ -16,7 +16,28 @@
   },
   "localization": {
     "missingGermanBaseNames": [],
-    "missingGermanImplicits": [],
+    "missingGermanImplicits": [
+      {
+        "baseId": "Metadata/Items/Jewels/JewelRadiusStr",
+        "baseNameEn": "Time-Lost Ruby",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Jewels/JewelRadiusDex",
+        "baseNameEn": "Time-Lost Emerald",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Jewels/JewelRadiusInt",
+        "baseNameEn": "Time-Lost Sapphire",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Jewels/JewelRadiusDiamond",
+        "baseNameEn": "Time-Lost Diamond",
+        "textEn": null
+      }
+    ],
     "missingGermanModifierTexts": [
       {
         "id": "poe2db:f2b7b505d475c54662da",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:51:01.683Z",
+  "generatedAt": "2026-07-18T09:37:41.517Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Helmet.",

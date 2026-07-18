@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "Bow",
   "source": {
     "site": "PoE2DB",
@@ -391,8 +391,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum chaos damage [19] local weapon implicit hidden added minimum chaos damage [7]",
-          "textDe": "local weapon implicit hidden added maximum chaos damage [19] local weapon implicit hidden added minimum chaos damage [7]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 33,
@@ -987,8 +987,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum chaos damage [32] local weapon implicit hidden added minimum chaos damage [14]",
-          "textDe": "local weapon implicit hidden added maximum chaos damage [32] local weapon implicit hidden added minimum chaos damage [14]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 59,
@@ -1093,8 +1093,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is chaos [100]",
-          "textDe": "local weapon implicit hidden % base damage is chaos [100]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 55,
@@ -1490,8 +1490,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum chaos damage [19] local weapon implicit hidden added minimum chaos damage [7]",
-          "textDe": "local weapon implicit hidden added maximum chaos damage [19] local weapon implicit hidden added minimum chaos damage [7]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 55,
@@ -1767,8 +1767,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum chaos damage [64] local weapon implicit hidden added minimum chaos damage [28]",
-          "textDe": "local weapon implicit hidden added maximum chaos damage [64] local weapon implicit hidden added minimum chaos damage [28]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 79,

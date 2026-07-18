@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "Two Hand Mace",
   "source": {
     "site": "PoE2DB",
@@ -1393,7 +1393,7 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is lightning [75]",
+          "textEn": null,
           "textDe": null
         }
       ],
@@ -1453,7 +1453,7 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is lightning [75]",
+          "textEn": null,
           "textDe": null
         }
       ],
@@ -2414,7 +2414,7 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is cold [80]",
+          "textEn": null,
           "textDe": null
         }
       ],

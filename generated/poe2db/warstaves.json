@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "Warstaff",
   "source": {
     "site": "PoE2DB",
@@ -228,8 +228,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum lightning damage [35] local weapon implicit hidden added minimum lightning damage [1]",
-          "textDe": "local weapon implicit hidden added maximum lightning damage [35] local weapon implicit hidden added minimum lightning damage [1]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 16,
@@ -879,8 +879,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum lightning damage [75] local weapon implicit hidden added minimum lightning damage [1]",
-          "textDe": "local weapon implicit hidden added maximum lightning damage [75] local weapon implicit hidden added minimum lightning damage [1]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 51,
@@ -1216,7 +1216,7 @@
           "textDe": null
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is cold [100]",
+          "textEn": null,
           "textDe": null
         }
       ],
@@ -1272,7 +1272,7 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is fire [100]",
+          "textEn": null,
           "textDe": null
         }
       ],
@@ -1328,8 +1328,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is fire [100]",
-          "textDe": "local weapon implicit hidden % base damage is fire [100]"
+          "textEn": null,
+          "textDe": null
         },
         {
           "textEn": "Ignites you inflict deal Damage (30—40)% faster",
@@ -1389,11 +1389,11 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is cold [50]",
+          "textEn": null,
           "textDe": null
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is lightning [50]",
+          "textEn": null,
           "textDe": null
         }
       ],
@@ -1667,8 +1667,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum lightning damage [100] local weapon implicit hidden added minimum lightning damage [1]",
-          "textDe": "local weapon implicit hidden added maximum lightning damage [100] local weapon implicit hidden added minimum lightning damage [1]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 78,

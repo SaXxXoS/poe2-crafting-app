@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:50:41.938Z",
+  "generatedAt": "2026-07-18T09:36:35.818Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Bow.",
@@ -27,9 +27,34 @@
     ],
     "missingGermanImplicits": [
       {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7",
+        "baseNameEn": "Cultist Bow",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Cruel",
+        "baseNameEn": "Adherent Bow",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium1",
+        "baseNameEn": "Runeforged Crude Bow",
+        "textEn": null
+      },
+      {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium3",
         "baseNameEn": "Runeforged Warden Bow",
         "textEn": "(25—35)% chance to Chain an additional time"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBowVerisium8",
+        "baseNameEn": "Runeforged Zealot Bow",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Endgame",
+        "baseNameEn": "Fanatic Bow",
+        "textEn": null
       }
     ],
     "missingGermanModifierTexts": [],

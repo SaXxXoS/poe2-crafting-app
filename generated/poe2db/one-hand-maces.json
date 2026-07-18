@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "One Hand Mace",
   "source": {
     "site": "PoE2DB",
@@ -118,8 +118,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is fire [50]",
-          "textDe": "local weapon implicit hidden % base damage is fire [50]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 4,
@@ -772,8 +772,8 @@
           "textDe": "100% des Blitzschadens werden in Kälteschaden umgewandelt"
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is cold [100]",
-          "textDe": "local weapon implicit hidden % base damage is cold [100]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 65,
@@ -947,8 +947,8 @@
           "textDe": "(40—60)% erhöhter Blitzschaden"
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is lightning [100]",
-          "textDe": "local weapon implicit hidden % base damage is lightning [100]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 65,
@@ -1174,8 +1174,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is fire [50]",
-          "textDe": "local weapon implicit hidden % base damage is fire [50]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 45,
@@ -1673,7 +1673,7 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is cold [50]",
+          "textEn": null,
           "textDe": null
         }
       ],
@@ -2078,7 +2078,7 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is fire [100]",
+          "textEn": null,
           "textDe": null
         }
       ],
@@ -2241,8 +2241,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is fire [50]",
-          "textDe": "local weapon implicit hidden % base damage is fire [50]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 77,
