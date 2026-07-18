@@ -68,8 +68,8 @@ for (const [number, source] of [[13, "crafted"], [14, "essence"], [15, "desecrat
   assert.equal(entry.status, "ineligible"); assert.equal(hasReason(entry, ENGINE_ELIGIBILITY_CODES.SPECIAL_SOURCE_EXCLUDED), true);
 });
 
-test("16 unknown generation type is unresolved", () => { const base = catalog(); const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], generationType: "future" } } }); assert.equal(find(resolve({ cat }), "mod:prefix").status, "unresolved"); });
-test("17 missing and unknown domain are distinct", () => { const missing = catalog(d => { delete d.mods.mods[0].domain; }); const unknown = immutableCopy({ ...missing, modifiers: { ...missing.modifiers, "mod:prefix": { ...missing.modifiers["mod:prefix"], domain: "future" } } }); assert.equal(hasReason(find(resolve({ cat: missing }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.DOMAIN_NOT_REQUIRED), true); assert.deepEqual(find(resolve({ cat: unknown }), "mod:prefix").reasons.find(r => r.code === ENGINE_ELIGIBILITY_CODES.DOMAIN_UNRESOLVED).details.status, "presentUnknown"); });
+test("16 unknown generation type is a structural catalog error", () => { const base = catalog(); const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], generationType: "future" } } }); const result = resolve({ cat }); assert.equal(result.valid, false); assert.equal(result.candidateCount, 0); assert.equal(result.errors[0].code, ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID); });
+test("17 missing and unknown domain are distinct", () => { const missing = catalog(d => { delete d.mods.mods[0].domain; }); const unknown = immutableCopy({ ...missing, modifiers: { ...missing.modifiers, "mod:prefix": { ...missing.modifiers["mod:prefix"], domain: "future" } } }); assert.equal(hasReason(find(resolve({ cat: missing }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.DOMAIN_NOT_REQUIRED), true); const invalid = resolve({ cat: unknown }); assert.equal(invalid.valid, false); assert.equal(invalid.candidateCount, 0); assert.equal(invalid.errors[0].code, ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID); });
 test("18 required missing domain is unresolved", () => { const cat = catalog(d => { delete d.mods.mods[0].domain; }); assert.equal(find(resolve({ cat, options: { capacityRules: { prefix: 3, suffix: 3 }, requireDomain: true } }), "mod:prefix").status, "unresolved"); });
 test("19 positive weight passes", () => assert.deepEqual(find(resolve(), "mod:prefix").applicableWeight, { spawn: 100, generation: 1, spawnTag: "bow", generationTag: null }));
 test("20 explicit zero weight is ineligible", () => { const cat = catalog(d => { d.affixGroups.groups[0].tiers[0].spawnWeights[0].weight = 0; }); assert.equal(hasReason(find(resolve({ cat }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.ZERO_WEIGHT), true); });
@@ -78,8 +78,8 @@ test("22 invalid weight structure is a catalog error", () => { const base = cata
 test("23 missing base tags is unresolved", () => { const base = catalog(); const cat = immutableCopy({ ...base, baseTypes: { ...base.baseTypes, "base:bow": { ...base.baseTypes["base:bow"], spawnTags: null } } }); assert.equal(hasReason(find(resolve({ cat }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.TAG_DATA_MISSING), true); });
 test("24 explicit tag mismatch is ineligible", () => { const cat = catalog(d => { d.affixGroups.groups[0].tiers[0].spawnWeights = [{ tag: "staff", weight: 100 }]; }); assert.equal(hasReason(find(resolve({ cat }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.TAG_MISMATCH), true); });
 test("25 duplicate modifier is excluded", () => { const item = state({ prefixModifiers: [modifierInstance("mod:prefix")] }); assert.equal(hasReason(find(resolve({ item }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.DUPLICATE_MODIFIER), true); });
-test("26 technical mod-group conflict is excluded", () => { const item = state({ prefixModifiers: [modifierInstance("mod:prefix-other")] }); const base = catalog(); const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix-other": { ...base.modifiers["mod:prefix"], id: "mod:prefix-other" } } }); assert.equal(hasReason(find(resolve({ cat, item }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.MOD_GROUP_CONFLICT), true); });
-test("27 missing mod group is not inferred from names", () => { const item = state({ prefixModifiers: [modifierInstance("mod:prefix-other")] }); const base = catalog(); const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix-other": { ...base.modifiers["mod:prefix"], id: "mod:prefix-other", modGroups: null } } }); assert.equal(hasReason(find(resolve({ cat, item }), "mod:suffix"), ENGINE_ELIGIBILITY_CODES.MOD_GROUP_UNRESOLVED), true); });
+test("26 technical mod-group conflict is excluded", () => { const item = state({ prefixModifiers: [modifierInstance("mod:prefix-other")] }); const base = catalog(); const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix-other": { ...base.modifiers["mod:prefix"], id: "mod:prefix-other", familyId: null } } }); assert.equal(hasReason(find(resolve({ cat, item }), "mod:prefix"), ENGINE_ELIGIBILITY_CODES.MOD_GROUP_CONFLICT), true); });
+test("27 missing mod group is not inferred from names", () => { const item = state({ prefixModifiers: [modifierInstance("mod:prefix-other")] }); const base = catalog(); const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix-other": { ...base.modifiers["mod:prefix"], id: "mod:prefix-other", familyId: null, modGroups: null } } }); assert.equal(hasReason(find(resolve({ cat, item }), "mod:suffix"), ENGINE_ELIGIBILITY_CODES.MOD_GROUP_UNRESOLVED), true); });
 test("28 full explicit prefix capacity excludes prefixes and leaves suffix evaluation independent", () => {
   const item = state({ prefixModifiers: [modifierInstance("mod:spear")] });
   const result = resolve({ item, options: { capacityRules: { prefix: 1, suffix: 10 } } });
@@ -110,7 +110,7 @@ test("35 result is recursively immutable", () => { const result = resolve({ opti
 test("36 identical resolutions are byte-identical", () => assert.equal(JSON.stringify(resolve()), JSON.stringify(resolve())));
 test("37 permuted equivalent inputs have byte-identical technical ordering", () => {
   const base = catalog();
-  const unresolved = { ...base.modifiers["mod:prefix"], id: "mod:unresolved", source: null };
+  const unresolved = { ...base.modifiers["mod:prefix"], id: "mod:unresolved", familyId: null, source: null };
   const modifierEntries = [...Object.entries(base.modifiers), [unresolved.id, unresolved]];
   const makeCatalog = (entries, tags, reverseSuffixWeights) => immutableCopy({
     ...base,
@@ -157,18 +157,14 @@ test("51 explicit synthetic capacity with free slots permits both affix sides", 
   const result = resolve({ options: { capacityRules: TEST_CAPACITY_RULES } });
   assert.equal(find(result, "mod:prefix").status, "eligible"); assert.equal(find(result, "mod:suffix").status, "eligible");
 });
-test("52 catalog error outranks a simultaneous safe exclusion without hiding either reason", () => {
+test("52 structural catalog error prevents candidate evaluation", () => {
   const base = catalog();
   const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{ tag: "bow", value: 1 }] } } });
   const item = state({ prefixModifiers: [modifierInstance("mod:prefix")] });
   const result = resolve({ cat, item, options: { capacityRules: TEST_CAPACITY_RULES } });
-  const entry = find(result, "mod:prefix");
-  assert.equal(result.valid, false); assert.equal(entry.status, "unresolved");
-  assert.equal(hasReason(entry, ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID), true);
-  assert.equal(hasReason(entry, ENGINE_ELIGIBILITY_CODES.DUPLICATE_MODIFIER), true);
-  assert.equal(result.unresolved.filter(candidate => candidate.modifierId === entry.modifierId).length, 1);
-  assert.equal(result.ineligible.some(candidate => candidate.modifierId === entry.modifierId), false);
-  assert.equal(result.eligible.some(candidate => candidate.modifierId === entry.modifierId), false);
+  assert.equal(result.valid, false); assert.equal(result.candidateCount, 0);
+  assert.equal(result.errors[0].code, ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID);
+  assert.deepEqual(result.eligible, []); assert.deepEqual(result.ineligible, []); assert.deepEqual(result.unresolved, []);
 });
 test("53 technical comparator uses explicit JavaScript code-unit order", () => {
   const values = ["ä:mod", "a:mod", "A:mod", "z:mod", "_:mod"];
@@ -182,8 +178,8 @@ test("54 resolver source contains no locale-sensitive comparator", () => {
 });
 test("55 existing modifier insertion order uses technical conflict tie-breakers", () => {
   const base = catalog();
-  const existingA = { ...base.modifiers["mod:prefix"], id: "mod:existing-A", regularItemClassIds: ["Spear"] };
-  const existingB = { ...base.modifiers["mod:prefix"], id: "mod:existing-B", regularItemClassIds: ["Spear"] };
+  const existingA = { ...base.modifiers["mod:prefix"], id: "mod:existing-A", familyId: null, regularItemClassIds: ["Spear"] };
+  const existingB = { ...base.modifiers["mod:prefix"], id: "mod:existing-B", familyId: null, regularItemClassIds: ["Spear"] };
   const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, [existingB.id]: existingB, [existingA.id]: existingA } });
   const instanceA = modifierInstance(existingA.id);
   const instanceB = { ...modifierInstance(existingB.id), instanceId: `instance:${existingB.id}` };
@@ -191,4 +187,24 @@ test("55 existing modifier insertion order uses technical conflict tie-breakers"
   const resultB = resolve({ cat, item: state({ prefixModifiers: [instanceA, instanceB] }), options: { capacityRules: TEST_CAPACITY_RULES } });
   assert.equal(JSON.stringify(resultA), JSON.stringify(resultB));
   assert.equal(find(resultA, "mod:prefix").reasons.find(entry => entry.code === ENGINE_ELIGIBILITY_CODES.MOD_GROUP_CONFLICT).details.existingModifierId, "mod:existing-A");
+});
+
+test("56 invalid source types return a structured catalog result without candidate evaluation", () => {
+  for (const source of [42, true, [], {}]) {
+    const base = catalog(); const cat = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], source } } });
+    const before = JSON.stringify(cat); const result = resolve({ cat });
+    assert.equal(result.valid, false); assert.equal(result.candidateCount, 0); assert.equal(result.errors[0].code, ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID);
+    assert.deepEqual(result.eligible, []); assert.deepEqual(result.ineligible, []); assert.deepEqual(result.unresolved, []); assert.equal(JSON.stringify(cat), before);
+  }
+});
+test("57 invalid normalized catalog field types share the structured resolver error path", () => {
+  const base = catalog(); const variants = [
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], displayTiers: { Bow: NaN } } } }),
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{ tag: "bow", weight: Infinity }] } } }),
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], generationWeights: [{ tag: "bow", weight: NaN }] } } }),
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], flags: {} } } }),
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], craftingSources: "crafted" } } }),
+    immutableCopy({ ...base, families: { ...base.families, "family:0": { ...base.families["family:0"], tiers: { ...base.families["family:0"].tiers, "mod:prefix": { ...base.families["family:0"].tiers["mod:prefix"], technicalTier: "2" } } } } })
+  ];
+  for (const cat of variants) { const result = resolve({ cat }); assert.equal(result.valid, false); assert.equal(result.candidateCount, 0); assert.equal(result.errors[0].code, ENGINE_ELIGIBILITY_CODES.CATALOG_INVALID); }
 });

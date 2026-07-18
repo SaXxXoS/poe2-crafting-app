@@ -83,7 +83,7 @@ test("19 invalid weight structure is rejected", () => {
   const invalid = immutableCopy({ ...catalog, modifiers: { ...catalog.modifiers, "mod:physical:1": { ...catalog.modifiers["mod:physical:1"], spawnWeights: [{ tag: "bow", value: 1 }] } } });
   assert.equal(hasError(evaluateRuleSets(context(invalid)), ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE), true);
   const docs = documents(); docs.affixGroups.groups[0].tiers[0].spawnWeights = { tag: "bow", weight: 1 };
-  assert.equal(hasError(evaluateRuleSets(context(createModifierCatalog(docs))), ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE), true);
+  assert.throws(() => createModifierCatalog(docs), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE);
 });
 test("20 catalog inputs are not mutated", () => {
   const input = documents(); const before = structuredClone(input); createModifierCatalog(input); assert.deepEqual(input, before);
@@ -124,7 +124,7 @@ test("27 present unknown domain remains distinct from missing domain", () => {
   const invalid = immutableCopy({ ...catalog, knownDomains: [], modifiers: { ...catalog.modifiers, "mod:physical:1": { ...catalog.modifiers["mod:physical:1"], domain: "unknown_domain" } } });
   const result = evaluateRuleSets(context(invalid));
   assert.equal(hasError(result, ENGINE_RULE_ERROR_CODES.UNKNOWN_MODIFIER_DOMAIN), true);
-  assert.equal(result.contextSummary.technicalDataStatus.domain, "presentUnknown");
+  assert.equal(result.contextSummary, null);
 });
 
 test("28 missing optional flags remain absent", () => {
@@ -148,6 +148,6 @@ test("30 missing and invalid weight data are distinguished", () => {
   const catalog = createModifierCatalog(documents());
   const invalidCatalog = immutableCopy({ ...catalog, modifiers: { ...catalog.modifiers, "mod:physical:1": { ...catalog.modifiers["mod:physical:1"], generationWeights: [{ tag: "weapon", value: 1 }] } } });
   const invalid = evaluateRuleSets(context(invalidCatalog));
-  assert.equal(invalid.contextSummary.technicalDataStatus.generationWeights, "presentUnknown");
+  assert.equal(invalid.contextSummary, null);
   assert.equal(hasError(invalid, ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE), true);
 });

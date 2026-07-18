@@ -1,8 +1,9 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { canonicalTechnicalString } from "../canonical-serialization.mjs";
 import {
-  ENGINE_ACTION_CODES, ENGINE_ELIGIBILITY_CODES, createItemState, createModifierCatalog, createRuleContext, evaluateCraftingAction,
+  ENGINE_ACTION_CODES, ENGINE_ELIGIBILITY_CODES, ENGINE_RULE_ERROR_CODES, EngineValidationError, createItemState, createModifierCatalog, createRuleContext, evaluateCraftingAction,
   getCraftingActionDefinition, immutableCopy, listCraftingActionDefinitions, loadModifierCatalog
 } from "../index.mjs";
 
@@ -166,7 +167,9 @@ test("95 replacement mutation order clears before deferred replacement", () => {
 test("96 replacement actions reject invalid catalog weights without resolving eligibility", () => {
   const base = catalog(); const bad = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{}] } } });
   for (const [actionId, rarity] of [["currency:alteration", "magic"], ["currency:chaos", "rare"]]) {
-    const result = evaluate(actionId, rarity, { catalog: bad }); assert.equal(result.valid, false); assert.equal(result.status, "error"); assert.equal(result.errors[0].code, ENGINE_ACTION_CODES.CATALOG_INVALID); assert.equal(result.eligibilityResult, null); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []);
+    const state = item(rarity); const itemBefore = JSON.stringify(state); const catalogBefore = JSON.stringify(bad);
+    const result = evaluate(actionId, rarity, { catalog: bad, itemState: state }); assert.equal(result.valid, false); assert.equal(result.status, "error"); assert.equal(result.errors[0].code, ENGINE_ACTION_CODES.CATALOG_INVALID); assert.equal(result.eligibilityResult, null); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []);
+    assert.equal(JSON.stringify(state), itemBefore); assert.equal(JSON.stringify(bad), catalogBefore);
   }
 });
 test("97 non-replacement additions still use the resolver state and conflicts", () => {
@@ -236,10 +239,9 @@ test("107 delimiter-rich technical IDs remain unambiguous", () => {
   const b = evaluate("currency:augmentation", "magic", { catalog: make('mod:{a|b,[]\"}') }).selectionRequests[0];
   assert.notEqual(a.deterministicKey, b.deterministicKey); assert.doesNotThrow(() => JSON.parse(a.deterministicKey)); assert.doesNotThrow(() => JSON.parse(b.deterministicKey));
 });
-test("108 key payload contains no undefined and distinguishes null from empty structures", () => {
-  const addition = evaluate("currency:augmentation", "magic").selectionRequests[0]; assert.equal(addition.deterministicKey.includes("undefined"), false);
-  const payload = JSON.parse(addition.deterministicKey); assert.equal(payload.keyVersion, 1); assert.deepEqual(payload.candidates[0].rawGenerationWeights, []); assert.notEqual(payload.candidates[0].familyId, null);
-  const missingCount = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES } }); assert.deepEqual(missingCount.selectionRequests, []);
+test("108 canonical payload rejects undefined and non-finite numbers at every depth", () => {
+  for (const value of [undefined, NaN, Infinity, -Infinity]) assert.throws(() => canonicalTechnicalString({ value }), error => error instanceof EngineValidationError && error.code === ENGINE_ACTION_CODES.CANONICAL_PAYLOAD_INVALID && error.path === "payload.value");
+  for (const value of [NaN, Infinity, -Infinity]) assert.throws(() => canonicalTechnicalString({ nested: [{ value }] }), error => error instanceof EngineValidationError && error.code === ENGINE_ACTION_CODES.CANONICAL_PAYLOAD_INVALID && error.path === "payload.nested[0].value");
 });
 test("109 invalid generation weights fail all catalog-required actions", () => {
   const base = catalog(); const bad = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], generationWeights: [{}] } } });
@@ -276,4 +278,64 @@ test("113 equivalent candidate insertion order produces byte-identical requests"
   const a = evaluate("currency:augmentation", "magic", { catalog: base }).selectionRequests[0];
   const b = evaluate("currency:augmentation", "magic", { catalog: reversed }).selectionRequests[0];
   assert.equal(JSON.stringify(a), JSON.stringify(b)); assert.equal(a.deterministicKey, b.deterministicKey);
+});
+test("114 safely ineligible catalog additions do not fingerprint resolver diagnostics", () => {
+  const base = catalog(); const expanded = catalog(d => {
+    const source = d.mods.mods[2]; const mod = { ...source, modId: "mod:spear-extra", technicalStats: [{ id: "mod:spear-extra:stat" }], groups: ["SpearExtra"] };
+    d.mods.mods.push(mod); d.affixGroups.groups.push({ familyId: "family:extra", generationType: "prefix", tiers: [{ modId: mod.modId, technicalTier: 1, displayTiers: { Spear: 1 }, requiredLevel: 1, spawnWeights: mod.spawnWeights, generationWeights: [], craftingSources: [], regularClasses: ["Spear"], specialClasses: [], requiredBaseTagsAny: [] }] });
+  });
+  const a = evaluate("currency:augmentation", "magic", { catalog: base }).selectionRequests[0]; const b = evaluate("currency:augmentation", "magic", { catalog: expanded }).selectionRequests[0];
+  assert.deepEqual(a.candidates.map(entry => entry.modifierId), ["mod:prefix", "mod:suffix"]); assert.deepEqual(b.candidates.map(entry => entry.modifierId), ["mod:prefix", "mod:suffix"]);
+  assert.equal(JSON.stringify(a), JSON.stringify(b)); assert.equal(a.deterministicKey, b.deterministicKey); assert.equal(a.id, b.id);
+});
+test("115 display tier is presentation data and does not alter technical request identity", () => {
+  const a = evaluate("currency:augmentation", "magic").selectionRequests[0]; const changed = catalog(d => { d.affixGroups.groups[0].tiers[0].displayTiers.Bow = 99; });
+  const b = evaluate("currency:augmentation", "magic", { catalog: changed }).selectionRequests[0];
+  assert.notEqual(a.candidates[0].displayTier, b.candidates[0].displayTier); assert.equal(a.candidates[0].technicalTier, b.candidates[0].technicalTier);
+  assert.equal(a.deterministicKey, b.deterministicKey); assert.equal(a.id, b.id);
+});
+test("116 canonical payload preserves primitive empty missing nested and special-character distinctions", () => {
+  assert.notEqual(canonicalTechnicalString({ value: null }), canonicalTechnicalString({}));
+  assert.notEqual(canonicalTechnicalString({ value: null }), canonicalTechnicalString({ value: 0 }));
+  assert.notEqual(canonicalTechnicalString({ value: false }), canonicalTechnicalString({ value: 0 }));
+  assert.notEqual(canonicalTechnicalString({ value: "" }), canonicalTechnicalString({}));
+  assert.notEqual(canonicalTechnicalString({ value: [] }), canonicalTechnicalString({ value: {} }));
+  assert.equal(canonicalTechnicalString({ z: ["ä\\\":|,{}[]", { b: -1, a: true }], a: null }), '{"a":null,"z":["ä\\\\\\\":|,{}[]",{"a":true,"b":-1}]}');
+  assert.equal(canonicalTechnicalString({ nested: { b: [1, 2], a: {} } }), canonicalTechnicalString({ nested: { a: {}, b: [1, 2] } }));
+});
+test("117 all catalog-required actions reject shared structural field failures without mutation", () => {
+  const base = catalog(); const variants = [
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], source: 42 } } }),
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{ tag: "bow", weight: NaN }] } } }),
+    immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], generationWeights: [{ tag: "bow", weight: Infinity }] } } }),
+    immutableCopy({ ...base, families: { ...base.families, "family:0": { ...base.families["family:0"], tiers: { ...base.families["family:0"].tiers, "mod:prefix": { ...base.families["family:0"].tiers["mod:prefix"], technicalTier: "2" } } } } }),
+    immutableCopy({ ...base, baseTypes: { ...base.baseTypes, "base:bow": { ...base.baseTypes["base:bow"], itemClassId: "Missing" } } })
+  ];
+  for (const bad of variants) for (const [actionId, rarity] of [["currency:transmutation", "normal"], ["currency:augmentation", "magic"], ["currency:alteration", "magic"], ["currency:regal", "magic"], ["currency:exalted", "rare"], ["currency:chaos", "rare"]]) {
+    const state = item(rarity); const itemBefore = JSON.stringify(state); const catalogBefore = JSON.stringify(bad); const result = evaluate(actionId, rarity, { catalog: bad, itemState: state });
+    assert.equal(result.status, "error"); assert.equal(result.valid, false); assert.equal(result.errors[0].code, ENGINE_ACTION_CODES.CATALOG_INVALID); assert.deepEqual(result.selectionRequests, []); assert.deepEqual(result.mutationPlan, []); assert.equal(JSON.stringify(state), itemBefore); assert.equal(JSON.stringify(bad), catalogBefore);
+    if (["currency:alteration", "currency:chaos"].includes(actionId)) assert.equal(result.eligibilityResult, null);
+  }
+});
+test("118 raw adapter inputs and normalized catalogs share strict source and numeric contracts", () => {
+  for (const source of [42, true, [], {}]) assert.throws(() => catalog(d => { d.mods.mods[0].source = source; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  for (const weight of [NaN, Infinity, -Infinity]) assert.throws(() => catalog(d => { d.affixGroups.groups[0].tiers[0].spawnWeights[0].weight = weight; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE);
+  for (const weight of [NaN, Infinity, -Infinity]) assert.throws(() => catalog(d => { d.affixGroups.groups[0].tiers[0].generationWeights = [{ tag: "bow", weight }]; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_WEIGHT_STRUCTURE);
+  assert.throws(() => catalog(d => { d.affixGroups.groups[0].tiers[0].displayTiers.Bow = NaN; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  assert.throws(() => catalog(d => { d.affixGroups.groups[0].tiers[0].technicalTier = "1"; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  assert.throws(() => catalog(d => { d.affixGroups.groups[0].tiers[0].requiredLevel = NaN; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  assert.throws(() => catalog(d => { d.mods.mods[0].flags = {}; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  assert.throws(() => catalog(d => { d.affixGroups.groups[0].tiers[0].craftingSources = "crafted"; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  assert.throws(() => catalog(d => { d.mods.mods[0].generationType = {}; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.UNKNOWN_GENERATION_TYPE);
+  assert.throws(() => catalog(d => { d.mods.mods[0].domain = []; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.UNKNOWN_MODIFIER_DOMAIN);
+  assert.throws(() => catalog(d => { d.mods.mods[0].groups = [42]; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  assert.throws(() => catalog(d => { d.mods.mods[0].modId = 42; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+  assert.throws(() => catalog(d => { d.mods.mods[0].modId = null; }), error => error instanceof EngineValidationError && error.code === ENGINE_RULE_ERROR_CODES.INVALID_CATALOG_DATA);
+});
+test("119 catalog structure errors retain deterministic status priority", () => {
+  const base = catalog(); const bad = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], source: 42 } } });
+  for (const [actionId, rarity, actionContext] of [["currency:augmentation", "normal", {}], ["currency:transmutation", "normal", { capacityRules: TEST_CAPACITY_RULES }], ["currency:chaos", "magic", rules()]]) {
+    const result = evaluate(actionId, rarity, { catalog: bad, actionContext }); assert.equal(result.status, "error"); assert.equal(result.valid, false); assert.equal(result.errors[0].code, ENGINE_ACTION_CODES.CATALOG_INVALID);
+  }
+  assert.equal(evaluateCraftingAction({ actionId: "currency:unknown", catalog: bad }).errors[0].code, ENGINE_ACTION_CODES.UNKNOWN);
 });

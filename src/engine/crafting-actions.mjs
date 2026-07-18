@@ -1,4 +1,5 @@
 import { ENGINE_ACTION_CODES } from "./errors.mjs";
+import { canonicalTechnicalString } from "./canonical-serialization.mjs";
 import { validateModifierCatalog } from "./catalog-validation.mjs";
 import { compareTechnicalStrings, resolveEligibleModifiers } from "./eligible-modifier-resolver.mjs";
 import { immutableCopy } from "./immutability.mjs";
@@ -7,20 +8,13 @@ import { createRuleContext } from "./rule-context.mjs";
 const isRecord = value => Boolean(value) && typeof value === "object" && !Array.isArray(value);
 const compareNumbers = (left, right) => left === right ? 0 : left < right ? -1 : 1;
 const compareFields = values => values.find(value => value !== 0) ?? 0;
-const canonicalValue = value => {
-  if (value === undefined) throw new TypeError("Canonical technical payload cannot contain undefined.");
-  if (Array.isArray(value)) return value.map(canonicalValue);
-  if (isRecord(value)) return Object.fromEntries(Object.keys(value).sort(compareTechnicalStrings).map(key => [key, canonicalValue(value[key])]));
-  return value;
-};
-const canonicalString = value => JSON.stringify(canonicalValue(value));
 const reason = (code, outcome, message, rule, path, details = {}) => ({ code, outcome, message, rule, path, details });
 const compareReasons = (left, right) => compareFields([
   compareTechnicalStrings(left.rule ?? "", right.rule ?? ""),
   compareTechnicalStrings(left.code ?? "", right.code ?? ""),
   compareTechnicalStrings(left.outcome ?? "", right.outcome ?? ""),
   compareTechnicalStrings(left.path ?? "", right.path ?? ""),
-  compareTechnicalStrings(canonicalString(left.details), canonicalString(right.details))
+  compareTechnicalStrings(canonicalTechnicalString(left.details), canonicalTechnicalString(right.details))
 ]);
 const compareCandidates = (left, right) => compareFields([
   compareTechnicalStrings(left.generationType ?? "", right.generationType ?? ""),
@@ -82,12 +76,13 @@ function additionRequest(action, itemState, catalog, count, candidates, eligibil
   const weighting = { mode: "raw-technical-weights", normalized: false };
   const replacementPolicy = "without-replacement";
   const constraints = { generationTypes: [...new Set(compact.map(entry => entry.generationType))].sort(compareTechnicalStrings) };
-  const sourceResult = { mode: eligibilityResult.contextSummary.mode, candidateCount: eligibilityResult.candidateCount };
+  const sourceResult = { mode: eligibilityResult.contextSummary.mode };
+  const keyCandidates = compact.map(({ displayTier, ...candidate }) => candidate);
   const keyPayload = { keyVersion: 1, actionId: action.id, type: "modifier-addition", count,
     item: { itemId: itemState.itemId, revision: itemState.revision, itemClassId: itemState.itemClassId, baseTypeId: itemState.baseTypeId, rarity: itemState.rarity },
-    candidateStatus: "eligible", candidates: compact, weighting, replacementPolicy, constraints,
-    capacityRules: capacityRules ?? null, sourceResult };
-  const deterministicKey = canonicalString(keyPayload);
+    candidateStatus: "eligible", candidates: keyCandidates, weighting, replacementPolicy, constraints,
+    capacityRules: capacityRules ?? null };
+  const deterministicKey = canonicalTechnicalString(keyPayload);
   return { id: `selection:${deterministicKey}`, type: "modifier-addition", actionId: action.id, count, candidateStatus: "eligible",
     candidates: compact, weighting, replacementPolicy, constraints, sourceResult, deterministicKey };
 }
@@ -103,7 +98,7 @@ function removalRequest(action, itemState, count) {
   const keyPayload = { keyVersion: 1, actionId: action.id, type: "modifier-removal", count,
     item: { itemId: itemState.itemId, revision: itemState.revision, itemClassId: itemState.itemClassId, baseTypeId: itemState.baseTypeId, rarity: itemState.rarity },
     candidateStatus: "existing", candidates, weighting: { mode: "none", normalized: false }, replacementPolicy, constraints, executable: false };
-  const deterministicKey = canonicalString(keyPayload);
+  const deterministicKey = canonicalTechnicalString(keyPayload);
   return { id: `selection:${deterministicKey}`, type: "modifier-removal", actionId: action.id, count, candidateStatus: "existing", executable: false,
     candidates, weighting: { mode: "none", normalized: false }, replacementPolicy, constraints,
     sourceResult: { prefixCount: itemState.prefixModifiers.length, suffixCount: itemState.suffixModifiers.length },
@@ -166,9 +161,13 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   const status = errors.length ? "error" : reasons.some(entry => entry.outcome === "fail") ? "inapplicable"
     : reasons.some(entry => entry.outcome === "unresolved") ? "unresolved" : "applicable";
   const selectionRequests = [];
-  if (status === "applicable" && action.requiresRandomSelection) selectionRequests.push(additionRequest(action, itemState, catalog, explicitCount, eligibilityResult.eligible, eligibilityResult, actionContext.capacityRules ?? options.capacityRules ?? null));
-  if ((status === "applicable" || status === "unresolved") && action.requiresRandomRemoval && Number.isInteger(removalCount) && removalCount >= 0
-    && action.inputRarities.includes(itemState.rarity)) selectionRequests.push(removalRequest(action, itemState, removalCount));
+  try {
+    if (status === "applicable" && action.requiresRandomSelection) selectionRequests.push(additionRequest(action, itemState, catalog, explicitCount, eligibilityResult.eligible, eligibilityResult, actionContext.capacityRules ?? options.capacityRules ?? null));
+    if ((status === "applicable" || status === "unresolved") && action.requiresRandomRemoval && Number.isInteger(removalCount) && removalCount >= 0
+      && action.inputRarities.includes(itemState.rarity)) selectionRequests.push(removalRequest(action, itemState, removalCount));
+  } catch (error) {
+    return emptyResult(actionId, action, reason(error.code ?? ENGINE_ACTION_CODES.CONTEXT_INVALID, "error", error.message, "request", error.path ?? "request", error.details ?? {}));
+  }
   selectionRequests.sort(compareRequests);
   const mutationPlan = [];
   if (action.rarityTransition) mutationPlan.push({ sequence: mutationPlan.length, operation: "set-rarity", rarity: action.rarityTransition.to, applied: false });
