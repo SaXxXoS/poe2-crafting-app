@@ -3,7 +3,7 @@
 
   const $ = id => document.getElementById(id);
 
-  const APP_DATA_ROOT = './generated/app-data';
+  const APP_DATA_ROOT = './generated/poe2db/app';
   const PRICE_ITEMS = [
     'Orb of Transmutation',
     'Orb of Augmentation',
@@ -159,7 +159,8 @@
       mods: [],
       modsById: new Map(),
       poolFiles: {},
-      loadedPools: new Map()
+      loadedPools: new Map(),
+      crafting: {}
     },
     prefix: [null, null, null],
     suffix: [null, null, null],
@@ -354,7 +355,7 @@
         const id = implicit.id ?? implicit.mod_id ?? implicit.modId ?? `implicit-${index}`;
         return {
           id,
-          name: implicit.name ?? implicit.text ?? IMPLICIT_TEXT_DE[id] ?? formatInternalName(id),
+          name: implicit.textDe ?? implicit.textEn ?? implicit.name ?? implicit.text ?? IMPLICIT_TEXT_DE[id] ?? formatInternalName(id),
           kind: implicit.type ?? 'Basis-Implizit'
         };
       }
@@ -400,6 +401,27 @@
   }
 
   function adaptMod(mod) {
+    if (mod.source === 'poe2db') {
+      const localizedText = mod.textDe || mod.textEn;
+      const localizedName = mod.nameDe || mod.nameEn;
+
+      return {
+        id: mod.id,
+        name: localizedText || localizedName || formatInternalName(mod.sourceId || mod.id),
+        range: localizedName || localizedText || 'Kein darstellbarer Modtext',
+        tier: mod.tier
+          ? `Tier ${mod.tier} · ab Item-Level ${Number(mod.requiredLevel || 0)}`
+          : tierLabel(mod),
+        lvl: Number(mod.requiredLevel || 0),
+        group: mod.group || mod.id,
+        generationType: mod.generationType,
+        spawnWeights: mod.spawnWeights || [],
+        generationWeights: mod.generationWeights || [],
+        visible: Boolean(localizedText || localizedName),
+        raw: mod
+      };
+    }
+
     const visibleStats = (mod.stats || []).filter(stat => !isHiddenStat(stat.id));
 
     return {
@@ -504,6 +526,14 @@
     state.data.classById = new Map(classes.map(itemClass => [itemClass.id, itemClass]));
     state.data.poolFiles = indexDocument.poolFiles || {};
 
+    const craftingEntries = Object.entries(indexDocument.craftingFiles || {});
+    const craftingDocuments = await Promise.all(
+      craftingEntries.map(([, relativeFile]) => fetchJson(`${APP_DATA_ROOT}/${relativeFile}`))
+    );
+    state.data.crafting = Object.fromEntries(
+      craftingEntries.map(([key], index) => [key, craftingDocuments[index]])
+    );
+
     state.data.basesByClass = new Map();
 
     for (const base of bases) {
@@ -520,7 +550,8 @@
     setDataStatus(
       `${counts.equipmentBases ?? bases.length} Basen · ` +
       `${counts.referencedEquipmentMods ?? mods.length} Mods · ` +
-      `${counts.poolFiles ?? Object.keys(state.data.poolFiles).length} Pool-Dateien`,
+      `${counts.poolFiles ?? Object.keys(state.data.poolFiles).length} Pool-Dateien · ` +
+      `${counts.craftingFiles ?? craftingEntries.length} Crafting-Datensätze`,
       'success'
     );
   }
@@ -1609,7 +1640,7 @@
       $('basePickerName').textContent = 'Datenbank nicht verfügbar';
       $('baseDetails').innerHTML = `
         <div class="status warn">
-          Prüfe, ob der Ordner generated/app-data auf GitHub vorhanden ist
+          Prüfe, ob der Ordner generated/poe2db/app auf GitHub vorhanden ist
           und GitHub Pages den neuesten Commit veröffentlicht hat.
         </div>
       `;

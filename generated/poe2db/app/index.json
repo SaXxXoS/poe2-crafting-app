@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "source": "generated/poe2db",
+  "classes": [
+    {
+      "id": "Spear",
+      "name": "Spear",
+      "key": "spears"
+    },
+    {
+      "id": "Bow",
+      "name": "Bow",
+      "key": "bows"
+    },
+    {
+      "id": "Crossbow",
+      "name": "Crossbow",
+      "key": "crossbows"
+    },
+    {
+      "id": "Wand",
+      "name": "Wand",
+      "key": "wands"
+    },
+    {
+      "id": "Staff",
+      "name": "Staff",
+      "key": "staves"
+    },
+    {
+      "id": "Warstaff",
+      "name": "Warstaff",
+      "key": "warstaves"
+    },
+    {
+      "id": "One Hand Sword",
+      "name": "One Hand Sword",
+      "key": "one-hand-swords"
+    },
+    {
+      "id": "Two Hand Sword",
+      "name": "Two Hand Sword",
+      "key": "two-hand-swords"
+    },
+    {
+      "id": "One Hand Axe",
+      "name": "One Hand Axe",
+      "key": "one-hand-axes"
+    },
+    {
+      "id": "Two Hand Axe",
+      "name": "Two Hand Axe",
+      "key": "two-hand-axes"
+    },
+    {
+      "id": "One Hand Mace",
+      "name": "One Hand Mace",
+      "key": "one-hand-maces"
+    },
+    {
+      "id": "Two Hand Mace",
+      "name": "Two Hand Mace",
+      "key": "two-hand-maces"
+    },
+    {
+      "id": "Dagger",
+      "name": "Dagger",
+      "key": "daggers"
+    },
+    {
+      "id": "Claw",
+      "name": "Claw",
+      "key": "claws"
+    },
+    {
+      "id": "Flail",
+      "name": "Flail",
+      "key": "flails"
+    },
+    {
+      "id": "Sceptre",
+      "name": "Sceptre",
+      "key": "sceptres"
+    },
+    {
+      "id": "Body Armour",
+      "name": "Body Armour",
+      "key": "body-armours"
+    },
+    {
+      "id": "Helmet",
+      "name": "Helmet",
+      "key": "helmets"
+    },
+    {
+      "id": "Gloves",
+      "name": "Gloves",
+      "key": "gloves"
+    },
+    {
+      "id": "Boots",
+      "name": "Boots",
+      "key": "boots"
+    },
+    {
+      "id": "Shield",
+      "name": "Shield",
+      "key": "shields"
+    },
+    {
+      "id": "Buckler",
+      "name": "Buckler",
+      "key": "bucklers"
+    },
+    {
+      "id": "Focus",
+      "name": "Focus",
+      "key": "focuses"
+    },
+    {
+      "id": "Quiver",
+      "name": "Quiver",
+      "key": "quivers"
+    },
+    {
+      "id": "Amulet",
+      "name": "Amulet",
+      "key": "amulets"
+    },
+    {
+      "id": "Ring",
+      "name": "Ring",
+      "key": "rings"
+    },
+    {
+      "id": "Belt",
+      "name": "Belt",
+      "key": "belts"
+    },
+    {
+      "id": "Jewel",
+      "name": "Jewel",
+      "key": "jewels"
+    }
+  ],
+  "poolFiles": {
+    "Spear": "pools/spears.json",
+    "Bow": "pools/bows.json",
+    "Crossbow": "pools/crossbows.json",
+    "Wand": "pools/wands.json",
+    "Staff": "pools/staves.json",
+    "Warstaff": "pools/warstaves.json",
+    "One Hand Sword": "pools/one-hand-swords.json",
+    "Two Hand Sword": "pools/two-hand-swords.json",
+    "One Hand Axe": "pools/one-hand-axes.json",
+    "Two Hand Axe": "pools/two-hand-axes.json",
+    "One Hand Mace": "pools/one-hand-maces.json",
+    "Two Hand Mace": "pools/two-hand-maces.json",
+    "Dagger": "pools/daggers.json",
+    "Claw": "pools/claws.json",
+    "Flail": "pools/flails.json",
+    "Sceptre": "pools/sceptres.json",
+    "Body Armour": "pools/body-armours.json",
+    "Helmet": "pools/helmets.json",
+    "Gloves": "pools/gloves.json",
+    "Boots": "pools/boots.json",
+    "Shield": "pools/shields.json",
+    "Buckler": "pools/bucklers.json",
+    "Focus": "pools/focuses.json",
+    "Quiver": "pools/quivers.json",
+    "Amulet": "pools/amulets.json",
+    "Ring": "pools/rings.json",
+    "Belt": "pools/belts.json",
+    "Jewel": "pools/jewels.json"
+  },
+  "craftingFiles": {
+    "essences": "../crafting/essences.json",
+    "omens": "../crafting/omens.json",
+    "desecration": "../crafting/desecration.json",
+    "currencies": "../crafting/currencies.json",
+    "craftedModifiers": "../crafting/crafted-modifiers.json",
+    "methods": "../crafting/methods.json"
+  }
+}
