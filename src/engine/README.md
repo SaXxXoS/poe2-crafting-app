@@ -28,4 +28,14 @@ Die Serialisierung sortiert Objektschlüssel kanonisch, erhält aber fachlich re
 
 ## Bewusst offen
 
-Nicht implementiert sind Affix-Limits, Rule Sets, Eligible-Mod-Auswahl, Gewichtsauflösung, RNG, Währungen, Essenzen, Omen, konkrete Aktionen, Planner, Simulator und Wahrscheinlichkeiten. Insbesondere maximale Präfix-/Suffixzahlen, Socket-Regeln und Sonderfälle einzelner Itemarten werden erst ergänzt, wenn sie aus strukturierten Regeln sicher ableitbar sind.
+Nicht implementiert sind Affix-Limits, Eligible-Mod-Auswahl, Gewichtsauflösung, RNG, Währungen, Essenzen, Omen, konkrete Aktionen, Planner, Simulator und Wahrscheinlichkeiten. Insbesondere maximale Präfix-/Suffixzahlen, Socket-Regeln und Sonderfälle einzelner Itemarten werden erst ergänzt, wenn sie aus strukturierten Regeln sicher ableitbar sind.
+
+## Modifier Catalog und technische Rule Sets
+
+Der Catalog Adapter liest `generated/poe2db/app/index.json`, `bases.json`, `mods.json` und `affix-groups.json` und erzeugt ausschließlich einen kompakten unveränderlichen In-Memory-Index. Er schreibt keine Daten und verwendet technische Itemklassen-, Basis-, Mod- und Familien-IDs. Fehlende Domains, Flags, Tiers oder Gewichte bleiben ausdrücklich `null`; sichtbare Texte werden nicht als Identität übernommen.
+
+Ein unveränderlicher Rule Context verbindet Item State, Catalog, technische Zielinformationen in `actionContext` und beschreibende Metadaten. Die zentrale Auswertung führt in stabiler Reihenfolge Identity-, Modifier-Reference-, Domain-, Generation-Type-, Item-Level- sowie Tag/Weight-Structure-Regeln aus. Ergebnisse enthalten deterministisch sortierte strukturierte Fehler und Warnungen mit Rule-Set-Zuordnung.
+
+`generationType` beschreibt weiterhin die technische Position `prefix` oder `suffix`; `source` bewahrt davon unabhängig vorhandene Kennzeichnungen wie crafted oder desecration. `technicalTier` bleibt getrennt von den itemklassenspezifischen `displayTiers`. Gewichte einschließlich `0` werden nur strukturell geprüft und niemals ausgelost.
+
+Eligible Modifier Resolution folgt erst in einem späteren Meilenstein. Noch fehlen insbesondere Affix-Slot-Limits, Modgruppen-Exklusivität, vorhandene-Affix-Konflikte, Targeting, Meta-Crafting, konkrete Crafting-Wirkungen, Wahrscheinlichkeiten und jede Form von Auswahl oder RNG.
