@@ -28,19 +28,19 @@ jobs:
       - name: RePoE-Daten importieren
         run: node tools/import-repoe-database.mjs
 
-      - name: App-Datenbank erzeugen
-        run: node tools/build-app-data.mjs
+      - name: PoE2DB-App-Adapter erzeugen
+        run: node tools/build-poe2db-app-adapter.mjs
 
       - name: Daten prüfen
         run: |
           test -f generated/repoe/manifest.json
-          test -f generated/app-data/manifest.json
-          test -f generated/app-data/bases.json
-          test -f generated/app-data/mods.json
-          test -f generated/app-data/index.json
-          test -d generated/app-data/pools
+          test -f generated/poe2db/app/manifest.json
+          test -f generated/poe2db/app/bases.json
+          test -f generated/poe2db/app/mods.json
+          test -f generated/poe2db/app/index.json
+          test -d generated/poe2db/app/pools
 
-          find generated/app-data -type f -size +99M -print -quit | \
+          find generated/poe2db/app -type f -size +99M -print -quit | \
             grep -q . && {
               echo "Mindestens eine erzeugte Datei ist größer als 99 MB."
               exit 1
@@ -51,7 +51,7 @@ jobs:
           git config user.name "ExileForge Data Bot"
           git config user.email "actions@users.noreply.github.com"
 
-          git add -f generated/repoe generated/app-v2 generated/app-data
+          git add -f generated/repoe generated/app-v2 generated/poe2db/app
 
           if git diff --cached --quiet; then
             echo "Keine Änderungen gefunden."

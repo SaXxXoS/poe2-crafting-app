@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// DEPRECATED: Legacy app-data generator. The application now uses
+// tools/build-poe2db-app-adapter.mjs and generated/poe2db/app.
+
 /**
  * ExileForge app data builder
  *

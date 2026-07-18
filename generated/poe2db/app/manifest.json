@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T08:47:34.967Z",
+  "status": "poe2db-app-adapter-ready",
+  "deprecatedSource": "generated/app-data is retained but no longer referenced by the application",
+  "counts": {
+    "equipmentBases": 943,
+    "referencedEquipmentMods": 1807,
+    "poolFiles": 28,
+    "poolBases": 943,
+    "craftingFiles": 6
+  },
+  "files": {
+    "bases.json": {
+      "sha256": "9d22266b61e8f781fadfa3f881a3368424e10fbaba35f3eda190e63202f5bdea"
+    },
+    "mods.json": {
+      "sha256": "427186f3583b2b33e46beb25f21d4e60d51b9bf25a041fe2d3ccc140036f38fc"
+    },
+    "index.json": {
+      "sha256": "eef776460f2da8b6fd092903ce00cc43ffde5f2550ec21faeb41868ec47c1ff3"
+    },
+    "pools/spears.json": {
+      "sha256": "a12f1d5130de471dbed136decc08aaee140e0d89f5dacdd1b491ad581df93032"
+    },
+    "pools/bows.json": {
+      "sha256": "595924cb77e0a086c8d982b8d6aac2c16098d48735901f3c6746fee41279db1c"
+    },
+    "pools/crossbows.json": {
+      "sha256": "8cd680fd3c0365ed66c5c1acae9562813030aee63ceb95312ae328969a975627"
+    },
+    "pools/wands.json": {
+      "sha256": "54fabd7aabe92a24f18456dffa7e49884d5370f7b1c653fe9f97883bffe14161"
+    },
+    "pools/staves.json": {
+      "sha256": "d2415bda1c8eb9b855bc171fb2921ff2c310d8682338d4f5842bc084238a1464"
+    },
+    "pools/warstaves.json": {
+      "sha256": "998ae44a52140a8971b963c31d476f548dd476e78bff48de1a806139016d535b"
+    },
+    "pools/one-hand-swords.json": {
+      "sha256": "aa6f554e49afb37d67c189008d2dcd4152ea30dadc81514cc4c53ada5469d448"
+    },
+    "pools/two-hand-swords.json": {
+      "sha256": "f94f2352b9269369d669c59da4b695f17299f721102481148610e2f24d448b19"
+    },
+    "pools/one-hand-axes.json": {
+      "sha256": "1e65e03a26d86c05369aab30d818a6cac8df955c086a5ab5aa8e3ed5a998f2d9"
+    },
+    "pools/two-hand-axes.json": {
+      "sha256": "02a1d9d5f1b3bd049a1ed96e41352c42ab3a289a9979deb4194a7877d8a34322"
+    },
+    "pools/one-hand-maces.json": {
+      "sha256": "1c6ce43ee098c08a86e6b33964196b67ae2bb19aa7203f954afa8fe8b837b94e"
+    },
+    "pools/two-hand-maces.json": {
+      "sha256": "d4bde205cea9ae7ce98f4d22708099fa71f7f97c7061037f3674ce0fbdfe39ed"
+    },
+    "pools/daggers.json": {
+      "sha256": "7fd9fe053f7b4267dad5edc6ceee7f7dce3298f408131aedf1d75f02933cba0c"
+    },
+    "pools/claws.json": {
+      "sha256": "fa4d931daebf42ec124855e6817b9e4ee34bf8033d7ff72125cb5b51834c89ad"
+    },
+    "pools/flails.json": {
+      "sha256": "11f7f30df8cc4a9061b111e308530cf7819c0c05888c99cf2b4b80b33209617c"
+    },
+    "pools/sceptres.json": {
+      "sha256": "d4bcc21b4b39209a6231274a73de617607da34e62db0d9d40db0109df63ff9d5"
+    },
+    "pools/body-armours.json": {
+      "sha256": "69c61de5d95831f2c34114a88408eae9205cd513a763310bc47704a251d483d7"
+    },
+    "pools/helmets.json": {
+      "sha256": "488891171a83f02abe9f44110035c731e52f328b7f07a927a42d74ad23ae7e87"
+    },
+    "pools/gloves.json": {
+      "sha256": "a2dd4838bad7dc733332b7000e23c50ee901de73cc8655b7bf3407864cfb3ac1"
+    },
+    "pools/boots.json": {
+      "sha256": "daec0cd05787fb340810f8dda805dbc2bb45141fa97d32abc12477d69cfe1cc2"
+    },
+    "pools/shields.json": {
+      "sha256": "087b007268ac40fed565c0323a375d2b5158a8f794a69d0c1f40b3593b90b443"
+    },
+    "pools/bucklers.json": {
+      "sha256": "3d6fbf1abfb894da19dde8f06b31f68efac421ee797bab21125c57f670b02cc0"
+    },
+    "pools/focuses.json": {
+      "sha256": "286d2e03e87b59daaf7564db651d0fe80759943807686351c8a0e842594e5c2c"
+    },
+    "pools/quivers.json": {
+      "sha256": "502be61bdcb96b972e3822265e3ac94c5cca29ea7dda6864ca885c37b700123f"
+    },
+    "pools/amulets.json": {
+      "sha256": "5490bed98e13aaa7755df2410a6712ec48905c6e3616a99f90830d2e0f5e1a0b"
+    },
+    "pools/rings.json": {
+      "sha256": "9ce04e59e718126dcbc85497a71ed50ba1f0aba555ecf2c32c7a29c3d624f53e"
+    },
+    "pools/belts.json": {
+      "sha256": "5302ae5b0be0d5795b976f22f5661e2091cd1217511e19f143800372bb29e52d"
+    },
+    "pools/jewels.json": {
+      "sha256": "319f3388273385e843f448c659d8222dc9bac3100c31986366db29d60a65fb08"
+    }
+  }
+}

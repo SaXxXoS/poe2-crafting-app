@@ -28,6 +28,11 @@ jobs:
           node --max-old-space-size=4096 tools/import-poe2db.mjs --offline
           node tools/import-poe2db-crafting.mjs --offline
 
+      - name: PoE2DB-App-Adapter erzeugen und prüfen
+        run: |
+          node tools/build-poe2db-app-adapter.mjs
+          node tools/validate-poe2db-app.mjs
+
       - name: Import prüfen
         run: |
           node -e "const fs=require('fs');const i=require('./generated/poe2db/index.json');if(i.classes.length!==28)throw new Error('Erwartet 28 Ausrüstungsklassen, erhalten: '+i.classes.length);for(const c of i.classes){const d=require('./generated/poe2db/'+c.dataFile);if(!d.bases.length||!d.prefixes.length||!d.suffixes.length)throw new Error('Leere Klasse: '+c.itemClass);if(!d.bases.some(x=>x.nameDe)||![...d.prefixes,...d.suffixes].some(x=>x.textDe))throw new Error('Keine deutschen Texte: '+c.itemClass);if(d.pools.length!==d.bases.length)throw new Error('Basis-Pools fehlen: '+c.itemClass);if(!fs.existsSync('./generated/poe2db/'+c.qualityReportFile))throw new Error('Qualitätsbericht fehlt: '+c.itemClass);for(const p of d.pools){if(p.evaluatedPrefixRules!==d.prefixes.length||p.evaluatedSuffixRules!==d.suffixes.length)throw new Error('Gewichtsregeln ungeprüft: '+c.itemClass);if([...p.prefixes,...p.suffixes].some(x=>x.spawnWeight<=0||x.generationWeight<=0))throw new Error('Nullgewicht im Pool: '+c.itemClass)}}"
