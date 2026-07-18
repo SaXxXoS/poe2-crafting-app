@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T12:41:40.770Z",
+  "generatedAt": "2026-07-18T13:22:54.802Z",
   "groupingIdentity": "generationType + sorted RePoE mod groups + sorted RePoE stat IDs",
   "counts": {
-    "groups": 495,
+    "groups": 835,
     "tiers": 1897,
     "classes": 28,
     "essenceTiers": 109,
@@ -14,7 +14,7 @@
     {
       "itemClass": "Spear",
       "bases": 28,
-      "groups": 38,
+      "groups": 42,
       "tiers": 176,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -26,7 +26,7 @@
     {
       "itemClass": "Bow",
       "bases": 27,
-      "groups": 40,
+      "groups": 44,
       "tiers": 159,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -38,7 +38,7 @@
     {
       "itemClass": "Crossbow",
       "bases": 27,
-      "groups": 39,
+      "groups": 43,
       "tiers": 163,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -50,7 +50,7 @@
     {
       "itemClass": "Wand",
       "bases": 15,
-      "groups": 45,
+      "groups": 58,
       "tiers": 201,
       "visibleTiersAtItemLevel": {
         "1": 7,
@@ -62,7 +62,7 @@
     {
       "itemClass": "Staff",
       "bases": 17,
-      "groups": 43,
+      "groups": 46,
       "tiers": 200,
       "visibleTiersAtItemLevel": {
         "1": 7,
@@ -74,7 +74,7 @@
     {
       "itemClass": "Warstaff",
       "bases": 28,
-      "groups": 34,
+      "groups": 38,
       "tiers": 169,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -86,7 +86,7 @@
     {
       "itemClass": "One Hand Sword",
       "bases": 16,
-      "groups": 28,
+      "groups": 32,
       "tiers": 163,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -98,7 +98,7 @@
     {
       "itemClass": "Two Hand Sword",
       "bases": 14,
-      "groups": 28,
+      "groups": 32,
       "tiers": 163,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -110,7 +110,7 @@
     {
       "itemClass": "One Hand Axe",
       "bases": 13,
-      "groups": 27,
+      "groups": 31,
       "tiers": 155,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -122,7 +122,7 @@
     {
       "itemClass": "Two Hand Axe",
       "bases": 13,
-      "groups": 27,
+      "groups": 31,
       "tiers": 155,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -134,7 +134,7 @@
     {
       "itemClass": "One Hand Mace",
       "bases": 27,
-      "groups": 37,
+      "groups": 41,
       "tiers": 165,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -146,7 +146,7 @@
     {
       "itemClass": "Two Hand Mace",
       "bases": 27,
-      "groups": 37,
+      "groups": 41,
       "tiers": 165,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -158,7 +158,7 @@
     {
       "itemClass": "Dagger",
       "bases": 14,
-      "groups": 28,
+      "groups": 32,
       "tiers": 163,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -170,7 +170,7 @@
     {
       "itemClass": "Claw",
       "bases": 13,
-      "groups": 27,
+      "groups": 31,
       "tiers": 155,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -182,7 +182,7 @@
     {
       "itemClass": "Flail",
       "bases": 13,
-      "groups": 28,
+      "groups": 32,
       "tiers": 163,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -194,7 +194,7 @@
     {
       "itemClass": "Sceptre",
       "bases": 16,
-      "groups": 23,
+      "groups": 25,
       "tiers": 151,
       "visibleTiersAtItemLevel": {
         "1": 11,
@@ -206,7 +206,7 @@
     {
       "itemClass": "Body Armour",
       "bases": 156,
-      "groups": 57,
+      "groups": 93,
       "tiers": 336,
       "visibleTiersAtItemLevel": {
         "1": 18,
@@ -218,7 +218,7 @@
     {
       "itemClass": "Helmet",
       "bases": 115,
-      "groups": 63,
+      "groups": 75,
       "tiers": 298,
       "visibleTiersAtItemLevel": {
         "1": 18,
@@ -230,7 +230,7 @@
     {
       "itemClass": "Gloves",
       "bases": 92,
-      "groups": 66,
+      "groups": 73,
       "tiers": 310,
       "visibleTiersAtItemLevel": {
         "1": 25,
@@ -242,7 +242,7 @@
     {
       "itemClass": "Boots",
       "bases": 90,
-      "groups": 52,
+      "groups": 55,
       "tiers": 258,
       "visibleTiersAtItemLevel": {
         "1": 20,
@@ -254,7 +254,7 @@
     {
       "itemClass": "Shield",
       "bases": 68,
-      "groups": 50,
+      "groups": 66,
       "tiers": 219,
       "visibleTiersAtItemLevel": {
         "1": 15,
@@ -266,7 +266,7 @@
     {
       "itemClass": "Buckler",
       "bases": 23,
-      "groups": 30,
+      "groups": 37,
       "tiers": 129,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -278,7 +278,7 @@
     {
       "itemClass": "Focus",
       "bases": 23,
-      "groups": 38,
+      "groups": 44,
       "tiers": 157,
       "visibleTiersAtItemLevel": {
         "1": 9,
@@ -290,7 +290,7 @@
     {
       "itemClass": "Quiver",
       "bases": 11,
-      "groups": 20,
+      "groups": 21,
       "tiers": 104,
       "visibleTiersAtItemLevel": {
         "1": 10,
@@ -302,7 +302,7 @@
     {
       "itemClass": "Amulet",
       "bases": 16,
-      "groups": 64,
+      "groups": 83,
       "tiers": 241,
       "visibleTiersAtItemLevel": {
         "1": 16,
@@ -314,7 +314,7 @@
     {
       "itemClass": "Ring",
       "bases": 22,
-      "groups": 55,
+      "groups": 58,
       "tiers": 227,
       "visibleTiersAtItemLevel": {
         "1": 21,
@@ -326,7 +326,7 @@
     {
       "itemClass": "Belt",
       "bases": 15,
-      "groups": 37,
+      "groups": 43,
       "tiers": 155,
       "visibleTiersAtItemLevel": {
         "1": 13,
@@ -338,7 +338,7 @@
     {
       "itemClass": "Jewel",
       "bases": 8,
-      "groups": 202,
+      "groups": 358,
       "tiers": 359,
       "visibleTiersAtItemLevel": {
         "1": 359,
@@ -360,43 +360,43 @@
     "status": "passed",
     "desktopClasses": [
       {
+        "itemClass": "Spear",
+        "prefixGroups": 15,
+        "suffixGroups": 27,
+        "prefixTiers": 77,
+        "suffixTiers": 99
+      },
+      {
         "itemClass": "Bow",
-        "prefixGroups": 19,
-        "suffixGroups": 21,
+        "prefixGroups": 20,
+        "suffixGroups": 24,
         "prefixTiers": 82,
         "suffixTiers": 77
       },
       {
-        "itemClass": "Two Hand Sword",
-        "prefixGroups": 11,
-        "suffixGroups": 17,
-        "prefixTiers": 73,
-        "suffixTiers": 90
+        "itemClass": "Crossbow",
+        "prefixGroups": 19,
+        "suffixGroups": 24,
+        "prefixTiers": 81,
+        "suffixTiers": 82
       },
       {
         "itemClass": "Wand",
-        "prefixGroups": 13,
-        "suffixGroups": 21,
+        "prefixGroups": 17,
+        "suffixGroups": 26,
         "prefixTiers": 58,
         "suffixTiers": 76
       },
       {
         "itemClass": "Body Armour",
-        "prefixGroups": 9,
-        "suffixGroups": 20,
+        "prefixGroups": 18,
+        "suffixGroups": 25,
         "prefixTiers": 61,
         "suffixTiers": 93
       },
       {
-        "itemClass": "Gloves",
-        "prefixGroups": 10,
-        "suffixGroups": 31,
-        "prefixTiers": 83,
-        "suffixTiers": 113
-      },
-      {
         "itemClass": "Ring",
-        "prefixGroups": 22,
+        "prefixGroups": 25,
         "suffixGroups": 33,
         "prefixTiers": 109,
         "suffixTiers": 118
@@ -407,6 +407,28 @@
         "suffixGroups": 27,
         "prefixTiers": 59,
         "suffixTiers": 27
+      }
+    ],
+    "spearProjectileTiers": [
+      {
+        "tier": "T1",
+        "value": "+4",
+        "itemLevel": "ilvl 81"
+      },
+      {
+        "tier": "T2",
+        "value": "+3",
+        "itemLevel": "ilvl 55"
+      },
+      {
+        "tier": "T3",
+        "value": "+2",
+        "itemLevel": "ilvl 36"
+      },
+      {
+        "tier": "T4",
+        "value": "+1",
+        "itemLevel": "ilvl 18"
       }
     ],
     "itemLevelFilter": {

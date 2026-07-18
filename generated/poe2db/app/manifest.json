@@ -9,7 +9,7 @@
     "poolFiles": 28,
     "poolBases": 947,
     "craftingFiles": 6,
-    "affixGroups": 495,
+    "affixGroups": 835,
     "affixGroupTiers": 1897
   },
   "files": {
@@ -128,13 +128,13 @@
       "sha256": "b739f0d85b2bd73b961e72516f02a0c7a0970393c6665976bfcca662099e249a"
     },
     "audit/audit-summary.json": {
-      "sha256": "d12cecd37ea5dbcb3307dfc3c4ad0d49783ad8d06bf205877914dbc5424ac99c"
+      "sha256": "4f300fcce737618d58ab842be28f96c66a73ad3f45ac3e6aa9348c489ed97cee"
     },
     "audit/browser-dom-results.json": {
-      "sha256": "20a976db7d7d547cb8b1f1850ff0dc2079899f8ec519a652f9d5249b473948d3"
+      "sha256": "ebb0509409aa5f749e7412d6165702b81ec17b537556fc9d6581b528b9c611ed"
     },
     "affix-groups.json": {
-      "sha256": "089fd454aac42ba32d4fb162abb580aa9428aa159b349531996ac883d6100a58"
+      "sha256": "5535f5510f4875664a142d834cf49e1eeef6af56167d06058da0c5e7274d3ff0"
     }
   },
   "audit": {

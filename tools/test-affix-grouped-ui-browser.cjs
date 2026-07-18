@@ -7,10 +7,10 @@ const { CURRENT_MAX_ITEM_LEVEL } = require("../app-config.js");
 
 const root = path.resolve(__dirname, "..");
 const reportFile = path.join(root, "generated/poe2db/app/audit/affix-group-ui.json");
+const parityReportFile = path.join(root, "generated/poe2db/app/audit/affix-tier-parity.json");
 const samples = [
-  ["weapon", "Bow"], ["weapon", "Two Hand Sword"], ["weapon", "Wand"],
-  ["armour", "Body Armour"], ["armour", "Gloves"],
-  ["jewellery", "Ring"], ["jewellery", "Jewel"]
+  ["weapon", "Spear"], ["weapon", "Bow"], ["weapon", "Crossbow"], ["weapon", "Wand"],
+  ["armour", "Body Armour"], ["jewellery", "Ring"], ["jewellery", "Jewel"]
 ];
 
 let browser;
@@ -54,6 +54,29 @@ let browser;
     }
     desktopClasses.push(result);
   }
+
+  await setSelect("#category", "weapon");
+  await page.waitForSelector('#itemClass option[value="Spear"]', { state: "attached" });
+  await setSelect("#itemClass", "Spear");
+  await page.locator("#ilevel").evaluate((element, level) => { element.value = String(level); element.dispatchEvent(new Event("input", { bubbles: true })); }, CURRENT_MAX_ITEM_LEVEL);
+  await page.locator("#suffixSlots .affix-slot").first().dispatchEvent("click");
+  await page.fill("#modSearch", "Projektil-Fertigkeiten");
+  await page.waitForSelector("#modResults .affix-tier-row");
+  const spearProjectileTiers = await page.locator("#modResults .affix-tier-row").evaluateAll(elements => elements
+    .filter(element => element.dataset.sourceKey?.startsWith("GlobalProjectileSkillGemLevelWeapon"))
+    .map(element => ({
+      tier: element.querySelector(".affix-tier-main b")?.textContent,
+      value: element.querySelector(".affix-tier-main span")?.textContent,
+      itemLevel: element.querySelector(".affix-tier-main small")?.textContent
+    })));
+  const expectedSpearProjectileTiers = [
+    { tier: "T1", value: "+4", itemLevel: "ilvl 81" },
+    { tier: "T2", value: "+3", itemLevel: "ilvl 55" },
+    { tier: "T3", value: "+2", itemLevel: "ilvl 36" },
+    { tier: "T4", value: "+1", itemLevel: "ilvl 18" }
+  ];
+  if (JSON.stringify(spearProjectileTiers) !== JSON.stringify(expectedSpearProjectileTiers)) throw new Error(`Spear-Projektiltier-Parität verletzt: ${JSON.stringify(spearProjectileTiers)}`);
+  await page.keyboard.press("Escape");
 
   await setSelect("#category", "weapon");
   await page.waitForSelector('#itemClass option[value="Bow"]', { state: "attached" });
@@ -100,8 +123,12 @@ let browser;
 
   const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
   const bowAtMaximum = desktopClasses.find(row => row.itemClass === "Bow");
-  report.browserTest = { status: "passed", desktopClasses, itemLevelFilter: { level1: { prefixes: lowCount, suffixes: lowSuffixCount }, currentMaximum: CURRENT_MAX_ITEM_LEVEL, maximum: { prefixes: highCount, suffixes: bowAtMaximum.suffixTiers } }, maximumInput, observedBadges: [...observedBadges].sort(), mobile, consoleErrors };
+  report.browserTest = { status: "passed", desktopClasses, spearProjectileTiers, itemLevelFilter: { level1: { prefixes: lowCount, suffixes: lowSuffixCount }, currentMaximum: CURRENT_MAX_ITEM_LEVEL, maximum: { prefixes: highCount, suffixes: bowAtMaximum.suffixTiers } }, maximumInput, observedBadges: [...observedBadges].sort(), mobile, consoleErrors };
   report.passed = report.passed && true;
   fs.writeFileSync(reportFile, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  const parityReport = JSON.parse(fs.readFileSync(parityReportFile, "utf8"));
+  parityReport.browserTest = { status: "passed", classes: desktopClasses.map(row => row.itemClass), spearProjectileTiers, consoleErrors };
+  parityReport.passed = parityReport.passed && consoleErrors.length === 0;
+  fs.writeFileSync(parityReportFile, `${JSON.stringify(parityReport, null, 2)}\n`, "utf8");
   console.log(JSON.stringify(report.browserTest));
 })().catch(error => { console.error(error); process.exitCode = 1; }).finally(async () => { await browser?.close(); });
