@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T09:38:52.086Z",
+  "baseFallbackReport": [
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Crossbows/FourCrossbow14Endgame",
+      "nameEn": "Trarthan Cannon",
+      "germanPage": "https://poe2db.tw/de/Crossbows",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique1",
+      "nameEn": "Twisted Wand",
+      "germanPage": "https://poe2db.tw/de/Wands",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/Wands/FourWandUnique2",
+      "nameEn": "Runic Fork",
+      "germanPage": "https://poe2db.tw/de/Wands",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourStaffUnique4",
+      "nameEn": "Perching Staff",
+      "germanPage": "https://poe2db.tw/de/Staves",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1",
+      "nameEn": "Warding Quarterstaff",
+      "germanPage": "https://poe2db.tw/de/Quarterstaves",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1",
+      "nameEn": "Aberrant Sledge",
+      "germanPage": "https://poe2db.tw/de/Two_Hand_Maces",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Armours/BodyArmours/FourBodyStrIntUnique1",
+      "nameEn": "Ornate Ringmail",
+      "germanPage": "https://poe2db.tw/de/Body_Armours",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Armours/BodyArmours/FourBodyDexIntUnique1",
+      "nameEn": "Primal Markings",
+      "germanPage": "https://poe2db.tw/de/Body_Armours",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Armours/Helmets/FourHelmetStrIntUnique1",
+      "nameEn": "Tenebrous Crown",
+      "germanPage": "https://poe2db.tw/de/Helmets",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Armours/Gloves/FourGlovesStrDexUnique1",
+      "nameEn": "Ancient Gauntlets",
+      "germanPage": "https://poe2db.tw/de/Gloves",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Armours/Gloves/FourGlovesStrIntUnique1",
+      "nameEn": "Tethering Bands",
+      "germanPage": "https://poe2db.tw/de/Gloves",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Amulets/FourAmuletB2",
+      "nameEn": "Corona Amulet",
+      "germanPage": "https://poe2db.tw/de/Amulets",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRing13a",
+      "nameEn": "Two-Stone Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRing13b",
+      "nameEn": "Two-Stone Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRing13c",
+      "nameEn": "Two-Stone Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRingB1",
+      "nameEn": "Biostatic Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRingB2",
+      "nameEn": "Vitalic Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRingB3",
+      "nameEn": "Mnemonic Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRingB4",
+      "nameEn": "Kinetic Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRingB5",
+      "nameEn": "Oneiric Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Rings/FourRingB6",
+      "nameEn": "Grasping Ring",
+      "germanPage": "https://poe2db.tw/de/Rings",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Belts/FourBeltB2",
+      "nameEn": "Invoking Belt",
+      "germanPage": "https://poe2db.tw/de/Belts",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Belts/FourBeltB3",
+      "nameEn": "Sinew Belt",
+      "germanPage": "https://poe2db.tw/de/Belts",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    },
+    {
+      "baseId": "Metadata/Items/Belts/FourBeltB4",
+      "nameEn": "Forking Belt",
+      "germanPage": "https://poe2db.tw/de/Belts",
+      "foundGermanName": null,
+      "reason": "Auf der deutschen PoE2DB-Seite wurde kein Basisdatensatz mit derselben stabilen Metadata-ID gefunden."
+    }
+  ],
+  "missingImplicitTexts": [
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpear12",
+      "itemClass": "Spear",
+      "implicitIndex": 1,
+      "germanPage": "https://poe2db.tw/de/Spears"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7",
+      "itemClass": "Bow",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Bows"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Cruel",
+      "itemClass": "Bow",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Bows"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Bows/FourBow7Endgame",
+      "itemClass": "Bow",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Bows"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4",
+      "itemClass": "Warstaff",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Quarterstaves"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Cruel",
+      "itemClass": "Warstaff",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Quarterstaves"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Endgame",
+      "itemClass": "Warstaff",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Quarterstaves"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/FourTwoHandAxe10",
+      "itemClass": "Two Hand Axe",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Two_Hand_Axes"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2",
+      "itemClass": "One Hand Mace",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/One_Hand_Maces"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Cruel",
+      "itemClass": "One Hand Mace",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/One_Hand_Maces"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/FourOneHandMace2Endgame",
+      "itemClass": "One Hand Mace",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/One_Hand_Maces"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/Daggers/FourDagger5",
+      "itemClass": "Dagger",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Daggers"
+    },
+    {
+      "baseId": "Metadata/Items/Weapons/OneHandWeapons/Flails/FourFlail10",
+      "itemClass": "Flail",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Flails"
+    },
+    {
+      "baseId": "Metadata/Items/Armours/Gloves/FourGlovesDexIntAscendancy",
+      "itemClass": "Gloves",
+      "implicitIndex": 0,
+      "germanPage": "https://poe2db.tw/de/Gloves"
+    }
+  ],
+  "counts": {
+    "germanBaseNames": 919,
+    "englishBaseFallbacks": 24,
+    "missingImplicitTexts": 14,
+    "germanModifierTexts": 1645,
+    "englishModifierFallbacks": 162
+  }
+}

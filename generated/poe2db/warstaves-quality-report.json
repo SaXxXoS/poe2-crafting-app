@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:50:46.383Z",
+  "generatedAt": "2026-07-18T09:36:49.730Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Warstaff.",
@@ -55,6 +55,16 @@
     ],
     "missingGermanImplicits": [
       {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4",
+        "baseNameEn": "Crackling Quarterstaff",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Cruel",
+        "baseNameEn": "Arcing Quarterstaff",
+        "textEn": null
+      },
+      {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2a",
         "baseNameEn": "Runeforged Long Quarterstaff",
         "textEn": "16% increased Melee Strike Range with this weapon"
@@ -67,22 +77,32 @@
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium2b",
         "baseNameEn": "Runemastered Long Quarterstaff",
-        "textEn": "local weapon implicit hidden % base damage is cold [100]"
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3a",
         "baseNameEn": "Runeforged Gothic Quarterstaff",
-        "textEn": "local weapon implicit hidden % base damage is fire [100]"
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium3b",
+        "baseNameEn": "Runemastered Gothic Quarterstaff",
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
         "baseNameEn": "Runeforged Crescent Quarterstaff",
-        "textEn": "local weapon implicit hidden % base damage is cold [50]"
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffVerisium5",
         "baseNameEn": "Runeforged Crescent Quarterstaff",
-        "textEn": "local weapon implicit hidden % base damage is lightning [50]"
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaff4Endgame",
+        "baseNameEn": "Bolting Quarterstaff",
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/Staves/FourQuarterstaffUnique1",

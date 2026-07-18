@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:50:49.203Z",
+  "generatedAt": "2026-07-18T09:37:01.254Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Two Hand Mace.",
@@ -100,12 +100,12 @@
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4a",
         "baseNameEn": "Runeforged Studded Greatclub",
-        "textEn": "local weapon implicit hidden % base damage is lightning [75]"
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium4b",
         "baseNameEn": "Runemastered Studded Greatclub",
-        "textEn": "local weapon implicit hidden % base damage is lightning [75]"
+        "textEn": null
       },
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceVerisium5",
@@ -135,7 +135,7 @@
       {
         "baseId": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/FourTwoHandMaceUnique1VerisiumUnique4",
         "baseNameEn": "Runemastered Aberrant Sledge",
-        "textEn": "local weapon implicit hidden % base damage is cold [80]"
+        "textEn": null
       }
     ],
     "missingGermanModifierTexts": [],

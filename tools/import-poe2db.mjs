@@ -121,6 +121,12 @@ function decodeHtml(value) {
     .trim();
 }
 
+function visibleModText(value) {
+  const withoutTechnicalStats = String(value ?? "")
+    .replace(/<span class=["']secondary["']>[\s\S]*?<\/span>\s*(?:<br\s*\/?>)?/gi, "");
+  return decodeHtml(withoutTechnicalStats) || null;
+}
+
 async function download(config, language, url, snapshotKey = config.key) {
   const filePath = path.join(rawRoot, `${language}-${snapshotKey}.html`);
 
@@ -231,7 +237,7 @@ function parseBasePage(html, config) {
       .map(match => decodeHtml(match[1]));
     const requirementMatch = chunk.match(/<div class="requirements">([\s\S]*?)<\/div>/i);
     const implicits = [...chunk.matchAll(/<div class="implicitMod">([\s\S]*?)<\/div>/gi)]
-      .map(match => decodeHtml(match[1]));
+      .map(match => visibleModText(match[1]));
     const physical = properties.find(value => /Physical.*Damage|Physischer Schaden/i.test(value));
 
     bases.push({

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "Jewel",
   "source": {
     "site": "PoE2DB",
@@ -312,8 +312,8 @@
       },
       "implicits": [
         {
-          "textEn": "local jewel effect base radius [1000]",
-          "textDe": "local jewel effect base radius [1000]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 20,
@@ -361,8 +361,8 @@
       },
       "implicits": [
         {
-          "textEn": "local jewel effect base radius [1000]",
-          "textDe": "local jewel effect base radius [1000]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 20,
@@ -410,8 +410,8 @@
       },
       "implicits": [
         {
-          "textEn": "local jewel effect base radius [1000]",
-          "textDe": "local jewel effect base radius [1000]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 20,
@@ -459,8 +459,8 @@
       },
       "implicits": [
         {
-          "textEn": "local jewel effect base radius [1000]",
-          "textDe": "local jewel effect base radius [1000]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 20,

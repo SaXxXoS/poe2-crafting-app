@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-17T23:50:40.675Z",
+  "generatedAt": "2026-07-18T09:36:32.102Z",
   "scope": "Crossbow",
   "source": {
     "site": "PoE2DB",
@@ -1122,8 +1122,8 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden % base damage is cold [45]",
-          "textDe": "local weapon implicit hidden % base damage is cold [45]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 38,
@@ -1293,12 +1293,12 @@
       },
       "implicits": [
         {
-          "textEn": "local weapon implicit hidden added maximum lightning damage [67] local weapon implicit hidden added minimum lightning damage [0]",
-          "textDe": "local weapon implicit hidden added maximum lightning damage [67] local weapon implicit hidden added minimum lightning damage [0]"
+          "textEn": null,
+          "textDe": null
         },
         {
-          "textEn": "local weapon implicit hidden % base damage is lightning [85]",
-          "textDe": "local weapon implicit hidden % base damage is lightning [85]"
+          "textEn": null,
+          "textDe": null
         }
       ],
       "dropLevel": 38,

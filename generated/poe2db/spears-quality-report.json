@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-17T23:50:41.361Z",
+  "generatedAt": "2026-07-18T09:36:34.007Z",
   "methodology": {
     "baseMetadata": "RePoE base_items raw data, joined by the PoE2DB Metadata ID.",
     "modifierSelection": "PoE2DB embedded ModsView JSON for Spear.",
@@ -23,6 +23,11 @@
     ],
     "missingGermanImplicits": [
       {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpear12",
+        "baseNameEn": "Striking Spear",
+        "textEn": null
+      },
+      {
         "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpearVerisium3",
         "baseNameEn": "Runeforged Hunting Spear",
         "textEn": "Grants Skill: Spear Throw"
@@ -31,6 +36,16 @@
         "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpearVerisium3",
         "baseNameEn": "Runeforged Hunting Spear",
         "textEn": "(15—25)% chance to Maim on Hit"
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpearVerisium4",
+        "baseNameEn": "Runeforged Winged Spear",
+        "textEn": null
+      },
+      {
+        "baseId": "Metadata/Items/Weapons/OneHandWeapons/OneHandSpears/FourSpearVerisium7",
+        "baseNameEn": "Runeforged Barbed Spear",
+        "textEn": null
       }
     ],
     "missingGermanModifierTexts": [],
