@@ -8,6 +8,10 @@ const { CURRENT_MAX_ITEM_LEVEL } = require("../app-config.js");
 const root = path.resolve(__dirname, "..");
 const reportFile = path.join(root, "generated/poe2db/app/audit/affix-group-ui.json");
 const parityReportFile = path.join(root, "generated/poe2db/app/audit/affix-tier-parity.json");
+const basesByClass = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app/bases.json"), "utf8")).bases.reduce((map, base) => {
+  (map[base.itemClass] ||= []).push(base.id);
+  return map;
+}, {});
 const samples = [
   ["weapon", "Spear"], ["weapon", "Bow"], ["weapon", "Crossbow"], ["weapon", "Wand"],
   ["armour", "Body Armour"], ["jewellery", "Ring"], ["jewellery", "Jewel"]
@@ -23,7 +27,8 @@ let browser;
   page.on("pageerror", error => consoleErrors.push(error.message));
   await page.goto(process.env.EXILEFORGE_TEST_URL || "http://127.0.0.1:8765/index.html", { waitUntil: "networkidle" });
   await page.waitForSelector("#dataStatus.success", { timeout: 30000 });
-  const setSelect = (selector, value) => page.locator(selector).evaluate((element, next) => { element.value = next; element.dispatchEvent(new Event("change", { bubbles: true })); }, value);
+  await page.waitForFunction(() => Boolean(document.querySelector("#basePicker")?.dataset.baseId && !document.querySelector("#basePicker")?.disabled), null, { timeout: 10000 });
+  const setSelect = (selector, value) => page.locator(selector).evaluate((element, next) => { if (element.value === next) return; element.value = next; element.dispatchEvent(new Event("change", { bubbles: true })); }, value);
   const desktopClasses = [];
   const observedBadges = new Set();
 
@@ -31,7 +36,7 @@ let browser;
     await setSelect("#category", category);
     await page.waitForSelector(`#itemClass option[value="${itemClass}"]`, { state: "attached" });
     await setSelect("#itemClass", itemClass);
-    await page.waitForFunction(expected => document.querySelector("#itemClass")?.value === expected && document.querySelector("#basePicker")?.dataset.baseId, itemClass);
+    await page.waitForFunction(({ expected, baseIds }) => document.querySelector("#itemClass")?.value === expected && baseIds.includes(document.querySelector("#basePicker")?.dataset.baseId), { expected: itemClass, baseIds: basesByClass[itemClass] }, { timeout: 10000 });
     await page.locator("#ilevel").evaluate((element, level) => { element.value = String(level); element.dispatchEvent(new Event("input", { bubbles: true })); }, CURRENT_MAX_ITEM_LEVEL);
     const result = { itemClass, prefixGroups: 0, suffixGroups: 0, prefixTiers: 0, suffixTiers: 0 };
     for (const [type, selector] of [["prefix", "#prefixSlots"], ["suffix", "#suffixSlots"]]) {
@@ -86,7 +91,10 @@ let browser;
   await page.waitForSelector("#modResults .affix-family");
   const highCount = await page.locator("#modResults .affix-tier-row").count();
   await page.locator("#ilevel").evaluate(element => { element.value = "1"; element.dispatchEvent(new Event("input", { bubbles: true })); });
-  await page.waitForTimeout(50);
+  await page.waitForFunction(previousCount => {
+    const tiers = [...document.querySelectorAll("#modResults .affix-tier-row")];
+    return tiers.length < previousCount && tiers.every(element => Number(element.dataset.requiredLevel) <= 1);
+  }, highCount, { timeout: 10000 });
   const lowCount = await page.locator("#modResults .affix-tier-row").count();
   if (!(lowCount < highCount)) throw new Error(`Item-Level-Filter unwirksam: ilvl1=${lowCount}, ilvl${CURRENT_MAX_ITEM_LEVEL}=${highCount}`);
   await page.keyboard.press("Escape");

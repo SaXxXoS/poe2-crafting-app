@@ -28,14 +28,20 @@ jobs:
           node --max-old-space-size=4096 tools/import-poe2db.mjs --offline
           node tools/import-poe2db-crafting.mjs --offline
 
-      - name: PoE2DB-App-Adapter erzeugen und prüfen
+      - name: PoE2DB-App-Daten erzeugen
         run: |
           node tools/build-poe2db-app-adapter.mjs
           node tools/build-poe2db-affix-groups.mjs
+
+      - name: Coverage-Audits ausführen
+        run: |
           node tools/validate-poe2db-app.mjs
           node tools/audit-poe2db-app.mjs
           node tools/validate-poe2db-audit.mjs
           node tools/audit-poe2db-affix-groups.mjs
+
+      - name: Tier-Paritätsaudit ausführen
+        run: |
           node tools/audit-poe2db-affix-tier-parity.mjs
 
       - name: Import prüfen
@@ -44,6 +50,20 @@ jobs:
           node -e "const c=require('./generated/poe2db/crafting/index.json');const q=require('./generated/poe2db/crafting/quality-report.json');for(const [key,value] of Object.entries(c.counts))if(!value)throw new Error('Leere Crafting-Kategorie: '+key);if(q.ambiguousMappings.length)throw new Error('Mehrdeutige Crafting-Zuordnungen');if(!q.validation.normalPoolsSeparated||!q.validation.essenceOnlySeparated||!q.validation.desecratedSeparated)throw new Error('Spezialmods nicht getrennt')"
           test -f generated/poe2db/manifest.json
           test -f generated/poe2db/crafting/manifest.json
+
+      - name: Browser- und UI-Tests ausführen
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.61.1
+          npx playwright install --with-deps chromium
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/exileforge-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          node tools/test-poe2db-app-browser.cjs
+          node tools/test-affix-grouped-ui-browser.cjs
+          node tools/audit-poe2db-app-browser.cjs
+
+      - name: Season Readiness Audit ausführen
+        run: npm run audit:season-readiness
 
       - name: Importierte Daten speichern
         run: |
