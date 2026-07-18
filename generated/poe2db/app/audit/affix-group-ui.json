@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-18T12:41:40.770Z",
+  "groupingIdentity": "generationType + sorted RePoE mod groups + sorted RePoE stat IDs",
+  "counts": {
+    "groups": 495,
+    "tiers": 1897,
+    "classes": 28,
+    "essenceTiers": 109,
+    "desecrationTiers": 205,
+    "craftedTiers": 44
+  },
+  "classes": [
+    {
+      "itemClass": "Spear",
+      "bases": 28,
+      "groups": 38,
+      "tiers": 176,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 83,
+        "82": 176,
+        "86": 176
+      }
+    },
+    {
+      "itemClass": "Bow",
+      "bases": 27,
+      "groups": 40,
+      "tiers": 159,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 71,
+        "82": 159,
+        "86": 159
+      }
+    },
+    {
+      "itemClass": "Crossbow",
+      "bases": 27,
+      "groups": 39,
+      "tiers": 163,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 75,
+        "82": 163,
+        "86": 163
+      }
+    },
+    {
+      "itemClass": "Wand",
+      "bases": 15,
+      "groups": 45,
+      "tiers": 201,
+      "visibleTiersAtItemLevel": {
+        "1": 7,
+        "40": 96,
+        "82": 201,
+        "86": 201
+      }
+    },
+    {
+      "itemClass": "Staff",
+      "bases": 17,
+      "groups": 43,
+      "tiers": 200,
+      "visibleTiersAtItemLevel": {
+        "1": 7,
+        "40": 96,
+        "82": 200,
+        "86": 200
+      }
+    },
+    {
+      "itemClass": "Warstaff",
+      "bases": 28,
+      "groups": 34,
+      "tiers": 169,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 81,
+        "82": 169,
+        "86": 169
+      }
+    },
+    {
+      "itemClass": "One Hand Sword",
+      "bases": 16,
+      "groups": 28,
+      "tiers": 163,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 81,
+        "82": 163,
+        "86": 163
+      }
+    },
+    {
+      "itemClass": "Two Hand Sword",
+      "bases": 14,
+      "groups": 28,
+      "tiers": 163,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 81,
+        "82": 163,
+        "86": 163
+      }
+    },
+    {
+      "itemClass": "One Hand Axe",
+      "bases": 13,
+      "groups": 27,
+      "tiers": 155,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 77,
+        "82": 155,
+        "86": 155
+      }
+    },
+    {
+      "itemClass": "Two Hand Axe",
+      "bases": 13,
+      "groups": 27,
+      "tiers": 155,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 77,
+        "82": 155,
+        "86": 155
+      }
+    },
+    {
+      "itemClass": "One Hand Mace",
+      "bases": 27,
+      "groups": 37,
+      "tiers": 165,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 77,
+        "82": 165,
+        "86": 165
+      }
+    },
+    {
+      "itemClass": "Two Hand Mace",
+      "bases": 27,
+      "groups": 37,
+      "tiers": 165,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 77,
+        "82": 165,
+        "86": 165
+      }
+    },
+    {
+      "itemClass": "Dagger",
+      "bases": 14,
+      "groups": 28,
+      "tiers": 163,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 81,
+        "82": 163,
+        "86": 163
+      }
+    },
+    {
+      "itemClass": "Claw",
+      "bases": 13,
+      "groups": 27,
+      "tiers": 155,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 77,
+        "82": 155,
+        "86": 155
+      }
+    },
+    {
+      "itemClass": "Flail",
+      "bases": 13,
+      "groups": 28,
+      "tiers": 163,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 81,
+        "82": 163,
+        "86": 163
+      }
+    },
+    {
+      "itemClass": "Sceptre",
+      "bases": 16,
+      "groups": 23,
+      "tiers": 151,
+      "visibleTiersAtItemLevel": {
+        "1": 11,
+        "40": 79,
+        "82": 151,
+        "86": 151
+      }
+    },
+    {
+      "itemClass": "Body Armour",
+      "bases": 156,
+      "groups": 57,
+      "tiers": 336,
+      "visibleTiersAtItemLevel": {
+        "1": 18,
+        "40": 147,
+        "82": 336,
+        "86": 336
+      }
+    },
+    {
+      "itemClass": "Helmet",
+      "bases": 115,
+      "groups": 63,
+      "tiers": 298,
+      "visibleTiersAtItemLevel": {
+        "1": 18,
+        "40": 149,
+        "82": 298,
+        "86": 298
+      }
+    },
+    {
+      "itemClass": "Gloves",
+      "bases": 92,
+      "groups": 66,
+      "tiers": 310,
+      "visibleTiersAtItemLevel": {
+        "1": 25,
+        "40": 156,
+        "82": 310,
+        "86": 310
+      }
+    },
+    {
+      "itemClass": "Boots",
+      "bases": 90,
+      "groups": 52,
+      "tiers": 258,
+      "visibleTiersAtItemLevel": {
+        "1": 20,
+        "40": 133,
+        "82": 258,
+        "86": 258
+      }
+    },
+    {
+      "itemClass": "Shield",
+      "bases": 68,
+      "groups": 50,
+      "tiers": 219,
+      "visibleTiersAtItemLevel": {
+        "1": 15,
+        "40": 87,
+        "82": 219,
+        "86": 219
+      }
+    },
+    {
+      "itemClass": "Buckler",
+      "bases": 23,
+      "groups": 30,
+      "tiers": 129,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 53,
+        "82": 129,
+        "86": 129
+      }
+    },
+    {
+      "itemClass": "Focus",
+      "bases": 23,
+      "groups": 38,
+      "tiers": 157,
+      "visibleTiersAtItemLevel": {
+        "1": 9,
+        "40": 75,
+        "82": 157,
+        "86": 157
+      }
+    },
+    {
+      "itemClass": "Quiver",
+      "bases": 11,
+      "groups": 20,
+      "tiers": 104,
+      "visibleTiersAtItemLevel": {
+        "1": 10,
+        "40": 50,
+        "82": 104,
+        "86": 104
+      }
+    },
+    {
+      "itemClass": "Amulet",
+      "bases": 16,
+      "groups": 64,
+      "tiers": 241,
+      "visibleTiersAtItemLevel": {
+        "1": 16,
+        "40": 102,
+        "82": 241,
+        "86": 241
+      }
+    },
+    {
+      "itemClass": "Ring",
+      "bases": 22,
+      "groups": 55,
+      "tiers": 227,
+      "visibleTiersAtItemLevel": {
+        "1": 21,
+        "40": 116,
+        "82": 227,
+        "86": 227
+      }
+    },
+    {
+      "itemClass": "Belt",
+      "bases": 15,
+      "groups": 37,
+      "tiers": 155,
+      "visibleTiersAtItemLevel": {
+        "1": 13,
+        "40": 74,
+        "82": 155,
+        "86": 155
+      }
+    },
+    {
+      "itemClass": "Jewel",
+      "bases": 8,
+      "groups": 202,
+      "tiers": 359,
+      "visibleTiersAtItemLevel": {
+        "1": 359,
+        "40": 359,
+        "82": 359,
+        "86": 359
+      }
+    }
+  ],
+  "validation": {
+    "groupsWithoutNames": [],
+    "incorrectlyMergedTechnicalGroups": [],
+    "tiersWithoutModIds": [],
+    "unverifiableCraftingSources": [],
+    "normalDespiteZeroWeight": [],
+    "unreachableButVisibleTiers": []
+  },
+  "browserTest": {
+    "status": "passed",
+    "desktopClasses": [
+      {
+        "itemClass": "Bow",
+        "prefixGroups": 19,
+        "suffixGroups": 21,
+        "prefixTiers": 82,
+        "suffixTiers": 77
+      },
+      {
+        "itemClass": "Two Hand Sword",
+        "prefixGroups": 11,
+        "suffixGroups": 17,
+        "prefixTiers": 73,
+        "suffixTiers": 90
+      },
+      {
+        "itemClass": "Wand",
+        "prefixGroups": 13,
+        "suffixGroups": 21,
+        "prefixTiers": 58,
+        "suffixTiers": 76
+      },
+      {
+        "itemClass": "Body Armour",
+        "prefixGroups": 9,
+        "suffixGroups": 20,
+        "prefixTiers": 61,
+        "suffixTiers": 93
+      },
+      {
+        "itemClass": "Gloves",
+        "prefixGroups": 10,
+        "suffixGroups": 31,
+        "prefixTiers": 83,
+        "suffixTiers": 113
+      },
+      {
+        "itemClass": "Ring",
+        "prefixGroups": 22,
+        "suffixGroups": 33,
+        "prefixTiers": 109,
+        "suffixTiers": 118
+      },
+      {
+        "itemClass": "Jewel",
+        "prefixGroups": 59,
+        "suffixGroups": 27,
+        "prefixTiers": 59,
+        "suffixTiers": 27
+      }
+    ],
+    "itemLevelFilter": {
+      "level1": {
+        "prefixes": 5,
+        "suffixes": 5
+      },
+      "currentMaximum": 86,
+      "maximum": {
+        "prefixes": 82,
+        "suffixes": 77
+      }
+    },
+    "maximumInput": {
+      "max": 86,
+      "value": 86
+    },
+    "observedBadges": [
+      "Crafted",
+      "Desecration",
+      "Essenz",
+      "Normal"
+    ],
+    "mobile": {
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "sheetWidth": 390,
+      "groupHeight": 37
+    },
+    "consoleErrors": []
+  },
+  "passed": true
+}

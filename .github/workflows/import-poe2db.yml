@@ -31,9 +31,11 @@ jobs:
       - name: PoE2DB-App-Adapter erzeugen und prüfen
         run: |
           node tools/build-poe2db-app-adapter.mjs
+          node tools/build-poe2db-affix-groups.mjs
           node tools/validate-poe2db-app.mjs
           node tools/audit-poe2db-app.mjs
           node tools/validate-poe2db-audit.mjs
+          node tools/audit-poe2db-affix-groups.mjs
 
       - name: Import prüfen
         run: |

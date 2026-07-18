@@ -2,6 +2,7 @@
   'use strict';
 
   const $ = id => document.getElementById(id);
+  const CURRENT_MAX_ITEM_LEVEL = window.EXILEFORGE_CONFIG.CURRENT_MAX_ITEM_LEVEL;
 
   const APP_DATA_ROOT = './generated/poe2db/app';
   const PRICE_ITEMS = [
@@ -158,6 +159,7 @@
       classById: new Map(),
       mods: [],
       modsById: new Map(),
+      affixGroups: [],
       poolFiles: {},
       loadedPools: new Map(),
       crafting: {}
@@ -201,6 +203,16 @@
       .replace(/[^a-z0-9äöüß+%–-]+/g, ' ')
       .replace(/\s+/g, ' ')
       .trim();
+  }
+
+  function currentItemLevel() {
+    return Math.min(CURRENT_MAX_ITEM_LEVEL, Math.max(1, Number($('ilevel').value) || 1));
+  }
+
+  function enforceItemLevelLimit() {
+    const input = $('ilevel');
+    input.max = String(CURRENT_MAX_ITEM_LEVEL);
+    input.value = String(currentItemLevel());
   }
 
   function formatInternalName(value) {
@@ -500,11 +512,15 @@
     const bases = (baseDocument.bases || []).map(adaptBase);
     const mods = (modDocument.mods || []).map(adaptMod).filter(mod => mod.visible);
     const classes = indexDocument.classes || [];
+    const affixGroupDocument = indexDocument.affixGroupsFile
+      ? await fetchJson(`${APP_DATA_ROOT}/${indexDocument.affixGroupsFile}`)
+      : { groups: [] };
 
     state.data.bases = bases;
     state.data.basesById = new Map(bases.map(base => [base.id, base]));
     state.data.mods = mods;
     state.data.modsById = new Map(mods.map(mod => [mod.id, mod]));
+    state.data.affixGroups = affixGroupDocument.groups || [];
     state.data.classes = classes;
     state.data.classById = new Map(classes.map(itemClass => [itemClass.id, itemClass]));
     state.data.poolFiles = indexDocument.poolFiles || {};
@@ -656,7 +672,7 @@
         <div>
           <h3>${base.name}</h3>
           <div class="base-subtitle">
-            ${CLASS_LABELS_DE[base.itemClass] || base.itemClassName || base.itemClass} · Item-Level ${Number($('ilevel').value) || 1}
+            ${CLASS_LABELS_DE[base.itemClass] || base.itemClassName || base.itemClass} · Item-Level ${currentItemLevel()}
           </div>
         </div>
         <span class="verified">Live-Daten</span>
@@ -712,7 +728,7 @@
   }
 
   function removeInvalidSelections() {
-    const itemLevel = Number($('ilevel').value) || 1;
+    const itemLevel = currentItemLevel();
 
     ['prefix', 'suffix'].forEach(type => {
       state[type] = state[type].map(mod =>
@@ -865,7 +881,7 @@
   async function availableMods() {
     const pool = await poolForCurrentBase();
     const rows = state.activeType === 'prefix' ? pool.p || [] : pool.s || [];
-    const itemLevel = Number($('ilevel').value) || 1;
+    const itemLevel = currentItemLevel();
     const query = normalizeText($('modSearch').value);
 
     const current = state[state.activeType][state.activeIndex];
@@ -903,11 +919,108 @@
       );
   }
 
+  function orderedWeight(rules, baseTags) {
+    if (!Array.isArray(rules) || rules.length === 0) return 1;
+    const tags = new Set(baseTags || []);
+    const match = rules.find(rule => tags.has(rule.tag));
+    return Number(match?.weight ?? 0);
+  }
+
+  function specialTierAllowed(tier, base) {
+    if (!(tier.specialClasses || []).includes(base.itemClass)) return false;
+    if ((tier.requiredBaseNamesEn || []).length &&
+        !(tier.requiredBaseNamesEn || []).includes(base.nameEn)) return false;
+    return orderedWeight(tier.spawnWeights, base.tags) > 0 &&
+      orderedWeight(tier.generationWeights, base.tags) > 0;
+  }
+
+  function selectableModFromTier(group, tier, spawnWeight) {
+    const regular = state.data.modsById.get(tier.modId);
+    if (regular) {
+      return {
+        ...regular,
+        group: group.familyId,
+        lvl: Number(tier.requiredLevel || 0),
+        spawnWeight
+      };
+    }
+    return {
+      id: tier.modId,
+      name: tier.displayText,
+      displayText: tier.displayText,
+      range: tier.valueSummary || '',
+      tier: tier.tier ? `Tier ${tier.tier} · ab Item-Level ${tier.requiredLevel}` : `ab Item-Level ${tier.requiredLevel}`,
+      lvl: Number(tier.requiredLevel || 0),
+      group: group.familyId,
+      generationType: group.generationType,
+      spawnWeight,
+      visible: Boolean(tier.displayText),
+      raw: tier
+    };
+  }
+
+  async function availableModGroups() {
+    const base = currentBase();
+    if (!base) return [];
+    const pool = await poolForCurrentBase();
+    const rows = state.activeType === 'prefix' ? pool.p || [] : pool.s || [];
+    const poolById = new Map(rows.map(([id, level, weight], order) =>
+      [id, { level: Number(level || 0), weight: Number(weight || 0), order }]
+    ));
+    const itemLevel = currentItemLevel();
+    const query = normalizeText($('modSearch').value);
+    const current = state[state.activeType][state.activeIndex];
+    const usedGroups = new Set(
+      [...state.prefix, ...state.suffix]
+        .filter(Boolean)
+        .filter(mod => mod !== current)
+        .map(mod => mod.group)
+    );
+
+    return state.data.affixGroups
+      .filter(group => group.generationType === state.activeType && !usedGroups.has(group.familyId))
+      .map(group => {
+        const groupMatches = normalizeText(group.displayName).includes(query);
+        const tiers = group.tiers.map(tier => {
+          const poolRow = poolById.get(tier.modId);
+          const regularAllowed = Boolean(poolRow && poolRow.weight > 0);
+          const specialAllowed = specialTierAllowed(tier, base);
+          if (!regularAllowed && !specialAllowed) return null;
+          const requiredLevel = Number(poolRow?.level ?? tier.requiredLevel ?? 0);
+          if (requiredLevel > itemLevel) return null;
+          const tierMatches = normalizeText(`${tier.displayText} ${tier.valueSummary} ${tier.tier}`).includes(query);
+          if (query && !groupMatches && !tierMatches) return null;
+          const sources = [];
+          if (regularAllowed) sources.push({ type: 'Normal', sourceId: tier.sourceKey });
+          for (const source of tier.craftingSources || []) {
+            if (specialAllowed || regularAllowed) sources.push(source);
+          }
+          return {
+            ...tier,
+            requiredLevel,
+            spawnWeight: poolRow?.weight ?? orderedWeight(tier.spawnWeights, base.tags),
+            sources,
+            order: poolRow?.order ?? Number.MAX_SAFE_INTEGER,
+            selection: selectableModFromTier(group, { ...tier, requiredLevel }, poolRow?.weight ?? 1)
+          };
+        }).filter(Boolean);
+        if (!tiers.length) return null;
+        return {
+          ...group,
+          tiers,
+          autoExpand: Boolean(query),
+          order: Math.min(...tiers.map(tier => tier.order))
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.order - b.order || a.displayName.localeCompare(b.displayName, 'de'));
+  }
+
   async function renderModResults() {
     const type = state.activeType;
     const index = state.activeIndex;
     const selected = state[type][index];
-    const list = await availableMods();
+    const list = await availableModGroups();
 
     $('modResults').innerHTML = '';
 
@@ -939,29 +1052,50 @@
       return;
     }
 
-    list.forEach(mod => {
-      const row = document.createElement('div');
-      row.className = 'result';
-      row.dataset.modId = mod.id;
-      const weightText = mod.spawnWeight > 0
-        ? ` · Spawn-Gewicht ${mod.spawnWeight}`
-        : '';
+    list.forEach(group => {
+      const wrapper = document.createElement('section');
+      wrapper.className = 'affix-family';
+      wrapper.dataset.familyId = group.familyId;
+      const toggle = document.createElement('button');
+      toggle.className = 'affix-family-toggle';
+      toggle.type = 'button';
+      toggle.setAttribute('aria-expanded', String(group.autoExpand));
+      toggle.innerHTML = `<span class="affix-family-arrow">▸</span><b class="affix-family-name"></b><small>${group.tiers.length}</small>`;
+      toggle.querySelector('.affix-family-name').textContent = group.displayName;
+      const tierList = document.createElement('div');
+      tierList.className = 'affix-tier-list';
+      tierList.hidden = !group.autoExpand;
 
-      row.innerHTML = `
-        <div>
-          <b>${mod.name}</b>
-          <small>${mod.tier}${weightText}</small>
-        </div>
-        <button class="add" type="button">Wählen</button>
-      `;
-
-      row.querySelector('button').addEventListener('click', () => {
-        state[type][index] = mod;
-        renderSlots();
-        closeSheet('modSheet');
+      for (const tier of group.tiers) {
+        const tierRow = document.createElement('div');
+        tierRow.className = 'affix-tier-row';
+        tierRow.dataset.modId = tier.modId;
+        tierRow.dataset.sourceKey = tier.sourceKey;
+        tierRow.dataset.displayText = tier.displayText;
+        tierRow.dataset.normal = String(tier.sources.some(source => source.type === 'Normal'));
+        tierRow.dataset.requiredLevel = String(tier.requiredLevel);
+        const badges = tier.sources.map(source => `<span class="source-badge source-${normalizeText(source.type)}">${source.type}</span>`).join('');
+        tierRow.innerHTML = `
+          <div class="affix-tier-main">
+            <b>${tier.tier ? `T${tier.tier}` : 'Spezial'}</b>
+            <span>${tier.valueSummary || tier.displayText}</span>
+            <small>ilvl ${tier.requiredLevel}</small>
+          </div>
+          <div class="affix-tier-actions"><div class="affix-tier-badges">${badges}</div><button class="add" type="button">Wählen</button></div>`;
+        tierRow.querySelector('button').addEventListener('click', () => {
+          state[type][index] = tier.selection;
+          renderSlots();
+          closeSheet('modSheet');
+        });
+        tierList.appendChild(tierRow);
+      }
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(expanded));
+        tierList.hidden = !expanded;
       });
-
-      $('modResults').appendChild(row);
+      wrapper.append(toggle, tierList);
+      $('modResults').appendChild(wrapper);
     });
   }
 
@@ -1186,10 +1320,10 @@
       /\bilvl\s*[:\-]?\s*(\d{1,3})/i
     ]) {
       const match = rawText.match(pattern);
-      if (match) return Math.min(100, Math.max(1, Number(match[1])));
+      if (match) return Math.min(CURRENT_MAX_ITEM_LEVEL, Math.max(1, Number(match[1])));
     }
 
-    return Number($('ilevel').value) || 1;
+    return currentItemLevel();
   }
 
   function tokenise(value) {
@@ -1552,9 +1686,11 @@
     $('category').addEventListener('change', renderClassOptions);
     $('itemClass').addEventListener('change', renderBaseOptions);
     $('ilevel').addEventListener('input', () => {
+      enforceItemLevelLimit();
       removeInvalidSelections();
       renderBaseDetails();
       renderSlots();
+      if ($('modSheet').classList.contains('open')) renderModResults();
     });
 
     $('rarity').addEventListener('change', renderCurrentState);
@@ -1595,6 +1731,7 @@
   }
 
   async function init() {
+    enforceItemLevelLimit();
     bindEvents();
     renderCurrentState();
     renderSlots();

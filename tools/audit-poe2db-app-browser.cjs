@@ -3,6 +3,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
+const { CURRENT_MAX_ITEM_LEVEL } = require("../app-config.js");
 
 const root = path.resolve(__dirname, "..");
 const appRoot = path.join(root, "generated/poe2db/app");
@@ -47,7 +48,7 @@ let browser;
   await page.goto(process.env.EXILEFORGE_TEST_URL || "http://127.0.0.1:8765/index.html", { waitUntil: "networkidle" });
   await page.waitForSelector("#dataStatus.success", { timeout: 30000 });
   const setSelect = async (selector, value) => page.locator(selector).evaluate((element, next) => { element.value = next; element.dispatchEvent(new Event("change", { bubbles: true })); }, value);
-  await page.locator("#ilevel").evaluate(element => { element.value = "100"; element.dispatchEvent(new Event("input", { bubbles: true })); });
+  await page.locator("#ilevel").evaluate((element, level) => { element.value = String(level); element.dispatchEvent(new Event("input", { bubbles: true })); }, CURRENT_MAX_ITEM_LEVEL);
 
   const classes = [];
   for (const classEntry of index.classes) {
@@ -69,8 +70,8 @@ let browser;
       }
       for (const [type, selector, key] of [["prefix", "#prefixSlots", "p"], ["suffix", "#suffixSlots", "s"]]) {
         await page.locator(`${selector} .affix-slot`).first().dispatchEvent("click");
-        await page.waitForSelector('#modResults .result[data-mod-id]', { state: "attached", timeout: 10000 });
-        const rows = await page.locator('#modResults .result[data-mod-id]').evaluateAll(elements => elements.map(element => ({ id: element.dataset.modId, text: element.querySelector("b")?.textContent ?? "" })));
+        await page.waitForSelector('#modResults .affix-tier-row[data-normal="true"]', { state: "attached", timeout: 10000 });
+        const rows = await page.locator('#modResults .affix-tier-row[data-normal="true"]').evaluateAll(elements => elements.map(element => ({ id: element.dataset.modId, text: element.dataset.displayText ?? "" })));
         const actual = rows.map(row => row.id).sort();
         const expected = pools[baseId][key].map(row => row[0]).sort();
         if (JSON.stringify(actual) !== JSON.stringify(expected)) {

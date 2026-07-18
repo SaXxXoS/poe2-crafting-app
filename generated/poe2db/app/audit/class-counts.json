@@ -16,22 +16,6 @@
         "importPool": 92,
         "adapterPool": 92,
         "uiEligible": 92
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 92,
-          "imported": 24,
-          "importPool": 24,
-          "adapterPool": 24,
-          "uiEligible": 24
-        }
       }
     },
     {
@@ -49,22 +33,6 @@
         "importPool": 69,
         "adapterPool": 69,
         "uiEligible": 69
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 71,
-          "imported": 45,
-          "importPool": 45,
-          "adapterPool": 45,
-          "uiEligible": 45
-        },
-        "suffixes": {
-          "poe2db": 69,
-          "imported": 16,
-          "importPool": 16,
-          "adapterPool": 16,
-          "uiEligible": 16
-        }
       }
     },
     {
@@ -82,22 +50,6 @@
         "importPool": 75,
         "adapterPool": 75,
         "uiEligible": 75
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 71,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 75,
-          "imported": 22,
-          "importPool": 22,
-          "adapterPool": 22,
-          "uiEligible": 22
-        }
       }
     },
     {
@@ -115,22 +67,6 @@
         "importPool": 101,
         "adapterPool": 101,
         "uiEligible": 101
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 84,
-          "imported": 84,
-          "importPool": 84,
-          "adapterPool": 84,
-          "uiEligible": 84
-        },
-        "suffixes": {
-          "poe2db": 101,
-          "imported": 101,
-          "importPool": 101,
-          "adapterPool": 101,
-          "uiEligible": 101
-        }
       }
     },
     {
@@ -148,22 +84,6 @@
         "importPool": 101,
         "adapterPool": 101,
         "uiEligible": 101
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 84,
-          "imported": 84,
-          "importPool": 84,
-          "adapterPool": 84,
-          "uiEligible": 84
-        },
-        "suffixes": {
-          "poe2db": 101,
-          "imported": 101,
-          "importPool": 101,
-          "adapterPool": 101,
-          "uiEligible": 101
-        }
       }
     },
     {
@@ -181,22 +101,6 @@
         "importPool": 88,
         "adapterPool": 88,
         "uiEligible": 88
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 88,
-          "imported": 16,
-          "importPool": 16,
-          "adapterPool": 16,
-          "uiEligible": 16
-        }
       }
     },
     {
@@ -214,22 +118,6 @@
         "importPool": 88,
         "adapterPool": 88,
         "uiEligible": 88
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 88,
-          "imported": 16,
-          "importPool": 16,
-          "adapterPool": 16,
-          "uiEligible": 16
-        }
       }
     },
     {
@@ -247,22 +135,6 @@
         "importPool": 88,
         "adapterPool": 88,
         "uiEligible": 88
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 88,
-          "imported": 16,
-          "importPool": 16,
-          "adapterPool": 16,
-          "uiEligible": 16
-        }
       }
     },
     {
@@ -280,22 +152,6 @@
         "importPool": 80,
         "adapterPool": 80,
         "uiEligible": 80
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 80,
-          "imported": 8,
-          "importPool": 8,
-          "adapterPool": 8,
-          "uiEligible": 8
-        }
       }
     },
     {
@@ -313,22 +169,6 @@
         "importPool": 80,
         "adapterPool": 80,
         "uiEligible": 80
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 80,
-          "imported": 8,
-          "importPool": 8,
-          "adapterPool": 8,
-          "uiEligible": 8
-        }
       }
     },
     {
@@ -346,22 +186,6 @@
         "importPool": 80,
         "adapterPool": 80,
         "uiEligible": 80
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 80,
-          "imported": 8,
-          "importPool": 8,
-          "adapterPool": 8,
-          "uiEligible": 8
-        }
       }
     },
     {
@@ -379,22 +203,6 @@
         "importPool": 80,
         "adapterPool": 80,
         "uiEligible": 80
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 80,
-          "imported": 8,
-          "importPool": 8,
-          "adapterPool": 8,
-          "uiEligible": 8
-        }
       }
     },
     {
@@ -412,22 +220,6 @@
         "importPool": 88,
         "adapterPool": 88,
         "uiEligible": 88
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 88,
-          "imported": 16,
-          "importPool": 16,
-          "adapterPool": 16,
-          "uiEligible": 16
-        }
       }
     },
     {
@@ -445,22 +237,6 @@
         "importPool": 80,
         "adapterPool": 80,
         "uiEligible": 80
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 80,
-          "imported": 8,
-          "importPool": 8,
-          "adapterPool": 8,
-          "uiEligible": 8
-        }
       }
     },
     {
@@ -478,22 +254,6 @@
         "importPool": 88,
         "adapterPool": 88,
         "uiEligible": 88
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 30,
-          "importPool": 30,
-          "adapterPool": 30,
-          "uiEligible": 30
-        },
-        "suffixes": {
-          "poe2db": 88,
-          "imported": 16,
-          "importPool": 16,
-          "adapterPool": 16,
-          "uiEligible": 16
-        }
       }
     },
     {
@@ -511,22 +271,6 @@
         "importPool": 80,
         "adapterPool": 80,
         "uiEligible": 80
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 70,
-          "importPool": 70,
-          "adapterPool": 70,
-          "uiEligible": 70
-        },
-        "suffixes": {
-          "poe2db": 80,
-          "imported": 80,
-          "importPool": 80,
-          "adapterPool": 80,
-          "uiEligible": 80
-        }
       }
     },
     {
@@ -544,22 +288,6 @@
         "importPool": 110,
         "adapterPool": 110,
         "uiEligible": 110
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 213,
-          "imported": 213,
-          "importPool": 213,
-          "adapterPool": 213,
-          "uiEligible": 213
-        },
-        "suffixes": {
-          "poe2db": 110,
-          "imported": 80,
-          "importPool": 80,
-          "adapterPool": 80,
-          "uiEligible": 80
-        }
       }
     },
     {
@@ -577,22 +305,6 @@
         "importPool": 92,
         "adapterPool": 92,
         "uiEligible": 92
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 185,
-          "imported": 185,
-          "importPool": 185,
-          "adapterPool": 185,
-          "uiEligible": 185
-        },
-        "suffixes": {
-          "poe2db": 92,
-          "imported": 62,
-          "importPool": 62,
-          "adapterPool": 62,
-          "uiEligible": 62
-        }
       }
     },
     {
@@ -610,22 +322,6 @@
         "importPool": 113,
         "adapterPool": 113,
         "uiEligible": 113
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 174,
-          "imported": 174,
-          "importPool": 174,
-          "adapterPool": 174,
-          "uiEligible": 174
-        },
-        "suffixes": {
-          "poe2db": 113,
-          "imported": 83,
-          "importPool": 83,
-          "adapterPool": 83,
-          "uiEligible": 83
-        }
       }
     },
     {
@@ -643,22 +339,6 @@
         "importPool": 107,
         "adapterPool": 107,
         "uiEligible": 107
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 135,
-          "imported": 135,
-          "importPool": 135,
-          "adapterPool": 135,
-          "uiEligible": 135
-        },
-        "suffixes": {
-          "poe2db": 107,
-          "imported": 77,
-          "importPool": 77,
-          "adapterPool": 77,
-          "uiEligible": 77
-        }
       }
     },
     {
@@ -676,22 +356,6 @@
         "importPool": 114,
         "adapterPool": 114,
         "uiEligible": 114
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 87,
-          "imported": 87,
-          "importPool": 87,
-          "adapterPool": 87,
-          "uiEligible": 87
-        },
-        "suffixes": {
-          "poe2db": 114,
-          "imported": 68,
-          "importPool": 68,
-          "adapterPool": 68,
-          "uiEligible": 68
-        }
       }
     },
     {
@@ -709,22 +373,6 @@
         "importPool": 73,
         "adapterPool": 73,
         "uiEligible": 73
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 45,
-          "imported": 45,
-          "importPool": 45,
-          "adapterPool": 45,
-          "uiEligible": 45
-        },
-        "suffixes": {
-          "poe2db": 73,
-          "imported": 43,
-          "importPool": 43,
-          "adapterPool": 43,
-          "uiEligible": 43
-        }
       }
     },
     {
@@ -742,22 +390,6 @@
         "importPool": 70,
         "adapterPool": 70,
         "uiEligible": 70
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 70,
-          "imported": 70,
-          "importPool": 70,
-          "adapterPool": 70,
-          "uiEligible": 70
-        },
-        "suffixes": {
-          "poe2db": 70,
-          "imported": 40,
-          "importPool": 40,
-          "adapterPool": 40,
-          "uiEligible": 40
-        }
       }
     },
     {
@@ -775,22 +407,6 @@
         "importPool": 44,
         "adapterPool": 44,
         "uiEligible": 44
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 56,
-          "imported": 56,
-          "importPool": 56,
-          "adapterPool": 56,
-          "uiEligible": 56
-        },
-        "suffixes": {
-          "poe2db": 44,
-          "imported": 44,
-          "importPool": 44,
-          "adapterPool": 44,
-          "uiEligible": 44
-        }
       }
     },
     {
@@ -808,22 +424,6 @@
         "importPool": 128,
         "adapterPool": 128,
         "uiEligible": 128
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 81,
-          "imported": 81,
-          "importPool": 81,
-          "adapterPool": 81,
-          "uiEligible": 81
-        },
-        "suffixes": {
-          "poe2db": 128,
-          "imported": 128,
-          "importPool": 128,
-          "adapterPool": 128,
-          "uiEligible": 128
-        }
       }
     },
     {
@@ -841,22 +441,6 @@
         "importPool": 103,
         "adapterPool": 103,
         "uiEligible": 103
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 100,
-          "imported": 100,
-          "importPool": 100,
-          "adapterPool": 100,
-          "uiEligible": 100
-        },
-        "suffixes": {
-          "poe2db": 103,
-          "imported": 103,
-          "importPool": 103,
-          "adapterPool": 103,
-          "uiEligible": 103
-        }
       }
     },
     {
@@ -874,22 +458,6 @@
         "importPool": 82,
         "adapterPool": 82,
         "uiEligible": 82
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 53,
-          "imported": 53,
-          "importPool": 53,
-          "adapterPool": 53,
-          "uiEligible": 53
-        },
-        "suffixes": {
-          "poe2db": 82,
-          "imported": 82,
-          "importPool": 82,
-          "adapterPool": 82,
-          "uiEligible": 82
-        }
       }
     },
     {
@@ -907,22 +475,6 @@
         "importPool": 178,
         "adapterPool": 178,
         "uiEligible": 178
-      },
-      "baseline": {
-        "prefixes": {
-          "poe2db": 142,
-          "imported": 70,
-          "importPool": 70,
-          "adapterPool": 70,
-          "uiEligible": 70
-        },
-        "suffixes": {
-          "poe2db": 178,
-          "imported": 90,
-          "importPool": 90,
-          "adapterPool": 90,
-          "uiEligible": 90
-        }
       }
     }
   ]
