@@ -3,7 +3,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
-const { CURRENT_MAX_ITEM_LEVEL } = require("../app-config.js");
 
 const root = path.resolve(__dirname, "..");
 const appMods = JSON.parse(fs.readFileSync(path.join(root, "generated/poe2db/app/mods.json"), "utf8"));
@@ -26,6 +25,7 @@ const samples = [
 let browser;
 
 (async () => {
+  const { CURRENT_MAX_ITEM_LEVEL } = await import("../app-config-values.mjs");
   browser = await chromium.launch({
     headless: true,
     executablePath: process.env.PLAYWRIGHT_CHROME_PATH || undefined

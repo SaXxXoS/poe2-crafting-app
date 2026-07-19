@@ -1,6 +1,4 @@
-import "../../app-config.js";
-
-const { CURRENT_MAX_ITEM_LEVEL } = globalThis.EXILEFORGE_CONFIG;
+import { CURRENT_MAX_ITEM_LEVEL } from "../../app-config-values.mjs";
 
 export const ITEM_STATE_SCHEMA_VERSION = 1;
 export { CURRENT_MAX_ITEM_LEVEL };
