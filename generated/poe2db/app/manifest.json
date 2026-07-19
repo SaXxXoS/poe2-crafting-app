@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-18T10:54:43.831Z",
+  "generatedAt": "2026-07-19T06:43:50.830Z",
   "status": "poe2db-app-adapter-ready",
   "deprecatedSource": "generated/app-data is retained but no longer referenced by the application",
   "counts": {
@@ -8,9 +8,7 @@
     "referencedEquipmentMods": 1655,
     "poolFiles": 28,
     "poolBases": 947,
-    "craftingFiles": 6,
-    "affixGroups": 835,
-    "affixGroupTiers": 1897
+    "craftingFiles": 6
   },
   "files": {
     "bases.json": {
@@ -20,10 +18,10 @@
       "sha256": "5df8da371114ca9df6fcf96a2c3c5e6560f8a18d37d47a1bf5c2cfc2dc4d8b2c"
     },
     "index.json": {
-      "sha256": "c747985d739597d6f8be52416b7e7e2160c7ee356e13af01ff727444ed903ccb"
+      "sha256": "eef776460f2da8b6fd092903ce00cc43ffde5f2550ec21faeb41868ec47c1ff3"
     },
     "quality-report.json": {
-      "sha256": "f6f21071750d575dc769a390eaa85e01f396046b1a98c832bb262ad35965a851"
+      "sha256": "1a149d6b9c25c879c1c0386e0d8615a93e82690b5758303ea4b314b0094a2cb5"
     },
     "pools/spears.json": {
       "sha256": "61ac1ffd299384af75d2118a672a41ad9611ec34bb910b3085067d30ef2ae899"
@@ -108,38 +106,6 @@
     },
     "pools/jewels.json": {
       "sha256": "49ddaee6518c1a8f12ba63388db4ab2634276f151513b72bffcd1aea5cee350d"
-    },
-    "audit/class-counts.json": {
-      "sha256": "8970ec456d03c4fb566f53714395097dbe44865b8f6fa6a192715238da7dc6fa"
-    },
-    "audit/missing-from-import.json": {
-      "sha256": "b67a5db1d288084aa18221ca3ae57b3b7d6257d78d22143ebb5ffd202a9f3448"
-    },
-    "audit/missing-from-pools.json": {
-      "sha256": "1d4cfd65a6b59a00a5dff665fdd711f9b898ab257e8e38e975058db410153269"
-    },
-    "audit/missing-from-ui.json": {
-      "sha256": "1d4cfd65a6b59a00a5dff665fdd711f9b898ab257e8e38e975058db410153269"
-    },
-    "audit/unexpected-extra-mods.json": {
-      "sha256": "1d4cfd65a6b59a00a5dff665fdd711f9b898ab257e8e38e975058db410153269"
-    },
-    "audit/mod-family-coverage.json": {
-      "sha256": "b739f0d85b2bd73b961e72516f02a0c7a0970393c6665976bfcca662099e249a"
-    },
-    "audit/audit-summary.json": {
-      "sha256": "4f300fcce737618d58ab842be28f96c66a73ad3f45ac3e6aa9348c489ed97cee"
-    },
-    "audit/browser-dom-results.json": {
-      "sha256": "ebb0509409aa5f749e7412d6165702b81ec17b537556fc9d6581b528b9c611ed"
-    },
-    "affix-groups.json": {
-      "sha256": "5535f5510f4875664a142d834cf49e1eeef6af56167d06058da0c5e7274d3ff0"
     }
-  },
-  "audit": {
-    "status": "complete",
-    "files": 8,
-    "affectedClasses": 0
   }
 }
