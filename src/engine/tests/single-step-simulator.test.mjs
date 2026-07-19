@@ -48,9 +48,11 @@ test("5 resulting modifier uses selected technical candidate data", () => {
   assert.equal(added.modId, selected.modifierId); assert.equal(added.familyId, selected.familyId); assert.equal(added.generationType, selected.generationType); assert.equal(added.technicalTier, selected.technicalTier); assert.equal(added.displayTier, selected.displayTier); assert.deepEqual(added.values, []); assert.equal(added.appliedAtRevision, 1);
 });
 test("6 resulting item validates through central item-state validation", () => assert.equal(validateItemState(pipeline("currency:exalted", "rare").result.resultingItemState).revision, 1));
-test("7 transmutation without known count remains unresolved atomically", () => {
-  const itemState = state("normal"), actionResult = evaluateCraftingAction({ actionId: "currency:transmutation", itemState, catalog: catalog(), actionContext: { capacityRules: { prefix: 3, suffix: 3 } } }); const before = JSON.stringify(itemState); const result = simulateCraftingStep({ itemState, actionResult, selectionResults: [] });
-  assert.equal(result.status, "unresolved"); assert.equal(result.resultingItemState, null); assert.equal(JSON.stringify(itemState), before);
+test("7 transmutation upgrades to magic and adds exactly one modifier", () => {
+  const itemState = state("normal"), actionResult = evaluateCraftingAction({ actionId: "currency:transmutation", itemState, catalog: catalog(), actionContext: { capacityRules: { prefix: 1, suffix: 1 } } }); const before = JSON.stringify(itemState);
+  const selectionResult = selectWeightedModifier(actionResult.selectionRequests[0], { random: () => 0 });
+  const result = simulateCraftingStep({ itemState, actionResult, selectionResults: [selectionResult] });
+  assert.equal(result.status, "simulated"); assert.equal(result.resultingItemState.rarity, "magic"); assert.equal(result.resultingItemState.prefixModifiers.length + result.resultingItemState.suffixModifiers.length, 1); assert.equal(JSON.stringify(itemState), before);
 });
 test("8 alteration remains unresolved", () => {
   const itemState = state("magic"), actionResult = evaluateCraftingAction({ actionId: "currency:alteration", itemState, catalog: catalog(), actionContext: { removalRules: { "currency:alteration": 1 } } }); assert.equal(simulateCraftingStep({ itemState, actionResult, selectionResults: [] }).status, "unresolved");
