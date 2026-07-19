@@ -10,20 +10,19 @@ import { classifyPlannerSimulatorResult } from "../planner-status.mjs";
 const makeMod = (id, generationType, weight, familyId) => ({ modId: id, generationType, domain: "item",
   technicalStats: [{ id: `${id}:stat` }], tier: 1, requiredLevel: 1, spawnWeights: [{ tag: "bow", weight }],
   generationWeights: [], groups: [familyId], flags: [], source: "poe2db" });
-function documents() {
-  const mods = [
+function documents(mods = [
     makeMod("mod:existing", "prefix", 1, "family:existing"),
     makeMod("mod:add-prefix", "prefix", 1, "family:add-prefix"),
     makeMod("mod:add-suffix", "suffix", 3, "family:add-suffix"),
     makeMod("mod:equal-suffix", "suffix", 1, "family:equal-suffix"),
     makeMod("mod:zero", "suffix", 0, "family:zero")
-  ];
+  ]) {
   return { index: { classes: [{ id: "Bow" }] }, bases: { bases: [{ id: "base:bow", itemClass: "Bow", tags: ["bow", "weapon", "default"] }] },
     mods: { mods }, affixGroups: { groups: mods.map(entry => ({ familyId: entry.groups[0], generationType: entry.generationType,
       tiers: [{ modId: entry.modId, technicalTier: 1, displayTiers: { Bow: 1 }, requiredLevel: 1,
         spawnWeights: entry.spawnWeights, generationWeights: [], craftingSources: [], regularClasses: ["Bow"], specialClasses: [], requiredBaseTagsAny: [] }] })) } };
 }
-const catalog = () => createModifierCatalog(documents());
+const catalog = mods => createModifierCatalog(documents(mods));
 const existing = (instanceId = "instance:existing") => ({ instanceId, modId: "mod:existing", familyId: "family:existing",
   generationType: "prefix", domain: "item", technicalTier: 1, displayTier: 1, statIds: ["mod:existing:stat"],
   values: [], source: "normal", appliedAtRevision: 0, metadata: {} });
@@ -61,8 +60,8 @@ test("23 simulator errors remain planner errors", () => { const collision = `sim
 test("24 simulator inapplicable remains fachlich separate", () => assert.equal(classifyPlannerSimulatorResult({ status: "inapplicable" }), "inapplicable"));
 test("25 simulator unresolved remains fachlich separate", () => assert.equal(classifyPlannerSimulatorResult({ status: "unresolved" }), "unresolved"));
 test("26 maxDepth is strict", () => assert.ok(plan({ maxDepth: 1 }).paths.every(path => path.depth <= 1)));
-test("27 maxPaths is strict", () => assert.equal(plan({ maxDepth: 2, maxPaths: 1 }).paths.length, 1));
-test("28 bounded search reports truncation", () => assert.equal(plan({ maxDepth: 1 }).truncated, true));
+test("27 maxPaths is strict and retains the highest-priority non-target path", () => { const result = plan({ maxDepth: 1, maxPaths: 1 }); assert.equal(result.paths.length, 1); assert.equal(result.paths[0].steps[0].selectedModifierId, "mod:add-suffix"); assert.equal(result.paths[0].cumulativeProbability, 0.6); assert.equal(result.generatedTransitionCount, 3); assert.equal(result.truncated, true); });
+test("28 maxDepth truncates only when a positive transition remains", () => { const result = plan({ allowedActions: ["currency:regal", "currency:exalted"], maxDepth: 1 }); assert.equal(result.truncated, true); assert.ok(result.paths.every(path => path.depth <= 1)); });
 test("29 no executable action yields no-path", () => assert.equal(plan({ initialItemState: state("normal"), allowedActions: ["currency:augmentation"] }).status, "no-path"));
 test("30 inapplicable branch does not block valid branch", () => { const result = plan({ allowedActions: ["currency:augmentation", "currency:exalted"], maxDepth: 1 }); assert.ok(result.paths.length); });
 test("31 duplicate states are not expanded at equal or worse positions", () => { const result = plan({ allowedActions: ["currency:augmentation"], maxDepth: 2 }); assert.ok(result.exploredNodeCount <= result.generatedTransitionCount + 1); });
@@ -83,4 +82,27 @@ test("weighted enumeration shares validation and excludes zero weights", () => {
   const request = { id: "request", deterministicKey: "key", type: "modifier-addition", executable: true, count: 1,
     candidates: [{ modifierId: "a", generationType: "prefix", applicableWeight: { spawn: 0 } }, { modifierId: "b", generationType: "suffix", applicableWeight: { spawn: 2 } }] };
   const result = enumerateWeightedCandidates(request); assert.equal(result.status, "enumerated"); assert.equal(result.totalWeight, 2); assert.deepEqual(result.candidates.map(entry => entry.candidate.modifierId), ["b"]);
+});
+
+test("terminal regal path at maxDepth completes without truncation", () => {
+  const mods = [makeMod("mod:existing", "prefix", 1, "family:existing"), makeMod("mod:add-suffix", "suffix", 1, "family:add-suffix")];
+  const result = plan({ catalog: catalog(mods), allowedActions: ["currency:regal"], maxDepth: 1, maxPaths: 50 });
+  assert.equal(result.status, "completed"); assert.equal(result.truncated, false); assert.equal(result.targetReached, false);
+  assert.equal(result.paths.length, 1); assert.ok(result.paths.every(path => path.depth === 1 && path.steps.length === 1));
+  assert.ok(result.paths.every(path => path.steps[0].action === "currency:regal" && path.resultingItemState.rarity === "rare"));
+  assert.ok(result.paths.every(path => path.depth <= 1));
+});
+
+test("maxPaths ranks an evaluated lower-weight target before a higher-weight non-target", () => {
+  const mods = [makeMod("mod:existing", "prefix", 1, "family:existing"),
+    makeMod("mod:high", "suffix", 3, "family:high"), makeMod("mod:target", "suffix", 1, "family:target")];
+  let predicateCalls = 0;
+  const result = plan({ catalog: catalog(mods), maxDepth: 1, maxPaths: 1, targetPredicate: item => {
+    predicateCalls += 1;
+    return item.suffixModifiers.some(modifier => modifier.modId === "mod:target");
+  } });
+  assert.equal(predicateCalls, 3); assert.equal(result.generatedTransitionCount, 2); assert.equal(result.paths.length, 1);
+  assert.equal(result.status, "target-reached"); assert.equal(result.targetReached, true); assert.equal(result.truncated, true);
+  assert.equal(result.paths[0].steps[0].selectedModifierId, "mod:target");
+  assert.equal(result.paths[0].steps[0].stepProbability, 0.25); assert.equal(result.paths[0].cumulativeProbability, 0.25);
 });

@@ -124,10 +124,9 @@ export function planCraftingPaths(options = {}) {
   let truncated = false;
   let sawUnresolved = false;
 
-  while (queue.length && generatedTransitionCount < maxPaths) {
+  while (queue.length) {
     const path = queue.shift();
     exploredNodeCount += 1;
-    if (path.depth >= maxDepth) { truncated = true; continue; }
     const transitions = [];
     for (const actionId of orderedActions) {
       const specific = actionContexts[actionId] ?? actionContext;
@@ -149,8 +148,11 @@ export function planCraftingPaths(options = {}) {
         candidateIndex: entry.index, candidateWeight: entry.weight, totalWeight: enumeration.totalWeight, stepProbability: entry.probability });
     }
     transitions.sort(compareTransitions);
+    if (path.depth >= maxDepth) {
+      if (transitions.length) truncated = true;
+      continue;
+    }
     for (const transition of transitions) {
-      if (generatedTransitionCount >= maxPaths) { truncated = true; break; }
       const simulation = simulateCraftingStep({ itemState: path.resultingItemState, actionResult: transition.actionResult,
         selectionResults: [selectionResult(transition.request, { candidate: transition.candidate, index: transition.candidateIndex, totalWeight: transition.totalWeight })] });
       const simulationStatus = classifyPlannerSimulatorResult(simulation);
@@ -178,25 +180,26 @@ export function planCraftingPaths(options = {}) {
       paths.push(nextPath);
       const key = stateKey(simulation.resultingItemState);
       const previous = visited.get(key);
-      if (!targetResult.value && nextPath.depth < maxDepth && (!previous || nextPath.depth < previous.depth
+      if (!targetResult.value && (!previous || nextPath.depth < previous.depth
         || nextPath.depth === previous.depth && nextPath.cumulativeProbability > previous.probability)) {
         visited.set(key, { depth: nextPath.depth, probability: nextPath.cumulativeProbability });
         queue.push(nextPath);
-      } else if (!targetResult.value && nextPath.depth >= maxDepth) truncated = true;
+      }
     }
     queue.sort(comparePaths);
   }
-  if (queue.length) truncated = true;
   paths.sort(comparePaths);
-  const targetReached = paths.some(path => path.targetReached);
+  if (paths.length > maxPaths) truncated = true;
+  const returnedPaths = paths.slice(0, maxPaths);
+  const targetReached = returnedPaths.some(path => path.targetReached);
   if (targetReached) return result("target-reached", ENGINE_PLANNER_CODES.TARGET_REACHED, "At least one target path was found.", initialItemState,
-    { targetReached, paths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
+    { targetReached, paths: returnedPaths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
   if (truncated) return result("truncated", ENGINE_PLANNER_CODES.TRUNCATED, "Planner search reached a configured boundary.", initialItemState,
-    { paths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
-  if (!paths.length && sawUnresolved) return result("unresolved", ENGINE_PLANNER_CODES.UNRESOLVED, "No path could be resolved with the supplied context.", initialItemState,
-    { paths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
-  if (!paths.length) return result("no-path", ENGINE_PLANNER_CODES.NO_PATH, "No executable crafting path was found.", initialItemState,
-    { paths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
+    { paths: returnedPaths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
+  if (!returnedPaths.length && sawUnresolved) return result("unresolved", ENGINE_PLANNER_CODES.UNRESOLVED, "No path could be resolved with the supplied context.", initialItemState,
+    { paths: returnedPaths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
+  if (!returnedPaths.length) return result("no-path", ENGINE_PLANNER_CODES.NO_PATH, "No executable crafting path was found.", initialItemState,
+    { paths: returnedPaths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
   return result("completed", ENGINE_PLANNER_CODES.COMPLETED, "Planner search completed.", initialItemState,
-    { paths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
+    { paths: returnedPaths, exploredNodeCount, generatedTransitionCount, truncated, diagnostics });
 }
