@@ -70,6 +70,24 @@ const selected = selectWeightedModifier(action.selectionRequests[0], { rngState 
 // selected.selectedCandidate ist nur das unveränderliche technische Auswahlergebnis.
 ```
 
+## Single-Step Simulator v1
+
+`simulateCraftingStep({ itemState, actionResult, selectionResults })` führt atomar genau einen bereits vorbereiteten und `applicable` bewerteten Mutation Plan aus. Die Funktion wertet keine Action neu aus, löst keine Kandidaten oder Regeln auf, liest keinen Catalog und erzeugt weder RNG noch Weight Selection. Das Action Result bindet Item-ID, Basistyp, Itemklasse, Rarity und Revision über den vorhandenen kanonischen Addition-Request-Key an den Eingangs-State.
+
+Unterstützt sind höchstens ein expliziter `set-rarity`-Schritt, `preserve-existing-modifiers` und genau ein `add-selected-modifier` mit einem ausführbaren Addition Request von `count: 1`. Bei einer kombinierten Änderung steht der Rarity-Schritt im Mutation Plan vor der Addition. Removal, Replacement, Alteration und Chaos bleiben ungelöst; Transmutation bleibt ohne explizit bekannten Selection Count ebenfalls ungelöst. Unbekannte Operationen werden niemals teilweise angewendet.
+
+Für eine Addition muss genau ein `selected` Selection Result denselben Request und `deterministicKey` referenzieren. Index, Modifier-ID und vollständiger technischer Candidate müssen mit dem ursprünglichen Request übereinstimmen; zusätzliche oder mehrfach verwendete Selection Results werden abgelehnt. Der Simulator überträgt vorhandene technische Candidate-Felder in eine reguläre Modifier-Instanz, erfindet aber keine Roll- oder Displaywerte und führt weder Capacity-, Modgruppen- noch Eligibility-Regeln erneut aus.
+
+Eine erfolgreiche Simulation erzeugt über die zentrale Item-State-Revision genau ein neues, rekursiv eingefrorenes Item mit `revision + 1`, unabhängig von der Zahl unterstützter Planoperationen. Das Ursprungsitem, Action Result, Requests, Candidates, Selection Results und RNG-Metadaten bleiben unverändert. Bei jedem Fehler oder nicht ausführbaren Plan sind `resultingItemState` null und `appliedOperations` leer; es gibt keinen sichtbaren Zwischenzustand.
+
+```js
+const selection = selectWeightedModifier(action.selectionRequests[0], { rngState });
+const simulation = simulateCraftingStep({ itemState, actionResult: action, selectionResults: [selection] });
+// simulation.resultingItemState ist eine neue Revision; action und itemState bleiben unverändert.
+```
+
+Der Simulator implementiert keine Aktionsketten, automatische Evaluation, weitere Auswahl, Removal-/Replacement-Ausführung, Planner, Monte Carlo, Wahrscheinlichkeiten, UI, Inventar, Persistenz, Currency-Verbrauch oder Kosten.
+
 ## Crafting Actions Core v1
 
 Die Action-Schicht trennt unveränderliche **Action Definitions**, deterministische **Action Applicability** und einen noch nicht ausgeführten **Action Execution Plan**. Die Registry verwendet ausschließlich stabile technische IDs: `currency:transmutation`, `currency:augmentation`, `currency:alteration`, `currency:regal`, `currency:exalted` und `currency:chaos`. Definitionen beschreiben Rarity-Vertrag, Operationstyp, Auswahl-/Entfernungsbedarf und bekannte Grenzen; Anzeigenamen und Übersetzungen besitzen keine technische Bedeutung.
