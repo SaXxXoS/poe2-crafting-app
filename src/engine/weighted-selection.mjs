@@ -54,6 +54,24 @@ function validateRequest(request) {
   return { status: "valid", totalWeight };
 }
 
+/** Enumerates every positive-weight candidate after applying the selector's shared request validation. */
+export function enumerateWeightedCandidates(request) {
+  const validation = validateRequest(request);
+  if (validation.status !== "valid") return immutableCopy({
+    valid: validation.status !== "error", status: validation.status, requestId: typeof request?.id === "string" ? request.id : null,
+    deterministicKey: typeof request?.deterministicKey === "string" ? request.deterministicKey : null,
+    totalWeight: validation.totalWeight ?? null, candidates: [], reasons: validation.entry ? [validation.entry] : [],
+    errors: validation.status === "error" && validation.entry ? [validation.entry] : [], warnings: []
+  });
+  return immutableCopy({
+    valid: true, status: "enumerated", requestId: request.id, deterministicKey: request.deterministicKey,
+    totalWeight: validation.totalWeight,
+    candidates: request.candidates.map((candidate, index) => ({ candidate, index, weight: candidate.applicableWeight.spawn,
+      probability: candidate.applicableWeight.spawn / validation.totalWeight })).filter(entry => entry.weight > 0),
+    reasons: [], errors: [], warnings: []
+  });
+}
+
 function randomStep(options) {
   if (!isRecord(options)) return { error: issue(ENGINE_WEIGHT_SELECTION_CODES.RNG_STATE_INVALID, "Selection options must be an object.", "options") };
   const hasRandom = Object.hasOwn(options, "random");

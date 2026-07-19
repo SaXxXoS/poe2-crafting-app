@@ -88,6 +88,16 @@ const simulation = simulateCraftingStep({ itemState, actionResult: action, selec
 
 Der Simulator implementiert keine Aktionsketten, automatische Evaluation, weitere Auswahl, Removal-/Replacement-Ausführung, Planner, Monte Carlo, Wahrscheinlichkeiten, UI, Inventar, Persistenz, Currency-Verbrauch oder Kosten.
 
+## Deterministic Crafting Path Planner v1
+
+`planCraftingPaths({ initialItemState, catalog, allowedActions, maxDepth, maxPaths, targetPredicate, actionContext, actionContexts })` untersucht begrenzt und deterministisch mögliche Folgen der bestehenden Actions Augmentation, Regal und Exalted. Der Planner verwendet die vorhandene Action Evaluation, enumeriert ausschließlich positiv gewichtete Candidates aus deren Selection Requests und wendet jeden konkreten Ausgang über den Single-Step-Simulator an. Er führt keine zufällige Auswahl aus.
+
+Die Suche ist eine stabile Breadth-First Search. Zielpfade, geringere Tiefe, höhere kumulative Pfadwahrscheinlichkeit, Action-Reihenfolge und technische Modifier-ID bilden die Tie-Break-Reihenfolge. Fachlich identische Itemzustände werden unabhängig von Revision und technischen Instanz-IDs nicht erneut an einer gleichen oder schlechteren Suchposition expandiert. `maxDepth` ist auf 8 und `maxPaths` auf 1.000 begrenzt; niedrigere Caller-Grenzen werden strikt eingehalten.
+
+`error`, `inapplicable` und `unresolved` bleiben getrennte Engine-Zustände. Ein Engine-Fehler beendet die Planung sichtbar, während fachlich nicht anwendbare Zweige übersprungen und ungelöste Zweige diagnostiziert, aber niemals automatisch ausgewählt werden. Ergebnisse und Zwischenzustände sind rekursiv unveränderlich und enthalten keine Zeit-, RNG- oder globale Cache-Daten.
+
+Dieser Planner ist keine UI-Integration, keine Preisoptimierung, kein Monte-Carlo-Verfahren und unterstützt weder Removal noch Replacement oder weitere Crafting Actions.
+
 ## Crafting Actions Core v1
 
 Die Action-Schicht trennt unveränderliche **Action Definitions**, deterministische **Action Applicability** und einen noch nicht ausgeführten **Action Execution Plan**. Die Registry verwendet ausschließlich stabile technische IDs: `currency:transmutation`, `currency:augmentation`, `currency:alteration`, `currency:regal`, `currency:exalted` und `currency:chaos`. Definitionen beschreiben Rarity-Vertrag, Operationstyp, Auswahl-/Entfernungsbedarf und bekannte Grenzen; Anzeigenamen und Übersetzungen besitzen keine technische Bedeutung.
