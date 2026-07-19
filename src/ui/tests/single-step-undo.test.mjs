@@ -95,7 +95,7 @@ test("undo consumes the single target without preserving a redo state", () => {
   assert.equal(second.undone, false);
 });
 
-test("all four supported actions restore exact pre-craft rarity, revision, and modifiers", () => {
+test("all five supported actions restore exact pre-craft rarity, revision, and modifiers", () => {
   const transmutationBefore = createItemState({ itemId: "t", baseTypeId: "base:bow", itemClassId: "Bow", itemLevel: 86, rarity: "normal" });
   const transmutation = runSingleStep({ itemState: transmutationBefore, catalog, actionId: "currency:transmutation", seed: 0 });
   const augmentationBefore = transmutation.itemState;
@@ -104,7 +104,9 @@ test("all four supported actions restore exact pre-craft rarity, revision, and m
   const regal = runSingleStep({ itemState: regalBefore, catalog, actionId: "currency:regal", seed: 0 });
   const exaltedBefore = createItemState({ itemId: "e", baseTypeId: "base:bow", itemClassId: "Bow", itemLevel: 86, rarity: "rare" });
   const exalted = runSingleStep({ itemState: exaltedBefore, catalog, actionId: "currency:exalted", seed: 0 });
-  for (const [expected, result] of [[transmutationBefore, transmutation], [augmentationBefore, augmentation], [regalBefore, regal], [exaltedBefore, exalted]]) {
+  const annulmentBefore = transmutation.itemState;
+  const annulment = runSingleStep({ itemState: annulmentBefore, catalog, actionId: "currency:annulment", seed: 0 });
+  for (const [expected, result] of [[transmutationBefore, transmutation], [augmentationBefore, augmentation], [regalBefore, regal], [exaltedBefore, exalted], [annulmentBefore, annulment]]) {
     assert.equal(result.status, "successful");
     const adopted = adoptSingleStepResult({ currentItemState: expected, result });
     const undone = applySingleStepUndo({ currentItemState: adopted.itemState, undoItemState: adopted.undoItemState });
@@ -114,6 +116,19 @@ test("all four supported actions restore exact pre-craft rarity, revision, and m
     assert.equal(undone.itemState.prefixModifiers, expected.prefixModifiers);
     assert.equal(undone.itemState.suffixModifiers, expected.suffixModifiers);
   }
+});
+
+test("undo after Annulment restores the exact removed modifier and counts", () => {
+  const normal = createItemState({ itemId: "annul-undo", baseTypeId: "base:bow", itemClassId: "Bow", itemLevel: 86, rarity: "normal" });
+  const beforeAnnulment = runSingleStep({ itemState: normal, catalog, actionId: "currency:transmutation", seed: 0 }).itemState;
+  const annulment = runSingleStep({ itemState: beforeAnnulment, catalog, actionId: "currency:annulment", seed: 0 });
+  const adopted = adoptSingleStepResult({ currentItemState: beforeAnnulment, result: annulment });
+  const undone = applySingleStepUndo({ currentItemState: adopted.itemState, undoItemState: adopted.undoItemState });
+  assert.equal(undone.itemState, beforeAnnulment);
+  assert.equal(undone.itemState.revision, beforeAnnulment.revision);
+  assert.equal(undone.itemState.rarity, beforeAnnulment.rarity);
+  assert.equal(undone.itemState.prefixModifiers, beforeAnnulment.prefixModifiers);
+  assert.equal(undone.itemState.suffixModifiers, beforeAnnulment.suffixModifiers);
 });
 
 test("undo state preserves identity, revision, rarity, modifiers, metadata, and history", () => {

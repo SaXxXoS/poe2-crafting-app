@@ -1,18 +1,20 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { createModifierCatalog, getDefaultCapacityRules } from "../../engine/browser.mjs";
+import { createItemState, createModifierCatalog, evaluateCraftingAction, getDefaultCapacityRules } from "../../engine/browser.mjs";
 import {
   SINGLE_STEP_ACTIONS,
   canRunSingleStep,
   capacityRulesForAction,
   capacityRulesForRarity,
   createSingleStepItem,
+  diagnosticMessageDe,
   optionalAffixGroupsFile,
   validateItemLevel,
   runSingleStep
 } from "../single-step-controller.mjs";
 import { renderSingleStepResult } from "../single-step-result-renderer.mjs";
+import { undoTargetFromResult } from "../single-step-undo.mjs";
 
 const catalog = createModifierCatalog({
   index: { classes: [{ id: "Bow" }] },
@@ -28,6 +30,8 @@ const catalog = createModifierCatalog({
 });
 
 const item = rarity => createSingleStepItem({ baseTypeId: "base:bow", itemClassId: "Bow", itemLevel: 86, rarity });
+const modifier = (instanceId, generationType, source = "normal") => ({ instanceId, modId: generationType === "prefix" ? "mod:prefix" : "mod:suffix", familyId: `family:${generationType}`, generationType, domain: "item", technicalTier: 1, displayTier: 1, statIds: [`stat:${generationType}`], values: [], source, appliedAtRevision: 0, metadata: {} });
+const affixedItem = (changes = {}) => createItemState({ itemId: "item:annulment-ui", baseTypeId: "base:bow", itemClassId: "Bow", itemLevel: 86, rarity: "rare", prefixModifiers: [modifier("instance:prefix", "prefix")], suffixModifiers: [modifier("instance:suffix", "suffix")], ...changes });
 
 test("UI adapter creates a valid technical item state", () => {
   const state = item("magic");
@@ -48,9 +52,11 @@ test("single-step actions expose Transmutation first with the authoritative acti
     "currency:transmutation",
     "currency:augmentation",
     "currency:regal",
-    "currency:exalted"
+    "currency:exalted",
+    "currency:annulment"
   ]);
   assert.equal(SINGLE_STEP_ACTIONS[0].label, "Transmutation");
+  assert.equal(SINGLE_STEP_ACTIONS.at(-1).label, "Sphäre der Annullierung");
 });
 
 test("actions explicitly select the matching authoritative capacity without a Normal rule", () => {
@@ -239,6 +245,68 @@ test("UI controller imports browser entry only and no Node loader", async () => 
   assert.doesNotMatch(source, /loadModifierCatalog/);
 });
 
+test("Annulment readiness delegates applicability to the engine", () => {
+  assert.equal(canRunSingleStep({ itemState: item("rare"), catalog, actionId: "currency:annulment" }).enabled, false);
+  assert.equal(canRunSingleStep({ itemState: affixedItem(), catalog, actionId: "currency:annulment" }).enabled, true);
+  for (const [field, special] of [["implicitModifiers", modifier("instance:implicit", "implicit", "implicit")], ["craftedModifiers", modifier("instance:crafted", "prefix", "crafted")], ["desecratedModifiers", modifier("instance:desecrated", "suffix", "desecrated")]]) {
+    const specialOnly = affixedItem({ prefixModifiers: [], suffixModifiers: [], [field]: [special] });
+    assert.equal(canRunSingleStep({ itemState: specialOnly, catalog, actionId: "currency:annulment" }).enabled, false, field);
+  }
+});
+
+test("Annulment controller removes exactly one regular modifier without changing rarity", () => {
+  const before = affixedItem(); const snapshot = JSON.stringify(before);
+  const result = runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed: 0 });
+  assert.equal(result.status, "successful"); assert.equal(result.itemState.rarity, before.rarity); assert.equal(result.itemState.revision, 1);
+  assert.equal(result.itemState.prefixModifiers.length + result.itemState.suffixModifiers.length, 1);
+  assert.equal(result.simulationResult.removedModifier.instanceId, result.selectionResult.selectedInstanceId);
+  assert.deepEqual(result.simulationResult.selectionResult, result.selectionResult);
+  assert.equal(JSON.stringify(before), snapshot);
+});
+
+test("controlled Annulment seeds can remove a prefix and a suffix", () => {
+  const before = affixedItem();
+  const prefixSeed = Array.from({ length: 1000 }, (_, seed) => seed).find(seed => runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed }).simulationResult?.removedModifier?.generationType === "prefix");
+  const suffixSeed = Array.from({ length: 1000 }, (_, seed) => seed).find(seed => runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed }).simulationResult?.removedModifier?.generationType === "suffix");
+  assert.notEqual(prefixSeed, undefined); assert.notEqual(suffixSeed, undefined);
+  assert.equal(runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed: prefixSeed }).itemState.prefixModifiers.length, 0);
+  assert.equal(runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed: suffixSeed }).itemState.suffixModifiers.length, 0);
+});
+
+test("Annulment inapplicable and technical diagnostics are German", () => {
+  const before = item("rare"); const snapshot = JSON.stringify(before);
+  const engineResult = evaluateCraftingAction({ actionId: "currency:annulment", itemState: before, catalog, actionContext: {} });
+  const result = runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed: 0 });
+  assert.equal(engineResult.status, "inapplicable");
+  assert.equal(result.status, "inapplicable");
+  assert.deepEqual(result.actionResult, engineResult);
+  assert.equal(result.reasonCode, "ENGINE_ACTION_NO_REMOVABLE_MODIFIER");
+  assert.match(result.message, /keinen entfernbaren regulären Präfix- oder Suffix-Modifikator/);
+  assert.equal(result.itemState, before);
+  assert.equal(result.itemState.revision, before.revision);
+  assert.equal(JSON.stringify(before), snapshot);
+  assert.equal(result.selectionResult, null);
+  assert.equal(result.simulationResult, null);
+  assert.equal(undoTargetFromResult(result), null);
+  assert.match(diagnosticMessageDe({ code: "ENGINE_SIMULATOR_REQUEST_MISMATCH" }), /veraltet/);
+  assert.match(diagnosticMessageDe({ code: "ENGINE_SIMULATOR_CANDIDATE_MISMATCH" }), /nicht mehr vorhanden/);
+  assert.doesNotMatch(result.message, /Annulment|Orb|Modifier/);
+});
+
+test("special-only Annulment remains inapplicable without selection simulation or undo", () => {
+  for (const [field, special] of [["implicitModifiers", modifier("instance:implicit-only", "implicit", "implicit")], ["craftedModifiers", modifier("instance:crafted-only", "prefix", "crafted")], ["desecratedModifiers", modifier("instance:desecrated-only", "suffix", "desecrated")]]) {
+    const before = affixedItem({ prefixModifiers: [], suffixModifiers: [], [field]: [special] });
+    const result = runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed: 4294967295 });
+    assert.equal(result.status, "inapplicable", field);
+    assert.equal(result.reasonCode, "ENGINE_ACTION_NO_REMOVABLE_MODIFIER", field);
+    assert.equal(result.itemState, before, field);
+    assert.equal(result.itemState.revision, 0, field);
+    assert.equal(result.selectionResult, null, field);
+    assert.equal(result.simulationResult, null, field);
+    assert.equal(undoTargetFromResult(result), null, field);
+  }
+});
+
 class TestElement {
   constructor(tagName) {
     this.tagName = tagName.toLowerCase();
@@ -347,4 +415,42 @@ test("Transmutation result renders catalog payloads as inert visible text", () =
     assert.deepEqual(descendantTags(container).filter(tag => ["img", "script", "svg"].includes(tag)), []);
     assert.equal(globalThis.__transmutationXss, undefined);
   }
+});
+
+test("Annulment result renders a German removal result without addition wording", () => {
+  const container = new TestElement("div");
+  const before = affixedItem();
+  const result = runSingleStep({ itemState: before, catalog, actionId: "currency:annulment", seed: 0 });
+  renderSingleStepResult({ document: testDocument, container, result, currentItemState: result.itemState, actionLabel: "Sphäre der Annullierung", modifierDisplay: id => id === "mod:prefix" ? "Erhöhter physischer Schaden" : "Erhöhte Angriffsgeschwindigkeit" });
+  assert.match(container.textContent, /Sphäre der Annullierung/);
+  assert.match(container.textContent, /Erfolgreich/);
+  assert.match(container.textContent, /Entfernter (Präfix|Suffix) · T1/);
+  assert.match(container.textContent, /Dieser reguläre Modifikator wurde entfernt/);
+  assert.match(container.textContent, /SeltenheitSelten → Selten/);
+  assert.doesNotMatch(container.textContent, /hinzugefügt|Orb of Annulment|Annulment Orb|\bAnnulment\b|Code:/);
+});
+
+test("Annulment UI uses only the German visible action name", async () => {
+  const controllerSource = await readFile(new URL("../single-step-controller.mjs", import.meta.url), "utf8");
+  const rendererSource = await readFile(new URL("../single-step-result-renderer.mjs", import.meta.url), "utf8");
+  const appSource = await readFile(new URL("../../../app.js", import.meta.url), "utf8");
+  assert.match(controllerSource, /label: "Sphäre der Annullierung"/);
+  assert.doesNotMatch(`${controllerSource}\n${rendererSource}\n${appSource}`, /Orb of Annulment|Annulment Orb/);
+});
+
+test("Annulment UI delegates removal and RNG selection to the browser engine", async () => {
+  const controllerSource = await readFile(new URL("../single-step-controller.mjs", import.meta.url), "utf8");
+  const appSource = await readFile(new URL("../../../app.js", import.meta.url), "utf8");
+  const runSource = controllerSource.match(/export function runSingleStep[\s\S]*?\n}/)?.[0] ?? "";
+  const executeSource = appSource.match(/function executeSingleStep\(\)[\s\S]*?\n  }/)?.[0] ?? "";
+  assert.match(runSource, /selectModifierForRemoval/);
+  assert.equal((runSource.match(/simulateCraftingStep\s*\(/g) ?? []).length, 1);
+  assert.doesNotMatch(`${runSource}\n${executeSource}`, /prefixModifiers\s*=|suffixModifiers\s*=|\.splice\(|\.filter\(/);
+});
+
+test("single-step controls and removal details retain the 390px responsive contract", async () => {
+  const css = await readFile(new URL("../../../style.css", import.meta.url), "utf8");
+  assert.match(css, /@media\(max-width:520px\)\{\.single-step-actions,.single-step-summary\{grid-template-columns:1fr\}\}/);
+  assert.match(css, /\.single-step-mod\{[^}]*min-width:0;[^}]*overflow-wrap:anywhere/);
+  assert.match(css, /body\{[^}]*overflow-x:hidden/);
 });

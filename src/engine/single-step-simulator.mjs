@@ -2,6 +2,7 @@ import { canonicalTechnicalString } from "./canonical-serialization.mjs";
 import { ENGINE_SIMULATOR_CODES } from "./errors.mjs";
 import { immutableCopy } from "./immutability.mjs";
 import { reviseItemState } from "./item-state.mjs";
+import { createModifierRemovalRequest, validateModifierRemovalSelection } from "./modifier-removal.mjs";
 import { validateItemState } from "./validation.mjs";
 
 const isRecord = value => Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -20,6 +21,9 @@ function output(actionResult, itemState, status, entry = null, success = {}) {
     resultingItemState: success.resultingItemState ?? null,
     appliedOperations: success.appliedOperations ?? [],
     consumedSelectionRequestIds: success.consumedSelectionRequestIds ?? [],
+    selectionResult: success.selectionResult ?? null,
+    removedModifier: success.removedModifier ?? null,
+    nextRngState: success.nextRngState ?? null,
     reasons: entry ? [entry] : [],
     errors: status === "error" && entry ? [entry] : [],
     warnings: []
@@ -84,19 +88,21 @@ export function simulateCraftingStep(input = {}) {
   if (!operations.length || operations.some((entry, index) => !isRecord(entry) || entry.sequence !== index || entry.applied !== false || typeof entry.operation !== "string")) {
     return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID, "Mutation plan must be a contiguous unapplied operation list.", "actionResult.mutationPlan");
   }
-  const supported = new Set(["set-rarity", "preserve-existing-modifiers", "add-selected-modifier"]);
+  const supported = new Set(["set-rarity", "preserve-existing-modifiers", "add-selected-modifier", "remove-selected-modifier"]);
   const unsupported = operations.find(entry => !supported.has(entry.operation));
   if (unsupported) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.OPERATION_UNSUPPORTED, "Mutation-plan operation is not supported by the single-step simulator.", `actionResult.mutationPlan[${unsupported.sequence}].operation`, { operation: unsupported.operation }, "unresolved");
   const rarityOperations = operations.filter(entry => entry.operation === "set-rarity");
   const additionOperations = operations.filter(entry => entry.operation === "add-selected-modifier");
-  if (rarityOperations.length > 1 || additionOperations.length > 1) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID, "Single-step simulator permits at most one rarity change and one modifier addition.", "actionResult.mutationPlan");
+  const removalOperations = operations.filter(entry => entry.operation === "remove-selected-modifier");
+  if (rarityOperations.length > 1 || additionOperations.length > 1 || removalOperations.length > 1 || additionOperations.length && removalOperations.length) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID, "Single-step simulator permits one rarity change and exactly one modifier addition or removal.", "actionResult.mutationPlan");
   if (operations.filter(entry => entry.operation === "preserve-existing-modifiers").length > 1) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID, "Preserve operation is duplicated.", "actionResult.mutationPlan");
   if (rarityOperations.length && additionOperations.length && rarityOperations[0].sequence > additionOperations[0].sequence) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID, "Rarity change must precede modifier addition in the explicit mutation plan.", "actionResult.mutationPlan");
-  if (!rarityOperations.length && !additionOperations.length) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE, "Mutation plan contains no executable state change.", "actionResult.mutationPlan", {}, "inapplicable");
+  if (!rarityOperations.length && !additionOperations.length && !removalOperations.length) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE, "Mutation plan contains no executable state change.", "actionResult.mutationPlan", {}, "inapplicable");
 
   let request = null;
   let selection = null;
   let candidate = null;
+  let removedModifier = null;
   if (additionOperations.length) {
     const operation = additionOperations[0];
     const matchingRequests = actionResult.selectionRequests.filter(entry => entry?.id === operation.selectionRequestId);
@@ -119,6 +125,20 @@ export function simulateCraftingStep(input = {}) {
     const existing = [...itemState.prefixModifiers, ...itemState.suffixModifiers, ...itemState.craftedModifiers, ...itemState.desecratedModifiers];
     if (existing.some(entry => entry.modId === candidate.modifierId)) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.DUPLICATE_MODIFIER, "Selected modifier already exists on the item.", "selectionResults[0].selectedCandidate.modifierId", { modifierId: candidate.modifierId });
     if (!["prefix", "suffix"].includes(candidate.generationType)) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.CANDIDATE_MISMATCH, "Selected candidate has an unsupported generation type.", "selectionResults[0].selectedCandidate.generationType");
+  } else if (removalOperations.length) {
+    const operation = removalOperations[0];
+    const matchingRequests = actionResult.selectionRequests.filter(entry => entry?.id === operation.selectionRequestId);
+    if (matchingRequests.length !== 1 || actionResult.selectionRequests.length !== 1) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.REQUEST_MISMATCH, "Removal operation must reference exactly one unique selection request.", `actionResult.mutationPlan[${operation.sequence}].selectionRequestId`);
+    request = matchingRequests[0];
+    const expectedRequest = createModifierRemovalRequest({ actionId: actionResult.actionId, itemState });
+    if (!technicalEqual(request, expectedRequest)) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.REQUEST_MISMATCH, "Removal request does not match the current item state.", "actionResult.selectionRequests[0]");
+    if (selectionResults.length !== 1) return failure(actionResult, itemState, selectionResults.length ? ENGINE_SIMULATOR_CODES.SELECTION_INVALID : ENGINE_SIMULATOR_CODES.SELECTION_MISSING, "Exactly one matching removal selection result is required.", "selectionResults");
+    selection = selectionResults[0];
+    const selectionValidation = validateModifierRemovalSelection(request, selection);
+    if (!selectionValidation.valid) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.SELECTION_INVALID, "Removal selection result does not satisfy the authoritative selection contract.", "selectionResults[0]", { cause: selectionValidation.error });
+    candidate = request.candidates[selection.selectedIndex];
+    removedModifier = itemState[candidate.listName]?.find(instance => instance.instanceId === candidate.instanceId) ?? null;
+    if (!removedModifier || removedModifier.modId !== candidate.modifierId || !["prefixModifiers", "suffixModifiers"].includes(candidate.listName)) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.CANDIDATE_MISMATCH, "Selected modifier instance is not removable from the current item state.", "selectionResults[0].selectedCandidate.instanceId", { instanceId: candidate.instanceId });
   } else if (actionResult.selectionRequests.length || selectionResults.length) {
     return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.SELECTION_INVALID, "Selection requests or results are not referenced by the mutation plan.", "selectionResults");
   }
@@ -136,12 +156,17 @@ export function simulateCraftingStep(input = {}) {
     const changes = {};
     if (rarityOperations.length) changes.rarity = rarityOperations[0].rarity;
     if (candidate) {
-      const listName = candidate.generationType === "prefix" ? "prefixModifiers" : "suffixModifiers";
-      changes[listName] = [...itemState[listName], selectedModifier(candidate, itemState, actionResult.actionId, request.id)];
+      if (removalOperations.length) changes[candidate.listName] = itemState[candidate.listName].filter(instance => instance.instanceId !== candidate.instanceId);
+      else {
+        const listName = candidate.generationType === "prefix" ? "prefixModifiers" : "suffixModifiers";
+        changes[listName] = [...itemState[listName], selectedModifier(candidate, itemState, actionResult.actionId, request.id)];
+      }
     }
     const resultingItemState = reviseItemState(itemState, changes);
-    const appliedOperations = operations.map(entry => ({ sequence: entry.sequence, operation: entry.operation, selectionRequestId: entry.selectionRequestId ?? null, rarity: entry.rarity ?? null }));
-    return output(actionResult, itemState, "simulated", null, { resultingItemState, appliedOperations, consumedSelectionRequestIds: request ? [request.id] : [] });
+    const appliedOperations = operations.map(entry => ({ sequence: entry.sequence, operation: entry.operation, selectionRequestId: entry.selectionRequestId ?? null,
+      rarity: entry.rarity ?? null, removedInstanceId: entry.operation === "remove-selected-modifier" ? removedModifier?.instanceId ?? null : null }));
+    return output(actionResult, itemState, "simulated", null, { resultingItemState, appliedOperations, consumedSelectionRequestIds: request ? [request.id] : [],
+      selectionResult: selection, removedModifier, nextRngState: selection?.nextRngState ?? null });
   } catch (error) {
     return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.INVARIANT, "Validated mutation plan could not produce a valid item state.", "resultingItemState", { causeCode: error?.code ?? null, causePath: error?.path ?? null });
   }

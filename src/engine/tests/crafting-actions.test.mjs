@@ -7,7 +7,7 @@ import {
   getCraftingActionDefinition, immutableCopy, listCraftingActionDefinitions, loadModifierCatalog
 } from "../index.mjs";
 
-const ACTION_IDS = ["currency:alteration", "currency:augmentation", "currency:chaos", "currency:exalted", "currency:regal", "currency:transmutation"];
+const ACTION_IDS = ["currency:alteration", "currency:annulment", "currency:augmentation", "currency:chaos", "currency:exalted", "currency:regal", "currency:transmutation"];
 const TEST_CAPACITY_RULES = Object.freeze({ prefix: 10, suffix: 10 });
 const TEST_COUNTS = Object.freeze({ "currency:alteration": 2, "currency:chaos": 3 });
 const TEST_REMOVALS = Object.freeze({ "currency:alteration": 1, "currency:chaos": 2 });
@@ -33,8 +33,8 @@ const evaluate = (actionId, rarity, changes = {}) => evaluateCraftingAction({ ac
   ruleContext: changes.ruleContext ?? null, actionContext: changes.actionContext ?? rules(), options: changes.options ?? {} });
 const has = (result, code) => result.reasons.some(entry => entry.code === code);
 
-test("1 all six action IDs are registered", () => assert.deepEqual(listCraftingActionDefinitions().map(entry => entry.id), ACTION_IDS));
-test("2 action IDs are unique", () => assert.equal(new Set(listCraftingActionDefinitions().map(entry => entry.id)).size, 6));
+test("1 all seven action IDs are registered", () => assert.deepEqual(listCraftingActionDefinitions().map(entry => entry.id), ACTION_IDS));
+test("2 action IDs are unique", () => assert.equal(new Set(listCraftingActionDefinitions().map(entry => entry.id)).size, 7));
 test("3 definitions have stable technical order", () => assert.deepEqual(listCraftingActionDefinitions().map(entry => entry.id), ACTION_IDS));
 test("4 unknown action is structured", () => { const result = evaluateCraftingAction({ actionId: "currency:unknown" }); assert.equal(result.status, "error"); assert.equal(result.errors[0].code, ENGINE_ACTION_CODES.UNKNOWN); });
 test("5 definitions are recursively immutable", () => { const value = getCraftingActionDefinition("currency:chaos"); assert.ok(Object.isFrozen(value)); assert.ok(Object.isFrozen(value.notes)); });

@@ -4,6 +4,7 @@ import {
   CURRENT_MAX_ITEM_LEVEL,
   evaluateCraftingAction,
   getDefaultCapacityRules,
+  selectModifierForRemoval,
   selectWeightedModifier,
   simulateCraftingStep
 } from "../engine/browser.mjs";
@@ -12,7 +13,8 @@ export const SINGLE_STEP_ACTIONS = Object.freeze([
   Object.freeze({ id: "currency:transmutation", label: "Transmutation" }),
   Object.freeze({ id: "currency:augmentation", label: "Orb of Augmentation" }),
   Object.freeze({ id: "currency:regal", label: "Regal Orb" }),
-  Object.freeze({ id: "currency:exalted", label: "Exalted Orb" })
+  Object.freeze({ id: "currency:exalted", label: "Exalted Orb" }),
+  Object.freeze({ id: "currency:annulment", label: "Sphäre der Annullierung" })
 ]);
 
 const actionIds = new Set(SINGLE_STEP_ACTIONS.map(action => action.id));
@@ -61,8 +63,13 @@ export function canRunSingleStep({ itemState, catalog, actionId, busy = false, i
   if (busy) return Object.freeze({ enabled: false, reason: "Crafting-Schritt wird ausgeführt." });
   if (itemLevelValidation && !itemLevelValidation.valid) return Object.freeze({ enabled: false, reason: itemLevelValidation.reason });
   if (!itemState) return Object.freeze({ enabled: false, reason: "Wähle zuerst eine gültige Basis und ein Item-Level." });
-  if (!catalog) return Object.freeze({ enabled: false, reason: "Der Modifier-Katalog ist noch nicht verfügbar." });
   if (!actionIds.has(actionId)) return Object.freeze({ enabled: false, reason: "Wähle eine unterstützte Crafting-Währung." });
+  if (!catalog && actionId !== "currency:annulment") return Object.freeze({ enabled: false, reason: "Der Modifier-Katalog ist noch nicht verfügbar." });
+  if (actionId === "currency:annulment") {
+    const actionResult = evaluateCraftingAction({ actionId, itemState, catalog, actionContext: {} });
+    if (actionResult.status !== "applicable") return Object.freeze({ enabled: false, reason: diagnosticMessageDe(firstDiagnostic(actionResult, actionResult.status), actionResult.status), actionResult });
+    return Object.freeze({ enabled: true, reason: "Bereit für genau einen Crafting-Schritt.", actionResult });
+  }
   return Object.freeze({ enabled: true, reason: "Bereit für genau einen Crafting-Schritt." });
 }
 
@@ -75,22 +82,53 @@ function firstDiagnostic(result, status = result?.status) {
     ?? null;
 }
 
+const DIAGNOSTIC_MESSAGES_DE = Object.freeze({
+  ENGINE_ACTION_NO_REMOVABLE_MODIFIER: "Dieser Gegenstand besitzt keinen entfernbaren regulären Präfix- oder Suffix-Modifikator.",
+  ENGINE_ACTION_ITEM_RARITY_NOT_ALLOWED: "Diese Crafting-Währung ist für die aktuelle Seltenheit nicht anwendbar.",
+  ENGINE_SIMULATOR_REQUEST_MISMATCH: "Der Crafting-Zustand ist veraltet. Bitte führe den Schritt mit dem aktuellen Gegenstand erneut aus.",
+  ENGINE_SIMULATOR_STATE_MISMATCH: "Der Gegenstand hat sich seit der Auswahl verändert. Bitte starte den Crafting-Schritt erneut.",
+  ENGINE_SIMULATOR_CANDIDATE_MISMATCH: "Der ausgewählte Modifikator ist auf dem aktuellen Gegenstand nicht mehr vorhanden.",
+  ENGINE_SIMULATOR_SELECTION_INVALID: "Die Modifikatorauswahl ist ungültig. Der Gegenstand wurde nicht verändert.",
+  ENGINE_SIMULATOR_SELECTION_MISSING: "Es konnte kein Modifikator für diesen Crafting-Schritt ausgewählt werden.",
+  ENGINE_SIMULATOR_ITEM_STATE_INVALID: "Der aktuelle Gegenstandszustand ist ungültig.",
+  ENGINE_ACTION_CONTEXT_INVALID: "Der aktuelle Gegenstandszustand konnte nicht geprüft werden."
+});
+
+export function diagnosticMessageDe(diagnostic, status = "error") {
+  if (diagnostic?.code && DIAGNOSTIC_MESSAGES_DE[diagnostic.code]) return DIAGNOSTIC_MESSAGES_DE[diagnostic.code];
+  if (status === "inapplicable") return "Diese Crafting-Währung ist für den aktuellen Gegenstand nicht anwendbar.";
+  if (status === "unresolved") return "Dieser Crafting-Schritt kann mit den verfügbaren Daten nicht sicher ausgeführt werden.";
+  return "Ein technischer Engine-Fehler ist aufgetreten. Der Gegenstand wurde nicht verändert.";
+}
+
 export function runSingleStep({ itemState, catalog, actionId, seed = 0, itemLevelValidation = null }) {
   const readiness = canRunSingleStep({ itemState, catalog, actionId, itemLevelValidation });
   if (!readiness.enabled) {
+    if (readiness.actionResult) {
+      const diagnostic = firstDiagnostic(readiness.actionResult, readiness.actionResult.status);
+      return Object.freeze({
+        status: readiness.actionResult.status,
+        message: readiness.reason,
+        reasonCode: diagnostic?.code ?? null,
+        itemState,
+        actionResult: readiness.actionResult,
+        selectionResult: null,
+        simulationResult: null
+      });
+    }
     return Object.freeze({ status: "error", message: readiness.reason, itemState, actionResult: null, selectionResult: null, simulationResult: null });
   }
 
   try {
     const capacityRules = capacityRulesForAction(actionId);
     const actionContext = capacityRules ? { capacityRules } : {};
-    const actionResult = evaluateCraftingAction({ actionId, itemState, catalog, actionContext });
+    const actionResult = readiness.actionResult ?? evaluateCraftingAction({ actionId, itemState, catalog, actionContext });
 
     if (actionResult.status !== "applicable") {
       const diagnostic = firstDiagnostic(actionResult, actionResult.status);
       return Object.freeze({
         status: actionResult.status,
-        message: diagnostic?.message ?? "Die Engine konnte diesen Schritt nicht ausführen.",
+        message: diagnosticMessageDe(diagnostic, actionResult.status),
         reasonCode: diagnostic?.code ?? null,
         itemState,
         actionResult,
@@ -100,12 +138,14 @@ export function runSingleStep({ itemState, catalog, actionId, seed = 0, itemLeve
     }
 
     const request = actionResult.selectionRequests[0];
-    const selectionResult = selectWeightedModifier(request, { rngState: createSeededRandom(seed) });
+    const selectionResult = request.type === "modifier-removal"
+      ? selectModifierForRemoval(request, { rngState: createSeededRandom(seed) })
+      : selectWeightedModifier(request, { rngState: createSeededRandom(seed) });
     if (selectionResult.status !== "selected") {
       const diagnostic = firstDiagnostic(selectionResult);
       return Object.freeze({
         status: selectionResult.status === "inapplicable" ? "inapplicable" : "error",
-        message: diagnostic?.message ?? "Die gewichtete Auswahl ist fehlgeschlagen.",
+        message: diagnosticMessageDe(diagnostic, selectionResult.status),
         reasonCode: diagnostic?.code ?? null,
         itemState,
         actionResult,
@@ -119,7 +159,7 @@ export function runSingleStep({ itemState, catalog, actionId, seed = 0, itemLeve
       const diagnostic = firstDiagnostic(simulationResult);
       return Object.freeze({
         status: simulationResult.status,
-        message: diagnostic?.message ?? "Die Simulation ist fehlgeschlagen.",
+        message: diagnosticMessageDe(diagnostic, simulationResult.status),
         reasonCode: diagnostic?.code ?? null,
         itemState,
         actionResult,
@@ -130,7 +170,9 @@ export function runSingleStep({ itemState, catalog, actionId, seed = 0, itemLeve
 
     return Object.freeze({
       status: "successful",
-      message: "Der Crafting-Schritt wurde erfolgreich simuliert.",
+      message: actionId === "currency:annulment"
+        ? "Die Sphäre der Annullierung wurde erfolgreich angewendet."
+        : "Der Crafting-Schritt wurde erfolgreich simuliert.",
       reasonCode: null,
       itemState: simulationResult.resultingItemState,
       previousItemState: itemState,
@@ -141,7 +183,7 @@ export function runSingleStep({ itemState, catalog, actionId, seed = 0, itemLeve
   } catch (error) {
     return Object.freeze({
       status: "error",
-      message: error?.message ?? "Unbekannter Engine-Fehler.",
+      message: diagnosticMessageDe({ code: error?.code ?? null }, "error"),
       reasonCode: error?.code ?? null,
       itemState,
       actionResult: null,

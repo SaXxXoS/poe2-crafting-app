@@ -3,7 +3,9 @@ import { canonicalTechnicalString } from "./canonical-serialization.mjs";
 import { validateModifierCatalog } from "./catalog-validation.mjs";
 import { compareTechnicalStrings, resolveEligibleModifiers } from "./eligible-modifier-resolver.mjs";
 import { immutableCopy } from "./immutability.mjs";
+import { createModifierRemovalRequest } from "./modifier-removal.mjs";
 import { createRuleContext } from "./rule-context.mjs";
+import { validateItemState } from "./validation.mjs";
 
 const isRecord = value => Boolean(value) && typeof value === "object" && !Array.isArray(value);
 const compareNumbers = (left, right) => left === right ? 0 : left < right ? -1 : 1;
@@ -27,6 +29,7 @@ const compareRequests = (left, right) => compareFields([
 
 const definition = input => immutableCopy(input);
 const definitions = [
+  definition({ id: "currency:annulment", category: "currency", technicalName: "annulment", inputRarities: ["normal", "magic", "rare"], rarityTransition: null, operationType: "remove-modifier", requiresCatalog: false, requiresEligibilityResolution: false, requiresRandomSelection: false, requiresRandomRemoval: true, selectionCount: 0, removalCount: 1, preservesExistingModifiers: true, notes: ["Only regular explicit prefix and suffix instances are removable."] }),
   definition({ id: "currency:alteration", category: "currency", technicalName: "alteration", inputRarities: ["magic"], rarityTransition: null, operationType: "reroll-modifiers", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: true, selectionCount: null, removalCount: null, preservesExistingModifiers: false, notes: ["Replacement counts require explicit caller rules."] }),
   definition({ id: "currency:augmentation", category: "currency", technicalName: "augmentation", inputRarities: ["magic"], rarityTransition: null, operationType: "add-modifier", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: false, selectionCount: 1, removalCount: 0, preservesExistingModifiers: true, notes: ["Capacity is never inferred."] }),
   definition({ id: "currency:chaos", category: "currency", technicalName: "chaos", inputRarities: ["rare"], rarityTransition: null, operationType: "reroll-modifiers", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: true, selectionCount: null, removalCount: null, preservesExistingModifiers: false, notes: ["PoE2 replacement counts require explicit caller rules."] }),
@@ -87,7 +90,7 @@ function additionRequest(action, itemState, catalog, count, candidates, eligibil
     candidates: compact, weighting, replacementPolicy, constraints, sourceResult, deterministicKey };
 }
 
-function removalRequest(action, itemState, count) {
+function deferredRemovalRequest(action, itemState, count) {
   const candidates = [...itemState.prefixModifiers, ...itemState.suffixModifiers].map(instance => ({ instanceId: instance.instanceId,
     modifierId: instance.modId, familyId: instance.familyId, generationType: instance.generationType, domain: instance.domain,
     technicalTier: instance.technicalTier, statIds: instance.statIds, source: instance.source, appliedAtRevision: instance.appliedAtRevision })).sort((left, right) => compareFields([
@@ -102,7 +105,7 @@ function removalRequest(action, itemState, count) {
   return { id: `selection:${deterministicKey}`, type: "modifier-removal", actionId: action.id, count, candidateStatus: "existing", executable: false,
     candidates, weighting: { mode: "none", normalized: false }, replacementPolicy, constraints,
     sourceResult: { prefixCount: itemState.prefixModifiers.length, suffixCount: itemState.suffixModifiers.length },
-    deferredReason: "Removal selection is not implemented in Crafting Actions Core v1.", deterministicKey };
+    deferredReason: "Replacement removal selection remains deferred.", deterministicKey };
 }
 
 export function evaluateCraftingAction({ actionId, itemState, catalog, ruleContext = null, actionContext = {}, options = {} } = {}) {
@@ -119,8 +122,15 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   }
   let context;
   try {
-    context = ruleContext ?? createRuleContext({ itemState, catalog, actionContext });
-    if (context.itemState !== itemState || context.catalog !== catalog) throw new Error("Rule context does not reference the supplied item state and catalog.");
+    if (ruleContext) {
+      context = ruleContext;
+      if (context.itemState !== itemState || context.catalog !== catalog) throw new Error("Rule context does not reference the supplied item state and catalog.");
+    } else if (action.requiresCatalog) {
+      context = createRuleContext({ itemState, catalog, actionContext });
+    } else {
+      validateItemState(itemState);
+      context = Object.freeze({ itemState, catalog: null, actionContext: immutableCopy(actionContext) });
+    }
   } catch (error) {
     return emptyResult(actionId, action, reason(ENGINE_ACTION_CODES.CONTEXT_INVALID, "error", error.message, "context", error.path ?? "context", { code: error.code ?? null, details: error.details ?? {} }));
   }
@@ -139,6 +149,15 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
       prefixCount + suffixCount === 0 ? "Action requires and received an item without existing modifiers." : "Action does not allow existing modifiers.",
       "existingModifiers", "itemState", { prefixCount, suffixCount });
   }
+  if (action.operationType === "remove-modifier") {
+    const prefixCount = itemState.prefixModifiers.length;
+    const suffixCount = itemState.suffixModifiers.length;
+    const removableCount = prefixCount + suffixCount;
+    add(removableCount ? ENGINE_ACTION_CODES.REMOVABLE_MODIFIER_AVAILABLE : ENGINE_ACTION_CODES.NO_REMOVABLE_MODIFIER,
+      removableCount ? "pass" : "fail",
+      removableCount ? "At least one regular explicit modifier can be removed." : "Item has no removable regular explicit modifier.",
+      "existingModifiers", "itemState", { prefixCount, suffixCount, removableCount });
+  }
   if (action.rarityTransition) add(ENGINE_ACTION_CODES.RARITY_TRANSITION_AVAILABLE, "pass", "Rarity transition is defined by the action contract.", "rarityTransition", "definition.rarityTransition", action.rarityTransition);
 
   const explicitCount = action.selectionCount ?? actionContext.selectionCountRules?.[action.id] ?? null;
@@ -147,7 +166,9 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
 
   const removalCount = action.removalCount ?? actionContext.removalRules?.[action.id] ?? null;
   if (action.requiresRandomRemoval && (!Number.isInteger(removalCount) || removalCount < 0)) add(ENGINE_ACTION_CODES.REMOVAL_RULE_UNRESOLVED, "unresolved", "A reliable removal rule was not supplied.", "removal", "actionContext.removalRules", { actionId: action.id });
-  else if (action.requiresRandomRemoval) add(ENGINE_ACTION_CODES.RANDOM_REMOVAL_REQUIRED, "pass", "Random removal is required and will be deferred.", "removal", "actionContext.removalRules", { count: removalCount });
+  else if (action.requiresRandomRemoval) add(ENGINE_ACTION_CODES.RANDOM_REMOVAL_REQUIRED, "pass",
+    action.operationType === "remove-modifier" ? "Exactly one regular explicit modifier will be selected for removal." : "Random removal is required and will be deferred.",
+    "removal", action.removalCount !== null ? "definition.removalCount" : "actionContext.removalRules", { count: removalCount });
 
   let eligibilityResult = null;
   if (replacementAction) {
@@ -170,8 +191,9 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   const selectionRequests = [];
   try {
     if (status === "applicable" && action.requiresRandomSelection) selectionRequests.push(additionRequest(action, itemState, catalog, explicitCount, eligibilityResult.eligible, eligibilityResult, actionContext.capacityRules ?? options.capacityRules ?? null));
-    if ((status === "applicable" || status === "unresolved") && action.requiresRandomRemoval && Number.isInteger(removalCount) && removalCount >= 0
-      && action.inputRarities.includes(itemState.rarity)) selectionRequests.push(removalRequest(action, itemState, removalCount));
+    if (status === "applicable" && action.operationType === "remove-modifier") selectionRequests.push(createModifierRemovalRequest({ actionId: action.id, itemState }));
+    else if ((status === "applicable" || status === "unresolved") && action.requiresRandomRemoval && Number.isInteger(removalCount) && removalCount >= 0
+      && action.inputRarities.includes(itemState.rarity)) selectionRequests.push(deferredRemovalRequest(action, itemState, removalCount));
   } catch (error) {
     return emptyResult(actionId, action, reason(error.code ?? ENGINE_ACTION_CODES.CONTEXT_INVALID, "error", error.message, "request", error.path ?? "request", error.details ?? {}));
   }
@@ -179,7 +201,9 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   const mutationPlan = [];
   if (action.rarityTransition) mutationPlan.push({ sequence: mutationPlan.length, operation: "set-rarity", rarity: action.rarityTransition.to, applied: false });
   if (action.preservesExistingModifiers) mutationPlan.push({ sequence: mutationPlan.length, operation: "preserve-existing-modifiers", applied: false });
-  if (action.requiresRandomRemoval) mutationPlan.push({ sequence: mutationPlan.length, operation: "clear-random-modifiers", selectionRequestId: selectionRequests.find(entry => entry.type === "modifier-removal")?.id ?? null, applied: false });
+  if (action.requiresRandomRemoval) mutationPlan.push({ sequence: mutationPlan.length,
+    operation: action.operationType === "remove-modifier" ? "remove-selected-modifier" : "clear-random-modifiers",
+    selectionRequestId: selectionRequests.find(entry => entry.type === "modifier-removal")?.id ?? null, applied: false });
   if (action.requiresRandomSelection) mutationPlan.push({ sequence: mutationPlan.length, operation: action.operationType === "reroll-modifiers" ? "replace-random-modifiers" : "add-selected-modifier", selectionRequestId: selectionRequests.find(entry => entry.type === "modifier-addition")?.id ?? null, applied: false });
   return immutableCopy({ valid: errors.length === 0, actionId, status, definition: action,
     contextSummary: { itemId: itemState.itemId, revision: itemState.revision, itemClassId: itemState.itemClassId, baseTypeId: itemState.baseTypeId, itemLevel: itemState.itemLevel, rarity: itemState.rarity },

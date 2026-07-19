@@ -7,6 +7,7 @@ export * from "./eligible-modifier-resolver.mjs";
 export * from "./immutability.mjs";
 export * from "./item-state.mjs";
 export * from "./modifier-instance.mjs";
+export * from "./modifier-removal.mjs";
 export * from "./planner.mjs";
 export * from "./rule-context.mjs";
 export * from "./rule-evaluation.mjs";

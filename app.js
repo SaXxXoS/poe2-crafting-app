@@ -27,7 +27,7 @@ import {
     'Regal Orb',
     'Exalted Orb',
     'Divine Orb',
-    'Orb of Annulment',
+    'Sphäre der Annullierung',
     'Chaos Orb',
     'Vaal Orb'
   ];
@@ -767,7 +767,7 @@ import {
         : null;
     } catch (error) {
       state.singleStep.itemState = null;
-      state.singleStep.result = { status: 'error', message: error?.message || 'Ungültiger Ausgangszustand.' };
+      state.singleStep.result = { status: 'error', message: 'Der Ausgangszustand des Gegenstands ist ungültig.' };
     }
     renderSingleStep();
   }
@@ -840,7 +840,7 @@ import {
     } catch (error) {
       console.error('Single-step crafting failed', error);
       state.singleStep.undoItemState = null;
-      state.singleStep.result = { status: 'error', message: error?.message || 'Unbekannter Fehler.', itemState: state.singleStep.itemState };
+      state.singleStep.result = { status: 'error', message: 'Ein technischer Fehler ist aufgetreten. Der Gegenstand wurde nicht verändert.', itemState: state.singleStep.itemState };
     } finally {
       state.singleStep.busy = false;
       renderSingleStep();
