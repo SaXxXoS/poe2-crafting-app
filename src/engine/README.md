@@ -52,6 +52,24 @@ Die Statuspriorität lautet: struktureller Engine-/Katalogfehler, sicherer Aussc
 
 Eingaben werden nicht mutiert, das Ergebnis wird rekursiv eingefroren und alle Listen werden nach technischen Feldern deterministisch sortiert. Technische Strings werden localeunabhängig in JavaScript-Code-Unit-Reihenfolge verglichen; `localeCompare` und `Intl.Collator` werden nicht verwendet. Kandidaten, Reasons, Errors und Warnings besitzen stabile technische Tie-Breaker, sodass fachlich identische Eingaben trotz unterschiedlicher Einfügereihenfolge bytegenau identische serialisierte Ergebnisse erzeugen. Der Resolver implementiert weder Crafting-Aktionen noch Mutation, RNG, gewichtete Auswahl, Wahrscheinlichkeiten, Targeting, Meta-Crafts, Planner, Simulator oder UI. Spätere Aktionen und RNG müssen auf dieser nachvollziehbaren Kandidatenauflösung aufbauen.
 
+## Deterministic Weight Selection v1
+
+`selectWeightedModifier(request, options)` konsumiert genau einen bereits vollständig aufgelösten, ausführbaren `modifier-addition`-Selection-Request mit `count: 1`. Die Funktion liest keinen Catalog oder Item State, ruft weder Actions noch Eligibility erneut auf und verändert keine Eingabe. Removal, Replacement, andere Counts, leere Pools und nicht ausführbare Requests bleiben ausdrücklich außerhalb dieses Meilensteins.
+
+Der effektive Auswahlwert ist ausschließlich das bereits vom Resolver für Item und Basistags bestimmte Feld `candidate.applicableWeight.spawn`. Rohe Spawn-/Generation-Weight-Listen, `applicableWeight.generation`, sichtbare Tiers und Candidate Counts werden nicht neu interpretiert, multipliziert oder normalisiert. Endliche Gewichte ab `0` sind strukturell gültig; Gewicht `0` bleibt im Request, kann aber nie ausgewählt werden. Die positive Gesamtsumme muss endlich bleiben.
+
+Die Auswahl verwendet den Zielwert `randomValue * totalWeight` im halboffenen Intervall `[0, totalWeight)` und durchläuft Candidates unverändert in Request-Reihenfolge. Ausgewählt wird der erste positive Candidate mit `targetWeight < cumulativeWeight`. Die bereits deterministische Request-Reihenfolge ist damit Teil der Auswahlsemantik; das Modul sortiert oder kanonisiert den Pool nicht erneut.
+
+Für reproduzierbare Produktionsaufrufe erzeugt `createSeededRandom(seed)` einen expliziten unveränderlichen Mulberry32-Zustand aus einem unsigned 32-Bit-Integer. `selectWeightedModifier` akzeptiert diesen als `options.rngState` und gibt `nextRngState` zur expliziten Fortsetzung zurück. Alternativ kann ein Caller für isolierte Tests `options.random` injizieren; dessen Ergebnis muss endlich und in `[0, 1)` liegen. Es gibt keine globale RNG-Instanz, Zeit-, Crypto- oder `Math.random`-Quelle. Mulberry32 ist eine kleine plattformunabhängige technische PRNG und nicht kryptographisch sicher.
+
+Das tief eingefrorene Resultat besitzt `selected`, `inapplicable` oder `error`, technische Request-Referenzen, ausgewählten Candidate und Index, Zufalls-/Gewichtswerte, RNG-Zustände sowie strukturierte Reasons und Errors. Fehlercodes unterscheiden Request-Typ, Executability, Count, Pool, Candidate-Identität, effektive Gewichte, Seed/RNG und interne Auswahl-Invarianten. Dieser Meilenstein führt keinen Mutation Plan aus, wendet keinen Modifier an und implementiert weder Simulator, Planner, Monte Carlo, Wahrscheinlichkeitsanzeige noch UI.
+
+```js
+const rngState = createSeededRandom(42);
+const selected = selectWeightedModifier(action.selectionRequests[0], { rngState });
+// selected.selectedCandidate ist nur das unveränderliche technische Auswahlergebnis.
+```
+
 ## Crafting Actions Core v1
 
 Die Action-Schicht trennt unveränderliche **Action Definitions**, deterministische **Action Applicability** und einen noch nicht ausgeführten **Action Execution Plan**. Die Registry verwendet ausschließlich stabile technische IDs: `currency:transmutation`, `currency:augmentation`, `currency:alteration`, `currency:regal`, `currency:exalted` und `currency:chaos`. Definitionen beschreiben Rarity-Vertrag, Operationstyp, Auswahl-/Entfernungsbedarf und bekannte Grenzen; Anzeigenamen und Übersetzungen besitzen keine technische Bedeutung.

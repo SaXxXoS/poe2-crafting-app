@@ -8,5 +8,7 @@ export * from "./item-state.mjs";
 export * from "./modifier-instance.mjs";
 export * from "./rule-context.mjs";
 export * from "./rule-evaluation.mjs";
+export * from "./random-source.mjs";
 export * from "./serialization.mjs";
 export * from "./validation.mjs";
+export * from "./weighted-selection.mjs";
