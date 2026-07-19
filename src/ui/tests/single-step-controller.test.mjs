@@ -5,6 +5,7 @@ import { createModifierCatalog, getDefaultCapacityRules } from "../../engine/bro
 import {
   SINGLE_STEP_ACTIONS,
   canRunSingleStep,
+  capacityRulesForAction,
   capacityRulesForRarity,
   createSingleStepItem,
   optionalAffixGroupsFile,
@@ -41,6 +42,114 @@ test("Magic and Rare explicitly select authoritative capacity rules", () => {
 });
 
 test("Normal has no invented capacity rule", () => assert.equal(capacityRulesForRarity("normal"), undefined));
+
+test("single-step actions expose Transmutation first with the authoritative action id", () => {
+  assert.deepEqual(SINGLE_STEP_ACTIONS.map(action => action.id), [
+    "currency:transmutation",
+    "currency:augmentation",
+    "currency:regal",
+    "currency:exalted"
+  ]);
+  assert.equal(SINGLE_STEP_ACTIONS[0].label, "Transmutation");
+});
+
+test("actions explicitly select the matching authoritative capacity without a Normal rule", () => {
+  const defaults = getDefaultCapacityRules();
+  assert.equal(capacityRulesForAction("currency:transmutation"), defaults.magic);
+  assert.equal(capacityRulesForAction("currency:augmentation"), defaults.magic);
+  assert.equal(capacityRulesForAction("currency:regal"), defaults.rare);
+  assert.equal(capacityRulesForAction("currency:exalted"), defaults.rare);
+  assert.equal(capacityRulesForAction("currency:unknown"), undefined);
+  assert.equal(capacityRulesForRarity("normal"), undefined);
+});
+
+test("successful Transmutation adopts one deterministic modifier and changes Normal to Magic", () => {
+  const before = item("normal");
+  const serializedBefore = JSON.stringify(before);
+  const result = runSingleStep({ itemState: before, catalog, actionId: "currency:transmutation", seed: 0 });
+  assert.equal(result.status, "successful");
+  assert.equal(result.previousItemState, before);
+  assert.equal(result.itemState.rarity, "magic");
+  assert.equal(result.itemState.revision, before.revision + 1);
+  assert.equal(result.itemState.prefixModifiers.length + result.itemState.suffixModifiers.length, 1);
+  assert.equal(JSON.stringify(before), serializedBefore);
+});
+
+test("controlled seeded Transmutation can select a prefix and a suffix", () => {
+  const prefix = runSingleStep({ itemState: item("normal"), catalog, actionId: "currency:transmutation", seed: 0 });
+  const suffixSeed = Array.from({ length: 1000 }, (_, seed) => seed)
+    .find(seed => runSingleStep({ itemState: item("normal"), catalog, actionId: "currency:transmutation", seed }).itemState.suffixModifiers.length === 1);
+  assert.equal(prefix.itemState.prefixModifiers.length, 1);
+  assert.notEqual(suffixSeed, undefined);
+  const suffix = runSingleStep({ itemState: item("normal"), catalog, actionId: "currency:transmutation", seed: suffixSeed });
+  assert.equal(suffix.itemState.suffixModifiers.length, 1);
+});
+
+test("manual Augmentation continues from the successful Transmutation state", () => {
+  const transmuted = runSingleStep({ itemState: item("normal"), catalog, actionId: "currency:transmutation", seed: 0 });
+  const augmented = runSingleStep({ itemState: transmuted.itemState, catalog, actionId: "currency:augmentation", seed: 0 });
+  assert.equal(augmented.status, "successful");
+  assert.equal(augmented.itemState.rarity, "magic");
+  assert.equal(augmented.itemState.revision, 2);
+  assert.equal(augmented.itemState.prefixModifiers.length + augmented.itemState.suffixModifiers.length, 2);
+});
+
+test("Transmutation rejects Magic, Rare, and every affixed Normal shape without mutation", () => {
+  const prefixState = runSingleStep({ itemState: item("normal"), catalog, actionId: "currency:transmutation", seed: 0 }).itemState;
+  const suffixSeed = Array.from({ length: 1000 }, (_, seed) => seed)
+    .find(seed => runSingleStep({ itemState: item("normal"), catalog, actionId: "currency:transmutation", seed }).itemState.suffixModifiers.length === 1);
+  const suffixState = runSingleStep({ itemState: item("normal"), catalog, actionId: "currency:transmutation", seed: suffixSeed }).itemState;
+  const cases = [
+    item("magic"),
+    item("rare"),
+    { ...prefixState, rarity: "normal" },
+    { ...suffixState, rarity: "normal" },
+    { ...prefixState, rarity: "normal", suffixModifiers: suffixState.suffixModifiers }
+  ];
+  for (const before of cases) {
+    const serializedBefore = JSON.stringify(before);
+    const result = runSingleStep({ itemState: before, catalog, actionId: "currency:transmutation", seed: 0 });
+    assert.equal(result.status, "inapplicable");
+    assert.equal(result.itemState, before);
+    assert.equal(JSON.stringify(before), serializedBefore);
+  }
+});
+
+test("Augmentation, Regal, and Exalted remain executable through the shared pipeline", () => {
+  const augmentation = runSingleStep({ itemState: item("magic"), catalog, actionId: "currency:augmentation", seed: 0 });
+  const regal = runSingleStep({ itemState: item("magic"), catalog, actionId: "currency:regal", seed: 0 });
+  const exalted = runSingleStep({ itemState: item("rare"), catalog, actionId: "currency:exalted", seed: 0 });
+  assert.equal(augmentation.status, "successful");
+  assert.equal(regal.status, "successful");
+  assert.equal(regal.itemState.rarity, "rare");
+  assert.equal(exalted.status, "successful");
+});
+
+test("Transmutation unresolved weight data preserves the Normal state", () => {
+  const incomplete = createModifierCatalog({
+    index: { classes: [{ id: "Bow" }] },
+    bases: { bases: [{ id: "base:bow", itemClass: "Bow", tags: ["bow"] }] },
+    mods: { mods: [{ modId: "mod:prefix", generationType: "prefix", domain: "item", source: "normal", technicalStats: [{ id: "stat" }], group: "group" }] },
+    affixGroups: { groups: [{ familyId: "family", generationType: "prefix", tiers: [{ modId: "mod:prefix", regularClasses: ["Bow"], spawnWeights: null }] }] }
+  });
+  const before = item("normal");
+  const result = runSingleStep({ itemState: before, catalog: incomplete, actionId: "currency:transmutation", seed: 0 });
+  assert.equal(result.status, "unresolved");
+  assert.equal(result.itemState, before);
+});
+
+test("Transmutation controller contains one simulator call and no direct random selection", async () => {
+  const source = await readFile(new URL("../single-step-controller.mjs", import.meta.url), "utf8");
+  const runSource = source.match(/export function runSingleStep[\s\S]*?\n}/)?.[0] ?? "";
+  const appSource = await readFile(new URL("../../../app.js", import.meta.url), "utf8");
+  const executeSource = appSource.match(/function executeSingleStep\(\)[\s\S]*?\n  }/)?.[0] ?? "";
+  assert.equal((runSource.match(/simulateCraftingStep\s*\(/g) ?? []).length, 1);
+  assert.equal((executeSource.match(/runSingleStep\s*\(/g) ?? []).length, 1);
+  assert.equal((appSource.match(/singleStepRunBtn'\)\.addEventListener\('click', executeSingleStep\)/g) ?? []).length, 1);
+  assert.doesNotMatch(runSource, /Math\.random/);
+  assert.match(runSource, /selectWeightedModifier/);
+  assert.match(runSource, /createSeededRandom/);
+});
 
 test("successful deterministic step adopts the resulting state", () => {
   const result = runSingleStep({ itemState: item("magic"), catalog, actionId: "currency:augmentation", seed: 0 });
@@ -199,5 +308,43 @@ test("single-step result renders all dynamic values as text without injected ele
     assert.match(container.textContent, new RegExp(payload.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
     assert.deepEqual(descendantTags(container).filter(tag => ["img", "script", "svg"].includes(tag)), []);
     assert.equal(globalThis.__catalogXss, undefined);
+  }
+});
+
+test("Transmutation result renders catalog payloads as inert visible text", () => {
+  const payloads = [
+    "<img src=x onerror=globalThis.__transmutationXss=1>",
+    "<script>globalThis.__transmutationXss=2</script>",
+    "<svg onload=globalThis.__transmutationXss=3></svg>"
+  ];
+  for (const payload of payloads) {
+    const container = new TestElement("div");
+    const before = item("normal");
+    const after = runSingleStep({ itemState: before, catalog, actionId: "currency:transmutation", seed: 0 }).itemState;
+    renderSingleStepResult({
+      document: testDocument,
+      container,
+      currentItemState: after,
+      actionLabel: "Transmutation",
+      modifierDisplay: () => payload,
+      result: {
+        status: "successful",
+        message: "success",
+        itemState: after,
+        previousItemState: before,
+        selectionResult: {
+          selectedCandidate: {
+            modifierId: "mod:prefix",
+            generationType: "prefix",
+            displayTier: 1,
+            applicableWeight: { spawn: 100 }
+          }
+        }
+      }
+    });
+    assert.match(container.textContent, /Transmutation/);
+    assert.match(container.textContent, new RegExp(payload.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+    assert.deepEqual(descendantTags(container).filter(tag => ["img", "script", "svg"].includes(tag)), []);
+    assert.equal(globalThis.__transmutationXss, undefined);
   }
 });

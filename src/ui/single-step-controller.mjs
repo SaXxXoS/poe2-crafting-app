@@ -9,6 +9,7 @@ import {
 } from "../engine/browser.mjs";
 
 export const SINGLE_STEP_ACTIONS = Object.freeze([
+  Object.freeze({ id: "currency:transmutation", label: "Transmutation" }),
   Object.freeze({ id: "currency:augmentation", label: "Orb of Augmentation" }),
   Object.freeze({ id: "currency:regal", label: "Regal Orb" }),
   Object.freeze({ id: "currency:exalted", label: "Exalted Orb" })
@@ -36,6 +37,13 @@ export function capacityRulesForRarity(rarity) {
   const defaults = getDefaultCapacityRules();
   if (rarity === "magic") return defaults.magic;
   if (rarity === "rare") return defaults.rare;
+  return undefined;
+}
+
+export function capacityRulesForAction(actionId) {
+  const defaults = getDefaultCapacityRules();
+  if (actionId === "currency:transmutation" || actionId === "currency:augmentation") return defaults.magic;
+  if (actionId === "currency:regal" || actionId === "currency:exalted") return defaults.rare;
   return undefined;
 }
 
@@ -74,7 +82,7 @@ export function runSingleStep({ itemState, catalog, actionId, seed = 0, itemLeve
   }
 
   try {
-    const capacityRules = capacityRulesForRarity(itemState.rarity);
+    const capacityRules = capacityRulesForAction(actionId);
     const actionContext = capacityRules ? { capacityRules } : {};
     const actionResult = evaluateCraftingAction({ actionId, itemState, catalog, actionContext });
 
