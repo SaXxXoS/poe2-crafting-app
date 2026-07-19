@@ -83,7 +83,7 @@ function additionRequest(action, itemState, catalog, count, candidates, eligibil
     candidateStatus: "eligible", candidates: keyCandidates, weighting, replacementPolicy, constraints,
     capacityRules: capacityRules ?? null };
   const deterministicKey = canonicalTechnicalString(keyPayload);
-  return { id: `selection:${deterministicKey}`, type: "modifier-addition", actionId: action.id, count, candidateStatus: "eligible",
+  return { id: `selection:${deterministicKey}`, type: "modifier-addition", actionId: action.id, executable: true, count, candidateStatus: "eligible",
     candidates: compact, weighting, replacementPolicy, constraints, sourceResult, deterministicKey };
 }
 
