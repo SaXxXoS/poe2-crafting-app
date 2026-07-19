@@ -1,4 +1,5 @@
 export * from "./constants.mjs";
+export * from "./capacity-rules.mjs";
 export * from "./crafting-actions.mjs";
 export * from "./catalog-adapter.mjs";
 export * from "./errors.mjs";
