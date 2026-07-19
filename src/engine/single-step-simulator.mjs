@@ -73,9 +73,10 @@ export function simulateCraftingStep(input = {}) {
     return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ITEM_STATE_INVALID, "Item state is invalid.", "itemState", { causeCode: error?.code ?? null, causePath: error?.path ?? null });
   }
   if (!isRecord(actionResult)) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.INPUT_INVALID, "Action result must be an object.", "actionResult");
+  if (actionResult.status === "error") return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE, "Action result is not valid for execution.", "actionResult");
   if (actionResult.status === "inapplicable") return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE, "Action result is inapplicable.", "actionResult.status", {}, "inapplicable");
   if (actionResult.status === "unresolved") return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE, "Action result is unresolved.", "actionResult.status", {}, "unresolved");
-  if (actionResult.status === "error" || actionResult.valid !== true) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE, "Action result is not valid for execution.", "actionResult", {}, "inapplicable");
+  if (actionResult.valid !== true) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE, "Action result is not valid for execution.", "actionResult");
   if (actionResult.status !== "applicable" || actionResult.summary?.applicable !== true) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID, "Applicable action result contract is inconsistent.", "actionResult.status");
   if (!Array.isArray(actionResult.mutationPlan) || !Array.isArray(actionResult.selectionRequests)) return failure(actionResult, itemState, ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID, "Action result requires mutationPlan and selectionRequests arrays.", "actionResult");
 

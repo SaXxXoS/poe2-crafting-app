@@ -64,7 +64,17 @@ test("12 missing action result is a structured error", () => { const r = simulat
 test("13 inapplicable action result remains inapplicable", () => {
   const itemState = state("normal"), actionResult = evaluateCraftingAction({ actionId: "currency:augmentation", itemState, catalog: catalog() }); const r = simulateCraftingStep({ itemState, actionResult }); assert.equal(r.status, "inapplicable"); assert.equal(code(r), ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE);
 });
-test("14 error action result is not executable", () => { const r = simulateCraftingStep({ itemState: state("magic"), actionResult: { valid: false, status: "error" } }); assert.equal(r.status, "inapplicable"); });
+test("14 error action result follows the structural error path atomically", () => {
+  const itemState = state("magic");
+  const actionResult = Object.freeze({ actionId: "currency:augmentation", valid: false, status: "error" });
+  const selectionResults = Object.freeze([]);
+  const before = [JSON.stringify(itemState), JSON.stringify(actionResult), JSON.stringify(selectionResults)];
+  const result = simulateCraftingStep({ itemState, actionResult, selectionResults });
+  assert.equal(result.valid, false); assert.equal(result.status, "error");
+  assert.equal(result.errors.length, 1); assert.equal(result.errors[0].code, ENGINE_SIMULATOR_CODES.ACTION_NOT_EXECUTABLE);
+  assert.equal(result.resultingItemState, null); assert.equal(result.resultingItemRevision, null); assert.deepEqual(result.appliedOperations, []);
+  assert.deepEqual([JSON.stringify(itemState), JSON.stringify(actionResult), JSON.stringify(selectionResults)], before);
+});
 test("15 applicable result without mutation plan is an error", () => { const r = simulateCraftingStep({ itemState: state("magic"), actionResult: { valid: true, status: "applicable", summary: { applicable: true }, selectionRequests: [] } }); assert.equal(code(r), ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID); });
 test("16 malformed mutation plan is rejected", () => {
   const { itemState, actionResult, selectionResult } = pipeline("currency:augmentation", "magic"); const bad = clone(actionResult); bad.mutationPlan[0].sequence = 4; assert.equal(code(simulateCraftingStep({ itemState, actionResult: bad, selectionResults: [selectionResult] })), ENGINE_SIMULATOR_CODES.MUTATION_PLAN_INVALID);
