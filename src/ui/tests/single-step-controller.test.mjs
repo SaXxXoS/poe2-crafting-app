@@ -7,6 +7,8 @@ import {
   canRunSingleStep,
   capacityRulesForRarity,
   createSingleStepItem,
+  optionalAffixGroupsFile,
+  validateItemLevel,
   runSingleStep
 } from "../single-step-controller.mjs";
 
@@ -89,6 +91,35 @@ test("readiness rejects missing fields and unsupported actions", () => {
   assert.equal(canRunSingleStep({ itemState: null, catalog, actionId: SINGLE_STEP_ACTIONS[0].id }).enabled, false);
   assert.equal(canRunSingleStep({ itemState: item("magic"), catalog: null, actionId: SINGLE_STEP_ACTIONS[0].id }).enabled, false);
   assert.equal(canRunSingleStep({ itemState: item("magic"), catalog, actionId: "currency:chaos" }).enabled, false);
+});
+
+test("raw item-level validation accepts only integers from 1 through 86", () => {
+  for (const rawValue of ["", "0", "-1", "87", "10.5", "not-a-number"]) {
+    const validation = validateItemLevel(rawValue);
+    assert.equal(validation.valid, false, String(rawValue));
+    assert.equal(validation.value, null, String(rawValue));
+  }
+  assert.deepEqual(validateItemLevel("1"), { valid: true, value: 1, reason: null });
+  assert.deepEqual(validateItemLevel("86"), { valid: true, value: 86, reason: null });
+});
+
+test("invalid raw item level prevents execution without replacing the item state", () => {
+  const before = item("magic");
+  const validation = validateItemLevel("87");
+  const result = runSingleStep({ itemState: before, catalog, actionId: "currency:augmentation", seed: 0, itemLevelValidation: validation });
+  assert.equal(result.status, "error");
+  assert.equal(result.itemState, before);
+  assert.equal(result.actionResult, null);
+  assert.match(result.message, /ganze Zahl zwischen 1 und 86/);
+});
+
+test("missing affixGroupsFile introduces no fallback catalog request", async () => {
+  assert.equal(optionalAffixGroupsFile({ classes: [] }), null);
+  assert.equal(optionalAffixGroupsFile({ affixGroupsFile: "" }), null);
+  assert.equal(optionalAffixGroupsFile({ affixGroupsFile: "affix-groups.json" }), "affix-groups.json");
+  const appSource = await readFile(new URL("../../../app.js", import.meta.url), "utf8");
+  assert.doesNotMatch(appSource, /affixGroupsFile\s*\|\|/);
+  assert.doesNotMatch(appSource, /APP_DATA_ROOT[^\n]*affix-groups\.json/);
 });
 
 test("UI controller imports browser entry only and no Node loader", async () => {

@@ -3,7 +3,9 @@ import {
   SINGLE_STEP_ACTIONS,
   canRunSingleStep,
   createSingleStepItem,
-  runSingleStep
+  optionalAffixGroupsFile,
+  runSingleStep,
+  validateItemLevel
 } from './src/ui/single-step-controller.mjs';
 
 (() => {
@@ -220,13 +222,12 @@ import {
   }
 
   function currentItemLevel() {
-    return Math.min(CURRENT_MAX_ITEM_LEVEL, Math.max(1, Number($('ilevel').value) || 1));
+    return validateItemLevel($('ilevel').value).value;
   }
 
   function enforceItemLevelLimit() {
     const input = $('ilevel');
     input.max = String(CURRENT_MAX_ITEM_LEVEL);
-    input.value = String(currentItemLevel());
   }
 
   function formatInternalName(value) {
@@ -526,22 +527,25 @@ import {
     const bases = (baseDocument.bases || []).map(adaptBase);
     const mods = (modDocument.mods || []).map(adaptMod).filter(mod => mod.visible);
     const classes = indexDocument.classes || [];
-    const affixGroupDocument = await fetchJson(
-      `${APP_DATA_ROOT}/${indexDocument.affixGroupsFile || 'affix-groups.json'}`
-    );
+    const affixGroupsFile = optionalAffixGroupsFile(indexDocument);
+    const affixGroupDocument = affixGroupsFile
+      ? await fetchJson(`${APP_DATA_ROOT}/${affixGroupsFile}`)
+      : null;
 
-    state.singleStep.catalog = createModifierCatalog({
-      index: indexDocument,
-      bases: baseDocument,
-      mods: modDocument,
-      affixGroups: affixGroupDocument
-    });
+    state.singleStep.catalog = affixGroupDocument
+      ? createModifierCatalog({
+          index: indexDocument,
+          bases: baseDocument,
+          mods: modDocument,
+          affixGroups: affixGroupDocument
+        })
+      : null;
 
     state.data.bases = bases;
     state.data.basesById = new Map(bases.map(base => [base.id, base]));
     state.data.mods = mods;
     state.data.modsById = new Map(mods.map(mod => [mod.id, mod]));
-    state.data.affixGroups = affixGroupDocument.groups || [];
+    state.data.affixGroups = affixGroupDocument?.groups || [];
     state.data.classes = classes;
     state.data.classById = new Map(classes.map(itemClass => [itemClass.id, itemClass]));
     state.data.poolFiles = indexDocument.poolFiles || {};
@@ -693,7 +697,7 @@ import {
         <div>
           <h3>${base.name}</h3>
           <div class="base-subtitle">
-            ${CLASS_LABELS_DE[base.itemClass] || base.itemClassName || base.itemClass} · Item-Level ${currentItemLevel()}
+            ${CLASS_LABELS_DE[base.itemClass] || base.itemClassName || base.itemClass} · Item-Level ${currentItemLevel() ?? '–'}
           </div>
         </div>
         <span class="verified">Live-Daten</span>
@@ -743,12 +747,13 @@ import {
   function resetSingleStep() {
     state.singleStep.result = null;
     const base = currentBase();
+    const itemLevelValidation = validateItemLevel($('ilevel').value);
     try {
-      state.singleStep.itemState = base
+      state.singleStep.itemState = base && itemLevelValidation.valid
         ? createSingleStepItem({
             baseTypeId: base.id,
             itemClassId: base.itemClass,
-            itemLevel: currentItemLevel(),
+            itemLevel: itemLevelValidation.value,
             rarity: $('rarity').value
           })
         : null;
@@ -792,11 +797,13 @@ import {
   }
 
   function renderSingleStep() {
+    const itemLevelValidation = validateItemLevel($('ilevel').value);
     const readiness = canRunSingleStep({
       itemState: state.singleStep.itemState,
       catalog: state.singleStep.catalog,
       actionId: $('singleStepAction')?.value,
-      busy: state.singleStep.busy
+      busy: state.singleStep.busy,
+      itemLevelValidation
     });
     $('singleStepRunBtn').disabled = !readiness.enabled;
     $('singleStepReadiness').className = `status${readiness.enabled ? ' success' : ' warn'}`;
@@ -812,11 +819,13 @@ import {
   }
 
   function executeSingleStep() {
+    const itemLevelValidation = validateItemLevel($('ilevel').value);
     const readiness = canRunSingleStep({
       itemState: state.singleStep.itemState,
       catalog: state.singleStep.catalog,
       actionId: $('singleStepAction').value,
-      busy: state.singleStep.busy
+      busy: state.singleStep.busy,
+      itemLevelValidation
     });
     if (!readiness.enabled) return;
     state.singleStep.busy = true;
@@ -826,7 +835,8 @@ import {
         itemState: state.singleStep.itemState,
         catalog: state.singleStep.catalog,
         actionId: $('singleStepAction').value,
-        seed: nextUiSeed()
+        seed: nextUiSeed(),
+        itemLevelValidation
       });
       state.singleStep.result = result;
       if (result.status === 'successful') state.singleStep.itemState = result.itemState;

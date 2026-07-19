@@ -1,6 +1,7 @@
 import {
   createItemState,
   createSeededRandom,
+  CURRENT_MAX_ITEM_LEVEL,
   evaluateCraftingAction,
   getDefaultCapacityRules,
   selectWeightedModifier,
@@ -14,6 +15,22 @@ export const SINGLE_STEP_ACTIONS = Object.freeze([
 ]);
 
 const actionIds = new Set(SINGLE_STEP_ACTIONS.map(action => action.id));
+
+export function validateItemLevel(rawValue) {
+  const text = String(rawValue ?? "").trim();
+  const value = text === "" ? Number.NaN : Number(text);
+  const valid = Number.isInteger(value) && value >= 1 && value <= CURRENT_MAX_ITEM_LEVEL;
+  return Object.freeze({
+    valid,
+    value: valid ? value : null,
+    reason: valid ? null : `Item-Level muss eine ganze Zahl zwischen 1 und ${CURRENT_MAX_ITEM_LEVEL} sein.`
+  });
+}
+
+export function optionalAffixGroupsFile(indexDocument) {
+  const value = indexDocument?.affixGroupsFile;
+  return typeof value === "string" && value.trim() ? value : null;
+}
 
 export function capacityRulesForRarity(rarity) {
   const defaults = getDefaultCapacityRules();
@@ -32,8 +49,9 @@ export function createSingleStepItem({ baseTypeId, itemClassId, itemLevel, rarit
   });
 }
 
-export function canRunSingleStep({ itemState, catalog, actionId, busy = false }) {
+export function canRunSingleStep({ itemState, catalog, actionId, busy = false, itemLevelValidation = null }) {
   if (busy) return Object.freeze({ enabled: false, reason: "Crafting-Schritt wird ausgeführt." });
+  if (itemLevelValidation && !itemLevelValidation.valid) return Object.freeze({ enabled: false, reason: itemLevelValidation.reason });
   if (!itemState) return Object.freeze({ enabled: false, reason: "Wähle zuerst eine gültige Basis und ein Item-Level." });
   if (!catalog) return Object.freeze({ enabled: false, reason: "Der Modifier-Katalog ist noch nicht verfügbar." });
   if (!actionIds.has(actionId)) return Object.freeze({ enabled: false, reason: "Wähle eine unterstützte Crafting-Währung." });
@@ -49,8 +67,8 @@ function firstDiagnostic(result, status = result?.status) {
     ?? null;
 }
 
-export function runSingleStep({ itemState, catalog, actionId, seed = 0 }) {
-  const readiness = canRunSingleStep({ itemState, catalog, actionId });
+export function runSingleStep({ itemState, catalog, actionId, seed = 0, itemLevelValidation = null }) {
+  const readiness = canRunSingleStep({ itemState, catalog, actionId, itemLevelValidation });
   if (!readiness.enabled) {
     return Object.freeze({ status: "error", message: readiness.reason, itemState, actionResult: null, selectionResult: null, simulationResult: null });
   }
