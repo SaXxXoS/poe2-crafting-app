@@ -2,11 +2,9 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { createRequire } from "node:module";
+import { CURRENT_MAX_ITEM_LEVEL } from "../app-config-values.mjs";
 
 const root = process.cwd();
-const require = createRequire(import.meta.url);
-const { CURRENT_MAX_ITEM_LEVEL } = require("../app-config.js");
 const appRoot = path.join(root, "generated", "poe2db", "app");
 const read = file => JSON.parse(fs.readFileSync(file, "utf8"));
 const index = read(path.join(appRoot, "index.json"));

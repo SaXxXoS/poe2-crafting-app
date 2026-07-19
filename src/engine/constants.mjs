@@ -1,7 +1,4 @@
-import { createRequire } from "node:module";
-
-const require = createRequire(import.meta.url);
-const { CURRENT_MAX_ITEM_LEVEL } = require("../../app-config.js");
+import { CURRENT_MAX_ITEM_LEVEL } from "../../app-config-values.mjs";
 
 export const ITEM_STATE_SCHEMA_VERSION = 1;
 export { CURRENT_MAX_ITEM_LEVEL };

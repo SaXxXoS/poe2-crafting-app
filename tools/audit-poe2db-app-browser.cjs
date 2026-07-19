@@ -3,7 +3,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const { chromium } = require("playwright");
-const { CURRENT_MAX_ITEM_LEVEL } = require("../app-config.js");
 
 const root = path.resolve(__dirname, "..");
 const appRoot = path.join(root, "generated/poe2db/app");
@@ -39,6 +38,7 @@ function greedyCover(pools) {
 
 let browser;
 (async () => {
+  const { CURRENT_MAX_ITEM_LEVEL } = await import("../app-config-values.mjs");
   browser = await chromium.launch({ headless: true, executablePath: process.env.PLAYWRIGHT_CHROME_PATH || undefined });
   const page = await browser.newPage();
   await page.route("https://cdn.jsdelivr.net/npm/tesseract.js@6/dist/tesseract.min.js", route => route.fulfill({ contentType: "application/javascript", body: "window.Tesseract = window.Tesseract || {};" }));
