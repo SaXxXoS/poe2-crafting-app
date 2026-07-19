@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import {
   ENGINE_ACTION_CODES,
@@ -6,6 +7,7 @@ import {
   createModifierCatalog,
   createSeededRandom,
   evaluateCraftingAction,
+  getCraftingActionDefinition,
   getDefaultCapacityRules,
   selectWeightedModifier,
   serializeItemState,
@@ -232,4 +234,14 @@ test("24 every non-success status preserves the input without a partial state or
     assert.equal(result.resultingItemRevision, null);
     assert.equal(JSON.stringify(entry.itemState), itemBefore);
   }
+});
+
+test("25 README keeps the public Transmutation count and capacity contract in sync", () => {
+  const readme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
+  const actionSection = readme.match(/## Crafting Actions Core v1([\s\S]*?)(?=\n## |$)/)?.[1] ?? "";
+  const transmutationStatements = readme.split(/\n\s*\n/).filter(paragraph => paragraph.includes("Transmutation")).join("\n");
+  assert.equal(getCraftingActionDefinition("currency:transmutation").selectionCount, 1);
+  assert.match(actionSection, /Transmutation[\s\S]*selectionCount: 1[\s\S]*exakt ein reguläres Prefix oder Suffix/);
+  assert.match(actionSection, /Magic-Capacity muss ausdrücklich bereitgestellt werden/);
+  assert.doesNotMatch(transmutationStatements, /Transmutation[^\n]*(caller-(?:belegt|bestimmt)|ohne explizit bekannten Selection Count)/i);
 });
