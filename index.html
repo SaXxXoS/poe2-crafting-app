@@ -127,6 +127,24 @@
         </div>
 
         <div class="section-title">
+          <h2>Single-Step Crafting</h2>
+          <span>genau ein Engine-Schritt</span>
+        </div>
+
+        <div class="card single-step-card" id="singleStepCrafting">
+          <div class="field">
+            <label for="singleStepAction">Crafting-Währung</label>
+            <select id="singleStepAction"></select>
+          </div>
+          <div id="singleStepReadiness" class="status" aria-live="polite"></div>
+          <div class="actions single-step-actions">
+            <button id="singleStepResetBtn" class="secondary" type="button">Crafting-Test zurücksetzen</button>
+            <button id="singleStepRunBtn" class="primary" type="button">Einen Schritt ausführen</button>
+          </div>
+          <div id="singleStepResult" class="single-step-result" aria-live="polite" hidden></div>
+        </div>
+
+        <div class="section-title">
           <h2>Gewünschte Ziel-Affixe</h2>
           <span>unabhängig vom Startzustand</span>
         </div>

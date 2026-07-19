@@ -1,3 +1,11 @@
+import { createModifierCatalog } from './src/engine/browser.mjs';
+import {
+  SINGLE_STEP_ACTIONS,
+  canRunSingleStep,
+  createSingleStepItem,
+  runSingleStep
+} from './src/ui/single-step-controller.mjs';
+
 (() => {
   'use strict';
 
@@ -163,6 +171,12 @@
       poolFiles: {},
       loadedPools: new Map(),
       crafting: {}
+    },
+    singleStep: {
+      catalog: null,
+      itemState: null,
+      result: null,
+      busy: false
     },
     prefix: [null, null, null],
     suffix: [null, null, null],
@@ -512,9 +526,16 @@
     const bases = (baseDocument.bases || []).map(adaptBase);
     const mods = (modDocument.mods || []).map(adaptMod).filter(mod => mod.visible);
     const classes = indexDocument.classes || [];
-    const affixGroupDocument = indexDocument.affixGroupsFile
-      ? await fetchJson(`${APP_DATA_ROOT}/${indexDocument.affixGroupsFile}`)
-      : { groups: [] };
+    const affixGroupDocument = await fetchJson(
+      `${APP_DATA_ROOT}/${indexDocument.affixGroupsFile || 'affix-groups.json'}`
+    );
+
+    state.singleStep.catalog = createModifierCatalog({
+      index: indexDocument,
+      bases: baseDocument,
+      mods: modDocument,
+      affixGroups: affixGroupDocument
+    });
 
     state.data.bases = bases;
     state.data.basesById = new Map(bases.map(base => [base.id, base]));
@@ -713,6 +734,112 @@
     }
   }
 
+  const RARITY_LABELS = { normal: 'Normal', magic: 'Magisch', rare: 'Selten' };
+
+  function actionLabel(actionId) {
+    return SINGLE_STEP_ACTIONS.find(action => action.id === actionId)?.label || actionId;
+  }
+
+  function resetSingleStep() {
+    state.singleStep.result = null;
+    const base = currentBase();
+    try {
+      state.singleStep.itemState = base
+        ? createSingleStepItem({
+            baseTypeId: base.id,
+            itemClassId: base.itemClass,
+            itemLevel: currentItemLevel(),
+            rarity: $('rarity').value
+          })
+        : null;
+    } catch (error) {
+      state.singleStep.itemState = null;
+      state.singleStep.result = { status: 'error', message: error?.message || 'Ungültiger Ausgangszustand.' };
+    }
+    renderSingleStep();
+  }
+
+  function modifierDisplay(modifierId) {
+    const mod = state.data.modsById.get(modifierId);
+    return mod?.displayText || mod?.name || 'Modifiertext nicht verfügbar';
+  }
+
+  function resultMarkup(result) {
+    if (!result) return '';
+    const current = result.itemState || state.singleStep.itemState;
+    const previous = result.previousItemState || current;
+    const candidate = result.selectionResult?.selectedCandidate || null;
+    const statusClass = result.status === 'successful' ? 'success' : result.status === 'error' ? 'error' : 'warn';
+    const statusLabel = result.status === 'successful' ? 'Erfolgreich' : result.status;
+    const selected = candidate ? `
+      <div class="single-step-mod">
+        <small>${candidate.generationType === 'prefix' ? 'Präfix' : 'Suffix'} · ${candidate.displayTier ? `T${candidate.displayTier}` : 'Tier nicht verfügbar'}</small>
+        <b>${modifierDisplay(candidate.modifierId)}</b>
+        <small>Gewicht: ${candidate.applicableWeight?.spawn ?? 'Nicht verfügbar'} · Wahrscheinlichkeit: Nicht verfügbar</small>
+      </div>` : '<div class="status">Kein Modifier hinzugefügt.</div>';
+    return `
+      <div class="status ${statusClass}">
+        <strong>${actionLabel($('singleStepAction').value)} · ${statusLabel}</strong><br>
+        ${result.message}${result.reasonCode ? `<br>Code: ${result.reasonCode}` : ''}
+      </div>
+      <div class="single-step-summary">
+        <div class="single-step-stat"><small>Rarity</small><b>${RARITY_LABELS[previous?.rarity] || '–'} → ${RARITY_LABELS[current?.rarity] || '–'}</b></div>
+        <div class="single-step-stat"><small>Revision</small><b>${previous?.revision ?? '–'} → ${current?.revision ?? '–'}</b></div>
+        <div class="single-step-stat"><small>Präfixe</small><b>${previous?.prefixModifiers?.length ?? 0} → ${current?.prefixModifiers?.length ?? 0}</b></div>
+        <div class="single-step-stat"><small>Suffixe</small><b>${previous?.suffixModifiers?.length ?? 0} → ${current?.suffixModifiers?.length ?? 0}</b></div>
+      </div>
+      ${selected}`;
+  }
+
+  function renderSingleStep() {
+    const readiness = canRunSingleStep({
+      itemState: state.singleStep.itemState,
+      catalog: state.singleStep.catalog,
+      actionId: $('singleStepAction')?.value,
+      busy: state.singleStep.busy
+    });
+    $('singleStepRunBtn').disabled = !readiness.enabled;
+    $('singleStepReadiness').className = `status${readiness.enabled ? ' success' : ' warn'}`;
+    $('singleStepReadiness').textContent = readiness.reason;
+    $('singleStepResult').hidden = !state.singleStep.result;
+    $('singleStepResult').innerHTML = resultMarkup(state.singleStep.result);
+  }
+
+  function nextUiSeed() {
+    const values = new Uint32Array(1);
+    globalThis.crypto.getRandomValues(values);
+    return values[0];
+  }
+
+  function executeSingleStep() {
+    const readiness = canRunSingleStep({
+      itemState: state.singleStep.itemState,
+      catalog: state.singleStep.catalog,
+      actionId: $('singleStepAction').value,
+      busy: state.singleStep.busy
+    });
+    if (!readiness.enabled) return;
+    state.singleStep.busy = true;
+    renderSingleStep();
+    try {
+      const result = runSingleStep({
+        itemState: state.singleStep.itemState,
+        catalog: state.singleStep.catalog,
+        actionId: $('singleStepAction').value,
+        seed: nextUiSeed()
+      });
+      state.singleStep.result = result;
+      if (result.status === 'successful') state.singleStep.itemState = result.itemState;
+      if (result.status === 'error') console.error('Single-step crafting failed', result);
+    } catch (error) {
+      console.error('Single-step crafting failed', error);
+      state.singleStep.result = { status: 'error', message: error?.message || 'Unbekannter Fehler.', itemState: state.singleStep.itemState };
+    } finally {
+      state.singleStep.busy = false;
+      renderSingleStep();
+    }
+  }
+
   function slotLimit() {
     return $('targetRarity').value === 'magic' ? 1 : 3;
   }
@@ -850,6 +977,7 @@
         state.suffix = [null, null, null];
         renderBaseDetails();
         renderSlots();
+        resetSingleStep();
         closeSheet('baseSheet');
       });
 
@@ -1106,6 +1234,7 @@
     state.prefix = [null, null, null];
     state.suffix = [null, null, null];
     renderSlots();
+    resetSingleStep();
   }
 
   function saveProject() {
@@ -1185,6 +1314,7 @@
     renderBaseDetails();
     renderCurrentState();
     renderSlots();
+    resetSingleStep();
     switchView('craft');
   }
 
@@ -1664,6 +1794,7 @@
     renderCurrentState();
     removeInvalidSelections();
     renderSlots();
+    resetSingleStep();
 
     closeSheet('captureSheet');
     switchView('craft');
@@ -1686,17 +1817,18 @@
       button.addEventListener('click', () => switchView(button.dataset.view));
     });
 
-    $('category').addEventListener('change', renderClassOptions);
-    $('itemClass').addEventListener('change', renderBaseOptions);
+    $('category').addEventListener('change', async () => { await renderClassOptions(); resetSingleStep(); });
+    $('itemClass').addEventListener('change', async () => { await renderBaseOptions(); resetSingleStep(); });
     $('ilevel').addEventListener('input', () => {
       enforceItemLevelLimit();
       removeInvalidSelections();
       renderBaseDetails();
       renderSlots();
+      resetSingleStep();
       if ($('modSheet').classList.contains('open')) renderModResults();
     });
 
-    $('rarity').addEventListener('change', renderCurrentState);
+    $('rarity').addEventListener('change', () => { renderCurrentState(); resetSingleStep(); });
     $('targetRarity').addEventListener('change', () => {
       trimForRarity();
       renderSlots();
@@ -1710,6 +1842,9 @@
     $('closeModSheetBtn').addEventListener('click', () => closeSheet('modSheet'));
 
     $('resetCraftBtn').addEventListener('click', resetCraft);
+    $('singleStepAction').addEventListener('change', renderSingleStep);
+    $('singleStepRunBtn').addEventListener('click', executeSingleStep);
+    $('singleStepResetBtn').addEventListener('click', resetSingleStep);
     $('saveProjectBtn').addEventListener('click', saveProject);
     $('savePricesBtn').addEventListener('click', savePrices);
 
@@ -1737,6 +1872,10 @@
     enforceItemLevelLimit();
     bindEvents();
     renderCurrentState();
+    $('singleStepAction').innerHTML = SINGLE_STEP_ACTIONS
+      .map(action => `<option value="${action.id}">${action.label}</option>`)
+      .join('');
+    renderSingleStep();
     renderSlots();
     renderPrices();
     updateHomeProject();
@@ -1744,6 +1883,7 @@
     try {
       await loadApplicationData();
       await renderClassOptions();
+      resetSingleStep();
       populateRecognizedClasses($('itemClass').value);
       renderDatabaseView();
     } catch (error) {
