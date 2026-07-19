@@ -29,10 +29,13 @@ jobs:
         run: node tools/import-repoe-database.mjs
 
       - name: PoE2DB-App-Adapter erzeugen
-        run: node tools/build-poe2db-app-adapter.mjs
+        run: |
+          node tools/build-poe2db-app-adapter.mjs
+          node tools/build-poe2db-affix-groups.mjs
 
       - name: Daten prüfen
         run: |
+          node tools/validate-poe2db-app.mjs
           test -f generated/repoe/manifest.json
           test -f generated/poe2db/app/manifest.json
           test -f generated/poe2db/app/bases.json

@@ -195,6 +195,7 @@ writeJson(path.join(outputRoot, "index.json"), {
   source: "generated/poe2db",
   classes,
   poolFiles,
+  affixGroupsFile: "affix-groups.json",
   craftingFiles: {
     essences: "../crafting/essences.json",
     omens: "../crafting/omens.json",

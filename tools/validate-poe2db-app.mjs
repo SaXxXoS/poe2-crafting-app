@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const root = process.cwd();
 const appRoot = path.join(root, "generated", "poe2db", "app");
@@ -11,11 +12,33 @@ const index = read("index.json");
 const bases = read("bases.json").bases;
 const mods = read("mods.json").mods;
 const manifest = read("manifest.json");
+const hashFile = file => crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 const modsById = new Map(mods.map(mod => [mod.id, mod]));
 const basesByClass = Map.groupBy(bases, base => base.itemClass);
 const forbiddenVisiblePattern = /(?:Implicit|LocalChance|AdditionalArrows\d|(?:^|\s)\+%(?:\s|$)|minimaler[^\n]+\+[^\n]+maximaler)/i;
 
 if (index.source !== "generated/poe2db") throw new Error("Adapter verwendet nicht generated/poe2db");
+const defaultAffixGroupsFile = path.join(appRoot, "affix-groups.json");
+if (fs.existsSync(defaultAffixGroupsFile) && !index.affixGroupsFile) {
+  throw new Error("affix-groups.json existiert, aber index.json enthält kein affixGroupsFile");
+}
+if (typeof index.affixGroupsFile !== "string" || !index.affixGroupsFile.trim()) {
+  throw new Error("App-Index deklariert keine Affixgruppen-Datei");
+}
+const affixGroupsFile = path.resolve(appRoot, index.affixGroupsFile);
+if (!affixGroupsFile.startsWith(`${appRoot}${path.sep}`) || !fs.existsSync(affixGroupsFile)) {
+  throw new Error(`Deklarierte Affixgruppen-Datei fehlt oder liegt außerhalb des App-Datensatzes: ${index.affixGroupsFile}`);
+}
+const affixGroupDocument = JSON.parse(fs.readFileSync(affixGroupsFile, "utf8"));
+if (!Array.isArray(affixGroupDocument.groups) || affixGroupDocument.groups.length === 0) {
+  throw new Error("Affixgruppen-Datei ist leer");
+}
+const affixTierCount = affixGroupDocument.groups.reduce((sum, group) => sum + (Array.isArray(group.tiers) ? group.tiers.length : 0), 0);
+if (affixTierCount === 0) throw new Error("Affixgruppen enthalten keine Tiers");
+if (manifest.counts.affixGroups !== affixGroupDocument.groups.length) throw new Error("Manifest-Affixgruppenzahl stimmt nicht");
+if (manifest.counts.affixGroupTiers !== affixTierCount) throw new Error("Manifest-Affixtierzahl stimmt nicht");
+if (manifest.files?.[index.affixGroupsFile]?.sha256 !== hashFile(affixGroupsFile)) throw new Error("Manifest-Hash für Affixgruppen fehlt oder stimmt nicht");
+if (manifest.files?.["index.json"]?.sha256 !== hashFile(path.join(appRoot, "index.json"))) throw new Error("Manifest-Hash für App-Index fehlt oder stimmt nicht");
 if (index.classes.length !== 28) throw new Error(`Erwartet 28 Klassen, erhalten: ${index.classes.length}`);
 for (const requiredClass of ["Bow", "Spear", "Ring", "Body Armour", "Jewel"]) {
   if (!basesByClass.get(requiredClass)?.length) throw new Error(`Testklasse fehlt: ${requiredClass}`);
@@ -89,5 +112,7 @@ console.log(JSON.stringify({
   fallbackBaseNames,
   germanModTexts,
   fallbackModTexts,
-  craftingFiles: Object.keys(index.craftingFiles).length
+  craftingFiles: Object.keys(index.craftingFiles).length,
+  affixGroups: affixGroupDocument.groups.length,
+  affixGroupTiers: affixTierCount
 }));

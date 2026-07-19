@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-19T06:43:50.830Z",
+  "generatedAt": "2026-07-19T15:04:49.934Z",
   "status": "poe2db-app-adapter-ready",
   "deprecatedSource": "generated/app-data is retained but no longer referenced by the application",
   "counts": {
@@ -8,7 +8,9 @@
     "referencedEquipmentMods": 1655,
     "poolFiles": 28,
     "poolBases": 947,
-    "craftingFiles": 6
+    "craftingFiles": 6,
+    "affixGroups": 835,
+    "affixGroupTiers": 1897
   },
   "files": {
     "bases.json": {
@@ -18,10 +20,10 @@
       "sha256": "5df8da371114ca9df6fcf96a2c3c5e6560f8a18d37d47a1bf5c2cfc2dc4d8b2c"
     },
     "index.json": {
-      "sha256": "eef776460f2da8b6fd092903ce00cc43ffde5f2550ec21faeb41868ec47c1ff3"
+      "sha256": "b9a2341bfc8ee411e9232839c3d7eeabc88c9411ed8f368e052619db0a75959f"
     },
     "quality-report.json": {
-      "sha256": "1a149d6b9c25c879c1c0386e0d8615a93e82690b5758303ea4b314b0094a2cb5"
+      "sha256": "c8e04ff4595f8e49f84297ce6b4f4a5fbab941f39e8d841a6420db137fbec35d"
     },
     "pools/spears.json": {
       "sha256": "61ac1ffd299384af75d2118a672a41ad9611ec34bb910b3085067d30ef2ae899"
@@ -106,6 +108,9 @@
     },
     "pools/jewels.json": {
       "sha256": "49ddaee6518c1a8f12ba63388db4ab2634276f151513b72bffcd1aea5cee350d"
+    },
+    "affix-groups.json": {
+      "sha256": "c0a58233adcf201e1783e0f312643963c36a9b41ed9f60a8efbf37afb4a849f8"
     }
   }
 }

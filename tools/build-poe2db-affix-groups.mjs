@@ -196,12 +196,12 @@ write(path.join(appRoot, "affix-groups.json"), output);
 
 const appIndexPath = path.join(appRoot, "index.json");
 const appIndex = read(appIndexPath);
-appIndex.affixGroupsFile = "affix-groups.json";
-write(appIndexPath, appIndex);
+if (appIndex.affixGroupsFile !== "affix-groups.json") {
+  throw new Error("App-Index deklariert affix-groups.json nicht; zuerst build-poe2db-app-adapter.mjs ausführen");
+}
 const manifestPath = path.join(appRoot, "manifest.json");
 const manifest = read(manifestPath);
 manifest.files["affix-groups.json"] = { sha256: fileHash(path.join(appRoot, "affix-groups.json")) };
-manifest.files["index.json"] = { sha256: fileHash(appIndexPath) };
 manifest.counts.affixGroups = groups.length;
 manifest.counts.affixGroupTiers = groups.reduce((sum, group) => sum + group.tiers.length, 0);
 write(manifestPath, manifest);
