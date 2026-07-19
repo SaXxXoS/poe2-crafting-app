@@ -223,7 +223,7 @@ main{padding:16px}
 .database-stat b{font-size:20px;color:var(--gold2)}
 .single-step-card{display:grid;gap:12px}
 .single-step-card .field{margin-bottom:0}
-.single-step-actions{margin-top:2px}
+.single-step-actions{margin-top:2px;grid-template-columns:repeat(3,minmax(0,1fr))}
 .single-step-result{display:grid;gap:10px;padding-top:2px}
 .single-step-result[hidden]{display:none}
 .single-step-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}

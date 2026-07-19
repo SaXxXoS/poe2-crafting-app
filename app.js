@@ -8,6 +8,11 @@ import {
   validateItemLevel
 } from './src/ui/single-step-controller.mjs';
 import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs';
+import {
+  adoptSingleStepResult,
+  applySingleStepUndo,
+  canUndoSingleStep
+} from './src/ui/single-step-undo.mjs';
 
 (() => {
   'use strict';
@@ -179,6 +184,8 @@ import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs
       catalog: null,
       itemState: null,
       result: null,
+      undoItemState: null,
+      statusMessage: null,
       busy: false
     },
     prefix: [null, null, null],
@@ -745,6 +752,8 @@ import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs
 
   function resetSingleStep() {
     state.singleStep.result = null;
+    state.singleStep.undoItemState = null;
+    state.singleStep.statusMessage = null;
     const base = currentBase();
     const itemLevelValidation = validateItemLevel($('ilevel').value);
     try {
@@ -778,8 +787,13 @@ import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs
       itemLevelValidation
     });
     $('singleStepRunBtn').disabled = !readiness.enabled;
-    $('singleStepReadiness').className = `status${readiness.enabled ? ' success' : ' warn'}`;
-    $('singleStepReadiness').textContent = readiness.reason;
+    $('singleStepUndoBtn').disabled = !canUndoSingleStep({
+      undoItemState: state.singleStep.undoItemState,
+      busy: state.singleStep.busy
+    });
+    const statusMessage = state.singleStep.statusMessage || readiness.reason;
+    $('singleStepReadiness').className = `status${state.singleStep.statusMessage || readiness.enabled ? ' success' : ' warn'}`;
+    $('singleStepReadiness').textContent = statusMessage;
     renderSingleStepResult({
       document,
       container: $('singleStepResult'),
@@ -806,6 +820,8 @@ import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs
       itemLevelValidation
     });
     if (!readiness.enabled) return;
+    state.singleStep.undoItemState = null;
+    state.singleStep.statusMessage = null;
     state.singleStep.busy = true;
     renderSingleStep();
     try {
@@ -816,16 +832,32 @@ import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs
         seed: nextUiSeed(),
         itemLevelValidation
       });
-      state.singleStep.result = result;
-      if (result.status === 'successful') state.singleStep.itemState = result.itemState;
+      const transition = adoptSingleStepResult({ currentItemState: state.singleStep.itemState, result });
+      state.singleStep.result = transition.result;
+      state.singleStep.undoItemState = transition.undoItemState;
+      state.singleStep.itemState = transition.itemState;
       if (result.status === 'error') console.error('Single-step crafting failed', result);
     } catch (error) {
       console.error('Single-step crafting failed', error);
+      state.singleStep.undoItemState = null;
       state.singleStep.result = { status: 'error', message: error?.message || 'Unbekannter Fehler.', itemState: state.singleStep.itemState };
     } finally {
       state.singleStep.busy = false;
       renderSingleStep();
     }
+  }
+
+  function undoSingleStep() {
+    if (!canUndoSingleStep({ undoItemState: state.singleStep.undoItemState, busy: state.singleStep.busy })) return;
+    const transition = applySingleStepUndo({
+      currentItemState: state.singleStep.itemState,
+      undoItemState: state.singleStep.undoItemState
+    });
+    state.singleStep.itemState = transition.itemState;
+    state.singleStep.undoItemState = transition.undoItemState;
+    state.singleStep.result = transition.result;
+    state.singleStep.statusMessage = 'Letzter Crafting-Schritt wurde rückgängig gemacht.';
+    renderSingleStep();
   }
 
   function slotLimit() {
@@ -1832,6 +1864,7 @@ import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs
     $('resetCraftBtn').addEventListener('click', resetCraft);
     $('singleStepAction').addEventListener('change', renderSingleStep);
     $('singleStepRunBtn').addEventListener('click', executeSingleStep);
+    $('singleStepUndoBtn').addEventListener('click', undoSingleStep);
     $('singleStepResetBtn').addEventListener('click', resetSingleStep);
     $('saveProjectBtn').addEventListener('click', saveProject);
     $('savePricesBtn').addEventListener('click', savePrices);

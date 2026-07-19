@@ -173,6 +173,7 @@
     "Belt": "pools/belts.json",
     "Jewel": "pools/jewels.json"
   },
+  "affixGroupsFile": "affix-groups.json",
   "craftingFiles": {
     "essences": "../crafting/essences.json",
     "omens": "../crafting/omens.json",
