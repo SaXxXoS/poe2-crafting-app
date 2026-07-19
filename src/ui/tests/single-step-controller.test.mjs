@@ -11,6 +11,7 @@ import {
   validateItemLevel,
   runSingleStep
 } from "../single-step-controller.mjs";
+import { renderSingleStepResult } from "../single-step-result-renderer.mjs";
 
 const catalog = createModifierCatalog({
   index: { classes: [{ id: "Bow" }] },
@@ -127,4 +128,76 @@ test("UI controller imports browser entry only and no Node loader", async () => 
   assert.match(source, /engine\/browser\.mjs/);
   assert.doesNotMatch(source, /node:/);
   assert.doesNotMatch(source, /loadModifierCatalog/);
+});
+
+class TestElement {
+  constructor(tagName) {
+    this.tagName = tagName.toLowerCase();
+    this.children = [];
+    this.className = "";
+    this.hidden = false;
+    this.value = "";
+  }
+
+  set textContent(value) {
+    this.value = String(value);
+    this.children = [];
+  }
+
+  get textContent() {
+    return this.value + this.children.map(child => child.textContent).join("");
+  }
+
+  append(...children) {
+    this.children.push(...children);
+  }
+
+  replaceChildren(...children) {
+    this.value = "";
+    this.children = [...children];
+  }
+}
+
+const testDocument = { createElement: tagName => new TestElement(tagName) };
+const descendantTags = node => [node.tagName, ...node.children.flatMap(descendantTags)];
+
+test("single-step result renders all dynamic values as text without injected elements", () => {
+  const payloads = [
+    "<img src=x onerror=globalThis.__catalogXss=1>",
+    "<script>globalThis.__catalogXss=2</script>",
+    "<svg onload=globalThis.__catalogXss=3></svg>",
+    "\"><img src=x onerror=globalThis.__catalogXss=4>",
+    "<>&\"'`"
+  ];
+
+  for (const payload of payloads) {
+    const container = new TestElement("div");
+    const itemState = item("magic");
+    renderSingleStepResult({
+      document: testDocument,
+      container,
+      currentItemState: itemState,
+      actionLabel: payload,
+      modifierDisplay: () => payload,
+      result: {
+        status: payload,
+        message: payload,
+        reasonCode: payload,
+        itemState,
+        previousItemState: itemState,
+        selectionResult: {
+          selectedCandidate: {
+            modifierId: "mod:prefix",
+            generationType: "prefix",
+            displayTier: payload,
+            applicableWeight: { spawn: payload }
+          }
+        }
+      }
+    });
+
+    assert.match(container.textContent, new RegExp(payload.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+    assert.deepEqual(descendantTags(container).filter(tag => ["img", "script", "svg"].includes(tag)), []);
+    assert.equal(globalThis.__catalogXss, undefined);
+  }
 });

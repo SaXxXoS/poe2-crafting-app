@@ -7,6 +7,7 @@ import {
   runSingleStep,
   validateItemLevel
 } from './src/ui/single-step-controller.mjs';
+import { renderSingleStepResult } from './src/ui/single-step-result-renderer.mjs';
 
 (() => {
   'use strict';
@@ -738,8 +739,6 @@ import {
     }
   }
 
-  const RARITY_LABELS = { normal: 'Normal', magic: 'Magisch', rare: 'Selten' };
-
   function actionLabel(actionId) {
     return SINGLE_STEP_ACTIONS.find(action => action.id === actionId)?.label || actionId;
   }
@@ -769,33 +768,6 @@ import {
     return mod?.displayText || mod?.name || 'Modifiertext nicht verfügbar';
   }
 
-  function resultMarkup(result) {
-    if (!result) return '';
-    const current = result.itemState || state.singleStep.itemState;
-    const previous = result.previousItemState || current;
-    const candidate = result.selectionResult?.selectedCandidate || null;
-    const statusClass = result.status === 'successful' ? 'success' : result.status === 'error' ? 'error' : 'warn';
-    const statusLabel = result.status === 'successful' ? 'Erfolgreich' : result.status;
-    const selected = candidate ? `
-      <div class="single-step-mod">
-        <small>${candidate.generationType === 'prefix' ? 'Präfix' : 'Suffix'} · ${candidate.displayTier ? `T${candidate.displayTier}` : 'Tier nicht verfügbar'}</small>
-        <b>${modifierDisplay(candidate.modifierId)}</b>
-        <small>Gewicht: ${candidate.applicableWeight?.spawn ?? 'Nicht verfügbar'} · Wahrscheinlichkeit: Nicht verfügbar</small>
-      </div>` : '<div class="status">Kein Modifier hinzugefügt.</div>';
-    return `
-      <div class="status ${statusClass}">
-        <strong>${actionLabel($('singleStepAction').value)} · ${statusLabel}</strong><br>
-        ${result.message}${result.reasonCode ? `<br>Code: ${result.reasonCode}` : ''}
-      </div>
-      <div class="single-step-summary">
-        <div class="single-step-stat"><small>Rarity</small><b>${RARITY_LABELS[previous?.rarity] || '–'} → ${RARITY_LABELS[current?.rarity] || '–'}</b></div>
-        <div class="single-step-stat"><small>Revision</small><b>${previous?.revision ?? '–'} → ${current?.revision ?? '–'}</b></div>
-        <div class="single-step-stat"><small>Präfixe</small><b>${previous?.prefixModifiers?.length ?? 0} → ${current?.prefixModifiers?.length ?? 0}</b></div>
-        <div class="single-step-stat"><small>Suffixe</small><b>${previous?.suffixModifiers?.length ?? 0} → ${current?.suffixModifiers?.length ?? 0}</b></div>
-      </div>
-      ${selected}`;
-  }
-
   function renderSingleStep() {
     const itemLevelValidation = validateItemLevel($('ilevel').value);
     const readiness = canRunSingleStep({
@@ -808,8 +780,14 @@ import {
     $('singleStepRunBtn').disabled = !readiness.enabled;
     $('singleStepReadiness').className = `status${readiness.enabled ? ' success' : ' warn'}`;
     $('singleStepReadiness').textContent = readiness.reason;
-    $('singleStepResult').hidden = !state.singleStep.result;
-    $('singleStepResult').innerHTML = resultMarkup(state.singleStep.result);
+    renderSingleStepResult({
+      document,
+      container: $('singleStepResult'),
+      result: state.singleStep.result,
+      currentItemState: state.singleStep.itemState,
+      actionLabel: actionLabel($('singleStepAction').value),
+      modifierDisplay
+    });
   }
 
   function nextUiSeed() {
