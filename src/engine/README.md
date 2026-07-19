@@ -104,7 +104,7 @@ Die Action-Schicht trennt unveränderliche **Action Definitions**, deterministis
 
 `evaluateCraftingAction` endet in genau einem Status. Die Priorität lautet `error` vor `inapplicable` vor `unresolved` vor `applicable`: ungültige Engine- oder Katalogstrukturen sind Fehler, sichere Ausschlüsse sind nicht anwendbar, fehlende Pflichtregeln bleiben ungelöst und nur vollständig belegte Planungen sind anwendbar. Rarity wird direkt aus dem bestehenden Item State geprüft und nicht erneut normalisiert.
 
-Aktionen mit regulärer Modifier-Hinzufügung verwenden unmittelbar `resolveEligibleModifiers`; sie bauen weder Pool- noch Weight-Logik parallel nach. Ohne explizite `capacityRules` werden keine realen Prefix-/Suffixlimits geraten. Transmutation sowie Reroll-Aktionen benötigen zusätzlich caller-gelieferte `selectionCountRules`; Alteration und Chaos benötigen `removalRules`. Diese externen Regeln sind explizite Eingaben, werden validiert und niemals in Definitionen oder Engine-Konstanten übernommen.
+Aktionen mit regulärer Modifier-Hinzufügung verwenden unmittelbar `resolveEligibleModifiers`; sie bauen weder Pool- noch Weight-Logik parallel nach. Ohne explizite `capacityRules` werden keine realen Prefix-/Suffixlimits geraten. Transmutation fügt autoritativ genau einen regulären Modifier hinzu; Alteration und Chaos benötigen caller-gelieferte `selectionCountRules` und `removalRules`. Diese externen Regeln sind explizite Eingaben, werden validiert und niemals in Definitionen oder Engine-Konstanten übernommen.
 
 Ein **Selection Request** enthält stabil sortierte technische Kandidaten, rohe nicht normalisierte Gewichte, Count, Constraints, eine technische deterministische ID und eine kompakte Referenz auf das Resolver-Ergebnis. Er enthält weder einen ausgewählten Modifier noch Wahrscheinlichkeit, normalisierte Gewichte, RNG oder Zeitstempel. Addition Requests sind vollständig strukturiert; Removal Requests beschreiben ausschließlich eine spätere Auswahl aus vorhandenen regulären Instanzen.
 
@@ -120,7 +120,7 @@ Die öffentliche API exportiert `getCraftingActionDefinition(actionId)`, `listCr
 
 | Action | `selectionCount` | `removalCount` |
 | --- | ---: | ---: |
-| `currency:transmutation` | `null` | `0` |
+| `currency:transmutation` | `1` | `0` |
 | `currency:augmentation` | `1` | `0` |
 | `currency:alteration` | `null` | `null` |
 | `currency:regal` | `1` | `0` |

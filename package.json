@@ -13,8 +13,9 @@
     "test:engine:planner": "node --test src/engine/tests/planner.test.mjs",
     "test:engine:browser-entry": "node --test src/engine/tests/browser-entry.test.mjs",
     "test:engine:capacity-rules": "node --test src/engine/tests/capacity-rules.test.mjs",
+    "test:engine:transmutation": "node --test src/engine/tests/transmutation-contract.test.mjs",
     "test:ui:single-step": "node --test src/ui/tests/single-step-controller.test.mjs",
-    "test:engine": "node --test src/engine/tests/item-state.test.mjs src/engine/tests/rule-sets.test.mjs src/engine/tests/eligible-modifiers.test.mjs src/engine/tests/crafting-actions.test.mjs src/engine/tests/weighted-selection.test.mjs src/engine/tests/single-step-simulator.test.mjs src/engine/tests/planner.test.mjs src/engine/tests/browser-entry.test.mjs src/engine/tests/capacity-rules.test.mjs",
+    "test:engine": "node --test src/engine/tests/item-state.test.mjs src/engine/tests/rule-sets.test.mjs src/engine/tests/eligible-modifiers.test.mjs src/engine/tests/crafting-actions.test.mjs src/engine/tests/weighted-selection.test.mjs src/engine/tests/single-step-simulator.test.mjs src/engine/tests/planner.test.mjs src/engine/tests/browser-entry.test.mjs src/engine/tests/capacity-rules.test.mjs src/engine/tests/transmutation-contract.test.mjs",
     "test:season-readiness": "node --test tools/tests/season-readiness.test.mjs"
   }
 }

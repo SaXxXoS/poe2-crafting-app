@@ -9,7 +9,7 @@ import {
 
 const ACTION_IDS = ["currency:alteration", "currency:augmentation", "currency:chaos", "currency:exalted", "currency:regal", "currency:transmutation"];
 const TEST_CAPACITY_RULES = Object.freeze({ prefix: 10, suffix: 10 });
-const TEST_COUNTS = Object.freeze({ "currency:alteration": 2, "currency:chaos": 3, "currency:transmutation": 2 });
+const TEST_COUNTS = Object.freeze({ "currency:alteration": 2, "currency:chaos": 3 });
 const TEST_REMOVALS = Object.freeze({ "currency:alteration": 1, "currency:chaos": 2 });
 
 function documents() {
@@ -53,8 +53,8 @@ test("17 mutation plan executes nothing", () => { for (const step of evaluate("c
 test("18 no selection request contains a selected result", () => assert.doesNotMatch(JSON.stringify(evaluate("currency:augmentation", "magic").selectionRequests), /selectedModifier|selectedCandidate|resultModifier/));
 
 for (const [number, rarity, status] of [[19, "normal", "applicable"], [20, "magic", "inapplicable"], [21, "rare", "inapplicable"]]) test(`${number} transmutation rarity ${rarity} is ${status}`, () => assert.equal(evaluate("currency:transmutation", rarity).status, status));
-test("22 transmutation count is not guessed", () => assert.equal(evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES } }).status, "unresolved"));
-test("23 explicit transmutation rules create a request", () => assert.equal(evaluate("currency:transmutation", "normal").selectionRequests.length, 1));
+test("22 transmutation count is authoritatively one", () => assert.equal(getCraftingActionDefinition("currency:transmutation").selectionCount, 1));
+test("23 transmutation creates one request without a caller count", () => { const result = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES } }); assert.equal(result.status, "applicable"); assert.equal(result.selectionRequests[0].count, 1); });
 test("24 transmutation rarity change is planned only", () => { const state = item("normal"); const result = evaluate("currency:transmutation", "normal", { itemState: state }); assert.equal(state.rarity, "normal"); assert.deepEqual(result.mutationPlan[0], { sequence: 0, operation: "set-rarity", rarity: "magic", applied: false }); });
 
 test("25 augmentation with capacity and candidates is applicable", () => assert.equal(evaluate("currency:augmentation", "magic").status, "applicable"));
@@ -110,7 +110,7 @@ test("70 invalid capacity rules are context error", () => assert.equal(evaluate(
 
 test("71 selection IDs and keys are stable", () => { const a = evaluate("currency:augmentation", "magic").selectionRequests[0]; const b = evaluate("currency:augmentation", "magic").selectionRequests[0]; assert.equal(a.id, b.id); assert.equal(a.deterministicKey, b.deterministicKey); });
 test("72 candidate ordering is explicit technical order", () => assert.deepEqual(evaluate("currency:augmentation", "magic").selectionRequests[0].candidates.map(entry => entry.modifierId), ["mod:prefix", "mod:suffix"]));
-test("73 unknown transmutation count stays unresolved", () => assert.equal(evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES } }).selectionRequests.length, 0));
+test("73 transmutation caller count cannot override the contract", () => { const result = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES, selectionCountRules: { "currency:transmutation": 2 } } }); assert.equal(result.selectionRequests[0].count, 1); });
 test("74 request has no chosen candidate", () => assert.doesNotMatch(JSON.stringify(evaluate("currency:augmentation", "magic").selectionRequests[0]), /chosen|selected/));
 test("75 requests are recursively immutable", () => { const request = evaluate("currency:augmentation", "magic").selectionRequests[0]; assert.ok(Object.isFrozen(request)); assert.ok(Object.isFrozen(request.candidates)); });
 test("76 equivalent requests are byte-identical", () => assert.equal(JSON.stringify(evaluate("currency:augmentation", "magic").selectionRequests), JSON.stringify(evaluate("currency:augmentation", "magic").selectionRequests)));
@@ -222,11 +222,11 @@ test("104 rarity and request type are encoded without ambiguous concatenation", 
   const addition = evaluate("currency:augmentation", "magic").selectionRequests[0]; const removal = evaluate("currency:chaos", "rare").selectionRequests[0];
   assert.match(addition.deterministicKey, /"rarity":"magic"/); assert.match(removal.deterministicKey, /"rarity":"rare"/); assert.notEqual(addition.deterministicKey, removal.deterministicKey);
 });
-test("105 different counts produce different keys and zero stays explicit", () => {
+test("105 authoritative counts ignore caller overrides and zero removal stays explicit", () => {
   const one = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES, selectionCountRules: { "currency:transmutation": 1 } } }).selectionRequests[0];
   const two = evaluate("currency:transmutation", "normal", { actionContext: { capacityRules: TEST_CAPACITY_RULES, selectionCountRules: { "currency:transmutation": 2 } } }).selectionRequests[0];
   const zeroRemoval = evaluate("currency:chaos", "rare", { actionContext: rules({ removalRules: { "currency:chaos": 0 } }) }).selectionRequests[0];
-  assert.notEqual(one.deterministicKey, two.deterministicKey); assert.match(zeroRemoval.deterministicKey, /"count":0/);
+  assert.equal(one.deterministicKey, two.deterministicKey); assert.equal(one.count, 1); assert.equal(two.count, 1); assert.match(zeroRemoval.deterministicKey, /"count":0/);
 });
 test("106 different raw weights produce different keys", () => {
   const base = catalog(); const changed = immutableCopy({ ...base, modifiers: { ...base.modifiers, "mod:prefix": { ...base.modifiers["mod:prefix"], spawnWeights: [{ tag: "bow", weight: 101 }, { tag: "default", weight: 0 }] } } });

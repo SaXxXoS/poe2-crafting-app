@@ -32,7 +32,7 @@ const definitions = [
   definition({ id: "currency:chaos", category: "currency", technicalName: "chaos", inputRarities: ["rare"], rarityTransition: null, operationType: "reroll-modifiers", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: true, selectionCount: null, removalCount: null, preservesExistingModifiers: false, notes: ["PoE2 replacement counts require explicit caller rules."] }),
   definition({ id: "currency:exalted", category: "currency", technicalName: "exalted", inputRarities: ["rare"], rarityTransition: null, operationType: "add-modifier", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: false, selectionCount: 1, removalCount: 0, preservesExistingModifiers: true, notes: ["Capacity is never inferred."] }),
   definition({ id: "currency:regal", category: "currency", technicalName: "regal", inputRarities: ["magic"], rarityTransition: { from: "magic", to: "rare" }, operationType: "add-and-upgrade", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: false, selectionCount: 1, removalCount: 0, preservesExistingModifiers: true, notes: ["Modifier selection is deferred."] }),
-  definition({ id: "currency:transmutation", category: "currency", technicalName: "transmutation", inputRarities: ["normal"], rarityTransition: { from: "normal", to: "magic" }, operationType: "add-and-upgrade", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: false, selectionCount: null, removalCount: 0, preservesExistingModifiers: true, notes: ["Modifier count requires an explicit caller rule."] })
+  definition({ id: "currency:transmutation", category: "currency", technicalName: "transmutation", inputRarities: ["normal"], rarityTransition: { from: "normal", to: "magic" }, operationType: "add-and-upgrade", requiresCatalog: true, requiresEligibilityResolution: true, requiresRandomSelection: true, requiresRandomRemoval: false, requiresEmptyModifiers: true, selectionCount: 1, removalCount: 0, preservesExistingModifiers: true, notes: ["Target Magic capacity must be supplied explicitly by the caller."] })
 ].sort((left, right) => compareTechnicalStrings(left.id, right.id));
 const registry = new Map(definitions.map(entry => [entry.id, entry]));
 
@@ -132,6 +132,13 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   const add = (...args) => reasons.push(reason(...args));
   if (action.inputRarities.includes(itemState.rarity)) add(ENGINE_ACTION_CODES.ITEM_RARITY_ALLOWED, "pass", "Item rarity is allowed for this action.", "rarity", "itemState.rarity", { rarity: itemState.rarity });
   else add(ENGINE_ACTION_CODES.ITEM_RARITY_NOT_ALLOWED, "fail", "Item rarity is not allowed for this action.", "rarity", "itemState.rarity", { rarity: itemState.rarity, allowed: action.inputRarities });
+  if (action.requiresEmptyModifiers) {
+    const prefixCount = itemState.prefixModifiers.length;
+    const suffixCount = itemState.suffixModifiers.length;
+    add(ENGINE_ACTION_CODES.EXISTING_MODIFIERS_NOT_ALLOWED, prefixCount + suffixCount === 0 ? "pass" : "fail",
+      prefixCount + suffixCount === 0 ? "Action requires and received an item without existing modifiers." : "Action does not allow existing modifiers.",
+      "existingModifiers", "itemState", { prefixCount, suffixCount });
+  }
   if (action.rarityTransition) add(ENGINE_ACTION_CODES.RARITY_TRANSITION_AVAILABLE, "pass", "Rarity transition is defined by the action contract.", "rarityTransition", "definition.rarityTransition", action.rarityTransition);
 
   const explicitCount = action.selectionCount ?? actionContext.selectionCountRules?.[action.id] ?? null;
@@ -176,7 +183,7 @@ export function evaluateCraftingAction({ actionId, itemState, catalog, ruleConte
   if (action.requiresRandomSelection) mutationPlan.push({ sequence: mutationPlan.length, operation: action.operationType === "reroll-modifiers" ? "replace-random-modifiers" : "add-selected-modifier", selectionRequestId: selectionRequests.find(entry => entry.type === "modifier-addition")?.id ?? null, applied: false });
   return immutableCopy({ valid: errors.length === 0, actionId, status, definition: action,
     contextSummary: { itemId: itemState.itemId, revision: itemState.revision, itemClassId: itemState.itemClassId, baseTypeId: itemState.baseTypeId, itemLevel: itemState.itemLevel, rarity: itemState.rarity },
-    reasons, errors, warnings, evaluatedRules: ["action", "context", "eligibility", "mutation", "rarity", "removal", "selectionCount"], eligibilityResult,
+    reasons, errors, warnings, evaluatedRules: ["action", "context", "eligibility", "existingModifiers", "mutation", "rarity", "removal", "selectionCount"], eligibilityResult,
     selectionRequests, mutationPlan, summary: { applicable: status === "applicable", requiresRandomSelection: action.requiresRandomSelection,
       requiresRandomRemoval: action.requiresRandomRemoval, selectionRequestCount: selectionRequests.filter(entry => entry.type === "modifier-addition").length,
       removalRequestCount: selectionRequests.filter(entry => entry.type === "modifier-removal").length, wouldChangeRarity: Boolean(action.rarityTransition),
