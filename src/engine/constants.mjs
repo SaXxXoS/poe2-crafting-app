@@ -1,7 +1,6 @@
-import { createRequire } from "node:module";
+import "../../app-config.js";
 
-const require = createRequire(import.meta.url);
-const { CURRENT_MAX_ITEM_LEVEL } = require("../../app-config.js");
+const { CURRENT_MAX_ITEM_LEVEL } = globalThis.EXILEFORGE_CONFIG;
 
 export const ITEM_STATE_SCHEMA_VERSION = 1;
 export { CURRENT_MAX_ITEM_LEVEL };
