@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "source": "https://repoe-fork.github.io/poe2",
-  "generatedAt": "2026-09-05T08:22:28.839Z",
-  "count": 5476,
+  "generatedAt": "2026-09-06T08:41:05.593Z",
+  "count": 5496,
   "bases": [
     {
       "id": "Metadata/Items/Currency/CurrencyWeaponQuality",
@@ -31608,6 +31608,852 @@
       }
     },
     {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial16",
+      "nameEn": "Jiquani's Soul Core of Automation",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Automation",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreTotems.dds",
+          "id": "SoulCoreSpecial16"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial17",
+      "nameEn": "Jiquani's Soul Core of Malediction",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Malediction",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreCurses.dds",
+          "id": "SoulCoreSpecial17_"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial18",
+      "nameEn": "Jiquani's Soul Core of Targeting",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Targeting",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreMarks.dds",
+          "id": "SoulCoreSpecial18"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial19",
+      "nameEn": "Jiquani's Soul Core of Rallying",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Rallying",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreWarcries.dds",
+          "id": "SoulCoreSpecial19"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial20",
+      "nameEn": "Jiquani's Soul Core of Radiance",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Radiance",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreHeralds.dds",
+          "id": "SoulCoreSpecial20_"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial21",
+      "nameEn": "Jiquani's Soul Core of Severing",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Severing",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreStrikes.dds",
+          "id": "SoulCoreSpecial21_"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial22",
+      "nameEn": "Jiquani's Soul Core of Rippling",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Rippling",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreNovas.dds",
+          "id": "SoulCoreSpecial22"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial23",
+      "nameEn": "Jiquani's Soul Core of Quaking",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Quaking",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreSlams.dds",
+          "id": "SoulCoreSpecial23_"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial24",
+      "nameEn": "Jiquani's Soul Core of Munitions",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Munitions",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreGrenades.dds",
+          "id": "SoulCoreSpecial24_"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial25",
+      "nameEn": "Jiquani's Soul Core of Snares",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Snares",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreHazards.dds",
+          "id": "SoulCoreSpecial25"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial26",
+      "nameEn": "Jiquani's Soul Core of Abundance",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Abundance",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCorePlants.dds",
+          "id": "SoulCoreSpecial26_"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial27",
+      "nameEn": "Jiquani's Soul Core of Squalls",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Squalls",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreWind.dds",
+          "id": "SoulCoreSpecial27"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial28",
+      "nameEn": "Jiquani's Soul Core of Thundering",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier3",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Jiquani's Soul Core of Thundering",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier3",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/RareSoulCoreStorms.dds",
+          "id": "SoulCoreSpecial28"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial29",
+      "nameEn": "Atziri's Soul Core of Devotion",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier4",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Helmet to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Atziri's Soul Core of Devotion",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Helmet to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier4",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/SoulCoreSpecialHelmet.dds",
+          "id": "SoulCoreSpecial29__"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial30",
+      "nameEn": "Atziri's Soul Core of Vitality",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier4",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Body Armour to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Atziri's Soul Core of Vitality",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Body Armour to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier4",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/SoulCoreSpecialBodyArmour.dds",
+          "id": "SoulCoreSpecial30_"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial31",
+      "nameEn": "Atziri's Soul Core of Alacrity",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier4",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a pair of Gloves to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Atziri's Soul Core of Alacrity",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a pair of Gloves to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier4",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/SoulCoreSpecialGloves.dds",
+          "id": "SoulCoreSpecial31"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreSpecial32",
+      "nameEn": "Atziri's Soul Core of Inoculation",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier4",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a pair of Boots to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Atziri's Soul Core of Inoculation",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a pair of Boots to apply its effect to that item. Once socketed it cannot be retrieved or replaced.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier4",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/SoulCoreSpecialBoots.dds",
+          "id": "SoulCoreSpecial32"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/SoulCores/SoulCoreVision",
+      "nameEn": "Soul Core of Vizoma",
+      "itemClass": "SoulCore",
+      "tags": [
+        "soul_core",
+        "soul_core_tier2",
+        "default"
+      ],
+      "dropLevel": 35,
+      "requirements": {},
+      "properties": {
+        "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "directions": "",
+        "stack_size": 10,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 35,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
+        "item_class": "SoulCore",
+        "name": "Soul Core of Vizoma",
+        "properties": {
+          "description": "Place into an empty [Augment] Socket in a Weapon to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "directions": "",
+          "stack_size": 10,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "soul_core",
+          "soul_core_tier2",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/SoulCores/GreaterSoulCoreVision.dds",
+          "id": "SoulCoreVision"
+        }
+      }
+    },
+    {
       "id": "Metadata/Items/SoulCores/SoulCoreChaos",
       "nameEn": "Soul Core of Tacati",
       "itemClass": "SoulCore",
@@ -37812,7 +38658,7 @@
     {
       "id": "Metadata/Items/MapFragments/CurrencyAfflictionFragment",
       "nameEn": "Simulacrum",
-      "itemClass": "MapFragment",
+      "itemClass": "AtlasCurrency",
       "tags": [
         "affliction_splinter",
         "default"
@@ -37820,7 +38666,7 @@
       "dropLevel": 75,
       "requirements": {},
       "properties": {
-        "description": "",
+        "description": "Adds the Simulacrum to a Map",
         "directions": "Right click this item then left click an Endgame World Area affected by at least 100% [Delirious|Delirousness] to apply it.",
         "stack_size": 1,
         "stack_size_currency_tab": 5000
@@ -37835,10 +38681,10 @@
         "inventory_height": 1,
         "inventory_width": 1,
         "inherits_from": "Metadata/Items/MapFragments/AbstractMapFragment",
-        "item_class": "MapFragment",
+        "item_class": "AtlasCurrency",
         "name": "Simulacrum",
         "properties": {
-          "description": "",
+          "description": "Adds the Simulacrum to a Map",
           "directions": "Right click this item then left click an Endgame World Area affected by at least 100% [Delirious|Delirousness] to apply it.",
           "stack_size": 1,
           "stack_size_currency_tab": 5000
@@ -94394,6 +95240,7 @@
         "no_cold_spell_mods",
         "no_lightning_spell_mods",
         "no_physical_spell_mods",
+        "chaos_implicit_skill",
         "wand",
         "onehand",
         "default"
@@ -94425,6 +95272,7 @@
           "no_cold_spell_mods",
           "no_lightning_spell_mods",
           "no_physical_spell_mods",
+          "chaos_implicit_skill",
           "wand",
           "onehand",
           "default"
@@ -94453,6 +95301,7 @@
         "no_cold_spell_mods",
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
+        "physical_implicit_skill",
         "wand",
         "onehand",
         "default"
@@ -94484,6 +95333,7 @@
           "no_cold_spell_mods",
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
+          "physical_implicit_skill",
           "wand",
           "onehand",
           "default"
@@ -94614,6 +95464,7 @@
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "fire_implicit_skill",
         "wand",
         "onehand",
         "default"
@@ -94645,6 +95496,7 @@
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "fire_implicit_skill",
           "wand",
           "onehand",
           "default"
@@ -94673,6 +95525,7 @@
         "no_cold_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "lightning_implicit_skill",
         "wand",
         "onehand",
         "default"
@@ -94704,6 +95557,7 @@
           "no_cold_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "lightning_implicit_skill",
           "wand",
           "onehand",
           "default"
@@ -94783,6 +95637,7 @@
         "no_cold_spell_mods",
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
+        "physical_implicit_skill",
         "wand",
         "onehand",
         "default"
@@ -94814,6 +95669,7 @@
           "no_cold_spell_mods",
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
+          "physical_implicit_skill",
           "wand",
           "onehand",
           "default"
@@ -94842,6 +95698,7 @@
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "cold_implicit_skill",
         "wand",
         "onehand",
         "default"
@@ -94873,6 +95730,7 @@
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "cold_implicit_skill",
           "wand",
           "onehand",
           "default"
@@ -95003,6 +95861,7 @@
         "no_cold_spell_mods",
         "no_lightning_spell_mods",
         "no_physical_spell_mods",
+        "chaos_implicit_skill",
         "wand",
         "onehand",
         "default"
@@ -95034,6 +95893,7 @@
           "no_cold_spell_mods",
           "no_lightning_spell_mods",
           "no_physical_spell_mods",
+          "chaos_implicit_skill",
           "wand",
           "onehand",
           "default"
@@ -95374,6 +96234,7 @@
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "fire_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95405,6 +96266,7 @@
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "fire_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -95433,6 +96295,7 @@
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "cold_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95464,6 +96327,7 @@
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "cold_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -95492,6 +96356,7 @@
         "no_cold_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "lightning_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95523,6 +96388,7 @@
           "no_cold_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "lightning_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -95602,6 +96468,7 @@
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "fire_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95633,6 +96500,7 @@
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "fire_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -95712,6 +96580,7 @@
         "no_cold_spell_mods",
         "no_lightning_spell_mods",
         "no_physical_spell_mods",
+        "chaos_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95743,6 +96612,7 @@
           "no_cold_spell_mods",
           "no_lightning_spell_mods",
           "no_physical_spell_mods",
+          "chaos_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -95771,6 +96641,7 @@
         "no_cold_spell_mods",
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
+        "physical_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95802,6 +96673,7 @@
           "no_cold_spell_mods",
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
+          "physical_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -95830,6 +96702,7 @@
         "no_lightning_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "cold_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95861,6 +96734,7 @@
           "no_lightning_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "cold_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -95940,6 +96814,7 @@
         "no_cold_spell_mods",
         "no_chaos_spell_mods",
         "no_physical_spell_mods",
+        "lightning_implicit_skill",
         "staff",
         "twohand",
         "default"
@@ -95971,6 +96846,7 @@
           "no_cold_spell_mods",
           "no_chaos_spell_mods",
           "no_physical_spell_mods",
+          "lightning_implicit_skill",
           "staff",
           "twohand",
           "default"
@@ -98195,6 +99071,7 @@
       "nameEn": "Rattling Sceptre",
       "itemClass": "Sceptre",
       "tags": [
+        "physical_implicit_skill",
         "sceptre",
         "onehand",
         "default"
@@ -98222,6 +99099,7 @@
         "properties": {},
         "release_state": "released",
         "tags": [
+          "physical_implicit_skill",
           "sceptre",
           "onehand",
           "default"
@@ -98450,6 +99328,7 @@
       "nameEn": "Shrine Sceptre",
       "itemClass": "Sceptre",
       "tags": [
+        "fire_implicit_skill",
         "sceptre",
         "onehand",
         "default"
@@ -98477,6 +99356,7 @@
         "properties": {},
         "release_state": "released",
         "tags": [
+          "fire_implicit_skill",
           "sceptre",
           "onehand",
           "default"
@@ -98501,6 +99381,7 @@
       "nameEn": "Shrine Sceptre",
       "itemClass": "Sceptre",
       "tags": [
+        "cold_implicit_skill",
         "sceptre",
         "onehand",
         "default"
@@ -98528,6 +99409,7 @@
         "properties": {},
         "release_state": "released",
         "tags": [
+          "cold_implicit_skill",
           "sceptre",
           "onehand",
           "default"
@@ -98552,6 +99434,7 @@
       "nameEn": "Shrine Sceptre",
       "itemClass": "Sceptre",
       "tags": [
+        "lightning_implicit_skill",
         "sceptre",
         "onehand",
         "default"
@@ -98579,6 +99462,7 @@
         "properties": {},
         "release_state": "released",
         "tags": [
+          "lightning_implicit_skill",
           "sceptre",
           "onehand",
           "default"
@@ -98756,6 +99640,7 @@
       "nameEn": "Wrath Sceptre",
       "itemClass": "Sceptre",
       "tags": [
+        "lightning_implicit_skill",
         "sceptre",
         "onehand",
         "default"
@@ -98783,6 +99668,7 @@
         "properties": {},
         "release_state": "released",
         "tags": [
+          "lightning_implicit_skill",
           "sceptre",
           "onehand",
           "default"
@@ -212142,6 +213028,41 @@
       }
     },
     {
+      "id": "Metadata/Items/Ultimatum/UltimatumKeyInProgress",
+      "nameEn": "Inscribed Ultimatum",
+      "itemClass": "UltimatumKey",
+      "tags": [
+        "not_for_sale",
+        "default"
+      ],
+      "dropLevel": 39,
+      "requirements": {},
+      "properties": {},
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 39,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/Ultimatum/UltimatumKey",
+        "item_class": "UltimatumKey",
+        "name": "Inscribed Ultimatum",
+        "properties": {},
+        "release_state": "released",
+        "tags": [
+          "not_for_sale",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Maps/UltimatumTrialItem.dds",
+          "id": "UltimatumKey"
+        }
+      }
+    },
+    {
       "id": "Metadata/Items/QuestItems/UltimatumKeyQuest",
       "nameEn": "Chimeral Inscribed Ultimatum",
       "itemClass": "QuestItem",
@@ -218563,7 +219484,7 @@
       "dropLevel": 1,
       "requirements": {},
       "properties": {
-        "description": "While this item is active in your inventory the next\nPossessed monster you kill will release its [AzmeriSpirit|Azmeri Spirit]",
+        "description": "While this item is active in your inventory the next\n[SpiritPossessed|Possessed] monster you kill will [ReleaseAzmeriSpirits|Release] and manifest all [AzmeriSpirit|Azmeri Spirits]",
         "directions": "Right click this item in your inventory to set it to be active. This item is consumed when triggered. Only one Omen can be triggered from combat in each instance.",
         "stack_size": 10,
         "stack_size_currency_tab": 5000
@@ -218581,7 +219502,7 @@
         "item_class": "Omen",
         "name": "Omen of the Hunt",
         "properties": {
-          "description": "While this item is active in your inventory the next\nPossessed monster you kill will release its [AzmeriSpirit|Azmeri Spirit]",
+          "description": "While this item is active in your inventory the next\n[SpiritPossessed|Possessed] monster you kill will [ReleaseAzmeriSpirits|Release] and manifest all [AzmeriSpirit|Azmeri Spirits]",
           "directions": "Right click this item in your inventory to set it to be active. This item is consumed when triggered. Only one Omen can be triggered from combat in each instance.",
           "stack_size": 10,
           "stack_size_currency_tab": 5000
@@ -245463,7 +246384,7 @@
       "dropLevel": 15,
       "requirements": {},
       "properties": {
-        "description": "Place into an empty [Augment] Socket in a  Quarterstaff or Spear to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+        "description": "Place into an empty [Augment] Socket in a Quarterstaff or Spear to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
         "directions": "",
         "stack_size": 10,
         "stack_size_currency_tab": 5000
@@ -245481,7 +246402,7 @@
         "item_class": "SoulCore",
         "name": "Rune of Confrontation",
         "properties": {
-          "description": "Place into an empty [Augment] Socket in a  Quarterstaff or Spear to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
+          "description": "Place into an empty [Augment] Socket in a Quarterstaff or Spear to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
           "directions": "",
           "stack_size": 10,
           "stack_size_currency_tab": 5000
@@ -246444,7 +247365,7 @@
     },
     {
       "id": "Metadata/Items/SoulCores/RuneOlrothsLegacyEdyrnsTusks",
-      "nameEn": "Legacy of Edyrns Tusks",
+      "nameEn": "Legacy of Edyrn's Tusks",
       "itemClass": "SoulCore",
       "tags": [
         "rune",
@@ -246469,7 +247390,7 @@
         "inventory_width": 1,
         "inherits_from": "Metadata/Items/SoulCores/AbstractSoulCore",
         "item_class": "SoulCore",
-        "name": "Legacy of Edyrns Tusks",
+        "name": "Legacy of Edyrn's Tusks",
         "properties": {
           "description": "Place into an empty [Augment] Socket in a Body Armour to apply its effect to that item. Once socketed it cannot be retrieved but can be replaced by other [Augment] items.",
           "directions": "",
@@ -265807,6 +266728,51 @@
         "visual_identity": {
           "dds_file": "Art/2DItems/Gems/New/BlankGem.dds",
           "id": "SkillGemBlank"
+        }
+      }
+    },
+    {
+      "id": "Metadata/Items/MapFragments/CurrencyWildwoodFragment",
+      "nameEn": "Sacred Bloom",
+      "itemClass": "AtlasCurrency",
+      "tags": [
+        "not_for_sale",
+        "default"
+      ],
+      "dropLevel": 65,
+      "requirements": {},
+      "properties": {
+        "description": "Adds a Viridian Wildwood to a Map and all Maps connected to it",
+        "directions": "Right click this item then left click an Endgame World Area to apply it.",
+        "stack_size": 1,
+        "stack_size_currency_tab": 5000
+      },
+      "implicits": [],
+      "width": 0,
+      "height": 0,
+      "raw": {
+        "domain": "undefined",
+        "drop_level": 65,
+        "implicits": [],
+        "inventory_height": 1,
+        "inventory_width": 1,
+        "inherits_from": "Metadata/Items/MapFragments/AbstractMapFragment",
+        "item_class": "AtlasCurrency",
+        "name": "Sacred Bloom",
+        "properties": {
+          "description": "Adds a Viridian Wildwood to a Map and all Maps connected to it",
+          "directions": "Right click this item then left click an Endgame World Area to apply it.",
+          "stack_size": 1,
+          "stack_size_currency_tab": 5000
+        },
+        "release_state": "released",
+        "tags": [
+          "not_for_sale",
+          "default"
+        ],
+        "visual_identity": {
+          "dds_file": "Art/2DItems/Currency/Harvest/SacredLifeforce.dds",
+          "id": "WildwoodAtlasFragment"
         }
       }
     }

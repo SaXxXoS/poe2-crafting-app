@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-05T08:22:29.067Z",
+  "generatedAt": "2026-09-06T08:41:05.809Z",
   "source": {
     "root": "https://repoe-fork.github.io/poe2",
     "files": {
       "baseItems": {
         "url": "https://repoe-fork.github.io/poe2/base_items.min.json",
-        "bytes": 3083112,
-        "sha256": "7630f083091b60856e2f8e63edd8e5f670a10077fdfc848b58868a925cb38960"
+        "bytes": 3097514,
+        "sha256": "c95315f5198e37c162b154c167a4c2c7deed98d751c628e7fd4327286e430a9f"
       },
       "mods": {
         "url": "https://repoe-fork.github.io/poe2/mods.min.json",
-        "bytes": 8655983,
-        "sha256": "1bec162b701370fc6a0af90d0248f0af988a836345b35671b0a989902c41331f"
+        "bytes": 8704555,
+        "sha256": "63c0e720daddeb8bfc679e676333287e79006f914ac76ee43ad0ba6277856e30"
       },
       "modsByBase": {
         "url": "https://repoe-fork.github.io/poe2/mods_by_base.min.json",
-        "bytes": 3617883,
-        "sha256": "5ad1b48bf6c7fa1b66d7202a48362a7968320b69be119a63e9becbe8fff4f17d"
+        "bytes": 3652143,
+        "sha256": "f7b36482847fad7ab3c518b5e641b64422716968aa737ced9c61e0fafe0f374c"
       },
       "itemClasses": {
         "url": "https://repoe-fork.github.io/poe2/item_classes.min.json",
-        "bytes": 8668,
-        "sha256": "184de04b0414c3648fa9bdc09d53598e5c9d2193804ffa47a368a13d1450be6e"
+        "bytes": 8763,
+        "sha256": "34971a7a2453d2ebcd77f4fd3a7b9251cab17534d8c215742101cb2437fbd380"
       },
       "tags": {
         "url": "https://repoe-fork.github.io/poe2/tags.min.json",
-        "bytes": 24667,
-        "sha256": "3718514164e26d06ac32d339c60ab8848308baba6509d48ecca068b373aaab7a"
+        "bytes": 25084,
+        "sha256": "9240cf83b237ca1b80e41940477d91128ffd64a89ec27f23de33762de714ef30"
       }
     }
   },
   "counts": {
-    "bases": 5476,
-    "mods": 16679,
+    "bases": 5496,
+    "mods": 16784,
     "modPools": 82,
     "poolBaseMatches": 0,
     "poolModReferences": 0,

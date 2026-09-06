@@ -182,6 +182,11 @@
     "category_id": "MapFragment",
     "name": "Map Fragments"
   },
+  "AtlasCurrency": {
+    "category": "Map Fragment",
+    "category_id": "MapFragment",
+    "name": "Map Fragments"
+  },
   "HideoutDoodad": {
     "name": "Hideout Doodads"
   },
