@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-03T09:53:41.099Z",
+  "generatedAt": "2026-10-04T10:35:53.105Z",
   "status": "poe2db-app-adapter-ready",
   "deprecatedSource": "generated/app-data is retained but no longer referenced by the application",
   "counts": {
@@ -23,7 +23,7 @@
       "sha256": "b9a2341bfc8ee411e9232839c3d7eeabc88c9411ed8f368e052619db0a75959f"
     },
     "quality-report.json": {
-      "sha256": "0cbfa1c04a48b516187cee717829a87685cca37eb865fb297416597c0fe5879f"
+      "sha256": "f5a47f7065ccf3a0d3eb787a5636d4acdf4b5705e12577eec486509a3cf4c12a"
     },
     "pools/spears.json": {
       "sha256": "61ac1ffd299384af75d2118a672a41ad9611ec34bb910b3085067d30ef2ae899"
@@ -110,7 +110,7 @@
       "sha256": "49ddaee6518c1a8f12ba63388db4ab2634276f151513b72bffcd1aea5cee350d"
     },
     "affix-groups.json": {
-      "sha256": "c8d582a1f805cca0711498e205e7f98b2a84e2d2a398e61b6924a34c075c2f03"
+      "sha256": "8e584d79e47b7b3f4dcc3a21ffff1eff2216442d58ac587d1ae6a1bef2ae08cf"
     }
   }
 }
