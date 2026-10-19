@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T08:52:05.692Z",
+  "generatedAt": "2026-10-19T09:56:12.158Z",
   "source": {
     "root": "https://repoe-fork.github.io/poe2",
     "files": {
       "baseItems": {
         "url": "https://repoe-fork.github.io/poe2/base_items.min.json",
-        "bytes": 3097514,
-        "sha256": "c95315f5198e37c162b154c167a4c2c7deed98d751c628e7fd4327286e430a9f"
+        "bytes": 3116877,
+        "sha256": "b7ab7f321083ae91d65439ff3889113e12fecd180593adbd2853ef0ed413d0b6"
       },
       "mods": {
         "url": "https://repoe-fork.github.io/poe2/mods.min.json",
