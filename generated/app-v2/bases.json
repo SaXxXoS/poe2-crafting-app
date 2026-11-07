@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "https://repoe-fork.github.io/poe2",
-  "generatedAt": "2026-11-06T12:08:35.433Z",
+  "generatedAt": "2026-11-07T11:05:36.319Z",
   "count": 5496,
   "bases": [
     {
@@ -12872,7 +12872,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances Life modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -12890,7 +12890,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances Life modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -12921,7 +12921,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances Mana modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -12939,7 +12939,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances Mana modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -12970,7 +12970,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Armour], [Evasion] and [EnergyShield|Energy Shield] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -12988,7 +12988,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Armour], [Evasion] and [EnergyShield|Energy Shield] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13019,7 +13019,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Physical] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13037,7 +13037,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Physical] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13068,7 +13068,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Fire] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13086,7 +13086,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Fire] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13117,7 +13117,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Cold] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13135,7 +13135,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Cold] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13166,7 +13166,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Lightning] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13184,7 +13184,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Lightning] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13215,7 +13215,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Chaos] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13233,7 +13233,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Chaos] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13264,7 +13264,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Attack] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13282,7 +13282,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Attack] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13313,7 +13313,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Spell|Caster] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13331,7 +13331,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Spell|Caster] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13362,7 +13362,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances Speed modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13380,7 +13380,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances Speed modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13411,7 +13411,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Attributes|Attribute] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13429,7 +13429,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Attributes|Attribute] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13460,7 +13460,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Minion] modifiers on a ring or amulet\r\nReplaces other quality types",
         "directions": "Right click this item then left click a ring or amulet to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13478,7 +13478,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Minion] modifiers on a ring or amulet\r\nReplaces other quality types",
           "directions": "Right click this item then left click a ring or amulet to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13509,7 +13509,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances Life modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13527,7 +13527,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances Life modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13558,7 +13558,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances Mana modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13576,7 +13576,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances Mana modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13607,7 +13607,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Armour], [Evasion] and [EnergyShield|Energy Shield] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13625,7 +13625,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Armour], [Evasion] and [EnergyShield|Energy Shield] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13656,7 +13656,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Physical] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13674,7 +13674,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Physical] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13705,7 +13705,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Fire] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13723,7 +13723,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Fire] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13754,7 +13754,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Cold] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13772,7 +13772,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Cold] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13803,7 +13803,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Lightning] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13821,7 +13821,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Lightning] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13852,7 +13852,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Chaos] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13870,7 +13870,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Chaos] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13901,7 +13901,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Attack] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13919,7 +13919,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Attack] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13950,7 +13950,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Spell|Caster] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -13968,7 +13968,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Spell|Caster] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -13999,7 +13999,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances Speed modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -14017,7 +14017,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances Speed modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -14048,7 +14048,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Attributes|Attribute] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -14066,7 +14066,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Attributes|Attribute] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",
@@ -14097,7 +14097,7 @@
       "properties": {
         "description": "Adds [Quality|quality] that enhances [Minion] modifiers on a jewel\r\nReplaces other quality types",
         "directions": "Right click this item then left click a jewel to apply it.",
-        "stack_size": 10,
+        "stack_size": 20,
         "stack_size_currency_tab": 5000
       },
       "implicits": [],
@@ -14115,7 +14115,7 @@
         "properties": {
           "description": "Adds [Quality|quality] that enhances [Minion] modifiers on a jewel\r\nReplaces other quality types",
           "directions": "Right click this item then left click a jewel to apply it.",
-          "stack_size": 10,
+          "stack_size": 20,
           "stack_size_currency_tab": 5000
         },
         "release_state": "released",

@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T12:08:35.622Z",
+  "generatedAt": "2026-11-07T11:05:36.510Z",
   "source": {
     "root": "https://repoe-fork.github.io/poe2",
     "files": {
       "baseItems": {
         "url": "https://repoe-fork.github.io/poe2/base_items.min.json",
         "bytes": 3116877,
-        "sha256": "b7ab7f321083ae91d65439ff3889113e12fecd180593adbd2853ef0ed413d0b6"
+        "sha256": "e86a1919950682e4041cb96e599b7f217cc0ea584cd9a817acc9825d0789eed6"
       },
       "mods": {
         "url": "https://repoe-fork.github.io/poe2/mods.min.json",
-        "bytes": 8704544,
-        "sha256": "de686180c7250dcde389358fbf251611b0b677d7672cc66def0dc8f3bd3f481d"
+        "bytes": 8775773,
+        "sha256": "d5ba558ed408af9bc8f79dac471758422401f7e1291440b44cebad87b0ed4e90"
       },
       "modsByBase": {
         "url": "https://repoe-fork.github.io/poe2/mods_by_base.min.json",
@@ -33,7 +33,7 @@
   },
   "counts": {
     "bases": 5496,
-    "mods": 16784,
+    "mods": 16911,
     "modPools": 82,
     "poolBaseMatches": 0,
     "poolModReferences": 0,
