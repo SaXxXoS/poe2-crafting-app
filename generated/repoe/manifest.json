@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T12:15:50.084Z",
+  "generatedAt": "2026-11-14T11:31:02.305Z",
   "source": {
     "root": "https://repoe-fork.github.io/poe2",
     "files": {
@@ -11,8 +11,8 @@
       },
       "mods": {
         "url": "https://repoe-fork.github.io/poe2/mods.min.json",
-        "bytes": 8775773,
-        "sha256": "d5ba558ed408af9bc8f79dac471758422401f7e1291440b44cebad87b0ed4e90"
+        "bytes": 9167658,
+        "sha256": "c28e8883ddffa26f7acb77da805099e9ab8631a55ef62d178fd86798b3770e6a"
       },
       "modsByBase": {
         "url": "https://repoe-fork.github.io/poe2/mods_by_base.min.json",
@@ -60,6 +60,7 @@
       "generation_type",
       "generation_weights",
       "grants_effects",
+      "grants_skill_gems",
       "groups",
       "implicit_tags",
       "is_essence_only",
