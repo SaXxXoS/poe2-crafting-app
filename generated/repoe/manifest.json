@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-18T13:05:45.688Z",
+  "generatedAt": "2026-11-19T13:13:58.756Z",
   "source": {
     "root": "https://repoe-fork.github.io/poe2",
     "files": {
@@ -11,8 +11,8 @@
       },
       "mods": {
         "url": "https://repoe-fork.github.io/poe2/mods.min.json",
-        "bytes": 8153905,
-        "sha256": "fbbc32b5cdbed0db43d16030a7d8b1afc48b56887bf36aa3b4291c9b28791424"
+        "bytes": 9168111,
+        "sha256": "a8c1b9049bad2f9d67b467d5379505e297214fd49623200b230392550a23ecf2"
       },
       "modsByBase": {
         "url": "https://repoe-fork.github.io/poe2/mods_by_base.min.json",
@@ -68,6 +68,7 @@
       "required_level",
       "spawn_weights",
       "stats",
+      "text",
       "type"
     ],
     "modsByBase": [
